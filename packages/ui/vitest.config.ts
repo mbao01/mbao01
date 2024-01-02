@@ -7,5 +7,16 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: ["vitest-setup.ts"],
+    coverage: {
+      all: false,
+      enabled: true,
+      provider: "v8",
+      reporter: ["text", "html", "clover", "json"],
+      reportsDirectory: "coverage",
+      thresholds: {
+        autoUpdate: true,
+      },
+      exclude: ["**/*.stories.*"],
+    },
   },
 });
