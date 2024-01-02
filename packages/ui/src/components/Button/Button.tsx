@@ -28,7 +28,10 @@ export const Button = (props: ButtonProps) => {
     >
       {label}
       {loading ? (
-        <span className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-[inherit]">
+        <span
+          className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-[inherit]"
+          data-testid="loading"
+        >
           <span className="loading loading-spinner" />
         </span>
       ) : null}
