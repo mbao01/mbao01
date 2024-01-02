@@ -1,6 +1,6 @@
 {
   "name": "@mbao01/ui",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "author": "Ayomide Bakare",
