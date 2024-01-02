@@ -15,10 +15,10 @@
   "main": "./src/index.ts",
   "types": "./dist/index.d.ts",
   "files": [
-    "src",
     "plugin.js",
     "plugin.d.ts",
-    "dist/index.d.ts"
+    "src/**/*.ts",
+    "dist/**/*.d.ts"
   ],
   "sideEffects": false,
   "scripts": {
