@@ -1,5 +1,6 @@
 {
   "name": "mbao01",
+  "type": "module",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +11,11 @@
   "keywords": [],
   "author": "Ayomide Bakare <poke@ayomidebakare.site> (https://x.com/mbao_01)",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
-    "lerna": "^8.0.1"
+    "chalk": "^5.3.0",
+    "execa": "^8.0.1",
+    "lerna": "^8.0.1",
+    "ora": "^8.0.1",
+    "simple-git": "^3.22.0"
   }
 }
