@@ -24,7 +24,7 @@ describe("Button", () => {
     expect(handleClick).not.toHaveBeenCalled();
   });
 
-  it("shows loader", async () => {
+  it("shows loader", () => {
     const handleClick = vi.fn();
     render(<Button label="Button" onClick={handleClick} loading />);
 
@@ -44,7 +44,7 @@ describe("Button", () => {
     "success",
     "warning",
     "error",
-  ] as const)("has %s variant", async (variant) => {
+  ] as const)("has %s variant", (variant) => {
     const label = `${variant} button`;
     const { asFragment } = render(<Button label={label} variant={variant} />);
 
@@ -57,7 +57,7 @@ describe("Button", () => {
     { size: "sm", name: "small" },
     { size: "md", name: "base" },
     { size: "lg", name: "large" },
-  ] as const)("has $name ($size) button", async ({ size, name }) => {
+  ] as const)("has $name ($size) button", ({ size, name }) => {
     const label = `${name} button`;
     const { asFragment } = render(<Button label={label} size={size} />);
 
@@ -68,7 +68,7 @@ describe("Button", () => {
   it.each([
     ["has outline", true],
     ["has no outline", false],
-  ] as const)("%s", async (description, outline) => {
+  ] as const)("%s", (description, outline) => {
     const label = `Button ${description}`;
     const { asFragment } = render(<Button label={label} outline={outline} />);
 
@@ -79,7 +79,7 @@ describe("Button", () => {
   it.each([
     ["is wide", true],
     ["is not wide", false],
-  ] as const)("%s", async (description, wide) => {
+  ] as const)("%s", (description, wide) => {
     const label = `Button ${description}`;
     const { asFragment } = render(<Button label={label} wide={wide} />);
 

@@ -24,6 +24,7 @@ module.exports = {
       "warn",
       { allowConstantExport: true },
     ],
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
   },
   settings: {
     react: {
