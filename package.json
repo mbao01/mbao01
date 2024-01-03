@@ -16,6 +16,7 @@
   "devDependencies": {
     "chalk": "^5.3.0",
     "commitizen": "^4.3.0",
+    "conventional-changelog-conventionalcommits": "^7.0.2",
     "cz-conventional-changelog": "^3.3.0",
     "execa": "^8.0.1",
     "husky": "^8.0.3",
