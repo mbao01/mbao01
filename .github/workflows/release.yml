@@ -27,5 +27,5 @@ jobs:
         uses: ./.github/setup
 
       - name: 👏 Run release script
-        run: node ./scripts/release.js
+        run: pnpm release
 
