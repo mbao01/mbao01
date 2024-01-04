@@ -17,6 +17,19 @@ import {
  *
  */
 (async function () {
+  // 0. ensure the working directory is clean. this is a safety measure to ensure
+  // you don't accidentally commit untracked files or uncommitted changes
+  await actor(
+    git.status({ "--porcelain": true }).then((r) => {
+      if (!r.isClean())
+        throw new Error(
+          "Untracked files or uncommitted changes detected. Please clean/stash your working directory."
+        );
+      return r;
+    }),
+    "Ensure there are no untracked files or uncommitted changes"
+  );
+
   /* 1. we begin by doing some chores */
   // 1a. assign remote name and main branch
   // log(info("Assign remote name and main branch"));

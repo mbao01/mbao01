@@ -26,7 +26,7 @@ export const log = process.stdout.write.bind(process.stdout);
  */
 export const trap = (err) => {
   log(error(err.message?.trimEnd()) + "\n");
-  process.exit(1);
+  process.exit(err.exitCode ?? 1);
   return false;
 };
 
