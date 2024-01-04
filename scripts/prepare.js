@@ -136,10 +136,10 @@ import {
   );
   const packageList = namedPackages.join("\n- ");
   const commitMsg = `chore(release): publish \n\n- ${packageList}`;
-  await git.commit(commitMsg, "./*", { "--no-verify": true });
-  // await actor(
-  //   `Commit changelog and package bump on ${primary(releaseBranchName)} branch`
-  // );
+  await actor(
+    git.env("HUSKY", "0").commit(commitMsg),
+    `Commit changelog and package bump on ${primary(releaseBranchName)} branch`
+  );
 
   // 4c. push release branch to remote
   const { repo } = await actor(
