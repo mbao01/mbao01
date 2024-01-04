@@ -3,7 +3,7 @@ name: 🧑‍🚀 Deploy projects
 on:
   push:
     branches:
-      - releases/*
+      - releases/**
 
 jobs:
   cancel:
