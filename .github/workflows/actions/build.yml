@@ -1,0 +1,81 @@
+name: Build
+
+on:
+  workflow_call:
+
+jobs:
+  cancel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑 Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.12.0
+
+  lint:
+    name: ⬣ Linting
+    runs-on: ubuntu-latest
+    needs: [cancel]
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 📡 Setup
+        uses: ./.github/setup
+
+      - name: 🔬 Lint
+        shell: bash
+        run: pnpm -r lint
+
+  build:
+    name: 🐳 Build projects
+    runs-on: ubuntu-latest
+    needs: [cancel, lint]
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 📡 Setup
+        uses: ./.github/setup
+
+      # Setup cache
+      - name: ⚡️ Cache build
+        uses: actions/cache@v3
+        id: cache
+        with:
+          path: |
+            **/*/dist
+            **/*/storybook-static
+          key: ${{ runner.os }}-build-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-build
+
+      - name: 🏗️ Build projects
+        shell: bash
+        run: pnpm -r build
+
+  test:
+    name: 🧪 Unit tests
+    runs-on: ubuntu-latest
+    needs: [cancel]
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 📡 Setup
+        uses: ./.github/setup
+
+      - name: 🏃‍♂️ Run tests
+        shell: bash
+        run: pnpm -r test
+
+      - name: 🏁 Run tests coverage
+        shell: bash
+        run: pnpm -r test:coverage
+
+      # This ugly bit is necessary if you don't want your cache to grow forever
+      # till it hits GitHub's limit of 5GB.
+      # Temp fix
+      # https://github.com/docker/build-push-action/issues/252
+      # https://github.com/moby/buildkit/issues/1896
+      - name: 🚚 Delete cache
+        run: |
+          rm -rf build

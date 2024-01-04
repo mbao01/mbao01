@@ -1,66 +1,14 @@
 name: 🧑‍🚀 Deploy projects
+
 on:
   push:
     branches:
-      - main
-      - 'releases/**'
-  workflow_run:
-    workflows: ["👷 Build, 🩺 Tests and 🛀 Lint"]
-    types: 
-      - completed
+      - releases/*
 
 jobs:
-  cancel:
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🛑 Cancel previous runs
-        uses: styfle/cancel-workflow-action@0.12.0
-
-  preview:
-    name: 🤓 Preview deployment
-    if: ${{ github.ref != 'refs/heads/main' }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: ⬇️ Checkout repo
-        uses: actions/checkout@v3
-
-      - name: 📡 Setup
-        uses: ./.github/setup
-
-      - name: Install Vercel CLI
-        run: pnpm add -g vercel@latest
-
-      - name: Pull Vercel environment information
-        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
-
-      - name: Build project artifacts
-        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
-
-      - name: Deploy project artifacts to vercel
-        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+  build:
+    uses: ./.github/workflows/actions/build.yml
 
   deploy:
-    name: 🚀 Deploy
-    runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/main' && github.event.workflow_run.conclusion == 'success' }}
-    steps:
-      - run: echo 'The triggering workflow passed'
-
-      - name: ⬇️ Checkout repo
-        uses: actions/checkout@v3
-
-      - name: 📡 Setup
-        uses: ./.github/setup
-
-      - name: Install Vercel CLI
-        run: pnpm add -g vercel@latest
-
-      - name: Pull Vercel environment information
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
-
-      - name: Build project artifacts
-        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
-
-      - name: Deploy project artifacts to vercel
-        run: vercel deploy --token=${{ secrets.VERCEL_TOKEN }}
-
+    uses: ./.github/workflows/actions/deployment.yml
+    needs: [build]

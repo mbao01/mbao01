@@ -1,31 +1,19 @@
 name: 🫳 Release packages
+
 on:
   push:
     branches:
       - main
-  workflow_run:
-    workflows: ["🧑‍🚀 Deploy projects"]
-    types: 
-      - completed
+      - setup-release-scripts
 
 jobs:
-  cancel:
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🛑 Cancel previous runs
-        uses: styfle/cancel-workflow-action@0.12.0
+  build:
+    uses: ./.github/workflows/actions/build
 
+  deploy:
+    uses: ./.github/workflows/actions/deployment
+    needs: [build]
+  
   release:
-  # todo: only run this if it is coming from a release branch i.e releases/*
-    name: 📦 Release scripts
-    runs-on: ubuntu-latest
-    steps:
-      - name: ⬇️ Checkout repo
-        uses: actions/checkout@v3
-
-      - name: 📡 Setup
-        uses: ./.github/setup
-
-      - name: 👏 Run release script
-        run: pnpm release
-
+    uses: ./.github/workflows/actions/release
+    needs: [build, deploy]
