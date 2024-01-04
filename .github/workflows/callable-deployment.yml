@@ -3,6 +3,11 @@ name: Deploy
 on:
   workflow_call:
 
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  VERCEL_ACCESS_TOKEN: ${{ secrets.VERCEL_ACCESS_TOKEN }}
+
 jobs:
   preview:
     name: 🤓 Preview deployment
@@ -19,13 +24,13 @@ jobs:
         run: pnpm add -g vercel@latest
 
       - name: Pull Vercel environment information
-        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_ACCESS_TOKEN }}
+        run: vercel pull --yes --environment=preview --token="$VERCEL_ACCESS_TOKEN"
 
       - name: Build project artifacts
-        run: vercel build --token=${{ secrets.VERCEL_ACCESS_TOKEN }}
+        run: vercel build --token="$VERCEL_ACCESS_TOKEN"
 
       - name: Deploy project artifacts to vercel
-        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_ACCESS_TOKEN }}
+        run: vercel deploy --prebuilt --token="$VERCEL_ACCESS_TOKEN"
 
   deploy:
     name: 🚀 Deploy
@@ -44,11 +49,11 @@ jobs:
         run: pnpm add -g vercel@latest
 
       - name: Pull Vercel environment information
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_ACCESS_TOKEN }}
+        run: vercel pull --yes --environment=production --token="$VERCEL_ACCESS_TOKEN"
 
       - name: Build project artifacts
-        run: vercel build --token=${{ secrets.VERCEL_ACCESS_TOKEN }}
+        run: vercel build --token="$VERCEL_ACCESS_TOKEN"
 
       - name: Deploy project artifacts to vercel
-        run: vercel deploy --token=${{ secrets.VERCEL_ACCESS_TOKEN }}
+        run: vercel deploy --token="$VERCEL_ACCESS_TOKEN"
 
