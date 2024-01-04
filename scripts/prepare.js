@@ -9,7 +9,9 @@ import {
   actor,
   actorPromise,
   PROTECTED_BRANCHES,
+  secondary,
 } from "./_init.js";
+import { buildPRUrl } from "./_utils.js";
 
 /**
  *
@@ -141,14 +143,17 @@ import {
   );
 
   // 4c. push release branch to remote
-  const response = await actor(
+  const { repo } = await actor(
     git.push(["-u", REMOTE, releaseBranchName]),
     `Push ${primary(releaseBranchName)} branch to remote`
   );
 
-  console.log(response);
+  /* 5. hey! we are done now ✅ */
+  // 5a. create PR url for release branch
+  const prUrl = buildPRUrl(repo, releaseBranchName);
 
-  // 4d. create PR from release branch to main branch
+  // 5b. log final step instruction
+  logFinalSteps(releaseBranchName, MAIN_BRANCH, prUrl);
 })();
 
 // --- Local script
