@@ -2,16 +2,15 @@
  * This script is run before a release is created. It is used to prepare the project for release.
  */
 
+import { git, lerna } from "./_init.js";
 import {
-  git,
-  lerna,
   primary,
+  secondary,
   actor,
   actorPromise,
+  buildPRUrl,
   PROTECTED_BRANCHES,
-  secondary,
-} from "./_init.js";
-import { buildPRUrl } from "./_utils.js";
+} from "./_utils.js";
 
 /**
  *
@@ -137,10 +136,10 @@ import { buildPRUrl } from "./_utils.js";
   );
   const packageList = namedPackages.join("\n- ");
   const commitMsg = `chore(release): publish \n\n- ${packageList}`;
-  await actor(
-    git.commit(commitMsg, undefined, { "--no-verify": true }),
-    `Commit changelog and package bump on ${primary(releaseBranchName)} branch`
-  );
+  await git.commit(commitMsg, "./*", { "--no-verify": true });
+  // await actor(
+  //   `Commit changelog and package bump on ${primary(releaseBranchName)} branch`
+  // );
 
   // 4c. push release branch to remote
   const { repo } = await actor(
