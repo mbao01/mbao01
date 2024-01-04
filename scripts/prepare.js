@@ -9,6 +9,7 @@ import {
   actor,
   actorPromise,
   buildPRUrl,
+  logFinalSteps,
   PROTECTED_BRANCHES,
 } from "./_utils.js";
 
