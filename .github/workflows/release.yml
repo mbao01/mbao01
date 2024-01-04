@@ -1,0 +1,31 @@
+name: 🫳 Release packages
+on:
+  push:
+    branches:
+      - main
+  workflow_run:
+    workflows: ["🧑‍🚀 Deploy projects"]
+    types: 
+      - completed
+
+jobs:
+  cancel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑 Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.9.1
+
+  release:
+  # todo: only run this if it is coming from a release branch i.e releases/*
+    name: 📦 Release scripts
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 📡 Setup
+        uses: ./.github/setup
+
+      - name: 👏 Run release script
+        run: node ./scripts/release.js
+

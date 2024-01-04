@@ -1,0 +1,76 @@
+name: 👷 Build, 🩺 Tests and 🛀 Lint
+on: push
+
+jobs:
+  cancel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑 Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.9.1
+
+  lint:
+    name: ⬣ Linting
+    runs-on: ubuntu-latest
+    needs: [cancel]
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 📡 Setup
+        uses: ./.github/setup
+
+      - name: 🔬 Lint
+        shell: bash
+        run: pnpm lint
+
+  build:
+    name: 🐳 Build projects
+    runs-on: ubuntu-latest
+    needs: [cancel, lint]
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 📡 Setup
+        uses: ./.github/setup
+
+      # Setup cache
+      - name: ⚡️ Cache build
+        uses: actions/cache@v2
+        with:
+          path: build
+          key: ${{ runner.os }}-build-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-build
+
+      - name: 🏗️ Build projects
+        shell: bash
+        run: pnpm build
+
+  test:
+    name: 🧪 Unit tests
+    runs-on: ubuntu-latest
+    needs: [cancel]
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 📡 Setup
+        uses: ./.github/setup
+
+      - name: 🏃‍♂️ Run tests
+        shell: bash
+        run: pnpm test
+
+      - name: 🏁 Run tests coverage
+        shell: bash
+        run: pnpm test:coverage
+
+      # This ugly bit is necessary if you don't want your cache to grow forever
+      # till it hits GitHub's limit of 5GB.
+      # Temp fix
+      # https://github.com/docker/build-push-action/issues/252
+      # https://github.com/moby/buildkit/issues/1896
+      - name: 🚚 Delete cache
+        run: |
+          rm -rf build
