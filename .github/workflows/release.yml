@@ -7,13 +7,23 @@ on:
       - setup-release-scripts
 
 jobs:
+  cancel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑 Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.12.0
+
   build:
-    uses: ./.github/workflows/actions/build
+    name: Build
+    uses: ./.github/workflows/callable-build.yml
+    needs: [cancel]
 
   deploy:
-    uses: ./.github/workflows/actions/deployment
-    needs: [build]
+    name: Deploy
+    uses: ./.github/workflows/callable-deployment.yml
+    needs: [cancel, build]
   
   release:
-    uses: ./.github/workflows/actions/release
-    needs: [build, deploy]
+    name: Release
+    uses: ./.github/workflows/callable-release.yml
+    needs: [cancel, build, deploy]

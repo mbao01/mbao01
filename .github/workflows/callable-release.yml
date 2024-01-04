@@ -4,12 +4,6 @@ on:
   workflow_call:
 
 jobs:
-  cancel:
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🛑 Cancel previous runs
-        uses: styfle/cancel-workflow-action@0.12.0
-
   release:
     # todo: only run this if it is coming from a release branch i.e releases/*
     name: 📦 Release scripts

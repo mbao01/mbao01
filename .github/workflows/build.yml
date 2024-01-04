@@ -7,5 +7,12 @@ on:
       - releases/*
 
 jobs:
+  cancel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑 Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.12.0
+
   build:
-    uses: ./.github/workflows/actions/build.yml
+    uses: ./.github/workflows/callable-build.yml
+    needs: [cancel]
