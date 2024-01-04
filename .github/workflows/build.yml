@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel previous runs
-        uses: styfle/cancel-workflow-action@0.9.1
+        uses: styfle/cancel-workflow-action@0.12.0
 
   lint:
     name: ⬣ Linting
@@ -36,7 +36,8 @@ jobs:
 
       # Setup cache
       - name: ⚡️ Cache build
-        uses: actions/cache@v2
+        uses: actions/cache@v3
+        id: cache
         with:
           path: build
           key: ${{ runner.os }}-build-${{ github.sha }}
