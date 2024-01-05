@@ -37,7 +37,9 @@ import { primary, actorPromise, convertToNestedArrays } from "./_utils.js";
     .map((arr) => arr.join(" v"))
     .join(", ");
   await actorPromise(
-    $({ stdio: "inherit" })`gh pr create --title "Releases ${title}"`,
+    $({
+      stdio: "inherit",
+    })`gh pr create --fill --title ${`Releases ${title}`} --label ${"release"}`,
     `Create pull request for ${primary(branch.current)} branch`
   );
 })();
