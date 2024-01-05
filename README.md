@@ -17,6 +17,10 @@ Here are some ideas to get you started:
 
 ---
 
+
+[![release](https://github.com/mbao01/mbao01/actions/workflows/release.yml/badge.svg?branch=main&event=push)](https://github.com/mbao01/mbao01/actions/workflows/release.yml)
+[![deployment](https://github.com/mbao01/mbao01/actions/workflows/deployment.yml/badge.svg?branch=main)](https://github.com/mbao01/mbao01/actions/workflows/deployment.yml)
+[![build](https://github.com/mbao01/mbao01/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/mbao01/mbao01/actions/workflows/build.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 This workspace is managed by [pnpm](https://pnpm.io/cli/run) and [Lerna](https://lerna.js.org/). It follows the [semantic versioning](https://semver.org/) using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) - all orchestrated by lerna.
