@@ -1,7 +1,7 @@
 /**
  * This script is run before a release is created. It is used to prepare the project for release.
  */
-import { git, lerna } from "./_init.js";
+import { git, lerna, enforceCleanWorkingDirectory } from "./_init.js";
 import {
   log,
   info,
@@ -25,13 +25,7 @@ import {
   // 0. ensure the working directory is clean. this is a safety measure to ensure
   // you don't accidentally commit untracked files or uncommitted changes
   await actor(
-    git.status({ "--porcelain": true }).then((r) => {
-      if (!r.isClean())
-        throw new Error(
-          "Untracked files or uncommitted changes detected. Please clean/stash your working directory."
-        );
-      return r;
-    }),
+    enforceCleanWorkingDirectory(),
     "Ensure there are no untracked files or uncommitted changes"
   );
 

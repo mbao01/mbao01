@@ -102,14 +102,14 @@ export const promptSemverBump = async () => {
     output: process.stdout,
   });
 
-  let answer = await rl.question(
+  const answer = await rl.question(
     `Type in a semver bump (defaults to ${primary(
       "patch"
     )})?\nCan only be one of ${SEMVER_BUMPS.map((bump) => primary(bump)).join(
       " | "
     )}: `
   );
-  const semverBump = answer.trim().toLowerCase();
+  let semverBump = answer.trim().toLowerCase();
   if (!SEMVER_BUMPS.includes(semverBump)) semverBump = "patch";
   rl.close();
   log(`${info("Semver Bump:")} ${primary(semverBump)}\n`);

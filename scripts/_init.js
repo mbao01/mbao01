@@ -18,3 +18,16 @@ await actorPromise(
   git.clean(CleanOptions.DRY_RUN),
   "Setup git in clean workspace"
 );
+
+/**
+ * ensure there are no untracked files or uncommitted changes in working directory
+ * @returns Promise<SimpleGit>
+ */
+export const enforceCleanWorkingDirectory = async () =>
+  git.status({ "--porcelain": true }).then((r) => {
+    if (!r.isClean())
+      throw new Error(
+        "Untracked files or uncommitted changes detected. Please clean/stash your working directory."
+      );
+    return r;
+  });
