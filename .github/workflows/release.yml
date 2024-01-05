@@ -1,9 +1,11 @@
 name: 🫳 Release packages
 
 on:
-  push:
+  pull_request:
     branches:
       - main
+    types:
+      - closed
 
 jobs:
   cancel:
@@ -14,19 +16,12 @@ jobs:
 
   build:
     name: Build
+    if: github.event.pull_request.merged == true
     uses: ./.github/workflows/callable-build.yml
     needs: [cancel]
 
-  deploy:
-    name: Deploy
-    uses: ./.github/workflows/callable-deployment.yml
-    needs: [cancel, build]
-    secrets:
-      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-  
   release:
     name: Release
+    if: github.event.pull_request.merged == true
     uses: ./.github/workflows/callable-release.yml
-    needs: [cancel, build, deploy]
+    needs: [cancel, build]
