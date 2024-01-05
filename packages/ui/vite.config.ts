@@ -14,11 +14,20 @@ export default defineConfig({
     rollupOptions: {
       external: ["react", "react-dom", "tailwindcss", "typescript"],
       output: {
-        globals: {
-          react: "React",
-        },
+        globals: { react: "React" },
       },
     },
   },
-  plugins: [dts({ insertTypesEntry: true }), react()],
+  plugins: [
+    dts({
+      outDir: "dist/types",
+      entryRoot: "src",
+      copyDtsFiles: false,
+      strictOutput: true,
+      insertTypesEntry: true,
+      declarationOnly: true,
+      exclude: ["**/*.(test|stories).{js,ts,jsx,tsx,mdx}", "node_modules/**"],
+    }),
+    react(),
+  ],
 });
