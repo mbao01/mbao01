@@ -68,26 +68,38 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
       .then(({ stdout }) => JSON.parse(stdout)),
     "Changed packages since last tagged release"
   );
+  const packageTags = changedPackages.map(
+    ({ name, version }) => `${name}@v${version}`
+  );
 
   // 3b. create annotated tags for each changed package
   await Promise.all(
-    changedPackages.map(({ name, version }) => {
-      const tagName = `${name}@v${version}`;
-
-      return actor(
-        git.addAnnotatedTag(tagName, `${COMMIT_MSGS.TAG} ${tagName}`),
-        `Create ${tagName} annotated tag for ${name} package`
-      );
-    })
+    packageTags.map((packageTag) =>
+      actor(
+        git.addAnnotatedTag(packageTag, `${COMMIT_MSGS.TAG} ${packageTag}`),
+        `Create ${packageTag} annotated tag`
+      )
+    )
   );
 
-  // 3c. publish changed packages to npm and create release on github
+  // 3c. publish changed packages to npm
   await actor(
-    lerna.publish(["from-package"], {
-      "--amend": true,
-      "--create-release": "github",
-    }),
-    "Publish packages to npm and create release on github"
+    lerna.publish(["from-package"], { "--amend": true }),
+    "Publish packages to npm registry"
+  );
+
+  // 3d. push annotated tags and commits to remote
+  await actor(
+    git.push({ "--follow-tags": true }),
+    "Push annotated tags and commits to remote"
+  );
+
+  // 3e. create release on github
+  await actor(
+    $({
+      stdio: "inherit",
+    })`gh release create ${packageTags[0]} --generate-notes`,
+    `Create release on github`
   );
 
   /* 4. hey! we are done now 🚀 */

@@ -30,8 +30,9 @@ import { actorPromise, primary } from "./_utils.js";
   );
 
   /* 2. now we create pr */
+  const title = branch.current.replace("releases/", "").split("/").join(", ");
   await actorPromise(
-    $({ stdio: "inherit" })`gh pr create`,
+    $({ stdio: "inherit" })`gh pr create --title "Releases ${title}"`,
     `Create pull request for ${primary(branch.current)} branch`
   );
 })();
