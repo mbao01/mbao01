@@ -2,6 +2,11 @@ name: Release
 
 on:
   workflow_call:
+    secrets:
+      GH_TOKEN:
+        required: true
+      NPM_TOKEN:
+        required: true
 
 jobs:
   cancel:
