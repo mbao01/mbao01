@@ -8,6 +8,13 @@ export const DIR_NAME = path.join(path.dirname(__filename), "..");
 
 export const PROTECTED_BRANCHES = [/^main$/gi, /^(releases)\/.+$/gi];
 
+export const COMMIT_MSGS = {
+  BASE: "chore(release):", // release commit message prefix
+  RELEASE: "chore(release): prepare", // commit message to prepare release (temporary name, indicates release is pending)
+  PUBLISH: "chore(release): publish", // commit message to publish release (indicates release is published)
+  TAG: "chore(release): tagged", // commit message to tag release (only used with annotated tags)
+};
+
 /* color output functions */
 export const info = chalk.blue;
 export const error = chalk.bold.red;

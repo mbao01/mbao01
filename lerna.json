@@ -4,7 +4,12 @@
   "npmClient": "pnpm",
   "command": {
     "version": {
-      "allowBranch": ["releases/*"]
+      "allowBranch": ["releases/**"],
+      "message": "chore(release): prepare %s"
+    },
+    "publish": {
+      "allowBranch": ["main"],
+      "message": "chore(release): publish %s"
     }
   }
 }

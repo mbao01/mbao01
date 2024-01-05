@@ -10,6 +10,7 @@ import {
   actorPromise,
   buildPRUrl,
   logFinalSteps,
+  COMMIT_MSGS,
   PROTECTED_BRANCHES,
 } from "./_utils.js";
 
@@ -89,7 +90,7 @@ import {
   const commits = await git.log({ maxCount: 1 });
   await actor(
     new Promise((resolve, reject) => {
-      if (commits?.latest?.message?.startsWith("chore(release): publish"))
+      if (commits?.latest?.message?.startsWith(COMMIT_MSGS.BASE))
         return reject(
           new Error(
             `Cannot proceed to create a version because there are no new commits from the last release (${primary(
@@ -149,7 +150,7 @@ import {
     `Add all files to ${primary(releaseBranchName)} branch`
   );
   const packageList = namedPackages.join("\n- ");
-  const commitMsg = `chore(release): publish \n\n- ${packageList}`;
+  const commitMsg = `${COMMIT_MSGS.RELEASE} \n\n- ${packageList}`;
   await actor(
     git.env("HUSKY", "0").commit(commitMsg),
     `Commit changelog and package bump on ${primary(releaseBranchName)} branch`
