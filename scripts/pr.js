@@ -55,7 +55,7 @@ import {
   )
     .map((arr) => arr.join(" v"))
     .join(", ");
-  const prBody = `Releases ${parentPr.url}\n\n<details><summary>Details</summary><p>${parentPrBody}</p></details>`;
+  const prBody = `Releases ${parentPr.url}\n\n<details><summary>Details</summary><p>\n\n${parentPrBody}\n\n</p></details>`;
 
   // 2c. create pr
   await actorPromise(
