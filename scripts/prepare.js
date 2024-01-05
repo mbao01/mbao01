@@ -4,12 +4,15 @@
 
 import { git, lerna } from "./_init.js";
 import {
+  log,
+  info,
+  success,
+  warning,
   primary,
   secondary,
   actor,
   actorPromise,
   buildPRUrl,
-  logFinalSteps,
   COMMIT_MSGS,
   PROTECTED_BRANCHES,
 } from "./_utils.js";
@@ -167,7 +170,16 @@ import {
   const prUrl = buildPRUrl(repo, releaseBranchName);
 
   // 5b. log final step instruction
-  logFinalSteps(releaseBranchName, MAIN_BRANCH, prUrl);
+  log(
+    `\n${secondary.underline(
+      "Final step"
+    )} 🥁: Create a pull request from ${primary(
+      releaseBranchName
+    )} to ${primary(MAIN_BRANCH)} branch \n`
+  );
+  log(`1. Manually - by visiting ${success.bold(prUrl)}\n`);
+  log(`${info.bold("OR")}\n`);
+  log(`2. Automatically - by running ${warning.bold("pnpm release:pr")}\n`);
 })();
 
 // --- Local script
