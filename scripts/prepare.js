@@ -1,7 +1,6 @@
 /**
  * This script is run before a release is created. It is used to prepare the project for release.
  */
-
 import { git, lerna } from "./_init.js";
 import {
   log,
@@ -13,6 +12,7 @@ import {
   actor,
   actorPromise,
   buildPRUrl,
+  promptSemverBump,
   COMMIT_MSGS,
   PROTECTED_BRANCHES,
 } from "./_utils.js";
@@ -21,6 +21,7 @@ import {
  *
  */
 (async function () {
+  const semverBump = await promptSemverBump();
   // 0. ensure the working directory is clean. this is a safety measure to ensure
   // you don't accidentally commit untracked files or uncommitted changes
   await actor(
@@ -114,7 +115,7 @@ import {
   // 3a. version changed packages using `lerna version` without tagging or committing.
   // creating the actual release (and tagging) will be done in CI after the release PR is merged
   await actorPromise(
-    lerna.version(undefined, {
+    lerna.version([semverBump], {
       "--yes": true,
       "--json": true,
       "--no-push": true,

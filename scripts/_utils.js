@@ -2,11 +2,22 @@ import path from "path";
 import chalk from "chalk";
 import ora, { oraPromise } from "ora";
 import { fileURLToPath } from "url";
+import readline from "node:readline/promises";
 
 const __filename = fileURLToPath(import.meta.url);
 export const DIR_NAME = path.join(path.dirname(__filename), "..");
 
 export const PROTECTED_BRANCHES = [/^main$/gi, /^(releases)\/.+$/gi];
+
+const SEMVER_BUMPS = [
+  "major",
+  "minor",
+  "patch",
+  "premajor",
+  "preminor",
+  "prepatch",
+  "prerelease",
+];
 
 export const COMMIT_MSGS = {
   BASE: "chore(release):", // release commit message prefix
@@ -79,4 +90,29 @@ export const buildPRUrl = (repo, branchName) => {
   const project = repo.split(":")[1].replace(".git", "");
   const url = `https://github.com/${project}/pull/new/${branchName}`;
   return url;
+};
+
+/**
+ * prompts user for semver bump
+ * @returns {"major" | "minor" | "patch" | "premajor" | "preminor" | "prepatch" | "prerelease"}
+ */
+export const promptSemverBump = async () => {
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+
+  let answer = await rl.question(
+    `Type in a semver bump (defaults to ${primary(
+      "patch"
+    )})?\nCan only be one of ${SEMVER_BUMPS.map((bump) => primary(bump)).join(
+      " | "
+    )}: `
+  );
+  const semverBump = answer.trim().toLowerCase();
+  if (!SEMVER_BUMPS.includes(semverBump)) semverBump = "patch";
+  rl.close();
+  log(`${info("Semver Bump:")} ${primary(semverBump)}\n`);
+
+  return semverBump;
 };
