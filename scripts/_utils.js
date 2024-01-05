@@ -74,7 +74,10 @@ export const actorPromise = async (promise, text) => {
     stream: process.stdout,
   }).start();
   return await promise
-    .then(() => notify.succeed(`${text} ${success(" - done")}`))
+    .then((res) => {
+      notify.succeed(`${text} ${success(" - done")}`);
+      return res;
+    })
     .catch((err) => {
       notify.fail(`${text} ${error("-")} ${error.bgWhite("failed")}`);
       trap(err);

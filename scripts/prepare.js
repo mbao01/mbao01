@@ -176,30 +176,3 @@ import {
   log(`${info.bold("OR")}\n`);
   log(`2. Automatically - by running ${warning.bold("pnpm release:pr")}\n`);
 })();
-
-// --- Local script
-// 1. pull target remote branch (main)
-// 2. pull all remote tags
-// 3. rebase source branch with `main`
-// [] - ensure project checks and pipeline succeed against `main` before versioning
-// 4. version current project using `lerna version` without committing
-// 5. update CHANGELOG.md
-// 6. commit change with `vM.m.p commit message`
-// [] - ensure cannot add new commits on top of `vM.m.p` commit for the same branch. Basically `vM.m.p` on a branch basically means the branch is closed to modification.
-// [] - in case of modification, warn the user and present 3 options. this will be presented on every commit after the `vM.m.p` commit A. tagged commit will become the latest commit and you'd be able to edit it before pushing i.e - remove tag locally, - uncommit commit, - allow editing commit i.e change log, tag latest commit with same or editable message, force push tag to remote if previous tag commit is same as master, otherwise fail stating that there is a version conflict B. cancel action.
-// 7. push changes to remote
-// 8. create pull request to `main` with a checkbox to allow auto release e.g - [x] Automatically release after merging
-// [] - ensure that the release associated with the source branch is not less than (or before) the latest release on `main` following semvar rules.
-// 9. After PR is reviewed, approved and merged
-
-// --- Github actions
-// If *Automatically release after merging* is checked then 10 to 14 is automated, otherwise proceed manually to 10.
-
-// 10. Create PR from `main` to `release` branch
-// 11. PR description should include version number and PR that adds the code.
-// 12. After merging `master` into `release` branch, **run github action to tag and publish release**
-
-// --Github actions
-// [] - ensure project checks and pipeline succeed
-// 13. tag latest commit on `main` with annotation
-// 14. build and publish `release` branch to npm

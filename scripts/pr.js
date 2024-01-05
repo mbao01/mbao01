@@ -1,6 +1,11 @@
 import { $ } from "execa";
 import { git } from "./_init.js";
-import { primary, actorPromise, convertToNestedArrays } from "./_utils.js";
+import {
+  primary,
+  actor,
+  actorPromise,
+  convertToNestedArrays,
+} from "./_utils.js";
 
 /**
  * Steps:
@@ -30,22 +35,33 @@ import { primary, actorPromise, convertToNestedArrays } from "./_utils.js";
   );
 
   /* 2. now we create pr */
-  ("@mbao01/ui@v0.0.2");
-  const title = convertToNestedArrays(
+  // 2a. get parent branch name (it is expected that the parent branch owns the previous second commit in this release branch)
+  const parentBranchName = (await git.log({ maxCount: 2 })).all[1]?.refs
+    .split(", ")[0]
+    ?.replaceAll("origin/", "");
+  const parentPr = await actor(
+    $({
+      stdio: "pipe",
+    })`gh pr view ${parentBranchName} --json ${"url,title,body"}`.then(
+      ({ stdout }) => JSON.parse(stdout)
+    ),
+    `Retrieve details for parent PR (${primary(parentBranchName)} branch)`
+  );
+  const parentPrBody = parentPr.body.replaceAll("\\n", "<br />");
+
+  // 2b. prepare pr title and body
+  const prTitle = convertToNestedArrays(
     branch.current.replace("releases/", "").split("@v")
   )
     .map((arr) => arr.join(" v"))
     .join(", ");
+  const prBody = `Releases ${parentPr.url}\n\n<details><summary>Details</summary><p>${parentPrBody}</p></details>`;
+
+  // 2c. create pr
   await actorPromise(
     $({
       stdio: "inherit",
-    })`gh pr create --fill --title ${`Releases ${title}`} --label ${"release"}`,
+    })`gh pr create --fill --title ${`Releases ${prTitle}`} --label ${"release"} --body ${prBody}`,
     `Create pull request for ${primary(branch.current)} branch`
   );
 })();
-
-// 3. If you're not already in the directory for the project which you want to open
-// a pull request for, `cd` there now and check with `git status` that all of your
-// changes are committed in your branch.
-
-// 4. Run the command `gh pr create` and watch the magic unfold in front of your :eyes: !
