@@ -116,3 +116,17 @@ export const promptSemverBump = async () => {
 
   return semverBump;
 };
+
+
+/**
+ * converts an array to nested arrays with element pairs
+ * @param {string[]} data
+ * @returns
+ */
+export const convertToNestedArrays = (data)=> {
+  const nestedArrays = [];
+  for (let i = 0; i < data.length; i += 2) {
+      nestedArrays.push(data.slice(i, i + 2));
+  }
+  return nestedArrays;
+}

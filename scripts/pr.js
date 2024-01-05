@@ -1,6 +1,6 @@
 import { $ } from "execa";
 import { git } from "./_init.js";
-import { actorPromise, primary } from "./_utils.js";
+import { primary, actorPromise, convertToNestedArrays } from "./_utils.js";
 
 /**
  * Steps:
@@ -30,7 +30,12 @@ import { actorPromise, primary } from "./_utils.js";
   );
 
   /* 2. now we create pr */
-  const title = branch.current.replace("releases/", "").split("/").join(", ");
+  ("@mbao01/ui@v0.0.2");
+  const title = convertToNestedArrays(
+    branch.current.replace("releases/", "").split("@v")
+  )
+    .map((arr) => arr.join(" v"))
+    .join(", ");
   await actorPromise(
     $({ stdio: "inherit" })`gh pr create --title "Releases ${title}"`,
     `Create pull request for ${primary(branch.current)} branch`
