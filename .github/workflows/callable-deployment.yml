@@ -11,17 +11,10 @@ on:
         required: true
 
 jobs:
-  cancel:
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🛑 Cancel previous runs
-        uses: styfle/cancel-workflow-action@0.12.0
-
   preview:
     name: 🤓 Preview deployment
     if: ${{ github.ref != 'refs/heads/main' }}
     runs-on: ubuntu-latest
-    needs: [cancel]
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
@@ -43,7 +36,6 @@ jobs:
 
   deploy:
     name: 🚀 Deploy
-    needs: [cancel]
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/main' }}
     steps:
