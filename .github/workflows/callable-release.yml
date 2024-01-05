@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  workflow_call:
+    secrets:
+      GH_TOKEN:
+        required: true
+      NPM_TOKEN:
+        required: true
+
+jobs:
+  release:
+    # todo: only run this if it is coming from a release branch i.e releases/*
+    name: 📦 Release scripts
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 📡 Setup
+        uses: ./.github/setup
+
+      - name: 👏 Run release script
+        run: pnpm release
+

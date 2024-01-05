@@ -1,7 +1,7 @@
 {
   "name": "@mbao01/ui",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "author": "Ayomide Bakare",
   "license": "MIT",
@@ -13,12 +13,12 @@
     "library"
   ],
   "main": "./src/index.ts",
-  "types": "./dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "files": [
+    "src",
     "plugin.js",
     "plugin.d.ts",
-    "src/**/*.ts",
-    "dist/**/*.d.ts"
+    "dist/types"
   ],
   "sideEffects": false,
   "scripts": {

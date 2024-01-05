@@ -4,7 +4,7 @@ import { render, screen } from "@testing-library/react";
 
 describe("Text", () => {
   it.each([
-    ["a button", <button>🐠 pet me</button>],
+    ["a button", <button key="button">🐠 pet me</button>],
     ["copy text", "🐶 puppy"],
   ])("default behavior is to allow any content (e.g %s)", (_, content) => {
     const { asFragment } = render(<Text>{content}</Text>);
@@ -72,7 +72,11 @@ describe("Text", () => {
     "neutral",
   ] as const)("has %s variant", (variant) => {
     const content = `${variant} text`;
-    const { asFragment } = render(<Text variant={variant}>{content}</Text>);
+    const { asFragment } = render(
+      <Text key={variant} variant={variant}>
+        {content}
+      </Text>
+    );
 
     expect(screen.getByText(content)).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();

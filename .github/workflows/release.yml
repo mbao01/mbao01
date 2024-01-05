@@ -1,0 +1,30 @@
+name: 🫳 Release packages
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+
+jobs:
+  cancel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑 Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.12.0
+
+  build:
+    name: Build
+    if: github.event.pull_request.merged == true
+    uses: ./.github/workflows/callable-build.yml
+    needs: [cancel]
+
+  release:
+    name: Release
+    if: github.event.pull_request.merged == true
+    uses: ./.github/workflows/callable-release.yml
+    needs: [cancel, build]
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
