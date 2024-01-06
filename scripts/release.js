@@ -26,6 +26,18 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
     "Ensure there are no untracked files or uncommitted changes"
   );
 
+  // 1c. set git user email
+  await actor(
+    git.raw(["config", "user.email", process.env.EMAIL]),
+    "Set repo github email"
+  );
+
+  // 1d. set git user name
+  await actor(
+    git.raw(["config", "user.name", process.env.NAME]),
+    "Set repo github name"
+  );
+
   /* 2. retrieve all commit logs from the latest tagged release */
   // 2a. get all tags
   const tags = await actor(git.tags(), "Get all tags");
