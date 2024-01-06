@@ -13,6 +13,9 @@ jobs:
     # todo: only run this if it is coming from a release branch i.e releases/*
     name: 📦 Release scripts
     runs-on: ubuntu-latest
+    env:
+      EMAIL: ${{ vars.EMAIL }}
+      NAME: ${{ vars.NAME }}
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
