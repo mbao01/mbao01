@@ -1,6 +1,4 @@
 
----
-
 So here it is, I have gotten really bored creating UI component from scratch for the many projects I work on.
 It is high time I have a unified component library - so here it is.
 I have built this to be highly opinionated on certain libraries I love to use like typescript, tailwind, date-fns, and react.
