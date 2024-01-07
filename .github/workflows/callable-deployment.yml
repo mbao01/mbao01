@@ -20,7 +20,7 @@ jobs:
       PREVIEW_URL: ${{ steps.deploy.outputs.PREVIEW_URL }}
     steps:
       - name: ⬇️ Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: 📡 Setup
         uses: ./.github/setup
@@ -49,7 +49,7 @@ jobs:
       - run: echo 'The triggering workflow passed'
 
       - name: ⬇️ Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: 📡 Setup
         uses: ./.github/setup
