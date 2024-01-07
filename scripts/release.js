@@ -59,6 +59,9 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
     "Retrieve logs from most recent tag to HEAD"
   );
 
+  console.log("Tags", tags);
+  console.log("logs", logs);
+
   /* 2c. check if there is a release pending since the last tagged release */
   // if there is no release pending, throw an error which ends the process
   await actor(
