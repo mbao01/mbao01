@@ -42,9 +42,6 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
   // tags from remote
   await actor(git.fetch(), "Fetch all branches and tags from remote");
 
-  // 1f. checkout to master branch as this could be a PR with merge comment head
-  await actor(git.checkout(MAIN_BRANCH), "Checkout to local main branch");
-
   /* 2. retrieve all commit logs from the latest tagged release */
   // 2a. get all tags
   const tags = await actor(git.tags(), "Get all tags");
@@ -66,8 +63,10 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
   // if there is no release pending, throw an error which ends the process
   await actor(
     new Promise((resolve, reject) => {
-      const pendingRelease = logs.all.some((log) =>
-        log.message.includes(COMMIT_MSGS.RELEASE)
+      const pendingRelease = logs.all.some(
+        (log) =>
+          log.message.includes(COMMIT_MSGS.RELEASE) ||
+          log.body.includes(COMMIT_MSGS.RELEASE)
       );
       if (pendingRelease) {
         resolve();
