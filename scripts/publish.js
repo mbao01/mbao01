@@ -75,7 +75,7 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
   await actor(
     $({
       stdio: "inherit",
-    })`gh release create ${packageTags[0]} --generate-notes`,
+    })`gh release create ${tagName} --generate-notes`,
     `Create release on github`
   );
 
