@@ -2,7 +2,8 @@ import { git, lerna, enforceCleanWorkingDirectory } from "./_init.js";
 import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
 
 /**
- *
+ * this creates a release by creating annotated tags for each changed package and
+ * pushes to remote. the tag is then picked up by github actions and published/released
  */
 (async function () {
   const MAIN_BRANCH = "main"; // TODO: main branch name is hardcoded here
