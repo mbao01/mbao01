@@ -25,4 +25,4 @@ jobs:
     uses: ./.github/workflows/callable-release.yml
     needs: [build]
     secrets:
-      CONTENT_PAT: ${{ secrets.CONTENT_PAT }}
+      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
