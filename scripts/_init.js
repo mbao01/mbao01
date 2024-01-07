@@ -31,3 +31,12 @@ export const enforceCleanWorkingDirectory = async () =>
       );
     return r;
   });
+
+/**
+ * remove all untracked files or uncommitted changes in working directory
+ * @returns Promise<SimpleGit>
+ */
+export const cleanWorkingDirectory = async () => {
+  await git.raw(["reset", "--hard", "HEAD"]);
+  await git.clean([CleanOptions.FORCE, CleanOptions.RECURSIVE]);
+}

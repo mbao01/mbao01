@@ -1,4 +1,9 @@
-import { git, lerna, enforceCleanWorkingDirectory } from "./_init.js";
+import {
+  git,
+  lerna,
+  cleanWorkingDirectory,
+  enforceCleanWorkingDirectory,
+} from "./_init.js";
 import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
 
 /**
@@ -10,6 +15,7 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
   /* 1. first some chores */
   // 1a. ensure the working directory is clean. this is a safety measure to ensure
   // you don't accidentally commit untracked files or uncommitted changes
+  await actor(cleanWorkingDirectory(), "Clean working directory");
   await actor(
     enforceCleanWorkingDirectory(),
     "Ensure there are no untracked files or uncommitted changes"
