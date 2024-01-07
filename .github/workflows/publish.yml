@@ -57,12 +57,13 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
 
       - name: 👏 Run release script
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: pnpm release:publish
+        run: |
+          pnpm release:publish
 
   deploy:
     name: Deploy
