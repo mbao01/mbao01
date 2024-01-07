@@ -8,13 +8,8 @@ import {
 } from "./_utils.js";
 
 /**
- * Steps:
- *
- * 1. ensure you have github cli installed (see https://github.com/cli/cli#installation)
- * 2a. run `gh auth login` to authenticate the GitHub CLI with your GitHub account, OR
- * 2b. set GITHUB_TOKEN environment variable in your shell
+ * creates a pull request for a release branch
  */
-
 (async function () {
   /* 1. we begin by doing some chores */
   // 1a. all further tasks must be performed from the root git directory

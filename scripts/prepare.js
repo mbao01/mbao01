@@ -18,7 +18,7 @@ import {
 } from "./_utils.js";
 
 /**
- *
+ * prepares a feature branch for release by creating a release branch
  */
 (async function () {
   const semverBump = await promptSemverBump();

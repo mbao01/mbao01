@@ -8,7 +8,7 @@ import {
 import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
 
 /**
- *
+ * this publishes packages to npm and creates a release on github
  */
 (async function () {
   const MAIN_BRANCH = "main"; // TODO: main branch name is hardcoded here
