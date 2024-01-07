@@ -20,4 +20,3 @@ jobs:
 
       - name: 👏 Run release script
         run: pnpm release:create
-
