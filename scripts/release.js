@@ -42,6 +42,12 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
   // tags from remote
   await actor(git.fetch(), "Fetch all branches and tags from remote");
 
+  // 1f. checkout to remote branch
+  await actor(
+    git.checkout(`origin/${MAIN_BRANCH}`),
+    `Checkout to remote ${MAIN_BRANCH} branch`
+  );
+
   /* 2. retrieve all commit logs from the latest tagged release */
   // 2a. get all tags
   const tags = await actor(git.tags(), "Get all tags");
@@ -56,6 +62,9 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
     "Retrieve logs from most recent tag to HEAD"
   );
 
+  const branch = await git.branch();
+
+  console.log("Branch", branch);
   console.log("Tags", tags);
   console.log("logs", logs);
 
