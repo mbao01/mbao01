@@ -9,6 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lerna": "lerna",
     "prepare": "husky install",
+    "release": "pnpm release:prepare && pnpm release:pr",
     "release:pr": "node scripts/pr",
     "release:create": "node scripts/release",
     "release:prepare": "node scripts/prepare",
@@ -17,6 +18,11 @@
   "keywords": [],
   "author": "Ayomide Bakare <poke@ayomidebakare.site> (https://x.com/mbao_01)",
   "license": "ISC",
+  "bugs": "https://github.com/mbao01/mbao01/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbao01/mbao01.git"
+  },
   "devDependencies": {
     "chalk": "^5.3.0",
     "commitizen": "^4.3.0",

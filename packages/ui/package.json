@@ -1,7 +1,7 @@
 {
   "name": "@mbao01/ui",
   "private": false,
-  "version": "0.0.8",
+  "version": "0.0.9",
   "type": "module",
   "author": "Ayomide Bakare",
   "license": "MIT",
@@ -20,6 +20,12 @@
     "plugin.d.ts",
     "dist/types"
   ],
+  "bugs": "https://github.com/mbao01/mbao01/issues",
+  "homepage": "https://ui.ayomidebakare.site",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbao01/mbao01.git"
+  },
   "sideEffects": false,
   "scripts": {
     "dev": "storybook dev -p 6006",
