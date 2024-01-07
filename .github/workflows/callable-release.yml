@@ -2,6 +2,9 @@ name: Release
 
 on:
   workflow_call:
+    secrets:
+      CONTENT_PAT:
+        required: true
 
 jobs:
   release:
