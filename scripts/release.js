@@ -40,7 +40,10 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
 
   // 1e. keep local branches in up to date with remote, fetch all branches and
   // tags from remote
-  await actor(git.fetch(), "Fetch all branches and tags from remote");
+  await actor(
+    git.fetch({ "--unshallow": true }),
+    "Fetch all branches and tags from remote"
+  );
 
   /* 2. retrieve all commit logs from the latest tagged release */
   // 2a. get all tags
@@ -93,9 +96,9 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
   await actor(
     git.addAnnotatedTag(
       tagName,
-      `${COMMIT_MSGS.TAG} \n\n- ${packageTag.join("\n- ")}`
+      `${COMMIT_MSGS.TAG} \n\n- ${packageTags.join("\n- ")}`
     ),
-    `Create ${packageTag} annotated tag`
+    `Create ${primary(tagName)} annotated tag`
   );
 
   // 3d. push annotated tags and commits to remote
