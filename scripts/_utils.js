@@ -21,8 +21,7 @@ const SEMVER_BUMPS = [
 
 export const COMMIT_MSGS = {
   BASE: "chore(release):", // release commit message prefix
-  RELEASE: "chore(release): prepare", // commit message to prepare release (temporary name, indicates release is pending)
-  PUBLISH: "chore(release): publish", // commit message to publish release (indicates release is published)
+  RELEASE: "chore(release): prepare", // commit message to publish release (indicates release is that is pending if not already published)
   TAG: "chore(release): tagged", // commit message to tag release (only used with annotated tags)
 };
 
