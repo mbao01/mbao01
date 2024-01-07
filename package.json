@@ -9,6 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lerna": "lerna",
     "prepare": "husky install",
+    "release": "pnpm release:prepare && pnpm release:pr",
     "release:pr": "node scripts/pr",
     "release:create": "node scripts/release",
     "release:prepare": "node scripts/prepare",
