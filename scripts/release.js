@@ -42,6 +42,9 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
   // tags from remote
   await actor(git.fetch(), "Fetch all branches and tags from remote");
 
+  // 1f. checkout to master branch as this could be a PR with merge comment head
+  await actor(git.checkout(MAIN_BRANCH), "Checkout to local main branch");
+
   /* 2. retrieve all commit logs from the latest tagged release */
   // 2a. get all tags
   const tags = await actor(git.tags(), "Get all tags");
@@ -93,9 +96,9 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
   await actor(
     git.addAnnotatedTag(
       tagName,
-      `${COMMIT_MSGS.TAG} \n\n- ${packageTag.join("\n- ")}`
+      `${COMMIT_MSGS.TAG} \n\n- ${packageTags.join("\n- ")}`
     ),
-    `Create ${packageTag} annotated tag`
+    `Create ${primary(tagName)} annotated tag`
   );
 
   // 3d. push annotated tags and commits to remote
