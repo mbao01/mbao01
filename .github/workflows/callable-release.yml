@@ -3,7 +3,7 @@ name: Release
 on:
   workflow_call:
     secrets:
-      CONTENT_PAT:
+      SSH_PRIVATE_KEY:
         required: true
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.CONTENT_PAT }}
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: 📡 Setup
         uses: ./.github/setup
