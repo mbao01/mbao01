@@ -9,6 +9,7 @@ on:
 
 jobs:
   cancel:
+    if: startsWith(github.head_ref, 'releases/') && github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel previous runs
@@ -16,15 +17,10 @@ jobs:
 
   build:
     name: Build
-    if: github.event.pull_request.merged == true
     uses: ./.github/workflows/callable-build.yml
     needs: [cancel]
 
   release:
     name: Release
-    if: github.event.pull_request.merged == true
     uses: ./.github/workflows/callable-release.yml
-    needs: [cancel, build]
-    secrets:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    needs: [build]

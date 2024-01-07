@@ -38,6 +38,10 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
     "Set repo github name"
   );
 
+  // 1e. keep local branches in up to date with remote, fetch all branches and
+  // tags from remote
+  await actor(git.fetch(), "Fetch all branches and tags from remote");
+
   /* 2. retrieve all commit logs from the latest tagged release */
   // 2a. get all tags
   const tags = await actor(git.tags(), "Get all tags");

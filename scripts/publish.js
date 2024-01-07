@@ -27,6 +27,10 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
     "Set repo github name"
   );
 
+  // 1d. keep local branches in up to date with remote, fetch all branches and
+  // tags from remote
+  await actor(git.fetch(), "Fetch all branches and tags from remote");
+
   /* 2. retrieve and check tag */
   // 2a. get current tag name
   const tagName = (
@@ -53,7 +57,10 @@ import { log, actor, primary, success, COMMIT_MSGS } from "./_utils.js";
   /* 3. publish and release */
   // 3a. publish changed packages to npm
   await actor(
-    lerna.publish(["from-package"], { "--amend": true }),
+    lerna.publish(["from-package"], {
+      "--yes": true,
+      "--amend": true,
+    }),
     "Publish packages to npm registry"
   );
 
