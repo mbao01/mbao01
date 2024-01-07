@@ -24,3 +24,5 @@ jobs:
     name: Release
     uses: ./.github/workflows/callable-release.yml
     needs: [build]
+    secrets:
+      CONTENT_PAT: ${{ secrets.CONTENT_PAT }}
