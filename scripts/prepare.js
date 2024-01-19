@@ -80,7 +80,7 @@ import {
   // 2d. rebase with main branch to ensure current branch is in sync
   // i.e up to date and with no merge conflicts
   await actor(
-    git.rebase([MAIN_BRANCH]),
+    git.rebase([`${REMOTE}/${MAIN_BRANCH}`]),
     `Rebase current branch with ${MAIN_BRANCH}`
   );
 
