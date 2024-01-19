@@ -20,13 +20,13 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: 📡 Setup
+        uses: ./.github/setup
+
       - name: Install SSH Client 🔑
         uses: webfactory/ssh-agent@v0.8.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      - name: 📡 Setup
-        uses: ./.github/setup
 
       - name: 👏 Run release script
         run: pnpm release:create
