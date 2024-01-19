@@ -53,6 +53,13 @@ jobs:
       - name: 📡 Setup
         uses: ./.github/setup
 
+      - name: Restore build
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            **/*/dist
+          key: ${{ runner.os }}-build-${{ github.sha }}
+
       - name: 🟠 Set npm token and registry
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
