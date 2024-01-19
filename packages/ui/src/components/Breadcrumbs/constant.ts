@@ -8,7 +8,8 @@ export const getBreadcrumbs = (
     const path = `/${segments.slice(0, index + 1).join("/")}`;
     return {
       href: { pathname: path },
-      segment: labels?.[segment] || segment,
+      // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
+      segment: labels?.[segment] || segment, // always fallback to segment if label is falsy
     };
   });
 
