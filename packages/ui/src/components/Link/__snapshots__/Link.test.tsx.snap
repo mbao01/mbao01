@@ -1,0 +1,148 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Link > has accent variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover"
+    href="/variant/accent"
+  >
+    accent link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link > has default variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover"
+    href="/variant/default"
+  >
+    default link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link > has error variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover"
+    href="/variant/error"
+  >
+    error link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link > has info variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover"
+    href="/variant/info"
+  >
+    info link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link > has link variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover"
+    href="/variant/link"
+  >
+    link link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link > has neutral variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover"
+    href="/variant/neutral"
+  >
+    neutral link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link > has primary variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover"
+    href="/variant/primary"
+  >
+    primary link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link > has secondary variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover"
+    href="/variant/secondary"
+  >
+    secondary link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link > has success variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover"
+    href="/variant/success"
+  >
+    success link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link > has warning variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover"
+    href="/variant/warning"
+  >
+    warning link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link > renders a link with correct label 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all"
+    href="/home?hello=world#great"
+  >
+    Go Home 🏡
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link > renders an external link 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all"
+    href="https://example.com"
+  >
+    Google.com
+    <svg
+      aria-hidden="true"
+      class="ml-[2px] inline h-4 w-4 align-middle"
+      data-slot="icon"
+      fill="currentColor"
+      name="external"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </a>
+</DocumentFragment>
+`;
