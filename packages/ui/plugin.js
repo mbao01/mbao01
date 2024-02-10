@@ -1,10 +1,3 @@
-const plugin = require("tailwindcss/plugin");
-const config = require("./tailwind.config");
+const daisyui = require("daisyui");
 
-const { theme, plugins, daisyui } = config;
-
-module.exports = plugin(() => null, {
-  theme,
-  plugins,
-  daisyui,
-});
+module.exports = daisyui;
