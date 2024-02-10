@@ -30,13 +30,14 @@ npm install @mbao01/ui
 3. Configure tailwind
 
 ```typescript
-const plugin = require("@mbao01/ui/plugin") // -> import the library plugin
-
 export default {
-  ...plugin.config, // -> add the library plugin config
   content: [
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
-    "node_modules/@mbao01/ui/src/**/*.{js,ts,jsx,tsx,mdx}" // -> ensure to add this to allow tailwind to scan the library for classes
+    "node_modules/@mbao01/ui/src/**/*", // -> ensure to add this to allow tailwind to scan the library for classes
+    ...
+  ],
+  "plugins": [
+    require("@mbao01/ui/plugin"), // -> import the library plugin
+    ...
   ]
 }
 ```
