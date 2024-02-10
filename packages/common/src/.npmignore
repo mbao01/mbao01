@@ -1,0 +1,6 @@
+**/*.test.*
+**/__snapshots__
+**/*.stories.*
+
+stylesheets/tailwind.css
+vite-env.d.ts

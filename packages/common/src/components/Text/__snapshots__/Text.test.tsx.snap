@@ -1,0 +1,263 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Text > can be a flow content element e.g (Heading 1) 1`] = `
+<DocumentFragment>
+  <h1
+    class=""
+  >
+    Heading 1
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Text > can be a flow content element e.g (Heading 2) 1`] = `
+<DocumentFragment>
+  <h2
+    class=""
+  >
+    Heading 2
+  </h2>
+</DocumentFragment>
+`;
+
+exports[`Text > can be a flow content element e.g (Heading 3) 1`] = `
+<DocumentFragment>
+  <h3
+    class=""
+  >
+    Heading 3
+  </h3>
+</DocumentFragment>
+`;
+
+exports[`Text > can be a flow content element e.g (Heading 4) 1`] = `
+<DocumentFragment>
+  <h4
+    class=""
+  >
+    Heading 4
+  </h4>
+</DocumentFragment>
+`;
+
+exports[`Text > can be a flow content element e.g (Heading 5) 1`] = `
+<DocumentFragment>
+  <h5
+    class=""
+  >
+    Heading 5
+  </h5>
+</DocumentFragment>
+`;
+
+exports[`Text > can be a flow content element e.g (Paragraph) 1`] = `
+<DocumentFragment>
+  <p
+    class=""
+  >
+    Paragraph
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Text > can be a flow content element e.g (Span) 1`] = `
+<DocumentFragment>
+  <span
+    class=""
+  >
+    Span
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > default behavior is to allow any content (e.g a button) 1`] = `
+<DocumentFragment>
+  <span
+    class=""
+  >
+    <button>
+      🐠 pet me
+    </button>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > default behavior is to allow any content (e.g copy text) 1`] = `
+<DocumentFragment>
+  <span
+    class=""
+  >
+    🐶 puppy
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has accent variant 1`] = `
+<DocumentFragment>
+  <span
+    class="text-accent"
+  >
+    accent text
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has base (base) size 1`] = `
+<DocumentFragment>
+  <span
+    class="text-base"
+  >
+    base
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has double extra large (2xl) size 1`] = `
+<DocumentFragment>
+  <span
+    class="text-2xl"
+  >
+    double extra large
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has error variant 1`] = `
+<DocumentFragment>
+  <span
+    class="text-error"
+  >
+    error text
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has extra large (xl) size 1`] = `
+<DocumentFragment>
+  <span
+    class="text-xl"
+  >
+    extra large
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has info variant 1`] = `
+<DocumentFragment>
+  <span
+    class="text-info"
+  >
+    info text
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has large (lg) size 1`] = `
+<DocumentFragment>
+  <span
+    class="text-lg"
+  >
+    large
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has neutral variant 1`] = `
+<DocumentFragment>
+  <span
+    class="text-neutral"
+  >
+    neutral text
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has primary variant 1`] = `
+<DocumentFragment>
+  <span
+    class="text-primary"
+  >
+    primary text
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has quad extra large (4xl) size 1`] = `
+<DocumentFragment>
+  <span
+    class="text-4xl"
+  >
+    quad extra large
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has quint extra large (5xl) size 1`] = `
+<DocumentFragment>
+  <span
+    class="text-5xl"
+  >
+    quint extra large
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has secondary variant 1`] = `
+<DocumentFragment>
+  <span
+    class="text-secondary"
+  >
+    secondary text
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has small (sm) size 1`] = `
+<DocumentFragment>
+  <span
+    class="text-sm"
+  >
+    small
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has success variant 1`] = `
+<DocumentFragment>
+  <span
+    class="text-success"
+  >
+    success text
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has tiny (xs) size 1`] = `
+<DocumentFragment>
+  <span
+    class="text-xs"
+  >
+    tiny
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has triple extra large (3xl) size 1`] = `
+<DocumentFragment>
+  <span
+    class="text-3xl"
+  >
+    triple extra large
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Text > has warning variant 1`] = `
+<DocumentFragment>
+  <span
+    class="text-warning"
+  >
+    warning text
+  </span>
+</DocumentFragment>
+`;
