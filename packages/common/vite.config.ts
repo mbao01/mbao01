@@ -9,10 +9,10 @@ export default defineConfig({
     sourcemap: true,
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
-      name: "ui",
+      name: "common",
     },
     rollupOptions: {
-      external: ["react", "react-dom", "tailwindcss", "typescript"],
+      external: ["react", "react-dom", "tailwindcss", "typescript", /\.css$/],
       output: {
         globals: { react: "React" },
       },

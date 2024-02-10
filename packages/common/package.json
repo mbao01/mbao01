@@ -23,7 +23,6 @@
     "tailwind.config.ts",
     "tsconfig.node.json",
     "tsconfig.shared.json",
-    "vite.config.ts",
     "vitest-setup.ts",
     "vitest.config.ts"
   ],
