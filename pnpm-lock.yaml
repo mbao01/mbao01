@@ -304,6 +304,9 @@ importers:
 
   packages/ui:
     dependencies:
+      '@mbao01/common':
+        specifier: workspace:^
+        version: link:../common
       autoprefixer:
         specifier: ^10.4.17
         version: 10.4.17(postcss@8.4.35)
