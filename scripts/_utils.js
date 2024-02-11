@@ -9,7 +9,7 @@ export const DIR_NAME = path.join(path.dirname(__filename), "..");
 
 export const PROTECTED_BRANCHES = [/^main$/gi, /^(releases)\/.+$/gi];
 
-export const PACKAGE_NAME_SEPARATOR = "/.";
+export const PACKAGE_NAME_SEPARATOR = "––";
 
 const SEMVER_BUMPS = [
   "major",
