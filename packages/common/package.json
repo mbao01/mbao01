@@ -14,12 +14,12 @@
     "library"
   ],
   "main": "./src/index.ts",
+  "types": "dist/types/index.d.ts",
   "files": [
     "src",
+    "dist/types",
     "plugin.js",
     "plugin.d.ts",
-    ".eslintrc.cjs",
-    "postcss.config.js",
     "tsconfig.node.json",
     "tsconfig.shared.json",
     "vitest-setup.ts",
