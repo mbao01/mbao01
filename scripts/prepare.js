@@ -15,6 +15,7 @@ import {
   promptSemverBump,
   COMMIT_MSGS,
   PROTECTED_BRANCHES,
+  PACKAGE_NAME_SEPARATOR,
 } from "./_utils.js";
 
 /**
@@ -134,7 +135,8 @@ import {
   const namedPackages = packages.map(
     ({ name, version }) => `${name}@v${version}`
   );
-  const releaseBranchName = "releases/" + namedPackages.join(":");
+  const releaseBranchName =
+    "releases/" + namedPackages.join(PACKAGE_NAME_SEPARATOR);
   await actor(
     git.checkoutLocalBranch(releaseBranchName),
     `Create release branch (${primary(releaseBranchName)}) from ${

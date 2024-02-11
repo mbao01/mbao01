@@ -30,7 +30,7 @@
     "cz-conventional-changelog": "^3.3.0",
     "execa": "^8.0.1",
     "husky": "^8.0.3",
-    "lerna": "^8.0.1",
+    "lerna": "^8.1.2",
     "ora": "^8.0.1",
     "simple-git": "^3.22.0"
   }

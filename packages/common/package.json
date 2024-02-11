@@ -1,7 +1,7 @@
 {
   "name": "@mbao01/common",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "author": "Ayomide Bakare",
   "license": "MIT",
@@ -14,13 +14,12 @@
     "library"
   ],
   "main": "./src/index.ts",
+  "types": "dist/types/index.d.ts",
   "files": [
     "src",
+    "dist/types",
     "plugin.js",
     "plugin.d.ts",
-    ".eslintrc.cjs",
-    "postcss.config.js",
-    "tailwind.config.ts",
     "tsconfig.node.json",
     "tsconfig.shared.json",
     "vitest-setup.ts",
@@ -28,6 +27,8 @@
   ],
   "exports": {
     "./plugin": "./plugin.js",
+    "./vitest/setup": "./vitest-setup.ts",
+    "./vitest/config": "./vitest.config.ts",
     "./styles": "./src/stylesheets/index.css"
   },
   "bugs": "https://github.com/mbao01/mbao01/issues",
