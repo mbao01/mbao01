@@ -1,0 +1,5 @@
+**/*.test.*
+**/__snapshots__
+**/*.stories.*
+
+tailwind.css
