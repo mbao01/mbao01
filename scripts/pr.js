@@ -5,6 +5,7 @@ import {
   actor,
   actorPromise,
   convertToNestedArrays,
+  PACKAGE_NAME_SEPARATOR,
 } from "./_utils.js";
 
 /**
@@ -46,7 +47,10 @@ import {
 
   // 2b. prepare pr title and body
   const prTitle = convertToNestedArrays(
-    branch.current.replace("releases/", "").split("@v")
+    branch.current
+      .replace("releases/", "")
+      .replaceAll(PACKAGE_NAME_SEPARATOR, "")
+      .split("@v")
   )
     .map((arr) => arr.join(" v"))
     .join(", ");
