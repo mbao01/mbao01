@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/react";
-import "../src/stylesheets/tailwind.css"; // replace with the name of your tailwind css file
+import "../src/stylesheets/index.css"; // replace with the name of your tailwind css file
 
 import { withThemeByDataAttribute } from "@storybook/addon-themes";
 

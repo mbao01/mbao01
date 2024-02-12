@@ -1,27 +1,5 @@
 {
   "extends": "./node_modules/@mbao01/common/tsconfig.shared.json",
-  "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "types": ["vitest/globals", "@testing-library/jest-dom"]
-  },
-  "include": ["src", "vitest-setup.ts", "plugin.d.ts", "*.config.ts"],
+  "include": ["src", "vitest-setup.ts", "*.config.ts"],
   "references": [{ "path": "./node_modules/@mbao01/common/tsconfig.node.json" }]
 }

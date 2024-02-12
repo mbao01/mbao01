@@ -1,1 +1,1 @@
-export * from "./components/Badge";
+export * from "@mbao01/common";
