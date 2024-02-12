@@ -32,11 +32,11 @@ npm install @mbao01/ui
 ```typescript
 export default {
   content: [
-    "node_modules/@mbao01/ui/src/**/*", // -> ensure to add this to allow tailwind to scan the library for classes
+    "node_modules/@mbao01/(common|ui)/src/**/*", // -> ensure to add this to allow tailwind to scan the library for classes
     ...
   ],
   "plugins": [
-    require("@mbao01/ui/plugin"), // -> import the library plugin
+    require("@mbao01/common/plugin"), // -> import the tailwind library plugin
     ...
   ]
 }
