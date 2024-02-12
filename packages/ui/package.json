@@ -31,6 +31,7 @@
     "dev": "storybook dev -p 6006",
     "build": "tsc && vite build",
     "build-storybook": "storybook build",
+    "postbuild-storybook": "mv storybook-static ../common/storybook-static/ui",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest run",

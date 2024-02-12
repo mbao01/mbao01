@@ -3,7 +3,7 @@ So here it is, I have gotten really bored creating UI component from scratch for
 It is high time I have a unified component library - so here it is.
 I have built this to be highly opinionated on certain libraries I love to use like typescript, tailwind, date-fns, and react.
 
-I believe in future this UI component library may extend to meta frameworks like [Next.js](https://nextjs.org/), [Remix](https://remix.run/) and even [Nuxt](https://nuxt.com/) (and naturally [Vue.js](https://vuejs.org/) as well).
+I believe in future this UI component library may extend to meta frameworks like [Remix](https://remix.run/) and even [Nuxt](https://nuxt.com/) (and naturally [Vue.js](https://vuejs.org/) as well).
 
 
 # Description

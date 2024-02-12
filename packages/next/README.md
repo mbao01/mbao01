@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+So here it is, I have gotten really bored creating UI component from scratch for the many projects I work on.
+It is high time I have a unified component library - so here it is.
+I have built this to be highly opinionated on certain libraries I love to use like typescript, tailwind, date-fns, next, and react.
 
-First, run the development server:
+I believe in future this UI component library may extend to meta frameworks, [Remix](https://remix.run/) and even [Nuxt](https://nuxt.com/) (and naturally [Vue.js](https://vuejs.org/) as well).
+
+
+# Description
+
+The library is written using [Next.js](https://nextjs.org/), [Tailwind](https://tailwindcss.com/) and [Typescript](https://www.typescriptlang.org/). The library is uncooked which means there is no build step involved which means you'd have to cater for building the components into your library.
+
+# Consuming the library
+
+1. Ensure you have react and typescript install and setup in your project.
+Then install the library
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm add @mbao01/next
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install @mbao01/next
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Install tailwind - do so by following the [installation guide](https://tailwindcss.com/docs/installation)
 
-## Learn More
+3. Configure tailwind
 
-To learn more about Next.js, take a look at the following resources:
+```typescript
+export default {
+  content: [
+    "node_modules/@mbao01/(common|next)/src/**/*", // -> ensure to add this to allow tailwind to scan the library for classes
+    ...
+  ],
+  "plugins": [
+    require("@mbao01/common/plugin"), // -> import the tailwind library plugin
+    ...
+  ]
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You can also import styles directly from `@mbao01/common/styles`. Use this in-place of `tailwind.css` if you wish.
