@@ -31,7 +31,7 @@
     "dev": "storybook dev -p 6006",
     "build": "tsc && vite build",
     "build-storybook": "storybook build -o ../../docs/storybook/ui",
-    "postbuild-storybook": "cp -R ../../docs/storybook/ui/ ../../docs/storybook/ && rm -rf ../../docs/storybook/ui/",
+    "postbuild-storybook": "cp -R ../../docs/storybook/ui/* ../../docs/storybook/ && rm -rf ../../docs/storybook/ui",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest run",
