@@ -13,6 +13,18 @@
     "common",
     "library"
   ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./src/index.ts"
+      }
+    },
+    "./plugin": "./plugin.js",
+    "./vitest/setup": "./vitest-setup.ts",
+    "./vitest/config": "./vitest.config.ts",
+    "./styles": "./src/stylesheets/index.css"
+  },
   "main": "./src/index.ts",
   "types": "dist/types/index.d.ts",
   "files": [
@@ -25,12 +37,6 @@
     "vitest-setup.ts",
     "vitest.config.ts"
   ],
-  "exports": {
-    "./plugin": "./plugin.js",
-    "./vitest/setup": "./vitest-setup.ts",
-    "./vitest/config": "./vitest.config.ts",
-    "./styles": "./src/stylesheets/index.css"
-  },
   "bugs": "https://github.com/mbao01/mbao01/issues",
   "homepage": "https://shared.ayomidebakare.site",
   "repository": {
