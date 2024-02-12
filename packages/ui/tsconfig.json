@@ -1,5 +1,5 @@
 {
   "extends": "./node_modules/@mbao01/common/tsconfig.shared.json",
-  "include": ["src", "vitest-setup.ts", "plugin.d.ts", "*.config.ts"],
+  "include": ["src", "vitest-setup.ts", "*.config.ts"],
   "references": [{ "path": "./node_modules/@mbao01/common/tsconfig.node.json" }]
 }

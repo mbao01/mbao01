@@ -38,6 +38,9 @@ importers:
 
   packages/common:
     dependencies:
+      '@heroicons/react':
+        specifier: ^2.1.1
+        version: 2.1.1(react@18.2.0)
       clsx:
         specifier: ^2.1.0
         version: 2.1.0
@@ -45,9 +48,6 @@ importers:
         specifier: ^4.6.2
         version: 4.6.2(postcss@8.4.35)
     devDependencies:
-      '@heroicons/react':
-        specifier: ^2.1.1
-        version: 2.1.1(react@18.2.0)
       '@storybook/addon-essentials':
         specifier: ^7.6.14
         version: 7.6.14(@types/react-dom@18.2.19)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)
@@ -165,19 +165,16 @@ importers:
 
   packages/next:
     dependencies:
+      '@heroicons/react':
+        specifier: ^2.1.1
+        version: 2.1.1(react@18.2.0)
       '@mbao01/common':
         specifier: workspace:^
         version: link:../common
       clsx:
         specifier: ^2.1.0
         version: 2.1.0
-      daisyui:
-        specifier: ^4.6.2
-        version: 4.6.2(postcss@8.4.35)
     devDependencies:
-      '@heroicons/react':
-        specifier: ^2.1.1
-        version: 2.1.1(react@18.2.0)
       '@storybook/addon-essentials':
         specifier: ^7.6.14
         version: 7.6.14(@types/react-dom@18.2.19)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)
@@ -304,6 +301,9 @@ importers:
 
   packages/ui:
     dependencies:
+      '@heroicons/react':
+        specifier: ^2.1.1
+        version: 2.1.1(react@18.2.0)
       '@mbao01/common':
         specifier: workspace:^
         version: link:../common
@@ -311,9 +311,6 @@ importers:
         specifier: ^2.1.0
         version: 2.1.0
     devDependencies:
-      '@heroicons/react':
-        specifier: ^2.1.1
-        version: 2.1.1(react@18.2.0)
       '@storybook/addon-essentials':
         specifier: ^7.6.14
         version: 7.6.14(@types/react-dom@18.2.19)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)
@@ -2403,7 +2400,7 @@ packages:
       react: '>= 16'
     dependencies:
       react: 18.2.0
-    dev: true
+    dev: false
 
   /@humanwhocodes/config-array@0.11.14:
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -10735,7 +10732,6 @@ packages:
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
-    dev: true
 
   /js-yaml@3.14.1:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
@@ -11264,7 +11260,6 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
-    dev: true
 
   /loupe@2.3.7:
     resolution: {integrity: sha512-zSMINGVYkdpYSOBmLi0D1Uo7JU9nVdQKrHxC8eYlV+9YKK9WePqAlL7lSlorG/U2Fw1w0hTBmaa/jrQ3UbPHtA==}
@@ -13460,7 +13455,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: true
 
   /read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
