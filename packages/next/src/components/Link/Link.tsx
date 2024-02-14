@@ -4,7 +4,7 @@ import { getLinkClasses } from "./constant";
 import { type LinkProps } from "./types";
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
-export const Link = ({
+export const Link = <T,>({
   href,
   hover,
   target,
@@ -12,7 +12,7 @@ export const Link = ({
   children,
   className,
   ...props
-}: LinkProps) => {
+}: LinkProps<T>) => {
   return (
     <NextLink
       {...props}

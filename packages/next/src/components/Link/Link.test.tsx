@@ -6,7 +6,7 @@ import { MemoryRouter, MemoryRouterProps } from "react-router-dom";
 
 describe("Link", () => {
   const renderLink = (
-    props: LinkProps,
+    props: LinkProps<string>,
     memoryRouterProps?: MemoryRouterProps
   ) => {
     return render(
@@ -60,7 +60,7 @@ describe("Link", () => {
     const { asFragment } = renderLink({
       hover: true,
       children: label,
-      href: `/variant/${variant}`,
+      href: `/variant/${variant}` as LinkProps<string>["href"],
     });
 
     const anchorEl = screen.getByRole("link", { name: label });

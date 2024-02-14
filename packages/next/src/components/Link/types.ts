@@ -1,4 +1,4 @@
-import type { To, LinkProps as RouterLinkProps } from "react-router-dom";
+import type { LinkProps as NextLinkProps } from "next/link";
 
 export type LinkVariant =
   | "default"
@@ -12,8 +12,7 @@ export type LinkVariant =
   | "warning"
   | "error";
 
-export type LinkProps = Omit<RouterLinkProps, "to"> & {
-  href: To;
+export type LinkProps<T> = NextLinkProps<T> & {
   hover?: boolean;
   variant?: LinkVariant;
 };
