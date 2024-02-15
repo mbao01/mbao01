@@ -1,0 +1,92 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Breadcrumbs > renders empty list 1`] = `
+<DocumentFragment>
+  <div
+    class="breadcrumbs -ml-1 w-fit px-1 text-sm"
+  >
+    <ul />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs > renders root path 1`] = `
+<DocumentFragment>
+  <div
+    class="breadcrumbs -ml-1 w-fit px-1 text-sm"
+  >
+    <ul>
+      <li>
+        <a
+          class="link transition-all link-hover"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs > shows labeled paths 1`] = `
+<DocumentFragment>
+  <div
+    class="breadcrumbs -ml-1 w-fit px-1 text-sm"
+  >
+    <ul>
+      <li>
+        <a
+          class="link transition-all link-hover capitalize"
+          href="/profile"
+        >
+          My Profile
+        </a>
+      </li>
+      <li>
+        <a
+          class="link transition-all link-hover capitalize"
+          href="/profile/edit"
+        >
+          Edit Profile
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs > shows unlabeled paths 1`] = `
+<DocumentFragment>
+  <div
+    class="breadcrumbs -ml-1 w-fit px-1 text-sm"
+  >
+    <ul>
+      <li>
+        <a
+          class="link transition-all link-hover"
+          href="/"
+        >
+          dashboard
+        </a>
+      </li>
+      <li>
+        <a
+          class="link transition-all link-hover capitalize"
+          href="/profile"
+        >
+          profile
+        </a>
+      </li>
+      <li>
+        <a
+          class="link transition-all link-hover capitalize"
+          href="/profile/edit"
+        >
+          edit
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
