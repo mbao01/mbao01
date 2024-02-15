@@ -1,0 +1,19 @@
+{
+  "extends": "./node_modules/@mbao01/common/tsconfig.shared.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "noEmit": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist/types",
+    "jsx": "preserve"
+  },
+  "include": [".next/types/*.ts", "src/index.ts"],
+  "exclude": ["node_modules"]
+}
