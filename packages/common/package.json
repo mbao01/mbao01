@@ -38,7 +38,7 @@
     "vitest.config.ts"
   ],
   "bugs": "https://github.com/mbao01/mbao01/issues",
-  "homepage": "https://shared.ayomidebakare.site",
+  "homepage": "https://ui.ayomidebakare.site/common",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mbao01/mbao01.git"
