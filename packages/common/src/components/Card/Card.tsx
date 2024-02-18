@@ -32,33 +32,26 @@ const Card = ({
   />
 );
 
-const CardHeader = ({ className, ...props }: CardHeaderProps) => (
+Card.Header = ({ className, ...props }: CardHeaderProps) => (
   <h3 className={c("card-title", className)} {...props} />
 );
 
-const CardDescription = ({ className, ...props }: CardDescriptionProps) => (
+Card.Description = ({ className, ...props }: CardDescriptionProps) => (
   <p className={c("text-sm text-muted-foreground", className)} {...props} />
 );
 
-const CardContent = ({ className, ...props }: CardContentProps) => (
+Card.Content = ({ className, ...props }: CardContentProps) => (
   <div className={c("card-body p-6 pt-0", className)} {...props} />
 );
 
-const CardImage = ({ className, src, alt, ...props }: CardImageProps) => (
+Card.Image = ({ className, src, alt, ...props }: CardImageProps) => (
   <figure>
     <img className={className} src={src} alt={alt} {...props} />
   </figure>
 );
 
-const CardFooter = ({ className, ...props }: CardFooterProps) => (
+Card.Footer = ({ className, ...props }: CardFooterProps) => (
   <div className={c("card-actions", className)} {...props} />
 );
 
-export {
-  Card,
-  CardHeader,
-  CardFooter,
-  CardDescription,
-  CardContent,
-  CardImage,
-};
+export { Card };
