@@ -21,32 +21,32 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {
-    variant: 'default',
-    tip: 'This is a tooltip',
-    children: 'Hover on me',
+    variant: "default",
+    content: "This is a tooltip",
+    children: "Hover on me",
   },
 };
 
 export const PrimaryTooltip: Story = {
   args: {
-    variant: 'primary',
-    tip: 'Primary tooltip',
-    children: 'Hover on me',
+    variant: "primary",
+    content: "Primary tooltip",
+    children: "Hover on me",
   },
 };
 
 export const SuccessTooltip: Story = {
   args: {
-    variant: 'success',
-    tip: 'Success tooltip',
-    children: 'Hover on me',
+    variant: "success",
+    content: "Success tooltip",
+    children: "Hover on me",
   },
 };
 
 export const LeftTooltip: Story = {
   args: {
-    position: 'left',
-    tip: 'Tooltip positioned left',
-    children: 'Hover',
+    position: "left",
+    content: "Tooltip positioned left",
+    children: "Hover",
   },
 };

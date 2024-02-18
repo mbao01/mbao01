@@ -15,8 +15,8 @@ export type TooltipVariant =
   | 'warning'
   | 'error';
 
-export type TooltipProps = {
-  tip: string;
+export type TooltipProps = React.HTMLAttributes<HTMLDivElement> & {
+  content: string;
   children: ReactNode;
   variant?: TooltipVariant;
   position?: TooltipPosition;
