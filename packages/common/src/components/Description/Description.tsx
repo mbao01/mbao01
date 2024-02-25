@@ -9,7 +9,7 @@ const Description = (props: DescriptionProps) => {
   return <dl role="list" {...props} />;
 };
 
-Description.Term = (props: DescriptionTermProps) => {
+const DescriptionTerm = (props: DescriptionTermProps) => {
   return (
     <dt
       {...props}
@@ -19,8 +19,11 @@ Description.Term = (props: DescriptionTermProps) => {
   );
 };
 
-Description.Detail = (props: DescriptionDetailProps) => {
+const DescriptionDetail = (props: DescriptionDetailProps) => {
   return <dd {...props} className={c("text-base", props.className)} />;
 };
+
+Description.Term = DescriptionTerm;
+Description.Detail = DescriptionDetail;
 
 export { Description };
