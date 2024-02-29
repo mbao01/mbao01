@@ -1,0 +1,177 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Tooltip > content is positioned bottom 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-bottom"
+    data-tip="tooltip content bottom"
+  >
+    bottom tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > content is positioned left 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-left"
+    data-tip="tooltip content left"
+  >
+    left tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > content is positioned right 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-right"
+    data-tip="tooltip content right"
+  >
+    right tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > content is positioned top 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-top"
+    data-tip="tooltip content top"
+  >
+    top tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > has accent variant 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-accent"
+    data-tip="accent tooltip content"
+  >
+    accent tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > has default variant 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-default"
+    data-tip="default tooltip content"
+  >
+    default tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > has error variant 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-error"
+    data-tip="error tooltip content"
+  >
+    error tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > has ghost variant 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-ghost"
+    data-tip="ghost tooltip content"
+  >
+    ghost tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > has info variant 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-info"
+    data-tip="info tooltip content"
+  >
+    info tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > has link variant 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-link"
+    data-tip="link tooltip content"
+  >
+    link tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > has neutral variant 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-neutral"
+    data-tip="neutral tooltip content"
+  >
+    neutral tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > has primary variant 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-primary"
+    data-tip="primary tooltip content"
+  >
+    primary tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > has secondary variant 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-secondary"
+    data-tip="secondary tooltip content"
+  >
+    secondary tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > has success variant 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-success"
+    data-tip="success tooltip content"
+  >
+    success tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > has warning variant 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip tooltip-warning"
+    data-tip="warning tooltip content"
+  >
+    warning tooltip
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip > shows tooltip with content 1`] = `
+<DocumentFragment>
+  <div
+    class="tooltip"
+    data-tip="I am the tooltip's content"
+  >
+    Tooltip trigger
+  </div>
+</DocumentFragment>
+`;

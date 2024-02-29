@@ -1,0 +1,46 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Skeleton > renders a round skeleton 1`] = `
+<DocumentFragment>
+  <div
+    class="skeleton w-full h-4 rounded-full"
+    data-testid="skeleton"
+  />
+</DocumentFragment>
+`;
+
+exports[`Skeleton > renders a skeleton 1`] = `
+<DocumentFragment>
+  <div
+    class="skeleton w-full h-4 rounded-md"
+    data-testid="skeleton"
+  />
+</DocumentFragment>
+`;
+
+exports[`Skeleton > renders a square skeleton (2/sq) 1`] = `
+<DocumentFragment>
+  <div
+    class="skeleton w-2 h-2 rounded-full"
+    data-testid="skeleton"
+  />
+</DocumentFragment>
+`;
+
+exports[`Skeleton > renders a square skeleton (64/sq) 1`] = `
+<DocumentFragment>
+  <div
+    class="skeleton w-64 h-64 rounded-full"
+    data-testid="skeleton"
+  />
+</DocumentFragment>
+`;
+
+exports[`Skeleton > renders a square skeleton (full/sq) 1`] = `
+<DocumentFragment>
+  <div
+    class="skeleton w-full h-full rounded-full"
+    data-testid="skeleton"
+  />
+</DocumentFragment>
+`;

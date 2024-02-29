@@ -1,7 +1,7 @@
 import c from "clsx";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Card, CardContent, CardFooter, CardHeader, CardImage } from "./Card";
+import { Card } from "./Card";
 import { Button } from "../Button";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -22,14 +22,14 @@ type Story = StoryObj<typeof meta>;
 
 const Example = (
   <>
-    <CardContent>
-      <CardHeader>Nike Shoe!</CardHeader>
+    <Card.Content>
+      <Card.Header>Nike Shoe!</Card.Header>
       If a dog chews shoes whose shoes does he choose?
-      <CardFooter>
+      <Card.Footer>
         <Button name="hello" label="Buy Now" variant="secondary" />
-      </CardFooter>
-    </CardContent>
-    <CardImage src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" />
+      </Card.Footer>
+    </Card.Content>
+    <Card.Image src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" />
   </>
 );
 

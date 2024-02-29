@@ -1,0 +1,63 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Description > description list with a single term 1`] = `
+<DocumentFragment>
+  <dl
+    role="list"
+  >
+    <dt
+      class="mb-1 py-2 text-sm font-medium"
+      role="listitem"
+    >
+      Name
+    </dt>
+    <dd
+      class="text-base"
+    >
+      Evelyn Gilts
+    </dd>
+  </dl>
+</DocumentFragment>
+`;
+
+exports[`Description > description list with multiple terms 1`] = `
+<DocumentFragment>
+  <dl
+    role="list"
+  >
+    <dt
+      class="mb-1 py-2 text-sm font-medium"
+      role="listitem"
+    >
+      Name
+    </dt>
+    <dd
+      class="text-base"
+    >
+      Evelyn Gilts
+    </dd>
+    <dt
+      class="mb-1 py-2 text-sm font-medium"
+      role="listitem"
+    >
+      Age
+    </dt>
+    <dd
+      class="text-base"
+    >
+      23
+    </dd>
+    <dt
+      class="mb-1 py-2 text-sm font-medium"
+      role="listitem"
+    >
+      Profession
+    </dt>
+    <dd
+      class="text-base"
+    >
+      AI Specialist
+    </dd>
+  </dl>
+</DocumentFragment>
+`;

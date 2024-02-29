@@ -1,7 +1,7 @@
 {
   "name": "@mbao01/common",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "author": "Ayomide Bakare",
   "license": "MIT",
@@ -38,7 +38,7 @@
     "vitest.config.ts"
   ],
   "bugs": "https://github.com/mbao01/mbao01/issues",
-  "homepage": "https://ui.ayomidebakare.site/common",
+  "homepage": "https://ui.ayomidebakare.site/common/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mbao01/mbao01.git"

@@ -54,11 +54,10 @@ const CardFooter = ({ className, ...props }: CardFooterProps) => (
   <div className={c("card-actions", className)} {...props} />
 );
 
-export {
-  Card,
-  CardHeader,
-  CardFooter,
-  CardDescription,
-  CardContent,
-  CardImage,
-};
+Card.Header = CardHeader;
+Card.Content = CardContent;
+Card.Description = CardDescription;
+Card.Image = CardImage;
+Card.Footer = CardFooter;
+
+export { Card };

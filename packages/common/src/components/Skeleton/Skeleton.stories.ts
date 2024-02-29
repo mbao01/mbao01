@@ -1,19 +1,19 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from "@storybook/react";
 
-import { Tooltip } from './Tooltip';
+import { Skeleton } from "./Skeleton";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  component: Tooltip,
+  component: Skeleton,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
-    layout: 'centered',
+    layout: "centered",
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
-} satisfies Meta<typeof Tooltip>;
+} satisfies Meta<typeof Skeleton>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -21,32 +21,21 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {
-    variant: "default",
-    content: "This is a tooltip",
-    children: "Hover on me",
+    width: 32,
   },
 };
 
-export const PrimaryTooltip: Story = {
+export const RoundSkeleton: Story = {
   args: {
-    variant: "primary",
-    content: "Primary tooltip",
-    children: "Hover on me",
+    round: true,
+    width: 16,
+    height: 16,
   },
 };
 
-export const SuccessTooltip: Story = {
+export const LargeSkeleton: Story = {
   args: {
-    variant: "success",
-    content: "Success tooltip",
-    children: "Hover on me",
-  },
-};
-
-export const LeftTooltip: Story = {
-  args: {
-    position: "left",
-    content: "Tooltip positioned left",
-    children: "Hover",
+    width: 32,
+    height: 32,
   },
 };
