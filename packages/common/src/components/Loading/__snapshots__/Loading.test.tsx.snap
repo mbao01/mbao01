@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Loading > shows a tiny colored spinner 1`] = `
+<DocumentFragment>
+  <span
+    class="loading loading-spinner loading-primary loading-xs"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
