@@ -1,24 +1,15 @@
-import { type ReactNode } from 'react';
+import { type VariantProps } from "class-variance-authority";
+import { getTooltipArrowClasses, getTooltipContentClasses } from "./constants";
+import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 
-export type TooltipPosition = 'top' | 'bottom' | 'left' | 'right';
+export type TooltipArrowProps = React.HTMLAttributes<
+  React.ElementRef<typeof TooltipPrimitive.Arrow>
+> &
+  TooltipPrimitive.TooltipArrowProps &
+  VariantProps<typeof getTooltipArrowClasses>;
 
-export type TooltipVariant =
-  | 'default'
-  | 'neutral'
-  | 'primary'
-  | 'secondary'
-  | 'accent'
-  | 'ghost'
-  | 'link'
-  | 'info'
-  | 'success'
-  | 'warning'
-  | 'error';
-
-export type TooltipProps = React.HTMLAttributes<HTMLDivElement> & {
-  content: string;
-  children: ReactNode;
-  variant?: TooltipVariant;
-  position?: TooltipPosition;
-  className?: string;
-};
+export type TooltipContentProps = React.HTMLAttributes<
+  React.ElementRef<typeof TooltipPrimitive.Content>
+> &
+  TooltipPrimitive.TooltipContentProps &
+  VariantProps<typeof getTooltipContentClasses>;
