@@ -1,38 +1,40 @@
-import c from "clsx";
-import { Size } from "./types";
+import { cva } from "class-variance-authority";
 
-const WIDTH_SIZES = {
-  2: c("w-2"),
-  4: c("w-4"),
-  8: c("w-8"),
-  12: c("w-12"),
-  16: c("w-16"),
-  24: c("w-24"),
-  32: c("w-32"),
-  48: c("w-48"),
-  64: c("w-64"),
-  full: c("w-full"),
-} satisfies Record<Size, string>;
-
-const HEIGHT_SIZES = {
-  2: c("h-2"),
-  4: c("h-4"),
-  8: c("h-8"),
-  12: c("h-12"),
-  16: c("h-16"),
-  24: c("h-24"),
-  32: c("h-32"),
-  48: c("h-48"),
-  64: c("h-64"),
-  full: c("h-full"),
-} satisfies Record<Size, string>;
-
-export const getSkeletonSize = ({
-  width,
-  height,
-}: {
-  width?: Size;
-  height?: Size;
-}) => {
-  return c(WIDTH_SIZES[width!] ?? "w-full", HEIGHT_SIZES[height!] ?? "h-4");
-};
+export const getSkeletonClasses = cva("skeleton", {
+  variants: {
+    variant: { pulse: "animate-pulse" },
+    width: {
+      2: "w-2",
+      4: "w-4",
+      8: "w-8",
+      12: "w-12",
+      16: "w-16",
+      24: "w-24",
+      32: "w-32",
+      48: "w-48",
+      64: "w-64",
+      full: "w-full",
+    },
+    height: {
+      2: "h-2",
+      4: "h-4",
+      8: "h-8",
+      12: "h-12",
+      16: "h-16",
+      24: "h-24",
+      32: "h-32",
+      48: "h-48",
+      64: "h-64",
+      full: "h-full",
+    },
+    round: {
+      true: "rounded-full",
+      false: "rounded-md",
+    },
+  },
+  defaultVariants: {
+    width: "full",
+    height: 4,
+    round: false,
+  },
+});

@@ -1,5 +1,14 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`Skeleton > has a skeleton with pulse animation 1`] = `
+<DocumentFragment>
+  <div
+    class="skeleton animate-pulse w-full h-4 rounded-md"
+    data-testid="skeleton"
+  />
+</DocumentFragment>
+`;
+
 exports[`Skeleton > renders a round skeleton 1`] = `
 <DocumentFragment>
   <div
