@@ -1,31 +1,29 @@
-import c from "clsx";
-import type { BadgeSize, BadgeVariant } from "./types";
+import { cva } from "class-variance-authority";
 
-const BADGE_SIZE = {
-  xs: c("badge-xs"),
-  sm: c("badge-sm"),
-  md: c("badge-md"),
-  lg: c("badge-lg"),
-} satisfies Record<BadgeSize, string>;
-
-const BADGE_VARIANTS = {
-  accent: c("badge-accent"),
-  error: c("badge-error"),
-  ghost: c("badge-ghost"),
-  info: c("badge-info"),
-  neutral: c("badge-neutral"),
-  primary: c("badge-primary"),
-  secondary: c("badge-secondary"),
-  success: c("badge-success"),
-  warning: c("badge-warning"),
-} satisfies Record<BadgeVariant, string>;
-
-export const getBadgeClasses = ({
-  size,
-  variant,
-}: {
-  size?: BadgeSize;
-  variant?: BadgeVariant;
-}) => {
-  return c("badge", BADGE_VARIANTS[variant!], BADGE_SIZE[size!]);
-};
+export const getBadgeClasses = cva("badge", {
+  variants: {
+    variant: {
+      accent: "badge-accent",
+      error: "badge-error",
+      ghost: "badge-ghost",
+      info: "badge-info",
+      neutral: "badge-neutral",
+      primary: "badge-primary",
+      secondary: "badge-secondary",
+      success: "badge-success",
+      warning: "badge-warning",
+    },
+    outline: {
+      true: "badge-outline",
+    },
+    size: {
+      xs: "badge-xs",
+      sm: "badge-sm",
+      md: "badge-md",
+      lg: "badge-lg",
+    },
+  },
+  defaultVariants: {
+    variant: "ghost",
+  },
+});

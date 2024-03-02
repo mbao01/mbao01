@@ -1,28 +1,18 @@
-import c from "clsx";
+import { cn } from "../../helpers";
 import { getBadgeClasses } from "./constants";
 import { type BadgeProps } from "./types";
 
 export const Badge = ({
   size,
   outline,
-  variant = "ghost",
-  children,
+  variant,
   className,
   ...props
 }: BadgeProps) => {
   return (
     <span
+      className={cn(getBadgeClasses({ size, variant, outline }), className)}
       {...props}
-      className={c(
-        getBadgeClasses({ size, variant }),
-        {
-          "badge-outline": outline,
-          "text-base-200": !["ghost", "neutral"].includes(variant),
-        },
-        className
-      )}
-    >
-      {children}
-    </span>
+    />
   );
 };

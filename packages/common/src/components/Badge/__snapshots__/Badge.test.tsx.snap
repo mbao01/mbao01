@@ -3,7 +3,7 @@
 exports[`Badge > has accent variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-accent text-base-200"
+    class="badge badge-accent"
   >
     accent badge
   </span>
@@ -13,7 +13,7 @@ exports[`Badge > has accent variant 1`] = `
 exports[`Badge > has error variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-error text-base-200"
+    class="badge badge-error"
   >
     error badge
   </span>
@@ -33,7 +33,7 @@ exports[`Badge > has ghost variant 1`] = `
 exports[`Badge > has info variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-info text-base-200"
+    class="badge badge-info"
   >
     info badge
   </span>
@@ -93,7 +93,7 @@ exports[`Badge > has outline 1`] = `
 exports[`Badge > has primary variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-primary text-base-200"
+    class="badge badge-primary"
   >
     primary badge
   </span>
@@ -103,7 +103,7 @@ exports[`Badge > has primary variant 1`] = `
 exports[`Badge > has secondary variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-secondary text-base-200"
+    class="badge badge-secondary"
   >
     secondary badge
   </span>
@@ -123,7 +123,7 @@ exports[`Badge > has small (sm) size 1`] = `
 exports[`Badge > has success variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-success text-base-200"
+    class="badge badge-success"
   >
     success badge
   </span>
@@ -143,7 +143,7 @@ exports[`Badge > has tiny (xs) size 1`] = `
 exports[`Badge > has warning variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-warning text-base-200"
+    class="badge badge-warning"
   >
     warning badge
   </span>
