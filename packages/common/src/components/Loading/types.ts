@@ -1,4 +1,4 @@
-import { type VariantProps } from "class-variance-authority";
+import { type VariantProps } from "../../helpers";
 import { getLoadingClasses } from "./constants";
 
 export type LoadingProps = React.HTMLAttributes<HTMLSpanElement> &

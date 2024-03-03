@@ -1,4 +1,4 @@
-import { cva } from "class-variance-authority";
+import { cva } from "../../helpers";
 
 export const getLoadingClasses = cva("loading", {
   variants: {

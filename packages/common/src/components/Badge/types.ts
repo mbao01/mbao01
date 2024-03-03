@@ -1,4 +1,4 @@
-import { type VariantProps } from "class-variance-authority";
+import { type VariantProps } from "../../helpers";
 import { getBadgeClasses } from "./constants";
 
 export type BadgeProps = React.HTMLAttributes<HTMLSpanElement> &

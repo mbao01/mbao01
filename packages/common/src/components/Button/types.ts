@@ -1,4 +1,4 @@
-import { type VariantProps } from "class-variance-authority";
+import { type VariantProps } from "../../helpers";
 import { type ButtonHTMLAttributes } from "react";
 import { getButtonClasses } from "./constants";
 
