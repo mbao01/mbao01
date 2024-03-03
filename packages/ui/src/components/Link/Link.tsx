@@ -1,6 +1,6 @@
 import { Link as RouterLink } from "react-router-dom";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
-import { cn } from "@mbao01/common/helpers";
+import { cn } from "@mbao01/common/utilities";
 import { type LinkProps } from "./types";
 import { getLinkClasses } from "./constant";
 

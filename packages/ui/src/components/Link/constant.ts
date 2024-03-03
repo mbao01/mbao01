@@ -1,4 +1,4 @@
-import { cva } from "@mbao01/common/helpers";
+import { cva } from "@mbao01/common/libs";
 
 export const getLinkClasses = cva("link transition-all", {
   variants: {
