@@ -41,6 +41,22 @@ describe("Button", () => {
   });
 
   it.each([
+    { as: "a", name: "link" },
+    { as: "span", name: "span" },
+    { as: "p", name: "paragraph" },
+  ] as const)("has a slot to render a $name tag", ({ as, name }) => {
+    const label = `Button as ${name}`;
+    const { asFragment } = render(
+      <Button as={as} role="none">
+        {label}
+      </Button>
+    );
+
+    expect(screen.getByRole("none")).toHaveTextContent(label);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it.each([
     "default",
     "neutral",
     "primary",
