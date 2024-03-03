@@ -1,5 +1,6 @@
 /** actions */
 export * from "./components/Button";
+export * from "./components/Breadcrumbs";
 
 /** data display */
 export * from "./components/Badge";
