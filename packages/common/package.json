@@ -20,8 +20,9 @@
         "default": "./src/index.ts"
       }
     },
-    "./helpers": "./src/helpers/index.ts",
+    "./libs": "./src/libs/index.ts",
     "./plugin": "./plugin.js",
+    "./utilities": "./src/utilities/index.ts",
     "./vitest/setup": "./vitest-setup.ts",
     "./vitest/config": "./vitest.config.ts",
     "./styles": "./src/stylesheets/index.css"
