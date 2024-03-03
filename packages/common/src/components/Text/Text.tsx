@@ -1,7 +1,7 @@
 import React from "react";
 import { type TextProps } from "./types";
 import { getTextClasses } from "./constants";
-import { cn } from "../../helpers";
+import { cn } from "../../utilities";
 import { Slot } from "@radix-ui/react-slot";
 
 export const Text = ({

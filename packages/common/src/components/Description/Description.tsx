@@ -3,7 +3,7 @@ import type {
   DescriptionTermProps,
   DescriptionDetailProps,
 } from "./types";
-import { cn } from "../../helpers";
+import { cn } from "../../utilities";
 
 const Description = (props: DescriptionProps) => {
   return <dl role="list" {...props} />;

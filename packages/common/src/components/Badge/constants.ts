@@ -1,4 +1,4 @@
-import { cva } from "../../helpers";
+import { cva } from "../../libs";
 
 export const getBadgeClasses = cva("badge", {
   variants: {

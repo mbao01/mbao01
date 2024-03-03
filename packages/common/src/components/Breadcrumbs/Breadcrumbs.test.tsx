@@ -1,6 +1,6 @@
 import { render, screen, within } from "@testing-library/react";
 import { Breadcrumb, Breadcrumbs } from "./Breadcrumbs";
-import { getSubpaths } from "./getSubpaths";
+import { getSubpaths } from "../../utilities/getSubpaths";
 
 describe("Breadcrumbs", () => {
   const renderBreadcrumbs = (

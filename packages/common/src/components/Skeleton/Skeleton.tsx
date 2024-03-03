@@ -1,6 +1,6 @@
 import { type SkeletonProps } from "./types";
 import { getSkeletonClasses } from "./constants";
-import { cn } from "../../helpers";
+import { cn } from "../../utilities";
 
 export const Skeleton = ({
   round,

@@ -1,4 +1,4 @@
-import { type VariantProps } from "../../helpers";
+import { type VariantProps } from "../../libs";
 import { getTooltipArrowClasses, getTooltipContentClasses } from "./constants";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 

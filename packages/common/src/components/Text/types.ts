@@ -1,4 +1,4 @@
-import { type VariantProps } from "../../helpers";
+import { type VariantProps } from "../../libs";
 import { getTextClasses } from "./constants";
 
 export type TextProps = React.HTMLAttributes<HTMLSpanElement> &

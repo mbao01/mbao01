@@ -1,5 +1,5 @@
 import React from "react";
-import { type VariantProps } from "../../helpers";
+import { type VariantProps } from "../../libs";
 import { getCardClasses } from "./constants";
 
 export type CardProps = React.HTMLAttributes<HTMLDivElement> &

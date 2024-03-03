@@ -1,27 +1,31 @@
 import { getSubpaths } from "./getSubpaths";
 
 describe("getSubpaths", () => {
-  it("should return empty list", () => {
+  it("returns empty list", () => {
     const result = getSubpaths("");
     expect(result).toStrictEqual([]);
   });
 
-  it("should returns list of breadcrumbs properties", () => {
-    const result = getSubpaths("/");
-    expect(result).toStrictEqual([]);
+  describe("when it is the root path", () => {
+    it("returns no list of subpaths", () => {
+      const result = getSubpaths("/");
+      expect(result).toStrictEqual([]);
+    });
+
+    it("returns one subpath which is the root path", () => {
+      const result = getSubpaths("/", undefined, true);
+      expect(result).toStrictEqual([{ href: { pathname: "/" }, label: "" }]);
+    });
+
+    it("returns root subpath with custom label", () => {
+      const result = getSubpaths("/", { "/": "Home" }, true);
+      expect(result).toStrictEqual([
+        { href: { pathname: "/" }, label: "Home" },
+      ]);
+    });
   });
 
-  it("should returns list of breadcrumbs properties", () => {
-    const result = getSubpaths("/", undefined, true);
-    expect(result).toStrictEqual([{ href: { pathname: "/" }, label: "" }]);
-  });
-
-  it("should returns list of breadcrumbs properties", () => {
-    const result = getSubpaths("/", { "/": "Home" }, true);
-    expect(result).toStrictEqual([{ href: { pathname: "/" }, label: "Home" }]);
-  });
-
-  it("should returns list of breadcrumbs properties", () => {
+  it("returns list of subpaths with segment labels", () => {
     const result = getSubpaths("/hello/world");
     expect(result).toStrictEqual([
       { href: { pathname: "/hello" }, label: "hello" },
@@ -29,7 +33,7 @@ describe("getSubpaths", () => {
     ]);
   });
 
-  it("should returns list of breadcrumbs properties", () => {
+  it("returns list of subpaths for a relative pathname", () => {
     const result = getSubpaths("hello/world");
     expect(result).toStrictEqual([
       { href: { pathname: "/hello" }, label: "hello" },
@@ -37,7 +41,7 @@ describe("getSubpaths", () => {
     ]);
   });
 
-  it("should returns list of breadcrumbs properties", () => {
+  it("returns list of subpaths with custom and segment labels respectively", () => {
     const result = getSubpaths(
       "/hello/world/day",
       {
@@ -55,7 +59,7 @@ describe("getSubpaths", () => {
     ]);
   });
 
-  it("should returns list of breadcrumbs properties", () => {
+  it("returns list of subpaths including the root path", () => {
     const result = getSubpaths("/hello/world", undefined, true);
     expect(result).toStrictEqual([
       { href: { pathname: "/" }, label: "" },

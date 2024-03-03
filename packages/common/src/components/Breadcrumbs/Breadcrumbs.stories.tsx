@@ -1,6 +1,6 @@
 import type { Meta, StoryContext, StoryObj } from "@storybook/react";
 import { Breadcrumb, Breadcrumbs } from "./Breadcrumbs";
-import { getSubpaths } from ".";
+import { getSubpaths } from "../../utilities";
 
 type ArgsType = {
   pathname: string;

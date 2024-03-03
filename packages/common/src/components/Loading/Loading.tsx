@@ -1,6 +1,6 @@
 import { getLoadingClasses } from "./constants";
 import { type LoadingProps } from "./types";
-import { cn } from "../../helpers";
+import { cn } from "../../utilities";
 
 export const Loading = ({
   size,

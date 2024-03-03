@@ -3,7 +3,7 @@ import { Slot } from "@radix-ui/react-slot";
 import { type ButtonProps } from "./types";
 import { getButtonClasses } from "./constants";
 import { Loading } from "../Loading";
-import { cn } from "../../helpers";
+import { cn } from "../../utilities";
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (

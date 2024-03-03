@@ -6,7 +6,7 @@ import type {
   CardImageProps,
   CardProps,
 } from "./types";
-import { cn } from "../../helpers";
+import { cn } from "../../utilities";
 import { getCardClasses } from "./constants";
 
 const Card = ({

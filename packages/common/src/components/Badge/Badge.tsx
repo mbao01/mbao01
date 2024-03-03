@@ -1,4 +1,4 @@
-import { cn } from "../../helpers";
+import { cn } from "../../utilities";
 import { getBadgeClasses } from "./constants";
 import { type BadgeProps } from "./types";
 
