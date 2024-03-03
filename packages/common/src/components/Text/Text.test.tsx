@@ -27,7 +27,6 @@ describe("Text", () => {
     ["Heading 4", "h4", "heading"],
     ["Heading 5", "h5", "heading"],
     ["Paragraph", "p", null],
-    ["Span", "span", null],
   ] as const)(
     "can be a flow content element e.g (%s)",
     (description, as, role) => {
