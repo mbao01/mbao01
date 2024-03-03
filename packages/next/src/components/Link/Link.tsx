@@ -1,8 +1,8 @@
-import c from "clsx";
 import NextLink from "next/link";
-import { getLinkClasses } from "./constant";
+import { ExternalLinkIcon } from "@radix-ui/react-icons";
+import { cn } from "@mbao01/common/utilities";
 import { type LinkProps } from "./types";
-import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
+import { getLinkClasses } from "./constant";
 
 export const Link = <T,>({
   href,
@@ -15,16 +15,14 @@ export const Link = <T,>({
 }: LinkProps<T>) => {
   return (
     <NextLink
-      {...props}
       href={href}
-      className={c(getLinkClasses({ hover, variant }), className)}
+      target={target}
+      className={cn(getLinkClasses({ hover, variant }), className)}
+      {...props}
     >
       {children}
       {target === "_blank" && (
-        <ArrowUpRightIcon
-          name="external"
-          className="ml-[2px] inline h-4 w-4 align-middle"
-        />
+        <ExternalLinkIcon name="external" className="ml-[2px] inline" />
       )}
     </NextLink>
   );

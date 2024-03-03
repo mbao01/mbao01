@@ -1,18 +1,6 @@
 import type { LinkProps as NextLinkProps } from "next/link";
+import { type VariantProps } from "@mbao01/common/libs";
+import { getLinkClasses } from "./constant";
 
-export type LinkVariant =
-  | "default"
-  | "neutral"
-  | "primary"
-  | "secondary"
-  | "accent"
-  | "link"
-  | "info"
-  | "success"
-  | "warning"
-  | "error";
-
-export type LinkProps<T> = NextLinkProps<T> & {
-  hover?: boolean;
-  variant?: LinkVariant;
-};
+export type LinkProps<T> = NextLinkProps<T> &
+  VariantProps<typeof getLinkClasses>;
