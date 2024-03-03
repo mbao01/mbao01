@@ -18,7 +18,6 @@ exports[`Breadcrumbs > renders root path 1`] = `
     <ul>
       <li>
         <a
-          class="link transition-all link-hover"
           href="/"
         >
           Home
@@ -37,7 +36,6 @@ exports[`Breadcrumbs > shows labeled paths 1`] = `
     <ul>
       <li>
         <a
-          class="link transition-all link-hover capitalize"
           href="/profile"
         >
           My Profile
@@ -45,7 +43,6 @@ exports[`Breadcrumbs > shows labeled paths 1`] = `
       </li>
       <li>
         <a
-          class="link transition-all link-hover capitalize"
           href="/profile/edit"
         >
           Edit Profile
@@ -64,7 +61,6 @@ exports[`Breadcrumbs > shows unlabeled paths 1`] = `
     <ul>
       <li>
         <a
-          class="link transition-all link-hover"
           href="/"
         >
           dashboard
@@ -72,7 +68,6 @@ exports[`Breadcrumbs > shows unlabeled paths 1`] = `
       </li>
       <li>
         <a
-          class="link transition-all link-hover capitalize"
           href="/profile"
         >
           profile
@@ -80,7 +75,6 @@ exports[`Breadcrumbs > shows unlabeled paths 1`] = `
       </li>
       <li>
         <a
-          class="link transition-all link-hover capitalize"
           href="/profile/edit"
         >
           edit
