@@ -15,6 +15,7 @@ describe("Tooltip", () => {
           <Tooltip.Trigger>{trigger}</Tooltip.Trigger>
           <Tooltip.Content side={side} variant={variant} {...props}>
             {children}
+            {variant && <Tooltip.Arrow variant={variant} />}
           </Tooltip.Content>
         </Tooltip>
       </Tooltip.Provider>
