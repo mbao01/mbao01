@@ -1,9 +1,8 @@
 import { type Config } from "tailwindcss";
-import daisyui from "daisyui";
 
 const config = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
-  plugins: [daisyui, require("tailwindcss-animate")],
+  plugins: [...require("./plugin")],
   daisyui: {
     themes: ["light", "dark"],
   },
