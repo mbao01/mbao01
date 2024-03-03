@@ -1,5 +1,4 @@
-import c from "clsx";
-import {
+import type {
   CardContentProps,
   CardDescriptionProps,
   CardFooterProps,
@@ -7,6 +6,8 @@ import {
   CardImageProps,
   CardProps,
 } from "./types";
+import { cn } from "../../helpers";
+import { getCardClasses } from "./constants";
 
 const Card = ({
   compact,
@@ -17,15 +18,8 @@ const Card = ({
   ...props
 }: CardProps) => (
   <div
-    className={c(
-      "card",
-      {
-        "card-bordered": bordered,
-        "card-compact": compact,
-        "card-normal": !compact,
-        "image-full": overlay,
-        "card-side": horizontal,
-      },
+    className={cn(
+      getCardClasses({ bordered, compact, horizontal, overlay }),
       className
     )}
     {...props}
@@ -33,15 +27,15 @@ const Card = ({
 );
 
 const CardHeader = ({ className, ...props }: CardHeaderProps) => (
-  <h3 className={c("card-title", className)} {...props} />
+  <h3 className={cn("card-title", className)} {...props} />
 );
 
 const CardDescription = ({ className, ...props }: CardDescriptionProps) => (
-  <p className={c("text-sm text-muted-foreground", className)} {...props} />
+  <p className={cn("text-sm text-muted-foreground", className)} {...props} />
 );
 
 const CardContent = ({ className, ...props }: CardContentProps) => (
-  <div className={c("card-body p-6 pt-0", className)} {...props} />
+  <div className={cn("card-body p-6 pt-0", className)} {...props} />
 );
 
 const CardImage = ({ className, src, alt, ...props }: CardImageProps) => (
@@ -51,7 +45,7 @@ const CardImage = ({ className, src, alt, ...props }: CardImageProps) => (
 );
 
 const CardFooter = ({ className, ...props }: CardFooterProps) => (
-  <div className={c("card-actions", className)} {...props} />
+  <div className={cn("card-actions", className)} {...props} />
 );
 
 Card.Header = CardHeader;
