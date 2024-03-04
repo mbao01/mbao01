@@ -39,3 +39,11 @@ export const LargeSkeleton: Story = {
     height: 32,
   },
 };
+
+export const PulsingSkeleton: Story = {
+  args: {
+    variant: "pulse",
+    width: 12,
+    height: 12,
+  },
+};
