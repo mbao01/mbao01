@@ -1,9 +1,9 @@
-import { describe, expect, it, vi } from "vitest";
+import { describe, expect, it } from "vitest";
 import { Loading } from "./";
 import { render, screen } from "@testing-library/react";
 
 describe("Loading", () => {
-  it.only("shows a tiny colored spinner", () => {
+  it("shows a tiny colored spinner", () => {
     const { asFragment } = render(
       <Loading
         color="primary"
@@ -52,12 +52,12 @@ describe("Loading", () => {
     "success",
     "warning",
     "error",
-  ] as const)("has %s color", (color) => {
+  ] as const)("has %s color", (intent) => {
     const { asFragment } = render(
-      <Loading color={color} data-testid="loading" />
+      <Loading intent={intent} data-testid="loading" />
     );
 
-    expect(screen.getByTestId("loading")).toHaveClass(`text-${color}`);
+    expect(screen.getByTestId("loading")).toHaveClass(`text-${intent}`);
     expect(asFragment()).toMatchSnapshot();
   });
 });

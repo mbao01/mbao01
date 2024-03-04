@@ -34,7 +34,7 @@ export const InfinityLoading: Story = {
 export const ColoredSpinnerLoading: Story = {
   args: {
     variant: "spinner",
-    color: "primary",
+    intent: "primary",
   },
 };
 

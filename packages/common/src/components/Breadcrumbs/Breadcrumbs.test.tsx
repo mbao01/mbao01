@@ -11,7 +11,7 @@ describe("Breadcrumbs", () => {
     return render(
       <Breadcrumbs>
         {getSubpaths(pathname, labels, includeRoot).map(({ href, label }) => (
-          <Breadcrumb>
+          <Breadcrumb key={href.pathname}>
             <a href={href.pathname}>{label}</a>
           </Breadcrumb>
         ))}

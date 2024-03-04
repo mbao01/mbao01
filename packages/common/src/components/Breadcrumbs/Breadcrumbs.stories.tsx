@@ -1,4 +1,4 @@
-import type { Meta, StoryContext, StoryObj } from "@storybook/react";
+import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
 import { Breadcrumb, Breadcrumbs } from "./Breadcrumbs";
 import { getSubpaths } from "../../utilities";
 
@@ -8,14 +8,14 @@ type ArgsType = {
   includeRoot?: boolean;
 };
 
-const withBreadcrumbs = (_: any, context: StoryContext<ArgsType>) => {
+const withBreadcrumbs = (_: StoryFn, context: StoryContext<ArgsType>) => {
   const { pathname, subpathLabels, includeRoot } = context.args;
   const subpaths = getSubpaths(pathname, subpathLabels, includeRoot);
 
   return (
     <Breadcrumbs>
       {subpaths.map((subpath) => (
-        <Breadcrumb>
+        <Breadcrumb key={subpath.href.pathname}>
           <a href={subpath.href.pathname}>{subpath.label}</a>
         </Breadcrumb>
       ))}

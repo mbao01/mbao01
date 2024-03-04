@@ -4,14 +4,14 @@ import { cn } from "../../utilities";
 
 export const Loading = ({
   size,
-  color,
+  intent,
   variant,
   className,
   ...props
 }: LoadingProps) => {
   return (
     <span
-      className={cn(getLoadingClasses({ color, size, variant }), className)}
+      className={cn(getLoadingClasses({ intent, size, variant }), className)}
       {...props}
     />
   );
