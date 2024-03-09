@@ -1,0 +1,173 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Loading > has 'base' ('md') loading 1`] = `
+<DocumentFragment>
+  <span
+    class="loading loading-md"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has 'large' ('lg') loading 1`] = `
+<DocumentFragment>
+  <span
+    class="loading loading-lg"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has 'small' ('sm') loading 1`] = `
+<DocumentFragment>
+  <span
+    class="loading loading-sm"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has 'tiny' ('xs') loading 1`] = `
+<DocumentFragment>
+  <span
+    class="loading loading-xs"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has accent color 1`] = `
+<DocumentFragment>
+  <span
+    class="loading text-accent"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has ball variant 1`] = `
+<DocumentFragment>
+  <span
+    class="loading loading-ball"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has bars variant 1`] = `
+<DocumentFragment>
+  <span
+    class="loading loading-bars"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has dots variant 1`] = `
+<DocumentFragment>
+  <span
+    class="loading loading-dots"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has error color 1`] = `
+<DocumentFragment>
+  <span
+    class="loading text-error"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has infinity variant 1`] = `
+<DocumentFragment>
+  <span
+    class="loading loading-infinity"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has info color 1`] = `
+<DocumentFragment>
+  <span
+    class="loading text-info"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has neutral color 1`] = `
+<DocumentFragment>
+  <span
+    class="loading text-neutral"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has primary color 1`] = `
+<DocumentFragment>
+  <span
+    class="loading text-primary"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has ring variant 1`] = `
+<DocumentFragment>
+  <span
+    class="loading loading-ring"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has secondary color 1`] = `
+<DocumentFragment>
+  <span
+    class="loading text-secondary"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has spinner variant 1`] = `
+<DocumentFragment>
+  <span
+    class="loading loading-spinner"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has success color 1`] = `
+<DocumentFragment>
+  <span
+    class="loading text-success"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > has warning color 1`] = `
+<DocumentFragment>
+  <span
+    class="loading text-warning"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading > shows a tiny colored spinner 1`] = `
+<DocumentFragment>
+  <span
+    class="loading loading-spinner loading-xs"
+    color="primary"
+    data-testid="loading"
+  />
+</DocumentFragment>
+`;

@@ -1,21 +1,21 @@
-import c from 'clsx';
-import { LinkVariant } from './types';
+import { cva } from "@mbao01/common/libs";
 
-const LINK_VARIANTS = {
-  accent: c('link-accent'),
-  default: c('link-default'),
-  error: c('link-error'),
-  info: c('link-info'),
-  link: c('link-link'),
-  neutral: c('link-neutral'),
-  primary: c('link-primary'),
-  secondary: c('link-secondary'),
-  success: c('link-success'),
-  warning: c('link-warning'),
-} satisfies Record<LinkVariant, string>;
-
-export const getLinkClasses = ({ hover, variant }: { hover?: boolean; variant?: LinkVariant }) => {
-  return c('link transition-all', LINK_VARIANTS[variant!], {
-    'link-hover': hover,
-  });
-};
+export const getLinkClasses = cva("link transition-all", {
+  variants: {
+    variant: {
+      accent: "link-accent",
+      default: "link-default",
+      error: "link-error",
+      info: "link-info",
+      link: "link-link",
+      neutral: "link-neutral",
+      primary: "link-primary",
+      secondary: "link-secondary",
+      success: "link-success",
+      warning: "link-warning",
+    },
+    hover: {
+      true: "link-hover",
+    },
+  },
+});

@@ -60,16 +60,6 @@ exports[`Text > can be a flow content element e.g (Paragraph) 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Text > can be a flow content element e.g (Span) 1`] = `
-<DocumentFragment>
-  <span
-    class=""
-  >
-    Span
-  </span>
-</DocumentFragment>
-`;
-
 exports[`Text > default behavior is to allow any content (e.g a button) 1`] = `
 <DocumentFragment>
   <span

@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Description } from "./Description";
+import { Text } from "../Text";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
@@ -38,6 +39,13 @@ export const MultipleItemsInList: Story = {
         <Description.Detail>Jonny Bravo</Description.Detail>
         <Description.Term>Age</Description.Term>
         <Description.Detail>28</Description.Detail>
+        <Description.Term>Profession</Description.Term>
+        <Description.Detail>Sporting Coach</Description.Detail>
+        <Description.Detail>
+          <Text size="base" className="italic">
+            Associate
+          </Text>
+        </Description.Detail>
       </>
     ),
   },

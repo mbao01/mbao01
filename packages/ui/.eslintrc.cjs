@@ -10,13 +10,13 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
   ],
-  ignorePatterns: ["dist", ".eslintrc.cjs", "storybook-static"],
+  ignorePatterns: ["dist", "coverage", ".eslintrc.cjs", "storybook-static"],
   parser: "@typescript-eslint/parser",
   plugins: ["react-refresh"],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
+    project: ["./tsconfig.json"],
     tsconfigRootDir: __dirname,
   },
   rules: {

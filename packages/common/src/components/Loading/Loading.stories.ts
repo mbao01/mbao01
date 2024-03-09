@@ -1,52 +1,46 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from "@storybook/react";
 
-import { Tooltip } from './Tooltip';
+import { Loading } from "./Loading";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  component: Tooltip,
+  component: Loading,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
-    layout: 'centered',
+    layout: "centered",
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
-} satisfies Meta<typeof Tooltip>;
+} satisfies Meta<typeof Loading>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const Default: Story = {
+export const SpinnerLoading: Story = {
   args: {
-    variant: "default",
-    content: "This is a tooltip",
-    children: "Hover on me",
+    variant: "spinner",
   },
 };
 
-export const PrimaryTooltip: Story = {
+export const InfinityLoading: Story = {
   args: {
-    variant: "primary",
-    content: "Primary tooltip",
-    children: "Hover on me",
+    variant: "infinity",
   },
 };
 
-export const SuccessTooltip: Story = {
+export const ColoredSpinnerLoading: Story = {
   args: {
-    variant: "success",
-    content: "Success tooltip",
-    children: "Hover on me",
+    variant: "spinner",
+    intent: "primary",
   },
 };
 
-export const LeftTooltip: Story = {
+export const TinyLoading: Story = {
   args: {
-    position: "left",
-    content: "Tooltip positioned left",
-    children: "Hover",
+    size: "xs",
+    variant: "ring",
   },
 };

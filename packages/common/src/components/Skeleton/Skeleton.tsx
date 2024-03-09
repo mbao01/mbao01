@@ -1,26 +1,22 @@
-import c from "clsx";
 import { type SkeletonProps } from "./types";
-import { getSkeletonSize } from "./constants";
+import { getSkeletonClasses } from "./constants";
+import { cn } from "../../utilities";
 
 export const Skeleton = ({
-  className,
   round,
   width,
   height,
+  variant,
+  className,
   ...props
 }: SkeletonProps) => {
   return (
     <div
-      {...props}
-      className={c(
-        "skeleton",
-        getSkeletonSize({ width, height }),
-        {
-          "rounded-md": !round,
-          "rounded-full": round,
-        },
+      className={cn(
+        getSkeletonClasses({ width, height, round, variant }),
         className
       )}
+      {...props}
     />
   );
 };

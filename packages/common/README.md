@@ -23,8 +23,7 @@ export default {
     ...
   ],
   "plugins": [
-    require("@mbao01/common/plugin"), // -> import the library plugin
-    ...
+    ...require("@mbao01/common/plugin"), // -> import the library plugin
   ]
 }
 ```

@@ -2,176 +2,544 @@
 
 exports[`Tooltip > content is positioned bottom 1`] = `
 <DocumentFragment>
-  <div
-    class="tooltip tooltip-bottom"
-    data-tip="tooltip content bottom"
+  <button
+    aria-describedby="radix-:r3:"
+    data-state="delayed-open"
   >
     bottom tooltip
+  </button>
+  <div
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate(0px, 0px); min-width: max-content; --radix-popper-available-width: 0px; --radix-popper-available-height: 0px; --radix-popper-anchor-width: 0px; --radix-popper-anchor-height: 0px; --radix-popper-transform-origin: 50% 0px;"
+  >
+    <div
+      class="bg-base-200 text-base-content z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2"
+      data-align="center"
+      data-side="bottom"
+      data-state="delayed-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); --radix-tooltip-content-available-width: var(--radix-popper-available-width); --radix-tooltip-content-available-height: var(--radix-popper-available-height); --radix-tooltip-trigger-width: var(--radix-popper-anchor-width); --radix-tooltip-trigger-height: var(--radix-popper-anchor-height);"
+    >
+      tooltip content bottom
+      <span
+        id="radix-:r3:"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        tooltip content bottom
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Tooltip > content is positioned left 1`] = `
 <DocumentFragment>
-  <div
-    class="tooltip tooltip-left"
-    data-tip="tooltip content left"
+  <button
+    aria-describedby="radix-:r4:"
+    data-state="delayed-open"
   >
     left tooltip
+  </button>
+  <div
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate(0px, 0px); min-width: max-content; --radix-popper-available-width: 0px; --radix-popper-available-height: 0px; --radix-popper-anchor-width: 0px; --radix-popper-anchor-height: 0px; --radix-popper-transform-origin: 0px 50%;"
+  >
+    <div
+      class="bg-base-200 text-base-content z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2"
+      data-align="center"
+      data-side="left"
+      data-state="delayed-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); --radix-tooltip-content-available-width: var(--radix-popper-available-width); --radix-tooltip-content-available-height: var(--radix-popper-available-height); --radix-tooltip-trigger-width: var(--radix-popper-anchor-width); --radix-tooltip-trigger-height: var(--radix-popper-anchor-height);"
+    >
+      tooltip content left
+      <span
+        id="radix-:r4:"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        tooltip content left
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Tooltip > content is positioned right 1`] = `
 <DocumentFragment>
-  <div
-    class="tooltip tooltip-right"
-    data-tip="tooltip content right"
+  <button
+    aria-describedby="radix-:r2:"
+    data-state="delayed-open"
   >
     right tooltip
+  </button>
+  <div
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate(0px, 0px); min-width: max-content; --radix-popper-available-width: 0px; --radix-popper-available-height: 0px; --radix-popper-anchor-width: 0px; --radix-popper-anchor-height: 0px; --radix-popper-transform-origin: 0px 50%;"
+  >
+    <div
+      class="bg-base-200 text-base-content z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2"
+      data-align="center"
+      data-side="right"
+      data-state="delayed-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); --radix-tooltip-content-available-width: var(--radix-popper-available-width); --radix-tooltip-content-available-height: var(--radix-popper-available-height); --radix-tooltip-trigger-width: var(--radix-popper-anchor-width); --radix-tooltip-trigger-height: var(--radix-popper-anchor-height);"
+    >
+      tooltip content right
+      <span
+        id="radix-:r2:"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        tooltip content right
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Tooltip > content is positioned top 1`] = `
 <DocumentFragment>
-  <div
-    class="tooltip tooltip-top"
-    data-tip="tooltip content top"
+  <button
+    aria-describedby="radix-:r1:"
+    data-state="delayed-open"
   >
     top tooltip
+  </button>
+  <div
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate(0px, 0px); min-width: max-content; --radix-popper-available-width: 0px; --radix-popper-available-height: 0px; --radix-popper-anchor-width: 0px; --radix-popper-anchor-height: 0px; --radix-popper-transform-origin: 50% 0px;"
+  >
+    <div
+      class="bg-base-200 text-base-content z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2"
+      data-align="center"
+      data-side="top"
+      data-state="delayed-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); --radix-tooltip-content-available-width: var(--radix-popper-available-width); --radix-tooltip-content-available-height: var(--radix-popper-available-height); --radix-tooltip-trigger-width: var(--radix-popper-anchor-width); --radix-tooltip-trigger-height: var(--radix-popper-anchor-height);"
+    >
+      tooltip content top
+      <span
+        id="radix-:r1:"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        tooltip content top
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Tooltip > has accent variant 1`] = `
 <DocumentFragment>
-  <div
-    class="tooltip tooltip-accent"
-    data-tip="accent tooltip content"
+  <button
+    aria-describedby="radix-:r7:"
+    data-state="delayed-open"
   >
     accent tooltip
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tooltip > has default variant 1`] = `
-<DocumentFragment>
+  </button>
   <div
-    class="tooltip tooltip-default"
-    data-tip="default tooltip content"
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate(0px, 0px); min-width: max-content; --radix-popper-available-width: 0px; --radix-popper-available-height: 0px; --radix-popper-anchor-width: 0px; --radix-popper-anchor-height: 0px; --radix-popper-transform-origin: 0px 0px;"
   >
-    default tooltip
+    <div
+      class="z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 bg-accent text-accent-content"
+      data-align="center"
+      data-side="top"
+      data-state="delayed-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); --radix-tooltip-content-available-width: var(--radix-popper-available-width); --radix-tooltip-content-available-height: var(--radix-popper-available-height); --radix-tooltip-trigger-width: var(--radix-popper-anchor-width); --radix-tooltip-trigger-height: var(--radix-popper-anchor-height);"
+    >
+      accent tooltip content
+      <span
+        style="position: absolute; bottom: 0px; transform: translateY(100%); left: 0px;"
+      >
+        <svg
+          class="fill-accent"
+          height="5"
+          preserveAspectRatio="none"
+          style="display: block;"
+          viewBox="0 0 30 10"
+          width="10"
+        >
+          <polygon
+            points="0,0 30,0 15,10"
+          />
+        </svg>
+      </span>
+      <span
+        id="radix-:r7:"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        accent tooltip content
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Tooltip > has error variant 1`] = `
 <DocumentFragment>
-  <div
-    class="tooltip tooltip-error"
-    data-tip="error tooltip content"
+  <button
+    aria-describedby="radix-:rc:"
+    data-state="delayed-open"
   >
     error tooltip
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tooltip > has ghost variant 1`] = `
-<DocumentFragment>
+  </button>
   <div
-    class="tooltip tooltip-ghost"
-    data-tip="ghost tooltip content"
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate(0px, 0px); min-width: max-content; --radix-popper-available-width: 0px; --radix-popper-available-height: 0px; --radix-popper-anchor-width: 0px; --radix-popper-anchor-height: 0px; --radix-popper-transform-origin: 0px 0px;"
   >
-    ghost tooltip
+    <div
+      class="z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 bg-error text-error-content"
+      data-align="center"
+      data-side="top"
+      data-state="delayed-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); --radix-tooltip-content-available-width: var(--radix-popper-available-width); --radix-tooltip-content-available-height: var(--radix-popper-available-height); --radix-tooltip-trigger-width: var(--radix-popper-anchor-width); --radix-tooltip-trigger-height: var(--radix-popper-anchor-height);"
+    >
+      error tooltip content
+      <span
+        style="position: absolute; bottom: 0px; transform: translateY(100%); left: 0px;"
+      >
+        <svg
+          class="fill-error"
+          height="5"
+          preserveAspectRatio="none"
+          style="display: block;"
+          viewBox="0 0 30 10"
+          width="10"
+        >
+          <polygon
+            points="0,0 30,0 15,10"
+          />
+        </svg>
+      </span>
+      <span
+        id="radix-:rc:"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        error tooltip content
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Tooltip > has info variant 1`] = `
 <DocumentFragment>
-  <div
-    class="tooltip tooltip-info"
-    data-tip="info tooltip content"
+  <button
+    aria-describedby="radix-:r9:"
+    data-state="delayed-open"
   >
     info tooltip
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tooltip > has link variant 1`] = `
-<DocumentFragment>
+  </button>
   <div
-    class="tooltip tooltip-link"
-    data-tip="link tooltip content"
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate(0px, 0px); min-width: max-content; --radix-popper-available-width: 0px; --radix-popper-available-height: 0px; --radix-popper-anchor-width: 0px; --radix-popper-anchor-height: 0px; --radix-popper-transform-origin: 0px 0px;"
   >
-    link tooltip
+    <div
+      class="z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 bg-info text-info-content"
+      data-align="center"
+      data-side="top"
+      data-state="delayed-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); --radix-tooltip-content-available-width: var(--radix-popper-available-width); --radix-tooltip-content-available-height: var(--radix-popper-available-height); --radix-tooltip-trigger-width: var(--radix-popper-anchor-width); --radix-tooltip-trigger-height: var(--radix-popper-anchor-height);"
+    >
+      info tooltip content
+      <span
+        style="position: absolute; bottom: 0px; transform: translateY(100%); left: 0px;"
+      >
+        <svg
+          class="fill-info"
+          height="5"
+          preserveAspectRatio="none"
+          style="display: block;"
+          viewBox="0 0 30 10"
+          width="10"
+        >
+          <polygon
+            points="0,0 30,0 15,10"
+          />
+        </svg>
+      </span>
+      <span
+        id="radix-:r9:"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        info tooltip content
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Tooltip > has neutral variant 1`] = `
 <DocumentFragment>
-  <div
-    class="tooltip tooltip-neutral"
-    data-tip="neutral tooltip content"
+  <button
+    aria-describedby="radix-:r8:"
+    data-state="delayed-open"
   >
     neutral tooltip
+  </button>
+  <div
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate(0px, 0px); min-width: max-content; --radix-popper-available-width: 0px; --radix-popper-available-height: 0px; --radix-popper-anchor-width: 0px; --radix-popper-anchor-height: 0px; --radix-popper-transform-origin: 0px 0px;"
+  >
+    <div
+      class="z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 bg-neutral text-neutral-content"
+      data-align="center"
+      data-side="top"
+      data-state="delayed-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); --radix-tooltip-content-available-width: var(--radix-popper-available-width); --radix-tooltip-content-available-height: var(--radix-popper-available-height); --radix-tooltip-trigger-width: var(--radix-popper-anchor-width); --radix-tooltip-trigger-height: var(--radix-popper-anchor-height);"
+    >
+      neutral tooltip content
+      <span
+        style="position: absolute; bottom: 0px; transform: translateY(100%); left: 0px;"
+      >
+        <svg
+          class="fill-neutral"
+          height="5"
+          preserveAspectRatio="none"
+          style="display: block;"
+          viewBox="0 0 30 10"
+          width="10"
+        >
+          <polygon
+            points="0,0 30,0 15,10"
+          />
+        </svg>
+      </span>
+      <span
+        id="radix-:r8:"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        neutral tooltip content
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Tooltip > has primary variant 1`] = `
 <DocumentFragment>
-  <div
-    class="tooltip tooltip-primary"
-    data-tip="primary tooltip content"
+  <button
+    aria-describedby="radix-:r5:"
+    data-state="delayed-open"
   >
     primary tooltip
+  </button>
+  <div
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate(0px, 0px); min-width: max-content; --radix-popper-available-width: 0px; --radix-popper-available-height: 0px; --radix-popper-anchor-width: 0px; --radix-popper-anchor-height: 0px; --radix-popper-transform-origin: 0px 0px;"
+  >
+    <div
+      class="z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 bg-primary text-primary-content"
+      data-align="center"
+      data-side="top"
+      data-state="delayed-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); --radix-tooltip-content-available-width: var(--radix-popper-available-width); --radix-tooltip-content-available-height: var(--radix-popper-available-height); --radix-tooltip-trigger-width: var(--radix-popper-anchor-width); --radix-tooltip-trigger-height: var(--radix-popper-anchor-height);"
+    >
+      primary tooltip content
+      <span
+        style="position: absolute; bottom: 0px; transform: translateY(100%); left: 0px;"
+      >
+        <svg
+          class="fill-primary"
+          height="5"
+          preserveAspectRatio="none"
+          style="display: block;"
+          viewBox="0 0 30 10"
+          width="10"
+        >
+          <polygon
+            points="0,0 30,0 15,10"
+          />
+        </svg>
+      </span>
+      <span
+        id="radix-:r5:"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        primary tooltip content
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Tooltip > has secondary variant 1`] = `
 <DocumentFragment>
-  <div
-    class="tooltip tooltip-secondary"
-    data-tip="secondary tooltip content"
+  <button
+    aria-describedby="radix-:r6:"
+    data-state="delayed-open"
   >
     secondary tooltip
+  </button>
+  <div
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate(0px, 0px); min-width: max-content; --radix-popper-available-width: 0px; --radix-popper-available-height: 0px; --radix-popper-anchor-width: 0px; --radix-popper-anchor-height: 0px; --radix-popper-transform-origin: 0px 0px;"
+  >
+    <div
+      class="z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 bg-secondary text-secondary-content"
+      data-align="center"
+      data-side="top"
+      data-state="delayed-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); --radix-tooltip-content-available-width: var(--radix-popper-available-width); --radix-tooltip-content-available-height: var(--radix-popper-available-height); --radix-tooltip-trigger-width: var(--radix-popper-anchor-width); --radix-tooltip-trigger-height: var(--radix-popper-anchor-height);"
+    >
+      secondary tooltip content
+      <span
+        style="position: absolute; bottom: 0px; transform: translateY(100%); left: 0px;"
+      >
+        <svg
+          class="fill-secondary"
+          height="5"
+          preserveAspectRatio="none"
+          style="display: block;"
+          viewBox="0 0 30 10"
+          width="10"
+        >
+          <polygon
+            points="0,0 30,0 15,10"
+          />
+        </svg>
+      </span>
+      <span
+        id="radix-:r6:"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        secondary tooltip content
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Tooltip > has success variant 1`] = `
 <DocumentFragment>
-  <div
-    class="tooltip tooltip-success"
-    data-tip="success tooltip content"
+  <button
+    aria-describedby="radix-:ra:"
+    data-state="delayed-open"
   >
     success tooltip
+  </button>
+  <div
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate(0px, 0px); min-width: max-content; --radix-popper-available-width: 0px; --radix-popper-available-height: 0px; --radix-popper-anchor-width: 0px; --radix-popper-anchor-height: 0px; --radix-popper-transform-origin: 0px 0px;"
+  >
+    <div
+      class="z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 bg-success text-success-content"
+      data-align="center"
+      data-side="top"
+      data-state="delayed-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); --radix-tooltip-content-available-width: var(--radix-popper-available-width); --radix-tooltip-content-available-height: var(--radix-popper-available-height); --radix-tooltip-trigger-width: var(--radix-popper-anchor-width); --radix-tooltip-trigger-height: var(--radix-popper-anchor-height);"
+    >
+      success tooltip content
+      <span
+        style="position: absolute; bottom: 0px; transform: translateY(100%); left: 0px;"
+      >
+        <svg
+          class="fill-success"
+          height="5"
+          preserveAspectRatio="none"
+          style="display: block;"
+          viewBox="0 0 30 10"
+          width="10"
+        >
+          <polygon
+            points="0,0 30,0 15,10"
+          />
+        </svg>
+      </span>
+      <span
+        id="radix-:ra:"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        success tooltip content
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Tooltip > has warning variant 1`] = `
 <DocumentFragment>
-  <div
-    class="tooltip tooltip-warning"
-    data-tip="warning tooltip content"
+  <button
+    aria-describedby="radix-:rb:"
+    data-state="delayed-open"
   >
     warning tooltip
+  </button>
+  <div
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate(0px, 0px); min-width: max-content; --radix-popper-available-width: 0px; --radix-popper-available-height: 0px; --radix-popper-anchor-width: 0px; --radix-popper-anchor-height: 0px; --radix-popper-transform-origin: 0px 0px;"
+  >
+    <div
+      class="z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 bg-warning text-warning-content"
+      data-align="center"
+      data-side="top"
+      data-state="delayed-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); --radix-tooltip-content-available-width: var(--radix-popper-available-width); --radix-tooltip-content-available-height: var(--radix-popper-available-height); --radix-tooltip-trigger-width: var(--radix-popper-anchor-width); --radix-tooltip-trigger-height: var(--radix-popper-anchor-height);"
+    >
+      warning tooltip content
+      <span
+        style="position: absolute; bottom: 0px; transform: translateY(100%); left: 0px;"
+      >
+        <svg
+          class="fill-warning"
+          height="5"
+          preserveAspectRatio="none"
+          style="display: block;"
+          viewBox="0 0 30 10"
+          width="10"
+        >
+          <polygon
+            points="0,0 30,0 15,10"
+          />
+        </svg>
+      </span>
+      <span
+        id="radix-:rb:"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        warning tooltip content
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Tooltip > shows tooltip with content 1`] = `
 <DocumentFragment>
-  <div
-    class="tooltip"
-    data-tip="I am the tooltip's content"
+  <button
+    aria-describedby="radix-:r0:"
+    data-state="delayed-open"
   >
     Tooltip trigger
+  </button>
+  <div
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate(0px, 0px); min-width: max-content; --radix-popper-available-width: 0px; --radix-popper-available-height: 0px; --radix-popper-anchor-width: 0px; --radix-popper-anchor-height: 0px; --radix-popper-transform-origin: 50% 0px;"
+  >
+    <div
+      class="bg-base-200 text-base-content z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2"
+      data-align="center"
+      data-side="top"
+      data-state="delayed-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); --radix-tooltip-content-available-width: var(--radix-popper-available-width); --radix-tooltip-content-available-height: var(--radix-popper-available-height); --radix-tooltip-trigger-width: var(--radix-popper-anchor-width); --radix-tooltip-trigger-height: var(--radix-popper-anchor-height);"
+    >
+      I am the tooltip's content
+      <span
+        id="radix-:r0:"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        I am the tooltip's content
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;

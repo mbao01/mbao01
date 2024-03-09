@@ -1,3 +1,1 @@
-const daisyui = require("daisyui");
-
-module.exports = daisyui;
+module.exports = [require("daisyui"), require("tailwindcss-animate")];

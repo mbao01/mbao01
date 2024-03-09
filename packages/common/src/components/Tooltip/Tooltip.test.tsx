@@ -1,75 +1,80 @@
 import { render, screen } from "@testing-library/react";
 import { Tooltip } from "./";
-import { type TooltipProps } from "./types";
+import { type TooltipContentProps } from "./types";
+import { ReactNode } from "react";
+import userEvent from "@testing-library/user-event";
 
 describe("Tooltip", () => {
-  const renderTooltip = ({
-    content,
-    variant,
-    children,
-    position,
-  }: TooltipProps) => {
+  const renderTooltip = (
+    trigger: ReactNode,
+    { side, variant, children, ...props }: TooltipContentProps
+  ) => {
     return render(
-      <Tooltip content={content} variant={variant} position={position}>
-        {children}
-      </Tooltip>
+      <Tooltip.Provider delayDuration={0}>
+        <Tooltip>
+          <Tooltip.Trigger>{trigger}</Tooltip.Trigger>
+          <Tooltip.Content side={side} variant={variant} {...props}>
+            {children}
+            {variant && <Tooltip.Arrow variant={variant} />}
+          </Tooltip.Content>
+        </Tooltip>
+      </Tooltip.Provider>
     );
   };
 
-  it("shows tooltip with content", () => {
-    const { asFragment } = renderTooltip({
-      content: "I am the tooltip's content",
-      children: "Tooltip trigger",
+  const user = userEvent.setup();
+
+  it("shows tooltip with content", async () => {
+    const { asFragment } = renderTooltip("Tooltip trigger", {
+      children: "I am the tooltip's content",
     });
 
     const tooltipEl = screen.getByText("Tooltip trigger");
+    await user.hover(tooltipEl);
 
-    expect(tooltipEl).toBeVisible();
-    expect(tooltipEl).toHaveClass("tooltip");
-    expect(tooltipEl).toHaveAttribute("data-tip", "I am the tooltip's content");
+    expect(
+      await screen.findByRole("tooltip", { name: "I am the tooltip's content" })
+    ).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 
   it.each(["top", "right", "bottom", "left"] as const)(
     "content is positioned %s",
-    (position) => {
-      const content = `tooltip content ${position}`;
-      const trigger = `${position} tooltip`;
-      const { asFragment } = render(
-        <Tooltip content={content} position={position}>
-          {trigger}
-        </Tooltip>
-      );
+    async (side) => {
+      const children = `tooltip content ${side}`;
+      const trigger = `${side} tooltip`;
+      const { asFragment } = renderTooltip(trigger, { side, children });
 
       const tooltipEl = screen.getByText(trigger);
-      expect(tooltipEl).toHaveAttribute("data-tip", content);
+      await user.hover(tooltipEl);
+
+      expect(
+        await screen.findByRole("tooltip", { name: children })
+      ).toBeInTheDocument();
       expect(asFragment()).toMatchSnapshot();
     }
   );
 
   it.each([
-    "accent",
-    "default",
-    "error",
-    "ghost",
-    "info",
-    "link",
-    "neutral",
     "primary",
     "secondary",
+    "accent",
+    "neutral",
+    "info",
     "success",
     "warning",
-  ] as const)("has %s variant", (variant) => {
-    const content = `${variant} tooltip content`;
+    "error",
+  ] as const)("has %s variant", async (variant) => {
+    const children = `${variant} tooltip content`;
     const trigger = `${variant} tooltip`;
-    const { asFragment } = render(
-      <Tooltip content={content} variant={variant}>
-        {trigger}
-      </Tooltip>
-    );
+    const { asFragment } = renderTooltip(trigger, { children, variant });
 
     const tooltipEl = screen.getByText(trigger);
-    expect(tooltipEl).toHaveAttribute("data-tip", content);
+    await user.hover(tooltipEl);
+
+    expect(
+      await screen.findByRole("tooltip", { name: children })
+    ).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 });

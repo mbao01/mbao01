@@ -6,13 +6,13 @@ exports[`Description > description list with a single term 1`] = `
     role="list"
   >
     <dt
-      class="mb-1 py-2 text-sm font-medium"
+      class="py-2 text-sm font-semibold"
       role="listitem"
     >
       Name
     </dt>
     <dd
-      class="text-base"
+      class="text-base [&:not(:last-child)]:mb-1"
     >
       Evelyn Gilts
     </dd>
@@ -26,35 +26,35 @@ exports[`Description > description list with multiple terms 1`] = `
     role="list"
   >
     <dt
-      class="mb-1 py-2 text-sm font-medium"
+      class="py-2 text-sm font-semibold"
       role="listitem"
     >
       Name
     </dt>
     <dd
-      class="text-base"
+      class="text-base [&:not(:last-child)]:mb-1"
     >
       Evelyn Gilts
     </dd>
     <dt
-      class="mb-1 py-2 text-sm font-medium"
+      class="py-2 text-sm font-semibold"
       role="listitem"
     >
       Age
     </dt>
     <dd
-      class="text-base"
+      class="text-base [&:not(:last-child)]:mb-1"
     >
       23
     </dd>
     <dt
-      class="mb-1 py-2 text-sm font-medium"
+      class="py-2 text-sm font-semibold"
       role="listitem"
     >
       Profession
     </dt>
     <dd
-      class="text-base"
+      class="text-base [&:not(:last-child)]:mb-1"
     >
       AI Specialist
     </dd>

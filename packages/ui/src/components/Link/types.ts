@@ -1,19 +1,7 @@
 import type { To, LinkProps as RouterLinkProps } from "react-router-dom";
-
-export type LinkVariant =
-  | "default"
-  | "neutral"
-  | "primary"
-  | "secondary"
-  | "accent"
-  | "link"
-  | "info"
-  | "success"
-  | "warning"
-  | "error";
+import { type VariantProps } from "@mbao01/common/libs";
+import { getLinkClasses } from "./constant";
 
 export type LinkProps = Omit<RouterLinkProps, "to"> & {
   href: To;
-  hover?: boolean;
-  variant?: LinkVariant;
-};
+} & VariantProps<typeof getLinkClasses>;

@@ -26,7 +26,9 @@ const Example = (
       <Card.Header>Nike Shoe!</Card.Header>
       If a dog chews shoes whose shoes does he choose?
       <Card.Footer>
-        <Button name="hello" label="Buy Now" variant="secondary" />
+        <Button name="hello" variant="secondary">
+          Buy Now
+        </Button>
       </Card.Footer>
     </Card.Content>
     <Card.Image src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" />

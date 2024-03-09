@@ -50,6 +50,39 @@ exports[`Button > has a label 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Button > has a slot to render a 'link' tag 1`] = `
+<DocumentFragment>
+  <a
+    class="btn min-h-fit h-10"
+    role="none"
+  >
+    Button as link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Button > has a slot to render a 'paragraph' tag 1`] = `
+<DocumentFragment>
+  <p
+    class="btn min-h-fit h-10"
+    role="none"
+  >
+    Button as paragraph
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Button > has a slot to render a 'span' tag 1`] = `
+<DocumentFragment>
+  <span
+    class="btn min-h-fit h-10"
+    role="none"
+  >
+    Button as span
+  </span>
+</DocumentFragment>
+`;
+
 exports[`Button > has accent variant 1`] = `
 <DocumentFragment>
   <button

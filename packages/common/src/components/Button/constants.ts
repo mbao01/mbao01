@@ -1,44 +1,40 @@
-import c from 'clsx';
-import type { ButtonSize, ButtonVariant } from './types';
+import { cva } from "../../libs";
 
-const BUTTON_SIZE = {
-  xs: c('btn-xs'),
-  sm: c('btn-sm'),
-  md: c('btn-md'),
-  lg: c('btn-lg'),
-} satisfies Record<ButtonSize, string>;
-
-const BUTTON_VARIANTS = {
-  accent: c('btn-accent'),
-  default: c('btn-default'),
-  error: c('btn-error'),
-  ghost: c('btn-ghost'),
-  info: c('btn-info'),
-  link: c('btn-link'),
-  neutral: c('btn-neutral'),
-  primary: c('btn-primary'),
-  secondary: c('btn-secondary'),
-  success: c('btn-success'),
-  warning: c('btn-warning'),
-} satisfies Record<ButtonVariant, string>;
-
-export const getButtonClasses = ({
-  size,
-  wide,
-  loading,
-  outline,
-  variant,
-}: {
-  size?: ButtonSize;
-  wide?: boolean;
-  loading?: boolean;
-  outline?: boolean;
-  variant?: ButtonVariant;
-}) => {
-  return c('btn', BUTTON_VARIANTS[variant!], BUTTON_SIZE[size!], {
-    'btn-outline': outline,
-    'btn-wide': wide,
-    'relative overflow-hidden': loading,
-    'min-h-fit h-10': !size,
-  });
-};
+export const getButtonClasses = cva("btn", {
+  variants: {
+    variant: {
+      accent: "btn-accent",
+      default: "btn-default",
+      error: "btn-error",
+      ghost: "btn-ghost",
+      info: "btn-info",
+      link: "btn-link",
+      neutral: "btn-neutral",
+      primary: "btn-primary",
+      secondary: "btn-secondary",
+      success: "btn-success",
+      warning: "btn-warning",
+    },
+    outline: {
+      true: "btn-outline",
+    },
+    wide: {
+      true: "btn-wide",
+    },
+    size: {
+      xs: "btn-xs",
+      sm: "btn-sm",
+      md: "btn-md",
+      lg: "btn-lg",
+    },
+    isLoading: {
+      true: "relative overflow-hidden",
+    },
+  },
+  compoundVariants: [
+    {
+      size: undefined,
+      className: "min-h-fit h-10",
+    },
+  ],
+});

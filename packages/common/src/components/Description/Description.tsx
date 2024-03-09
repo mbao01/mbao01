@@ -1,26 +1,31 @@
-import c from "clsx";
 import type {
   DescriptionProps,
   DescriptionTermProps,
   DescriptionDetailProps,
 } from "./types";
+import { cn } from "../../utilities";
 
 const Description = (props: DescriptionProps) => {
   return <dl role="list" {...props} />;
 };
 
-const DescriptionTerm = (props: DescriptionTermProps) => {
+const DescriptionTerm = ({ className, ...props }: DescriptionTermProps) => {
   return (
     <dt
-      {...props}
       role="listitem"
-      className={c("mb-1 py-2 text-sm font-medium", props.className)}
+      className={cn("py-2 text-sm font-semibold", className)}
+      {...props}
     />
   );
 };
 
-const DescriptionDetail = (props: DescriptionDetailProps) => {
-  return <dd {...props} className={c("text-base", props.className)} />;
+const DescriptionDetail = ({ className, ...props }: DescriptionDetailProps) => {
+  return (
+    <dd
+      className={cn("text-base [&:not(:last-child)]:mb-1", className)}
+      {...props}
+    />
+  );
 };
 
 Description.Term = DescriptionTerm;

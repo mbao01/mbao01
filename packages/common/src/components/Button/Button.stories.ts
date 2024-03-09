@@ -21,57 +21,57 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {
-    variant: 'default',
-    label: 'Button',
+    variant: "default",
+    children: "Button",
   },
 };
 
 export const PrimaryButton: Story = {
   args: {
-    variant: 'primary',
-    label: 'Button',
+    variant: "primary",
+    children: "Button",
   },
 };
 
 export const WideButton: Story = {
   args: {
     wide: true,
-    label: 'Wide Button',
+    children: "Wide Button",
   },
 };
 
 export const TinyButton: Story = {
   args: {
-    size: 'xs',
-    label: 'Tiny',
+    size: "xs",
+    children: "Tiny",
   },
 };
 
 export const OutlineButton: Story = {
   args: {
     outline: true,
-    label: 'Click me!',
+    children: "Click me!",
   },
 };
 
 export const DisabledButton: Story = {
   args: {
     disabled: true,
-    label: 'Click me?',
+    children: "Click me?",
   },
 };
 
 export const LoadingButton: Story = {
   args: {
-    loading: true,
-    label: 'Loading',
+    isLoading: true,
+    children: "Loading",
   },
 };
 
 export const BlockButton: Story = {
   args: {
     disabled: true,
-    className: 'btn-block',
-    label: 'Block Button',
+    className: "btn-block",
+    children: "Block Button",
   },
 };

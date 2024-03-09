@@ -1,18 +1,5 @@
-export type BadgeSize = "xs" | "sm" | "md" | "lg";
+import { type VariantProps } from "../../libs";
+import { getBadgeClasses } from "./constants";
 
-export type BadgeVariant =
-  | "neutral"
-  | "primary"
-  | "secondary"
-  | "accent"
-  | "ghost"
-  | "info"
-  | "success"
-  | "warning"
-  | "error";
-
-export type BadgeProps = React.HTMLAttributes<HTMLSpanElement> & {
-  size?: BadgeSize;
-  outline?: boolean;
-  variant?: BadgeVariant;
-};
+export type BadgeProps = React.HTMLAttributes<HTMLSpanElement> &
+  VariantProps<typeof getBadgeClasses>;
