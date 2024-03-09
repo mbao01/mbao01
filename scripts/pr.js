@@ -46,13 +46,9 @@ import {
   const parentPrBody = parentPr.body.replaceAll("\\n", "<br />");
 
   // 2b. prepare pr title and body
-  const prTitle = convertToNestedArrays(
-    branch.current
-      .replace("releases/", "")
-      .replaceAll(PACKAGE_NAME_SEPARATOR, "")
-      .split("@v")
-  )
-    .map((arr) => arr.join(" v"))
+  const prTitle = branch.current
+    .replace("releases/", "")
+    .split(PACKAGE_NAME_SEPARATOR)
     .join(", ");
   const prBody = `Releases ${parentPr.url}\n\n<details><summary>Details</summary><p>\n\n${parentPrBody}\n\n</p></details>`;
 
