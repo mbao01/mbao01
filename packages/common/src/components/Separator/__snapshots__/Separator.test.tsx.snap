@@ -1,0 +1,45 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Separator > has horizontal orientation 1`] = `
+<DocumentFragment>
+  <div
+    class="shrink-0 bg-base-300 h-[1px] w-full"
+    data-orientation="horizontal"
+    data-testid="separator"
+    role="none"
+  />
+</DocumentFragment>
+`;
+
+exports[`Separator > has horizontal orientation by default 1`] = `
+<DocumentFragment>
+  <div
+    class="shrink-0 bg-base-300 h-[1px] w-full"
+    data-orientation="horizontal"
+    data-testid="separator"
+    role="none"
+  />
+</DocumentFragment>
+`;
+
+exports[`Separator > has vertical orientation 1`] = `
+<DocumentFragment>
+  <div
+    class="shrink-0 bg-base-300 h-full w-[1px]"
+    data-orientation="vertical"
+    data-testid="separator"
+    role="none"
+  />
+</DocumentFragment>
+`;
+
+exports[`Separator > is non presentational/decorative 1`] = `
+<DocumentFragment>
+  <div
+    class="shrink-0 bg-base-300 h-[1px] w-full"
+    data-orientation="horizontal"
+    data-testid="separator"
+    role="separator"
+  />
+</DocumentFragment>
+`;

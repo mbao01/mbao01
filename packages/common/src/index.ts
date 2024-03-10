@@ -6,6 +6,7 @@ export * from "./components/Breadcrumbs";
 export * from "./components/Badge";
 export * from "./components/Card";
 export * from "./components/Description";
+export * from "./components/Separator";
 export * from "./components/Text";
 
 /** data input */
