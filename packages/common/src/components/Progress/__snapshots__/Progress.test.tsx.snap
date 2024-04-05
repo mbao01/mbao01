@@ -1,0 +1,289 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Progress > has accent variant 1`] = `
+<DocumentFragment>
+  <div
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="50"
+    aria-valuetext="accent progress bar"
+    class="relative h-2 w-full overflow-hidden rounded-full bg-accent/20"
+    data-max="100"
+    data-state="loading"
+    data-value="50"
+    role="progressbar"
+  >
+    <div
+      class="h-full w-full flex-1 transition-all bg-accent"
+      data-max="100"
+      data-state="loading"
+      data-value="50"
+      style="transform: translateX(-50%);"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Progress > has base variant 1`] = `
+<DocumentFragment>
+  <div
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="50"
+    aria-valuetext="base progress bar"
+    class="relative h-2 w-full overflow-hidden rounded-full bg-base-content/20"
+    data-max="100"
+    data-state="loading"
+    data-value="50"
+    role="progressbar"
+  >
+    <div
+      class="h-full w-full flex-1 transition-all bg-base-content"
+      data-max="100"
+      data-state="loading"
+      data-value="50"
+      style="transform: translateX(-50%);"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Progress > has error variant 1`] = `
+<DocumentFragment>
+  <div
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="50"
+    aria-valuetext="error progress bar"
+    class="relative h-2 w-full overflow-hidden rounded-full bg-error/20"
+    data-max="100"
+    data-state="loading"
+    data-value="50"
+    role="progressbar"
+  >
+    <div
+      class="h-full w-full flex-1 transition-all bg-error"
+      data-max="100"
+      data-state="loading"
+      data-value="50"
+      style="transform: translateX(-50%);"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Progress > has ghost variant 1`] = `
+<DocumentFragment>
+  <div
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="50"
+    aria-valuetext="ghost progress bar"
+    class="relative h-2 w-full overflow-hidden rounded-full bg-ghost/20"
+    data-max="100"
+    data-state="loading"
+    data-value="50"
+    role="progressbar"
+  >
+    <div
+      class="h-full w-full flex-1 transition-all bg-ghost"
+      data-max="100"
+      data-state="loading"
+      data-value="50"
+      style="transform: translateX(-50%);"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Progress > has info variant 1`] = `
+<DocumentFragment>
+  <div
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="50"
+    aria-valuetext="info progress bar"
+    class="relative h-2 w-full overflow-hidden rounded-full bg-info/20"
+    data-max="100"
+    data-state="loading"
+    data-value="50"
+    role="progressbar"
+  >
+    <div
+      class="h-full w-full flex-1 transition-all bg-info"
+      data-max="100"
+      data-state="loading"
+      data-value="50"
+      style="transform: translateX(-50%);"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Progress > has link variant 1`] = `
+<DocumentFragment>
+  <div
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="50"
+    aria-valuetext="link progress bar"
+    class="relative h-2 w-full overflow-hidden rounded-full bg-link/20"
+    data-max="100"
+    data-state="loading"
+    data-value="50"
+    role="progressbar"
+  >
+    <div
+      class="h-full w-full flex-1 transition-all bg-link"
+      data-max="100"
+      data-state="loading"
+      data-value="50"
+      style="transform: translateX(-50%);"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Progress > has neutral variant 1`] = `
+<DocumentFragment>
+  <div
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="50"
+    aria-valuetext="neutral progress bar"
+    class="relative h-2 w-full overflow-hidden rounded-full bg-neutral/20"
+    data-max="100"
+    data-state="loading"
+    data-value="50"
+    role="progressbar"
+  >
+    <div
+      class="h-full w-full flex-1 transition-all bg-neutral"
+      data-max="100"
+      data-state="loading"
+      data-value="50"
+      style="transform: translateX(-50%);"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Progress > has primary variant 1`] = `
+<DocumentFragment>
+  <div
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="50"
+    aria-valuetext="primary progress bar"
+    class="relative h-2 w-full overflow-hidden rounded-full bg-primary/20"
+    data-max="100"
+    data-state="loading"
+    data-value="50"
+    role="progressbar"
+  >
+    <div
+      class="h-full w-full flex-1 transition-all bg-primary"
+      data-max="100"
+      data-state="loading"
+      data-value="50"
+      style="transform: translateX(-50%);"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Progress > has secondary variant 1`] = `
+<DocumentFragment>
+  <div
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="50"
+    aria-valuetext="secondary progress bar"
+    class="relative h-2 w-full overflow-hidden rounded-full bg-secondary/20"
+    data-max="100"
+    data-state="loading"
+    data-value="50"
+    role="progressbar"
+  >
+    <div
+      class="h-full w-full flex-1 transition-all bg-secondary"
+      data-max="100"
+      data-state="loading"
+      data-value="50"
+      style="transform: translateX(-50%);"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Progress > has success variant 1`] = `
+<DocumentFragment>
+  <div
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="50"
+    aria-valuetext="success progress bar"
+    class="relative h-2 w-full overflow-hidden rounded-full bg-success/20"
+    data-max="100"
+    data-state="loading"
+    data-value="50"
+    role="progressbar"
+  >
+    <div
+      class="h-full w-full flex-1 transition-all bg-success"
+      data-max="100"
+      data-state="loading"
+      data-value="50"
+      style="transform: translateX(-50%);"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Progress > has warning variant 1`] = `
+<DocumentFragment>
+  <div
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="50"
+    aria-valuetext="warning progress bar"
+    class="relative h-2 w-full overflow-hidden rounded-full bg-warning/20"
+    data-max="100"
+    data-state="loading"
+    data-value="50"
+    role="progressbar"
+  >
+    <div
+      class="h-full w-full flex-1 transition-all bg-warning"
+      data-max="100"
+      data-state="loading"
+      data-value="50"
+      style="transform: translateX(-50%);"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Progress > renders a progress bar 1`] = `
+<DocumentFragment>
+  <div
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="77"
+    aria-valuetext="77%"
+    class="relative h-2 w-full overflow-hidden rounded-full bg-base-content/20"
+    data-max="100"
+    data-state="loading"
+    data-value="77"
+    role="progressbar"
+  >
+    <div
+      class="h-full w-full flex-1 transition-all bg-base-content"
+      data-max="100"
+      data-state="loading"
+      data-value="77"
+      style="transform: translateX(-23%);"
+    />
+  </div>
+</DocumentFragment>
+`;

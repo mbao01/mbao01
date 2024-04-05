@@ -1,0 +1,365 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Avatar > has 'offline' status 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar offline"
+  >
+    <span
+      class="flex items-center justify-center w-full"
+    >
+      status offline fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has 'online' status 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar online"
+  >
+    <span
+      class="flex items-center justify-center w-full"
+    >
+      status online fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has a ring 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full ring ring-offset-base-100 ring-offset-2"
+    >
+      Avatar with ring
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has a shape ('circle') 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full rounded-full"
+    >
+      circle shape fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has a shape ('hexagon') 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full mask mask-hexagon"
+    >
+      hexagon shape fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has a shape ('round') 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full rounded"
+    >
+      round shape fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has a shape ('television') 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full mask mask-squircle"
+    >
+      television shape fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has a shape ('triangle') 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full mask mask-triangle"
+    >
+      triangle shape fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has a size (4) 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full"
+    >
+      size 4 fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has a size (8) 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full"
+    >
+      size 8 fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has a size (12) 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full"
+    >
+      size 12 fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has a size (16) 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full"
+    >
+      size 16 fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has a size (32) 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full"
+    >
+      size 32 fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has a size (48) 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full"
+    >
+      size 48 fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has a size (64) 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full"
+    >
+      size 64 fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has accent variant 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full bg-accent text-accent-content ring-accent"
+    >
+      accent fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has default variant 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full bg-default text-default-content ring-default"
+    >
+      default fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has error variant 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full bg-error text-error-content ring-error"
+    >
+      error fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has ghost variant 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full bg-ghost text-ghost-content ring-ghost"
+    >
+      ghost fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has info variant 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full bg-info text-info-content ring-info"
+    >
+      info fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has neutral variant 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full bg-neutral text-neutral-content ring-neutral"
+    >
+      neutral fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has primary variant 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full bg-primary text-primary-content ring-primary"
+    >
+      primary fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has secondary variant 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full bg-secondary text-secondary-content ring-secondary"
+    >
+      secondary fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has success variant 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full bg-success text-success-content ring-success"
+    >
+      success fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > has warning variant 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full bg-warning text-warning-content ring-warning"
+    >
+      warning fallback
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Avatar > renders an avatar 1`] = `
+<DocumentFragment>
+  <span
+    class="avatar"
+  >
+    <span
+      class="flex items-center justify-center w-full"
+    >
+      Ayomide
+    </span>
+  </span>
+</DocumentFragment>
+`;
