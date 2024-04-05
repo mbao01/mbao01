@@ -21,7 +21,7 @@ export const Progress = React.forwardRef<
       className={cn(getProgressIndicatorClasses({ variant }))}
       style={{
         transform: `translateX(-${
-          (100 * (max - Math.max(Math.min(value || 0, max), 0))) / max
+          (100 * (max - Math.max(Math.min(value ?? 0, max), 0))) / max
         }%)`,
       }}
     />
