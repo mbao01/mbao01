@@ -3,6 +3,7 @@ export * from "./components/Button";
 export * from "./components/Breadcrumbs";
 
 /** data display */
+export * from "./components/Avatar";
 export * from "./components/Badge";
 export * from "./components/Card";
 export * from "./components/Description";
