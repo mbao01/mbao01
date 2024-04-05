@@ -5,7 +5,7 @@ import { type SeparatorProps } from "./types";
 import { getSeparatorClasses } from "./constants";
 import { cn } from "../../utilities";
 
-const Separator = ({
+export const Separator = ({
   className,
   orientation = "horizontal",
   decorative = true,
@@ -18,6 +18,3 @@ const Separator = ({
     {...props}
   />
 );
-Separator.displayName = SeparatorPrimitive.Root.displayName;
-
-export { Separator };
