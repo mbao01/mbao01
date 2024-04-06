@@ -12,6 +12,7 @@ export * from "./components/Separator";
 export * from "./components/Text";
 
 /** data input */
+export * from "./components/Form";
 
 /** feedback */
 export * from "./components/Loading";
