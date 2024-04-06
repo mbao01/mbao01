@@ -1,0 +1,156 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TextField > handles user input correctly 1`] = `
+<DocumentFragment>
+  <label
+    class="form-control w-full text-sm"
+  >
+    <div
+      class="label"
+    >
+      <span
+        class="label-text"
+      >
+        Username
+      </span>
+    </div>
+    <input
+      aria-describedby="undefined-error"
+      class="h-10 w-full rounded-md text-sm transition-all duration-100 input input-bordered"
+      name="username"
+      placeholder=" "
+      value="John Doe"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`TextField > has a label 1`] = `
+<DocumentFragment>
+  <label
+    class="form-control w-full text-sm"
+  >
+    <div
+      class="label"
+    >
+      <span
+        class="label-text"
+      >
+        Username
+      </span>
+    </div>
+    <input
+      aria-describedby="undefined-error"
+      class="h-10 w-full rounded-md text-sm transition-all duration-100 input input-bordered"
+      name="username"
+      placeholder=" "
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`TextField > has an error text 1`] = `
+<DocumentFragment>
+  <label
+    class="form-control w-full text-sm"
+  >
+    <div
+      class="label"
+    >
+      <span
+        class="label-text"
+      >
+        Username
+      </span>
+    </div>
+    <input
+      aria-describedby="undefined-error"
+      aria-invalid="true"
+      class="h-10 w-full rounded-md text-sm transition-all duration-100 input input-bordered"
+      name="username"
+      placeholder=" "
+    />
+    <div
+      class="label"
+    >
+      <span
+        class="label-text-alt text-red-500"
+        id="undefined-error"
+      >
+        This is an error text
+      </span>
+    </div>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`TextField > has an info text 1`] = `
+<DocumentFragment>
+  <label
+    class="form-control w-full text-sm"
+  >
+    <div
+      class="label"
+    >
+      <span
+        class="label-text"
+      >
+        Username
+      </span>
+      <span
+        class="label-text-alt"
+      >
+        This is an info text
+      </span>
+    </div>
+    <input
+      aria-describedby="undefined-error"
+      class="h-10 w-full rounded-md text-sm transition-all duration-100 input input-bordered"
+      name="username"
+      placeholder=" "
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`TextField > prevent user input when disabled 1`] = `
+<DocumentFragment>
+  <label
+    class="form-control w-full text-sm"
+  >
+    <div
+      class="label"
+    >
+      <span
+        class="label-text"
+      >
+        Username
+      </span>
+    </div>
+    <input
+      aria-describedby="undefined-error"
+      class="h-10 w-full rounded-md text-sm transition-all duration-100 input input-bordered"
+      disabled=""
+      name="username"
+      placeholder=" "
+      value="John Doe"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`TextField > renders with the correct initial state 1`] = `
+<DocumentFragment>
+  <label
+    class="form-control w-full text-sm"
+  >
+    <input
+      aria-describedby="undefined-error"
+      class="h-10 w-full rounded-md text-sm transition-all duration-100 input input-bordered"
+      name="username"
+      placeholder=" "
+      value="John Doe"
+    />
+  </label>
+</DocumentFragment>
+`;
