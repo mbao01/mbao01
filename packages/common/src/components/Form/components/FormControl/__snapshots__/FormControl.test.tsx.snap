@@ -1,0 +1,36 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FormControl > can be a div element 1`] = `
+<DocumentFragment>
+  <div
+    class="form-control w-full text-sm"
+  >
+    div element
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FormControl > can be a label form control element 1`] = `
+<DocumentFragment>
+  <label
+    class="form-control w-full text-sm"
+    for="username"
+  >
+    Username
+    <input
+      id="username"
+      name="username"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`FormControl > can be a span element 1`] = `
+<DocumentFragment>
+  <span
+    class="form-control w-full text-sm"
+  >
+    span element
+  </span>
+</DocumentFragment>
+`;
