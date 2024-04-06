@@ -3,7 +3,7 @@
 exports[`TextField > handles user input correctly 1`] = `
 <DocumentFragment>
   <label
-    class="form-control w-full text-sm"
+    class="label form-control w-full"
   >
     <div
       class="label"
@@ -15,10 +15,9 @@ exports[`TextField > handles user input correctly 1`] = `
       </span>
     </div>
     <input
-      aria-describedby="undefined-error"
-      class="h-10 w-full rounded-md text-sm transition-all duration-100 input input-bordered"
+      aria-describedby="username-information"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10"
       name="username"
-      placeholder=" "
       value="John Doe"
     />
   </label>
@@ -28,7 +27,7 @@ exports[`TextField > handles user input correctly 1`] = `
 exports[`TextField > has a label 1`] = `
 <DocumentFragment>
   <label
-    class="form-control w-full text-sm"
+    class="label form-control w-full"
   >
     <div
       class="label"
@@ -40,10 +39,9 @@ exports[`TextField > has a label 1`] = `
       </span>
     </div>
     <input
-      aria-describedby="undefined-error"
-      class="h-10 w-full rounded-md text-sm transition-all duration-100 input input-bordered"
+      aria-describedby="username-information"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10"
       name="username"
-      placeholder=" "
     />
   </label>
 </DocumentFragment>
@@ -52,7 +50,7 @@ exports[`TextField > has a label 1`] = `
 exports[`TextField > has an error text 1`] = `
 <DocumentFragment>
   <label
-    class="form-control w-full text-sm"
+    class="label form-control w-full"
   >
     <div
       class="label"
@@ -64,18 +62,17 @@ exports[`TextField > has an error text 1`] = `
       </span>
     </div>
     <input
-      aria-describedby="undefined-error"
+      aria-describedby="username-information"
       aria-invalid="true"
-      class="h-10 w-full rounded-md text-sm transition-all duration-100 input input-bordered"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10"
       name="username"
-      placeholder=" "
     />
     <div
       class="label"
     >
       <span
         class="label-text-alt text-red-500"
-        id="undefined-error"
+        id="username-information"
       >
         This is an error text
       </span>
@@ -87,7 +84,7 @@ exports[`TextField > has an error text 1`] = `
 exports[`TextField > has an info text 1`] = `
 <DocumentFragment>
   <label
-    class="form-control w-full text-sm"
+    class="label form-control w-full"
   >
     <div
       class="label"
@@ -104,10 +101,9 @@ exports[`TextField > has an info text 1`] = `
       </span>
     </div>
     <input
-      aria-describedby="undefined-error"
-      class="h-10 w-full rounded-md text-sm transition-all duration-100 input input-bordered"
+      aria-describedby="username-information"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10"
       name="username"
-      placeholder=" "
     />
   </label>
 </DocumentFragment>
@@ -116,7 +112,7 @@ exports[`TextField > has an info text 1`] = `
 exports[`TextField > prevent user input when disabled 1`] = `
 <DocumentFragment>
   <label
-    class="form-control w-full text-sm"
+    class="label form-control w-full"
   >
     <div
       class="label"
@@ -128,11 +124,10 @@ exports[`TextField > prevent user input when disabled 1`] = `
       </span>
     </div>
     <input
-      aria-describedby="undefined-error"
-      class="h-10 w-full rounded-md text-sm transition-all duration-100 input input-bordered"
+      aria-describedby="username-information"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10"
       disabled=""
       name="username"
-      placeholder=" "
       value="John Doe"
     />
   </label>
@@ -142,13 +137,12 @@ exports[`TextField > prevent user input when disabled 1`] = `
 exports[`TextField > renders with the correct initial state 1`] = `
 <DocumentFragment>
   <label
-    class="form-control w-full text-sm"
+    class="label form-control w-full"
   >
     <input
-      aria-describedby="undefined-error"
-      class="h-10 w-full rounded-md text-sm transition-all duration-100 input input-bordered"
+      aria-describedby="username-information"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10"
       name="username"
-      placeholder=" "
       value="John Doe"
     />
   </label>

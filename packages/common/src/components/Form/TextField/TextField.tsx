@@ -1,12 +1,11 @@
 import React from "react";
 import { type TextFieldProps } from "./types";
-import { cn } from "../../../utilities";
-import { getTextFieldClasses } from "./constants";
 import { FormControl } from "../components/FormControl/FormControl";
+import { Input } from "../Input";
 
 export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
-  ({ id, type, error, label, info, ...props }: TextFieldProps, ref) => {
-    const errorId = `${id}-error`;
+  ({ id, name, info, error, label, ...props }: TextFieldProps, ref) => {
+    const feedbackId = `${name}-information`;
 
     return (
       <FormControl as="label" htmlFor={id}>
@@ -16,23 +15,17 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
             {info && <span className="label-text-alt">{info}</span>}
           </div>
         )}
-        <input
-          {...props}
+        <Input
           id={id}
           ref={ref}
-          type={type}
-          className={cn(
-            getTextFieldClasses(),
-            { "input input-bordered": type !== "file" },
-            props.className
-          )}
-          placeholder={props.placeholder ?? " "}
+          name={name}
           aria-invalid={error ? true : undefined}
-          aria-describedby={errorId}
+          aria-describedby={feedbackId}
+          {...props}
         />
         {Boolean(error) && (
           <div className="label">
-            <span className="label-text-alt text-red-500" id={errorId}>
+            <span className="label-text-alt text-red-500" id={feedbackId}>
               {Array.isArray(error) ? error.join(", ") : error}
             </span>
           </div>

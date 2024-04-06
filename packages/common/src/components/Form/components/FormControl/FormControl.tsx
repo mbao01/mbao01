@@ -2,6 +2,7 @@ import { Slot } from "@radix-ui/react-slot";
 import type { As, FormControlProps } from "./types";
 import { getFormControlClasses } from "./constants";
 import { cn } from "../../../../utilities";
+import { Label } from "../Label";
 
 export const FormControl = <T extends As>({
   as,
@@ -9,7 +10,7 @@ export const FormControl = <T extends As>({
   className,
   ...props
 }: FormControlProps<T>) => {
-  const SlotChild = as ?? "label";
+  const SlotChild = !as || as === "label" ? Label : as;
 
   return (
     <Slot className={cn(getFormControlClasses(), className)} {...props}>

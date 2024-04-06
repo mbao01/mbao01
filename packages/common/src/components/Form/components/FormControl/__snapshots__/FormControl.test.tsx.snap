@@ -3,7 +3,7 @@
 exports[`FormControl > can be a div element 1`] = `
 <DocumentFragment>
   <div
-    class="form-control w-full text-sm"
+    class="form-control w-full"
   >
     div element
   </div>
@@ -13,7 +13,7 @@ exports[`FormControl > can be a div element 1`] = `
 exports[`FormControl > can be a label form control element 1`] = `
 <DocumentFragment>
   <label
-    class="form-control w-full text-sm"
+    class="label form-control w-full"
     for="username"
   >
     Username
@@ -28,7 +28,7 @@ exports[`FormControl > can be a label form control element 1`] = `
 exports[`FormControl > can be a span element 1`] = `
 <DocumentFragment>
   <span
-    class="form-control w-full text-sm"
+    class="form-control w-full"
   >
     span element
   </span>
