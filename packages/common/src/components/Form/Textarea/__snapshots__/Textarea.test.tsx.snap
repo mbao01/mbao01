@@ -1,0 +1,178 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Textarea > handles user textarea correctly 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 min-h-fit h-10"
+    name="username"
+  >
+    John Doe
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > has 'base' ('md') textarea 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 textarea-md"
+    name="name"
+  >
+    base textarea
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > has 'large' ('lg') textarea 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 textarea-lg"
+    name="name"
+  >
+    large textarea
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > has 'small' ('sm') textarea 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 textarea-sm"
+    name="name"
+  >
+    small textarea
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > has 'tiny' ('xs') textarea 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 textarea-xs"
+    name="name"
+  >
+    tiny textarea
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > has a label 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 min-h-fit h-10"
+    name="username"
+  >
+    Username
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > has accent variant 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 textarea-accent min-h-fit h-10"
+    name="name"
+  >
+    accent button
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > has error variant 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 textarea-error min-h-fit h-10"
+    name="name"
+  >
+    error button
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > has ghost variant 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 textarea-ghost min-h-fit h-10"
+    name="name"
+  >
+    ghost button
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > has info variant 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 textarea-info min-h-fit h-10"
+    name="name"
+  >
+    info button
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > has primary variant 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 textarea-primary min-h-fit h-10"
+    name="name"
+  >
+    primary button
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > has secondary variant 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 textarea-secondary min-h-fit h-10"
+    name="name"
+  >
+    secondary button
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > has success variant 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 textarea-success min-h-fit h-10"
+    name="name"
+  >
+    success button
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > has warning variant 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 textarea-warning min-h-fit h-10"
+    name="name"
+  >
+    warning button
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > prevent user textarea when disabled 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 min-h-fit h-10"
+    disabled=""
+    name="username"
+  >
+    John Doe
+  </textarea>
+</DocumentFragment>
+`;
+
+exports[`Textarea > renders with the correct initial state 1`] = `
+<DocumentFragment>
+  <textarea
+    class="textarea rounded-md transition-all duration-100 min-h-fit h-10"
+    name="username"
+  >
+    John Doe
+  </textarea>
+</DocumentFragment>
+`;
