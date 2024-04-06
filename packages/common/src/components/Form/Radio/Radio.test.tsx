@@ -1,38 +1,38 @@
 import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { Checkbox } from "./Checkbox";
+import { Radio } from "./Radio";
 
-describe("Checkbox", () => {
+describe("Radio", () => {
   it("renders with the correct initial state", () => {
-    const { asFragment } = render(<Checkbox name="username" defaultChecked />);
+    const { asFragment } = render(<Radio name="username" defaultChecked />);
 
-    expect(screen.getByRole("checkbox")).toBeInTheDocument();
+    expect(screen.getByRole("radio")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("handles user input correctly", async () => {
     const user = userEvent.setup();
 
-    const { asFragment } = render(<Checkbox name="username" />);
-    const checkbox = screen.getByRole("checkbox");
+    const { asFragment } = render(<Radio name="username" />);
+    const radio = screen.getByRole("radio");
 
-    await user.click(checkbox);
+    await user.click(radio);
 
-    expect(checkbox).toBeChecked();
+    expect(radio).toBeChecked();
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("prevent user input when disabled", async () => {
     const user = userEvent.setup();
 
-    const { asFragment } = render(<Checkbox name="username" disabled />);
-    const checkbox = screen.getByRole("checkbox");
+    const { asFragment } = render(<Radio name="username" disabled />);
+    const radio = screen.getByRole("radio");
 
-    await user.click(checkbox);
+    await user.click(radio);
 
-    expect(checkbox).toBeDisabled();
-    expect(checkbox).not.toBeChecked();
+    expect(radio).toBeDisabled();
+    expect(radio).not.toBeChecked();
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -46,10 +46,10 @@ describe("Checkbox", () => {
     "error",
   ] as const)("has %s variant", (variant) => {
     const { asFragment } = render(
-      <Checkbox name="name" defaultChecked variant={variant} />
+      <Radio name="name" defaultChecked variant={variant} />
     );
 
-    expect(screen.getByRole("checkbox")).toBeInTheDocument();
+    expect(screen.getByRole("radio")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -59,9 +59,9 @@ describe("Checkbox", () => {
     { size: "md", name: "base" },
     { size: "lg", name: "large" },
   ] as const)("has $name ($size)", ({ size, name }) => {
-    const { asFragment } = render(<Checkbox name={name} size={size} />);
+    const { asFragment } = render(<Radio name={name} size={size} />);
 
-    expect(screen.getByRole("checkbox")).toBeInTheDocument();
+    expect(screen.getByRole("radio")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 });

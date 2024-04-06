@@ -5,6 +5,7 @@ exports[`Checkbox > handles user input correctly 1`] = `
   <input
     class="checkbox"
     name="username"
+    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
@@ -15,6 +16,7 @@ exports[`Checkbox > has 'base' ('md') 1`] = `
   <input
     class="checkbox checkbox-md"
     name="base"
+    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
@@ -25,6 +27,7 @@ exports[`Checkbox > has 'large' ('lg') 1`] = `
   <input
     class="checkbox checkbox-lg"
     name="large"
+    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
@@ -35,6 +38,7 @@ exports[`Checkbox > has 'small' ('sm') 1`] = `
   <input
     class="checkbox checkbox-sm"
     name="small"
+    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
@@ -45,6 +49,7 @@ exports[`Checkbox > has 'tiny' ('xs') 1`] = `
   <input
     class="checkbox checkbox-xs"
     name="tiny"
+    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
@@ -56,6 +61,7 @@ exports[`Checkbox > has accent variant 1`] = `
     checked=""
     class="checkbox checkbox-accent"
     name="name"
+    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
@@ -67,6 +73,7 @@ exports[`Checkbox > has error variant 1`] = `
     checked=""
     class="checkbox checkbox-error"
     name="name"
+    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
@@ -78,6 +85,7 @@ exports[`Checkbox > has info variant 1`] = `
     checked=""
     class="checkbox checkbox-info"
     name="name"
+    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
@@ -89,6 +97,7 @@ exports[`Checkbox > has primary variant 1`] = `
     checked=""
     class="checkbox checkbox-primary"
     name="name"
+    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
@@ -100,6 +109,7 @@ exports[`Checkbox > has secondary variant 1`] = `
     checked=""
     class="checkbox checkbox-secondary"
     name="name"
+    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
@@ -111,6 +121,7 @@ exports[`Checkbox > has success variant 1`] = `
     checked=""
     class="checkbox checkbox-success"
     name="name"
+    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
@@ -122,6 +133,7 @@ exports[`Checkbox > has warning variant 1`] = `
     checked=""
     class="checkbox checkbox-warning"
     name="name"
+    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
@@ -133,6 +145,7 @@ exports[`Checkbox > prevent user input when disabled 1`] = `
     class="checkbox"
     disabled=""
     name="username"
+    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
@@ -144,6 +157,7 @@ exports[`Checkbox > renders with the correct initial state 1`] = `
     checked=""
     class="checkbox"
     name="username"
+    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>

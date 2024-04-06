@@ -63,7 +63,7 @@ describe("Input", () => {
   ] as const)("has %s variant", (variant) => {
     const value = `${variant} button`;
     const { asFragment } = render(
-      <Input name="name" value={value} variant={variant} />
+      <Input name="name" defaultValue={value} variant={variant} />
     );
 
     expect(screen.getByDisplayValue(value)).toBeInTheDocument();
@@ -78,7 +78,7 @@ describe("Input", () => {
   ] as const)("has $name ($size) input", ({ size, name }) => {
     const value = `${name} input`;
     const { asFragment } = render(
-      <Input name="name" value={value} size={size} />
+      <Input name="name" defaultValue={value} size={size} />
     );
 
     expect(screen.getByDisplayValue(value)).toBeInTheDocument();

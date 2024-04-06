@@ -8,7 +8,6 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
     <input
       ref={ref}
       type="checkbox"
-      role="checkbox"
       className={cn(getCheckboxClasses({ size, variant }), className)}
       {...props}
     />
