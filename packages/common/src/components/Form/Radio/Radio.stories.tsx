@@ -80,7 +80,6 @@ export const RadioGroup: Story = {
           as="label"
           className="flex-row justify-start items-center gap-2"
         >
-          {" "}
           <Radio id="gender-female" name="gender" {...args} />
           <Label htmlFor="gender-female">Female</Label>
         </FormControl>
