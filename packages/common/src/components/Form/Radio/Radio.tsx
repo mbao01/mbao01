@@ -1,9 +1,9 @@
 import * as React from "react";
-import { type CheckboxProps } from "./types";
+import { type RadioProps } from "./types";
 import { getRadioClasses } from "./constants";
 import { cn } from "../../../utilities";
 
-const Radio = React.forwardRef<HTMLInputElement, CheckboxProps>(
+const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
   ({ className, size, variant, ...props }, ref) => (
     <input
       ref={ref}

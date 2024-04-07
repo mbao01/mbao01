@@ -1,0 +1,287 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Select > handles user input correctly 1`] = `
+<DocumentFragment>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-:r0:"
+    aria-expanded="false"
+    class="select flex items-center justify-between rounded-md text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 min-h-fit h-10"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    role="combobox"
+    type="button"
+  >
+    <span
+      style="pointer-events: none;"
+    >
+      Theme
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Select > has 'base' ('md') 1`] = `
+<DocumentFragment>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-:r18:"
+    aria-expanded="false"
+    class="select flex items-center justify-between rounded-md text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 select-md"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    role="combobox"
+    type="button"
+  >
+    <span
+      style="pointer-events: none;"
+    >
+      base select
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Select > has 'large' ('lg') 1`] = `
+<DocumentFragment>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-:r1c:"
+    aria-expanded="false"
+    class="select flex items-center justify-between rounded-md text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 select-lg"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    role="combobox"
+    type="button"
+  >
+    <span
+      style="pointer-events: none;"
+    >
+      large select
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Select > has 'small' ('sm') 1`] = `
+<DocumentFragment>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-:r14:"
+    aria-expanded="false"
+    class="select flex items-center justify-between rounded-md text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 select-sm"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    role="combobox"
+    type="button"
+  >
+    <span
+      style="pointer-events: none;"
+    >
+      small select
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Select > has 'tiny' ('xs') 1`] = `
+<DocumentFragment>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-:r10:"
+    aria-expanded="false"
+    class="select flex items-center justify-between rounded-md text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 select-xs"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    role="combobox"
+    type="button"
+  >
+    <span
+      style="pointer-events: none;"
+    >
+      tiny select
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Select > has accent variant 1`] = `
+<DocumentFragment>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-:rc:"
+    aria-expanded="false"
+    class="select flex items-center justify-between rounded-md text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 select-accent min-h-fit h-10"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    role="combobox"
+    type="button"
+  >
+    <span
+      style="pointer-events: none;"
+    >
+      accent select
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Select > has error variant 1`] = `
+<DocumentFragment>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-:rs:"
+    aria-expanded="false"
+    class="select flex items-center justify-between rounded-md text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 select-error min-h-fit h-10"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    role="combobox"
+    type="button"
+  >
+    <span
+      style="pointer-events: none;"
+    >
+      error select
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Select > has info variant 1`] = `
+<DocumentFragment>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-:ro:"
+    aria-expanded="false"
+    class="select flex items-center justify-between rounded-md text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 select-info min-h-fit h-10"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    role="combobox"
+    type="button"
+  >
+    <span
+      style="pointer-events: none;"
+    >
+      info select
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Select > has primary variant 1`] = `
+<DocumentFragment>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-:r4:"
+    aria-expanded="false"
+    class="select flex items-center justify-between rounded-md text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 select-primary min-h-fit h-10"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    role="combobox"
+    type="button"
+  >
+    <span
+      style="pointer-events: none;"
+    >
+      primary select
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Select > has secondary variant 1`] = `
+<DocumentFragment>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-:r8:"
+    aria-expanded="false"
+    class="select flex items-center justify-between rounded-md text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 select-secondary min-h-fit h-10"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    role="combobox"
+    type="button"
+  >
+    <span
+      style="pointer-events: none;"
+    >
+      secondary select
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Select > has success variant 1`] = `
+<DocumentFragment>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-:rg:"
+    aria-expanded="false"
+    class="select flex items-center justify-between rounded-md text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 select-success min-h-fit h-10"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    role="combobox"
+    type="button"
+  >
+    <span
+      style="pointer-events: none;"
+    >
+      success select
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Select > has warning variant 1`] = `
+<DocumentFragment>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-:rk:"
+    aria-expanded="false"
+    class="select flex items-center justify-between rounded-md text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 select-warning min-h-fit h-10"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    role="combobox"
+    type="button"
+  >
+    <span
+      style="pointer-events: none;"
+    >
+      warning select
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Select > renders with the correct initial state 1`] = `
+<DocumentFragment>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-:r0:"
+    aria-expanded="false"
+    class="select flex items-center justify-between rounded-md text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 min-h-fit h-10"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    role="combobox"
+    type="button"
+  >
+    <span
+      style="pointer-events: none;"
+    >
+      Theme
+    </span>
+  </button>
+</DocumentFragment>
+`;
