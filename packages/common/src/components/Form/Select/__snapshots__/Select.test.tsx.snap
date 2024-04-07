@@ -1,27 +1,5 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Select > handles user input correctly 1`] = `
-<DocumentFragment>
-  <button
-    aria-autocomplete="none"
-    aria-controls="radix-:r0:"
-    aria-expanded="false"
-    class="select flex items-center justify-between rounded-md text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 min-h-fit h-10"
-    data-placeholder=""
-    data-state="closed"
-    dir="ltr"
-    role="combobox"
-    type="button"
-  >
-    <span
-      style="pointer-events: none;"
-    >
-      Theme
-    </span>
-  </button>
-</DocumentFragment>
-`;
-
 exports[`Select > has 'base' ('md') 1`] = `
 <DocumentFragment>
   <button

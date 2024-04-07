@@ -1,163 +1,149 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Checkbox > handles user input correctly 1`] = `
+exports[`Switch > handles user input correctly 1`] = `
 <DocumentFragment>
   <input
-    class="checkbox"
+    class="toggle"
     name="username"
-    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
 `;
 
-exports[`Checkbox > has 'base' ('md') 1`] = `
+exports[`Switch > has 'base' ('md') 1`] = `
 <DocumentFragment>
   <input
-    class="checkbox checkbox-md"
+    class="toggle toggle-md"
     name="base"
-    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
 `;
 
-exports[`Checkbox > has 'large' ('lg') 1`] = `
+exports[`Switch > has 'large' ('lg') 1`] = `
 <DocumentFragment>
   <input
-    class="checkbox checkbox-lg"
+    class="toggle toggle-lg"
     name="large"
-    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
 `;
 
-exports[`Checkbox > has 'small' ('sm') 1`] = `
+exports[`Switch > has 'small' ('sm') 1`] = `
 <DocumentFragment>
   <input
-    class="checkbox checkbox-sm"
+    class="toggle toggle-sm"
     name="small"
-    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
 `;
 
-exports[`Checkbox > has 'tiny' ('xs') 1`] = `
+exports[`Switch > has 'tiny' ('xs') 1`] = `
 <DocumentFragment>
   <input
-    class="checkbox checkbox-xs"
+    class="toggle toggle-xs"
     name="tiny"
-    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
 `;
 
-exports[`Checkbox > has accent variant 1`] = `
+exports[`Switch > has accent variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="checkbox checkbox-accent"
+    class="toggle toggle-accent"
     name="name"
-    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
 `;
 
-exports[`Checkbox > has error variant 1`] = `
+exports[`Switch > has error variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="checkbox checkbox-error"
+    class="toggle toggle-error"
     name="name"
-    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
 `;
 
-exports[`Checkbox > has info variant 1`] = `
+exports[`Switch > has info variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="checkbox checkbox-info"
+    class="toggle toggle-info"
     name="name"
-    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
 `;
 
-exports[`Checkbox > has primary variant 1`] = `
+exports[`Switch > has primary variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="checkbox checkbox-primary"
+    class="toggle toggle-primary"
     name="name"
-    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
 `;
 
-exports[`Checkbox > has secondary variant 1`] = `
+exports[`Switch > has secondary variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="checkbox checkbox-secondary"
+    class="toggle toggle-secondary"
     name="name"
-    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
 `;
 
-exports[`Checkbox > has success variant 1`] = `
+exports[`Switch > has success variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="checkbox checkbox-success"
+    class="toggle toggle-success"
     name="name"
-    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
 `;
 
-exports[`Checkbox > has warning variant 1`] = `
+exports[`Switch > has warning variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="checkbox checkbox-warning"
+    class="toggle toggle-warning"
     name="name"
-    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
 `;
 
-exports[`Checkbox > prevent user input when disabled 1`] = `
+exports[`Switch > prevent user input when disabled 1`] = `
 <DocumentFragment>
   <input
-    class="checkbox"
+    class="toggle"
     disabled=""
     name="username"
-    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
 `;
 
-exports[`Checkbox > renders with the correct initial state 1`] = `
+exports[`Switch > renders with the correct initial state 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="checkbox"
+    class="toggle"
     name="username"
-    role="checkbox"
     type="checkbox"
   />
 </DocumentFragment>
