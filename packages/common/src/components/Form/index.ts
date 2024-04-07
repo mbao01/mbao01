@@ -1,6 +1,7 @@
 export { Input } from "./Input";
 export { Radio } from "./Radio";
 export { Select } from "./Select";
+export { Range } from "./Range";
 export { Slider } from "./Slider";
 export { Checkbox } from "./Checkbox";
 export { Textarea } from "./Textarea";

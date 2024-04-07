@@ -1,8 +1,8 @@
 import { type VariantProps } from "../../../libs";
-import { getRadioClasses } from "./constants";
+import { getRangeClasses } from "./constants";
 
-export type RadioProps = Omit<
+export type RangeProps = Omit<
   React.HTMLProps<HTMLInputElement>,
   "size" | "ref" | "type"
 > &
-  VariantProps<typeof getRadioClasses>;
+  VariantProps<typeof getRangeClasses>;

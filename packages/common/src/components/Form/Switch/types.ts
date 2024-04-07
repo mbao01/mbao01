@@ -1,6 +1,8 @@
 import { type VariantProps } from "../../../libs";
-import { type InputProps } from "../Input/types";
 import { getSwitchClasses } from "./constants";
 
-export type SwitchProps = Omit<InputProps, "type" | "size"> &
+export type SwitchProps = Omit<
+  React.HTMLProps<HTMLInputElement>,
+  "size" | "ref" | "type"
+> &
   VariantProps<typeof getSwitchClasses>;
