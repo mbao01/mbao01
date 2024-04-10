@@ -1,17 +1,17 @@
 import React from "react";
-import { type TextProps } from "./types";
+import type { As, TextProps } from "./types";
 import { getTextClasses } from "./constants";
 import { cn } from "../../utilities";
 import { Slot } from "@radix-ui/react-slot";
 
-export const Text = ({
+export const Text = <T extends As>({
   as,
   size,
   variant,
   children,
   className,
   ...props
-}: TextProps) => {
+}: TextProps<T>) => {
   const Comp = as ? Slot : "span";
   const SlotChild = as ? as : React.Fragment;
 

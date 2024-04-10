@@ -1,0 +1,150 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TextField > handles user input correctly 1`] = `
+<DocumentFragment>
+  <label
+    class="label form-control w-full"
+  >
+    <div
+      class="label"
+    >
+      <span
+        class="label-text"
+      >
+        Username
+      </span>
+    </div>
+    <input
+      aria-describedby="username-information"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10"
+      name="username"
+      value="John Doe"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`TextField > has a label 1`] = `
+<DocumentFragment>
+  <label
+    class="label form-control w-full"
+  >
+    <div
+      class="label"
+    >
+      <span
+        class="label-text"
+      >
+        Username
+      </span>
+    </div>
+    <input
+      aria-describedby="username-information"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10"
+      name="username"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`TextField > has an error text 1`] = `
+<DocumentFragment>
+  <label
+    class="label form-control w-full"
+  >
+    <div
+      class="label"
+    >
+      <span
+        class="label-text"
+      >
+        Username
+      </span>
+    </div>
+    <input
+      aria-describedby="username-information"
+      aria-invalid="true"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10"
+      name="username"
+    />
+    <div
+      class="label"
+    >
+      <span
+        class="label-text-alt text-red-500"
+        id="username-information"
+      >
+        This is an error text
+      </span>
+    </div>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`TextField > has an info text 1`] = `
+<DocumentFragment>
+  <label
+    class="label form-control w-full"
+  >
+    <div
+      class="label"
+    >
+      <span
+        class="label-text"
+      >
+        Username
+      </span>
+      <span
+        class="label-text-alt"
+      >
+        This is an info text
+      </span>
+    </div>
+    <input
+      aria-describedby="username-information"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10"
+      name="username"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`TextField > prevent user input when disabled 1`] = `
+<DocumentFragment>
+  <label
+    class="label form-control w-full"
+  >
+    <div
+      class="label"
+    >
+      <span
+        class="label-text"
+      >
+        Username
+      </span>
+    </div>
+    <input
+      aria-describedby="username-information"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10"
+      disabled=""
+      name="username"
+      value="John Doe"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`TextField > renders with the correct initial state 1`] = `
+<DocumentFragment>
+  <label
+    class="label form-control w-full"
+  >
+    <input
+      aria-describedby="username-information"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10"
+      name="username"
+      value="John Doe"
+    />
+  </label>
+</DocumentFragment>
+`;

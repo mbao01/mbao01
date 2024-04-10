@@ -1,0 +1,560 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Slider > has 'base' ('md') 1`] = `
+<DocumentFragment>
+  <span
+    aria-disabled="false"
+    class="relative flex touch-none select-none items-center min-w-24"
+    data-orientation="horizontal"
+    data-testid="base-slider-root"
+    dir="ltr"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="relative w-full grow overflow-hidden rounded-full bg-base-200 h-2"
+      data-orientation="horizontal"
+      data-testid="base-slider-track"
+    >
+      <span
+        class="absolute h-full bg-base-content"
+        data-orientation="horizontal"
+        data-testid="base-slider-range"
+        style="left: 0%; right: 100%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(0% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="block rounded-full border-2 ring-offset-neutral transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-neutral-content bg-neutral h-5 w-5"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-testid="base-slider-thumb"
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Slider > has 'large' ('lg') 1`] = `
+<DocumentFragment>
+  <span
+    aria-disabled="false"
+    class="relative flex touch-none select-none items-center min-w-24"
+    data-orientation="horizontal"
+    data-testid="large-slider-root"
+    dir="ltr"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="relative w-full grow overflow-hidden rounded-full bg-base-200 h-3"
+      data-orientation="horizontal"
+      data-testid="large-slider-track"
+    >
+      <span
+        class="absolute h-full bg-base-content"
+        data-orientation="horizontal"
+        data-testid="large-slider-range"
+        style="left: 0%; right: 100%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(0% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="block rounded-full border-2 ring-offset-neutral transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-neutral-content bg-neutral h-7 w-7"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-testid="large-slider-thumb"
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Slider > has 'small' ('sm') 1`] = `
+<DocumentFragment>
+  <span
+    aria-disabled="false"
+    class="relative flex touch-none select-none items-center min-w-24"
+    data-orientation="horizontal"
+    data-testid="small-slider-root"
+    dir="ltr"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="relative w-full grow overflow-hidden rounded-full bg-base-200 h-1"
+      data-orientation="horizontal"
+      data-testid="small-slider-track"
+    >
+      <span
+        class="absolute h-full bg-base-content"
+        data-orientation="horizontal"
+        data-testid="small-slider-range"
+        style="left: 0%; right: 100%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(0% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="block rounded-full border-2 ring-offset-neutral transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-neutral-content bg-neutral h-4 w-4"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-testid="small-slider-thumb"
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Slider > has 'tiny' ('xs') 1`] = `
+<DocumentFragment>
+  <span
+    aria-disabled="false"
+    class="relative flex touch-none select-none items-center min-w-24"
+    data-orientation="horizontal"
+    data-testid="tiny-slider-root"
+    dir="ltr"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="relative w-full grow overflow-hidden rounded-full bg-base-200 h-0.5"
+      data-orientation="horizontal"
+      data-testid="tiny-slider-track"
+    >
+      <span
+        class="absolute h-full bg-base-content"
+        data-orientation="horizontal"
+        data-testid="tiny-slider-range"
+        style="left: 0%; right: 100%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(0% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="block rounded-full border-2 ring-offset-neutral transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-neutral-content bg-neutral h-4 w-4"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-testid="tiny-slider-thumb"
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Slider > has accent variant 1`] = `
+<DocumentFragment>
+  <span
+    aria-disabled="false"
+    class="relative flex touch-none select-none items-center min-w-24 w-full"
+    data-orientation="horizontal"
+    data-testid="risk-level-slider-root"
+    dir="ltr"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="relative h-2 w-full grow overflow-hidden rounded-full bg-neutral-content"
+      data-orientation="horizontal"
+      data-testid="risk-level-slider-track"
+    >
+      <span
+        class="absolute h-full bg-accent"
+        data-orientation="horizontal"
+        data-testid="risk-level-slider-range"
+        style="left: 0%; right: 100%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(0% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="block h-5 w-5 rounded-full border-2 ring-offset-neutral transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-accent bg-base-100"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-testid="risk-level-slider-thumb"
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Slider > has error variant 1`] = `
+<DocumentFragment>
+  <span
+    aria-disabled="false"
+    class="relative flex touch-none select-none items-center min-w-24 w-full"
+    data-orientation="horizontal"
+    data-testid="risk-level-slider-root"
+    dir="ltr"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="relative h-2 w-full grow overflow-hidden rounded-full bg-neutral-content"
+      data-orientation="horizontal"
+      data-testid="risk-level-slider-track"
+    >
+      <span
+        class="absolute h-full bg-error"
+        data-orientation="horizontal"
+        data-testid="risk-level-slider-range"
+        style="left: 0%; right: 100%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(0% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="block h-5 w-5 rounded-full border-2 ring-offset-neutral transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-error bg-base-100"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-testid="risk-level-slider-thumb"
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Slider > has info variant 1`] = `
+<DocumentFragment>
+  <span
+    aria-disabled="false"
+    class="relative flex touch-none select-none items-center min-w-24 w-full"
+    data-orientation="horizontal"
+    data-testid="risk-level-slider-root"
+    dir="ltr"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="relative h-2 w-full grow overflow-hidden rounded-full bg-neutral-content"
+      data-orientation="horizontal"
+      data-testid="risk-level-slider-track"
+    >
+      <span
+        class="absolute h-full bg-info"
+        data-orientation="horizontal"
+        data-testid="risk-level-slider-range"
+        style="left: 0%; right: 100%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(0% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="block h-5 w-5 rounded-full border-2 ring-offset-neutral transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-info bg-base-100"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-testid="risk-level-slider-thumb"
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Slider > has neutral variant 1`] = `
+<DocumentFragment>
+  <span
+    aria-disabled="false"
+    class="relative flex touch-none select-none items-center min-w-24 w-full"
+    data-orientation="horizontal"
+    data-testid="risk-level-slider-root"
+    dir="ltr"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="relative h-2 w-full grow overflow-hidden rounded-full bg-base-200"
+      data-orientation="horizontal"
+      data-testid="risk-level-slider-track"
+    >
+      <span
+        class="absolute h-full bg-base-content"
+        data-orientation="horizontal"
+        data-testid="risk-level-slider-range"
+        style="left: 0%; right: 100%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(0% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="block h-5 w-5 rounded-full border-2 ring-offset-neutral transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-neutral-content bg-neutral"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-testid="risk-level-slider-thumb"
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Slider > has primary variant 1`] = `
+<DocumentFragment>
+  <span
+    aria-disabled="false"
+    class="relative flex touch-none select-none items-center min-w-24 w-full"
+    data-orientation="horizontal"
+    data-testid="risk-level-slider-root"
+    dir="ltr"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="relative h-2 w-full grow overflow-hidden rounded-full bg-neutral-content"
+      data-orientation="horizontal"
+      data-testid="risk-level-slider-track"
+    >
+      <span
+        class="absolute h-full bg-primary"
+        data-orientation="horizontal"
+        data-testid="risk-level-slider-range"
+        style="left: 0%; right: 100%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(0% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="block h-5 w-5 rounded-full border-2 ring-offset-neutral transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-primary bg-base-100"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-testid="risk-level-slider-thumb"
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Slider > has secondary variant 1`] = `
+<DocumentFragment>
+  <span
+    aria-disabled="false"
+    class="relative flex touch-none select-none items-center min-w-24 w-full"
+    data-orientation="horizontal"
+    data-testid="risk-level-slider-root"
+    dir="ltr"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="relative h-2 w-full grow overflow-hidden rounded-full bg-neutral-content"
+      data-orientation="horizontal"
+      data-testid="risk-level-slider-track"
+    >
+      <span
+        class="absolute h-full bg-secondary"
+        data-orientation="horizontal"
+        data-testid="risk-level-slider-range"
+        style="left: 0%; right: 100%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(0% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="block h-5 w-5 rounded-full border-2 ring-offset-neutral transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-secondary bg-base-100"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-testid="risk-level-slider-thumb"
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Slider > has success variant 1`] = `
+<DocumentFragment>
+  <span
+    aria-disabled="false"
+    class="relative flex touch-none select-none items-center min-w-24 w-full"
+    data-orientation="horizontal"
+    data-testid="risk-level-slider-root"
+    dir="ltr"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="relative h-2 w-full grow overflow-hidden rounded-full bg-neutral-content"
+      data-orientation="horizontal"
+      data-testid="risk-level-slider-track"
+    >
+      <span
+        class="absolute h-full bg-success"
+        data-orientation="horizontal"
+        data-testid="risk-level-slider-range"
+        style="left: 0%; right: 100%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(0% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="block h-5 w-5 rounded-full border-2 ring-offset-neutral transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-success bg-base-100"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-testid="risk-level-slider-thumb"
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Slider > has warning variant 1`] = `
+<DocumentFragment>
+  <span
+    aria-disabled="false"
+    class="relative flex touch-none select-none items-center min-w-24 w-full"
+    data-orientation="horizontal"
+    data-testid="risk-level-slider-root"
+    dir="ltr"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="relative h-2 w-full grow overflow-hidden rounded-full bg-neutral-content"
+      data-orientation="horizontal"
+      data-testid="risk-level-slider-track"
+    >
+      <span
+        class="absolute h-full bg-warning"
+        data-orientation="horizontal"
+        data-testid="risk-level-slider-range"
+        style="left: 0%; right: 100%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(0% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="block h-5 w-5 rounded-full border-2 ring-offset-neutral transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-warning bg-base-100"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-testid="risk-level-slider-thumb"
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Slider > renders with the correct initial state 1`] = `
+<DocumentFragment>
+  <span
+    aria-disabled="false"
+    class="relative flex touch-none select-none items-center min-w-24"
+    data-orientation="horizontal"
+    data-testid="risk-level-slider-root"
+    dir="ltr"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="relative h-2 w-full grow overflow-hidden rounded-full bg-base-200"
+      data-orientation="horizontal"
+      data-testid="risk-level-slider-track"
+    >
+      <span
+        class="absolute h-full bg-base-content"
+        data-orientation="horizontal"
+        data-testid="risk-level-slider-range"
+        style="left: 0%; right: 100%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(0% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="block h-5 w-5 rounded-full border-2 ring-offset-neutral transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-neutral-content bg-neutral"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-testid="risk-level-slider-thumb"
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;

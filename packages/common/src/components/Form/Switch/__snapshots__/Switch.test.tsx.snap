@@ -1,0 +1,150 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Switch > handles user input correctly 1`] = `
+<DocumentFragment>
+  <input
+    class="toggle"
+    name="username"
+    type="checkbox"
+  />
+</DocumentFragment>
+`;
+
+exports[`Switch > has 'base' ('md') 1`] = `
+<DocumentFragment>
+  <input
+    class="toggle toggle-md"
+    name="base"
+    type="checkbox"
+  />
+</DocumentFragment>
+`;
+
+exports[`Switch > has 'large' ('lg') 1`] = `
+<DocumentFragment>
+  <input
+    class="toggle toggle-lg"
+    name="large"
+    type="checkbox"
+  />
+</DocumentFragment>
+`;
+
+exports[`Switch > has 'small' ('sm') 1`] = `
+<DocumentFragment>
+  <input
+    class="toggle toggle-sm"
+    name="small"
+    type="checkbox"
+  />
+</DocumentFragment>
+`;
+
+exports[`Switch > has 'tiny' ('xs') 1`] = `
+<DocumentFragment>
+  <input
+    class="toggle toggle-xs"
+    name="tiny"
+    type="checkbox"
+  />
+</DocumentFragment>
+`;
+
+exports[`Switch > has accent variant 1`] = `
+<DocumentFragment>
+  <input
+    checked=""
+    class="toggle toggle-accent"
+    name="name"
+    type="checkbox"
+  />
+</DocumentFragment>
+`;
+
+exports[`Switch > has error variant 1`] = `
+<DocumentFragment>
+  <input
+    checked=""
+    class="toggle toggle-error"
+    name="name"
+    type="checkbox"
+  />
+</DocumentFragment>
+`;
+
+exports[`Switch > has info variant 1`] = `
+<DocumentFragment>
+  <input
+    checked=""
+    class="toggle toggle-info"
+    name="name"
+    type="checkbox"
+  />
+</DocumentFragment>
+`;
+
+exports[`Switch > has primary variant 1`] = `
+<DocumentFragment>
+  <input
+    checked=""
+    class="toggle toggle-primary"
+    name="name"
+    type="checkbox"
+  />
+</DocumentFragment>
+`;
+
+exports[`Switch > has secondary variant 1`] = `
+<DocumentFragment>
+  <input
+    checked=""
+    class="toggle toggle-secondary"
+    name="name"
+    type="checkbox"
+  />
+</DocumentFragment>
+`;
+
+exports[`Switch > has success variant 1`] = `
+<DocumentFragment>
+  <input
+    checked=""
+    class="toggle toggle-success"
+    name="name"
+    type="checkbox"
+  />
+</DocumentFragment>
+`;
+
+exports[`Switch > has warning variant 1`] = `
+<DocumentFragment>
+  <input
+    checked=""
+    class="toggle toggle-warning"
+    name="name"
+    type="checkbox"
+  />
+</DocumentFragment>
+`;
+
+exports[`Switch > prevent user input when disabled 1`] = `
+<DocumentFragment>
+  <input
+    class="toggle"
+    disabled=""
+    name="username"
+    type="checkbox"
+  />
+</DocumentFragment>
+`;
+
+exports[`Switch > renders with the correct initial state 1`] = `
+<DocumentFragment>
+  <input
+    checked=""
+    class="toggle"
+    name="username"
+    type="checkbox"
+  />
+</DocumentFragment>
+`;

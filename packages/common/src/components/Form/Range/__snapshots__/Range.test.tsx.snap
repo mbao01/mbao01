@@ -1,0 +1,153 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Range > handles user input correctly 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-neutral"
+    name="risk-level"
+    type="range"
+  />
+</DocumentFragment>
+`;
+
+exports[`Range > has 'base' ('md') 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-neutral range-md"
+    name="base"
+    type="range"
+  />
+</DocumentFragment>
+`;
+
+exports[`Range > has 'large' ('lg') 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-neutral range-lg"
+    name="large"
+    type="range"
+  />
+</DocumentFragment>
+`;
+
+exports[`Range > has 'small' ('sm') 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-neutral range-sm"
+    name="small"
+    type="range"
+  />
+</DocumentFragment>
+`;
+
+exports[`Range > has 'tiny' ('xs') 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-neutral range-xs"
+    name="tiny"
+    type="range"
+  />
+</DocumentFragment>
+`;
+
+exports[`Range > has accent variant 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-accent w-full"
+    name="risk-level"
+    type="range"
+  />
+</DocumentFragment>
+`;
+
+exports[`Range > has error variant 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-error w-full"
+    name="risk-level"
+    type="range"
+  />
+</DocumentFragment>
+`;
+
+exports[`Range > has info variant 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-info w-full"
+    name="risk-level"
+    type="range"
+  />
+</DocumentFragment>
+`;
+
+exports[`Range > has neutral variant 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-neutral w-full"
+    name="risk-level"
+    type="range"
+  />
+</DocumentFragment>
+`;
+
+exports[`Range > has primary variant 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-primary w-full"
+    name="risk-level"
+    type="range"
+  />
+</DocumentFragment>
+`;
+
+exports[`Range > has secondary variant 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-secondary w-full"
+    name="risk-level"
+    type="range"
+  />
+</DocumentFragment>
+`;
+
+exports[`Range > has success variant 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-success w-full"
+    name="risk-level"
+    type="range"
+  />
+</DocumentFragment>
+`;
+
+exports[`Range > has warning variant 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-warning w-full"
+    name="risk-level"
+    type="range"
+  />
+</DocumentFragment>
+`;
+
+exports[`Range > is in a disabled state 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-neutral cursor-not-allowed opacity-80"
+    disabled=""
+    name="risk-level"
+    type="range"
+    value="10"
+  />
+</DocumentFragment>
+`;
+
+exports[`Range > renders with the correct initial state 1`] = `
+<DocumentFragment>
+  <input
+    class="range range-neutral"
+    name="risk-level"
+    type="range"
+  />
+</DocumentFragment>
+`;

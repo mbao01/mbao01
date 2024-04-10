@@ -1,0 +1,163 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Input > handles user input correctly 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 min-h-fit h-10"
+    label="Username"
+    name="username"
+    value="John Doe"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > has 'base' ('md') input 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 input-md"
+    name="name"
+    value="base input"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > has 'large' ('lg') input 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 input-lg"
+    name="name"
+    value="large input"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > has 'small' ('sm') input 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 input-sm"
+    name="name"
+    value="small input"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > has 'tiny' ('xs') input 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 input-xs"
+    name="name"
+    value="tiny input"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > has a label 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 min-h-fit h-10"
+    name="username"
+    value="Username"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > has accent variant 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 input-accent min-h-fit h-10"
+    name="name"
+    value="accent button"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > has error variant 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 input-error min-h-fit h-10"
+    name="name"
+    value="error button"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > has ghost variant 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 input-ghost min-h-fit h-10"
+    name="name"
+    value="ghost button"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > has info variant 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 input-info min-h-fit h-10"
+    name="name"
+    value="info button"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > has primary variant 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 input-primary min-h-fit h-10"
+    name="name"
+    value="primary button"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > has secondary variant 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 input-secondary min-h-fit h-10"
+    name="name"
+    value="secondary button"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > has success variant 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 input-success min-h-fit h-10"
+    name="name"
+    value="success button"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > has warning variant 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 input-warning min-h-fit h-10"
+    name="name"
+    value="warning button"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > prevent user input when disabled 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 min-h-fit h-10"
+    disabled=""
+    name="username"
+    value="John Doe"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input > renders with the correct initial state 1`] = `
+<DocumentFragment>
+  <input
+    class="input rounded-md transition-all duration-100 min-h-fit h-10"
+    name="username"
+    value="John Doe"
+  />
+</DocumentFragment>
+`;
