@@ -19,7 +19,6 @@ import { getButtonClasses } from "../../Button/constants";
 const Phone = React.forwardRef<HTMLInputElement, PhoneProps>(
   (
     {
-      label,
       defaultValue,
       className,
       placeholder,
@@ -103,7 +102,7 @@ const Phone = React.forwardRef<HTMLInputElement, PhoneProps>(
           value={inputValue}
           pattern="^\+\d{1,4}\s\d{6,}$"
           inputMode="numeric"
-          placeholder={placeholder || " "}
+          placeholder={placeholder ?? " "}
           onChange={handleInputChange}
           className={cn(
             getPhoneInputClasses(),

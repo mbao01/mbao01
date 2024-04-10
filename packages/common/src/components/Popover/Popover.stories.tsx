@@ -12,7 +12,7 @@ const withPopover = (
         <Button outline>Open popover</Button>
       </Popover.Trigger>
       <Popover.Content className="w-80" {...context.args}>
-        Here's some easter egg for you 🥚
+        Here is some easter egg for you 🥚
       </Popover.Content>
     </Popover>
   );

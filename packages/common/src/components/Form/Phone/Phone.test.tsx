@@ -14,9 +14,7 @@ describe("Phone", () => {
 
   it("should input phone number", async () => {
     const user = userEvent.setup();
-    const { asFragment } = render(
-      <Phone name="mobile" label="Mobile number" />
-    );
+    const { asFragment } = render(<Phone name="mobile" />);
 
     const phoneInput = screen.getByRole("textbox");
 

@@ -1,5 +1,5 @@
 "use client";
-
+/* eslint-disable react/prop-types */
 import * as React from "react";
 import { Command as CommandPrimitive } from "cmdk";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
@@ -43,6 +43,7 @@ const CommandInput = React.forwardRef<
   React.ElementRef<typeof CommandPrimitive.Input>,
   CommandInputProps
 >(({ className, ...props }, ref) => (
+  // eslint-disable-next-line react/no-unknown-property
   <div className={cn(getCommandInputWrapperClasses())} cmdk-input-wrapper="">
     <MagnifyingGlassIcon className="mr-2 h-4 w-4 shrink-0 opacity-50" />
     <CommandPrimitive.Input

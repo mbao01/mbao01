@@ -1,7 +1,7 @@
-import type { Meta, StoryFn, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react";
 import { Command } from "./Command";
 
-const withCommand = (_: StoryFn) => {
+const withCommand = () => {
   return (
     <Command className="rounded-lg border shadow-md">
       <Command.Input placeholder="Type a command or search..." />

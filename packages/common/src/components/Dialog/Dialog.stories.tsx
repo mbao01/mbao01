@@ -1,11 +1,8 @@
-import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react";
 import { Dialog } from "./Dialog";
 import { Button } from "../Button";
 
-const withDialog = (
-  _: StoryFn,
-  context: StoryContext<React.ComponentPropsWithoutRef<typeof Dialog.Content>>
-) => {
+const withDialog = () => {
   return (
     <Dialog>
       <Dialog.Trigger asChild>
@@ -15,7 +12,7 @@ const withDialog = (
         <Dialog.Header>
           <Dialog.Title>Edit profile</Dialog.Title>
           <Dialog.Description>
-            Make changes to your profile here. Click save when you're done.
+            Make changes to your profile here. Click save when you are done.
           </Dialog.Description>
         </Dialog.Header>
         Some content goes here!

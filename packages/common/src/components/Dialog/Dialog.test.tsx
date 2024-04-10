@@ -12,7 +12,7 @@ describe("Dialog", () => {
           <Dialog.Header>
             <Dialog.Title>Edit profile</Dialog.Title>
             <Dialog.Description>
-              Make changes to your profile here. Click save when you're done.
+              Make changes to your profile here. Click save when you are done.
             </Dialog.Description>
           </Dialog.Header>
           Some content goes here!
@@ -50,7 +50,7 @@ describe("Dialog", () => {
     // dialog description
     expect(
       within(dialog).getByText(
-        "Make changes to your profile here. Click save when you're done."
+        "Make changes to your profile here. Click save when you are done."
       )
     ).toBeInTheDocument();
 

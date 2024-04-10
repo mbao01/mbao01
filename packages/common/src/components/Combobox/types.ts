@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type Item = Record<string, any>;
 
 export type ComboboxProps<T extends Item> = {

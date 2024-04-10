@@ -14,11 +14,12 @@ export const Combobox = <T extends Item>({
   classes,
   emptyText,
   placeholder,
-  getItemValue = (item) => item.value,
-  getItemLabel = (item) => item.label,
+  getItemValue = (item: T) => item.value as string,
+  getItemLabel = (item: T) => item.label as string,
 }: ComboboxProps<T>) => {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState<string | number | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_, setItem] = React.useState<T | null>(null);
 
   const currentItem = items?.find((item) => getItemValue(item) === value);
