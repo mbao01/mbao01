@@ -1,7 +1,8 @@
 export { Input } from "./Input";
+export { Phone } from "./Phone";
 export { Radio } from "./Radio";
-export { Select } from "./Select";
 export { Range } from "./Range";
+export { Select } from "./Select";
 export { Slider } from "./Slider";
 export { Checkbox } from "./Checkbox";
 export { Textarea } from "./Textarea";

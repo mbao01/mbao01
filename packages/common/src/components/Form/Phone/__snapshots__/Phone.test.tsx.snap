@@ -1,0 +1,79 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Phone > should input phone number 1`] = `
+<DocumentFragment>
+  <div
+    class="join"
+  >
+    <button
+      aria-controls="radix-:r1:"
+      aria-expanded="false"
+      aria-haspopup="dialog"
+      class="btn join-item justify-between px-2 btn min-h-fit h-10"
+      data-state="closed"
+      role="combobox"
+      type="button"
+    >
+      <img
+        alt=""
+        class="react-international-phone-flag-emoji"
+        data-country="lr"
+        draggable="false"
+        height="30px"
+        loading="lazy"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1f1-1f1f7.svg"
+        style="width: 30px; height: 30px;"
+        width="30px"
+      />
+    </button>
+    <input
+      class="input input join-item input-bordered w-full !rounded-r-md !pl-2 text-sm input rounded-md transition-all duration-100 min-h-fit h-10"
+      inputmode="numeric"
+      name="mobile"
+      pattern="^\\+\\d{1,4}\\s\\d{6,}$"
+      placeholder=" "
+      type="text"
+      value="+231 9876543210"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Phone > should render a phone input 1`] = `
+<DocumentFragment>
+  <div
+    class="join"
+  >
+    <button
+      aria-controls="radix-:r0:"
+      aria-expanded="false"
+      aria-haspopup="dialog"
+      class="btn join-item justify-between px-2 btn min-h-fit h-10"
+      data-state="closed"
+      role="combobox"
+      type="button"
+    >
+      <img
+        alt=""
+        class="react-international-phone-flag-emoji"
+        data-country="lr"
+        draggable="false"
+        height="30px"
+        loading="lazy"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1f1-1f1f7.svg"
+        style="width: 30px; height: 30px;"
+        width="30px"
+      />
+    </button>
+    <input
+      class="input input join-item input-bordered w-full !rounded-r-md !pl-2 text-sm input rounded-md transition-all duration-100 min-h-fit h-10"
+      inputmode="numeric"
+      name="mobile"
+      pattern="^\\+\\d{1,4}\\s\\d{6,}$"
+      placeholder=" "
+      type="text"
+      value="+231 "
+    />
+  </div>
+</DocumentFragment>
+`;

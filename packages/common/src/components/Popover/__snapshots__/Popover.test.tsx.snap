@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Popover > renders a popover 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="radix-:r0:"
+    aria-expanded="true"
+    aria-haspopup="dialog"
+    data-state="open"
+    type="button"
+  >
+    Open popover
+  </button>
+</DocumentFragment>
+`;

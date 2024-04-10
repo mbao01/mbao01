@@ -142,18 +142,6 @@ exports[`Range > is in a disabled state 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Range > prevent user input when disabled 1`] = `
-<DocumentFragment>
-  <input
-    class="range range-neutral cursor-not-allowed opacity-80"
-    disabled=""
-    name="risk-level"
-    type="range"
-    value="10"
-  />
-</DocumentFragment>
-`;
-
 exports[`Range > renders with the correct initial state 1`] = `
 <DocumentFragment>
   <input
