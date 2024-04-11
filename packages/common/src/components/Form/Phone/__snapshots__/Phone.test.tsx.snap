@@ -77,3 +77,120 @@ exports[`Phone > should render a phone input 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`Phone > should select country code 1`] = `
+<DocumentFragment>
+  <div
+    class="join"
+  >
+    <button
+      aria-controls="radix-:rdk:"
+      aria-expanded="false"
+      aria-haspopup="dialog"
+      class="btn join-item justify-between px-2 btn min-h-fit h-10"
+      data-state="closed"
+      role="combobox"
+      type="button"
+    >
+      <img
+        alt=""
+        class="react-international-phone-flag-emoji"
+        data-country="af"
+        draggable="false"
+        height="30px"
+        loading="lazy"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1e6-1f1eb.svg"
+        style="width: 30px; height: 30px;"
+        width="30px"
+      />
+    </button>
+    <input
+      class="input input join-item input-bordered w-full !rounded-r-md !pl-2 text-sm input rounded-md transition-all duration-100 min-h-fit h-10"
+      inputmode="numeric"
+      name="mobile"
+      pattern="^\\+\\d{1,4}\\s\\d{6,}$"
+      placeholder=" "
+      type="text"
+      value="+93 "
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Phone > should select country code by searching country abbreviation 1`] = `
+<DocumentFragment>
+  <div
+    class="join"
+  >
+    <button
+      aria-controls="radix-:r6r:"
+      aria-expanded="false"
+      aria-haspopup="dialog"
+      class="btn join-item justify-between px-2 btn min-h-fit h-10"
+      data-state="closed"
+      role="combobox"
+      type="button"
+    >
+      <img
+        alt=""
+        class="react-international-phone-flag-emoji"
+        data-country="gb"
+        draggable="false"
+        height="30px"
+        loading="lazy"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1ec-1f1e7.svg"
+        style="width: 30px; height: 30px;"
+        width="30px"
+      />
+    </button>
+    <input
+      class="input input join-item input-bordered w-full !rounded-r-md !pl-2 text-sm input rounded-md transition-all duration-100 min-h-fit h-10"
+      inputmode="numeric"
+      name="mobile"
+      pattern="^\\+\\d{1,4}\\s\\d{6,}$"
+      placeholder=" "
+      type="text"
+      value="+44 9876 543210"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Phone > should select country code by searching country name 1`] = `
+<DocumentFragment>
+  <div
+    class="join"
+  >
+    <button
+      aria-controls="radix-:r2:"
+      aria-expanded="false"
+      aria-haspopup="dialog"
+      class="btn join-item justify-between px-2 btn min-h-fit h-10"
+      data-state="closed"
+      role="combobox"
+      type="button"
+    >
+      <img
+        alt=""
+        class="react-international-phone-flag-emoji"
+        data-country="ng"
+        draggable="false"
+        height="30px"
+        loading="lazy"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1f3-1f1ec.svg"
+        style="width: 30px; height: 30px;"
+        width="30px"
+      />
+    </button>
+    <input
+      class="input input join-item input-bordered w-full !rounded-r-md !pl-2 text-sm input rounded-md transition-all duration-100 min-h-fit h-10"
+      inputmode="numeric"
+      name="mobile"
+      pattern="^\\+\\d{1,4}\\s\\d{6,}$"
+      placeholder=" "
+      type="text"
+      value="+234 9876543210"
+    />
+  </div>
+</DocumentFragment>
+`;
