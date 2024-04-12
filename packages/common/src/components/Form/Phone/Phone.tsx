@@ -13,12 +13,11 @@ import { cn } from "../../../utilities";
 import { Button } from "../../Button";
 import { Input } from "../Input";
 import { getPhoneButtonClasses, getPhoneInputClasses } from "./constants";
-import { getInputClasses } from "../Input/constants";
-import { getButtonClasses } from "../../Button/constants";
 
 const Phone = React.forwardRef<HTMLInputElement, PhoneProps>(
   (
     {
+      disabled,
       defaultValue,
       className,
       placeholder,
@@ -62,16 +61,16 @@ const Phone = React.forwardRef<HTMLInputElement, PhoneProps>(
             <Button
               role="combobox"
               aria-expanded={open}
-              className={cn(
-                getPhoneButtonClasses(),
-                getButtonClasses({
-                  variant,
-                  outline,
-                  size,
-                })
-              )}
+              size={size}
+              variant={variant}
+              outline={outline}
+              className={cn(getPhoneButtonClasses())}
+              disabled={disabled}
             >
-              <FlagImage iso2={country.iso2} size="30px" />
+              <FlagImage
+                iso2={country.iso2}
+                size={["xs", "sm"].includes(size!) ? "20px" : "30px"}
+              />
             </Button>
           </Popover.Trigger>
           <Popover.Content className="w-[200px] p-0">
@@ -110,11 +109,12 @@ const Phone = React.forwardRef<HTMLInputElement, PhoneProps>(
           inputMode="numeric"
           placeholder={placeholder ?? " "}
           onChange={handleInputChange}
-          className={cn(
-            getPhoneInputClasses(),
-            getInputClasses({ variant, outline, wide, size }),
-            className
-          )}
+          size={size}
+          wide={wide}
+          variant={variant}
+          outline={outline}
+          disabled={disabled}
+          className={cn(getPhoneInputClasses(), className)}
           {...props}
         />
       </div>
