@@ -23,8 +23,10 @@ const Phone = React.forwardRef<HTMLInputElement, PhoneProps>(
       className,
       placeholder,
       onChange,
-      inputProps,
-      buttonProps,
+      variant,
+      outline,
+      wide,
+      size,
       ...props
     },
     ref
@@ -62,7 +64,11 @@ const Phone = React.forwardRef<HTMLInputElement, PhoneProps>(
               aria-expanded={open}
               className={cn(
                 getPhoneButtonClasses(),
-                getButtonClasses(buttonProps)
+                getButtonClasses({
+                  variant,
+                  outline,
+                  size,
+                })
               )}
             >
               <FlagImage iso2={country.iso2} size="30px" />
@@ -106,7 +112,7 @@ const Phone = React.forwardRef<HTMLInputElement, PhoneProps>(
           onChange={handleInputChange}
           className={cn(
             getPhoneInputClasses(),
-            getInputClasses(inputProps),
+            getInputClasses({ variant, outline, wide, size }),
             className
           )}
           {...props}
