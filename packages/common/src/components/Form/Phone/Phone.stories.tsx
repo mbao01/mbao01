@@ -21,3 +21,30 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {},
 };
+
+export const PrimaryPhone: Story = {
+  args: {
+    variant: "primary",
+  },
+};
+
+export const OutlinePhone: Story = {
+  args: {
+    outline: true,
+    variant: "accent",
+  },
+};
+
+export const TinyPhone: Story = {
+  args: {
+    size: "xs",
+    variant: "warning",
+    placeholder: "Enter phone number",
+  },
+};
+
+export const DisabledPhone: Story = {
+  args: {
+    disabled: true,
+  },
+};

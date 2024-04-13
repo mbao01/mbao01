@@ -17,6 +17,14 @@ const config: StorybookConfig = {
       },
     },
   },
+  typescript: {
+    reactDocgen: "react-docgen-typescript",
+    // Provide your own options if necessary.
+    // See https://storybook.js.org/docs/configure/typescript for more information.
+    reactDocgenTypescriptOptions: {
+      shouldRemoveUndefinedFromOptional: true,
+    },
+  },
   docs: {
     autodocs: "tag",
   },
