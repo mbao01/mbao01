@@ -28,13 +28,13 @@ export const Default: Story = {
   },
 };
 
-export const PrimarySlider: Story = {
+export const PrimaryRange: Story = {
   args: {
     variant: "primary",
   },
 };
 
-export const TinySlider: Story = {
+export const TinyRange: Story = {
   args: {
     size: "xs",
   },
@@ -47,7 +47,7 @@ export const DisabledRange: Story = {
   },
 };
 
-export const LabeledSlider: Story = {
+export const LabeledRange: Story = {
   render: (args) => {
     return (
       <FormControl as="div" className="flex-row items-center">

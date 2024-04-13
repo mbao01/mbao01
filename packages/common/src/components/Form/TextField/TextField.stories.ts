@@ -48,7 +48,6 @@ export const TextFieldWithLabel: Story = {
 
 export const DisabledTextField: Story = {
   args: {
-    label: "First name",
     disabled: true,
   },
 };
