@@ -43,7 +43,7 @@ export type AlertDialogDescriptionProps = React.ComponentPropsWithoutRef<
 export type AlertDialogActionProps = React.ComponentPropsWithoutRef<
   typeof AlertDialogPrimitive.Cancel
 > &
-  VariantProps<typeof getButtonClasses>;
+  VariantProps<typeof getButtonClasses>; 
 
 export type AlertDialogCancelProps = React.ComponentPropsWithoutRef<
   typeof AlertDialogPrimitive.Cancel
