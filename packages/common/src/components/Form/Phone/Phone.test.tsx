@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
-import { Phone } from "./Phone";
 import userEvent from "@testing-library/user-event";
+import { Phone } from "./Phone";
 
 describe("Phone", () => {
   beforeEach(() => {

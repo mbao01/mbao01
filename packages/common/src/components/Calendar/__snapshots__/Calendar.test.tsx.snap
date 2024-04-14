@@ -1,0 +1,1761 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Calendar > does not have navigation 1`] = `
+<DocumentFragment>
+  <div
+    class="rdp p-3"
+  >
+    <div
+      class="flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0"
+    >
+      <div
+        class="space-y-4 rdp-caption_start rdp-caption_end"
+      >
+        <div
+          class="flex justify-center pt-1 relative items-center"
+        >
+          <div
+            aria-live="polite"
+            class="text-sm font-medium"
+            id="react-day-picker-4"
+            role="presentation"
+          >
+            April 2024
+          </div>
+        </div>
+        <table
+          aria-labelledby="react-day-picker-4"
+          class="w-full border-collapse space-y-1"
+          role="grid"
+        >
+          <thead
+            class="rdp-head"
+          >
+            <tr
+              class="flex"
+            >
+              <th
+                aria-label="Sunday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Su
+              </th>
+              <th
+                aria-label="Monday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Mo
+              </th>
+              <th
+                aria-label="Tuesday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Tu
+              </th>
+              <th
+                aria-label="Wednesday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                We
+              </th>
+              <th
+                aria-label="Thursday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Th
+              </th>
+              <th
+                aria-label="Friday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Fr
+              </th>
+              <th
+                aria-label="Saturday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Sa
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="rdp-tbody"
+          >
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  31
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  1
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  2
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  3
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  4
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  5
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  6
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  7
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  8
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  9
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  10
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  11
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  12
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  13
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 outline outline-accent"
+                  role="gridcell"
+                >
+                  14
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  15
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  16
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  17
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  18
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  19
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  20
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  21
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  22
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  23
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  24
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  25
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  26
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  27
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  28
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  29
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  30
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  1
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  2
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  3
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  4
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Calendar > has navigable months 1`] = `
+<DocumentFragment>
+  <div
+    class="rdp p-3"
+  >
+    <div
+      class="flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0"
+    >
+      <div
+        class="space-y-4 rdp-caption_start rdp-caption_end"
+      >
+        <div
+          class="flex justify-center pt-1 relative items-center"
+        >
+          <div
+            class="flex justify-center items-center"
+          >
+            <div
+              class="hidden"
+            >
+              <div
+                aria-live="polite"
+                class="text-sm font-medium"
+                id="react-day-picker-5"
+                role="presentation"
+              >
+                April 2024
+              </div>
+            </div>
+            <div
+              class="text-sm [&>[aria-hidden='true']]:hidden"
+            >
+              <span
+                class="hidden"
+              >
+                Month: 
+              </span>
+              <select
+                aria-label="Month: "
+                class="rdp-dropdown"
+                name="months"
+              >
+                <option
+                  value="0"
+                >
+                  January
+                </option>
+                <option
+                  value="1"
+                >
+                  February
+                </option>
+                <option
+                  value="2"
+                >
+                  March
+                </option>
+                <option
+                  value="3"
+                >
+                  April
+                </option>
+                <option
+                  value="4"
+                >
+                  May
+                </option>
+                <option
+                  value="5"
+                >
+                  June
+                </option>
+                <option
+                  value="6"
+                >
+                  July
+                </option>
+                <option
+                  value="7"
+                >
+                  August
+                </option>
+                <option
+                  value="8"
+                >
+                  September
+                </option>
+                <option
+                  value="9"
+                >
+                  October
+                </option>
+                <option
+                  value="10"
+                >
+                  November
+                </option>
+                <option
+                  value="11"
+                >
+                  December
+                </option>
+              </select>
+              <div
+                aria-hidden="true"
+                class="text-sm font-medium"
+              >
+                April
+                <svg
+                  class="rdp-dropdown_icon"
+                  data-testid="iconDropdown"
+                  height="8px"
+                  viewBox="0 0 120 120"
+                  width="8px"
+                >
+                  <path
+                    d="M4.22182541,48.2218254 C8.44222828,44.0014225 15.2388494,43.9273804 19.5496459,47.9996989 L19.7781746,48.2218254 L60,88.443 L100.221825,48.2218254 C104.442228,44.0014225 111.238849,43.9273804 115.549646,47.9996989 L115.778175,48.2218254 C119.998577,52.4422283 120.07262,59.2388494 116.000301,63.5496459 L115.778175,63.7781746 L67.7781746,111.778175 C63.5577717,115.998577 56.7611506,116.07262 52.4503541,112.000301 L52.2218254,111.778175 L4.22182541,63.7781746 C-0.0739418023,59.4824074 -0.0739418023,52.5175926 4.22182541,48.2218254 Z"
+                    fill="currentColor"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="text-sm [&>[aria-hidden='true']]:hidden"
+            >
+              <span
+                class="hidden"
+              >
+                Year: 
+              </span>
+              <select
+                aria-label="Year: "
+                class="rdp-dropdown"
+                name="years"
+              >
+                <option
+                  value="2022"
+                >
+                  2022
+                </option>
+                <option
+                  value="2023"
+                >
+                  2023
+                </option>
+                <option
+                  value="2024"
+                >
+                  2024
+                </option>
+                <option
+                  value="2025"
+                >
+                  2025
+                </option>
+                <option
+                  value="2026"
+                >
+                  2026
+                </option>
+              </select>
+              <div
+                aria-hidden="true"
+                class="text-sm font-medium"
+              >
+                2024
+                <svg
+                  class="rdp-dropdown_icon"
+                  data-testid="iconDropdown"
+                  height="8px"
+                  viewBox="0 0 120 120"
+                  width="8px"
+                >
+                  <path
+                    d="M4.22182541,48.2218254 C8.44222828,44.0014225 15.2388494,43.9273804 19.5496459,47.9996989 L19.7781746,48.2218254 L60,88.443 L100.221825,48.2218254 C104.442228,44.0014225 111.238849,43.9273804 115.549646,47.9996989 L115.778175,48.2218254 C119.998577,52.4422283 120.07262,59.2388494 116.000301,63.5496459 L115.778175,63.7781746 L67.7781746,111.778175 C63.5577717,115.998577 56.7611506,116.07262 52.4503541,112.000301 L52.2218254,111.778175 L4.22182541,63.7781746 C-0.0739418023,59.4824074 -0.0739418023,52.5175926 4.22182541,48.2218254 Z"
+                    fill="currentColor"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="space-x-1 flex items-center"
+          >
+            <button
+              aria-label="Go to previous month"
+              class="rdp-button_reset rdp-button btn btn-outline min-h-fit h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute left-1"
+              name="previous-month"
+              type="button"
+            >
+              <svg
+                class="h-4 w-4"
+                fill="none"
+                height="15"
+                viewBox="0 0 15 15"
+                width="15"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M8.84182 3.13514C9.04327 3.32401 9.05348 3.64042 8.86462 3.84188L5.43521 7.49991L8.86462 11.1579C9.05348 11.3594 9.04327 11.6758 8.84182 11.8647C8.64036 12.0535 8.32394 12.0433 8.13508 11.8419L4.38508 7.84188C4.20477 7.64955 4.20477 7.35027 4.38508 7.15794L8.13508 3.15794C8.32394 2.95648 8.64036 2.94628 8.84182 3.13514Z"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Go to next month"
+              class="rdp-button_reset rdp-button btn btn-outline min-h-fit h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute right-1"
+              name="next-month"
+              type="button"
+            >
+              <svg
+                class="h-4 w-4"
+                fill="none"
+                height="15"
+                viewBox="0 0 15 15"
+                width="15"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <table
+          aria-labelledby="react-day-picker-5"
+          class="w-full border-collapse space-y-1"
+          role="grid"
+        >
+          <thead
+            class="rdp-head"
+          >
+            <tr
+              class="flex"
+            >
+              <th
+                aria-label="Sunday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Su
+              </th>
+              <th
+                aria-label="Monday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Mo
+              </th>
+              <th
+                aria-label="Tuesday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Tu
+              </th>
+              <th
+                aria-label="Wednesday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                We
+              </th>
+              <th
+                aria-label="Thursday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Th
+              </th>
+              <th
+                aria-label="Friday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Fr
+              </th>
+              <th
+                aria-label="Saturday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Sa
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="rdp-tbody"
+          >
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  31
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  1
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  2
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  3
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  4
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  5
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  6
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  7
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  8
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  9
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  10
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  11
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  12
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  13
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 outline outline-accent"
+                  role="gridcell"
+                >
+                  14
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  15
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  16
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  17
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  18
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  19
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  20
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  21
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  22
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  23
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  24
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  25
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  26
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  27
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  28
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  29
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  30
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  1
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  2
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  3
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  4
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Calendar > shows April, 2024 calendar 1`] = `
+<DocumentFragment>
+  <div
+    class="rdp p-3"
+  >
+    <div
+      class="flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0"
+    >
+      <div
+        class="space-y-4 rdp-caption_start rdp-caption_end"
+      >
+        <div
+          class="flex justify-center pt-1 relative items-center"
+        >
+          <div
+            aria-live="polite"
+            class="text-sm font-medium"
+            id="react-day-picker-3"
+            role="presentation"
+          >
+            April 2024
+          </div>
+          <div
+            class="space-x-1 flex items-center"
+          >
+            <button
+              aria-label="Go to previous month"
+              class="rdp-button_reset rdp-button btn btn-outline min-h-fit h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute left-1"
+              name="previous-month"
+              type="button"
+            >
+              <svg
+                class="h-4 w-4"
+                fill="none"
+                height="15"
+                viewBox="0 0 15 15"
+                width="15"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M8.84182 3.13514C9.04327 3.32401 9.05348 3.64042 8.86462 3.84188L5.43521 7.49991L8.86462 11.1579C9.05348 11.3594 9.04327 11.6758 8.84182 11.8647C8.64036 12.0535 8.32394 12.0433 8.13508 11.8419L4.38508 7.84188C4.20477 7.64955 4.20477 7.35027 4.38508 7.15794L8.13508 3.15794C8.32394 2.95648 8.64036 2.94628 8.84182 3.13514Z"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Go to next month"
+              class="rdp-button_reset rdp-button btn btn-outline min-h-fit h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute right-1"
+              name="next-month"
+              type="button"
+            >
+              <svg
+                class="h-4 w-4"
+                fill="none"
+                height="15"
+                viewBox="0 0 15 15"
+                width="15"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <table
+          aria-labelledby="react-day-picker-3"
+          class="w-full border-collapse space-y-1"
+          role="grid"
+        >
+          <thead
+            class="rdp-head"
+          >
+            <tr
+              class="flex"
+            >
+              <th
+                aria-label="Sunday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Su
+              </th>
+              <th
+                aria-label="Monday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Mo
+              </th>
+              <th
+                aria-label="Tuesday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Tu
+              </th>
+              <th
+                aria-label="Wednesday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                We
+              </th>
+              <th
+                aria-label="Thursday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Th
+              </th>
+              <th
+                aria-label="Friday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Fr
+              </th>
+              <th
+                aria-label="Saturday"
+                class="text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]"
+                scope="col"
+              >
+                Sa
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="rdp-tbody"
+          >
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  31
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  1
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  2
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  3
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  4
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  5
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  6
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  7
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  8
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  9
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  10
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  11
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  12
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  13
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 outline outline-accent"
+                  role="gridcell"
+                >
+                  14
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  15
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  16
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  17
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  18
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  19
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  20
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  21
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  22
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  23
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  24
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  25
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  26
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  27
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="flex w-full mt-2"
+            >
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  28
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  29
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  role="gridcell"
+                >
+                  30
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  1
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  2
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  3
+                </div>
+              </td>
+              <td
+                class="h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20"
+                role="presentation"
+              >
+                <div
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30"
+                  role="gridcell"
+                >
+                  4
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

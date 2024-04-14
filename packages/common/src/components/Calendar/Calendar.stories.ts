@@ -1,43 +1,20 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Dialog } from "./Dialog";
-import { Button } from "../Button";
 
-const withDialog = () => {
-  return (
-    <Dialog>
-      <Dialog.Trigger asChild>
-        <Button outline>Edit Profile</Button>
-      </Dialog.Trigger>
-      <Dialog.Content className="sm:max-w-[425px]">
-        <Dialog.Header>
-          <Dialog.Title>Edit profile</Dialog.Title>
-          <Dialog.Description>
-            Make changes to your profile here. Click save when you are done.
-          </Dialog.Description>
-        </Dialog.Header>
-        Some content goes here!
-        <Dialog.Footer>
-          <Button type="submit">Save changes</Button>
-        </Dialog.Footer>
-      </Dialog.Content>
-    </Dialog>
-  );
-};
+import { Calendar } from "./Calendar";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: "Components/Dialog",
-  component: Dialog,
+  component: Calendar,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
+    // backgrounds: [{ name: 'dark background', value: '#000', default: true }],
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
-  decorators: [withDialog],
-} satisfies Meta<typeof Dialog>;
+} satisfies Meta<typeof Calendar>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -45,4 +22,31 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {},
+};
+
+export const MultipleMonths: Story = {
+  args: {
+    numberOfMonths: 2,
+    pagedNavigation: false,
+  },
+};
+
+export const FixedWeeks: Story = {
+  args: {
+    fixedWeeks: true,
+    showOutsideDays: true,
+  },
+};
+
+export const WeekNumber: Story = {
+  args: {
+    weekStartsOn: 1, // Monday
+    showWeekNumber: true,
+  },
+};
+
+export const CalendarFooter: Story = {
+  args: {
+    footer: "This is the calendar footer",
+  },
 };
