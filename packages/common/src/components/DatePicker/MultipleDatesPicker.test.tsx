@@ -67,7 +67,7 @@ describe("MultipleDatesPicker", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("has a custom label", async () => {
+  it("has a custom label", () => {
     const { asFragment } = render(
       <MultipleDatesPicker label="When will you be visiting?" />
     );
@@ -78,7 +78,7 @@ describe("MultipleDatesPicker", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("is disabled", async () => {
+  it("is disabled", () => {
     const { asFragment } = render(<MultipleDatesPicker disabled />);
 
     expect(

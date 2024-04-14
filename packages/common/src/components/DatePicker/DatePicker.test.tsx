@@ -58,7 +58,7 @@ describe("DatePicker", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("has a custom label", async () => {
+  it("has a custom label", () => {
     const { asFragment } = render(<DatePicker label="Date of birth" />);
 
     expect(
@@ -67,7 +67,7 @@ describe("DatePicker", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("is disabled", async () => {
+  it("is disabled", () => {
     const { asFragment } = render(<DatePicker disabled />);
 
     expect(screen.getByRole("button", { name: "Pick a date" })).toBeDisabled();
