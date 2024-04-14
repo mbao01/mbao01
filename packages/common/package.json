@@ -80,6 +80,7 @@
     "react-day-picker": "^8.10.0",
     "react-international-phone": "^4.2.6",
     "tailwind-merge": "^2.2.1",
+    "sonner": "^1.4.41",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {

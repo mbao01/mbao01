@@ -11,6 +11,7 @@ export * from "./components/Progress";
 export * from "./components/Separator";
 export * from "./components/Text";
 
+export * from "./components/Sonner";
 /** data input */
 export * from "./components/Form";
 export * from "./components/Combobox";
