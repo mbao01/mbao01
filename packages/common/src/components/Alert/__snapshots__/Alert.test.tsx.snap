@@ -1,0 +1,221 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Alert > has accent variant 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-accent text-accent-content border-accent"
+    role="alert"
+  >
+    <h5
+      class="mb-1 font-medium leading-none tracking-tight"
+    >
+      Alert accent
+    </h5>
+    <div
+      class="text-sm [&_p]:leading-relaxed"
+    >
+      You should pay attention to me
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Alert > has error variant 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-error text-error-content border-error"
+    role="alert"
+  >
+    <h5
+      class="mb-1 font-medium leading-none tracking-tight"
+    >
+      Alert error
+    </h5>
+    <div
+      class="text-sm [&_p]:leading-relaxed"
+    >
+      You should pay attention to me
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Alert > has ghost variant 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-ghost text-ghost-content border-transparent"
+    role="alert"
+  >
+    <h5
+      class="mb-1 font-medium leading-none tracking-tight"
+    >
+      Alert ghost
+    </h5>
+    <div
+      class="text-sm [&_p]:leading-relaxed"
+    >
+      You should pay attention to me
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Alert > has info variant 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-info text-info-content border-info"
+    role="alert"
+  >
+    <h5
+      class="mb-1 font-medium leading-none tracking-tight"
+    >
+      Alert info
+    </h5>
+    <div
+      class="text-sm [&_p]:leading-relaxed"
+    >
+      You should pay attention to me
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Alert > has neutral variant 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-neutral text-neutral-content border-neutral"
+    role="alert"
+  >
+    <h5
+      class="mb-1 font-medium leading-none tracking-tight"
+    >
+      Alert neutral
+    </h5>
+    <div
+      class="text-sm [&_p]:leading-relaxed"
+    >
+      You should pay attention to me
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Alert > has no outline 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-default text-default-content border-default"
+    role="alert"
+  >
+    <h5
+      class="mb-1 font-medium leading-none tracking-tight"
+    >
+      Alert has no outline
+    </h5>
+    <div
+      class="text-sm [&_p]:leading-relaxed"
+    >
+      You should pay attention to me
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Alert > has outline 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full rounded-lg p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit border-default border bg-default text-default"
+    role="alert"
+  >
+    <h5
+      class="mb-1 font-medium leading-none tracking-tight"
+    >
+      Alert has outline
+    </h5>
+    <div
+      class="text-sm [&_p]:leading-relaxed"
+    >
+      You should pay attention to me
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Alert > has primary variant 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-primary text-primary-content border-primary"
+    role="alert"
+  >
+    <h5
+      class="mb-1 font-medium leading-none tracking-tight"
+    >
+      Alert primary
+    </h5>
+    <div
+      class="text-sm [&_p]:leading-relaxed"
+    >
+      You should pay attention to me
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Alert > has secondary variant 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-secondary text-secondary-content border-secondary"
+    role="alert"
+  >
+    <h5
+      class="mb-1 font-medium leading-none tracking-tight"
+    >
+      Alert secondary
+    </h5>
+    <div
+      class="text-sm [&_p]:leading-relaxed"
+    >
+      You should pay attention to me
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Alert > has success variant 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-success text-success-content border-success"
+    role="alert"
+  >
+    <h5
+      class="mb-1 font-medium leading-none tracking-tight"
+    >
+      Alert success
+    </h5>
+    <div
+      class="text-sm [&_p]:leading-relaxed"
+    >
+      You should pay attention to me
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Alert > has warning variant 1`] = `
+<DocumentFragment>
+  <div
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-warning text-warning-content border-warning"
+    role="alert"
+  >
+    <h5
+      class="mb-1 font-medium leading-none tracking-tight"
+    >
+      Alert warning
+    </h5>
+    <div
+      class="text-sm [&_p]:leading-relaxed"
+    >
+      You should pay attention to me
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,57 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AlertDialog > renders a an alert dialog 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="radix-:r3:"
+    aria-expanded="true"
+    aria-haspopup="dialog"
+    data-state="open"
+    type="button"
+  >
+    Update profile
+  </button>
+</DocumentFragment>
+`;
+
+exports[`AlertDialog > renders a an dialog trigger 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="radix-:r0:"
+    aria-expanded="false"
+    aria-haspopup="dialog"
+    data-state="closed"
+    type="button"
+  >
+    Update profile
+  </button>
+</DocumentFragment>
+`;
+
+exports[`AlertDialog > should accept and close alert dialog 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="radix-:r9:"
+    aria-expanded="false"
+    aria-haspopup="dialog"
+    data-state="closed"
+    type="button"
+  >
+    Update profile
+  </button>
+</DocumentFragment>
+`;
+
+exports[`AlertDialog > should open and close alert dialog 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="radix-:r6:"
+    aria-expanded="false"
+    aria-haspopup="dialog"
+    data-state="closed"
+    type="button"
+  >
+    Update profile
+  </button>
+</DocumentFragment>
+`;

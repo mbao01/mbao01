@@ -4,6 +4,7 @@ export { Radio } from "./Radio";
 export { Range } from "./Range";
 export { Select } from "./Select";
 export { Slider } from "./Slider";
+export { Switch } from "./Switch";
 export { Checkbox } from "./Checkbox";
 export { Textarea } from "./Textarea";
 export { TextField } from "./TextField";
