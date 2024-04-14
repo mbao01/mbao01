@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { format } from "date-fns/format";
+import { addDays } from "date-fns/addDays";
 import { es, arSA } from "date-fns/locale";
+import { Select } from "../Form/Select";
 import { DatePicker } from "./DatePicker";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -105,5 +107,25 @@ export const OtherNumberingSystem: Story = {
       },
     },
     label: "اختر تاريخ",
+  },
+};
+
+export const WithPresets: Story = {
+  args: {
+    children: ({ setDate }) => (
+      <Select
+        onValueChange={(value) => setDate(addDays(new Date(), parseInt(value)))}
+      >
+        <Select.Trigger wide outline>
+          <Select.Value placeholder="Select" />
+        </Select.Trigger>
+        <Select.Content position="popper">
+          <Select.Item value="0">Today</Select.Item>
+          <Select.Item value="1">Tomorrow</Select.Item>
+          <Select.Item value="3">In 3 days</Select.Item>
+          <Select.Item value="7">In a week</Select.Item>
+        </Select.Content>
+      </Select>
+    ),
   },
 };

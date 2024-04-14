@@ -18,6 +18,7 @@ export const DatePicker = ({
   variant,
   disabled,
   defaultDate,
+  children,
   getDateValue = (date) => date?.toUTCString(),
   getDateLabel = (date) => (date ? format(date, "PPP") : undefined),
   ...props
@@ -26,6 +27,17 @@ export const DatePicker = ({
 
   const dateLabel = getDateLabel(date);
   const dateValue = getDateValue(date);
+
+  const calendar = (
+    <Calendar
+      initialFocus
+      mode="single"
+      selected={date}
+      onSelect={setDate}
+      captionLayout="dropdown-buttons"
+      {...props}
+    />
+  );
 
   return (
     <Popover>
@@ -44,15 +56,19 @@ export const DatePicker = ({
           <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
         </Button>
       </Popover.Trigger>
-      <Popover.Content className="w-auto p-0">
-        <Calendar
-          initialFocus
-          mode="single"
-          selected={date}
-          onSelect={setDate}
-          captionLayout="dropdown-buttons"
-          {...props}
-        />
+      <Popover.Content
+        className={cn("w-auto p-0", {
+          "flex flex-col space-y-2 p-2": children,
+        })}
+      >
+        {children ? (
+          <>
+            {children?.({ date, setDate })}
+            <div className="rounded-md border">{calendar}</div>
+          </>
+        ) : (
+          calendar
+        )}
       </Popover.Content>
     </Popover>
   );
