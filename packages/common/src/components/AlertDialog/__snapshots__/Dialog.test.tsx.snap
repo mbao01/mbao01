@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Dialog > renders a dialog 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="radix-:r3:"
+    aria-expanded="true"
+    aria-haspopup="dialog"
+    data-state="open"
+    type="button"
+  >
+    Edit Profile
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Dialog > renders a dialog trigger 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="radix-:r0:"
+    aria-expanded="false"
+    aria-haspopup="dialog"
+    data-state="closed"
+    type="button"
+  >
+    Edit Profile
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Dialog > should open and close dialog 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="radix-:r6:"
+    aria-expanded="false"
+    aria-haspopup="dialog"
+    data-state="closed"
+    type="button"
+  >
+    Edit Profile
+  </button>
+</DocumentFragment>
+`;
