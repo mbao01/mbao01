@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
+import userEvent from "@testing-library/user-event";
 import { render, screen, within } from "@testing-library/react";
 import { AlertDialog } from "./AlertDialog";
-import userEvent from "@testing-library/user-event";
 
 describe("AlertDialog", () => {
   const renderAlertDialog = () =>

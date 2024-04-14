@@ -109,8 +109,7 @@ const AlertDialogCancel = React.forwardRef<
   AlertDialogCancelProps
 >(({ className, ...props }, ref) => (
   <AlertDialogPrimitive.Cancel ref={ref} asChild>
-    className={cn("mt-2 sm:mt-0", className)}
-    <Button {...props} />
+    <Button className={cn("mt-2 sm:mt-0", className)} {...props} />
   </AlertDialogPrimitive.Cancel>
 ));
 AlertDialogCancel.displayName = AlertDialogPrimitive.Cancel.displayName;
