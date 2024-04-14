@@ -15,6 +15,13 @@ type BaseDatePickerProps = Pick<
 
 export type DatePickerProps = BaseDatePickerProps &
   Omit<DayPickerSingleProps, "mode" | "selected" | "onSelect"> & {
+    children?: ({
+      date,
+      setDate,
+    }: {
+      date: Date | undefined;
+      setDate: React.Dispatch<React.SetStateAction<Date | undefined>>;
+    }) => JSX.Element | null;
     defaultDate?: Date;
     getDateLabel?: (date: Date | undefined) => string | undefined;
     getDateValue?: (date: Date | undefined) => string | undefined;
