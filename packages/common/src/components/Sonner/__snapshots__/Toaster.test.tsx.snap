@@ -1,0 +1,849 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Toaster > has accent variant 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="btn min-h-fit h-10"
+    >
+      Show toast
+    </button>
+    <section
+      aria-label="Notifications alt+T"
+      tabindex="-1"
+    >
+      <ol
+        class="toaster group"
+        data-sonner-toaster="true"
+        data-theme="light"
+        data-x-position="right"
+        data-y-position="bottom"
+        dir=""
+        style="--front-toast-height: 0px; --offset: 32px; --width: 356px; --gap: 14px;"
+        tabindex="-1"
+      >
+        <li
+          aria-atomic="true"
+          aria-live="polite"
+          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-accent text-accent-content border-accent"
+          data-dismissible="true"
+          data-expanded="false"
+          data-front="true"
+          data-index="0"
+          data-mounted="true"
+          data-promise="false"
+          data-removed="false"
+          data-sonner-toast=""
+          data-styled="true"
+          data-swipe-out="false"
+          data-swiping="false"
+          data-visible="true"
+          data-x-position="right"
+          data-y-position="bottom"
+          role="status"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          tabindex="0"
+        >
+          <div
+            class=""
+            data-content=""
+          >
+            <div
+              class=""
+              data-title=""
+            >
+              Toaster accent
+            </div>
+            <div
+              class="group-[.sonn]:text-muted-foreground"
+              data-description=""
+            >
+              This is a basic toast
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toaster > has error variant 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="btn min-h-fit h-10"
+    >
+      Show toast
+    </button>
+    <section
+      aria-label="Notifications alt+T"
+      tabindex="-1"
+    >
+      <ol
+        class="toaster group"
+        data-sonner-toaster="true"
+        data-theme="light"
+        data-x-position="right"
+        data-y-position="bottom"
+        dir=""
+        style="--front-toast-height: 0px; --offset: 32px; --width: 356px; --gap: 14px;"
+        tabindex="-1"
+      >
+        <li
+          aria-atomic="true"
+          aria-live="polite"
+          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-error text-error-content border-error"
+          data-dismissible="true"
+          data-expanded="false"
+          data-front="true"
+          data-index="0"
+          data-mounted="true"
+          data-promise="false"
+          data-removed="false"
+          data-sonner-toast=""
+          data-styled="true"
+          data-swipe-out="false"
+          data-swiping="false"
+          data-visible="true"
+          data-x-position="right"
+          data-y-position="bottom"
+          role="status"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          tabindex="0"
+        >
+          <div
+            class=""
+            data-content=""
+          >
+            <div
+              class=""
+              data-title=""
+            >
+              Toaster error
+            </div>
+            <div
+              class="group-[.sonn]:text-muted-foreground"
+              data-description=""
+            >
+              This is a basic toast
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toaster > has ghost variant 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="btn min-h-fit h-10"
+    >
+      Show toast
+    </button>
+    <section
+      aria-label="Notifications alt+T"
+      tabindex="-1"
+    >
+      <ol
+        class="toaster group"
+        data-sonner-toaster="true"
+        data-theme="light"
+        data-x-position="right"
+        data-y-position="bottom"
+        dir=""
+        style="--front-toast-height: 0px; --offset: 32px; --width: 356px; --gap: 14px;"
+        tabindex="-1"
+      >
+        <li
+          aria-atomic="true"
+          aria-live="polite"
+          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-ghost text-ghost-content border-transparent"
+          data-dismissible="true"
+          data-expanded="false"
+          data-front="true"
+          data-index="0"
+          data-mounted="true"
+          data-promise="false"
+          data-removed="false"
+          data-sonner-toast=""
+          data-styled="true"
+          data-swipe-out="false"
+          data-swiping="false"
+          data-visible="true"
+          data-x-position="right"
+          data-y-position="bottom"
+          role="status"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          tabindex="0"
+        >
+          <div
+            class=""
+            data-content=""
+          >
+            <div
+              class=""
+              data-title=""
+            >
+              Toaster ghost
+            </div>
+            <div
+              class="group-[.sonn]:text-muted-foreground"
+              data-description=""
+            >
+              This is a basic toast
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toaster > has info variant 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="btn min-h-fit h-10"
+    >
+      Show toast
+    </button>
+    <section
+      aria-label="Notifications alt+T"
+      tabindex="-1"
+    >
+      <ol
+        class="toaster group"
+        data-sonner-toaster="true"
+        data-theme="light"
+        data-x-position="right"
+        data-y-position="bottom"
+        dir=""
+        style="--front-toast-height: 0px; --offset: 32px; --width: 356px; --gap: 14px;"
+        tabindex="-1"
+      >
+        <li
+          aria-atomic="true"
+          aria-live="polite"
+          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-info text-info-content border-info"
+          data-dismissible="true"
+          data-expanded="false"
+          data-front="true"
+          data-index="0"
+          data-mounted="true"
+          data-promise="false"
+          data-removed="false"
+          data-sonner-toast=""
+          data-styled="true"
+          data-swipe-out="false"
+          data-swiping="false"
+          data-visible="true"
+          data-x-position="right"
+          data-y-position="bottom"
+          role="status"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          tabindex="0"
+        >
+          <div
+            class=""
+            data-content=""
+          >
+            <div
+              class=""
+              data-title=""
+            >
+              Toaster info
+            </div>
+            <div
+              class="group-[.sonn]:text-muted-foreground"
+              data-description=""
+            >
+              This is a basic toast
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toaster > has neutral variant 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="btn min-h-fit h-10"
+    >
+      Show toast
+    </button>
+    <section
+      aria-label="Notifications alt+T"
+      tabindex="-1"
+    >
+      <ol
+        class="toaster group"
+        data-sonner-toaster="true"
+        data-theme="light"
+        data-x-position="right"
+        data-y-position="bottom"
+        dir=""
+        style="--front-toast-height: 0px; --offset: 32px; --width: 356px; --gap: 14px;"
+        tabindex="-1"
+      >
+        <li
+          aria-atomic="true"
+          aria-live="polite"
+          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-neutral text-neutral-content border-neutral"
+          data-dismissible="true"
+          data-expanded="false"
+          data-front="true"
+          data-index="0"
+          data-mounted="true"
+          data-promise="false"
+          data-removed="false"
+          data-sonner-toast=""
+          data-styled="true"
+          data-swipe-out="false"
+          data-swiping="false"
+          data-visible="true"
+          data-x-position="right"
+          data-y-position="bottom"
+          role="status"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          tabindex="0"
+        >
+          <div
+            class=""
+            data-content=""
+          >
+            <div
+              class=""
+              data-title=""
+            >
+              Toaster neutral
+            </div>
+            <div
+              class="group-[.sonn]:text-muted-foreground"
+              data-description=""
+            >
+              This is a basic toast
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toaster > has no outline 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="btn min-h-fit h-10"
+    >
+      Show toast
+    </button>
+    <section
+      aria-label="Notifications alt+T"
+      tabindex="-1"
+    >
+      <ol
+        class="toaster group"
+        data-sonner-toaster="true"
+        data-theme="light"
+        data-x-position="right"
+        data-y-position="bottom"
+        dir=""
+        style="--front-toast-height: 0px; --offset: 32px; --width: 356px; --gap: 14px;"
+        tabindex="-1"
+      >
+        <li
+          aria-atomic="true"
+          aria-live="polite"
+          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-default text-default-content border-default"
+          data-dismissible="true"
+          data-expanded="false"
+          data-front="true"
+          data-index="0"
+          data-mounted="true"
+          data-promise="false"
+          data-removed="false"
+          data-sonner-toast=""
+          data-styled="true"
+          data-swipe-out="false"
+          data-swiping="false"
+          data-type="success"
+          data-visible="true"
+          data-x-position="right"
+          data-y-position="bottom"
+          role="status"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          tabindex="0"
+        >
+          <div
+            class=""
+            data-icon=""
+          >
+            <svg
+              fill="currentColor"
+              height="20"
+              viewBox="0 0 20 20"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class=""
+            data-content=""
+          >
+            <div
+              class=""
+              data-title=""
+            >
+              Sent successfully!
+            </div>
+            <div
+              class="group-[.sonn]:text-muted-foreground"
+              data-description=""
+            >
+              has no outline
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toaster > has outline 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="btn min-h-fit h-10"
+    >
+      Show toast
+    </button>
+    <section
+      aria-label="Notifications alt+T"
+      tabindex="-1"
+    >
+      <ol
+        class="toaster group"
+        data-sonner-toaster="true"
+        data-theme="light"
+        data-x-position="right"
+        data-y-position="bottom"
+        dir=""
+        style="--front-toast-height: 0px; --offset: 32px; --width: 356px; --gap: 14px;"
+        tabindex="-1"
+      >
+        <li
+          aria-atomic="true"
+          aria-live="polite"
+          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit border-default border bg-default text-default"
+          data-dismissible="true"
+          data-expanded="false"
+          data-front="true"
+          data-index="0"
+          data-mounted="true"
+          data-promise="false"
+          data-removed="false"
+          data-sonner-toast=""
+          data-styled="true"
+          data-swipe-out="false"
+          data-swiping="false"
+          data-type="success"
+          data-visible="true"
+          data-x-position="right"
+          data-y-position="bottom"
+          role="status"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          tabindex="0"
+        >
+          <div
+            class=""
+            data-icon=""
+          >
+            <svg
+              fill="currentColor"
+              height="20"
+              viewBox="0 0 20 20"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class=""
+            data-content=""
+          >
+            <div
+              class=""
+              data-title=""
+            >
+              Sent successfully!
+            </div>
+            <div
+              class="group-[.sonn]:text-muted-foreground"
+              data-description=""
+            >
+              has outline
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toaster > has primary variant 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="btn min-h-fit h-10"
+    >
+      Show toast
+    </button>
+    <section
+      aria-label="Notifications alt+T"
+      tabindex="-1"
+    >
+      <ol
+        class="toaster group"
+        data-sonner-toaster="true"
+        data-theme="light"
+        data-x-position="right"
+        data-y-position="bottom"
+        dir=""
+        style="--front-toast-height: 0px; --offset: 32px; --width: 356px; --gap: 14px;"
+        tabindex="-1"
+      >
+        <li
+          aria-atomic="true"
+          aria-live="polite"
+          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-primary text-primary-content border-primary"
+          data-dismissible="true"
+          data-expanded="false"
+          data-front="true"
+          data-index="0"
+          data-mounted="true"
+          data-promise="false"
+          data-removed="false"
+          data-sonner-toast=""
+          data-styled="true"
+          data-swipe-out="false"
+          data-swiping="false"
+          data-visible="true"
+          data-x-position="right"
+          data-y-position="bottom"
+          role="status"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          tabindex="0"
+        >
+          <div
+            class=""
+            data-content=""
+          >
+            <div
+              class=""
+              data-title=""
+            >
+              Toaster primary
+            </div>
+            <div
+              class="group-[.sonn]:text-muted-foreground"
+              data-description=""
+            >
+              This is a basic toast
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toaster > has secondary variant 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="btn min-h-fit h-10"
+    >
+      Show toast
+    </button>
+    <section
+      aria-label="Notifications alt+T"
+      tabindex="-1"
+    >
+      <ol
+        class="toaster group"
+        data-sonner-toaster="true"
+        data-theme="light"
+        data-x-position="right"
+        data-y-position="bottom"
+        dir=""
+        style="--front-toast-height: 0px; --offset: 32px; --width: 356px; --gap: 14px;"
+        tabindex="-1"
+      >
+        <li
+          aria-atomic="true"
+          aria-live="polite"
+          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-secondary text-secondary-content border-secondary"
+          data-dismissible="true"
+          data-expanded="false"
+          data-front="true"
+          data-index="0"
+          data-mounted="true"
+          data-promise="false"
+          data-removed="false"
+          data-sonner-toast=""
+          data-styled="true"
+          data-swipe-out="false"
+          data-swiping="false"
+          data-visible="true"
+          data-x-position="right"
+          data-y-position="bottom"
+          role="status"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          tabindex="0"
+        >
+          <div
+            class=""
+            data-content=""
+          >
+            <div
+              class=""
+              data-title=""
+            >
+              Toaster secondary
+            </div>
+            <div
+              class="group-[.sonn]:text-muted-foreground"
+              data-description=""
+            >
+              This is a basic toast
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toaster > has success variant 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="btn min-h-fit h-10"
+    >
+      Show toast
+    </button>
+    <section
+      aria-label="Notifications alt+T"
+      tabindex="-1"
+    >
+      <ol
+        class="toaster group"
+        data-sonner-toaster="true"
+        data-theme="light"
+        data-x-position="right"
+        data-y-position="bottom"
+        dir=""
+        style="--front-toast-height: 0px; --offset: 32px; --width: 356px; --gap: 14px;"
+        tabindex="-1"
+      >
+        <li
+          aria-atomic="true"
+          aria-live="polite"
+          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-success text-success-content border-success"
+          data-dismissible="true"
+          data-expanded="false"
+          data-front="true"
+          data-index="0"
+          data-mounted="true"
+          data-promise="false"
+          data-removed="false"
+          data-sonner-toast=""
+          data-styled="true"
+          data-swipe-out="false"
+          data-swiping="false"
+          data-visible="true"
+          data-x-position="right"
+          data-y-position="bottom"
+          role="status"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          tabindex="0"
+        >
+          <div
+            class=""
+            data-content=""
+          >
+            <div
+              class=""
+              data-title=""
+            >
+              Toaster success
+            </div>
+            <div
+              class="group-[.sonn]:text-muted-foreground"
+              data-description=""
+            >
+              This is a basic toast
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toaster > has warning variant 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="btn min-h-fit h-10"
+    >
+      Show toast
+    </button>
+    <section
+      aria-label="Notifications alt+T"
+      tabindex="-1"
+    >
+      <ol
+        class="toaster group"
+        data-sonner-toaster="true"
+        data-theme="light"
+        data-x-position="right"
+        data-y-position="bottom"
+        dir=""
+        style="--front-toast-height: 0px; --offset: 32px; --width: 356px; --gap: 14px;"
+        tabindex="-1"
+      >
+        <li
+          aria-atomic="true"
+          aria-live="polite"
+          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-warning text-warning-content border-warning"
+          data-dismissible="true"
+          data-expanded="false"
+          data-front="true"
+          data-index="0"
+          data-mounted="true"
+          data-promise="false"
+          data-removed="false"
+          data-sonner-toast=""
+          data-styled="true"
+          data-swipe-out="false"
+          data-swiping="false"
+          data-visible="true"
+          data-x-position="right"
+          data-y-position="bottom"
+          role="status"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          tabindex="0"
+        >
+          <div
+            class=""
+            data-content=""
+          >
+            <div
+              class=""
+              data-title=""
+            >
+              Toaster warning
+            </div>
+            <div
+              class="group-[.sonn]:text-muted-foreground"
+              data-description=""
+            >
+              This is a basic toast
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toaster > renders a basic toast 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="btn min-h-fit h-10"
+    >
+      Show toast
+    </button>
+    <section
+      aria-label="Notifications alt+T"
+      tabindex="-1"
+    >
+      <ol
+        class="toaster group"
+        data-sonner-toaster="true"
+        data-theme="light"
+        data-x-position="right"
+        data-y-position="bottom"
+        dir=""
+        style="--front-toast-height: 0px; --offset: 32px; --width: 356px; --gap: 14px;"
+        tabindex="-1"
+      >
+        <li
+          aria-atomic="true"
+          aria-live="polite"
+          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-default text-default-content border-default"
+          data-dismissible="true"
+          data-expanded="false"
+          data-front="true"
+          data-index="0"
+          data-mounted="true"
+          data-promise="false"
+          data-removed="false"
+          data-sonner-toast=""
+          data-styled="true"
+          data-swipe-out="false"
+          data-swiping="false"
+          data-visible="true"
+          data-x-position="right"
+          data-y-position="bottom"
+          role="status"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          tabindex="0"
+        >
+          <div
+            class=""
+            data-content=""
+          >
+            <div
+              class=""
+              data-title=""
+            >
+              A simple toast
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+</DocumentFragment>
+`;
