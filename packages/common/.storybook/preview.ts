@@ -19,9 +19,10 @@ export const decorators = [
   withThemeByDataAttribute({
     themes: {
       "🌔 Light": "light",
-      "🌘 Dark": "dark",
+      "🌒 Dark": "dark",
+      "🌓 System": "system",
     },
-    defaultTheme: "🌔 Light",
+    defaultTheme: "🌓 System",
     attributeName: "data-theme",
   }),
 ];

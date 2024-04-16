@@ -258,7 +258,7 @@ exports[`Calendar > does not have navigation 1`] = `
                 role="presentation"
               >
                 <div
-                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 outline outline-accent"
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
                   role="gridcell"
                 >
                   14
@@ -280,7 +280,7 @@ exports[`Calendar > does not have navigation 1`] = `
                 role="presentation"
               >
                 <div
-                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 outline outline-accent"
                   role="gridcell"
                 >
                   16
@@ -968,7 +968,7 @@ exports[`Calendar > has navigable months 1`] = `
                 role="presentation"
               >
                 <div
-                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 outline outline-accent"
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
                   role="gridcell"
                 >
                   14
@@ -990,7 +990,7 @@ exports[`Calendar > has navigable months 1`] = `
                 role="presentation"
               >
                 <div
-                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 outline outline-accent"
                   role="gridcell"
                 >
                   16
@@ -1517,7 +1517,7 @@ exports[`Calendar > shows April, 2024 calendar 1`] = `
                 role="presentation"
               >
                 <div
-                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 outline outline-accent"
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
                   role="gridcell"
                 >
                   14
@@ -1539,7 +1539,7 @@ exports[`Calendar > shows April, 2024 calendar 1`] = `
                 role="presentation"
               >
                 <div
-                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100"
+                  class="btn btn-ghost min-h-fit h-8 w-8 p-0 font-normal aria-selected:opacity-100 outline outline-accent"
                   role="gridcell"
                 >
                   16
