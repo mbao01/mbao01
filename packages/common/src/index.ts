@@ -12,6 +12,7 @@ export * from "./components/Description";
 export * from "./components/Progress";
 export * from "./components/Separator";
 export * from "./components/Sonner";
+export * from "./components/Tabs";
 export * from "./components/Text";
 
 /** data input */

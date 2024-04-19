@@ -6,7 +6,7 @@ exports[`Card > renders a basic card 1`] = `
     class="card card-normal"
   >
     <div
-      class="card-body p-6 pt-0"
+      class="card-body"
     >
       If a dog chews shoes whose shoes does he choose?
     </div>
@@ -20,7 +20,7 @@ exports[`Card > renders a card with a description 1`] = `
     class="card card-normal"
   >
     <div
-      class="card-body p-6 pt-0"
+      class="card-body"
     >
       <h3
         class="card-title"
@@ -43,7 +43,7 @@ exports[`Card > renders a card with a header 1`] = `
     class="card card-normal"
   >
     <div
-      class="card-body p-6 pt-0"
+      class="card-body"
     >
       <h3
         class="card-title"
@@ -62,7 +62,7 @@ exports[`Card > renders a card with border 1`] = `
     class="card card-bordered card-normal"
   >
     <div
-      class="card-body p-6 pt-0"
+      class="card-body"
     >
       Real cool shoe
     </div>
@@ -76,19 +76,19 @@ exports[`Card > renders a card with header and footer 1`] = `
     class="card card-normal"
   >
     <div
-      class="card-body p-6 pt-0"
+      class="flex flex-col space-y-1.5 p-6"
     >
-      <h3
-        class="card-title"
-      >
-        Nike Shoe!
-      </h3>
+      Nike Shoe!
+    </div>
+    <div
+      class="p-6 pt-0"
+    >
       Real cool shoe
-      <div
-        class="card-actions"
-      >
-        Some footer content
-      </div>
+    </div>
+    <div
+      class="flex items-center p-6 pt-0"
+    >
+      Some footer content
     </div>
   </div>
 </DocumentFragment>
@@ -100,7 +100,7 @@ exports[`Card > renders a card with image 1`] = `
     class="card card-normal"
   >
     <div
-      class="card-body p-6 pt-0"
+      class="card-body"
     >
       Real cool shoe
     </div>
@@ -120,7 +120,7 @@ exports[`Card > renders a card with overlay 1`] = `
     class="card card-bordered card-normal"
   >
     <div
-      class="card-body p-6 pt-0"
+      class="card-body"
     >
       Real cool shoe
     </div>
@@ -134,13 +134,37 @@ exports[`Card > renders a card with overlay 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Card > renders a card with title and actions 1`] = `
+<DocumentFragment>
+  <div
+    class="card card-normal"
+  >
+    <div
+      class="card-body"
+    >
+      <h3
+        class="card-title"
+      >
+        Nike Shoe!
+      </h3>
+      Real cool shoe
+      <div
+        class="card-actions"
+      >
+        Some actions content
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Card > renders a compact card 1`] = `
 <DocumentFragment>
   <div
     class="card card-compact"
   >
     <div
-      class="card-body p-6 pt-0"
+      class="card-body"
     >
       Real cool shoe
     </div>
@@ -154,7 +178,7 @@ exports[`Card > renders a horizontal card with image on the left 1`] = `
     class="card card-normal card-side"
   >
     <div
-      class="card-body p-6 pt-0"
+      class="card-body"
     >
       Real cool shoe
     </div>
