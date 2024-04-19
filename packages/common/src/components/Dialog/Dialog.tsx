@@ -40,22 +40,33 @@ DialogOverlay.displayName = DialogPrimitive.Overlay.displayName;
 const DialogContent = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Content>,
   DialogContentProps
->(({ className, children, ...props }, ref) => (
-  <DialogPrimitive.Portal>
-    <DialogOverlay />
-    <DialogPrimitive.Content
-      ref={ref}
-      className={cn(getDialogContentClasses(), className)}
-      {...props}
-    >
-      {children}
-      <DialogPrimitive.Close className={cn(getDialogCloseClasses())}>
-        <Cross2Icon className="h-4 w-4" />
-        <span className="sr-only">Close</span>
-      </DialogPrimitive.Close>
-    </DialogPrimitive.Content>
-  </DialogPrimitive.Portal>
-));
+>(
+  (
+    { className, children, variant = "dialog", side = "right", ...props },
+    ref
+  ) => (
+    <DialogPrimitive.Portal>
+      <DialogOverlay />
+      <DialogPrimitive.Content
+        ref={ref}
+        className={cn(
+          getDialogContentClasses({
+            variant,
+            side: variant === "sheet" ? side : undefined,
+          }),
+          className
+        )}
+        {...props}
+      >
+        {children}
+        <DialogPrimitive.Close className={cn(getDialogCloseClasses())}>
+          <Cross2Icon className="h-4 w-4" />
+          <span className="sr-only">Close</span>
+        </DialogPrimitive.Close>
+      </DialogPrimitive.Content>
+    </DialogPrimitive.Portal>
+  )
+);
 DialogContent.displayName = DialogPrimitive.Content.displayName;
 
 const DialogHeader = ({ className, ...props }: DialogHeaderProps) => (
