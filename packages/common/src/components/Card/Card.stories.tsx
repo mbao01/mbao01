@@ -22,15 +22,15 @@ type Story = StoryObj<typeof meta>;
 
 const Example = (
   <>
-    <Card.Content>
-      <Card.Header>Nike Shoe!</Card.Header>
+    <Card.Body>
+      <Card.Title>Nike Shoe!</Card.Title>
       If a dog chews shoes whose shoes does he choose?
-      <Card.Footer>
+      <Card.Actions>
         <Button name="hello" variant="secondary">
           Buy Now
         </Button>
-      </Card.Footer>
-    </Card.Content>
+      </Card.Actions>
+    </Card.Body>
     <Card.Image src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" />
   </>
 );

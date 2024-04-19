@@ -5,9 +5,7 @@ describe("Card", () => {
   it("renders a basic card", () => {
     const { asFragment } = render(
       <Card>
-        <Card.Content>
-          If a dog chews shoes whose shoes does he choose?
-        </Card.Content>
+        <Card.Body>If a dog chews shoes whose shoes does he choose?</Card.Body>
       </Card>
     );
 
@@ -20,10 +18,10 @@ describe("Card", () => {
   it("renders a card with a header", () => {
     const { asFragment } = render(
       <Card>
-        <Card.Content>
-          <Card.Header>Nike Shoe!</Card.Header>
+        <Card.Body>
+          <Card.Title>Nike Shoe!</Card.Title>
           Real cool shoe
-        </Card.Content>
+        </Card.Body>
       </Card>
     );
 
@@ -34,20 +32,35 @@ describe("Card", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("renders a card with header and footer", () => {
+  it("renders a card with title and actions", () => {
     const { asFragment } = render(
       <Card>
-        <Card.Content>
-          <Card.Header>Nike Shoe!</Card.Header>
+        <Card.Body>
+          <Card.Title>Nike Shoe!</Card.Title>
           Real cool shoe
-          <Card.Footer>Some footer content</Card.Footer>
-        </Card.Content>
+          <Card.Actions>Some actions content</Card.Actions>
+        </Card.Body>
       </Card>
     );
 
     expect(
       screen.getByRole("heading", { name: "Nike Shoe!", level: 3 })
     ).toBeInTheDocument();
+    expect(screen.getByText("Real cool shoe")).toBeInTheDocument();
+    expect(screen.getByText("Some actions content")).toBeInTheDocument();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders a card with header and footer", () => {
+    const { asFragment } = render(
+      <Card>
+        <Card.Header>Nike Shoe!</Card.Header>
+        <Card.Content>Real cool shoe</Card.Content>
+        <Card.Footer>Some footer content</Card.Footer>
+      </Card>
+    );
+
+    expect(screen.getByText("Nike Shoe!")).toBeInTheDocument();
     expect(screen.getByText("Real cool shoe")).toBeInTheDocument();
     expect(screen.getByText("Some footer content")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
@@ -56,10 +69,10 @@ describe("Card", () => {
   it("renders a card with a description", () => {
     const { asFragment } = render(
       <Card>
-        <Card.Content>
-          <Card.Header>Nike Shoe!</Card.Header>
+        <Card.Body>
+          <Card.Title>Nike Shoe!</Card.Title>
           <Card.Description>Some real cool shoe</Card.Description>
-        </Card.Content>
+        </Card.Body>
       </Card>
     );
 
@@ -73,7 +86,7 @@ describe("Card", () => {
   it("renders a card with image", () => {
     const { asFragment } = render(
       <Card>
-        <Card.Content>Real cool shoe</Card.Content>
+        <Card.Body>Real cool shoe</Card.Body>
         <Card.Image src="image.jpg" alt="my image" />
       </Card>
     );
@@ -89,7 +102,7 @@ describe("Card", () => {
   it("renders a card with border", () => {
     const { asFragment } = render(
       <Card bordered>
-        <Card.Content>Real cool shoe</Card.Content>
+        <Card.Body>Real cool shoe</Card.Body>
       </Card>
     );
 
@@ -99,7 +112,7 @@ describe("Card", () => {
   it("renders a card with overlay", () => {
     const { asFragment } = render(
       <Card bordered>
-        <Card.Content>Real cool shoe</Card.Content>
+        <Card.Body>Real cool shoe</Card.Body>
         <Card.Image src="image.jpg" alt="my image" />
       </Card>
     );
@@ -110,7 +123,7 @@ describe("Card", () => {
   it("renders a horizontal card with image on the left", () => {
     const { asFragment } = render(
       <Card horizontal>
-        <Card.Content>Real cool shoe</Card.Content>
+        <Card.Body>Real cool shoe</Card.Body>
         <Card.Image src="image.jpg" alt="my image" />
       </Card>
     );
@@ -121,7 +134,7 @@ describe("Card", () => {
   it("renders a compact card", () => {
     const { asFragment } = render(
       <Card compact>
-        <Card.Content>Real cool shoe</Card.Content>
+        <Card.Body>Real cool shoe</Card.Body>
       </Card>
     );
 
