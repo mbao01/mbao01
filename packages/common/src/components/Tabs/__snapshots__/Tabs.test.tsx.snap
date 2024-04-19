@@ -1,0 +1,287 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Tabs > renders tab without a default tab 1`] = `
+<DocumentFragment>
+  <div
+    class="w-[400px]"
+    data-orientation="horizontal"
+    dir="ltr"
+  >
+    <div
+      aria-orientation="horizontal"
+      class="h-9 items-center justify-center rounded-lg bg-base-200 p-1 grid w-full grid-cols-2"
+      data-orientation="horizontal"
+      role="tablist"
+      style="outline: none;"
+      tabindex="0"
+    >
+      <button
+        aria-controls="radix-:r0:-content-account"
+        aria-selected="false"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-state="inactive"
+        id="radix-:r0:-trigger-account"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Account
+      </button>
+      <button
+        aria-controls="radix-:r0:-content-password"
+        aria-selected="false"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-state="inactive"
+        id="radix-:r0:-trigger-password"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Password
+      </button>
+      <button
+        aria-controls="radix-:r0:-content-secure"
+        aria-selected="false"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow"
+        data-disabled=""
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-state="inactive"
+        disabled=""
+        id="radix-:r0:-trigger-secure"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Secure
+      </button>
+    </div>
+    <div
+      aria-labelledby="radix-:r0:-trigger-account"
+      class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      data-orientation="horizontal"
+      data-state="inactive"
+      hidden=""
+      id="radix-:r0:-content-account"
+      role="tabpanel"
+      tabindex="0"
+    />
+    <div
+      aria-labelledby="radix-:r0:-trigger-password"
+      class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      data-orientation="horizontal"
+      data-state="inactive"
+      hidden=""
+      id="radix-:r0:-content-password"
+      role="tabpanel"
+      tabindex="0"
+    />
+    <div
+      aria-labelledby="radix-:r0:-trigger-secure"
+      class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      data-orientation="horizontal"
+      data-state="inactive"
+      hidden=""
+      id="radix-:r0:-content-secure"
+      role="tabpanel"
+      tabindex="0"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tabs > renders tab without a default tab 2`] = `
+<DocumentFragment>
+  <div
+    class="w-[400px]"
+    data-orientation="horizontal"
+    dir="ltr"
+  >
+    <div
+      aria-orientation="horizontal"
+      class="h-9 items-center justify-center rounded-lg bg-base-200 p-1 grid w-full grid-cols-2"
+      data-orientation="horizontal"
+      role="tablist"
+      style="outline: none;"
+      tabindex="0"
+    >
+      <button
+        aria-controls="radix-:r4:-content-account"
+        aria-selected="false"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-state="inactive"
+        id="radix-:r4:-trigger-account"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Account
+      </button>
+      <button
+        aria-controls="radix-:r4:-content-password"
+        aria-selected="true"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-state="active"
+        id="radix-:r4:-trigger-password"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Password
+      </button>
+      <button
+        aria-controls="radix-:r4:-content-secure"
+        aria-selected="false"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow"
+        data-disabled=""
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-state="inactive"
+        disabled=""
+        id="radix-:r4:-trigger-secure"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Secure
+      </button>
+    </div>
+    <div
+      aria-labelledby="radix-:r4:-trigger-account"
+      class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      data-orientation="horizontal"
+      data-state="inactive"
+      hidden=""
+      id="radix-:r4:-content-account"
+      role="tabpanel"
+      tabindex="0"
+    />
+    <div
+      aria-labelledby="radix-:r4:-trigger-password"
+      class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      data-orientation="horizontal"
+      data-state="active"
+      id="radix-:r4:-content-password"
+      role="tabpanel"
+      style="animation-duration: 0s;"
+      tabindex="0"
+    >
+      Password tab content
+    </div>
+    <div
+      aria-labelledby="radix-:r4:-trigger-secure"
+      class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      data-orientation="horizontal"
+      data-state="inactive"
+      hidden=""
+      id="radix-:r4:-content-secure"
+      role="tabpanel"
+      tabindex="0"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tabs > should switch between tabs 1`] = `
+<DocumentFragment>
+  <div
+    class="w-[400px]"
+    data-orientation="horizontal"
+    dir="ltr"
+  >
+    <div
+      aria-orientation="horizontal"
+      class="h-9 items-center justify-center rounded-lg bg-base-200 p-1 grid w-full grid-cols-2"
+      data-orientation="horizontal"
+      role="tablist"
+      style="outline: none;"
+      tabindex="0"
+    >
+      <button
+        aria-controls="radix-:r8:-content-account"
+        aria-selected="true"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-state="active"
+        id="radix-:r8:-trigger-account"
+        role="tab"
+        tabindex="0"
+        type="button"
+      >
+        Account
+      </button>
+      <button
+        aria-controls="radix-:r8:-content-password"
+        aria-selected="false"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-state="inactive"
+        id="radix-:r8:-trigger-password"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Password
+      </button>
+      <button
+        aria-controls="radix-:r8:-content-secure"
+        aria-selected="false"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow"
+        data-disabled=""
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-state="inactive"
+        disabled=""
+        id="radix-:r8:-trigger-secure"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Secure
+      </button>
+    </div>
+    <div
+      aria-labelledby="radix-:r8:-trigger-account"
+      class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      data-orientation="horizontal"
+      data-state="active"
+      id="radix-:r8:-content-account"
+      role="tabpanel"
+      tabindex="0"
+    >
+      Account tab content
+    </div>
+    <div
+      aria-labelledby="radix-:r8:-trigger-password"
+      class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      data-orientation="horizontal"
+      data-state="inactive"
+      hidden=""
+      id="radix-:r8:-content-password"
+      role="tabpanel"
+      tabindex="0"
+    />
+    <div
+      aria-labelledby="radix-:r8:-trigger-secure"
+      class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      data-orientation="horizontal"
+      data-state="inactive"
+      hidden=""
+      id="radix-:r8:-content-secure"
+      role="tabpanel"
+      style=""
+      tabindex="0"
+    />
+  </div>
+</DocumentFragment>
+`;
