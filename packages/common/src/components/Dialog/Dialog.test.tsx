@@ -1,14 +1,15 @@
 import { describe, expect, it } from "vitest";
 import { render, screen, within } from "@testing-library/react";
+import { type DialogContentProps } from "./types";
 import { Dialog } from "./Dialog";
 import userEvent from "@testing-library/user-event";
 
 describe("Dialog", () => {
-  const renderDialog = () =>
+  const renderDialog = (contentProps?: DialogContentProps) =>
     render(
       <Dialog>
         <Dialog.Trigger>Edit Profile</Dialog.Trigger>
-        <Dialog.Content className="sm:max-w-[425px]">
+        <Dialog.Content className="sm:max-w-[425px]" {...contentProps}>
           <Dialog.Header>
             <Dialog.Title>Edit profile</Dialog.Title>
             <Dialog.Description>
@@ -30,9 +31,16 @@ describe("Dialog", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("renders a dialog", async () => {
+  it.each([
+    { variant: "dialog", description: "dialog" },
+    { variant: "sheet", description: "sheet" },
+    { variant: "sheet", side: "left", description: "sheet on the left" },
+    { variant: "sheet", side: "right", description: "sheet on the left" },
+    { variant: "sheet", side: "top", description: "sheet on top" },
+    { variant: "sheet", side: "bottom", description: "sheet on bottom" },
+  ] as const)("renders a $description", async ({ variant, side }) => {
     const user = userEvent.setup();
-    const { asFragment } = renderDialog();
+    const { asFragment } = renderDialog({ variant, side });
 
     const dialogTrigger = screen.getByRole("button", { name: "Edit Profile" });
 
