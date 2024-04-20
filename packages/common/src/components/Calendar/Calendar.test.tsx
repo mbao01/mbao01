@@ -21,7 +21,10 @@ describe("Calendar", () => {
 
   it("shows April, 2024 calendar", () => {
     const { asFragment } = render(
-      <Calendar defaultMonth={new Date("2024-04-01")} />
+      <Calendar
+        defaultMonth={new Date("2024-04-01")}
+        today={new Date("2024-04-19")}
+      />
     );
 
     expect(screen.getByText("April 2024")).toBeInTheDocument();
@@ -33,6 +36,7 @@ describe("Calendar", () => {
       <Calendar
         captionLayout="dropdown-buttons"
         defaultMonth={new Date("2024-04-01")}
+        today={new Date("2024-04-19")}
         disableNavigation
         fromYear={2022}
         toYear={2026}
@@ -54,6 +58,7 @@ describe("Calendar", () => {
       <Calendar
         captionLayout="dropdown-buttons"
         defaultMonth={new Date("2024-04-01")}
+        today={new Date("2024-04-19")}
         fromYear={2022}
         toYear={2026}
       />

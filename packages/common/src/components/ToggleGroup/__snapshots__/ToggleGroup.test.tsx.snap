@@ -1,0 +1,96 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ToggleGroup > renders a toggle group 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center gap-1"
+    dir="ltr"
+    role="group"
+    style="outline: none;"
+    tabindex="0"
+  >
+    <button
+      aria-label="Toggle one"
+      aria-pressed="false"
+      class="btn min-h-fit h-10 transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
+      data-radix-collection-item=""
+      data-state="off"
+      tabindex="-1"
+      type="button"
+    >
+      One
+    </button>
+    <button
+      aria-label="Toggle two"
+      aria-pressed="false"
+      class="btn min-h-fit h-10 transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
+      data-radix-collection-item=""
+      data-state="off"
+      tabindex="-1"
+      type="button"
+    >
+      Two
+    </button>
+    <button
+      aria-label="Toggle three"
+      aria-pressed="false"
+      class="btn min-h-fit h-10 transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
+      data-radix-collection-item=""
+      data-state="off"
+      tabindex="-1"
+      type="button"
+    >
+      Three
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ToggleGroup > should toggle button state 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center gap-1"
+    dir="ltr"
+    role="group"
+    style="outline: none;"
+    tabindex="0"
+  >
+    <button
+      aria-checked="false"
+      aria-label="Toggle one"
+      class="btn min-h-fit h-10 transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
+      data-radix-collection-item=""
+      data-state="off"
+      role="radio"
+      tabindex="0"
+      type="button"
+    >
+      One
+    </button>
+    <button
+      aria-checked="false"
+      aria-label="Toggle two"
+      class="btn min-h-fit h-10 transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
+      data-radix-collection-item=""
+      data-state="off"
+      role="radio"
+      tabindex="-1"
+      type="button"
+    >
+      Two
+    </button>
+    <button
+      aria-checked="false"
+      aria-label="Toggle three"
+      class="btn min-h-fit h-10 transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
+      data-radix-collection-item=""
+      data-state="off"
+      role="radio"
+      tabindex="-1"
+      type="button"
+    >
+      Three
+    </button>
+  </div>
+</DocumentFragment>
+`;

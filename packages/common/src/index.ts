@@ -1,6 +1,7 @@
 /** actions */
 export * from "./components/Button";
 export * from "./components/Breadcrumbs";
+export * from "./components/Toggle";
 
 /** data display */
 export * from "./components/Alert";
