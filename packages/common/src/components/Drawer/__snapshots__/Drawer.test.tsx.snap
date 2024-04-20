@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Drawer > renders a drawer 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="radix-:r0:"
+    aria-expanded="true"
+    aria-haspopup="dialog"
+    class="btn btn-outline min-h-fit h-10"
+    data-state="open"
+    type="button"
+  >
+    Open drawer
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Drawer > should close drawer with the cancel button 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="radix-:r3:"
+    aria-expanded="false"
+    aria-haspopup="dialog"
+    class="btn btn-outline min-h-fit h-10"
+    data-state="closed"
+    type="button"
+  >
+    Open drawer
+  </button>
+</DocumentFragment>
+`;

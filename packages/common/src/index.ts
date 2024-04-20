@@ -1,6 +1,7 @@
 /** actions */
 export * from "./components/Button";
 export * from "./components/Breadcrumbs";
+export * from "./components/Pagination";
 export * from "./components/Toggle";
 export * from "./components/ToggleGroup";
 
@@ -14,6 +15,7 @@ export * from "./components/Calendar";
 export * from "./components/Collapsible";
 export * from "./components/Description";
 export * from "./components/Progress";
+export * from "./components/ScrollArea";
 export * from "./components/Separator";
 export * from "./components/Sonner";
 export * from "./components/Tabs";
