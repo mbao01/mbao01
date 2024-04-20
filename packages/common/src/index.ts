@@ -31,6 +31,7 @@ export * from "./components/Tooltip";
 
 /** composable */
 export * from "./components/AlertDialog";
-export * from "./components/Dialog";
 export * from "./components/Command";
+export * from "./components/Dialog";
+export * from "./components/HoverCard";
 export * from "./components/Popover";
