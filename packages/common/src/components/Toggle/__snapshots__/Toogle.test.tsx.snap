@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Toggle > renders a toggle 1`] = `
+<DocumentFragment>
+  <button
+    aria-pressed="false"
+    class="btn min-h-fit h-10 transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost data-[state=on]:btn-default"
+    data-state="off"
+    type="button"
+  >
+    Toggle button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Toggle > should toggle button state 1`] = `
+<DocumentFragment>
+  <button
+    aria-pressed="true"
+    class="btn min-h-fit h-10 transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost data-[state=on]:btn-default"
+    data-state="on"
+    type="button"
+  >
+    Toggle
+  </button>
+</DocumentFragment>
+`;
