@@ -11,6 +11,7 @@ export * from "./components/Avatar";
 export * from "./components/Badge";
 export * from "./components/Card";
 export * from "./components/Calendar";
+export * from "./components/Collapsible";
 export * from "./components/Description";
 export * from "./components/Progress";
 export * from "./components/Separator";

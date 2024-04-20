@@ -1,0 +1,79 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Collapsible > renders collapsible content 1`] = `
+<DocumentFragment>
+  <div
+    data-state="closed"
+  >
+    <button
+      aria-controls="radix-:r0:"
+      aria-expanded="false"
+      class="btn btn-ghost btn-sm"
+      data-state="closed"
+      type="button"
+    >
+      Toggle
+    </button>
+    <div
+      data-state="closed"
+      hidden=""
+      id="radix-:r0:"
+      style=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Collapsible > renders collapsible trigger with hidden content 1`] = `
+<DocumentFragment>
+  <div
+    data-state="closed"
+  >
+    <button
+      aria-controls="radix-:r0:"
+      aria-expanded="false"
+      class="btn btn-ghost btn-sm"
+      data-state="closed"
+      type="button"
+    >
+      Toggle
+    </button>
+    <div
+      data-state="closed"
+      hidden=""
+      id="radix-:r0:"
+      style=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Collapsible > should expand and collapse content 1`] = `
+<DocumentFragment>
+  <div
+    data-state="open"
+  >
+    <button
+      aria-controls="radix-:r1:"
+      aria-expanded="true"
+      class="btn btn-ghost btn-sm"
+      data-state="open"
+      type="button"
+    >
+      Toggle
+    </button>
+    <div
+      data-state="open"
+      id="radix-:r1:"
+      style=""
+    >
+      <div>
+        @radix-ui/colors
+      </div>
+      <div>
+        @stitches/react
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
