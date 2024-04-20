@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HoverCard > renders hover card trigger with hidden content 1`] = `
+<DocumentFragment>
+  <button
+    class="btn btn-link min-h-fit h-10"
+    data-state="closed"
+  >
+    @nextjs
+  </button>
+</DocumentFragment>
+`;

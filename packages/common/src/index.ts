@@ -2,13 +2,16 @@
 export * from "./components/Button";
 export * from "./components/Breadcrumbs";
 export * from "./components/Toggle";
+export * from "./components/ToggleGroup";
 
 /** data display */
+export * from "./components/Accordion";
 export * from "./components/Alert";
 export * from "./components/Avatar";
 export * from "./components/Badge";
 export * from "./components/Card";
 export * from "./components/Calendar";
+export * from "./components/Collapsible";
 export * from "./components/Description";
 export * from "./components/Progress";
 export * from "./components/Separator";
@@ -28,6 +31,7 @@ export * from "./components/Tooltip";
 
 /** composable */
 export * from "./components/AlertDialog";
-export * from "./components/Dialog";
 export * from "./components/Command";
+export * from "./components/Dialog";
+export * from "./components/HoverCard";
 export * from "./components/Popover";
