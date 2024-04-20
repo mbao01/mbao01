@@ -4,8 +4,6 @@ import { Accordion } from "./Accordion";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const withAccordion = (_: StoryFn, context: StoryContext<any>) => {
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-  const { type, collapsible, disabled, defaultValue } = context.args;
   const items = [
     {
       value: "item-1",
@@ -26,14 +24,10 @@ const withAccordion = (_: StoryFn, context: StoryContext<any>) => {
     },
   ];
 
+  const disabled = (context.args as { disabled: boolean }).disabled;
+
   return (
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    <Accordion
-      type={type}
-      defaultValue={defaultValue}
-      collapsible={collapsible}
-      className="w-[320px]"
-    >
+    <Accordion {...context.args} className="w-[320px]">
       {items.map((item) => (
         <Accordion.Item value={item.value} key={item.value}>
           <Accordion.Trigger

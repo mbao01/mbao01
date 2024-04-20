@@ -36,7 +36,7 @@ describe("HoverCard", () => {
 
     await user.hover(button);
 
-    waitFor(() => {
+    await waitFor(() => {
       expect(screen.getByRole("button", { name: "@nextjs" })).toHaveAttribute(
         "data-state",
         "open"
@@ -44,7 +44,7 @@ describe("HoverCard", () => {
       expect(screen.getByText("Hover card content")).toBeInTheDocument();
     });
 
-    waitFor(() => {
+    await waitFor(() => {
       expect(screen.getByText("Hover card content")).not.toBeInTheDocument();
     });
   });
