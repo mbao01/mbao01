@@ -14,6 +14,7 @@ export * from "./components/Calendar";
 export * from "./components/Collapsible";
 export * from "./components/Description";
 export * from "./components/Progress";
+export * from "./components/ScrollArea";
 export * from "./components/Separator";
 export * from "./components/Sonner";
 export * from "./components/Tabs";
