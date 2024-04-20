@@ -12,6 +12,9 @@ const ResizeObserverMock = vi.fn(() => ({
 // Stub the global ResizeObserver
 vi.stubGlobal("ResizeObserver", ResizeObserverMock);
 
+// Mock the scrollTo method
+vi.stubGlobal("scrollTo", vi.fn());
+
 // runs a cleanup after each test case (e.g. clearing jsdom)
 afterEach(() => {
   cleanup();
