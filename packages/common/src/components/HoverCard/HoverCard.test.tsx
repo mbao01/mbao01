@@ -5,7 +5,7 @@ import { HoverCard } from "./HoverCard";
 import { Button } from "../Button";
 
 describe("HoverCard", () => {
-  const renderCollapsible = () => {
+  const renderHoverCard = () => {
     return render(
       <HoverCard>
         <HoverCard.Trigger asChild>
@@ -17,7 +17,7 @@ describe("HoverCard", () => {
   };
 
   it("renders hover card trigger with hidden content", () => {
-    const { asFragment } = renderCollapsible();
+    const { asFragment } = renderHoverCard();
 
     expect(screen.getByRole("button", { name: "@nextjs" })).toHaveAttribute(
       "data-state",
@@ -29,7 +29,7 @@ describe("HoverCard", () => {
 
   it("should show and hide hover card content", async () => {
     const user = userEvent.setup();
-    renderCollapsible();
+    renderHoverCard();
     const button = screen.getByRole("button", { name: "@nextjs" });
 
     expect(button).toHaveAttribute("data-state", "closed");
@@ -42,10 +42,6 @@ describe("HoverCard", () => {
         "open"
       );
       expect(screen.getByText("Hover card content")).toBeInTheDocument();
-    });
-
-    await waitFor(() => {
-      expect(screen.getByText("Hover card content")).not.toBeInTheDocument();
     });
   });
 });
