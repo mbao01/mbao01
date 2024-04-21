@@ -3,6 +3,7 @@ export * from "./components/Button";
 export * from "./components/Breadcrumbs";
 export * from "./components/Menu";
 export * from "./components/Pagination";
+export * from "./components/ThemeSwitch";
 export * from "./components/Toggle";
 export * from "./components/ToggleGroup";
 

@@ -1,4 +1,4 @@
-type Theme = "dark" | "light" | "system";
+export type Theme = "dark" | "light";
 
 export const getTheme = () => {
   if (typeof window === "undefined") return null;
@@ -7,13 +7,11 @@ export const getTheme = () => {
   if (!t)
     t = window.matchMedia("(prefers-color-scheme: dark)")?.matches
       ? "dark"
-      : window.matchMedia("(prefers-color-scheme: light)")?.matches
-        ? "light"
-        : "system";
+      : "light";
   return t;
 };
 
 export const saveTheme = (theme: Theme) => {
   document.body.setAttribute("data-theme", theme);
-  localStorage.setItem("__theme", theme);
+  window.localStorage.setItem("__theme", theme);
 };
