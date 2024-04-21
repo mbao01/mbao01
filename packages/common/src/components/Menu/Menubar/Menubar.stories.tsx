@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Menubar } from "./Menubar";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const withMenubar = () => {
   return (
     <Menubar>
