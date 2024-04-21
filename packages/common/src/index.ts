@@ -3,6 +3,7 @@ export * from "./components/Button";
 export * from "./components/Breadcrumbs";
 export * from "./components/Menu";
 export * from "./components/Pagination";
+export * from "./components/ThemeSwitch";
 export * from "./components/Toggle";
 export * from "./components/ToggleGroup";
 
@@ -19,6 +20,7 @@ export * from "./components/Progress";
 export * from "./components/ScrollArea";
 export * from "./components/Separator";
 export * from "./components/Sonner";
+export * from "./components/Table";
 export * from "./components/Tabs";
 export * from "./components/Text";
 

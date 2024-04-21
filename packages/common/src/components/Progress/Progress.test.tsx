@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { Progress } from "./";
 import { render, screen } from "@testing-library/react";
+import { Progress } from "./Progress";
 
 describe("Progress", () => {
   it("renders a progress bar", () => {
