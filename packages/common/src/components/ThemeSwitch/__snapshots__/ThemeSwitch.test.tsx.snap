@@ -3,7 +3,7 @@
 exports[`ThemeSwitch > renders a theme switcher 1`] = `
 <DocumentFragment>
   <label
-    class="swap swap-rotate flex items-center gap-4"
+    class="swap swap-rotate"
   >
     <input
       checked=""
@@ -53,7 +53,7 @@ exports[`ThemeSwitch > should render a custom element 1`] = `
 exports[`ThemeSwitch > should render default theme 1`] = `
 <DocumentFragment>
   <label
-    class="swap swap-rotate flex items-center gap-4"
+    class="swap swap-rotate"
   >
     <input
       class="theme-controller"
@@ -93,7 +93,7 @@ exports[`ThemeSwitch > should switch between light and dark themes 1`] = `
 <DocumentFragment>
   <label
     aria-label="Switch theme"
-    class="swap swap-rotate flex items-center gap-4"
+    class="swap swap-rotate"
   >
     <input
       checked=""

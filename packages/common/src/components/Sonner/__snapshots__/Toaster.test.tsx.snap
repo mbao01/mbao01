@@ -13,7 +13,6 @@ exports[`Toaster > has accent variant 1`] = `
       tabindex="-1"
     >
       <ol
-        class="toaster group"
         data-sonner-toaster="true"
         data-theme="light"
         data-x-position="right"
@@ -25,7 +24,7 @@ exports[`Toaster > has accent variant 1`] = `
         <li
           aria-atomic="true"
           aria-live="polite"
-          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-accent text-accent-content border-accent"
+          class="sonner group bg-accent text-accent-content border-accent"
           data-dismissible="true"
           data-expanded="false"
           data-front="true"
@@ -55,7 +54,7 @@ exports[`Toaster > has accent variant 1`] = `
               Toaster accent
             </div>
             <div
-              class="group-[.sonn]:text-muted-foreground"
+              class=""
               data-description=""
             >
               This is a basic toast
@@ -81,7 +80,6 @@ exports[`Toaster > has error variant 1`] = `
       tabindex="-1"
     >
       <ol
-        class="toaster group"
         data-sonner-toaster="true"
         data-theme="light"
         data-x-position="right"
@@ -93,7 +91,7 @@ exports[`Toaster > has error variant 1`] = `
         <li
           aria-atomic="true"
           aria-live="polite"
-          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-error text-error-content border-error"
+          class="sonner group bg-error text-error-content border-error"
           data-dismissible="true"
           data-expanded="false"
           data-front="true"
@@ -123,7 +121,7 @@ exports[`Toaster > has error variant 1`] = `
               Toaster error
             </div>
             <div
-              class="group-[.sonn]:text-muted-foreground"
+              class=""
               data-description=""
             >
               This is a basic toast
@@ -149,7 +147,6 @@ exports[`Toaster > has ghost variant 1`] = `
       tabindex="-1"
     >
       <ol
-        class="toaster group"
         data-sonner-toaster="true"
         data-theme="light"
         data-x-position="right"
@@ -161,7 +158,7 @@ exports[`Toaster > has ghost variant 1`] = `
         <li
           aria-atomic="true"
           aria-live="polite"
-          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-ghost text-ghost-content border-transparent"
+          class="sonner group bg-ghost text-ghost-content border-transparent"
           data-dismissible="true"
           data-expanded="false"
           data-front="true"
@@ -191,7 +188,7 @@ exports[`Toaster > has ghost variant 1`] = `
               Toaster ghost
             </div>
             <div
-              class="group-[.sonn]:text-muted-foreground"
+              class=""
               data-description=""
             >
               This is a basic toast
@@ -217,7 +214,6 @@ exports[`Toaster > has info variant 1`] = `
       tabindex="-1"
     >
       <ol
-        class="toaster group"
         data-sonner-toaster="true"
         data-theme="light"
         data-x-position="right"
@@ -229,7 +225,7 @@ exports[`Toaster > has info variant 1`] = `
         <li
           aria-atomic="true"
           aria-live="polite"
-          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-info text-info-content border-info"
+          class="sonner group bg-info text-info-content border-info"
           data-dismissible="true"
           data-expanded="false"
           data-front="true"
@@ -259,7 +255,7 @@ exports[`Toaster > has info variant 1`] = `
               Toaster info
             </div>
             <div
-              class="group-[.sonn]:text-muted-foreground"
+              class=""
               data-description=""
             >
               This is a basic toast
@@ -285,7 +281,6 @@ exports[`Toaster > has neutral variant 1`] = `
       tabindex="-1"
     >
       <ol
-        class="toaster group"
         data-sonner-toaster="true"
         data-theme="light"
         data-x-position="right"
@@ -297,7 +292,7 @@ exports[`Toaster > has neutral variant 1`] = `
         <li
           aria-atomic="true"
           aria-live="polite"
-          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-neutral text-neutral-content border-neutral"
+          class="sonner group bg-neutral text-neutral-content border-neutral"
           data-dismissible="true"
           data-expanded="false"
           data-front="true"
@@ -327,7 +322,7 @@ exports[`Toaster > has neutral variant 1`] = `
               Toaster neutral
             </div>
             <div
-              class="group-[.sonn]:text-muted-foreground"
+              class=""
               data-description=""
             >
               This is a basic toast
@@ -353,7 +348,6 @@ exports[`Toaster > has no outline 1`] = `
       tabindex="-1"
     >
       <ol
-        class="toaster group"
         data-sonner-toaster="true"
         data-theme="light"
         data-x-position="right"
@@ -365,7 +359,7 @@ exports[`Toaster > has no outline 1`] = `
         <li
           aria-atomic="true"
           aria-live="polite"
-          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-default text-default-content border-default"
+          class="sonner group bg-default text-default-content border-default"
           data-dismissible="true"
           data-expanded="false"
           data-front="true"
@@ -414,7 +408,7 @@ exports[`Toaster > has no outline 1`] = `
               Sent successfully!
             </div>
             <div
-              class="group-[.sonn]:text-muted-foreground"
+              class=""
               data-description=""
             >
               has no outline
@@ -440,7 +434,6 @@ exports[`Toaster > has outline 1`] = `
       tabindex="-1"
     >
       <ol
-        class="toaster group"
         data-sonner-toaster="true"
         data-theme="light"
         data-x-position="right"
@@ -452,7 +445,7 @@ exports[`Toaster > has outline 1`] = `
         <li
           aria-atomic="true"
           aria-live="polite"
-          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit border-default border bg-default text-default"
+          class="sonner group border-default border bg-default text-default"
           data-dismissible="true"
           data-expanded="false"
           data-front="true"
@@ -501,7 +494,7 @@ exports[`Toaster > has outline 1`] = `
               Sent successfully!
             </div>
             <div
-              class="group-[.sonn]:text-muted-foreground"
+              class=""
               data-description=""
             >
               has outline
@@ -527,7 +520,6 @@ exports[`Toaster > has primary variant 1`] = `
       tabindex="-1"
     >
       <ol
-        class="toaster group"
         data-sonner-toaster="true"
         data-theme="light"
         data-x-position="right"
@@ -539,7 +531,7 @@ exports[`Toaster > has primary variant 1`] = `
         <li
           aria-atomic="true"
           aria-live="polite"
-          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-primary text-primary-content border-primary"
+          class="sonner group bg-primary text-primary-content border-primary"
           data-dismissible="true"
           data-expanded="false"
           data-front="true"
@@ -569,7 +561,7 @@ exports[`Toaster > has primary variant 1`] = `
               Toaster primary
             </div>
             <div
-              class="group-[.sonn]:text-muted-foreground"
+              class=""
               data-description=""
             >
               This is a basic toast
@@ -595,7 +587,6 @@ exports[`Toaster > has secondary variant 1`] = `
       tabindex="-1"
     >
       <ol
-        class="toaster group"
         data-sonner-toaster="true"
         data-theme="light"
         data-x-position="right"
@@ -607,7 +598,7 @@ exports[`Toaster > has secondary variant 1`] = `
         <li
           aria-atomic="true"
           aria-live="polite"
-          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-secondary text-secondary-content border-secondary"
+          class="sonner group bg-secondary text-secondary-content border-secondary"
           data-dismissible="true"
           data-expanded="false"
           data-front="true"
@@ -637,7 +628,7 @@ exports[`Toaster > has secondary variant 1`] = `
               Toaster secondary
             </div>
             <div
-              class="group-[.sonn]:text-muted-foreground"
+              class=""
               data-description=""
             >
               This is a basic toast
@@ -663,7 +654,6 @@ exports[`Toaster > has success variant 1`] = `
       tabindex="-1"
     >
       <ol
-        class="toaster group"
         data-sonner-toaster="true"
         data-theme="light"
         data-x-position="right"
@@ -675,7 +665,7 @@ exports[`Toaster > has success variant 1`] = `
         <li
           aria-atomic="true"
           aria-live="polite"
-          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-success text-success-content border-success"
+          class="sonner group bg-success text-success-content border-success"
           data-dismissible="true"
           data-expanded="false"
           data-front="true"
@@ -705,7 +695,7 @@ exports[`Toaster > has success variant 1`] = `
               Toaster success
             </div>
             <div
-              class="group-[.sonn]:text-muted-foreground"
+              class=""
               data-description=""
             >
               This is a basic toast
@@ -731,7 +721,6 @@ exports[`Toaster > has warning variant 1`] = `
       tabindex="-1"
     >
       <ol
-        class="toaster group"
         data-sonner-toaster="true"
         data-theme="light"
         data-x-position="right"
@@ -743,7 +732,7 @@ exports[`Toaster > has warning variant 1`] = `
         <li
           aria-atomic="true"
           aria-live="polite"
-          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-warning text-warning-content border-warning"
+          class="sonner group bg-warning text-warning-content border-warning"
           data-dismissible="true"
           data-expanded="false"
           data-front="true"
@@ -773,7 +762,7 @@ exports[`Toaster > has warning variant 1`] = `
               Toaster warning
             </div>
             <div
-              class="group-[.sonn]:text-muted-foreground"
+              class=""
               data-description=""
             >
               This is a basic toast
@@ -799,7 +788,6 @@ exports[`Toaster > renders a basic toast 1`] = `
       tabindex="-1"
     >
       <ol
-        class="toaster group"
         data-sonner-toaster="true"
         data-theme="light"
         data-x-position="right"
@@ -811,7 +799,7 @@ exports[`Toaster > renders a basic toast 1`] = `
         <li
           aria-atomic="true"
           aria-live="polite"
-          class="group sonn group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-default text-default-content border-default"
+          class="sonner group bg-default text-default-content border-default"
           data-dismissible="true"
           data-expanded="false"
           data-front="true"
