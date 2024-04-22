@@ -40,3 +40,4 @@ export * from "./components/Command";
 export * from "./components/Dialog";
 export * from "./components/HoverCard";
 export * from "./components/Popover";
+export * from "./components/Slot";

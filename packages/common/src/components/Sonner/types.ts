@@ -1,6 +1,17 @@
 import { Toaster } from "sonner";
 import { type VariantProps } from "../../libs";
-import { getToastClasses } from "./constants";
+import { getToastButtonClasses, getToastClasses } from "./constants";
 
-export type ToasterProps = React.ComponentProps<typeof Toaster> &
-  VariantProps<typeof getToastClasses>;
+type ToastButtonVariantProps = VariantProps<typeof getToastButtonClasses>;
+
+export type ToasterProps = Omit<
+  React.ComponentProps<typeof Toaster>,
+  "closeButton"
+> &
+  VariantProps<typeof getToastClasses> &
+  Partial<
+    Record<
+      "actionButton" | "cancelButton" | "closeButton",
+      ToastButtonVariantProps
+    >
+  > & { showCloseButton?: boolean };
