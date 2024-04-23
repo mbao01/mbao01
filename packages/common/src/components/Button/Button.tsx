@@ -1,5 +1,5 @@
 import React from "react";
-import { Slot } from "@radix-ui/react-slot";
+import { Slot, Slottable } from "@radix-ui/react-slot";
 import { type ButtonProps } from "./types";
 import { getButtonClasses } from "./constants";
 import { Loading } from "../Loading";
@@ -8,7 +8,7 @@ import { cn } from "../../utilities";
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
-      as,
+      asChild,
       className,
       outline,
       children,
@@ -20,8 +20,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref
   ) => {
-    const Comp = as ? Slot : "button";
-    const SlotChild = as ? as : React.Fragment;
+    const Comp = asChild ? Slot : "button";
 
     return (
       <Comp
@@ -32,18 +31,15 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         )}
         {...props}
       >
-        {/* slot merges it's prop into it's immediate child */}
-        <SlotChild>
-          {children}
-          {isLoading ? (
-            <span
-              className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-[inherit]"
-              data-testid="loading"
-            >
-              <Loading />
-            </span>
-          ) : null}
-        </SlotChild>
+        <Slottable>{children}</Slottable>
+        {isLoading ? (
+          <span
+            className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-[inherit]"
+            data-testid="loading"
+          >
+            <Loading />
+          </span>
+        ) : null}
       </Comp>
     );
   }

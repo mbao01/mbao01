@@ -44,11 +44,11 @@ describe("Button", () => {
     { as: "a", name: "link" },
     { as: "span", name: "span" },
     { as: "p", name: "paragraph" },
-  ] as const)("has a slot to render a $name tag", ({ as, name }) => {
+  ] as const)("has a slot to render a $name tag", ({ as: Comp, name }) => {
     const label = `Button as ${name}`;
     const { asFragment } = render(
-      <Button as={as} role="none">
-        {label}
+      <Button role="none" asChild>
+        <Comp>{label}</Comp>
       </Button>
     );
 
