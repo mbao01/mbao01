@@ -5,6 +5,7 @@ export const getInputClasses = cva(
   {
     variants: {
       variant: {
+        default: "bg-transparent",
         accent: "input-accent",
         error: "input-error",
         ghost: "input-ghost",
@@ -31,6 +32,16 @@ export const getInputClasses = cva(
       {
         size: undefined,
         className: "min-h-fit h-10",
+      },
+      {
+        variant: undefined,
+        outline: true,
+        className: "border-neutral-content",
+      },
+      {
+        variant: "default",
+        outline: true,
+        className: "border-base-content",
       },
     ],
   }

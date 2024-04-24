@@ -11,13 +11,14 @@ export const Link = ({
   variant,
   children,
   className,
+  underline = false,
   ...props
 }: LinkProps) => {
   return (
     <RouterLink
       to={href}
       target={target}
-      className={cn(getLinkClasses({ hover, variant }), className)}
+      className={cn(getLinkClasses({ hover, variant, underline }), className)}
       {...props}
     >
       {children}

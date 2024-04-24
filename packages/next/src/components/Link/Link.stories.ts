@@ -44,6 +44,14 @@ export const ExternalLink: Story = {
   },
 };
 
+export const UnderlineLink: Story = {
+  args: {
+    href: "/",
+    underline: true,
+    children: "Hover on me",
+  },
+};
+
 export const HoverLink: Story = {
   args: {
     href: "/",
