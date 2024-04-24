@@ -11,13 +11,14 @@ export const Link = <T,>({
   variant,
   children,
   className,
+  underline = false,
   ...props
 }: LinkProps<T>) => {
   return (
     <NextLink
       href={href}
       target={target}
-      className={cn(getLinkClasses({ hover, variant }), className)}
+      className={cn(getLinkClasses({ hover, variant, underline }), className)}
       {...props}
     >
       {children}

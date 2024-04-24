@@ -689,7 +689,7 @@ exports[`Calendar > has navigable months 1`] = `
           >
             <button
               aria-label="Go to previous month"
-              class="rdp-button_reset rdp-button btn btn-outline min-h-fit h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute left-1"
+              class="rdp-button_reset rdp-button btn btn-outline min-h-fit border-neutral-content h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute left-1"
               name="previous-month"
               type="button"
             >
@@ -711,7 +711,7 @@ exports[`Calendar > has navigable months 1`] = `
             </button>
             <button
               aria-label="Go to next month"
-              class="rdp-button_reset rdp-button btn btn-outline min-h-fit h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute right-1"
+              class="rdp-button_reset rdp-button btn btn-outline min-h-fit border-neutral-content h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute right-1"
               name="next-month"
               type="button"
             >
@@ -1238,7 +1238,7 @@ exports[`Calendar > shows April, 2024 calendar 1`] = `
           >
             <button
               aria-label="Go to previous month"
-              class="rdp-button_reset rdp-button btn btn-outline min-h-fit h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute left-1"
+              class="rdp-button_reset rdp-button btn btn-outline min-h-fit border-neutral-content h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute left-1"
               name="previous-month"
               type="button"
             >
@@ -1260,7 +1260,7 @@ exports[`Calendar > shows April, 2024 calendar 1`] = `
             </button>
             <button
               aria-label="Go to next month"
-              class="rdp-button_reset rdp-button btn btn-outline min-h-fit h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute right-1"
+              class="rdp-button_reset rdp-button btn btn-outline min-h-fit border-neutral-content h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute right-1"
               name="next-month"
               type="button"
             >

@@ -36,5 +36,10 @@ export const getButtonClasses = cva("btn", {
       size: undefined,
       className: "min-h-fit h-10",
     },
+    {
+      variant: undefined,
+      outline: true,
+      className: "border-neutral-content",
+    },
   ],
 });

@@ -3,7 +3,7 @@
 exports[`Link > has accent variant 1`] = `
 <DocumentFragment>
   <a
-    class="link transition-all link-hover"
+    class="link transition-all link-hover no-underline"
     href="/variant/accent"
   >
     accent link
@@ -14,7 +14,7 @@ exports[`Link > has accent variant 1`] = `
 exports[`Link > has default variant 1`] = `
 <DocumentFragment>
   <a
-    class="link transition-all link-hover"
+    class="link transition-all link-hover no-underline"
     href="/variant/default"
   >
     default link
@@ -25,7 +25,7 @@ exports[`Link > has default variant 1`] = `
 exports[`Link > has error variant 1`] = `
 <DocumentFragment>
   <a
-    class="link transition-all link-hover"
+    class="link transition-all link-hover no-underline"
     href="/variant/error"
   >
     error link
@@ -36,7 +36,7 @@ exports[`Link > has error variant 1`] = `
 exports[`Link > has info variant 1`] = `
 <DocumentFragment>
   <a
-    class="link transition-all link-hover"
+    class="link transition-all link-hover no-underline"
     href="/variant/info"
   >
     info link
@@ -47,7 +47,7 @@ exports[`Link > has info variant 1`] = `
 exports[`Link > has link variant 1`] = `
 <DocumentFragment>
   <a
-    class="link transition-all link-hover"
+    class="link transition-all link-hover no-underline"
     href="/variant/link"
   >
     link link
@@ -58,7 +58,7 @@ exports[`Link > has link variant 1`] = `
 exports[`Link > has neutral variant 1`] = `
 <DocumentFragment>
   <a
-    class="link transition-all link-hover"
+    class="link transition-all link-hover no-underline"
     href="/variant/neutral"
   >
     neutral link
@@ -69,7 +69,7 @@ exports[`Link > has neutral variant 1`] = `
 exports[`Link > has primary variant 1`] = `
 <DocumentFragment>
   <a
-    class="link transition-all link-hover"
+    class="link transition-all link-hover no-underline"
     href="/variant/primary"
   >
     primary link
@@ -80,7 +80,7 @@ exports[`Link > has primary variant 1`] = `
 exports[`Link > has secondary variant 1`] = `
 <DocumentFragment>
   <a
-    class="link transition-all link-hover"
+    class="link transition-all link-hover no-underline"
     href="/variant/secondary"
   >
     secondary link
@@ -91,7 +91,7 @@ exports[`Link > has secondary variant 1`] = `
 exports[`Link > has success variant 1`] = `
 <DocumentFragment>
   <a
-    class="link transition-all link-hover"
+    class="link transition-all link-hover no-underline"
     href="/variant/success"
   >
     success link
@@ -102,7 +102,7 @@ exports[`Link > has success variant 1`] = `
 exports[`Link > has warning variant 1`] = `
 <DocumentFragment>
   <a
-    class="link transition-all link-hover"
+    class="link transition-all link-hover no-underline"
     href="/variant/warning"
   >
     warning link
@@ -113,7 +113,7 @@ exports[`Link > has warning variant 1`] = `
 exports[`Link > renders a link with correct label 1`] = `
 <DocumentFragment>
   <a
-    class="link transition-all"
+    class="link transition-all no-underline"
     href="/home?hello=world#great"
   >
     Go Home 🏡
@@ -124,7 +124,7 @@ exports[`Link > renders a link with correct label 1`] = `
 exports[`Link > renders an external link 1`] = `
 <DocumentFragment>
   <a
-    class="link transition-all"
+    class="link transition-all no-underline"
     href="https://example.com"
     target="_blank"
   >

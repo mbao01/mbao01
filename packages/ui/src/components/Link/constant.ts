@@ -17,5 +17,8 @@ export const getLinkClasses = cva("link transition-all", {
     hover: {
       true: "link-hover",
     },
+    underline: {
+      false: "no-underline",
+    },
   },
 });
