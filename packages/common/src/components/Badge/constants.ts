@@ -22,7 +22,28 @@ export const getBadgeClasses = cva("badge", {
       md: "badge-md",
       lg: "badge-lg",
     },
+    rounded: {
+      xs: "rounded-xs",
+      sm: "rounded-sm",
+      md: "rounded-md",
+      lg: "rounded-lg",
+    },
   },
+  compoundVariants: [
+    {
+      size: undefined,
+      className: "text-xs",
+    },
+    {
+      rounded: undefined,
+      className: "rounded-md",
+    },
+    {
+      variant: "ghost",
+      outline: true,
+      className: "border-base-300",
+    },
+  ],
   defaultVariants: {
     variant: "ghost",
   },
