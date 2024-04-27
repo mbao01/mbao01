@@ -4,7 +4,7 @@ exports[`Pagination > renders pagination buttons 1`] = `
 <DocumentFragment>
   <nav
     aria-label="pagination"
-    class="mx-auto flex w-full justify-center"
+    class="flex justify-center"
     role="navigation"
   >
     <ul
