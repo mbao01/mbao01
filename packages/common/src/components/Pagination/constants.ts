@@ -1,6 +1,6 @@
 import { cva } from "../../libs";
 
-export const getPaginationClasses = cva("mx-auto flex w-full justify-center");
+export const getPaginationClasses = cva("flex justify-center");
 
 export const getPaginationContentClasses = cva(
   "flex flex-row items-center gap-1"
