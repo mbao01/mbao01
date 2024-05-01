@@ -230,7 +230,7 @@ exports[`Avatar > has default variant 1`] = `
     class="avatar"
   >
     <span
-      class="flex items-center justify-center w-full bg-default text-default-content ring-default"
+      class="flex items-center justify-center w-full bg-base-200 text-base-content ring-default"
     >
       default fallback
     </span>
