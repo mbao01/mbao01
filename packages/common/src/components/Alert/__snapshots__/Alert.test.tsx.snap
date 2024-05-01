@@ -3,7 +3,7 @@
 exports[`Alert > has accent variant 1`] = `
 <DocumentFragment>
   <div
-    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-accent text-accent-content border-accent"
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-accent text-accent-content border-accent"
     role="alert"
   >
     <h5
@@ -23,7 +23,7 @@ exports[`Alert > has accent variant 1`] = `
 exports[`Alert > has error variant 1`] = `
 <DocumentFragment>
   <div
-    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-error text-error-content border-error"
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-error text-error-content border-error"
     role="alert"
   >
     <h5
@@ -43,7 +43,7 @@ exports[`Alert > has error variant 1`] = `
 exports[`Alert > has ghost variant 1`] = `
 <DocumentFragment>
   <div
-    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-ghost text-ghost-content border-transparent"
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-ghost text-ghost-content border-transparent"
     role="alert"
   >
     <h5
@@ -63,7 +63,7 @@ exports[`Alert > has ghost variant 1`] = `
 exports[`Alert > has info variant 1`] = `
 <DocumentFragment>
   <div
-    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-info text-info-content border-info"
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-info text-info-content border-info"
     role="alert"
   >
     <h5
@@ -83,7 +83,7 @@ exports[`Alert > has info variant 1`] = `
 exports[`Alert > has neutral variant 1`] = `
 <DocumentFragment>
   <div
-    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-neutral text-neutral-content border-neutral"
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-neutral text-neutral-content border-neutral"
     role="alert"
   >
     <h5
@@ -103,7 +103,7 @@ exports[`Alert > has neutral variant 1`] = `
 exports[`Alert > has no outline 1`] = `
 <DocumentFragment>
   <div
-    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-default text-default-content border-default"
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-default text-default-content border-default"
     role="alert"
   >
     <h5
@@ -123,7 +123,7 @@ exports[`Alert > has no outline 1`] = `
 exports[`Alert > has outline 1`] = `
 <DocumentFragment>
   <div
-    class="relative w-full rounded-lg p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit border-default border bg-default text-default"
+    class="relative w-full rounded-lg p-4 [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit border-default border bg-default text-default"
     role="alert"
   >
     <h5
@@ -143,7 +143,7 @@ exports[`Alert > has outline 1`] = `
 exports[`Alert > has primary variant 1`] = `
 <DocumentFragment>
   <div
-    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-primary text-primary-content border-primary"
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-primary text-primary-content border-primary"
     role="alert"
   >
     <h5
@@ -163,7 +163,7 @@ exports[`Alert > has primary variant 1`] = `
 exports[`Alert > has secondary variant 1`] = `
 <DocumentFragment>
   <div
-    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-secondary text-secondary-content border-secondary"
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-secondary text-secondary-content border-secondary"
     role="alert"
   >
     <h5
@@ -183,7 +183,7 @@ exports[`Alert > has secondary variant 1`] = `
 exports[`Alert > has success variant 1`] = `
 <DocumentFragment>
   <div
-    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-success text-success-content border-success"
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-success text-success-content border-success"
     role="alert"
   >
     <h5
@@ -203,7 +203,7 @@ exports[`Alert > has success variant 1`] = `
 exports[`Alert > has warning variant 1`] = `
 <DocumentFragment>
   <div
-    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-warning text-warning-content border-warning"
+    class="relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-inherit bg-warning text-warning-content border-warning"
     role="alert"
   >
     <h5

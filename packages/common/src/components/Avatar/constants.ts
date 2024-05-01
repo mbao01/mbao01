@@ -23,7 +23,7 @@ const classesConfig = {
   variants: {
     variant: {
       accent: "bg-accent text-accent-content ring-accent",
-      default: "bg-default text-default-content ring-default",
+      default: "bg-base-200 text-base-content ring-default",
       error: "bg-error text-error-content ring-error",
       ghost: "bg-ghost text-ghost-content ring-ghost",
       info: "bg-info text-info-content ring-info",
