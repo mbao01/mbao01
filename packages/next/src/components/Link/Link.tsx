@@ -14,15 +14,17 @@ export const Link = <T,>({
   underline = false,
   ...props
 }: LinkProps<T>) => {
+  const isExternal = target === "_blank";
   return (
     <NextLink
       href={href}
       target={target}
       className={cn(getLinkClasses({ hover, variant, underline }), className)}
       {...props}
+      {...(isExternal && { rel: "noopener noreferrer" })}
     >
       {children}
-      {target === "_blank" && (
+      {isExternal && (
         <ExternalLinkIcon name="external" className="ml-[2px] inline" />
       )}
     </NextLink>
