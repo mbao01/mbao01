@@ -24,9 +24,9 @@ export const Link = <T,>({
       {...(isExternal && { rel: "noopener noreferrer" })}
     >
       {children}
-      {isExternal && (
+      {isExternal ? (
         <ExternalLinkIcon name="external" className="ml-[2px] inline" />
-      )}
+      ) : null}
     </NextLink>
   );
 };
