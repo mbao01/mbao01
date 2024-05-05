@@ -42,7 +42,15 @@ const DialogContent = React.forwardRef<
   DialogContentProps
 >(
   (
-    { className, children, variant = "dialog", side = "right", ...props },
+    {
+      className,
+      children,
+      closeProps,
+      variant = "dialog",
+      showClose = true,
+      side = "right",
+      ...props
+    },
     ref
   ) => (
     <DialogPrimitive.Portal>
@@ -59,7 +67,10 @@ const DialogContent = React.forwardRef<
         {...props}
       >
         {children}
-        <DialogPrimitive.Close className={cn(getDialogCloseClasses())}>
+        <DialogPrimitive.Close
+          {...closeProps}
+          className={cn(getDialogCloseClasses(), closeProps?.className)}
+        >
           <Cross2Icon className="h-4 w-4" />
           <span className="sr-only">Close</span>
         </DialogPrimitive.Close>

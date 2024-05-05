@@ -1,6 +1,7 @@
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { type VariantProps } from "../../libs";
 import {
+  getDialogCloseClasses,
   getDialogContentClasses,
   getDialogDescriptionClasses,
   getDialogFooterClasses,
@@ -18,10 +19,18 @@ export type DialogOverlayProps = React.ComponentPropsWithoutRef<
 > &
   VariantProps<typeof getDialogOverlayClasses>;
 
+export type DialogCloseProps = React.ComponentPropsWithoutRef<
+  typeof DialogPrimitive.Close
+> &
+  VariantProps<typeof getDialogCloseClasses>;
+
 export type DialogContentProps = React.ComponentPropsWithoutRef<
   typeof DialogPrimitive.Content
 > &
-  VariantProps<typeof getDialogContentClasses>;
+  VariantProps<typeof getDialogContentClasses> & {
+    showClose?: boolean;
+    closeProps?: DialogCloseProps;
+  };
 
 export type DialogHeaderProps = React.HTMLAttributes<HTMLDivElement> &
   VariantProps<typeof getDialogHeaderClasses>;
