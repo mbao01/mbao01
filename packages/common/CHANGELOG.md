@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.28 (2024-05-05)
+
+
+### Features
+
+* **common:** add skeleton component ([6047f8e](https://github.com/mbao01/mbao01/commit/6047f8e5e65436330bf4a1c9d9f78e247d916f67))
+* **common:** rename Detail to Description ([911f631](https://github.com/mbao01/mbao01/commit/911f631ea1a03c86e7c463755ee8dc7e84956f9d))
+* **common:** setup common package and add common components ([46a97c4](https://github.com/mbao01/mbao01/commit/46a97c43e008ff67cfa80ae43e5b0bb04ba3aa20))
+* **component:** update button and pagination component styles ([03c4488](https://github.com/mbao01/mbao01/commit/03c44880f02fa87d1dac3d3c3d337d7cd5dec569))
+* **coomponent:** update snapshots ([7e4c974](https://github.com/mbao01/mbao01/commit/7e4c974044d3eed1280591699ea2afffdb913832))
+* **dialog:** allow customizing dialog close button ([e1289c8](https://github.com/mbao01/mbao01/commit/e1289c813d3f401558390915d7aca4acbf3c90a8))
+
+
+### Bug Fixes
+
+* **dialog:** use showClose prop to show or hide dialog close button ([ad2df36](https://github.com/mbao01/mbao01/commit/ad2df361f4cdc9254a0ec2d5278c64f443b242b3))
+
+
+
 ## 0.0.27 (2024-05-01)
 
 
