@@ -1,5 +1,6 @@
 import * as LabelPrimitive from "@radix-ui/react-label";
 import type { LabelProps, LabelTextProps } from "./types";
+import { Text } from "../../../Text";
 import { cn } from "../../../../utilities";
 import { getLabelClasses } from "./constants";
 
@@ -11,10 +12,10 @@ const Label = ({ className, ...props }: LabelProps) => (
 );
 Label.displayName = LabelPrimitive.Root.displayName;
 
-const LabelText = ({ className, ...props }: LabelTextProps) => (
-  <span className={cn("label-text", className)} {...props}>
-    Pick the best fantasy franchise
-  </span>
+const LabelText = ({ className, children, ...props }: LabelTextProps) => (
+  <Text as="span" className={cn("label-text", className)} {...props}>
+    {children}
+  </Text>
 );
 
 Label.Text = LabelText;
