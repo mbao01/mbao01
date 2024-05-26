@@ -1,0 +1,134 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Anchor > has accent variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover no-underline"
+    href="/variant/accent"
+  >
+    accent link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Anchor > has default variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover no-underline"
+    href="/variant/default"
+  >
+    default link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Anchor > has error variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover no-underline"
+    href="/variant/error"
+  >
+    error link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Anchor > has info variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover no-underline"
+    href="/variant/info"
+  >
+    info link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Anchor > has link variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover no-underline"
+    href="/variant/link"
+  >
+    link link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Anchor > has neutral variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover no-underline"
+    href="/variant/neutral"
+  >
+    neutral link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Anchor > has primary variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover no-underline"
+    href="/variant/primary"
+  >
+    primary link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Anchor > has secondary variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover no-underline"
+    href="/variant/secondary"
+  >
+    secondary link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Anchor > has success variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover no-underline"
+    href="/variant/success"
+  >
+    success link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Anchor > has warning variant 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all link-hover no-underline"
+    href="/variant/warning"
+  >
+    warning link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Anchor > renders a link with correct label 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all no-underline"
+    href="/home?hello=world#great"
+  >
+    Go Home 🏡
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Anchor > renders an external Anchor 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all no-underline"
+    href="https://example.com"
+    target="_blank"
+  >
+    Google.com
+  </a>
+</DocumentFragment>
+`;
