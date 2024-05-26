@@ -1,11 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { withRouter } from "storybook-addon-react-router-v6";
 
-import { Link } from "./Link";
+import { Anchor } from "./Anchor";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  component: Link,
+  component: Anchor,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
@@ -14,8 +13,7 @@ const meta = {
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
-  decorators: [withRouter],
-} satisfies Meta<typeof Link>;
+} satisfies Meta<typeof Anchor>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -26,27 +24,35 @@ export const Default: Story = {
     href: "/",
     hover: false,
     variant: "default",
-    children: "Link",
+    children: "Anchor",
   },
 };
 
-export const PrimaryLink: Story = {
+export const PrimaryAnchor: Story = {
   args: {
     href: "/",
     variant: "primary",
-    children: "Link",
+    children: "Anchor",
   },
 };
 
-export const ExternalLink: Story = {
+export const AnchorWithTargetBlank: Story = {
   args: {
-    isExternal: true,
+    href: "https://example.com",
+    target: "_blank",
+    children: "InternalWebsite.com",
+  },
+};
+
+export const ExternalAnchor: Story = {
+  args: {
     href: "https://google.com",
     children: "Google.com",
+    isExternal: true,
   },
 };
 
-export const UnderlineLink: Story = {
+export const UnderlineAnchor: Story = {
   args: {
     href: "/",
     underline: true,
@@ -54,7 +60,7 @@ export const UnderlineLink: Story = {
   },
 };
 
-export const HoverLink: Story = {
+export const HoverAnchor: Story = {
   args: {
     href: "/",
     hover: true,

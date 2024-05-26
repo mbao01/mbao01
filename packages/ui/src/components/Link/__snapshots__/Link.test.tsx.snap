@@ -121,13 +121,23 @@ exports[`Link > renders a link with correct label 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Link > renders a non internal link 1`] = `
+<DocumentFragment>
+  <a
+    class="link transition-all no-underline"
+    href="https://example.com"
+  >
+    Google.com
+  </a>
+</DocumentFragment>
+`;
+
 exports[`Link > renders an external link 1`] = `
 <DocumentFragment>
   <a
     class="link transition-all no-underline"
     href="https://example.com"
     rel="noopener noreferrer"
-    target="_blank"
   >
     Google.com
     <svg

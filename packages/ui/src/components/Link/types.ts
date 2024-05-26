@@ -3,5 +3,15 @@ import { type VariantProps } from "@mbao01/common/libs";
 import { getLinkClasses } from "./constant";
 
 export type LinkProps = Omit<RouterLinkProps, "to"> & {
-  href: To;
-} & VariantProps<typeof getLinkClasses>;
+  isExternal?: boolean;
+} & (
+    | {
+        isInternal?: false;
+        href: string;
+      }
+    | {
+        isInternal?: true;
+        href: To;
+      }
+  ) &
+  VariantProps<typeof getLinkClasses>;

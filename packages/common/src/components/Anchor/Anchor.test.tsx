@@ -1,26 +1,18 @@
 import { render, screen } from "@testing-library/react";
 
-import { Link } from "./Link";
-import { LinkProps } from "./types";
-import { MemoryRouter, MemoryRouterProps } from "react-router-dom";
+import { Anchor } from "./Anchor";
+import { AnchorProps } from "./types";
 
-describe("Link", () => {
-  const renderLink = (
-    props: LinkProps,
-    memoryRouterProps?: MemoryRouterProps
-  ) => {
-    return render(
-      <MemoryRouter {...memoryRouterProps}>
-        <Link {...props} />
-      </MemoryRouter>
-    );
+describe("Anchor", () => {
+  const renderAnchor = (props: AnchorProps) => {
+    return render(<Anchor {...props} />);
   };
 
   it("renders a link with correct label", () => {
-    const { asFragment } = renderLink({
+    const { asFragment } = renderAnchor({
       hover: false,
       children: "Go Home 🏡",
-      href: { pathname: "/home", search: "hello=world", hash: "great" },
+      href: "/home?hello=world#great",
     });
 
     const anchorEl = screen.getByRole("link", { name: "Go Home 🏡" });
@@ -30,10 +22,10 @@ describe("Link", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("renders a non internal link", () => {
-    const { asFragment } = renderLink({
-      isInternal: false,
+  it("renders an external Anchor", () => {
+    const { asFragment } = renderAnchor({
       href: "https://example.com",
+      target: "_blank",
       children: "Google.com",
     });
 
@@ -41,21 +33,6 @@ describe("Link", () => {
 
     expect(anchorEl).toBeInTheDocument();
     expect(anchorEl).toHaveAttribute("href", "https://example.com");
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it("renders an external link", () => {
-    const { asFragment } = renderLink({
-      isExternal: true,
-      href: "https://example.com",
-      children: "Google.com",
-    });
-
-    const anchorEl = screen.getByRole("link", { name: "Google.com" });
-
-    expect(anchorEl).toBeInTheDocument();
-    expect(anchorEl).toHaveAttribute("href", "https://example.com");
-    expect(anchorEl).toHaveAttribute("rel", "noopener noreferrer");
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -72,10 +49,10 @@ describe("Link", () => {
     "warning",
   ] as const)("has %s variant", (variant) => {
     const label = `${variant} link`;
-    const { asFragment } = renderLink({
+    const { asFragment } = renderAnchor({
       hover: true,
       children: label,
-      href: `/variant/${variant}`,
+      href: `/variant/${variant}` as AnchorProps["href"],
     });
 
     const anchorEl = screen.getByRole("link", { name: label });

@@ -19,6 +19,7 @@ describe("Link", () => {
   it("renders a link with correct label", () => {
     const { asFragment } = renderLink({
       hover: false,
+      isInternal: true,
       children: "Go Home 🏡",
       href: { pathname: "/home", search: "hello=world", hash: "great" },
     });
@@ -30,10 +31,10 @@ describe("Link", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("renders an external link", () => {
+  it("renders a non internal link", () => {
     const { asFragment } = renderLink({
+      isInternal: false,
       href: "https://example.com",
-      target: "_blank",
       children: "Google.com",
     });
 
@@ -41,6 +42,21 @@ describe("Link", () => {
 
     expect(anchorEl).toBeInTheDocument();
     expect(anchorEl).toHaveAttribute("href", "https://example.com");
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders an external link", () => {
+    const { asFragment } = renderLink({
+      isExternal: true,
+      href: "https://example.com",
+      children: "Google.com",
+    });
+
+    const anchorEl = screen.getByRole("link", { name: "Google.com" });
+
+    expect(anchorEl).toBeInTheDocument();
+    expect(anchorEl).toHaveAttribute("href", "https://example.com");
+    expect(anchorEl).toHaveAttribute("rel", "noopener noreferrer");
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -60,7 +76,8 @@ describe("Link", () => {
     const { asFragment } = renderLink({
       hover: true,
       children: label,
-      href: `/variant/${variant}` as LinkProps<string>["href"],
+      isInternal: true,
+      href: `/variant/${variant}` as Omit<LinkProps<string>["href"], string>,
     });
 
     const anchorEl = screen.getByRole("link", { name: label });
