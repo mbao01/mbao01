@@ -4,11 +4,15 @@ import { cn } from "../../../utilities";
 import { getInputClasses } from "./constants";
 
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ size, variant, wide, outline, className, ...props }: InputProps, ref) => (
+  (
+    { size, variant, wide, outline, className, type, ...props }: InputProps,
+    ref
+  ) => (
     <input
       ref={ref}
+      type={type}
       className={cn(
-        getInputClasses({ size, wide, variant, outline }),
+        getInputClasses({ type, size, wide, variant, outline }),
         className
       )}
       {...props}

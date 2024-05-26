@@ -27,6 +27,10 @@ export const getInputClasses = cva(
         md: "input-md",
         lg: "input-lg",
       },
+      type: {
+        ["file" as string]:
+          "file:border-0 file:bg-transparent file:text-sm file:font-medium file:h-full",
+      },
     },
     compoundVariants: [
       {

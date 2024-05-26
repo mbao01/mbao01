@@ -5,4 +5,4 @@ export type InputProps = Omit<
   React.HTMLProps<HTMLInputElement>,
   "size" | "ref"
 > &
-  VariantProps<typeof getInputClasses>;
+  Omit<VariantProps<typeof getInputClasses>, "type">;
