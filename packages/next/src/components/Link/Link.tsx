@@ -24,12 +24,13 @@ export const Link = <T,>({
         target={target}
         hover={hover}
         variant={variant}
-        children={children}
         className={className}
         underline={underline}
         isExternal={isExternal}
         {...props}
-      />
+      >
+        {children}
+      </Anchor>
     );
   }
 
