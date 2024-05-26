@@ -30,10 +30,10 @@ describe("Link", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("renders an external link", () => {
+  it("renders a non internal link", () => {
     const { asFragment } = renderLink({
+      isInternal: false,
       href: "https://example.com",
-      target: "_blank",
       children: "Google.com",
     });
 
@@ -41,6 +41,21 @@ describe("Link", () => {
 
     expect(anchorEl).toBeInTheDocument();
     expect(anchorEl).toHaveAttribute("href", "https://example.com");
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders an external link", () => {
+    const { asFragment } = renderLink({
+      isExternal: true,
+      href: "https://example.com",
+      children: "Google.com",
+    });
+
+    const anchorEl = screen.getByRole("link", { name: "Google.com" });
+
+    expect(anchorEl).toBeInTheDocument();
+    expect(anchorEl).toHaveAttribute("href", "https://example.com");
+    expect(anchorEl).toHaveAttribute("rel", "noopener noreferrer");
     expect(asFragment()).toMatchSnapshot();
   });
 

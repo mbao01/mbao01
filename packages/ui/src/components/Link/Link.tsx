@@ -1,5 +1,6 @@
 import { Link as RouterLink } from "react-router-dom";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
+import { Anchor } from "@mbao01/common";
 import { cn } from "@mbao01/common/utilities";
 import { type LinkProps } from "./types";
 import { getLinkClasses } from "./constant";
@@ -12,9 +13,25 @@ export const Link = ({
   children,
   className,
   underline = false,
+  isExternal,
+  isInternal = true,
   ...props
 }: LinkProps) => {
-  const isExternal = target === "_blank";
+  if (!isInternal)
+    return (
+      <Anchor
+        href={href as string}
+        target={target}
+        hover={hover}
+        variant={variant}
+        children={children}
+        className={className}
+        underline={underline}
+        isExternal={isExternal}
+        {...props}
+      />
+    );
+
   return (
     <RouterLink
       to={href}

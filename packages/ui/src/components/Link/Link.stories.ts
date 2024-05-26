@@ -40,8 +40,8 @@ export const PrimaryLink: Story = {
 
 export const ExternalLink: Story = {
   args: {
+    isExternal: true,
     href: "https://google.com",
-    target: "_blank",
     children: "Google.com",
   },
 };
