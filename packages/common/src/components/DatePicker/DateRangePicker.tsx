@@ -75,7 +75,7 @@ export const DateRangePicker = ({
             triggerClassName
           )}
         >
-          <span className="text-left line-clamp-1">
+          <span className="text-left text-ellipsis overflow-hidden text-nowrap">
             {rangeLabel ?? label ?? "Pick a range"}
           </span>
           <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
