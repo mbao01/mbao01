@@ -11,7 +11,7 @@ exports[`MultipleDatesPicker > has a custom label 1`] = `
     type="button"
   >
     <span
-      class="text-left line-clamp-1"
+      class="text-left text-ellipsis overflow-hidden text-nowrap"
     >
       When will you be visiting?
     </span>
@@ -46,7 +46,7 @@ exports[`MultipleDatesPicker > is disabled 1`] = `
     type="button"
   >
     <span
-      class="text-left line-clamp-1"
+      class="text-left text-ellipsis overflow-hidden text-nowrap"
     >
       Pick one or more dates
     </span>
@@ -80,7 +80,7 @@ exports[`MultipleDatesPicker > shows calendar with specific month 1`] = `
     type="button"
   >
     <span
-      class="text-left line-clamp-1"
+      class="text-left text-ellipsis overflow-hidden text-nowrap"
     >
       Pick one or more dates
     </span>
@@ -114,7 +114,7 @@ exports[`MultipleDatesPicker > shows default/preselected dates 1`] = `
     type="button"
   >
     <span
-      class="text-left line-clamp-1"
+      class="text-left text-ellipsis overflow-hidden text-nowrap"
     >
       Mar 01, 2022 and Mar 15, 2022
     </span>
@@ -148,7 +148,7 @@ exports[`MultipleDatesPicker > shows the current month 1`] = `
     type="button"
   >
     <span
-      class="text-left line-clamp-1"
+      class="text-left text-ellipsis overflow-hidden text-nowrap"
     >
       Pick one or more dates
     </span>

@@ -21,6 +21,7 @@ export const DatePicker = ({
   children,
   getDateValue = (date) => date?.toUTCString(),
   getDateLabel = (date) => (date ? format(date, "PPP") : undefined),
+  triggerClassName,
   ...props
 }: DatePickerProps) => {
   const [date, setDate] = useState<Date | undefined>(defaultDate);
@@ -49,7 +50,11 @@ export const DatePicker = ({
           outline={outline}
           variant={variant}
           disabled={disabled}
-          className={cn("justify-start", !date && "font-normal")}
+          className={cn(
+            "justify-start",
+            !date && "font-normal",
+            triggerClassName
+          )}
           value={dateValue}
         >
           {dateLabel ?? <span>{label ?? "Pick a date"}</span>}

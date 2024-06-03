@@ -59,7 +59,7 @@ export const MultipleDatesPicker = ({
             !dates?.length && "font-normal"
           )}
         >
-          <span className="text-left line-clamp-1">
+          <span className="text-left text-ellipsis overflow-hidden text-nowrap">
             {rangeLabel ?? label ?? "Pick one or more dates"}
           </span>
           <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
