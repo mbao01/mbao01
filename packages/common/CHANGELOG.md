@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.31 (2024-06-03)
+
+
+### Features
+
+* **anchor:** add anchor tag component ([8004c54](https://github.com/mbao01/mbao01/commit/8004c548fdd113e3f9a5840b1ebec27a3173234d))
+* **common:** add skeleton component ([6047f8e](https://github.com/mbao01/mbao01/commit/6047f8e5e65436330bf4a1c9d9f78e247d916f67))
+* **common:** rename Detail to Description ([911f631](https://github.com/mbao01/mbao01/commit/911f631ea1a03c86e7c463755ee8dc7e84956f9d))
+* **common:** setup common package and add common components ([46a97c4](https://github.com/mbao01/mbao01/commit/46a97c43e008ff67cfa80ae43e5b0bb04ba3aa20))
+* **component:** update button and pagination component styles ([03c4488](https://github.com/mbao01/mbao01/commit/03c44880f02fa87d1dac3d3c3d337d7cd5dec569))
+* **coomponent:** update snapshots ([7e4c974](https://github.com/mbao01/mbao01/commit/7e4c974044d3eed1280591699ea2afffdb913832))
+* **dialog:** allow customizing dialog close button ([e1289c8](https://github.com/mbao01/mbao01/commit/e1289c813d3f401558390915d7aca4acbf3c90a8))
+* **label:** use text component as label text ([85d87dd](https://github.com/mbao01/mbao01/commit/85d87ddfd16cad9ac1272b41546742523e1236ca))
+* **scrollarea:** expose scrollbar component ([f3e3722](https://github.com/mbao01/mbao01/commit/f3e37225acca710157e410fa8aaab547c3be616a))
+
+
+### Bug Fixes
+
+* **dialog:** use showClose prop to show or hide dialog close button ([ad2df36](https://github.com/mbao01/mbao01/commit/ad2df361f4cdc9254a0ec2d5278c64f443b242b3))
+* **select:** align text left ([ee14a47](https://github.com/mbao01/mbao01/commit/ee14a4799fd64629c4e38e3393bb0d609e36e53a))
+
+
+
 ## 0.0.30 (2024-05-26)
 
 
