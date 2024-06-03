@@ -11,7 +11,7 @@ exports[`DateRangePicker > has a custom label 1`] = `
     type="button"
   >
     <span
-      class="text-left line-clamp-1"
+      class="text-left text-ellipsis overflow-hidden text-nowrap"
     >
       How long will you be staying?
     </span>
@@ -46,7 +46,7 @@ exports[`DateRangePicker > is disabled 1`] = `
     type="button"
   >
     <span
-      class="text-left line-clamp-1"
+      class="text-left text-ellipsis overflow-hidden text-nowrap"
     >
       Pick a range
     </span>
@@ -80,7 +80,7 @@ exports[`DateRangePicker > shows a default/preselected month and range 1`] = `
     type="button"
   >
     <span
-      class="text-left line-clamp-1"
+      class="text-left text-ellipsis overflow-hidden text-nowrap"
     >
       Mar 01, 2022 - Mar 15, 2022
     </span>
@@ -114,7 +114,7 @@ exports[`DateRangePicker > shows calendar with specific month 1`] = `
     type="button"
   >
     <span
-      class="text-left line-clamp-1"
+      class="text-left text-ellipsis overflow-hidden text-nowrap"
     >
       Pick a range
     </span>
@@ -148,7 +148,7 @@ exports[`DateRangePicker > shows the current month 1`] = `
     type="button"
   >
     <span
-      class="text-left line-clamp-1"
+      class="text-left text-ellipsis overflow-hidden text-nowrap"
     >
       Pick a range
     </span>
