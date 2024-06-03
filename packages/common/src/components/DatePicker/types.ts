@@ -11,10 +11,11 @@ type BaseDatePickerProps = Pick<
   "variant" | "outline" | "wide" | "size" | "name" | "disabled"
 > & {
   label?: string;
+  triggerClassName?: string;
 };
 
 export type DatePickerProps = BaseDatePickerProps &
-  Omit<DayPickerSingleProps, "mode" | "selected" | "onSelect"> & {
+  Omit<DayPickerSingleProps, "mode"> & {
     children?: ({
       date,
       setDate,
@@ -28,7 +29,7 @@ export type DatePickerProps = BaseDatePickerProps &
   };
 
 export type DateRangePickerProps = BaseDatePickerProps &
-  Omit<DayPickerRangeProps, "mode" | "selected" | "onSelect"> & {
+  Omit<DayPickerRangeProps, "mode"> & {
     defaultRange?: DateRange;
     getRangeValue?: (range: DateRange | undefined) => {
       from: string | undefined;
@@ -40,7 +41,7 @@ export type DateRangePickerProps = BaseDatePickerProps &
   };
 
 export type MultipleDatesPickerProps = BaseDatePickerProps &
-  Omit<DayPickerMultipleProps, "mode" | "selected" | "onSelect"> & {
+  Omit<DayPickerMultipleProps, "mode"> & {
     defaultDates?: Date[];
     getDatesValue?: (dates: Date[] | undefined) => string[] | undefined;
     getDatesLabel?: (

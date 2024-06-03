@@ -33,6 +33,7 @@ export const DateRangePicker = ({
         format(range.from, "LLL dd, y")
       )
     ) : undefined,
+  triggerClassName,
   ...props
 }: DateRangePickerProps) => {
   const [range, setRange] = useState<DateRange | undefined>(defaultRange);
@@ -68,7 +69,11 @@ export const DateRangePicker = ({
           outline={outline}
           variant={variant}
           disabled={disabled}
-          className={cn("justify-start flex-nowrap", !range && "font-normal")}
+          className={cn(
+            "justify-start flex-nowrap",
+            !range && "font-normal",
+            triggerClassName
+          )}
         >
           <span className="text-left line-clamp-1">
             {rangeLabel ?? label ?? "Pick a range"}
