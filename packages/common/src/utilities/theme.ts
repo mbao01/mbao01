@@ -8,7 +8,7 @@ export const getTheme = () => {
   if (typeof window === "undefined") return null;
 
   const cookies = new Cookies();
-  const theme = cookies.get(THEME_COOKIE_NAME);
+  const theme = cookies.get(THEME_COOKIE_NAME) as Theme;
   return theme;
 };
 
