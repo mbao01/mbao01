@@ -1,17 +1,19 @@
+import Cookies from "universal-cookie";
+
 export type Theme = "dark" | "light";
+
+export const THEME_COOKIE_NAME = "data-theme";
 
 export const getTheme = () => {
   if (typeof window === "undefined") return null;
 
-  let t = window.localStorage.getItem("__theme") as Theme;
-  if (!t)
-    t = window.matchMedia("(prefers-color-scheme: dark)")?.matches
-      ? "dark"
-      : "light";
-  return t;
+  const cookies = new Cookies();
+  const theme = cookies.get(THEME_COOKIE_NAME) as Theme;
+  return theme;
 };
 
 export const saveTheme = (theme: Theme) => {
-  document.body.setAttribute("data-theme", theme);
-  window.localStorage.setItem("__theme", theme);
+  const cookies = new Cookies();
+  cookies.set(THEME_COOKIE_NAME, theme, { secure: true });
+  document.body.setAttribute(THEME_COOKIE_NAME, theme);
 };
