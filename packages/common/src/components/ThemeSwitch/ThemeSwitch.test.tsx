@@ -1,13 +1,27 @@
-import { describe, expect, it, vi } from "vitest";
+import { MockInstance, describe, expect, it, vi } from "vitest";
 import { render, screen, within } from "@testing-library/react";
-import { ThemeSwitch } from "./ThemeSwitch";
 import userEvent from "@testing-library/user-event";
+import Cookies from "universal-cookie";
+import { ThemeSwitch } from "./ThemeSwitch";
 import { Button } from "../Button";
 
+vi.mock("universal-cookie", () => {
+  const mockedCookies = {
+    set: vi.fn() as MockInstance,
+    get: vi.fn() as MockInstance,
+    remove: vi.fn() as MockInstance,
+  };
+  return {
+    default: vi.fn(() => mockedCookies),
+  };
+});
+
 describe("ThemeSwitch", () => {
+  let cookies: Cookies;
+
   beforeEach(() => {
     vi.stubGlobal("matchMedia", vi.fn());
-    vi.stubGlobal("localStorage", { getItem: vi.fn(), setItem: vi.fn() });
+    cookies = new Cookies();
   });
 
   afterEach(() => {
@@ -15,6 +29,8 @@ describe("ThemeSwitch", () => {
   });
 
   it("renders a theme switcher", () => {
+    (cookies.get as unknown as MockInstance).mockReturnValue("light");
+
     const { asFragment } = render(<ThemeSwitch />);
 
     expect(screen.getByRole("checkbox", { hidden: true })).toBeChecked();
@@ -29,6 +45,8 @@ describe("ThemeSwitch", () => {
   });
 
   it("should switch between light and dark themes", async () => {
+    (cookies.get as unknown as MockInstance).mockReturnValue("light");
+
     const user = userEvent.setup();
     const { asFragment } = render(<ThemeSwitch aria-label="Switch theme" />);
 
