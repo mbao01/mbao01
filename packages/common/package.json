@@ -91,6 +91,7 @@
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.0.2",
     "react-day-picker": "^8.10.0",
+    "react-dropzone": "^14.2.3",
     "react-international-phone": "^4.2.6",
     "sonner": "^1.4.41",
     "tailwind-merge": "^2.2.1",
