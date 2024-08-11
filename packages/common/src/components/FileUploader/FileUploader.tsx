@@ -96,6 +96,7 @@ export const FileUploader = ({
         setActiveIndex(-1);
       }
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [value, activeIndex, removeFileFromSet]
   );
 
@@ -123,20 +124,21 @@ export const FileUploader = ({
       onValueChange(newValues);
 
       if (rejectedFiles.length > 0) {
-        for (let i = 0; i < rejectedFiles.length; i++) {
-          if (rejectedFiles[i].errors[0]?.code === "file-too-large") {
+        for (const rejectedFile of rejectedFiles) {
+          if (rejectedFile.errors[0]?.code === "file-too-large") {
             toast.error(
               `File is too large. Max size is ${maxSize / 1024 / 1024}MB`
             );
             break;
           }
-          if (rejectedFiles[i].errors[0]?.message) {
-            toast.error(rejectedFiles[i].errors[0].message);
+          if (rejectedFile.errors[0]?.message) {
+            toast.error(rejectedFile.errors[0].message);
             break;
           }
         }
       }
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [reSelectAll, value]
   );
 
