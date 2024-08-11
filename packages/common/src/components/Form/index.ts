@@ -1,4 +1,5 @@
 export { Input } from "./Input";
+export { OtpInput } from "./OtpInput";
 export { Phone } from "./Phone";
 export { Radio } from "./Radio";
 export { Range } from "./Range";

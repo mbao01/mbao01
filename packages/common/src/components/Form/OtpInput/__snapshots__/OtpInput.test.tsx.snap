@@ -1,0 +1,47 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`OtpInput > renders with the correct initial state 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center items-center flex-wrap text-2xl font-bold gap-x-3 gap-y-2"
+    style="display: flex; align-items: center;"
+  >
+    <input
+      aria-label="Please enter OTP character 1"
+      autocomplete="off"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10 !w-12 !appearance-none selection:bg-base text-base-content"
+      maxlength="1"
+      style="width: 1em; text-align: center;"
+      type="text"
+      value=""
+    />
+    <input
+      aria-label="Please enter OTP character 2"
+      autocomplete="off"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10 !w-12 !appearance-none selection:bg-base text-base-content"
+      maxlength="1"
+      style="width: 1em; text-align: center;"
+      type="text"
+      value=""
+    />
+    <input
+      aria-label="Please enter OTP character 3"
+      autocomplete="off"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10 !w-12 !appearance-none selection:bg-base text-base-content"
+      maxlength="1"
+      style="width: 1em; text-align: center;"
+      type="text"
+      value=""
+    />
+    <input
+      aria-label="Please enter OTP character 4"
+      autocomplete="off"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10 !w-12 !appearance-none selection:bg-base text-base-content"
+      maxlength="1"
+      style="width: 1em; text-align: center;"
+      type="text"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
