@@ -26,6 +26,7 @@ export * from "./components/Tabs";
 export * from "./components/Text";
 
 /** data input */
+export * from "./components/FileUploader";
 export * from "./components/Form";
 export * from "./components/Combobox";
 export * from "./components/DatePicker";

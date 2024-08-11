@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FileUploader > should render 1`] = `
+<DocumentFragment>
+  <div
+    class="grid w-full focus:outline-none overflow-hidden relative bg-background rounded-lg p-2"
+    tabindex="0"
+  >
+    <div
+      class="relative w-full cursor-pointer "
+    >
+      <div
+        class="w-full rounded-lg duration-300 ease-in-out border-gray-300 outline-dashed outline-1 outline-neutral-content"
+        role="presentation"
+        tabindex="0"
+      >
+        Click here to upload
+      </div>
+      <input
+        class=""
+        multiple=""
+        style="display: none;"
+        tabindex="-1"
+        type="file"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
