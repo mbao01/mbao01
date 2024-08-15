@@ -17,6 +17,10 @@ exports[`FileUploader > should render 1`] = `
         Click here to upload
       </div>
       <input
+        style="opacity: 0; display: none;"
+        type="file"
+      />
+      <input
         class=""
         multiple=""
         style="display: none;"
