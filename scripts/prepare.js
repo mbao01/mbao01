@@ -22,6 +22,7 @@ import {
  * prepares a feature branch for release by creating a release branch
  */
 (async function () {
+  const REMOTE_NAME = "origin";
   const semverBump = await promptSemverBump();
   // 0. ensure the working directory is clean. this is a safety measure to ensure
   // you don't accidentally commit untracked files or uncommitted changes
@@ -35,7 +36,7 @@ import {
   // log(info("Assign remote name and main branch"));
   const [REMOTE, MAIN_BRANCH] = (
     await actor(
-      git.revparse(["--abbrev-ref", "origin/HEAD"]),
+      git.revparse(["--abbrev-ref", `${REMOTE_NAME}/HEAD`]),
       "Assign remote name and main branch"
     )
   ).split("/");
@@ -49,6 +50,15 @@ import {
 
   // 1d. get current branch
   const branch = await git.branch();
+
+  // 1e. set upstream branch
+  await actorPromise(
+    git.branch([
+      `--set-upstream-to=${REMOTE_NAME}/${branch.current}`,
+      branch.current,
+    ]),
+    `Set upstream branch for ${branch.current}`
+  );
 
   /* 2. checks and balances */
   // 2a. keep local branches in up to date with remote, fetch all branches and

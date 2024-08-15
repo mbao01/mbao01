@@ -12,6 +12,8 @@ import {
  * creates a pull request for a release branch
  */
 (async function () {
+  const REMOTE_NAME = "origin";
+
   /* 1. we begin by doing some chores */
   // 1a. all further tasks must be performed from the root git directory
   const isRepoRoot = await git.checkIsRepo("root");
@@ -34,7 +36,7 @@ import {
   // 2a. get parent branch name (it is expected that the parent branch owns the previous second commit in this release branch)
   const parentBranchName = (await git.log({ maxCount: 2 })).all[1]?.refs
     .split(", ")[0]
-    ?.replaceAll("origin/", "");
+    ?.replaceAll(`${REMOTE_NAME}/`, "");
   const parentPr = await actor(
     $({
       stdio: "pipe",
