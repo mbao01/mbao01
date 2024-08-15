@@ -9,6 +9,9 @@ export type FileUploaderProps = {
   orientation?: "horizontal" | "vertical";
 } & React.HTMLAttributes<HTMLDivElement>;
 
+export type FileUploaderInputProps =
+  React.InputHTMLAttributes<HTMLInputElement>;
+
 export type DirectionOptions = "rtl" | "ltr" | undefined;
 
 export type FileUploaderContextType = {
@@ -16,6 +19,7 @@ export type FileUploaderContextType = {
   isLOF: boolean;
   isFileTooBig: boolean;
   removeFileFromSet: (index: number) => void;
+  removeAll: () => void;
   activeIndex: number;
   setActiveIndex: Dispatch<SetStateAction<number>>;
   orientation: "horizontal" | "vertical";

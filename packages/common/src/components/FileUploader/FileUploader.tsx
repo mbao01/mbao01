@@ -4,7 +4,11 @@ import { forwardRef, useCallback, useEffect, useRef, useState } from "react";
 import { useDropzone, FileRejection } from "react-dropzone";
 import { toast } from "sonner";
 import { TrashIcon } from "@radix-ui/react-icons";
-import type { DirectionOptions, FileUploaderProps } from "./types";
+import type {
+  DirectionOptions,
+  FileUploaderInputProps,
+  FileUploaderProps,
+} from "./types";
 import { cn } from "../../utilities";
 import { FileUploaderContext } from "./FileUploaderContext";
 import { useFileUpload } from "./useFileUpload";
@@ -43,6 +47,10 @@ export const FileUploader = ({
     },
     [value, onValueChange]
   );
+
+  const removeAll = useCallback(() => {
+    onValueChange(null);
+  }, [onValueChange]);
 
   const handleKeyDown = useCallback(
     (e: React.KeyboardEvent<HTMLDivElement>) => {
@@ -169,6 +177,7 @@ export const FileUploader = ({
         isLOF,
         isFileTooBig,
         removeFileFromSet,
+        removeAll,
         activeIndex,
         setActiveIndex,
         orientation,
@@ -262,15 +271,15 @@ const FileUploaderItem = forwardRef<
 
 FileUploaderItem.displayName = "FileUploaderItem";
 
-const FileUploaderInput = forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, children, ...props }, ref) => {
+const FileUploaderInput = ({
+  className,
+  children,
+  ...props
+}: FileUploaderInputProps) => {
   const { dropzoneState, isFileTooBig, isLOF } = useFileUpload();
   const rootProps = isLOF ? {} : dropzoneState.getRootProps();
   return (
     <div
-      ref={ref}
       {...props}
       className={`relative w-full ${
         isLOF ? "opacity-50 cursor-not-allowed " : "cursor-pointer "
@@ -293,14 +302,15 @@ const FileUploaderInput = forwardRef<
         {children}
       </div>
       <input
-        ref={dropzoneState.inputRef}
+        {...props}
         disabled={isLOF}
+        ref={dropzoneState.inputRef}
         {...dropzoneState.getInputProps()}
         className={`${isLOF ? "cursor-not-allowed" : ""}`}
       />
     </div>
   );
-});
+};
 
 FileUploaderInput.displayName = "FileInput";
 
