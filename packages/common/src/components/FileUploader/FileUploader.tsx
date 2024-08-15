@@ -24,6 +24,7 @@ export const FileUploader = ({
   dir,
   ...props
 }: FileUploaderProps) => {
+  const hiddenInputRef = useRef<HTMLInputElement>(null);
   const [isFileTooBig, setIsFileTooBig] = useState(false);
   const [isLOF, setIsLOF] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -131,6 +132,16 @@ export const FileUploader = ({
 
       onValueChange(newValues);
 
+      if (hiddenInputRef.current) {
+        // Note the specific way we need to munge the file into the hidden input
+        // https://stackoverflow.com/a/68182158/1068446
+        const dataTransfer = new DataTransfer();
+        newValues.forEach((v) => {
+          dataTransfer.items.add(v);
+        });
+        hiddenInputRef.current.files = dataTransfer.files;
+      }
+
       if (rejectedFiles.length > 0) {
         for (const rejectedFile of rejectedFiles) {
           if (rejectedFile.errors[0]?.code === "file-too-large") {
@@ -182,6 +193,7 @@ export const FileUploader = ({
         setActiveIndex,
         orientation,
         direction,
+        hiddenInputRef,
       }}
     >
       <div
@@ -276,7 +288,8 @@ const FileUploaderInput = ({
   children,
   ...props
 }: FileUploaderInputProps) => {
-  const { dropzoneState, isFileTooBig, isLOF } = useFileUpload();
+  const { dropzoneState, isFileTooBig, isLOF, hiddenInputRef } =
+    useFileUpload();
   const rootProps = isLOF ? {} : dropzoneState.getRootProps();
   return (
     <div
@@ -303,6 +316,11 @@ const FileUploaderInput = ({
       </div>
       <input
         {...props}
+        ref={hiddenInputRef}
+        type="file"
+        style={{ opacity: 0, display: "none" }}
+      />
+      <input
         disabled={isLOF}
         ref={dropzoneState.inputRef}
         {...dropzoneState.getInputProps()}

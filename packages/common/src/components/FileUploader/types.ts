@@ -1,4 +1,4 @@
-import type { Dispatch, SetStateAction } from "react";
+import type { Dispatch, Ref, SetStateAction } from "react";
 import type { DropzoneState, DropzoneOptions } from "react-dropzone";
 
 export type FileUploaderProps = {
@@ -24,4 +24,5 @@ export type FileUploaderContextType = {
   setActiveIndex: Dispatch<SetStateAction<number>>;
   orientation: "horizontal" | "vertical";
   direction: DirectionOptions;
+  hiddenInputRef: Ref<HTMLInputElement>;
 };
