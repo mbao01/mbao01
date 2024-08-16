@@ -3,21 +3,22 @@
 exports[`FileUploader > should render 1`] = `
 <DocumentFragment>
   <div
-    class="grid w-full focus:outline-none overflow-hidden relative bg-background rounded-lg p-2"
-    tabindex="0"
+    class="grid w-full overflow-hidden relative bg-background rounded-lg p-2"
+    tabindex="-1"
   >
     <div
-      class="relative w-full cursor-pointer "
+      class="relative w-full"
     >
       <div
-        class="w-full rounded-lg duration-300 ease-in-out border-gray-300 outline-dashed outline-1 outline-neutral-content"
+        class="outline-dashed outline-1 outline-neutral-content w-full rounded-lg duration-300 ease-in-out cursor-pointer"
         role="presentation"
         tabindex="0"
       >
         Click here to upload
       </div>
       <input
-        style="opacity: 0; display: none;"
+        class="hidden opacity-0"
+        tabindex="-1"
         type="file"
       />
       <input

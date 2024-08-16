@@ -9,8 +9,17 @@ export type FileUploaderProps = {
   orientation?: "horizontal" | "vertical";
 } & React.HTMLAttributes<HTMLDivElement>;
 
-export type FileUploaderInputProps =
-  React.InputHTMLAttributes<HTMLInputElement>;
+export type FileUploaderInputProps = Omit<
+  React.InputHTMLAttributes<HTMLInputElement>,
+  "className"
+> & {
+  classes?: Partial<{
+    all: string;
+    accepted: string;
+    rejected: string;
+    default: string;
+  }>;
+};
 
 export type DirectionOptions = "rtl" | "ltr" | undefined;
 
