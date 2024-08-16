@@ -25,7 +25,7 @@ const FileSvgDraw = () => {
         <span className="font-semibold">Click to upload</span>
         &nbsp; or drag and drop
       </p>
-      <p className="text-xs text-base-content">SVG, PNG, JPG or GIF</p>
+      <p className="text-xs text-base-content">SVG, PNG, JPG, JPEG or GIF</p>
     </>
   );
 };
@@ -37,6 +37,13 @@ const FileUpload = () => {
     maxFiles: 5,
     maxSize: 1024 * 1024 * 4,
     multiple: true,
+    accept: {
+      "image/png": [".PNG"],
+      "image/jpg": [".JPG"],
+      "image/jpeg": [".JPEG"],
+      "image/svg+xml": [".SVG"],
+      "image/gif": [".GIF"],
+    },
   };
 
   return (
@@ -46,7 +53,14 @@ const FileUpload = () => {
       dropzoneOptions={dropZoneConfig}
       className="relative bg-background rounded-lg p-2"
     >
-      <FileUploader.Input className="outline-dashed outline-1 outline-neutral-content">
+      <FileUploader.Input
+        classes={{
+          all: "outline-dashed outline-1 focus:ring-2 focus:outline-none",
+          accepted: "outline-green-500",
+          rejected: "outline-red-500",
+          default: "outline-neutral-content",
+        }}
+      >
         <div className="flex items-center justify-center flex-col pt-3 pb-4 w-full ">
           <FileSvgDraw />
         </div>
@@ -56,8 +70,10 @@ const FileUpload = () => {
           files.length > 0 &&
           files.map((file, i) => (
             <FileUploader.Item key={i} index={i}>
-              <FileIcon className="h-4 w-4" />
-              <span>{file.name}</span>
+              <FileIcon className="h-4 w-4 shrink-0" />
+              <span className="block text-ellipsis max-w-48 overflow-hidden text-nowrap">
+                {file.name}
+              </span>
             </FileUploader.Item>
           ))}
       </FileUploader.Content>

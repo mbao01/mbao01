@@ -20,7 +20,9 @@ describe("FileUploader", () => {
         dropzoneOptions={dropZoneConfig}
         className="relative bg-background rounded-lg p-2"
       >
-        <FileUploader.Input className="outline-dashed outline-1 outline-neutral-content">
+        <FileUploader.Input
+          classes={{ all: "outline-dashed outline-1 outline-neutral-content" }}
+        >
           Click here to upload
         </FileUploader.Input>
       </FileUploader>

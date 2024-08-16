@@ -55,54 +55,67 @@ export const FileUploader = ({
 
   const handleKeyDown = useCallback(
     (e: React.KeyboardEvent<HTMLDivElement>) => {
-      e.preventDefault();
-      e.stopPropagation();
+      const files = value ?? [];
+      const KEY_LIST = [
+        "ArrowLeft",
+        "ArrowRight",
+        "ArrowUp",
+        "ArrowDown",
+        "Enter",
+        "Space",
+        "Delete",
+        "Backspace",
+        "Escape",
+      ];
 
-      if (!value) return;
+      if (KEY_LIST.includes(e.key)) {
+        e.preventDefault();
+        e.stopPropagation();
 
-      const moveNext = () => {
-        const nextIndex = activeIndex + 1;
-        setActiveIndex(nextIndex > value.length - 1 ? 0 : nextIndex);
-      };
+        const moveNext = () => {
+          const nextIndex = activeIndex + 1;
+          setActiveIndex(nextIndex > files.length - 1 ? 0 : nextIndex);
+        };
 
-      const movePrev = () => {
-        const nextIndex = activeIndex - 1;
-        setActiveIndex(nextIndex < 0 ? value.length - 1 : nextIndex);
-      };
+        const movePrev = () => {
+          const nextIndex = activeIndex - 1;
+          setActiveIndex(nextIndex < 0 ? files.length - 1 : nextIndex);
+        };
 
-      const prevKey =
-        orientation === "horizontal"
-          ? direction === "ltr"
-            ? "ArrowLeft"
-            : "ArrowRight"
-          : "ArrowUp";
+        const prevKey =
+          orientation === "horizontal"
+            ? direction === "ltr"
+              ? "ArrowLeft"
+              : "ArrowRight"
+            : "ArrowUp";
 
-      const nextKey =
-        orientation === "horizontal"
-          ? direction === "ltr"
-            ? "ArrowRight"
-            : "ArrowLeft"
-          : "ArrowDown";
+        const nextKey =
+          orientation === "horizontal"
+            ? direction === "ltr"
+              ? "ArrowRight"
+              : "ArrowLeft"
+            : "ArrowDown";
 
-      if (e.key === nextKey) {
-        moveNext();
-      } else if (e.key === prevKey) {
-        movePrev();
-      } else if (e.key === "Enter" || e.key === "Space") {
-        if (activeIndex === -1) {
-          dropzoneState.inputRef.current?.click();
-        }
-      } else if (e.key === "Delete" || e.key === "Backspace") {
-        if (activeIndex !== -1) {
-          removeFileFromSet(activeIndex);
-          if (value.length - 1 === 0) {
-            setActiveIndex(-1);
-            return;
-          }
+        if (e.key === nextKey) {
+          moveNext();
+        } else if (e.key === prevKey) {
           movePrev();
+        } else if (e.key === "Enter" || e.key === "Space") {
+          if (activeIndex === -1) {
+            dropzoneState.inputRef.current?.click();
+          }
+        } else if (e.key === "Delete" || e.key === "Backspace") {
+          if (activeIndex !== -1) {
+            removeFileFromSet(activeIndex);
+            if (files.length - 1 === 0) {
+              setActiveIndex(-1);
+              return;
+            }
+            movePrev();
+          }
+        } else if (e.key === "Escape") {
+          setActiveIndex(-1);
         }
-      } else if (e.key === "Escape") {
-        setActiveIndex(-1);
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -197,17 +210,13 @@ export const FileUploader = ({
       }}
     >
       <div
-        tabIndex={0}
         onKeyDownCapture={handleKeyDown}
-        className={cn(
-          "grid w-full focus:outline-none overflow-hidden ",
-          className,
-          {
-            "gap-2": value && value.length > 0,
-          }
-        )}
+        className={cn("grid w-full overflow-hidden", className, {
+          "gap-2": value && value.length > 0,
+        })}
         dir={dir}
         {...props}
+        tabIndex={-1}
       >
         {children}
       </div>
@@ -257,9 +266,9 @@ const FileUploaderItem = forwardRef<
     <div
       ref={ref}
       className={cn(
-        "h-6 p-1 justify-between cursor-pointer relative",
-        className,
-        isSelected ? "bg-muted" : ""
+        "h-6 p-1 justify-between cursor-pointer relative rounded",
+        { "bg-base-300": isSelected },
+        className
       )}
       {...props}
     >
@@ -275,7 +284,12 @@ const FileUploaderItem = forwardRef<
         onClick={() => removeFileFromSet(index)}
       >
         <span className="sr-only">remove item {index}</span>
-        <TrashIcon className="w-4 h-4 hover:stroke-destructive duration-200 ease-in-out" />
+        <TrashIcon
+          className={cn(
+            "w-4 h-4 shrink-0 hover:stroke-destructive duration-200 ease-in-out",
+            { "text-error": isSelected }
+          )}
+        />
       </button>
     </div>
   );
@@ -284,7 +298,7 @@ const FileUploaderItem = forwardRef<
 FileUploaderItem.displayName = "FileUploaderItem";
 
 const FileUploaderInput = ({
-  className,
+  classes,
   children,
   ...props
 }: FileUploaderInputProps) => {
@@ -292,39 +306,35 @@ const FileUploaderInput = ({
     useFileUpload();
   const rootProps = isLOF ? {} : dropzoneState.getRootProps();
   return (
-    <div
-      {...props}
-      className={`relative w-full ${
-        isLOF ? "opacity-50 cursor-not-allowed " : "cursor-pointer "
-      }`}
-    >
+    <div {...props} className="relative w-full">
       <div
         className={cn(
-          `w-full rounded-lg duration-300 ease-in-out
-         ${
-           dropzoneState.isDragAccept
-             ? "border-green-500"
-             : dropzoneState.isDragReject || isFileTooBig
-               ? "border-red-500"
-               : "border-gray-300"
-         }`,
-          className
+          classes?.all,
+          "w-full rounded-lg duration-300 ease-in-out",
+          isLOF ? "opacity-50 cursor-not-allowed" : "cursor-pointer",
+          dropzoneState.isDragAccept
+            ? classes?.accepted
+            : dropzoneState.isDragReject || isFileTooBig
+              ? classes?.rejected
+              : classes?.default
         )}
         {...rootProps}
       >
         {children}
       </div>
       <input
-        {...props}
         ref={hiddenInputRef}
+        {...props}
         type="file"
-        style={{ opacity: 0, display: "none" }}
+        tabIndex={-1}
+        className="hidden opacity-0"
       />
       <input
-        disabled={isLOF}
         ref={dropzoneState.inputRef}
+        disabled={isLOF}
         {...dropzoneState.getInputProps()}
-        className={`${isLOF ? "cursor-not-allowed" : ""}`}
+        tabIndex={-1}
+        className={cn({ "cursor-not-allowed": isLOF })}
       />
     </div>
   );
