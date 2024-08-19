@@ -5,6 +5,7 @@ export const getTextareaClasses = cva(
   {
     variants: {
       variant: {
+        default: "bg-transparent",
         accent: "textarea-accent",
         error: "textarea-error",
         ghost: "textarea-ghost",
@@ -31,6 +32,16 @@ export const getTextareaClasses = cva(
       {
         size: undefined,
         className: "min-h-fit h-10",
+      },
+      {
+        variant: undefined,
+        outline: true,
+        className: "border-neutral-content",
+      },
+      {
+        variant: "default",
+        outline: true,
+        className: "border-base-content",
       },
     ],
   }
