@@ -1,1 +1,5 @@
-module.exports = [require("daisyui"), require("tailwindcss-animate")];
+module.exports = [
+  require("@tailwindcss/typography"),
+  require("daisyui"),
+  require("tailwindcss-animate"),
+];
