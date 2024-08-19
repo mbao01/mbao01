@@ -1,10 +1,11 @@
 import { cva } from "../../../libs";
 
 export const getSelectTriggerClasses = cva(
-  "select flex items-center justify-between rounded-md text-sm text-left ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
+  "select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100",
   {
     variants: {
       variant: {
+        default: "bg-transparent",
         primary: "select-primary",
         secondary: "select-secondary",
         accent: "select-accent",
@@ -31,6 +32,16 @@ export const getSelectTriggerClasses = cva(
         size: undefined,
         className: "min-h-fit h-10",
       },
+      {
+        variant: undefined,
+        outline: true,
+        className: "border-neutral-content",
+      },
+      {
+        variant: "default",
+        outline: true,
+        className: "border-base-content",
+      },
     ],
   }
 );
@@ -40,6 +51,7 @@ export const getSelectItemClasses = cva(
   {
     variants: {
       variant: {
+        default: "focus:bg-transparent focus:text-base-content",
         primary: "focus:bg-primary focus:text-primary-content",
         secondary: "focus:bg-secondary focus:text-secondary-content",
         accent: "focus:bg-accent focus:text-accent-content",
