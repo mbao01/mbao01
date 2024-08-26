@@ -14,6 +14,6 @@ export const getTheme = () => {
 
 export const saveTheme = (theme: Theme) => {
   const cookies = new Cookies();
-  cookies.set(THEME_COOKIE_NAME, theme, { secure: true });
+  cookies.set(THEME_COOKIE_NAME, theme, { path: "/", secure: true });
   document.body.setAttribute(THEME_COOKIE_NAME, theme);
 };
