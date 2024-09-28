@@ -5,6 +5,7 @@ import { toMatchImageSnapshot } from 'jest-image-snapshot';
 
 const DEFAULT_VIEWPORT_SIZE = { width: 1280, height: 720 };
 const CUSTOM_SNAPSHOTS_DIR = `${process.cwd()}/.storybook/__snapshots__`;
+const CUSTOM_DIFF_DIR = `${CUSTOM_SNAPSHOTS_DIR}/__diff__`;
 
 const setupPageViewport = async (page, story) => {
   // Accesses the story's parameters and retrieves the viewport used to render it
@@ -28,10 +29,13 @@ const config: TestRunnerConfig = {
     await waitForPageReady(page);
 
     // Generates a snapshot file based on the story identifier
-    const image = await page.screenshot();
+    const image = await page.locator('#storybook-root').screenshot();
     expect(image).toMatchImageSnapshot({
+      customDiffDir: CUSTOM_DIFF_DIR,
       customSnapshotsDir: CUSTOM_SNAPSHOTS_DIR,
       customSnapshotIdentifier: story.id,
+      failureThreshold: 1,
+      failureThresholdType: 'percent'
     });
   },
 };
