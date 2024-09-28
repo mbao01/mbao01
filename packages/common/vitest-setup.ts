@@ -15,11 +15,11 @@ vi.stubGlobal("ResizeObserver", ResizeObserverMock);
 // Mock the scrollTo method
 vi.stubGlobal("scrollTo", vi.fn());
 
-window.HTMLElement.prototype.scrollIntoView = () => {};
+window.HTMLElement.prototype.scrollIntoView = vi.fn();
 
 Object.defineProperty(window, "matchMedia", {
   writable: true,
-  value: vi.fn().mockImplementation((query) => ({
+  value: vi.fn().mockImplementation((query: MediaQueryList) => ({
     matches: false,
     media: query,
     onchange: null,
