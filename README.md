@@ -48,3 +48,30 @@ After all review ceremonies on the release pull request are complete, merge to m
 ### Steps to publish
 1. Merge your release pull request to main once ready. This will kickstart the release workflow in the CI - which publishes changed packages to npm and creates tagged releases with notes. As a side effect, your feature branch pull request will be automatically closed.
 2. After the release workflow is successful, confirm your [release](https://github.com/mbao01/mbao01/releases) and published packages on npm.
+
+
+## Visual Regression
+Storybook test-runner is setup as the visual regression tool to capture snapshots and compare them based on set thresholds.
+Under the hood, [@storybook/test-runner](https://www.npmjs.com/package/@storybook/test-runner) uses [playwright](https://npmjs.com/package/playwright) and [jest](https://www.npmjs.com/package/jest).
+
+### Prerequisite
+Install playwright supported browser(s)
+```sh
+pnpx playwright install
+```
+
+### Run tests
+To run the tests, you'd need to have storybook running locally. For example
+```sh
+pnpm --filter @mbao01/common dev
+```
+
+then run the visual regression tests
+```sh
+pnpm --filter @mbao01/common test:visual
+```
+
+You could also run the tests in watch mode
+```sh
+pnpm --filter @mbao01/common test:visual:watch
+```

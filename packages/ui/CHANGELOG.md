@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.42 (2024-09-28)
+
+
+### Features
+
+* **badge:** add badge component ([4fe5f6a](https://github.com/mbao01/mbao01/commit/4fe5f6aa9e53f103d27baebf8efc2d46412aeb6c))
+* **breadcrumbs:** add breadcrumbs component ([c8b68a0](https://github.com/mbao01/mbao01/commit/c8b68a0e26c38d74da466d15459ec4a9c8ff2104))
+* **card:** add card component ([77b532f](https://github.com/mbao01/mbao01/commit/77b532f8de89b7f6f8acd1f849fbaa9f0185ea52))
+* **detail:** add detail component ([276a509](https://github.com/mbao01/mbao01/commit/276a50927aa63804e601b3e3b97429bd2e9e8db0))
+* **link:** add link component ([9e1acba](https://github.com/mbao01/mbao01/commit/9e1acba27971170f651ea6d102408d3e7281d932))
+* **link:** allow link to use non internal extended anchor tag ([ea591f8](https://github.com/mbao01/mbao01/commit/ea591f8993cab8c3c8f91b613c474ef5386c5d85))
+* **link:** same logic to react router and update snapshots ([5100bf8](https://github.com/mbao01/mbao01/commit/5100bf8379a4f2c602b354d69bb5d1a054229e50))
+* **tooltip:** add tooltip component ([eed7cdf](https://github.com/mbao01/mbao01/commit/eed7cdfc807eb5390dbd1718dfd21a0e7583a5e8))
+* **visual:** capture visual snapshot with storybook test runner ([3364bd0](https://github.com/mbao01/mbao01/commit/3364bd0024d4ff9797960d5eab1719bf582ed3c6))
+* **visual:** create snapshots ([366997e](https://github.com/mbao01/mbao01/commit/366997ee3edf78fb0f258dba2ac19478fae22dd7))
+* **visual:** install @storybook/test-runner, jest-image-snapshots and other dependencies ([6ab0387](https://github.com/mbao01/mbao01/commit/6ab0387cbedd5595cc58937ce6f67221d2dea55b))
+* **visual:** update snapshot diff threshold for test runner ([c33d515](https://github.com/mbao01/mbao01/commit/c33d5153f2d6fab4921b98d50554e224f8e7dc74))
+
+
+### Bug Fixes
+
+* **release-0.1.0:** expose breadcrumbs and link components ([54b4191](https://github.com/mbao01/mbao01/commit/54b4191049c17f94dcda0fdfb1e1ed5bd9636ea2))
+
+
+
 ## 0.1.41 (2024-08-26)
 
 
