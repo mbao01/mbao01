@@ -28,16 +28,18 @@
     "*.css"
   ],
   "scripts": {
-    "dev": "storybook dev -p 6006",
+    "dev": "storybook dev -p 6008",
     "build": "tsc && vite build",
     "build-storybook": "storybook build -o ../../docs/storybook/ui",
     "postbuild-storybook": "cp -R ../../docs/storybook/ui/* ../../docs/storybook/ && rm -rf ../../docs/storybook/ui",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
+    "prod": "pnpx http-server ../../docs/storybook --port 6008",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:ui": "vitest --ui",
-    "test:visual": "test-storybook",
+    "test:visual": "test-storybook --url http://127.0.0.1:6008",
+    "test:visual:ci": "test-storybook --ci --verbose --url http://127.0.0.1:6008",
     "test:visual:watch": "test-storybook --watch",
     "test:watch": "vitest"
   },

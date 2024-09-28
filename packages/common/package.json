@@ -54,10 +54,12 @@
     "build-storybook": "storybook build -o ../../docs/storybook/common",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
+    "prod": "pnpx http-server ../../docs/storybook/common --port 6006",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:ui": "vitest --ui",
-    "test:visual": "test-storybook",
+    "test:visual": "test-storybook --url http://127.0.0.1:6006",
+    "test:visual:ci": "test-storybook --ci --verbose --url http://127.0.0.1:6006",
     "test:visual:watch": "test-storybook --watch",
     "test:watch": "vitest"
   },
