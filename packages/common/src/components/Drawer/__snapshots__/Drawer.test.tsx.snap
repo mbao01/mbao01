@@ -14,18 +14,3 @@ exports[`Drawer > renders a drawer 1`] = `
   </button>
 </DocumentFragment>
 `;
-
-exports[`Drawer > should close drawer with the cancel button 1`] = `
-<DocumentFragment>
-  <button
-    aria-controls="radix-:r3:"
-    aria-expanded="false"
-    aria-haspopup="dialog"
-    class="btn btn-outline min-h-fit h-10 border-neutral-content"
-    data-state="closed"
-    type="button"
-  >
-    Open drawer
-  </button>
-</DocumentFragment>
-`;

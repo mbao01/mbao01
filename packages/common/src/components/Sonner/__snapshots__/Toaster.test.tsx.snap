@@ -29,7 +29,7 @@ exports[`Toaster > has accent variant 1`] = `
           data-expanded="false"
           data-front="true"
           data-index="0"
-          data-mounted="true"
+          data-mounted="false"
           data-promise="false"
           data-removed="false"
           data-sonner-toast=""
@@ -40,7 +40,7 @@ exports[`Toaster > has accent variant 1`] = `
           data-x-position="right"
           data-y-position="bottom"
           role="status"
-          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: -14px; --initial-height: 0px;"
           tabindex="0"
         >
           <div
@@ -96,7 +96,7 @@ exports[`Toaster > has error variant 1`] = `
           data-expanded="false"
           data-front="true"
           data-index="0"
-          data-mounted="true"
+          data-mounted="false"
           data-promise="false"
           data-removed="false"
           data-sonner-toast=""
@@ -107,7 +107,7 @@ exports[`Toaster > has error variant 1`] = `
           data-x-position="right"
           data-y-position="bottom"
           role="status"
-          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: -14px; --initial-height: 0px;"
           tabindex="0"
         >
           <div
@@ -163,7 +163,7 @@ exports[`Toaster > has ghost variant 1`] = `
           data-expanded="false"
           data-front="true"
           data-index="0"
-          data-mounted="true"
+          data-mounted="false"
           data-promise="false"
           data-removed="false"
           data-sonner-toast=""
@@ -174,7 +174,7 @@ exports[`Toaster > has ghost variant 1`] = `
           data-x-position="right"
           data-y-position="bottom"
           role="status"
-          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: -14px; --initial-height: 0px;"
           tabindex="0"
         >
           <div
@@ -230,7 +230,7 @@ exports[`Toaster > has info variant 1`] = `
           data-expanded="false"
           data-front="true"
           data-index="0"
-          data-mounted="true"
+          data-mounted="false"
           data-promise="false"
           data-removed="false"
           data-sonner-toast=""
@@ -241,7 +241,7 @@ exports[`Toaster > has info variant 1`] = `
           data-x-position="right"
           data-y-position="bottom"
           role="status"
-          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: -14px; --initial-height: 0px;"
           tabindex="0"
         >
           <div
@@ -297,7 +297,7 @@ exports[`Toaster > has neutral variant 1`] = `
           data-expanded="false"
           data-front="true"
           data-index="0"
-          data-mounted="true"
+          data-mounted="false"
           data-promise="false"
           data-removed="false"
           data-sonner-toast=""
@@ -308,7 +308,7 @@ exports[`Toaster > has neutral variant 1`] = `
           data-x-position="right"
           data-y-position="bottom"
           role="status"
-          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: -14px; --initial-height: 0px;"
           tabindex="0"
         >
           <div
@@ -364,7 +364,7 @@ exports[`Toaster > has no outline 1`] = `
           data-expanded="false"
           data-front="true"
           data-index="0"
-          data-mounted="true"
+          data-mounted="false"
           data-promise="false"
           data-removed="false"
           data-sonner-toast=""
@@ -376,7 +376,7 @@ exports[`Toaster > has no outline 1`] = `
           data-x-position="right"
           data-y-position="bottom"
           role="status"
-          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: -14px; --initial-height: 0px;"
           tabindex="0"
         >
           <div
@@ -450,7 +450,7 @@ exports[`Toaster > has outline 1`] = `
           data-expanded="false"
           data-front="true"
           data-index="0"
-          data-mounted="true"
+          data-mounted="false"
           data-promise="false"
           data-removed="false"
           data-sonner-toast=""
@@ -462,7 +462,7 @@ exports[`Toaster > has outline 1`] = `
           data-x-position="right"
           data-y-position="bottom"
           role="status"
-          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: -14px; --initial-height: 0px;"
           tabindex="0"
         >
           <div
@@ -536,7 +536,7 @@ exports[`Toaster > has primary variant 1`] = `
           data-expanded="false"
           data-front="true"
           data-index="0"
-          data-mounted="true"
+          data-mounted="false"
           data-promise="false"
           data-removed="false"
           data-sonner-toast=""
@@ -547,7 +547,7 @@ exports[`Toaster > has primary variant 1`] = `
           data-x-position="right"
           data-y-position="bottom"
           role="status"
-          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: -14px; --initial-height: 0px;"
           tabindex="0"
         >
           <div
@@ -603,7 +603,7 @@ exports[`Toaster > has secondary variant 1`] = `
           data-expanded="false"
           data-front="true"
           data-index="0"
-          data-mounted="true"
+          data-mounted="false"
           data-promise="false"
           data-removed="false"
           data-sonner-toast=""
@@ -614,7 +614,7 @@ exports[`Toaster > has secondary variant 1`] = `
           data-x-position="right"
           data-y-position="bottom"
           role="status"
-          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: -14px; --initial-height: 0px;"
           tabindex="0"
         >
           <div
@@ -670,7 +670,7 @@ exports[`Toaster > has success variant 1`] = `
           data-expanded="false"
           data-front="true"
           data-index="0"
-          data-mounted="true"
+          data-mounted="false"
           data-promise="false"
           data-removed="false"
           data-sonner-toast=""
@@ -681,7 +681,7 @@ exports[`Toaster > has success variant 1`] = `
           data-x-position="right"
           data-y-position="bottom"
           role="status"
-          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: -14px; --initial-height: 0px;"
           tabindex="0"
         >
           <div
@@ -737,7 +737,7 @@ exports[`Toaster > has warning variant 1`] = `
           data-expanded="false"
           data-front="true"
           data-index="0"
-          data-mounted="true"
+          data-mounted="false"
           data-promise="false"
           data-removed="false"
           data-sonner-toast=""
@@ -748,7 +748,7 @@ exports[`Toaster > has warning variant 1`] = `
           data-x-position="right"
           data-y-position="bottom"
           role="status"
-          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: -14px; --initial-height: 0px;"
           tabindex="0"
         >
           <div
@@ -804,7 +804,7 @@ exports[`Toaster > renders a basic toast 1`] = `
           data-expanded="false"
           data-front="true"
           data-index="0"
-          data-mounted="true"
+          data-mounted="false"
           data-promise="false"
           data-removed="false"
           data-sonner-toast=""
@@ -815,7 +815,7 @@ exports[`Toaster > renders a basic toast 1`] = `
           data-x-position="right"
           data-y-position="bottom"
           role="status"
-          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: 0px; --initial-height: 0px;"
+          style="--index: 0; --toasts-before: 0; --z-index: 1; --offset: -14px; --initial-height: 0px;"
           tabindex="0"
         >
           <div

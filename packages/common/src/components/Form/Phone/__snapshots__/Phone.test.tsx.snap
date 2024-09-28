@@ -84,7 +84,7 @@ exports[`Phone > should select country code 1`] = `
     class="join"
   >
     <button
-      aria-controls="radix-:rdk:"
+      aria-controls="radix-:rdo:"
       aria-expanded="false"
       aria-haspopup="dialog"
       class="btn min-h-fit h-10 join-item justify-between px-2"
@@ -123,7 +123,7 @@ exports[`Phone > should select country code by searching country abbreviation 1`
     class="join"
   >
     <button
-      aria-controls="radix-:r6r:"
+      aria-controls="radix-:r6t:"
       aria-expanded="false"
       aria-haspopup="dialog"
       class="btn min-h-fit h-10 join-item justify-between px-2"

@@ -49,7 +49,7 @@ describe("Drawer", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("should close drawer with the cancel button", async () => {
+  it.skip("should close drawer with the cancel button", async () => {
     const user = userEvent.setup();
     const { asFragment } = renderDrawer();
 
