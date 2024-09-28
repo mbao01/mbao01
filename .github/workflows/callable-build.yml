@@ -49,7 +49,6 @@ jobs:
   visual:
     name: 🕵🏾‍♂️ Visual regression tests
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
@@ -68,9 +67,9 @@ jobs:
         shell: bash
         continue-on-error: true
         run: |
-          pnpx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
-            "pnpm run --silent --parallel prod" \
-            "pnpx wait-on tcp:6006 tcp:6007 tcp:6008 && pnpm run --parallel test:visual:ci"
+          pnpx concurrently -k -s first \
+            "pnpm run --parallel prod" \
+            "pnpx wait-on http://127.0.0.1:6006 http://127.0.0.1:6007 http://127.0.0.1:6008 && pnpm run --parallel test:visual:ci"
 
       # This ugly bit is necessary if you don't want your cache to grow forever
       # till it hits GitHub's limit of 5GB.
