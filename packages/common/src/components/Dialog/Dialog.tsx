@@ -4,13 +4,13 @@ import * as React from "react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import type {
-  DialogProps,
+  DialogContentProps,
+  DialogDescriptionProps,
   DialogFooterProps,
   DialogHeaderProps,
-  DialogTitleProps,
-  DialogDescriptionProps,
   DialogOverlayProps,
-  DialogContentProps,
+  DialogProps,
+  DialogTitleProps,
 } from "./types";
 import { cn } from "../../utilities";
 import {
@@ -96,11 +96,7 @@ const DialogTitle = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Title>,
   DialogTitleProps
 >(({ className, ...props }, ref) => (
-  <DialogPrimitive.Title
-    ref={ref}
-    className={cn(getDialogTitleClasses(), className)}
-    {...props}
-  />
+  <DialogPrimitive.Title ref={ref} className={cn(getDialogTitleClasses(), className)} {...props} />
 ));
 DialogTitle.displayName = DialogPrimitive.Title.displayName;
 

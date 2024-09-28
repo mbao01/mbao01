@@ -1,8 +1,8 @@
+import { ReactNode } from "react";
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { Tooltip } from "./";
 import { type TooltipContentProps } from "./types";
-import { ReactNode } from "react";
-import userEvent from "@testing-library/user-event";
 
 describe("Tooltip", () => {
   const renderTooltip = (
@@ -38,22 +38,17 @@ describe("Tooltip", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it.each(["top", "right", "bottom", "left"] as const)(
-    "content is positioned %s",
-    async (side) => {
-      const children = `tooltip content ${side}`;
-      const trigger = `${side} tooltip`;
-      const { asFragment } = renderTooltip(trigger, { side, children });
+  it.each(["top", "right", "bottom", "left"] as const)("content is positioned %s", async (side) => {
+    const children = `tooltip content ${side}`;
+    const trigger = `${side} tooltip`;
+    const { asFragment } = renderTooltip(trigger, { side, children });
 
-      const tooltipEl = screen.getByText(trigger);
-      await user.hover(tooltipEl);
+    const tooltipEl = screen.getByText(trigger);
+    await user.hover(tooltipEl);
 
-      expect(
-        await screen.findByRole("tooltip", { name: children })
-      ).toBeInTheDocument();
-      expect(asFragment()).toMatchSnapshot();
-    }
-  );
+    expect(await screen.findByRole("tooltip", { name: children })).toBeInTheDocument();
+    expect(asFragment()).toMatchSnapshot();
+  });
 
   it.each([
     "primary",
@@ -72,9 +67,7 @@ describe("Tooltip", () => {
     const tooltipEl = screen.getByText(trigger);
     await user.hover(tooltipEl);
 
-    expect(
-      await screen.findByRole("tooltip", { name: children })
-    ).toBeInTheDocument();
+    expect(await screen.findByRole("tooltip", { name: children })).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 });

@@ -19,9 +19,7 @@ describe("getSubpaths", () => {
 
     it("returns root subpath with custom label", () => {
       const result = getSubpaths("/", { "/": "Home" }, true);
-      expect(result).toStrictEqual([
-        { href: { pathname: "/" }, label: "Home" },
-      ]);
+      expect(result).toStrictEqual([{ href: { pathname: "/" }, label: "Home" }]);
     });
   });
 

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Label } from "../components/Label";
 import { FormControl } from "../components/FormControl";
+import { Label } from "../components/Label";
 import { Range } from "./Range";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export

@@ -1,13 +1,10 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
 import { CaretSortIcon } from "@radix-ui/react-icons";
-import { type CollapsibleProps } from "./types";
-import { Collapsible } from "./Collapsible";
 import { Button } from "../Button";
+import { Collapsible } from "./Collapsible";
+import { type CollapsibleProps } from "./types";
 
-const withCollapsible = (
-  _: StoryFn,
-  context: StoryContext<CollapsibleProps>
-) => {
+const withCollapsible = (_: StoryFn, context: StoryContext<CollapsibleProps>) => {
   return (
     <Collapsible {...context.args} className="w-[350px] space-y-2">
       <div className="flex items-center justify-between space-x-4 px-4">

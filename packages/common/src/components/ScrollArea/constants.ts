@@ -2,17 +2,14 @@ import { cva } from "../../libs";
 
 export const getScrollAreaClasses = cva("relative overflow-hidden");
 
-export const getScrollAreaScrollbarClasses = cva(
-  "flex touch-none select-none transition-colors",
-  {
-    variants: {
-      orientation: {
-        horizontal: "h-2.5 flex-col border-t border-t-transparent p-[1px]",
-        vertical: "h-full w-2.5 border-l border-l-transparent p-[1px]",
-      },
+export const getScrollAreaScrollbarClasses = cva("flex touch-none select-none transition-colors", {
+  variants: {
+    orientation: {
+      horizontal: "h-2.5 flex-col border-t border-t-transparent p-[1px]",
+      vertical: "h-full w-2.5 border-l border-l-transparent p-[1px]",
     },
-  }
-);
+  },
+});
 
 export const getScrollAreaThumbClasses = cva("relative flex-1 rounded-full", {
   variants: {
@@ -31,6 +28,4 @@ export const getScrollAreaThumbClasses = cva("relative flex-1 rounded-full", {
   },
 });
 
-export const getScrollAreaViewportClasses = cva(
-  "h-full w-full rounded-[inherit]"
-);
+export const getScrollAreaViewportClasses = cva("h-full w-full rounded-[inherit]");

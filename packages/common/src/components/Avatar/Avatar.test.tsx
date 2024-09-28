@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 import { Avatar } from "./";
 
 describe("Avatar", () => {
@@ -23,31 +23,11 @@ describe("Avatar", () => {
       | "success"
       | "warning";
   }>;
-  const renderAvatar = ({
-    alt,
-    src,
-    ring,
-    size,
-    shape,
-    status,
-    variant,
-    fallback,
-  }: ArgsType) =>
+  const renderAvatar = ({ alt, src, ring, size, shape, status, variant, fallback }: ArgsType) =>
     render(
       <Avatar size={size} status={status}>
-        <Avatar.Image
-          alt={alt}
-          src={src}
-          ring={ring}
-          shape={shape}
-          variant={variant}
-        />
-        <Avatar.Fallback
-          ring={ring}
-          size={size}
-          shape={shape}
-          variant={variant}
-        >
+        <Avatar.Image alt={alt} src={src} ring={ring} shape={shape} variant={variant} />
+        <Avatar.Fallback ring={ring} size={size} shape={shape} variant={variant}>
           {fallback}
         </Avatar.Fallback>
       </Avatar>

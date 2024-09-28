@@ -13,13 +13,11 @@ const withAccordion = (_: StoryFn, context: StoryContext<any>) => {
     {
       value: "item-2",
       trigger: "Is it styled?",
-      content:
-        "Yes. It comes with default styles that matches the other components aesthetic.",
+      content: "Yes. It comes with default styles that matches the other components aesthetic.",
     },
     {
       trigger: "Is it animated?",
-      content:
-        "Yes. It's animated by default, but you can disable it if you prefer.",
+      content: "Yes. It's animated by default, but you can disable it if you prefer.",
       value: "item-3",
     },
   ];
@@ -30,9 +28,7 @@ const withAccordion = (_: StoryFn, context: StoryContext<any>) => {
     <Accordion {...context.args} className="w-[320px]">
       {items.map((item) => (
         <Accordion.Item value={item.value} key={item.value}>
-          <Accordion.Trigger
-            disabled={item.value === "item-3" ? disabled : false}
-          >
+          <Accordion.Trigger disabled={item.value === "item-3" ? disabled : false}>
             {item.trigger}
             <ChevronDownIcon className="h-4 w-4 shrink-0 transition-transform duration-200" />
           </Accordion.Trigger>

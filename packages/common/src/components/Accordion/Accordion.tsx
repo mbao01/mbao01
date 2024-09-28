@@ -3,9 +3,9 @@
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import type {
-  AccordionProps,
   AccordionContentProps,
   AccordionItemProps,
+  AccordionProps,
   AccordionTriggerProps,
 } from "./types";
 import { cn } from "../../utilities";
@@ -15,9 +15,7 @@ import {
   getAccordionTriggerClasses,
 } from "./constants";
 
-const Accordion = (props: AccordionProps) => (
-  <AccordionPrimitive.Root {...props} />
-);
+const Accordion = (props: AccordionProps) => <AccordionPrimitive.Root {...props} />;
 
 const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,
@@ -51,11 +49,7 @@ const AccordionContent = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Content>,
   AccordionContentProps
 >(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Content
-    ref={ref}
-    className={cn(getAccordionContentClasses())}
-    {...props}
-  >
+  <AccordionPrimitive.Content ref={ref} className={cn(getAccordionContentClasses())} {...props}>
     <div className={cn("pb-4 pt-0", className)}>{children}</div>
   </AccordionPrimitive.Content>
 ));

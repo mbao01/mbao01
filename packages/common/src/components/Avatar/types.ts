@@ -1,10 +1,6 @@
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
 import { type VariantProps } from "../../libs";
-import {
-  getAvatarClasses,
-  getAvatarFallbackClasses,
-  getAvatarImageClasses,
-} from "./constants";
+import { getAvatarClasses, getAvatarFallbackClasses, getAvatarImageClasses } from "./constants";
 
 export type AvatarProps = Omit<
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Root>,

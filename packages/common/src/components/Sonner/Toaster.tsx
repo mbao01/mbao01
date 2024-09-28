@@ -1,9 +1,9 @@
 "use client";
 
 import { Toaster as Sonner } from "sonner";
-import { type ToasterProps } from "./types";
 import { cn } from "../../utilities";
 import { getToastButtonClasses, getToastClasses } from "./constants";
+import { type ToasterProps } from "./types";
 
 export const Toaster = ({
   theme,
@@ -30,9 +30,7 @@ export const Toaster = ({
               ...cancelButton,
             })
           ),
-          closeButton: cn(
-            getToastButtonClasses({ variant: "neutral", ...closeButton })
-          ),
+          closeButton: cn(getToastButtonClasses({ variant: "neutral", ...closeButton })),
         },
       }}
       {...props}

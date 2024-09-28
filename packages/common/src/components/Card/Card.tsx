@@ -1,30 +1,20 @@
 import type {
   CardActionsProps,
+  CardBodyProps,
   CardContentProps,
   CardDescriptionProps,
   CardFooterProps,
   CardHeaderProps,
   CardImageProps,
-  CardTitleProps,
   CardProps,
-  CardBodyProps,
+  CardTitleProps,
 } from "./types";
 import { cn } from "../../utilities";
 import { getCardClasses } from "./constants";
 
-const Card = ({
-  compact,
-  bordered,
-  horizontal,
-  overlay,
-  className,
-  ...props
-}: CardProps) => (
+const Card = ({ compact, bordered, horizontal, overlay, className, ...props }: CardProps) => (
   <div
-    className={cn(
-      getCardClasses({ bordered, compact, horizontal, overlay }),
-      className
-    )}
+    className={cn(getCardClasses({ bordered, compact, horizontal, overlay }), className)}
     {...props}
   />
 );

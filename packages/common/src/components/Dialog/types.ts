@@ -10,23 +10,15 @@ import {
   getDialogTitleClasses,
 } from "./constants";
 
-export type DialogProps = React.ComponentPropsWithoutRef<
-  typeof DialogPrimitive.Root
->;
+export type DialogProps = React.ComponentPropsWithoutRef<typeof DialogPrimitive.Root>;
 
-export type DialogOverlayProps = React.ComponentPropsWithoutRef<
-  typeof DialogPrimitive.Overlay
-> &
+export type DialogOverlayProps = React.ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay> &
   VariantProps<typeof getDialogOverlayClasses>;
 
-export type DialogCloseProps = React.ComponentPropsWithoutRef<
-  typeof DialogPrimitive.Close
-> &
+export type DialogCloseProps = React.ComponentPropsWithoutRef<typeof DialogPrimitive.Close> &
   VariantProps<typeof getDialogCloseClasses>;
 
-export type DialogContentProps = React.ComponentPropsWithoutRef<
-  typeof DialogPrimitive.Content
-> &
+export type DialogContentProps = React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content> &
   VariantProps<typeof getDialogContentClasses> & {
     showClose?: boolean;
     closeProps?: DialogCloseProps;
@@ -38,9 +30,7 @@ export type DialogHeaderProps = React.HTMLAttributes<HTMLDivElement> &
 export type DialogFooterProps = React.HTMLAttributes<HTMLDivElement> &
   VariantProps<typeof getDialogFooterClasses>;
 
-export type DialogTitleProps = React.ComponentPropsWithoutRef<
-  typeof DialogPrimitive.Title
-> &
+export type DialogTitleProps = React.ComponentPropsWithoutRef<typeof DialogPrimitive.Title> &
   VariantProps<typeof getDialogTitleClasses>;
 
 export type DialogDescriptionProps = React.ComponentPropsWithoutRef<

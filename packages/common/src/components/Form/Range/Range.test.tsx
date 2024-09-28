@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
 import { fireEvent, render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 import { Range } from "./Range";
 
 describe("Range", () => {
@@ -21,9 +21,7 @@ describe("Range", () => {
   });
 
   it("is in a disabled state", () => {
-    const { asFragment } = render(
-      <Range name="risk-level" defaultValue={10} disabled />
-    );
+    const { asFragment } = render(<Range name="risk-level" defaultValue={10} disabled />);
     const range = screen.getByRole("slider");
 
     expect(range).toBeDisabled();
@@ -40,9 +38,7 @@ describe("Range", () => {
     "error",
     "neutral",
   ] as const)("has %s variant", (variant) => {
-    const { asFragment } = render(
-      <Range name="risk-level" variant={variant} wide />
-    );
+    const { asFragment } = render(<Range name="risk-level" variant={variant} wide />);
 
     expect(screen.getByRole("slider")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();

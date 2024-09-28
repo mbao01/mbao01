@@ -2,8 +2,8 @@ import { Link as RouterLink } from "react-router-dom";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { Anchor } from "@mbao01/common";
 import { cn } from "@mbao01/common/utilities";
-import { type LinkProps } from "./types";
 import { getLinkClasses } from "./constant";
+import { type LinkProps } from "./types";
 
 export const Link = ({
   href,
@@ -42,9 +42,7 @@ export const Link = ({
       {...(isExternal && { rel: "noopener noreferrer" })}
     >
       {children}
-      {isExternal ? (
-        <ExternalLinkIcon name="external" className="ml-[2px] inline" />
-      ) : null}
+      {isExternal ? <ExternalLinkIcon name="external" className="ml-[2px] inline" /> : null}
     </RouterLink>
   );
 };

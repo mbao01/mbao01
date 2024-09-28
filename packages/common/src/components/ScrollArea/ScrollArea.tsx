@@ -11,19 +11,9 @@ import {
   getScrollAreaViewportClasses,
 } from "./constants";
 
-const ScrollArea = ({
-  className,
-  children,
-  scrollbar,
-  ...props
-}: ScrollAreaProps) => (
-  <ScrollAreaPrimitive.Root
-    className={cn(getScrollAreaClasses(), className)}
-    {...props}
-  >
-    <ScrollAreaPrimitive.Viewport
-      className={cn(getScrollAreaViewportClasses())}
-    >
+const ScrollArea = ({ className, children, scrollbar, ...props }: ScrollAreaProps) => (
+  <ScrollAreaPrimitive.Root className={cn(getScrollAreaClasses(), className)} {...props}>
+    <ScrollAreaPrimitive.Viewport className={cn(getScrollAreaViewportClasses())}>
       {children}
     </ScrollAreaPrimitive.Viewport>
     <Scrollbar {...scrollbar} />
@@ -42,9 +32,7 @@ const Scrollbar = forwardRef<
     className={cn(getScrollAreaScrollbarClasses({ orientation }), className)}
     {...props}
   >
-    <ScrollAreaPrimitive.ScrollAreaThumb
-      className={cn(getScrollAreaThumbClasses({ variant }))}
-    />
+    <ScrollAreaPrimitive.ScrollAreaThumb className={cn(getScrollAreaThumbClasses({ variant }))} />
   </ScrollAreaPrimitive.ScrollAreaScrollbar>
 ));
 Scrollbar.displayName = ScrollAreaPrimitive.ScrollAreaScrollbar.displayName;

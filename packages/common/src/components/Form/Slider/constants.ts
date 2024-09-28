@@ -14,32 +14,29 @@ export const getSliderRootClasses = cva(
   }
 );
 
-export const getSliderTrackClasses = cva(
-  "relative h-2 w-full grow overflow-hidden rounded-full",
-  {
-    variants: {
-      variant: {
-        primary: "bg-neutral-content",
-        secondary: "bg-neutral-content",
-        accent: "bg-neutral-content",
-        success: "bg-neutral-content",
-        warning: "bg-neutral-content",
-        info: "bg-neutral-content",
-        error: "bg-neutral-content",
-        neutral: "bg-base-200",
-      },
-      size: {
-        xs: "h-0.5",
-        sm: "h-1",
-        md: "h-2",
-        lg: "h-3",
-      },
+export const getSliderTrackClasses = cva("relative h-2 w-full grow overflow-hidden rounded-full", {
+  variants: {
+    variant: {
+      primary: "bg-neutral-content",
+      secondary: "bg-neutral-content",
+      accent: "bg-neutral-content",
+      success: "bg-neutral-content",
+      warning: "bg-neutral-content",
+      info: "bg-neutral-content",
+      error: "bg-neutral-content",
+      neutral: "bg-base-200",
     },
-    defaultVariants: {
-      variant: "neutral",
+    size: {
+      xs: "h-0.5",
+      sm: "h-1",
+      md: "h-2",
+      lg: "h-3",
     },
-  }
-);
+  },
+  defaultVariants: {
+    variant: "neutral",
+  },
+});
 
 export const getSliderClasses = cva("absolute h-full", {
   variants: {

@@ -1,5 +1,5 @@
 import type { Dispatch, Ref, SetStateAction } from "react";
-import type { DropzoneState, DropzoneOptions } from "react-dropzone";
+import type { DropzoneOptions, DropzoneState } from "react-dropzone";
 
 export type FileUploaderProps = {
   value: File[] | null;

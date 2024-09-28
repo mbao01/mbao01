@@ -1,16 +1,14 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
 import { InfoCircledIcon } from "@radix-ui/react-icons";
-import { type AlertProps } from "./types";
 import { Alert } from "./Alert";
+import { type AlertProps } from "./types";
 
 const withAlert = (_: StoryFn, context: StoryContext<AlertProps>) => {
   return (
     <Alert {...context.args}>
       <InfoCircledIcon className="h-4 w-4" />
       <Alert.Title>Heads up!</Alert.Title>
-      <Alert.Description>
-        You can add components to your app using the cli.
-      </Alert.Description>
+      <Alert.Description>You can add components to your app using the cli.</Alert.Description>
     </Alert>
   );
 };

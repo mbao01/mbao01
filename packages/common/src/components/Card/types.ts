@@ -2,8 +2,7 @@ import React from "react";
 import { type VariantProps } from "../../libs";
 import { getCardClasses } from "./constants";
 
-export type CardProps = React.HTMLAttributes<HTMLDivElement> &
-  VariantProps<typeof getCardClasses>;
+export type CardProps = React.HTMLAttributes<HTMLDivElement> & VariantProps<typeof getCardClasses>;
 
 export type CardActionsProps = React.HTMLAttributes<HTMLDivElement>;
 export type CardBodyProps = React.HTMLAttributes<HTMLDivElement>;

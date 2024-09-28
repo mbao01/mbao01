@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 import { Slider } from "./Slider";
 
 describe("Slider", () => {
@@ -20,9 +20,7 @@ describe("Slider", () => {
     "error",
     "neutral",
   ] as const)("has %s variant", (variant) => {
-    const { asFragment } = render(
-      <Slider name="risk-level" variant={variant} wide />
-    );
+    const { asFragment } = render(<Slider name="risk-level" variant={variant} wide />);
 
     expect(screen.getByRole("slider")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();

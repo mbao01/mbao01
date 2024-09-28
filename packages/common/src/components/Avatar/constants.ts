@@ -48,22 +48,19 @@ const classesConfig = {
 
 export const getAvatarImageClasses = cva("", classesConfig);
 
-export const getAvatarFallbackClasses = cva(
-  "flex items-center justify-center w-full",
-  {
-    ...classesConfig,
-    variants: {
-      ...classesConfig.variants,
-      size: {
-        4: "text-[4px]",
-        8: "text-base",
-        12: "text-lg",
-        16: "text-xl",
-        24: "text-2xl",
-        32: "text-3xl",
-        48: "text-4xl",
-        64: "text-5xl",
-      },
+export const getAvatarFallbackClasses = cva("flex items-center justify-center w-full", {
+  ...classesConfig,
+  variants: {
+    ...classesConfig.variants,
+    size: {
+      4: "text-[4px]",
+      8: "text-base",
+      12: "text-lg",
+      16: "text-xl",
+      24: "text-2xl",
+      32: "text-3xl",
+      48: "text-4xl",
+      64: "text-5xl",
     },
-  }
-);
+  },
+});

@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 import { Progress } from "./Progress";
 
 describe("Progress", () => {
@@ -17,13 +17,7 @@ describe("Progress", () => {
   });
 
   it("has a value label", () => {
-    render(
-      <Progress
-        value={50}
-        max={80}
-        getValueLabel={(value, max) => `${value} of ${max}`}
-      />
-    );
+    render(<Progress value={50} max={80} getValueLabel={(value, max) => `${value} of ${max}`} />);
 
     const progressbar = screen.getByRole("progressbar");
     expect(progressbar).toHaveAttribute("aria-valuetext", "50 of 80");

@@ -1,7 +1,7 @@
-import { useEffect, useRef } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Label } from "../components/Label";
+import { useEffect, useRef } from "react";
 import { FormControl } from "../components/FormControl";
+import { Label } from "../components/Label";
 import { Radio } from "./Radio";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -69,17 +69,11 @@ export const RadioGroup: Story = {
   render: (args) => {
     return (
       <div role="radiogroup">
-        <FormControl
-          as="label"
-          className="flex-row justify-start items-center gap-2"
-        >
+        <FormControl as="label" className="flex-row justify-start items-center gap-2">
           <Radio id="gender-male" name="gender" {...args} />
           <Label htmlFor="gender-male">Male</Label>
         </FormControl>{" "}
-        <FormControl
-          as="label"
-          className="flex-row justify-start items-center gap-2"
-        >
+        <FormControl as="label" className="flex-row justify-start items-center gap-2">
           <Radio id="gender-female" name="gender" {...args} />
           <Label htmlFor="gender-female">Female</Label>
         </FormControl>

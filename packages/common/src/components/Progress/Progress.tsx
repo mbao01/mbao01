@@ -2,9 +2,9 @@
 
 import React from "react";
 import * as ProgressPrimitive from "@radix-ui/react-progress";
-import { type ProgressProps } from "./types";
 import { cn } from "../../utilities";
 import { getProgressClasses, getProgressIndicatorClasses } from "./constants";
+import { type ProgressProps } from "./types";
 
 export const Progress = React.forwardRef<
   React.ElementRef<typeof ProgressPrimitive.Root>,
@@ -20,9 +20,7 @@ export const Progress = React.forwardRef<
     <ProgressPrimitive.Indicator
       className={cn(getProgressIndicatorClasses({ variant }))}
       style={{
-        transform: `translateX(-${
-          (100 * (max - Math.max(Math.min(value ?? 0, max), 0))) / max
-        }%)`,
+        transform: `translateX(-${(100 * (max - Math.max(Math.min(value ?? 0, max), 0))) / max}%)`,
       }}
     />
   </ProgressPrimitive.Root>

@@ -1,18 +1,14 @@
 "use client";
 
 import React, { MutableRefObject } from "react";
-import {
-  defaultCountries,
-  usePhoneInput,
-  FlagImage,
-} from "react-international-phone";
-import { type PhoneProps } from "./types";
-import { Popover } from "../../Popover";
-import { Command } from "../../Command";
+import { defaultCountries, FlagImage, usePhoneInput } from "react-international-phone";
 import { cn } from "../../../utilities";
 import { Button } from "../../Button";
+import { Command } from "../../Command";
+import { Popover } from "../../Popover";
 import { Input } from "../Input";
 import { getPhoneButtonClasses, getPhoneInputClasses } from "./constants";
+import { type PhoneProps } from "./types";
 
 const Phone = React.forwardRef<HTMLInputElement, PhoneProps>(
   (
@@ -31,13 +27,7 @@ const Phone = React.forwardRef<HTMLInputElement, PhoneProps>(
     ref
   ) => {
     const [open, setOpen] = React.useState(false);
-    const {
-      inputValue,
-      handlePhoneValueChange,
-      inputRef,
-      country,
-      setCountry,
-    } = usePhoneInput({
+    const { inputValue, handlePhoneValueChange, inputRef, country, setCountry } = usePhoneInput({
       value: String(defaultValue) ?? "+231",
       defaultCountry: "lr",
       forceDialCode: true,

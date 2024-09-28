@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Drawer } from "./Drawer";
 import { Button } from "../Button";
+import { Drawer } from "./Drawer";
 
 const withDrawer = () => {
   return (
@@ -12,9 +12,7 @@ const withDrawer = () => {
         <div className="mx-auto w-full max-w-sm">
           <Drawer.Header>
             <Drawer.Title>Move Goal</Drawer.Title>
-            <Drawer.Description>
-              Set your daily activity goal.
-            </Drawer.Description>
+            <Drawer.Description>Set your daily activity goal.</Drawer.Description>
           </Drawer.Header>
           <div className="p-4 pb-0 h-[100px]">Content of drawer</div>
           <Drawer.Footer>

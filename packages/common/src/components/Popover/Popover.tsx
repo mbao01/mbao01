@@ -2,8 +2,8 @@
 
 import * as React from "react";
 import * as PopoverPrimitive from "@radix-ui/react-popover";
-import { getPopoverContentClasses } from "./constants";
 import { cn } from "../../utilities";
+import { getPopoverContentClasses } from "./constants";
 import { PopoverContentProps, PopoverProps } from "./types";
 
 const Popover = (props: PopoverProps) => <PopoverPrimitive.Root {...props} />;

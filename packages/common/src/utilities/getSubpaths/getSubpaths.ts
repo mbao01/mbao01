@@ -18,9 +18,7 @@ export const getSubpaths = (
   const segments = pathname?.split(PATH_SEPARATOR).filter(Boolean);
 
   const breadcrumbs = segments.map((segment, index) => {
-    const path = `${PATH_SEPARATOR}${segments
-      .slice(0, index + 1)
-      .join(PATH_SEPARATOR)}`;
+    const path = `${PATH_SEPARATOR}${segments.slice(0, index + 1).join(PATH_SEPARATOR)}`;
 
     return createPathObject(segment, path, pathLabels);
   });

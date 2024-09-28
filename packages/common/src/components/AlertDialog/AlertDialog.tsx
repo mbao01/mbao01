@@ -14,6 +14,7 @@ import type {
   AlertDialogTitleProps,
 } from "./types";
 import { cn } from "../../utilities";
+import { Button } from "../Button";
 import {
   getDialogContentClasses,
   getDialogDescriptionClasses,
@@ -22,11 +23,8 @@ import {
   getDialogOverlayClasses,
   getDialogTitleClasses,
 } from "../Dialog/constants";
-import { Button } from "../Button";
 
-const AlertDialog = (props: AlertDialogProps) => (
-  <AlertDialogPrimitive.Root {...props} />
-);
+const AlertDialog = (props: AlertDialogProps) => <AlertDialogPrimitive.Root {...props} />;
 
 const AlertDialogTrigger = AlertDialogPrimitive.Trigger;
 
@@ -91,8 +89,7 @@ const AlertDialogDescription = React.forwardRef<
     {...props}
   />
 ));
-AlertDialogDescription.displayName =
-  AlertDialogPrimitive.Description.displayName;
+AlertDialogDescription.displayName = AlertDialogPrimitive.Description.displayName;
 
 const AlertDialogAction = React.forwardRef<
   React.ElementRef<typeof AlertDialogPrimitive.Action>,

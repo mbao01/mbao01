@@ -1,27 +1,24 @@
 "use client";
+
 /* eslint-disable react/prop-types */
 import * as React from "react";
-import { Command as CommandPrimitive } from "cmdk";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
-import type {
-  CommandProps,
-  CommandDialogProps,
-  CommandInputProps,
-} from "./types";
-import { Dialog } from "../Dialog";
+import { Command as CommandPrimitive } from "cmdk";
+import type { CommandDialogProps, CommandInputProps, CommandProps } from "./types";
 import { cn } from "../../utilities";
+import { Dialog } from "../Dialog";
 import {
-  getDialogContentClasses,
   getCommandClasses,
   getCommandDialogClasses,
   getCommandEmptyClasses,
+  getCommandGroupClasses,
   getCommandInputClasses,
   getCommandInputWrapperClasses,
-  getCommandListClasses,
-  getCommandGroupClasses,
-  getCommandSeparatorClasses,
   getCommandItemClasses,
+  getCommandListClasses,
+  getCommandSeparatorClasses,
   getCommandShortcutClasses,
+  getDialogContentClasses,
 } from "./constants";
 
 const Command = ({ className, ...props }: CommandProps) => (
@@ -60,11 +57,7 @@ const CommandList = React.forwardRef<
   React.ElementRef<typeof CommandPrimitive.List>,
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.List>
 >(({ className, ...props }, ref) => (
-  <CommandPrimitive.List
-    ref={ref}
-    className={cn(getCommandListClasses(), className)}
-    {...props}
-  />
+  <CommandPrimitive.List ref={ref} className={cn(getCommandListClasses(), className)} {...props} />
 ));
 
 CommandList.displayName = CommandPrimitive.List.displayName;
@@ -111,22 +104,13 @@ const CommandItem = React.forwardRef<
   React.ElementRef<typeof CommandPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.Item>
 >(({ className, ...props }, ref) => (
-  <CommandPrimitive.Item
-    ref={ref}
-    className={cn(getCommandItemClasses(), className)}
-    {...props}
-  />
+  <CommandPrimitive.Item ref={ref} className={cn(getCommandItemClasses(), className)} {...props} />
 ));
 
 CommandItem.displayName = CommandPrimitive.Item.displayName;
 
-const CommandShortcut = ({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLSpanElement>) => {
-  return (
-    <span className={cn(getCommandShortcutClasses(), className)} {...props} />
-  );
+const CommandShortcut = ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>) => {
+  return <span className={cn(getCommandShortcutClasses(), className)} {...props} />;
 };
 CommandShortcut.displayName = "CommandShortcut";
 

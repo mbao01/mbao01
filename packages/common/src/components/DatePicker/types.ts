@@ -35,16 +35,12 @@ export type DateRangePickerProps = BaseDatePickerProps &
       from: string | undefined;
       to: string | undefined;
     };
-    getRangeLabel?: (
-      range: DateRange | undefined
-    ) => string | JSX.Element | undefined;
+    getRangeLabel?: (range: DateRange | undefined) => string | JSX.Element | undefined;
   };
 
 export type MultipleDatesPickerProps = BaseDatePickerProps &
   Omit<DayPickerMultipleProps, "mode"> & {
     defaultDates?: Date[];
     getDatesValue?: (dates: Date[] | undefined) => string[] | undefined;
-    getDatesLabel?: (
-      dates: Date[] | undefined
-    ) => string | JSX.Element | undefined;
+    getDatesLabel?: (dates: Date[] | undefined) => string | JSX.Element | undefined;
   };

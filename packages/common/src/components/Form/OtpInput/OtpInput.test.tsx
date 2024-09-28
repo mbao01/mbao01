@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 import { OtpInput } from "./OtpInput";
 
 describe("OtpInput", () => {
@@ -7,9 +7,7 @@ describe("OtpInput", () => {
     const { asFragment } = render(<OtpInput />);
 
     [1, 2, 3, 4].forEach((index) => {
-      expect(
-        screen.getByLabelText(`Please enter OTP character ${index}`)
-      ).toBeInTheDocument();
+      expect(screen.getByLabelText(`Please enter OTP character ${index}`)).toBeInTheDocument();
     });
 
     expect(asFragment()).toMatchSnapshot();

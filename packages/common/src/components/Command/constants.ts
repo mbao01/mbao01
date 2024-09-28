@@ -10,17 +10,13 @@ export const getCommandDialogClasses = cva(
   "[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5"
 );
 
-export const getCommandInputWrapperClasses = cva(
-  "flex items-center border-b px-3"
-);
+export const getCommandInputWrapperClasses = cva("flex items-center border-b px-3");
 
 export const getCommandInputClasses = cva(
   "flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
 );
 
-export const getCommandListClasses = cva(
-  "max-h-[300px] overflow-y-auto overflow-x-hidden"
-);
+export const getCommandListClasses = cva("max-h-[300px] overflow-y-auto overflow-x-hidden");
 
 export const getCommandEmptyClasses = cva("py-6 text-center text-sm");
 

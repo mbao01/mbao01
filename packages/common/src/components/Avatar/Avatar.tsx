@@ -1,33 +1,16 @@
 "use client";
 
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
-import type {
-  AvatarProps,
-  AvatarImageProps,
-  AvatarFallbackProps,
-} from "./types";
+import type { AvatarFallbackProps, AvatarImageProps, AvatarProps } from "./types";
 import { cn } from "../../utilities";
-import {
-  getAvatarClasses,
-  getAvatarImageClasses,
-  getAvatarFallbackClasses,
-} from "./constants";
+import { getAvatarClasses, getAvatarFallbackClasses, getAvatarImageClasses } from "./constants";
 
 const Avatar = ({ className, size, status, ...props }: AvatarProps) => (
-  <AvatarPrimitive.Root
-    className={cn(getAvatarClasses({ size, status }), className)}
-    {...props}
-  />
+  <AvatarPrimitive.Root className={cn(getAvatarClasses({ size, status }), className)} {...props} />
 );
 Avatar.displayName = AvatarPrimitive.Root.displayName;
 
-const AvatarImage = ({
-  className,
-  ring,
-  shape,
-  variant,
-  ...props
-}: AvatarImageProps) => (
+const AvatarImage = ({ className, ring, shape, variant, ...props }: AvatarImageProps) => (
   <AvatarPrimitive.Image
     className={cn(getAvatarImageClasses({ ring, shape, variant }), className)}
     {...props}
@@ -44,10 +27,7 @@ const AvatarFallback = ({
   ...props
 }: AvatarFallbackProps) => (
   <AvatarPrimitive.Fallback
-    className={cn(
-      getAvatarFallbackClasses({ ring, size, shape, variant }),
-      className
-    )}
+    className={cn(getAvatarFallbackClasses({ ring, size, shape, variant }), className)}
     {...props}
   />
 );

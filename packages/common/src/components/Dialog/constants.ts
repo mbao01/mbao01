@@ -29,17 +29,13 @@ export const getDialogContentClasses = cva(
   }
 );
 
-export const getDialogHeaderClasses = cva(
-  "flex flex-col space-y-1.5 text-center sm:text-left"
-);
+export const getDialogHeaderClasses = cva("flex flex-col space-y-1.5 text-center sm:text-left");
 
 export const getDialogFooterClasses = cva(
   "flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2"
 );
 
-export const getDialogTitleClasses = cva(
-  "text-lg font-semibold leading-none tracking-tight"
-);
+export const getDialogTitleClasses = cva("text-lg font-semibold leading-none tracking-tight");
 
 export const getDialogDescriptionClasses = cva("text-sm text-muted-foreground");
 

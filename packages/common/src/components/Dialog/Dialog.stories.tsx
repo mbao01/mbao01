@@ -1,7 +1,7 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
-import { type DialogContentProps } from "./types";
-import { Dialog } from "./Dialog";
 import { Button } from "../Button";
+import { Dialog } from "./Dialog";
+import { type DialogContentProps } from "./types";
 
 const withDialog = (_: StoryFn, context: StoryContext<DialogContentProps>) => {
   const { variant, side } = context.args;

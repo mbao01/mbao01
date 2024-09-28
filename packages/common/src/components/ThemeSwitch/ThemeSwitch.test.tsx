@@ -1,9 +1,9 @@
-import { MockInstance, describe, expect, it, vi } from "vitest";
 import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Cookies from "universal-cookie";
-import { ThemeSwitch } from "./ThemeSwitch";
+import { describe, expect, it, MockInstance, vi } from "vitest";
 import { Button } from "../Button";
+import { ThemeSwitch } from "./ThemeSwitch";
 
 vi.mock("universal-cookie", () => {
   const mockedCookies = {
@@ -71,26 +71,16 @@ describe("ThemeSwitch", () => {
         render={({ theme, setTheme }) => {
           const nextTheme = theme === "light" ? "dark" : "light";
 
-          return (
-            <Button onClick={() => setTheme(nextTheme)}>
-              Switch to {nextTheme} theme
-            </Button>
-          );
+          return <Button onClick={() => setTheme(nextTheme)}>Switch to {nextTheme} theme</Button>;
         }}
       />
     );
 
-    await user.click(
-      screen.getByRole("button", { name: "Switch to dark theme" })
-    );
+    await user.click(screen.getByRole("button", { name: "Switch to dark theme" }));
 
-    await user.click(
-      screen.getByRole("button", { name: "Switch to light theme" })
-    );
+    await user.click(screen.getByRole("button", { name: "Switch to light theme" }));
 
-    expect(
-      screen.getByRole("button", { name: "Switch to dark theme" })
-    ).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Switch to dark theme" })).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 });

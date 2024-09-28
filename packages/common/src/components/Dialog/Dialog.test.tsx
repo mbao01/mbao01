@@ -1,8 +1,8 @@
-import { describe, expect, it } from "vitest";
 import { render, screen, within } from "@testing-library/react";
-import { type DialogContentProps } from "./types";
-import { Dialog } from "./Dialog";
 import userEvent from "@testing-library/user-event";
+import { describe, expect, it } from "vitest";
+import { Dialog } from "./Dialog";
+import { type DialogContentProps } from "./types";
 
 describe("Dialog", () => {
   const renderDialog = (contentProps?: DialogContentProps) =>
@@ -25,9 +25,7 @@ describe("Dialog", () => {
   it("renders a dialog trigger", () => {
     const { asFragment } = renderDialog();
 
-    expect(
-      screen.getByRole("button", { name: "Edit Profile" })
-    ).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Edit Profile" })).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -51,21 +49,15 @@ describe("Dialog", () => {
     const dialog = screen.getByRole("dialog");
 
     // dialog heading
-    expect(
-      within(dialog).getByRole("heading", { name: "Edit profile" })
-    ).toBeInTheDocument();
+    expect(within(dialog).getByRole("heading", { name: "Edit profile" })).toBeInTheDocument();
 
     // dialog description
     expect(
-      within(dialog).getByText(
-        "Make changes to your profile here. Click save when you are done."
-      )
+      within(dialog).getByText("Make changes to your profile here. Click save when you are done.")
     ).toBeInTheDocument();
 
     // dialog content
-    expect(
-      within(dialog).getByText("Some content goes here!")
-    ).toBeInTheDocument();
+    expect(within(dialog).getByText("Some content goes here!")).toBeInTheDocument();
 
     // dialog footer
     expect(within(dialog).getByText("Footer section")).toBeInTheDocument();

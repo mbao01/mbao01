@@ -1,9 +1,9 @@
-import { describe, expect, it, vi } from "vitest";
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { type DrawerProps } from "./types";
-import { Drawer } from "./Drawer";
+import { describe, expect, it, vi } from "vitest";
 import { Button } from "../Button";
+import { Drawer } from "./Drawer";
+import { type DrawerProps } from "./types";
 
 describe("Drawer", () => {
   const renderDrawer = (props?: DrawerProps) => {
@@ -15,9 +15,7 @@ describe("Drawer", () => {
         <Drawer.Content>
           <Drawer.Header>
             <Drawer.Title>Move Goal</Drawer.Title>
-            <Drawer.Description>
-              Set your daily activity goal.
-            </Drawer.Description>
+            <Drawer.Description>Set your daily activity goal.</Drawer.Description>
           </Drawer.Header>
           <div>Content of drawer</div>
           <Drawer.Footer>

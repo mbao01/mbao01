@@ -1,6 +1,6 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { describe, expect, it } from "vitest";
 import { Checkbox } from "./Checkbox";
 
 describe("Checkbox", () => {
@@ -36,22 +36,15 @@ describe("Checkbox", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it.each([
-    "primary",
-    "secondary",
-    "accent",
-    "success",
-    "warning",
-    "info",
-    "error",
-  ] as const)("has %s variant", (variant) => {
-    const { asFragment } = render(
-      <Checkbox name="name" defaultChecked variant={variant} />
-    );
+  it.each(["primary", "secondary", "accent", "success", "warning", "info", "error"] as const)(
+    "has %s variant",
+    (variant) => {
+      const { asFragment } = render(<Checkbox name="name" defaultChecked variant={variant} />);
 
-    expect(screen.getByRole("checkbox")).toBeInTheDocument();
-    expect(asFragment()).toMatchSnapshot();
-  });
+      expect(screen.getByRole("checkbox")).toBeInTheDocument();
+      expect(asFragment()).toMatchSnapshot();
+    }
+  );
 
   it.each([
     { size: "xs", name: "tiny" },

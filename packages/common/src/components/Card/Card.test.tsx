@@ -25,9 +25,7 @@ describe("Card", () => {
       </Card>
     );
 
-    expect(
-      screen.getByRole("heading", { name: "Nike Shoe!", level: 3 })
-    ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Nike Shoe!", level: 3 })).toBeInTheDocument();
     expect(screen.getByText("Real cool shoe")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
@@ -43,9 +41,7 @@ describe("Card", () => {
       </Card>
     );
 
-    expect(
-      screen.getByRole("heading", { name: "Nike Shoe!", level: 3 })
-    ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Nike Shoe!", level: 3 })).toBeInTheDocument();
     expect(screen.getByText("Real cool shoe")).toBeInTheDocument();
     expect(screen.getByText("Some actions content")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
@@ -76,9 +72,7 @@ describe("Card", () => {
       </Card>
     );
 
-    expect(
-      screen.getByRole("heading", { name: "Nike Shoe!", level: 3 })
-    ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Nike Shoe!", level: 3 })).toBeInTheDocument();
     expect(screen.getByText("Some real cool shoe")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
@@ -92,10 +86,7 @@ describe("Card", () => {
     );
 
     expect(screen.getByText("Real cool shoe")).toBeInTheDocument();
-    expect(screen.getByRole("img", { name: "my image" })).toHaveAttribute(
-      "src",
-      "image.jpg"
-    );
+    expect(screen.getByRole("img", { name: "my image" })).toHaveAttribute("src", "image.jpg");
     expect(asFragment()).toMatchSnapshot();
   });
 

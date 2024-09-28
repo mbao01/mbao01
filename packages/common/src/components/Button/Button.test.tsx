@@ -1,15 +1,13 @@
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 import { Button } from "./";
-import userEvent from "@testing-library/user-event";
-import { render, screen } from "@testing-library/react";
 
 describe("Button", () => {
   it("has a label", () => {
     const { asFragment } = render(<Button>Hello, World 🌍</Button>);
 
-    expect(
-      screen.getByRole("button", { name: "Hello, World 🌍" })
-    ).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Hello, World 🌍" })).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 

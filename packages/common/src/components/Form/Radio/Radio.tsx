@@ -1,7 +1,7 @@
 import * as React from "react";
-import { type RadioProps } from "./types";
-import { getRadioClasses } from "./constants";
 import { cn } from "../../../utilities";
+import { getRadioClasses } from "./constants";
+import { type RadioProps } from "./types";
 
 const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
   ({ className, size, variant, ...props }, ref) => (

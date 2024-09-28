@@ -1,8 +1,7 @@
-import c from "clsx";
 import type { Meta, StoryObj } from "@storybook/react";
-
-import { Card } from "./Card";
+import c from "clsx";
 import { Button } from "../Button";
+import { Card } from "./Card";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {

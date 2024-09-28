@@ -1,6 +1,6 @@
+import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 import { type VariantProps } from "../../libs";
 import { getTooltipArrowClasses, getTooltipContentClasses } from "./constants";
-import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 
 export type TooltipArrowProps = React.HTMLAttributes<
   React.ElementRef<typeof TooltipPrimitive.Arrow>

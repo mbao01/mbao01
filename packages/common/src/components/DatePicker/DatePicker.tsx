@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { format } from "date-fns";
 import { CalendarIcon } from "@radix-ui/react-icons";
-import { type DatePickerProps } from "./types";
+import { format } from "date-fns";
 import { cn } from "../../utilities";
 import { Button } from "../Button";
 import { Calendar } from "../Calendar";
 import { Popover } from "../Popover";
+import { type DatePickerProps } from "./types";
 
 export const DatePicker = ({
   name,
@@ -50,11 +50,7 @@ export const DatePicker = ({
           outline={outline}
           variant={variant}
           disabled={disabled}
-          className={cn(
-            "justify-start",
-            !date && "font-normal",
-            triggerClassName
-          )}
+          className={cn("justify-start", !date && "font-normal", triggerClassName)}
           value={dateValue}
         >
           {dateLabel ?? <span>{label ?? "Pick a date"}</span>}

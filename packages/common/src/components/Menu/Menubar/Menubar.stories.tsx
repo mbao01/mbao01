@@ -59,9 +59,7 @@ const withMenubar = () => {
         <Menubar.Trigger>View</Menubar.Trigger>
         <Menubar.Content>
           <Menubar.CheckboxItem>Always Show Bookmarks Bar</Menubar.CheckboxItem>
-          <Menubar.CheckboxItem checked>
-            Always Show Full URLs
-          </Menubar.CheckboxItem>
+          <Menubar.CheckboxItem checked>Always Show Full URLs</Menubar.CheckboxItem>
           <Menubar.Separator />
           <Menubar.Item inset>
             Reload <Menubar.Shortcut>⌘R</Menubar.Shortcut>

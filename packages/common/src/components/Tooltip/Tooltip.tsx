@@ -1,12 +1,10 @@
 import React from "react";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 import type { TooltipArrowProps, TooltipContentProps } from "./types";
-import { getTooltipArrowClasses, getTooltipContentClasses } from "./constants";
 import { cn } from "../../utilities";
+import { getTooltipArrowClasses, getTooltipContentClasses } from "./constants";
 
-const Tooltip = (props: TooltipPrimitive.TooltipProps) => (
-  <TooltipPrimitive.Root {...props} />
-);
+const Tooltip = (props: TooltipPrimitive.TooltipProps) => <TooltipPrimitive.Root {...props} />;
 
 const TooltipArrow = ({ className, variant, ...props }: TooltipArrowProps) => (
   <TooltipPrimitive.Arrow

@@ -19,15 +19,8 @@ import {
   getNavigationMenuViewportClasses,
 } from "./constants";
 
-const NavigationMenu = ({
-  className,
-  children,
-  ...props
-}: NavigationMenuProps) => (
-  <NavigationMenuPrimitive.Root
-    className={cn(getNavigationMenuClasses(), className)}
-    {...props}
-  >
+const NavigationMenu = ({ className, children, ...props }: NavigationMenuProps) => (
+  <NavigationMenuPrimitive.Root className={cn(getNavigationMenuClasses(), className)} {...props}>
     {children}
     <NavigationMenuViewport />
   </NavigationMenuPrimitive.Root>
@@ -88,8 +81,7 @@ const NavigationMenuViewport = forwardRef<
     />
   </div>
 ));
-NavigationMenuViewport.displayName =
-  NavigationMenuPrimitive.Viewport.displayName;
+NavigationMenuViewport.displayName = NavigationMenuPrimitive.Viewport.displayName;
 
 const NavigationMenuIndicator = forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.Indicator>,
@@ -103,8 +95,7 @@ const NavigationMenuIndicator = forwardRef<
     <div className="relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm bg-border shadow-md" />
   </NavigationMenuPrimitive.Indicator>
 ));
-NavigationMenuIndicator.displayName =
-  NavigationMenuPrimitive.Indicator.displayName;
+NavigationMenuIndicator.displayName = NavigationMenuPrimitive.Indicator.displayName;
 
 NavigationMenu.List = NavigationMenuList;
 NavigationMenu.Item = NavigationMenuPrimitive.Item;

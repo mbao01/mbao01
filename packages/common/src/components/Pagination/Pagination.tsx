@@ -1,19 +1,8 @@
 import { forwardRef } from "react";
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  DotsHorizontalIcon,
-} from "@radix-ui/react-icons";
-import {
-  PaginationContentProps,
-  PaginationEllipsisProps,
-  PaginationItemProps,
-  PaginationLinkProps,
-  PaginationNextProps,
-  PaginationPreviousProps,
-  type PaginationProps,
-} from "./types";
+import { ChevronLeftIcon, ChevronRightIcon, DotsHorizontalIcon } from "@radix-ui/react-icons";
+import type { PaginationProps } from "./types";
 import { cn } from "../../utilities";
+import { getButtonClasses } from "../Button/constants";
 import {
   getPaginationClasses,
   getPaginationContentClasses,
@@ -21,8 +10,14 @@ import {
   getPaginationNextClasses,
   getPaginationPreviousClasses,
 } from "./constants";
-
-import { getButtonClasses } from "../Button/constants";
+import {
+  PaginationContentProps,
+  PaginationEllipsisProps,
+  PaginationItemProps,
+  PaginationLinkProps,
+  PaginationNextProps,
+  PaginationPreviousProps,
+} from "./types";
 
 const Pagination = ({ className, ...props }: PaginationProps) => (
   <nav
@@ -36,18 +31,14 @@ Pagination.displayName = "Pagination";
 
 const PaginationContent = forwardRef<HTMLUListElement, PaginationContentProps>(
   ({ className, ...props }, ref) => (
-    <ul
-      ref={ref}
-      className={cn(getPaginationContentClasses(), className)}
-      {...props}
-    />
+    <ul ref={ref} className={cn(getPaginationContentClasses(), className)} {...props} />
   )
 );
 PaginationContent.displayName = "PaginationContent";
 
-const PaginationItem = forwardRef<HTMLLIElement, PaginationItemProps>(
-  (props, ref) => <li ref={ref} {...props} />
-);
+const PaginationItem = forwardRef<HTMLLIElement, PaginationItemProps>((props, ref) => (
+  <li ref={ref} {...props} />
+));
 PaginationItem.displayName = "PaginationItem";
 
 const PaginationLink = ({
@@ -75,11 +66,7 @@ const PaginationLink = ({
 );
 PaginationLink.displayName = "PaginationLink";
 
-const PaginationPrevious = ({
-  className,
-  children,
-  ...props
-}: PaginationPreviousProps) => (
+const PaginationPrevious = ({ className, children, ...props }: PaginationPreviousProps) => (
   <PaginationLink
     aria-label="Go to previous page"
     className={cn(getPaginationPreviousClasses(), className)}
@@ -91,11 +78,7 @@ const PaginationPrevious = ({
 );
 PaginationPrevious.displayName = "PaginationPrevious";
 
-const PaginationNext = ({
-  className,
-  children,
-  ...props
-}: PaginationNextProps) => (
+const PaginationNext = ({ className, children, ...props }: PaginationNextProps) => (
   <PaginationLink
     aria-label="Go to next page"
     className={cn(getPaginationNextClasses(), className)}
@@ -107,15 +90,8 @@ const PaginationNext = ({
 );
 PaginationNext.displayName = "PaginationNext";
 
-const PaginationEllipsis = ({
-  className,
-  ...props
-}: PaginationEllipsisProps) => (
-  <span
-    aria-hidden
-    className={cn(getPaginationEllipsisClasses(), className)}
-    {...props}
-  >
+const PaginationEllipsis = ({ className, ...props }: PaginationEllipsisProps) => (
+  <span aria-hidden className={cn(getPaginationEllipsisClasses(), className)} {...props}>
     <DotsHorizontalIcon className="h-4 w-4" />
     <span className="sr-only">More pages</span>
   </span>

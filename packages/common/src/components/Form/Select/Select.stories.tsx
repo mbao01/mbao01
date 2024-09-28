@@ -5,14 +5,7 @@ type ArgsType = Partial<{
   size: "xs" | "sm" | "md" | "lg";
   wide: boolean;
   outline: boolean;
-  variant:
-    | "primary"
-    | "secondary"
-    | "accent"
-    | "success"
-    | "warning"
-    | "info"
-    | "error";
+  variant: "primary" | "secondary" | "accent" | "success" | "warning" | "info" | "error";
 }>;
 
 const withSelect = (_: StoryFn, context: StoryContext<ArgsType>) => {
@@ -20,12 +13,7 @@ const withSelect = (_: StoryFn, context: StoryContext<ArgsType>) => {
   console.log(context.args);
   return (
     <Select>
-      <Select.Trigger
-        size={size}
-        wide={wide}
-        variant={variant}
-        outline={outline}
-      >
+      <Select.Trigger size={size} wide={wide} variant={variant} outline={outline}>
         <Select.Value placeholder="Theme" />
       </Select.Trigger>
       <Select.Content>
@@ -68,15 +56,7 @@ const meta = {
     },
     variant: {
       control: "select",
-      options: [
-        "primary",
-        "secondary",
-        "accent",
-        "success",
-        "warning",
-        "info",
-        "error",
-      ],
+      options: ["primary", "secondary", "accent", "success", "warning", "info", "error"],
     },
   },
   decorators: [withSelect],

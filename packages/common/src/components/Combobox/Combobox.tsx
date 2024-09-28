@@ -4,9 +4,9 @@ import * as React from "react";
 import { CaretSortIcon, CheckIcon } from "@radix-ui/react-icons";
 import type { ComboboxProps, Item } from "./types";
 import { cn } from "../../utilities";
+import { Button } from "../Button";
 import { Command } from "../Command";
 import { Popover } from "../Popover";
-import { Button } from "../Button";
 
 export const Combobox = <T extends Item>({
   label,
@@ -39,13 +39,8 @@ export const Combobox = <T extends Item>({
       </Popover.Trigger>
       <Popover.Content className={cn("w-[200px] p-0", classes?.popoverContent)}>
         <Command className={cn(classes?.content)}>
-          <Command.Input
-            placeholder={placeholder}
-            className={cn(classes?.input)}
-          />
-          <Command.Empty className={cn(classes?.empty)}>
-            {emptyText}
-          </Command.Empty>
+          <Command.Input placeholder={placeholder} className={cn(classes?.input)} />
+          <Command.Empty className={cn(classes?.empty)}>{emptyText}</Command.Empty>
           <Command.List>
             <Command.Group className={cn(classes?.group)}>
               {items?.map((item) => (

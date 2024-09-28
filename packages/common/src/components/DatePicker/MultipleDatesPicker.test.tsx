@@ -1,6 +1,6 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { describe, expect, it } from "vitest";
 import { MultipleDatesPicker } from "./MultipleDatesPicker";
 
 describe("MultipleDatesPicker", () => {
@@ -40,10 +40,7 @@ describe("MultipleDatesPicker", () => {
     await user.click(button);
 
     expect(screen.getByText("March 2022")).toBeInTheDocument();
-    expect(screen.getByRole("gridcell", { name: "15" })).toHaveAttribute(
-      "aria-selected",
-      "true"
-    );
+    expect(screen.getByRole("gridcell", { name: "15" })).toHaveAttribute("aria-selected", "true");
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -51,10 +48,7 @@ describe("MultipleDatesPicker", () => {
     const user = userEvent.setup();
 
     const { asFragment } = render(
-      <MultipleDatesPicker
-        numberOfMonths={2}
-        defaultMonth={new Date("2022-03-01")}
-      />
+      <MultipleDatesPicker numberOfMonths={2} defaultMonth={new Date("2022-03-01")} />
     );
 
     const button = screen.getByRole("button", {
@@ -68,22 +62,16 @@ describe("MultipleDatesPicker", () => {
   });
 
   it("has a custom label", () => {
-    const { asFragment } = render(
-      <MultipleDatesPicker label="When will you be visiting?" />
-    );
+    const { asFragment } = render(<MultipleDatesPicker label="When will you be visiting?" />);
 
-    expect(
-      screen.getByRole("button", { name: "When will you be visiting?" })
-    ).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "When will you be visiting?" })).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("is disabled", () => {
     const { asFragment } = render(<MultipleDatesPicker disabled />);
 
-    expect(
-      screen.getByRole("button", { name: "Pick one or more dates" })
-    ).toBeDisabled();
+    expect(screen.getByRole("button", { name: "Pick one or more dates" })).toBeDisabled();
     expect(asFragment()).toMatchSnapshot();
   });
 });

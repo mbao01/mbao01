@@ -2,11 +2,7 @@
 
 import { forwardRef } from "react";
 import * as ContextMenuPrimitive from "@radix-ui/react-context-menu";
-import {
-  CheckIcon,
-  ChevronRightIcon,
-  DotFilledIcon,
-} from "@radix-ui/react-icons";
+import { CheckIcon, ChevronRightIcon, DotFilledIcon } from "@radix-ui/react-icons";
 import type {
   ContextMenuCheckboxItemProps,
   ContextMenuContentProps,
@@ -32,9 +28,7 @@ import {
   getMenubarSubTriggerClasses,
 } from "../Menubar/constants";
 
-const ContextMenu = (props: ContextMenuProps) => (
-  <ContextMenuPrimitive.Root {...props} />
-);
+const ContextMenu = (props: ContextMenuProps) => <ContextMenuPrimitive.Root {...props} />;
 
 const ContextMenuSubTrigger = forwardRef<
   React.ElementRef<typeof ContextMenuPrimitive.SubTrigger>,
@@ -106,8 +100,7 @@ const ContextMenuCheckboxItem = forwardRef<
     {children}
   </ContextMenuPrimitive.CheckboxItem>
 ));
-ContextMenuCheckboxItem.displayName =
-  ContextMenuPrimitive.CheckboxItem.displayName;
+ContextMenuCheckboxItem.displayName = ContextMenuPrimitive.CheckboxItem.displayName;
 
 const ContextMenuRadioItem = forwardRef<
   React.ElementRef<typeof ContextMenuPrimitive.RadioItem>,
@@ -152,13 +145,8 @@ const ContextMenuSeparator = forwardRef<
 ));
 ContextMenuSeparator.displayName = ContextMenuPrimitive.Separator.displayName;
 
-const ContextMenuShortcut = ({
-  className,
-  ...props
-}: ContextMenuShortcutProps) => {
-  return (
-    <span className={cn(getMenubarShortcutClasses(), className)} {...props} />
-  );
+const ContextMenuShortcut = ({ className, ...props }: ContextMenuShortcutProps) => {
+  return <span className={cn(getMenubarShortcutClasses(), className)} {...props} />;
 };
 ContextMenuShortcut.displayName = "ContextMenuShortcut";
 

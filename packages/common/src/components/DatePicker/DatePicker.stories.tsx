@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { format } from "date-fns/format";
 import { addDays } from "date-fns/addDays";
-import { es, arSA } from "date-fns/locale";
+import { format } from "date-fns/format";
+import { arSA, es } from "date-fns/locale";
 import { Select } from "../Form/Select";
 import { DatePicker } from "./DatePicker";
 
@@ -113,9 +113,7 @@ export const OtherNumberingSystem: Story = {
 export const WithPresets: Story = {
   args: {
     children: ({ setDate }) => (
-      <Select
-        onValueChange={(value) => setDate(addDays(new Date(), parseInt(value)))}
-      >
+      <Select onValueChange={(value) => setDate(addDays(new Date(), parseInt(value)))}>
         <Select.Trigger wide outline>
           <Select.Value placeholder="Select" />
         </Select.Trigger>

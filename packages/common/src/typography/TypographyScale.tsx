@@ -11,22 +11,21 @@ export const TypographyScale = () => {
       <sub>subscript text</sub>
 
       <p>
-        Paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore
-        consectetur, neque doloribus, cupiditate numquam dignissimos laborum
-        fugiat deleniti? Eum quasi quidem quibusdam.
+        Paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
+        unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam
+        dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
       </p>
 
       <button type="button">Primary button text</button>
       <blockquote>
-        Blockquote: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quos blanditiis tenetur unde suscipit, quam beatae
+        Blockquote: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis
+        tenetur unde suscipit, quam beatae
       </blockquote>
       <dl>
         <dt>Description term</dt>
         <dd>
-          Description detail: Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae
+          Description detail: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+          blanditiis tenetur unde suscipit, quam beatae
         </dd>
       </dl>
     </div>

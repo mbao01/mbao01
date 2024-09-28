@@ -27,14 +27,10 @@ const withContextMenu = () => {
               Save Page As...
               <ContextMenu.Shortcut>⇧⌘S</ContextMenu.Shortcut>
             </ContextMenu.Item>
-            <ContextMenu.Item variant="error">
-              Create Shortcut...
-            </ContextMenu.Item>
+            <ContextMenu.Item variant="error">Create Shortcut...</ContextMenu.Item>
             <ContextMenu.Item variant="info">Name Window...</ContextMenu.Item>
             <ContextMenu.Separator />
-            <ContextMenu.Item variant="neutral">
-              Developer Tools
-            </ContextMenu.Item>
+            <ContextMenu.Item variant="neutral">Developer Tools</ContextMenu.Item>
           </ContextMenu.SubContent>
         </ContextMenu.Sub>
         <ContextMenu.Separator />
@@ -42,9 +38,7 @@ const withContextMenu = () => {
           Show Bookmarks Bar
           <ContextMenu.Shortcut>⌘⇧B</ContextMenu.Shortcut>
         </ContextMenu.CheckboxItem>
-        <ContextMenu.CheckboxItem variant="primary">
-          Show Full URLs
-        </ContextMenu.CheckboxItem>
+        <ContextMenu.CheckboxItem variant="primary">Show Full URLs</ContextMenu.CheckboxItem>
         <ContextMenu.Separator />
         <ContextMenu.RadioGroup value="pedro">
           <ContextMenu.Label inset>People</ContextMenu.Label>

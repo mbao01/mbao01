@@ -1,14 +1,10 @@
 "use client";
 
 import { forwardRef, useCallback, useEffect, useRef, useState } from "react";
-import { useDropzone, FileRejection } from "react-dropzone";
-import { toast } from "sonner";
+import { FileRejection, useDropzone } from "react-dropzone";
 import { TrashIcon } from "@radix-ui/react-icons";
-import type {
-  DirectionOptions,
-  FileUploaderInputProps,
-  FileUploaderProps,
-} from "./types";
+import { toast } from "sonner";
+import type { DirectionOptions, FileUploaderInputProps, FileUploaderProps } from "./types";
 import { cn } from "../../utilities";
 import { FileUploaderContext } from "./FileUploaderContext";
 import { useFileUpload } from "./useFileUpload";
@@ -158,9 +154,7 @@ export const FileUploader = ({
       if (rejectedFiles.length > 0) {
         for (const rejectedFile of rejectedFiles) {
           if (rejectedFile.errors[0]?.code === "file-too-large") {
-            toast.error(
-              `File is too large. Max size is ${maxSize / 1024 / 1024}MB`
-            );
+            toast.error(`File is too large. Max size is ${maxSize / 1024 / 1024}MB`);
             break;
           }
           if (rejectedFile.errors[0]?.message) {
@@ -183,9 +177,7 @@ export const FileUploader = ({
     setIsLOF(false);
   }, [value, maxFiles]);
 
-  const opts = dropzoneOptions
-    ? dropzoneOptions
-    : { accept, maxFiles, maxSize, multiple };
+  const opts = dropzoneOptions ? dropzoneOptions : { accept, maxFiles, maxSize, multiple };
 
   const dropzoneState = useDropzone({
     ...opts,
@@ -226,33 +218,28 @@ export const FileUploader = ({
 
 FileUploader.displayName = "FileUploader";
 
-const FileUploaderContent = forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ children, className, ...props }, ref) => {
-  const { orientation } = useFileUpload();
-  const containerRef = useRef<HTMLDivElement>(null);
+const FileUploaderContent = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
+  ({ children, className, ...props }, ref) => {
+    const { orientation } = useFileUpload();
+    const containerRef = useRef<HTMLDivElement>(null);
 
-  return (
-    <div
-      className={cn("w-full px-1")}
-      ref={containerRef}
-      aria-description="content file holder"
-    >
-      <div
-        {...props}
-        ref={ref}
-        className={cn(
-          "flex rounded-xl gap-1",
-          orientation === "horizontal" ? "flex-raw flex-wrap" : "flex-col",
-          className
-        )}
-      >
-        {children}
+    return (
+      <div className={cn("w-full px-1")} ref={containerRef} aria-description="content file holder">
+        <div
+          {...props}
+          ref={ref}
+          className={cn(
+            "flex rounded-xl gap-1",
+            orientation === "horizontal" ? "flex-raw flex-wrap" : "flex-col",
+            className
+          )}
+        >
+          {children}
+        </div>
       </div>
-    </div>
-  );
-});
+    );
+  }
+);
 
 FileUploaderContent.displayName = "FileUploaderContent";
 
@@ -277,18 +264,14 @@ const FileUploaderItem = forwardRef<
       </div>
       <button
         type="button"
-        className={cn(
-          "absolute",
-          direction === "rtl" ? "top-1 left-1" : "top-1 right-1"
-        )}
+        className={cn("absolute", direction === "rtl" ? "top-1 left-1" : "top-1 right-1")}
         onClick={() => removeFileFromSet(index)}
       >
         <span className="sr-only">remove item {index}</span>
         <TrashIcon
-          className={cn(
-            "w-4 h-4 shrink-0 hover:stroke-destructive duration-200 ease-in-out",
-            { "text-error": isSelected }
-          )}
+          className={cn("w-4 h-4 shrink-0 hover:stroke-destructive duration-200 ease-in-out", {
+            "text-error": isSelected,
+          })}
         />
       </button>
     </div>
@@ -297,13 +280,8 @@ const FileUploaderItem = forwardRef<
 
 FileUploaderItem.displayName = "FileUploaderItem";
 
-const FileUploaderInput = ({
-  classes,
-  children,
-  ...props
-}: FileUploaderInputProps) => {
-  const { dropzoneState, isFileTooBig, isLOF, hiddenInputRef } =
-    useFileUpload();
+const FileUploaderInput = ({ classes, children, ...props }: FileUploaderInputProps) => {
+  const { dropzoneState, isFileTooBig, isLOF, hiddenInputRef } = useFileUpload();
   const rootProps = isLOF ? {} : dropzoneState.getRootProps();
   return (
     <div {...props} className="relative w-full">

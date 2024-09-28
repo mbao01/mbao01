@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import { type AlertProps } from "./types";
 import { Alert } from "./Alert";
+import { type AlertProps } from "./types";
 
 describe("Alert", () => {
   const renderAlert = (heading: string, props?: AlertProps) =>
@@ -14,9 +14,7 @@ describe("Alert", () => {
     renderAlert("Hey!");
 
     expect(screen.getByRole("heading", { name: "Hey!" })).toBeInTheDocument();
-    expect(
-      screen.getByText("You should pay attention to me")
-    ).toBeInTheDocument();
+    expect(screen.getByText("You should pay attention to me")).toBeInTheDocument();
   });
 
   it.each([

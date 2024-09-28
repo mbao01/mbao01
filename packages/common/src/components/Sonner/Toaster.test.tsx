@@ -1,14 +1,11 @@
 import { render, screen } from "@testing-library/react";
-import { type ToasterProps } from "./types";
-import { Toaster, toast } from "./";
-import { Button } from "../Button";
 import userEvent from "@testing-library/user-event";
+import { Button } from "../Button";
+import { toast, Toaster } from "./";
+import { type ToasterProps } from "./types";
 
 describe("Toaster", () => {
-  const renderToaster = ({
-    onClick,
-    ...props
-  }: ToasterProps & { onClick: () => void }) =>
+  const renderToaster = ({ onClick, ...props }: ToasterProps & { onClick: () => void }) =>
     render(
       <div>
         <Button onClick={onClick}>Show toast</Button>

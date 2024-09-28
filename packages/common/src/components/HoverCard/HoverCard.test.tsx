@@ -1,8 +1,8 @@
-import { describe, expect, it } from "vitest";
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { HoverCard } from "./HoverCard";
+import { describe, expect, it } from "vitest";
 import { Button } from "../Button";
+import { HoverCard } from "./HoverCard";
 
 describe("HoverCard", () => {
   const renderHoverCard = () => {
@@ -19,10 +19,7 @@ describe("HoverCard", () => {
   it("renders hover card trigger with hidden content", () => {
     const { asFragment } = renderHoverCard();
 
-    expect(screen.getByRole("button", { name: "@nextjs" })).toHaveAttribute(
-      "data-state",
-      "closed"
-    );
+    expect(screen.getByRole("button", { name: "@nextjs" })).toHaveAttribute("data-state", "closed");
     expect(screen.queryByText("Hover card content")).not.toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
@@ -37,10 +34,7 @@ describe("HoverCard", () => {
     await user.hover(button);
 
     await waitFor(() => {
-      expect(screen.getByRole("button", { name: "@nextjs" })).toHaveAttribute(
-        "data-state",
-        "open"
-      );
+      expect(screen.getByRole("button", { name: "@nextjs" })).toHaveAttribute("data-state", "open");
       expect(screen.getByText("Hover card content")).toBeInTheDocument();
     });
   });

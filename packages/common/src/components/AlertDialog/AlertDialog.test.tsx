@@ -1,6 +1,6 @@
-import { describe, expect, it } from "vitest";
-import userEvent from "@testing-library/user-event";
 import { render, screen, within } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import { describe, expect, it } from "vitest";
 import { AlertDialog } from "./AlertDialog";
 
 describe("AlertDialog", () => {
@@ -12,8 +12,7 @@ describe("AlertDialog", () => {
           <AlertDialog.Header>
             <AlertDialog.Title>Update profile</AlertDialog.Title>
             <AlertDialog.Description>
-              You are making changes to your profile here. Do you want to
-              continue?
+              You are making changes to your profile here. Do you want to continue?
             </AlertDialog.Description>
           </AlertDialog.Header>
           <AlertDialog.Footer>
@@ -27,9 +26,7 @@ describe("AlertDialog", () => {
   it("renders a an dialog trigger", () => {
     const { asFragment } = renderAlertDialog();
 
-    expect(
-      screen.getByRole("button", { name: "Update profile" })
-    ).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Update profile" })).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -48,9 +45,7 @@ describe("AlertDialog", () => {
     const dialog = screen.getByRole("alertdialog");
 
     // dialog heading
-    expect(
-      within(dialog).getByRole("heading", { name: "Update profile" })
-    ).toBeInTheDocument();
+    expect(within(dialog).getByRole("heading", { name: "Update profile" })).toBeInTheDocument();
 
     // dialog description
     expect(
@@ -60,12 +55,8 @@ describe("AlertDialog", () => {
     ).toBeInTheDocument();
 
     // dialog footer
-    expect(
-      within(dialog).getByRole("button", { name: "Cancel" })
-    ).toBeInTheDocument();
-    expect(
-      within(dialog).getByRole("button", { name: "Continue" })
-    ).toBeInTheDocument();
+    expect(within(dialog).getByRole("button", { name: "Cancel" })).toBeInTheDocument();
+    expect(within(dialog).getByRole("button", { name: "Continue" })).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 

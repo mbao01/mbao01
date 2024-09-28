@@ -1,9 +1,5 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
-import {
-  FontBoldIcon,
-  FontItalicIcon,
-  UnderlineIcon,
-} from "@radix-ui/react-icons";
+import { FontBoldIcon, FontItalicIcon, UnderlineIcon } from "@radix-ui/react-icons";
 import { ToggleGroup } from "./ToggleGroup";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

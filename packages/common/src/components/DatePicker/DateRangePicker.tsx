@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { format } from "date-fns";
 import { type DateRange } from "react-day-picker";
 import { CalendarIcon } from "@radix-ui/react-icons";
-import { type DateRangePickerProps } from "./types";
+import { format } from "date-fns";
 import { cn } from "../../utilities";
 import { Button } from "../Button";
 import { Calendar } from "../Calendar";
 import { Popover } from "../Popover";
+import { type DateRangePickerProps } from "./types";
 
 export const DateRangePicker = ({
   name,
@@ -69,11 +69,7 @@ export const DateRangePicker = ({
           outline={outline}
           variant={variant}
           disabled={disabled}
-          className={cn(
-            "justify-start flex-nowrap",
-            !range && "font-normal",
-            triggerClassName
-          )}
+          className={cn("justify-start flex-nowrap", !range && "font-normal", triggerClassName)}
         >
           <span className="text-left text-ellipsis overflow-hidden text-nowrap">
             {rangeLabel ?? label ?? "Pick a range"}

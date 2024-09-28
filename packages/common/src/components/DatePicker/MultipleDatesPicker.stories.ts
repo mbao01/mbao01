@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { format } from "date-fns/format";
-import { es, arSA } from "date-fns/locale";
+import { arSA, es } from "date-fns/locale";
 import { MultipleDatesPicker } from "./MultipleDatesPicker";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export

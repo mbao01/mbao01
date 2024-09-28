@@ -12,9 +12,7 @@ import {
   getMenubarSubTriggerClasses,
 } from "../Menubar/constants";
 
-export type DropdownMenuProps = React.ComponentPropsWithoutRef<
-  typeof DropdownMenuPrimitive.Root
->;
+export type DropdownMenuProps = React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.Root>;
 
 export type DropdownMenuSubTriggerProps = React.ComponentPropsWithoutRef<
   typeof DropdownMenuPrimitive.SubTrigger

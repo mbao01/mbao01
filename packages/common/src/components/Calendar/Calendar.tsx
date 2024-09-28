@@ -2,9 +2,9 @@
 
 import { DayPicker } from "react-day-picker";
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
-import { type CalendarProps } from "./types";
 import { cn } from "../../utilities";
 import { getButtonClasses } from "../Button/constants";
+import { type CalendarProps } from "./types";
 
 export const Calendar = ({
   className,
@@ -31,8 +31,7 @@ export const Calendar = ({
         nav_button_next: "absolute right-1",
         table: "w-full border-collapse space-y-1",
         head_row: "flex",
-        head_cell:
-          "text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]",
+        head_cell: "text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]",
         row: "flex w-full mt-2",
         cell: "h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20",
         day: cn(
@@ -46,8 +45,7 @@ export const Calendar = ({
         day_outside:
           "day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30",
         day_disabled: "text-muted-foreground opacity-50",
-        day_range_middle:
-          "aria-selected:bg-accent aria-selected:text-accent-content",
+        day_range_middle: "aria-selected:bg-accent aria-selected:text-accent-content",
         day_hidden: "hidden",
         vhidden: "hidden",
         dropdown_month: "text-sm [&>[aria-hidden='true']]:hidden",

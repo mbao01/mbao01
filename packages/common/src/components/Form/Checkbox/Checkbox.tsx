@@ -1,7 +1,7 @@
 import * as React from "react";
-import { type CheckboxProps } from "./types";
-import { getCheckboxClasses } from "./constants";
 import { cn } from "../../../utilities";
+import { getCheckboxClasses } from "./constants";
+import { type CheckboxProps } from "./types";
 
 const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
   ({ className, size, variant, ...props }, ref) => (
