@@ -55,7 +55,7 @@ Storybook test-runner is setup as the visual regression tool to capture snapshot
 Under the hood, [@storybook/test-runner](https://www.npmjs.com/package/@storybook/test-runner) uses [playwright](https://npmjs.com/package/playwright) and [jest](https://www.npmjs.com/package/jest).
 
 ### Prerequisite
-Install playwright supported browser(s)
+Install playwright supported browsers
 ```sh
 pnpx playwright install
 ```
