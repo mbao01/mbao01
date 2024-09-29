@@ -159,6 +159,9 @@ importers:
       '@storybook/addon-a11y':
         specifier: ^8.3.4
         version: 8.3.4(storybook@8.3.4)
+      '@storybook/addon-coverage':
+        specifier: ^1.0.4
+        version: 1.0.4
       '@storybook/addon-essentials':
         specifier: ^8.3.4
         version: 8.3.4(storybook@8.3.4)
@@ -316,6 +319,9 @@ importers:
       '@storybook/addon-a11y':
         specifier: ^8.3.4
         version: 8.3.4(storybook@8.3.4)
+      '@storybook/addon-coverage':
+        specifier: ^1.0.4
+        version: 1.0.4
       '@storybook/addon-essentials':
         specifier: ^8.3.4
         version: 8.3.4(storybook@8.3.4)
@@ -473,6 +479,9 @@ importers:
       '@storybook/addon-a11y':
         specifier: ^8.3.4
         version: 8.3.4(storybook@8.3.4)
+      '@storybook/addon-coverage':
+        specifier: ^1.0.4
+        version: 1.0.4
       '@storybook/addon-essentials':
         specifier: ^8.3.4
         version: 8.3.4(storybook@8.3.4)
@@ -3136,6 +3145,18 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  /@jsdevtools/coverage-istanbul-loader@3.0.5:
+    resolution: {integrity: sha512-EUCPEkaRPvmHjWAAZkWMT7JDzpw7FKB00WTISaiXsbNOd5hCHg77XLA8sLYLFDo1zepYLo2w7GstN8YBqRXZfA==}
+    dependencies:
+      convert-source-map: 1.9.0
+      istanbul-lib-instrument: 4.0.3
+      loader-utils: 2.0.4
+      merge-source-map: 1.1.0
+      schema-utils: 2.7.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /@juggle/resize-observer@3.4.0:
     resolution: {integrity: sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==}
@@ -5851,6 +5872,21 @@ packages:
       lodash: 4.17.21
       storybook: 8.3.4
       ts-dedent: 2.2.0
+    dev: true
+
+  /@storybook/addon-coverage@1.0.4:
+    resolution: {integrity: sha512-+qwsKTg6c0IrGnVAQjt1NxDyTqCOcudz9+56kFDmGApaPSby4uibYgJnnzua3sRVTe1zYZUfxwpeAuK9Ysf4Ig==}
+    dependencies:
+      '@istanbuljs/load-nyc-config': 1.1.0
+      '@jsdevtools/coverage-istanbul-loader': 3.0.5
+      '@types/istanbul-lib-coverage': 2.0.6
+      convert-source-map: 2.0.0
+      espree: 9.6.1
+      istanbul-lib-instrument: 6.0.3
+      test-exclude: 6.0.0
+      vite-plugin-istanbul: 3.0.4
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@storybook/addon-docs@8.3.4(storybook@8.3.4):
@@ -13693,6 +13729,12 @@ packages:
     resolution: {integrity: sha512-gaNvAS7TZ897/rVaZ0nMtAyxNyi/pdbjbAwUpFQpN70GqnVfOiXpeUUMKRBmzXaSQ8DdTX4/0ms62r2K+hE6mQ==}
     dev: true
 
+  /merge-source-map@1.1.0:
+    resolution: {integrity: sha512-Qkcp7P2ygktpMPh2mCQZaf3jhN6D3Z/qVZHSdWvQ+2Ef5HgRAPBO57A77+ENm0CPx2+1Ce/MYKi3ymqdfuqibw==}
+    dependencies:
+      source-map: 0.6.1
+    dev: true
+
   /merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
     dev: true
@@ -16073,6 +16115,15 @@ packages:
     dependencies:
       loose-envify: 1.4.0
 
+  /schema-utils@2.7.1:
+    resolution: {integrity: sha512-SHiNtMOUGWBQJwzISiVYKu82GiV4QYGePp3odlY1tuKO7gPtphAT5R/py0fA6xtbgLL/RvtJZnU9b8s0F1q0Xg==}
+    engines: {node: '>= 8.9.0'}
+    dependencies:
+      '@types/json-schema': 7.0.15
+      ajv: 6.12.6
+      ajv-keywords: 3.5.2(ajv@6.12.6)
+    dev: true
+
   /schema-utils@3.3.0:
     resolution: {integrity: sha512-pN/yOAvcC+5rQ5nERGuwrjLlYvLTbCibnZ1I7B1LaiAz9BRBlE9GMgE/eqV30P7aJQUf7Ddimy/RsbYO/GrVGg==}
     engines: {node: '>= 10.13.0'}
@@ -17674,6 +17725,17 @@ packages:
     transitivePeerDependencies:
       - '@types/node'
       - rollup
+      - supports-color
+    dev: true
+
+  /vite-plugin-istanbul@3.0.4:
+    resolution: {integrity: sha512-DJy3cq6yOFbsM3gLQf/3zeuaJNJsfBv5dLFdZdv8sUV30xLtZI+66QeYfHUyP/5vBUYyLA+xNUCSG5uHY6w+5g==}
+    dependencies:
+      '@istanbuljs/load-nyc-config': 1.1.0
+      istanbul-lib-instrument: 5.2.1
+      picocolors: 1.1.0
+      test-exclude: 6.0.0
+    transitivePeerDependencies:
       - supports-color
     dev: true
 
