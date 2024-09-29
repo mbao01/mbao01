@@ -4,7 +4,6 @@ import { Button } from "../Button";
 import { toast, Toaster } from "./";
 import { type ToasterProps } from "./types";
 
-
 describe("Toaster", () => {
   const renderToaster = ({ onClick, ...props }: ToasterProps & { onClick: () => void }) =>
     render(
