@@ -10,6 +10,7 @@ export default defineConfig({
     coverage: {
       all: false,
       enabled: true,
+      ignoreEmptyLines: true,
       provider: "v8",
       reporter: ["text", "html", "clover", "json"],
       reportsDirectory: "coverage",
