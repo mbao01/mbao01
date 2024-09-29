@@ -5,6 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "pnpx rimraf node_modules && pnpm -r clean",
     "cz": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lerna": "lerna",
