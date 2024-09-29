@@ -73,6 +73,7 @@ export const DefaultMonth: Story = {
 
 export const NavigatingMonths: Story = {
   args: {
+    captionLayout: "dropdown",
     startMonth: new Date("2022-03-01"),
     endMonth: new Date("2022-06-01"),
   },
@@ -80,6 +81,7 @@ export const NavigatingMonths: Story = {
 
 export const NavigatingMonthsAndYears: Story = {
   args: {
+    captionLayout: "dropdown",
     startMonth: new Date(2022, 0),
     endMonth: new Date(2026, 11),
   },

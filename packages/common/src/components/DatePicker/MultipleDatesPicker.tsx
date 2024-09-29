@@ -67,7 +67,7 @@ export const MultipleDatesPicker = ({
           mode="multiple"
           selected={dates}
           onSelect={setDates}
-          captionLayout="dropdown"
+          captionLayout="label"
           {...props}
         />
       </Popover.Content>

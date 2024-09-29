@@ -83,7 +83,7 @@ export const DateRangePicker = ({
           mode="range"
           selected={range}
           onSelect={setRange}
-          captionLayout="dropdown"
+          captionLayout="label"
           {...props}
         />
       </Popover.Content>

@@ -35,7 +35,7 @@ export const DatePicker = ({
       mode="single"
       selected={date}
       onSelect={setDate}
-      captionLayout="dropdown"
+      captionLayout="label"
       {...props}
     />
   );

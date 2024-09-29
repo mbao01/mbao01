@@ -11,8 +11,8 @@ describe("Calendar", () => {
     const year = date.getFullYear();
 
     expect(screen.getByText(`${month} ${year}`)).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: "Go to previous month" })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: "Go to next month" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Go to the Previous Month" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Go to the Next Month" })).toBeInTheDocument();
   });
 
   it("shows April, 2024 calendar", () => {
@@ -27,7 +27,7 @@ describe("Calendar", () => {
   it("does not have navigation", () => {
     const { asFragment } = render(
       <Calendar
-        captionLayout="dropdown"
+        captionLayout="label"
         defaultMonth={new Date("2024-04-01")}
         today={new Date("2024-04-19")}
         disableNavigation
