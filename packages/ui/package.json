@@ -79,7 +79,7 @@
     "eslint-plugin-react": "^7.37.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.12",
-    "eslint-plugin-storybook": "^0.8.0",
+    "eslint-plugin-storybook": "^0.9.0",
     "jest-image-snapshot": "^6.4.0",
     "jsdom": "^23.2.0",
     "path": "^0.12.7",
