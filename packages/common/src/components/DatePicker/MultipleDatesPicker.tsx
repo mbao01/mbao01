@@ -63,11 +63,11 @@ export const MultipleDatesPicker = ({
       </Popover.Trigger>
       <Popover.Content className="w-auto p-0">
         <Calendar
-          initialFocus
+          autoFocus
           mode="multiple"
           selected={dates}
           onSelect={setDates}
-          captionLayout="dropdown-buttons"
+          captionLayout="dropdown"
           {...props}
         />
       </Popover.Content>

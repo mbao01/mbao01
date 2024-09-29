@@ -79,11 +79,11 @@ export const DateRangePicker = ({
       </Popover.Trigger>
       <Popover.Content className="w-auto p-0">
         <Calendar
-          initialFocus
+          autoFocus
           mode="range"
           selected={range}
           onSelect={setRange}
-          captionLayout="dropdown-buttons"
+          captionLayout="dropdown"
           {...props}
         />
       </Popover.Content>

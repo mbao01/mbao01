@@ -70,15 +70,15 @@ export const DefaultMonth: Story = {
 
 export const NavigatingMonths: Story = {
   args: {
-    fromMonth: new Date("2022-03-01"),
-    toMonth: new Date("2022-06-01"),
+    startMonth: new Date("2022-03-01"),
+    endMonth: new Date("2022-06-01"),
   },
 };
 
 export const NavigatingMonthsAndYears: Story = {
   args: {
-    fromYear: 2022,
-    toYear: 2026,
+    startMonth: new Date(2022, 0),
+    endMonth: new Date(2026, 11),
   },
 };
 
@@ -86,8 +86,8 @@ export const NavigationDisabled: Story = {
   args: {
     numberOfMonths: 2,
     disableNavigation: true,
-    fromYear: 2022,
-    toYear: 2026,
+    startMonth: new Date(2022, 0),
+    endMonth: new Date(2026, 11),
   },
 };
 

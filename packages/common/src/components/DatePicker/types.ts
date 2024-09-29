@@ -1,21 +1,14 @@
-import {
-  DateRange,
-  DayPickerMultipleProps,
-  DayPickerRangeProps,
-  DayPickerSingleProps,
-} from "react-day-picker";
-import { ButtonProps } from "../Button/types";
+import type { DateRange, PropsBase, PropsMulti, PropsRange, PropsSingle } from "react-day-picker";
+import { type ButtonProps } from "../Button/types";
 
-type BaseDatePickerProps = Pick<
-  ButtonProps,
-  "variant" | "outline" | "wide" | "size" | "name" | "disabled"
-> & {
-  label?: string;
-  triggerClassName?: string;
-};
+type BaseDatePickerProps = Omit<PropsBase, "mode"> &
+  Pick<ButtonProps, "variant" | "outline" | "wide" | "size" | "name" | "disabled"> & {
+    label?: string;
+    triggerClassName?: string;
+  };
 
 export type DatePickerProps = BaseDatePickerProps &
-  Omit<DayPickerSingleProps, "mode"> & {
+  Omit<PropsSingle, "mode"> & {
     children?: ({
       date,
       setDate,
@@ -29,7 +22,7 @@ export type DatePickerProps = BaseDatePickerProps &
   };
 
 export type DateRangePickerProps = BaseDatePickerProps &
-  Omit<DayPickerRangeProps, "mode"> & {
+  Omit<PropsRange, "mode"> & {
     defaultRange?: DateRange;
     getRangeValue?: (range: DateRange | undefined) => {
       from: string | undefined;
@@ -39,7 +32,7 @@ export type DateRangePickerProps = BaseDatePickerProps &
   };
 
 export type MultipleDatesPickerProps = BaseDatePickerProps &
-  Omit<DayPickerMultipleProps, "mode"> & {
+  Omit<PropsMulti, "mode"> & {
     defaultDates?: Date[];
     getDatesValue?: (dates: Date[] | undefined) => string[] | undefined;
     getDatesLabel?: (dates: Date[] | undefined) => string | JSX.Element | undefined;

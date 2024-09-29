@@ -31,11 +31,11 @@ export const DatePicker = ({
 
   const calendar = (
     <Calendar
-      initialFocus
+      autoFocus
       mode="single"
       selected={date}
       onSelect={setDate}
-      captionLayout="dropdown-buttons"
+      captionLayout="dropdown"
       {...props}
     />
   );
