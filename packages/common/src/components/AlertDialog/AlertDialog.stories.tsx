@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { AlertDialog } from "./AlertDialog";
 import { Button } from "../Button";
+import { AlertDialog } from "./AlertDialog";
 
 const withDialog = () => {
   return (
@@ -12,8 +12,7 @@ const withDialog = () => {
         <AlertDialog.Header>
           <AlertDialog.Title>Are you sure?</AlertDialog.Title>
           <AlertDialog.Description>
-            You are making changes to your profile here. Do you want to
-            continue?
+            You are making changes to your profile here. Do you want to continue?
           </AlertDialog.Description>
         </AlertDialog.Header>
         <AlertDialog.Footer>

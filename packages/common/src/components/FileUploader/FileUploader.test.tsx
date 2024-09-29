@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 import { FileUploader } from "./FileUploader";
 
 describe("FileUploader", () => {
@@ -20,9 +20,7 @@ describe("FileUploader", () => {
         dropzoneOptions={dropZoneConfig}
         className="relative bg-background rounded-lg p-2"
       >
-        <FileUploader.Input
-          classes={{ all: "outline-dashed outline-1 outline-neutral-content" }}
-        >
+        <FileUploader.Input classes={{ all: "outline-dashed outline-1 outline-neutral-content" }}>
           Click here to upload
         </FileUploader.Input>
       </FileUploader>

@@ -1,6 +1,6 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
-import { type TableProps } from "./types";
 import { Table } from "./Table";
+import { type TableProps } from "./types";
 
 const items = [
   {

@@ -12,9 +12,7 @@ import {
   getMenubarSubTriggerClasses,
 } from "../Menubar/constants";
 
-export type ContextMenuProps = React.ComponentPropsWithoutRef<
-  typeof ContextMenuPrimitive.Root
->;
+export type ContextMenuProps = React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.Root>;
 
 export type ContextMenuSubTriggerProps = React.ComponentPropsWithoutRef<
   typeof ContextMenuPrimitive.SubTrigger

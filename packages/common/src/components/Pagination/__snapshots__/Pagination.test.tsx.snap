@@ -13,7 +13,7 @@ exports[`Pagination > renders pagination buttons 1`] = `
       <li>
         <a
           aria-label="Go to previous page"
-          class="btn btn-ghost min-h-fit h-10 gap-1 px-3"
+          class="btn [&:disabled]:text-opacity-50 btn-ghost min-h-fit h-10 gap-1 px-3"
           href="#"
         >
           <svg
@@ -35,7 +35,7 @@ exports[`Pagination > renders pagination buttons 1`] = `
       </li>
       <li>
         <a
-          class="btn btn-ghost min-h-fit h-10"
+          class="btn [&:disabled]:text-opacity-50 btn-ghost min-h-fit h-10"
           href="#"
         >
           1
@@ -44,7 +44,7 @@ exports[`Pagination > renders pagination buttons 1`] = `
       <li>
         <a
           aria-current="page"
-          class="btn btn-ghost btn-outline min-h-fit h-10"
+          class="btn [&:disabled]:text-opacity-50 btn-ghost btn-outline min-h-fit h-10"
           href="#"
         >
           2
@@ -52,7 +52,7 @@ exports[`Pagination > renders pagination buttons 1`] = `
       </li>
       <li>
         <a
-          class="btn btn-ghost min-h-fit h-10"
+          class="btn [&:disabled]:text-opacity-50 btn-ghost min-h-fit h-10"
           href="#"
         >
           3
@@ -88,7 +88,7 @@ exports[`Pagination > renders pagination buttons 1`] = `
       <li>
         <a
           aria-label="Go to next page"
-          class="btn btn-ghost min-h-fit h-10 gap-1 px-3"
+          class="btn [&:disabled]:text-opacity-50 btn-ghost min-h-fit h-10 gap-1 px-3"
           href="#"
         >
           <svg

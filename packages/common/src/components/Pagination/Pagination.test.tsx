@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 import { Pagination } from "./Pagination";
 
 describe("Pagination", () => {
@@ -34,9 +34,7 @@ describe("Pagination", () => {
   it("renders pagination buttons", () => {
     const { asFragment } = renderPagination();
 
-    expect(
-      screen.getByRole("link", { name: "Go to previous page" })
-    ).toBeEnabled();
+    expect(screen.getByRole("link", { name: "Go to previous page" })).toBeEnabled();
     expect(screen.getByRole("link", { name: "Go to next page" })).toBeEnabled();
 
     ["1", "2", "3"].forEach((page) => {

@@ -1,6 +1,6 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
-import { Popover } from "./Popover";
 import { Button } from "../Button";
+import { Popover } from "./Popover";
 
 const withPopover = (
   _: StoryFn,

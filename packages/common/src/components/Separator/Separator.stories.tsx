@@ -1,5 +1,4 @@
 import type { Meta, StoryFn, StoryObj } from "@storybook/react";
-
 import { Separator } from "./Separator";
 
 const withSeparator = (Story: StoryFn) => {

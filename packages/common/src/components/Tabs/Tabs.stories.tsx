@@ -1,10 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
-import { Tabs } from "./Tabs";
-import { Card } from "../Card";
 import { Button } from "../Button";
+import { Card } from "../Card";
 import { Label } from "../Form/components/Label";
 import { Input } from "../Form/Input";
+import { Tabs } from "./Tabs";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
@@ -33,9 +32,7 @@ export const Default: Story = {
           <Tabs.Trigger value="account">Account</Tabs.Trigger>
           <Tabs.Trigger value="password">Password</Tabs.Trigger>
         </Tabs.List>
-        <Tabs.Content value="account">
-          Make changes to your account here.
-        </Tabs.Content>
+        <Tabs.Content value="account">Make changes to your account here.</Tabs.Content>
         <Tabs.Content value="password">Change your password here.</Tabs.Content>
       </Tabs>
     );

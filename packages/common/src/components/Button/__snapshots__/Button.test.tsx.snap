@@ -3,7 +3,7 @@
 exports[`Button > has 'base' ('md') button 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-md"
+    class="btn [&:disabled]:text-opacity-50 btn-md"
   >
     base button
   </button>
@@ -13,7 +13,7 @@ exports[`Button > has 'base' ('md') button 1`] = `
 exports[`Button > has 'large' ('lg') button 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-lg"
+    class="btn [&:disabled]:text-opacity-50 btn-lg"
   >
     large button
   </button>
@@ -23,7 +23,7 @@ exports[`Button > has 'large' ('lg') button 1`] = `
 exports[`Button > has 'small' ('sm') button 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-sm"
+    class="btn [&:disabled]:text-opacity-50 btn-sm"
   >
     small button
   </button>
@@ -33,7 +33,7 @@ exports[`Button > has 'small' ('sm') button 1`] = `
 exports[`Button > has 'tiny' ('xs') button 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-xs"
+    class="btn [&:disabled]:text-opacity-50 btn-xs"
   >
     tiny button
   </button>
@@ -43,7 +43,7 @@ exports[`Button > has 'tiny' ('xs') button 1`] = `
 exports[`Button > has a label 1`] = `
 <DocumentFragment>
   <button
-    class="btn min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 min-h-fit h-10"
   >
     Hello, World 🌍
   </button>
@@ -53,7 +53,7 @@ exports[`Button > has a label 1`] = `
 exports[`Button > has a slot to render a 'link' tag 1`] = `
 <DocumentFragment>
   <a
-    class="btn min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 min-h-fit h-10"
     role="none"
   >
     Button as link
@@ -64,7 +64,7 @@ exports[`Button > has a slot to render a 'link' tag 1`] = `
 exports[`Button > has a slot to render a 'paragraph' tag 1`] = `
 <DocumentFragment>
   <p
-    class="btn min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 min-h-fit h-10"
     role="none"
   >
     Button as paragraph
@@ -75,7 +75,7 @@ exports[`Button > has a slot to render a 'paragraph' tag 1`] = `
 exports[`Button > has a slot to render a 'span' tag 1`] = `
 <DocumentFragment>
   <span
-    class="btn min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 min-h-fit h-10"
     role="none"
   >
     Button as span
@@ -86,7 +86,7 @@ exports[`Button > has a slot to render a 'span' tag 1`] = `
 exports[`Button > has accent variant 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-accent min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 btn-accent min-h-fit h-10"
   >
     accent button
   </button>
@@ -96,7 +96,7 @@ exports[`Button > has accent variant 1`] = `
 exports[`Button > has default variant 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-default min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 btn-default min-h-fit h-10"
   >
     default button
   </button>
@@ -106,7 +106,7 @@ exports[`Button > has default variant 1`] = `
 exports[`Button > has error variant 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-error min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 btn-error min-h-fit h-10"
   >
     error button
   </button>
@@ -116,7 +116,7 @@ exports[`Button > has error variant 1`] = `
 exports[`Button > has ghost variant 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-ghost min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 btn-ghost min-h-fit h-10"
   >
     ghost button
   </button>
@@ -126,7 +126,7 @@ exports[`Button > has ghost variant 1`] = `
 exports[`Button > has info variant 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-info min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 btn-info min-h-fit h-10"
   >
     info button
   </button>
@@ -136,7 +136,7 @@ exports[`Button > has info variant 1`] = `
 exports[`Button > has link variant 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-link min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 btn-link min-h-fit h-10"
   >
     link button
   </button>
@@ -146,7 +146,7 @@ exports[`Button > has link variant 1`] = `
 exports[`Button > has neutral variant 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-neutral min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 btn-neutral min-h-fit h-10"
   >
     neutral button
   </button>
@@ -156,7 +156,7 @@ exports[`Button > has neutral variant 1`] = `
 exports[`Button > has no outline 1`] = `
 <DocumentFragment>
   <button
-    class="btn min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 min-h-fit h-10"
   >
     Button has no outline
   </button>
@@ -166,7 +166,7 @@ exports[`Button > has no outline 1`] = `
 exports[`Button > has outline 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-outline min-h-fit h-10 border-neutral-content"
+    class="btn [&:disabled]:text-opacity-50 btn-outline min-h-fit h-10 border-neutral-content"
   >
     Button has outline
   </button>
@@ -176,7 +176,7 @@ exports[`Button > has outline 1`] = `
 exports[`Button > has primary variant 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-primary min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 btn-primary min-h-fit h-10"
   >
     primary button
   </button>
@@ -186,7 +186,7 @@ exports[`Button > has primary variant 1`] = `
 exports[`Button > has secondary variant 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-secondary min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 btn-secondary min-h-fit h-10"
   >
     secondary button
   </button>
@@ -196,7 +196,7 @@ exports[`Button > has secondary variant 1`] = `
 exports[`Button > has success variant 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-success min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 btn-success min-h-fit h-10"
   >
     success button
   </button>
@@ -206,7 +206,7 @@ exports[`Button > has success variant 1`] = `
 exports[`Button > has warning variant 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-warning min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 btn-warning min-h-fit h-10"
   >
     warning button
   </button>
@@ -216,7 +216,7 @@ exports[`Button > has warning variant 1`] = `
 exports[`Button > is not wide 1`] = `
 <DocumentFragment>
   <button
-    class="btn min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 min-h-fit h-10"
   >
     Button is not wide
   </button>
@@ -226,7 +226,7 @@ exports[`Button > is not wide 1`] = `
 exports[`Button > is wide 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-wide min-h-fit h-10"
+    class="btn [&:disabled]:text-opacity-50 btn-wide min-h-fit h-10"
   >
     Button is wide
   </button>

@@ -1,7 +1,7 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
-import { type HoverCardProps } from "./types";
-import { HoverCard } from "./HoverCard";
 import { Button } from "../Button";
+import { HoverCard } from "./HoverCard";
+import { type HoverCardProps } from "./types";
 
 const withHoverCard = (_: StoryFn, context: StoryContext<HoverCardProps>) => {
   return (
@@ -12,13 +12,9 @@ const withHoverCard = (_: StoryFn, context: StoryContext<HoverCardProps>) => {
       <HoverCard.Content className="w-80">
         <div className="space-y-1">
           <h4 className="text-sm font-semibold">@nextjs</h4>
-          <p className="text-sm">
-            The React Framework - created and maintained by @vercel.
-          </p>
+          <p className="text-sm">The React Framework - created and maintained by @vercel.</p>
           <div className="flex items-center pt-2">
-            <span className="text-xs text-muted-foreground">
-              Joined December 2021
-            </span>
+            <span className="text-xs text-muted-foreground">Joined December 2021</span>
           </div>
         </div>
       </HoverCard.Content>

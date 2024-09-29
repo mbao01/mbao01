@@ -1,5 +1,4 @@
 import type { Meta, StoryFn, StoryObj } from "@storybook/react";
-
 import { Tooltip } from "./Tooltip";
 
 const withTooltip = (Story: StoryFn) => {

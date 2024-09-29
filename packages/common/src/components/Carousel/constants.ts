@@ -12,20 +12,17 @@ export const getCarouselContentClasses = cva("flex", {
   },
 });
 
-export const getCarouselItemClasses = cva(
-  "min-w-0 shrink-0 grow-0 basis-full",
-  {
-    variants: {
-      orientation: {
-        horizontal: "pl-4",
-        vertical: "pt-4",
-      },
+export const getCarouselItemClasses = cva("min-w-0 shrink-0 grow-0 basis-full", {
+  variants: {
+    orientation: {
+      horizontal: "pl-4",
+      vertical: "pt-4",
     },
-    defaultVariants: {
-      orientation: "horizontal",
-    },
-  }
-);
+  },
+  defaultVariants: {
+    orientation: "horizontal",
+  },
+});
 
 export const getCarouselNextClasses = cva(
   "absolute h-8 w-8 rounded-full p-0 disabled:bg-transparent",

@@ -1,7 +1,7 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
-import { type ToasterProps } from "./types";
-import { Toaster, toast } from "./";
 import { Button } from "../Button";
+import { toast, Toaster } from "./";
+import { type ToasterProps } from "./types";
 
 const withToaster = (
   _: StoryFn,
@@ -15,8 +15,7 @@ const withToaster = (
     "🌓 System": "system",
   } as const;
 
-  const theme =
-    themes[context.globals.theme as keyof typeof themes] || "system";
+  const theme = themes[context.globals.theme as keyof typeof themes] || "system";
 
   return (
     <>
@@ -94,10 +93,7 @@ export const SuccessToast: Story = {
 
 export const ErrorToast: Story = {
   args: {
-    onClick: () =>
-      toast.error(
-        "That did not go through. You should probably not try again!"
-      ),
+    onClick: () => toast.error("That did not go through. You should probably not try again!"),
     outline: true,
     variant: "error",
   },
@@ -105,10 +101,7 @@ export const ErrorToast: Story = {
 
 export const WarningToast: Story = {
   args: {
-    onClick: () =>
-      toast.warning(
-        "That did not go through. You should probably not try again!"
-      ),
+    onClick: () => toast.warning("That did not go through. You should probably not try again!"),
     variant: "warning",
   },
 };

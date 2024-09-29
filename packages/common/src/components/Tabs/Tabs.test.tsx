@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import { type TabsProps } from "./types";
-import { Tabs } from "./";
 import userEvent from "@testing-library/user-event";
+import { Tabs } from "./";
+import { type TabsProps } from "./types";
 
 describe("Tabs", () => {
   const renderTabs = (props?: TabsProps) => {
@@ -27,10 +27,7 @@ describe("Tabs", () => {
     const contents = triggers.map((trigger) => `${trigger} tab content`);
 
     triggers.forEach((trigger) => {
-      expect(screen.getByRole("tab", { name: trigger })).toHaveAttribute(
-        "data-state",
-        "inactive"
-      );
+      expect(screen.getByRole("tab", { name: trigger })).toHaveAttribute("data-state", "inactive");
     });
 
     // no tab content shown
@@ -45,10 +42,7 @@ describe("Tabs", () => {
     const { asFragment } = renderTabs({ defaultValue: "password" });
     const content = "Password tab content";
 
-    expect(screen.getByRole("tab", { name: "Password" })).toHaveAttribute(
-      "data-state",
-      "active"
-    );
+    expect(screen.getByRole("tab", { name: "Password" })).toHaveAttribute("data-state", "active");
 
     expect(screen.queryByText(content)).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();

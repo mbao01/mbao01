@@ -1,4 +1,4 @@
-import type { To, LinkProps as RouterLinkProps } from "react-router-dom";
+import type { LinkProps as RouterLinkProps, To } from "react-router-dom";
 import { type VariantProps } from "@mbao01/common/libs";
 import { getLinkClasses } from "./constant";
 

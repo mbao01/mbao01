@@ -1,7 +1,7 @@
 import * as React from "react";
-import { type RangeProps } from "./types";
-import { getRangeClasses } from "./constants";
 import { cn } from "../../../utilities";
+import { getRangeClasses } from "./constants";
+import { type RangeProps } from "./types";
 
 const Range = React.forwardRef<HTMLInputElement, RangeProps>(
   ({ className, size, variant, wide, disabled, ...props }, ref) => (
@@ -9,10 +9,7 @@ const Range = React.forwardRef<HTMLInputElement, RangeProps>(
       ref={ref}
       type="range"
       disabled={disabled}
-      className={cn(
-        getRangeClasses({ size, variant, wide, disabled }),
-        className
-      )}
+      className={cn(getRangeClasses({ size, variant, wide, disabled }), className)}
       {...props}
     />
   )

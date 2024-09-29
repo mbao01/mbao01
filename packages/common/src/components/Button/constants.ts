@@ -1,6 +1,6 @@
 import { cva } from "../../libs";
 
-export const getButtonClasses = cva("btn", {
+export const getButtonClasses = cva("btn [&:disabled]:text-opacity-50", {
   variants: {
     variant: {
       accent: "btn-accent",

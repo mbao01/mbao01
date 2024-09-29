@@ -1,12 +1,10 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
-import { ScrollArea } from "./ScrollArea";
-import { Separator } from "../Separator";
-import { ScrollAreaProps } from "./types";
 import { cn } from "../../utilities";
+import { Separator } from "../Separator";
+import { ScrollArea } from "./ScrollArea";
+import { ScrollAreaProps } from "./types";
 
-const tags = Array.from({ length: 50 }).map(
-  (_, i, a) => `v1.2.0-beta.${a.length - i}`
-);
+const tags = Array.from({ length: 50 }).map((_, i, a) => `v1.2.0-beta.${a.length - i}`);
 
 const withScrollArea = (_: StoryFn, context: StoryContext<ScrollAreaProps>) => {
   const isHorizontal = context.args.scrollbar?.orientation === "horizontal";

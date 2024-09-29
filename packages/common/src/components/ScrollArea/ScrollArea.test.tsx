@@ -1,11 +1,9 @@
-import { describe, expect, it } from "vitest";
 import { render } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 import { ScrollArea } from "./ScrollArea";
 
 describe("ScrollArea", () => {
-  const tags = Array.from({ length: 100 }).map(
-    (_, i, a) => `v1.2.0-beta.${a.length - i}`
-  );
+  const tags = Array.from({ length: 100 }).map((_, i, a) => `v1.2.0-beta.${a.length - i}`);
 
   const renderScrollArea = () =>
     render(

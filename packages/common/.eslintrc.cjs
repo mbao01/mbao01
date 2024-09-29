@@ -10,7 +10,13 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
   ],
-  ignorePatterns: ["dist", "coverage", ".eslintrc.cjs", "storybook-static"],
+  ignorePatterns: [
+    "dist",
+    "coverage",
+    ".eslintrc.cjs",
+    "storybook-static",
+    "vite*.config.ts", // TODO: I need to lint files that match this pattern. They are excluded in tsconfig.json, should I add a tsconfig.node.json??
+  ],
   parser: "@typescript-eslint/parser",
   plugins: ["react-refresh"],
   parserOptions: {
@@ -20,10 +26,8 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   rules: {
-    "react-refresh/only-export-components": [
-      "warn",
-      { allowConstantExport: true },
-    ],
+    "react/prop-types": "off",
+    "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
     "@typescript-eslint/consistent-type-definitions": ["error", "type"],
   },
   settings: {

@@ -1,6 +1,6 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { describe, expect, it } from "vitest";
 import { Radio } from "./Radio";
 
 describe("Radio", () => {
@@ -36,22 +36,15 @@ describe("Radio", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it.each([
-    "primary",
-    "secondary",
-    "accent",
-    "success",
-    "warning",
-    "info",
-    "error",
-  ] as const)("has %s variant", (variant) => {
-    const { asFragment } = render(
-      <Radio name="name" defaultChecked variant={variant} />
-    );
+  it.each(["primary", "secondary", "accent", "success", "warning", "info", "error"] as const)(
+    "has %s variant",
+    (variant) => {
+      const { asFragment } = render(<Radio name="name" defaultChecked variant={variant} />);
 
-    expect(screen.getByRole("radio")).toBeInTheDocument();
-    expect(asFragment()).toMatchSnapshot();
-  });
+      expect(screen.getByRole("radio")).toBeInTheDocument();
+      expect(asFragment()).toMatchSnapshot();
+    }
+  );
 
   it.each([
     { size: "xs", name: "tiny" },

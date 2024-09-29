@@ -1,22 +1,18 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { describe, expect, it } from "vitest";
 import { Input } from "./Input";
 
 describe("Input", () => {
   it("renders with the correct initial state", () => {
-    const { asFragment } = render(
-      <Input name="username" defaultValue="John Doe" />
-    );
+    const { asFragment } = render(<Input name="username" defaultValue="John Doe" />);
 
     expect(screen.getByDisplayValue("John Doe")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("has a label", () => {
-    const { asFragment } = render(
-      <Input name="username" defaultValue="Username" />
-    );
+    const { asFragment } = render(<Input name="username" defaultValue="Username" />);
 
     expect(screen.getByDisplayValue("Username")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
@@ -40,9 +36,7 @@ describe("Input", () => {
   it("prevent user input when disabled", async () => {
     const user = userEvent.setup();
 
-    const { asFragment } = render(
-      <Input name="username" defaultValue="John Doe" disabled />
-    );
+    const { asFragment } = render(<Input name="username" defaultValue="John Doe" disabled />);
     const input = screen.getByDisplayValue("John Doe");
 
     await user.type(input, "Ayomide B.");
@@ -62,9 +56,7 @@ describe("Input", () => {
     "error",
   ] as const)("has %s variant", (variant) => {
     const value = `${variant} button`;
-    const { asFragment } = render(
-      <Input name="name" defaultValue={value} variant={variant} />
-    );
+    const { asFragment } = render(<Input name="name" defaultValue={value} variant={variant} />);
 
     expect(screen.getByDisplayValue(value)).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
@@ -77,9 +69,7 @@ describe("Input", () => {
     { size: "lg", name: "large" },
   ] as const)("has $name ($size) input", ({ size, name }) => {
     const value = `${name} input`;
-    const { asFragment } = render(
-      <Input name="name" defaultValue={value} size={size} />
-    );
+    const { asFragment } = render(<Input name="name" defaultValue={value} size={size} />);
 
     expect(screen.getByDisplayValue(value)).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();

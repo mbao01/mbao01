@@ -2,11 +2,7 @@
 
 import { forwardRef } from "react";
 import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu";
-import {
-  CheckIcon,
-  ChevronRightIcon,
-  DotFilledIcon,
-} from "@radix-ui/react-icons";
+import { CheckIcon, ChevronRightIcon, DotFilledIcon } from "@radix-ui/react-icons";
 import type {
   DropdownMenuCheckboxItemProps,
   DropdownMenuContentProps,
@@ -32,9 +28,7 @@ import {
   getMenubarSubTriggerClasses,
 } from "../Menubar/constants";
 
-const DropdownMenu = (props: DropdownMenuProps) => (
-  <DropdownMenuPrimitive.Root {...props} />
-);
+const DropdownMenu = (props: DropdownMenuProps) => <DropdownMenuPrimitive.Root {...props} />;
 
 const DropdownMenuSubTrigger = forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitive.SubTrigger>,
@@ -49,8 +43,7 @@ const DropdownMenuSubTrigger = forwardRef<
     <ChevronRightIcon className="ml-auto h-4 w-4" />
   </DropdownMenuPrimitive.SubTrigger>
 ));
-DropdownMenuSubTrigger.displayName =
-  DropdownMenuPrimitive.SubTrigger.displayName;
+DropdownMenuSubTrigger.displayName = DropdownMenuPrimitive.SubTrigger.displayName;
 
 const DropdownMenuSubContent = forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitive.SubContent>,
@@ -62,8 +55,7 @@ const DropdownMenuSubContent = forwardRef<
     {...props}
   />
 ));
-DropdownMenuSubContent.displayName =
-  DropdownMenuPrimitive.SubContent.displayName;
+DropdownMenuSubContent.displayName = DropdownMenuPrimitive.SubContent.displayName;
 
 const DropdownMenuContent = forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitive.Content>,
@@ -109,8 +101,7 @@ const DropdownMenuCheckboxItem = forwardRef<
     {children}
   </DropdownMenuPrimitive.CheckboxItem>
 ));
-DropdownMenuCheckboxItem.displayName =
-  DropdownMenuPrimitive.CheckboxItem.displayName;
+DropdownMenuCheckboxItem.displayName = DropdownMenuPrimitive.CheckboxItem.displayName;
 
 const DropdownMenuRadioItem = forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitive.RadioItem>,
@@ -155,13 +146,8 @@ const DropdownMenuSeparator = forwardRef<
 ));
 DropdownMenuSeparator.displayName = DropdownMenuPrimitive.Separator.displayName;
 
-const DropdownMenuShortcut = ({
-  className,
-  ...props
-}: DropdownMenuShortcutProps) => {
-  return (
-    <span className={cn(getMenubarShortcutClasses(), className)} {...props} />
-  );
+const DropdownMenuShortcut = ({ className, ...props }: DropdownMenuShortcutProps) => {
+  return <span className={cn(getMenubarShortcutClasses(), className)} {...props} />;
 };
 DropdownMenuShortcut.displayName = "DropdownMenuShortcut";
 

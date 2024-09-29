@@ -2,33 +2,19 @@
 
 import { createContext, forwardRef, useContext } from "react";
 import * as ToggleGroupPrimitive from "@radix-ui/react-toggle-group";
-import type {
-  ToggleGroupContextType,
-  ToggleGroupItemProps,
-  ToggleGroupProps,
-} from "./types";
+import type { ToggleGroupContextType, ToggleGroupItemProps, ToggleGroupProps } from "./types";
 import { cn } from "../../utilities";
+import { getButtonClasses } from "../Button/constants";
 import { getToggleClasses } from "../Toggle/constants";
 import { getToggleGroupClasses } from "./constants";
-import { getButtonClasses } from "../Button/constants";
 
 const ToggleGroupContext = createContext<ToggleGroupContextType>({
   variant: "default",
 });
 
-const ToggleGroup = ({
-  className,
-  variant,
-  children,
-  ...props
-}: ToggleGroupProps) => (
-  <ToggleGroupPrimitive.Root
-    className={cn(getToggleGroupClasses(), className)}
-    {...props}
-  >
-    <ToggleGroupContext.Provider value={{ variant }}>
-      {children}
-    </ToggleGroupContext.Provider>
+const ToggleGroup = ({ className, variant, children, ...props }: ToggleGroupProps) => (
+  <ToggleGroupPrimitive.Root className={cn(getToggleGroupClasses(), className)} {...props}>
+    <ToggleGroupContext.Provider value={{ variant }}>{children}</ToggleGroupContext.Provider>
   </ToggleGroupPrimitive.Root>
 );
 

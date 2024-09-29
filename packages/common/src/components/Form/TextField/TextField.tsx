@@ -1,7 +1,7 @@
 import React from "react";
-import { type TextFieldProps } from "./types";
 import { FormControl } from "../components/FormControl/FormControl";
 import { Input } from "../Input";
+import { type TextFieldProps } from "./types";
 
 export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
   ({ id, name, info, error, label, ...props }: TextFieldProps, ref) => {

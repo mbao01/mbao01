@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { format } from "date-fns/format";
 import { addDays } from "date-fns/addDays";
-import { es, arSA } from "date-fns/locale";
+import { format } from "date-fns/format";
+import { arSA, es } from "date-fns/locale";
 import { Select } from "../Form/Select";
 import { DatePicker } from "./DatePicker";
 
@@ -61,23 +61,25 @@ export const DefaultMonth: Story = {
 
 export const NavigatingMonths: Story = {
   args: {
-    fromMonth: new Date("2022-03-01"),
-    toMonth: new Date("2022-06-01"),
+    captionLayout: "dropdown",
+    startMonth: new Date("2022-03-01"),
+    endMonth: new Date("2022-06-01"),
   },
 };
 
 export const NavigatingMonthsAndYears: Story = {
   args: {
-    fromYear: 2022,
-    toYear: 2026,
+    captionLayout: "dropdown",
+    startMonth: new Date(2022, 0),
+    endMonth: new Date(2026, 11),
   },
 };
 
 export const NavigationDisabled: Story = {
   args: {
     disableNavigation: true,
-    fromYear: 2022,
-    toYear: 2026,
+    startMonth: new Date(2022, 0),
+    endMonth: new Date(2026, 11),
   },
 };
 
@@ -113,9 +115,7 @@ export const OtherNumberingSystem: Story = {
 export const WithPresets: Story = {
   args: {
     children: ({ setDate }) => (
-      <Select
-        onValueChange={(value) => setDate(addDays(new Date(), parseInt(value)))}
-      >
+      <Select onValueChange={(value) => setDate(addDays(new Date(), parseInt(value)))}>
         <Select.Trigger wide outline>
           <Select.Value placeholder="Select" />
         </Select.Trigger>

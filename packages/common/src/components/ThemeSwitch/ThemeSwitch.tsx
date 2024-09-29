@@ -1,9 +1,10 @@
 "use client";
 
-import { type ChangeEvent, useLayoutEffect, useState } from "react";
-import { type ThemeSwitchProps } from "./types";
+import type { ChangeEvent } from "react";
+import { useLayoutEffect, useState } from "react";
 import { cn, getTheme, saveTheme } from "../../utilities";
 import { getThemeSwitchClasses } from "./constants";
+import { type ThemeSwitchProps } from "./types";
 
 const MoonIcon = ({ title }: { title: string }) => (
   <svg

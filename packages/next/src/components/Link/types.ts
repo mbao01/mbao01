@@ -1,5 +1,5 @@
-import { type UrlObject } from "url";
 import { type LinkRestProps } from "next/link";
+import { type UrlObject } from "url";
 import { type VariantProps } from "@mbao01/common/libs";
 import { getLinkClasses } from "./constant";
 

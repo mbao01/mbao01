@@ -1,34 +1,18 @@
 import React from "react";
 import { Slot, Slottable } from "@radix-ui/react-slot";
-import { type ButtonProps } from "./types";
-import { getButtonClasses } from "./constants";
-import { Loading } from "../Loading";
 import { cn } from "../../utilities";
+import { Loading } from "../Loading";
+import { getButtonClasses } from "./constants";
+import { type ButtonProps } from "./types";
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  (
-    {
-      asChild,
-      className,
-      outline,
-      children,
-      isLoading,
-      variant,
-      size,
-      wide,
-      ...props
-    },
-    ref
-  ) => {
+  ({ asChild, className, outline, children, isLoading, variant, size, wide, ...props }, ref) => {
     const Comp = asChild ? Slot : "button";
 
     return (
       <Comp
         ref={ref}
-        className={cn(
-          getButtonClasses({ size, wide, outline, variant, isLoading }),
-          className
-        )}
+        className={cn(getButtonClasses({ size, wide, outline, variant, isLoading }), className)}
         {...props}
       >
         <Slottable>{children}</Slottable>

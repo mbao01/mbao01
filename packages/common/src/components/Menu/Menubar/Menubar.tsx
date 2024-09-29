@@ -1,11 +1,7 @@
 "use client";
 
 import { forwardRef } from "react";
-import {
-  CheckIcon,
-  ChevronRightIcon,
-  DotFilledIcon,
-} from "@radix-ui/react-icons";
+import { CheckIcon, ChevronRightIcon, DotFilledIcon } from "@radix-ui/react-icons";
 import * as MenubarPrimitive from "@radix-ui/react-menubar";
 import type {
   MenubarCheckboxItemProps,
@@ -36,10 +32,7 @@ import {
 } from "./constants";
 
 const Menubar = ({ className, ...props }: MenubarProps) => (
-  <MenubarPrimitive.Root
-    className={cn(getMenubarClasses(), className)}
-    {...props}
-  />
+  <MenubarPrimitive.Root className={cn(getMenubarClasses(), className)} {...props} />
 );
 Menubar.displayName = MenubarPrimitive.Root.displayName;
 
@@ -85,35 +78,29 @@ MenubarSubContent.displayName = MenubarPrimitive.SubContent.displayName;
 const MenubarContent = forwardRef<
   React.ElementRef<typeof MenubarPrimitive.Content>,
   MenubarContentProps
->(
-  (
-    { className, align = "start", alignOffset = -4, sideOffset = 8, ...props },
-    ref
-  ) => (
-    <MenubarPrimitive.Portal>
-      <MenubarPrimitive.Content
-        ref={ref}
-        align={align}
-        alignOffset={alignOffset}
-        sideOffset={sideOffset}
-        className={cn(getMenubarContentClasses(), className)}
-        {...props}
-      />
-    </MenubarPrimitive.Portal>
-  )
-);
+>(({ className, align = "start", alignOffset = -4, sideOffset = 8, ...props }, ref) => (
+  <MenubarPrimitive.Portal>
+    <MenubarPrimitive.Content
+      ref={ref}
+      align={align}
+      alignOffset={alignOffset}
+      sideOffset={sideOffset}
+      className={cn(getMenubarContentClasses(), className)}
+      {...props}
+    />
+  </MenubarPrimitive.Portal>
+));
 MenubarContent.displayName = MenubarPrimitive.Content.displayName;
 
-const MenubarItem = forwardRef<
-  React.ElementRef<typeof MenubarPrimitive.Item>,
-  MenubarItemProps
->(({ className, inset, variant, ...props }, ref) => (
-  <MenubarPrimitive.Item
-    ref={ref}
-    className={cn(getMenubarItemClasses({ inset, variant }), className)}
-    {...props}
-  />
-));
+const MenubarItem = forwardRef<React.ElementRef<typeof MenubarPrimitive.Item>, MenubarItemProps>(
+  ({ className, inset, variant, ...props }, ref) => (
+    <MenubarPrimitive.Item
+      ref={ref}
+      className={cn(getMenubarItemClasses({ inset, variant }), className)}
+      {...props}
+    />
+  )
+);
 MenubarItem.displayName = MenubarPrimitive.Item.displayName;
 
 const MenubarCheckboxItem = forwardRef<
@@ -154,16 +141,15 @@ const MenubarRadioItem = forwardRef<
 ));
 MenubarRadioItem.displayName = MenubarPrimitive.RadioItem.displayName;
 
-const MenubarLabel = forwardRef<
-  React.ElementRef<typeof MenubarPrimitive.Label>,
-  MenubarLabelProps
->(({ className, inset, ...props }, ref) => (
-  <MenubarPrimitive.Label
-    ref={ref}
-    className={cn(getMenubarLabelClasses({ inset }), className)}
-    {...props}
-  />
-));
+const MenubarLabel = forwardRef<React.ElementRef<typeof MenubarPrimitive.Label>, MenubarLabelProps>(
+  ({ className, inset, ...props }, ref) => (
+    <MenubarPrimitive.Label
+      ref={ref}
+      className={cn(getMenubarLabelClasses({ inset }), className)}
+      {...props}
+    />
+  )
+);
 MenubarLabel.displayName = MenubarPrimitive.Label.displayName;
 
 const MenubarSeparator = forwardRef<
@@ -179,9 +165,7 @@ const MenubarSeparator = forwardRef<
 MenubarSeparator.displayName = MenubarPrimitive.Separator.displayName;
 
 const MenubarShortcut = ({ className, ...props }: MenubarShortcutProps) => {
-  return (
-    <span className={cn(getMenubarShortcutClasses(), className)} {...props} />
-  );
+  return <span className={cn(getMenubarShortcutClasses(), className)} {...props} />;
 };
 MenubarShortcut.displayname = "MenubarShortcut";
 

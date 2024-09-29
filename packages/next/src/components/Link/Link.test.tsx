@@ -1,14 +1,10 @@
+import { MemoryRouter, MemoryRouterProps } from "react-router-dom";
 import { render, screen } from "@testing-library/react";
-
 import { Link } from "./Link";
 import { LinkProps } from "./types";
-import { MemoryRouter, MemoryRouterProps } from "react-router-dom";
 
 describe("Link", () => {
-  const renderLink = (
-    props: LinkProps<string>,
-    memoryRouterProps?: MemoryRouterProps
-  ) => {
+  const renderLink = (props: LinkProps<string>, memoryRouterProps?: MemoryRouterProps) => {
     return render(
       <MemoryRouter {...memoryRouterProps}>
         <Link {...props} />

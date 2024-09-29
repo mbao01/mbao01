@@ -13,13 +13,9 @@ import {
   getMenubarTriggerClasses,
 } from "./constants";
 
-export type MenubarProps = React.ComponentPropsWithoutRef<
-  typeof MenubarPrimitive.Root
->;
+export type MenubarProps = React.ComponentPropsWithoutRef<typeof MenubarPrimitive.Root>;
 
-export type MenubarTriggerProps = React.ComponentPropsWithoutRef<
-  typeof MenubarPrimitive.Trigger
-> &
+export type MenubarTriggerProps = React.ComponentPropsWithoutRef<typeof MenubarPrimitive.Trigger> &
   VariantProps<typeof getMenubarTriggerClasses>;
 
 export type MenubarSubTriggerProps = React.ComponentPropsWithoutRef<
@@ -27,9 +23,7 @@ export type MenubarSubTriggerProps = React.ComponentPropsWithoutRef<
 > &
   VariantProps<typeof getMenubarSubTriggerClasses>;
 
-export type MenubarContentProps = React.ComponentPropsWithoutRef<
-  typeof MenubarPrimitive.Content
-> &
+export type MenubarContentProps = React.ComponentPropsWithoutRef<typeof MenubarPrimitive.Content> &
   VariantProps<typeof getMenubarContentClasses>;
 
 export type MenubarSubContentProps = React.ComponentPropsWithoutRef<
@@ -37,9 +31,7 @@ export type MenubarSubContentProps = React.ComponentPropsWithoutRef<
 > &
   VariantProps<typeof getMenubarSubContentClasses>;
 
-export type MenubarItemProps = React.ComponentPropsWithoutRef<
-  typeof MenubarPrimitive.Item
-> &
+export type MenubarItemProps = React.ComponentPropsWithoutRef<typeof MenubarPrimitive.Item> &
   VariantProps<typeof getMenubarItemClasses>;
 
 export type MenubarCheckboxItemProps = React.ComponentPropsWithoutRef<
@@ -52,9 +44,7 @@ export type MenubarRadioItemProps = React.ComponentPropsWithoutRef<
 > &
   VariantProps<typeof getMenubarRadioItemClasses>;
 
-export type MenubarLabelProps = React.ComponentPropsWithoutRef<
-  typeof MenubarPrimitive.Label
-> &
+export type MenubarLabelProps = React.ComponentPropsWithoutRef<typeof MenubarPrimitive.Label> &
   VariantProps<typeof getMenubarLabelClasses>;
 
 export type MenubarSeparatorProps = React.ComponentPropsWithoutRef<

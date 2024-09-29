@@ -1,6 +1,6 @@
+import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import { Text } from ".";
-import { render, screen } from "@testing-library/react";
 
 describe("Text", () => {
   it.each([
@@ -12,9 +12,7 @@ describe("Text", () => {
     if (typeof content === "string") {
       expect(screen.getByText("🐶 puppy")).toBeInTheDocument();
     } else {
-      expect(
-        screen.getByRole("button", { name: "🐠 pet me" })
-      ).toBeInTheDocument();
+      expect(screen.getByRole("button", { name: "🐠 pet me" })).toBeInTheDocument();
     }
 
     expect(asFragment()).toMatchSnapshot();
@@ -27,21 +25,16 @@ describe("Text", () => {
     ["Heading 4", "h4", "heading"],
     ["Heading 5", "h5", "heading"],
     ["Paragraph", "p", null],
-  ] as const)(
-    "can be a flow content element e.g (%s)",
-    (description, as, role) => {
-      const { asFragment } = render(<Text as={as}>{description}</Text>);
+  ] as const)("can be a flow content element e.g (%s)", (description, as, role) => {
+    const { asFragment } = render(<Text as={as}>{description}</Text>);
 
-      if (role) {
-        expect(
-          screen.getByRole(role, { name: description })
-        ).toBeInTheDocument();
-      } else {
-        expect(screen.getByText(description)).toBeInTheDocument();
-      }
-      expect(asFragment()).toMatchSnapshot();
+    if (role) {
+      expect(screen.getByRole(role, { name: description })).toBeInTheDocument();
+    } else {
+      expect(screen.getByText(description)).toBeInTheDocument();
     }
-  );
+    expect(asFragment()).toMatchSnapshot();
+  });
 
   it.each([
     ["tiny", "xs"],

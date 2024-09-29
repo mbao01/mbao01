@@ -1,8 +1,8 @@
 import { Slot } from "@radix-ui/react-slot";
 import type { As, FormControlProps } from "./types";
-import { getFormControlClasses } from "./constants";
 import { cn } from "../../../../utilities";
 import { Label } from "../Label";
+import { getFormControlClasses } from "./constants";
 
 export const FormControl = <T extends As>({
   as,

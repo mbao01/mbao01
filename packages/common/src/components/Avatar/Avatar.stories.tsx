@@ -26,13 +26,7 @@ const withAvatar = (_: StoryFn, context: StoryContext<ArgsType>) => {
 
   return (
     <Avatar size={size} status={status}>
-      <Avatar.Image
-        alt={alt}
-        src={src}
-        ring={ring}
-        shape={shape}
-        variant={variant}
-      />
+      <Avatar.Image alt={alt} src={src} ring={ring} shape={shape} variant={variant} />
       <Avatar.Fallback ring={ring} size={size} shape={shape} variant={variant}>
         CN
       </Avatar.Fallback>

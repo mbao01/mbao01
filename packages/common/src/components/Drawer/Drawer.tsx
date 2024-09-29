@@ -1,9 +1,8 @@
 "use client";
 
+import { forwardRef } from "react";
 import { Drawer as DrawerPrimitive } from "vaul";
 import { cn } from "../../utilities";
-import { forwardRef } from "react";
-import { DrawerProps } from "./types";
 import {
   getDrawerContentClasses,
   getDrawerDescriptionClasses,
@@ -12,12 +11,10 @@ import {
   getDrawerOverlayClasses,
   getDrawerTitleClasses,
 } from "./constants";
+import { DrawerProps } from "./types";
 
 const Drawer = ({ shouldScaleBackground = true, ...props }: DrawerProps) => (
-  <DrawerPrimitive.Root
-    shouldScaleBackground={shouldScaleBackground}
-    {...props}
-  />
+  <DrawerPrimitive.Root shouldScaleBackground={shouldScaleBackground} {...props} />
 );
 Drawer.displayName = "Drawer";
 
@@ -57,18 +54,12 @@ const DrawerContent = forwardRef<
 ));
 DrawerContent.displayName = "DrawerContent";
 
-const DrawerHeader = ({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) => (
+const DrawerHeader = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
   <div className={cn(getDrawerHeaderClasses(), className)} {...props} />
 );
 DrawerHeader.displayName = "DrawerHeader";
 
-const DrawerFooter = ({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) => (
+const DrawerFooter = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
   <div className={cn(getDrawerFooterClasses(), className)} {...props} />
 );
 DrawerFooter.displayName = "DrawerFooter";
@@ -77,11 +68,7 @@ const DrawerTitle = forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Title>,
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Title>
 >(({ className, ...props }, ref) => (
-  <DrawerPrimitive.Title
-    ref={ref}
-    className={cn(getDrawerTitleClasses(), className)}
-    {...props}
-  />
+  <DrawerPrimitive.Title ref={ref} className={cn(getDrawerTitleClasses(), className)} {...props} />
 ));
 DrawerTitle.displayName = DrawerPrimitive.Title.displayName;
 

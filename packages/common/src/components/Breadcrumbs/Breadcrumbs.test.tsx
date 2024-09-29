@@ -1,6 +1,6 @@
 import { render, screen, within } from "@testing-library/react";
-import { Breadcrumb, Breadcrumbs } from "./Breadcrumbs";
 import { getSubpaths } from "../../utilities/getSubpaths";
+import { Breadcrumb, Breadcrumbs } from "./Breadcrumbs";
 
 describe("Breadcrumbs", () => {
   const renderBreadcrumbs = (
@@ -38,11 +38,7 @@ describe("Breadcrumbs", () => {
   });
 
   it("shows unlabeled paths", () => {
-    const { asFragment } = renderBreadcrumbs(
-      "/profile/edit",
-      { "/": "dashboard" },
-      true
-    );
+    const { asFragment } = renderBreadcrumbs("/profile/edit", { "/": "dashboard" }, true);
 
     [
       { name: "dashboard", href: "/" },

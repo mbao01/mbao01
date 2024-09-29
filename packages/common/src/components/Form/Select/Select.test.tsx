@@ -1,7 +1,7 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
-import { type SelectTriggerProps } from "./types";
+import { describe, expect, it } from "vitest";
 import { Select } from "./Select";
+import { type SelectTriggerProps } from "./types";
 
 describe("Select", () => {
   const renderSelect = (
@@ -10,12 +10,7 @@ describe("Select", () => {
   ) => {
     return render(
       <Select>
-        <Select.Trigger
-          size={size}
-          wide={wide}
-          variant={variant}
-          outline={outline}
-        >
+        <Select.Trigger size={size} wide={wide} variant={variant} outline={outline}>
           <Select.Value placeholder={placeholder} />
         </Select.Trigger>
         <Select.Content>
@@ -40,21 +35,16 @@ describe("Select", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it.each([
-    "primary",
-    "secondary",
-    "accent",
-    "success",
-    "warning",
-    "info",
-    "error",
-  ] as const)("has %s variant", (variant) => {
-    const placeholder = `${variant} select`;
-    const { asFragment } = renderSelect(placeholder, { variant });
+  it.each(["primary", "secondary", "accent", "success", "warning", "info", "error"] as const)(
+    "has %s variant",
+    (variant) => {
+      const placeholder = `${variant} select`;
+      const { asFragment } = renderSelect(placeholder, { variant });
 
-    expect(screen.getByRole("combobox")).toBeInTheDocument();
-    expect(asFragment()).toMatchSnapshot();
-  });
+      expect(screen.getByRole("combobox")).toBeInTheDocument();
+      expect(asFragment()).toMatchSnapshot();
+    }
+  );
 
   it.each([
     { size: "xs", name: "tiny" },

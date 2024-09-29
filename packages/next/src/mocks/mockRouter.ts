@@ -1,6 +1,6 @@
-import { vi } from "vitest";
 import mockRouter from "next-router-mock";
 import { createDynamicRouteParser } from "next-router-mock/dynamic-routes";
+import { vi } from "vitest";
 
 vi.mock("next/router", () => vi.importActual("next-router-mock"));
 
@@ -12,9 +12,8 @@ mockRouter.useParser(
 
 vi.mock("next/navigation", async (importOriginal) => {
   const actual = await importOriginal<typeof import("next/navigation")>();
-  const { useRouter } = await vi.importActual<
-    typeof import("next-router-mock")
-  >("next-router-mock");
+  const { useRouter } =
+    await vi.importActual<typeof import("next-router-mock")>("next-router-mock");
 
   const usePathname = vi.fn().mockImplementation(() => {
     const router = useRouter();

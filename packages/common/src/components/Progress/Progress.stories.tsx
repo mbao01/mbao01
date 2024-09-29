@@ -1,5 +1,4 @@
 import type { Meta, StoryFn, StoryObj } from "@storybook/react";
-
 import { Progress } from "./Progress";
 
 const withProgress = (Story: StoryFn) => {

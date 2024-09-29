@@ -1,5 +1,6 @@
 import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog";
 import { type VariantProps } from "../../libs";
+import { getButtonClasses } from "../Button/constants";
 import {
   getDialogContentClasses,
   getDialogDescriptionClasses,
@@ -8,11 +9,8 @@ import {
   getDialogOverlayClasses,
   getDialogTitleClasses,
 } from "../Dialog/constants";
-import { getButtonClasses } from "../Button/constants";
 
-export type AlertDialogProps = React.ComponentPropsWithoutRef<
-  typeof AlertDialogPrimitive.Root
->;
+export type AlertDialogProps = React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Root>;
 
 export type AlertDialogOverlayProps = React.ComponentPropsWithoutRef<
   typeof AlertDialogPrimitive.Overlay
@@ -43,7 +41,7 @@ export type AlertDialogDescriptionProps = React.ComponentPropsWithoutRef<
 export type AlertDialogActionProps = React.ComponentPropsWithoutRef<
   typeof AlertDialogPrimitive.Cancel
 > &
-  VariantProps<typeof getButtonClasses>; 
+  VariantProps<typeof getButtonClasses>;
 
 export type AlertDialogCancelProps = React.ComponentPropsWithoutRef<
   typeof AlertDialogPrimitive.Cancel

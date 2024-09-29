@@ -12,15 +12,13 @@ const createPathObject = (
 
 export const getSubpaths = (
   pathname: string,
-  pathLabels?: Record<string, string> | undefined,
+  pathLabels?: Record<string, string>,
   includeRoot?: boolean
 ) => {
   const segments = pathname?.split(PATH_SEPARATOR).filter(Boolean);
 
   const breadcrumbs = segments.map((segment, index) => {
-    const path = `${PATH_SEPARATOR}${segments
-      .slice(0, index + 1)
-      .join(PATH_SEPARATOR)}`;
+    const path = `${PATH_SEPARATOR}${segments.slice(0, index + 1).join(PATH_SEPARATOR)}`;
 
     return createPathObject(segment, path, pathLabels);
   });

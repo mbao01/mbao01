@@ -1,14 +1,10 @@
-import OTPInput from "react-otp-input";
-import { type OtpInputProps } from "./types";
-import { Input } from "../Input";
-import { cn } from "../../../utilities";
 import { useState } from "react";
+import OTPInput from "react-otp-input";
+import { cn } from "../../../utilities";
+import { Input } from "../Input";
+import { type OtpInputProps } from "./types";
 
-export const OtpInput = ({
-  className,
-  inputProps,
-  ...props
-}: OtpInputProps) => {
+export const OtpInput = ({ className, inputProps, ...props }: OtpInputProps) => {
   const [otp, setOtp] = useState("");
 
   return (
@@ -20,10 +16,7 @@ export const OtpInput = ({
         <Input
           {...inputProps}
           {...renderProps}
-          className={cn(
-            "!w-12 !appearance-none selection:bg-base text-base-content",
-            className
-          )}
+          className={cn("!w-12 !appearance-none selection:bg-base text-base-content", className)}
         />
       )}
       containerStyle={`flex justify-center items-center flex-wrap text-2xl font-bold ${

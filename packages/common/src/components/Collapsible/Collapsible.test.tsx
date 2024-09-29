@@ -1,8 +1,8 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { Collapsible } from "./Collapsible";
+import { describe, expect, it } from "vitest";
 import { Button } from "../Button";
+import { Collapsible } from "./Collapsible";
 
 describe("Collapsible", () => {
   const renderCollapsible = () => {

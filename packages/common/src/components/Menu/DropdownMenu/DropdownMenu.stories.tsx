@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { DropdownMenu } from "./DropdownMenu";
 import { Button } from "../../Button";
+import { DropdownMenu } from "./DropdownMenu";
 
 const withDropdownMenu = () => {
   return (

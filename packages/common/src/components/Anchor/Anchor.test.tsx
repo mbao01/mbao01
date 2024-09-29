@@ -1,5 +1,4 @@
 import { render, screen } from "@testing-library/react";
-
 import { Anchor } from "./Anchor";
 import { AnchorProps } from "./types";
 

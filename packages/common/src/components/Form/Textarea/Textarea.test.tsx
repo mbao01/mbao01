@@ -1,22 +1,18 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { describe, expect, it } from "vitest";
 import { Textarea } from "./Textarea";
 
 describe("Textarea", () => {
   it("renders with the correct initial state", () => {
-    const { asFragment } = render(
-      <Textarea name="username" defaultValue="John Doe" />
-    );
+    const { asFragment } = render(<Textarea name="username" defaultValue="John Doe" />);
 
     expect(screen.getByDisplayValue("John Doe")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("has a label", () => {
-    const { asFragment } = render(
-      <Textarea name="username" defaultValue="Username" />
-    );
+    const { asFragment } = render(<Textarea name="username" defaultValue="Username" />);
 
     expect(screen.getByDisplayValue("Username")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
@@ -25,9 +21,7 @@ describe("Textarea", () => {
   it("handles user textarea correctly", async () => {
     const user = userEvent.setup();
 
-    const { asFragment } = render(
-      <Textarea name="username" defaultValue="John Doe" />
-    );
+    const { asFragment } = render(<Textarea name="username" defaultValue="John Doe" />);
     const textarea = screen.getByDisplayValue("John Doe");
 
     await user.clear(textarea);
@@ -40,9 +34,7 @@ describe("Textarea", () => {
   it("prevent user textarea when disabled", async () => {
     const user = userEvent.setup();
 
-    const { asFragment } = render(
-      <Textarea name="username" defaultValue="John Doe" disabled />
-    );
+    const { asFragment } = render(<Textarea name="username" defaultValue="John Doe" disabled />);
     const textarea = screen.getByDisplayValue("John Doe");
 
     await user.type(textarea, "Ayomide B.");
@@ -62,9 +54,7 @@ describe("Textarea", () => {
     "error",
   ] as const)("has %s variant", (variant) => {
     const value = `${variant} button`;
-    const { asFragment } = render(
-      <Textarea name="name" defaultValue={value} variant={variant} />
-    );
+    const { asFragment } = render(<Textarea name="name" defaultValue={value} variant={variant} />);
 
     expect(screen.getByDisplayValue(value)).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
@@ -77,9 +67,7 @@ describe("Textarea", () => {
     { size: "lg", name: "large" },
   ] as const)("has $name ($size) textarea", ({ size, name }) => {
     const value = `${name} textarea`;
-    const { asFragment } = render(
-      <Textarea name="name" defaultValue={value} size={size} />
-    );
+    const { asFragment } = render(<Textarea name="name" defaultValue={value} size={size} />);
 
     expect(screen.getByDisplayValue(value)).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();

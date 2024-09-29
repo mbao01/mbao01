@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 import { FormControl } from "./FormControl";
 
 describe("FormControl", () => {
@@ -17,9 +17,7 @@ describe("FormControl", () => {
 
   it.each(["div", "span"] as const)("can be a %s element", (as) => {
     const description = `${as} element`;
-    const { asFragment } = render(
-      <FormControl as={as}>{description}</FormControl>
-    );
+    const { asFragment } = render(<FormControl as={as}>{description}</FormControl>);
 
     expect(screen.getByText(description)).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
