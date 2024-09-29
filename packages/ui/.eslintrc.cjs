@@ -20,10 +20,8 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   rules: {
-    "react-refresh/only-export-components": [
-      "warn",
-      { allowConstantExport: true },
-    ],
+    "react/prop-types": "off",
+    "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
     "@typescript-eslint/consistent-type-definitions": ["error", "type"],
   },
   settings: {
