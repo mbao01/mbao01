@@ -156,6 +156,9 @@ importers:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.3.1
         version: 4.3.1(prettier@3.3.3)
+      '@storybook/addon-a11y':
+        specifier: ^8.3.4
+        version: 8.3.4(storybook@8.3.4)
       '@storybook/addon-essentials':
         specifier: ^8.3.4
         version: 8.3.4(storybook@8.3.4)
@@ -307,6 +310,9 @@ importers:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.3.1
         version: 4.3.1(prettier@3.3.3)
+      '@storybook/addon-a11y':
+        specifier: ^8.3.4
+        version: 8.3.4(storybook@8.3.4)
       '@storybook/addon-essentials':
         specifier: ^8.3.4
         version: 8.3.4(storybook@8.3.4)
@@ -458,6 +464,9 @@ importers:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.3.1
         version: 4.3.1(prettier@3.3.3)
+      '@storybook/addon-a11y':
+        specifier: ^8.3.4
+        version: 8.3.4(storybook@8.3.4)
       '@storybook/addon-essentials':
         specifier: ^8.3.4
         version: 8.3.4(storybook@8.3.4)
@@ -5787,6 +5796,16 @@ packages:
     resolution: {integrity: sha512-V4BG07kuYSUkTCSBHG8G8TNhM+F19jXFWnQtzj+we8DrkpSBCee9Z3Ms8yiGer/dlmhe35/Xdgyo3/0rQKg7YA==}
     dependencies:
       '@sinonjs/commons': 3.0.1
+    dev: true
+
+  /@storybook/addon-a11y@8.3.4(storybook@8.3.4):
+    resolution: {integrity: sha512-mbLAJ9vW879Fq66zTUp7Gn7GQ9ZieYDj90ngMsZIjX42SsJEkeIrwbpkwbHlJBlWm2cm7hcF+BrULI0CmTIFpQ==}
+    peerDependencies:
+      storybook: ^8.3.4
+    dependencies:
+      '@storybook/addon-highlight': 8.3.4(storybook@8.3.4)
+      axe-core: 4.10.0
+      storybook: 8.3.4
     dev: true
 
   /@storybook/addon-actions@8.3.4(storybook@8.3.4):
