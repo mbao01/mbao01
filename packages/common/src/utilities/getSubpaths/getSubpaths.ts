@@ -12,7 +12,7 @@ const createPathObject = (
 
 export const getSubpaths = (
   pathname: string,
-  pathLabels?: Record<string, string> | undefined,
+  pathLabels?: Record<string, string>,
   includeRoot?: boolean
 ) => {
   const segments = pathname?.split(PATH_SEPARATOR).filter(Boolean);
