@@ -4,6 +4,8 @@ const config = {
   singleQuote: false,
   trailingComma: "es5",
   plugins: ["@ianvs/prettier-plugin-sort-imports"],
+  rangeEnd: null,
+  rangeStart: 0,
   importOrder: [
     "<TYPES>^(node:)",
     "<TYPES>",
