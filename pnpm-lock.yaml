@@ -231,6 +231,9 @@ importers:
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
+      axe-playwright:
+        specifier: ^2.0.3
+        version: 2.0.3(playwright@1.47.2)
       date-fns:
         specifier: ^4.1.0
         version: 4.1.0
@@ -385,6 +388,9 @@ importers:
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
+      axe-playwright:
+        specifier: ^2.0.3
+        version: 2.0.3(playwright@1.47.2)
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -536,6 +542,9 @@ importers:
       '@vitest/ui':
         specifier: ^2.1.1
         version: 2.1.1(vitest@2.1.1)
+      axe-playwright:
+        specifier: ^2.0.3
+        version: 2.0.3(playwright@1.47.2)
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -7020,6 +7029,10 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
+  /@types/junit-report-builder@3.0.2:
+    resolution: {integrity: sha512-R5M+SYhMbwBeQcNXYWNCZkl09vkVfAtcPIaCGdzIkkbeaTrVbGQ7HVgi4s+EmM/M1K4ZuWQH0jGcvMvNePfxYA==}
+    dev: true
+
   /@types/lodash@4.17.9:
     resolution: {integrity: sha512-w9iWudx1XWOHW5lQRS9iKpK/XuRhnN+0T7HvdCCd802FYkT1AMTnxndJHGrNJwRoRHkslGr4S29tjm1cT7x/7w==}
     dev: true
@@ -8175,6 +8188,29 @@ packages:
   /axe-core@4.10.0:
     resolution: {integrity: sha512-Mr2ZakwQ7XUAjp7pAwQWRhhK8mQQ6JAaNWSjmjxil0R8BPioMtQsTLOolGYkji1rcL++3dCqZA3zWqpT+9Ew6g==}
     engines: {node: '>=4'}
+    dev: true
+
+  /axe-html-reporter@2.2.11(axe-core@4.10.0):
+    resolution: {integrity: sha512-WlF+xlNVgNVWiM6IdVrsh+N0Cw7qupe5HT9N6Uyi+aN7f6SSi92RDomiP1noW8OWIV85V6x404m5oKMeqRV3tQ==}
+    engines: {node: '>=8.9.0'}
+    peerDependencies:
+      axe-core: '>=3'
+    dependencies:
+      axe-core: 4.10.0
+      mustache: 4.2.0
+    dev: true
+
+  /axe-playwright@2.0.3(playwright@1.47.2):
+    resolution: {integrity: sha512-s7iI2okyHHsD3XZK4RMJtTy2UASkNWLQtnzLuaHiK3AWkERf+cqZJqkxb7O4b56fnbib9YnZVRByTl92ME3o6g==}
+    peerDependencies:
+      playwright: '>1.0.0'
+    dependencies:
+      '@types/junit-report-builder': 3.0.2
+      axe-core: 4.10.0
+      axe-html-reporter: 2.2.11(axe-core@4.10.0)
+      junit-report-builder: 5.1.1
+      picocolors: 1.1.0
+      playwright: 1.47.2
     dev: true
 
   /axios@1.7.7:
@@ -13141,6 +13177,15 @@ packages:
       object.values: 1.2.0
     dev: true
 
+  /junit-report-builder@5.1.1:
+    resolution: {integrity: sha512-ZNOIIGMzqCGcHQEA2Q4rIQQ3Df6gSIfne+X9Rly9Bc2y55KxAZu8iGv+n2pP0bLf0XAOctJZgeloC54hWzCahQ==}
+    engines: {node: '>=16'}
+    dependencies:
+      lodash: 4.17.21
+      make-dir: 3.1.0
+      xmlbuilder: 15.1.1
+    dev: true
+
   /just-diff-apply@5.5.0:
     resolution: {integrity: sha512-OYTthRfSh55WOItVqwpefPtNt2VdKsq5AnAK6apdtR6yCH8pr0CmSr710J0Mf+WdQy7K/OzMy7K2MgAfdQURDw==}
     dev: true
@@ -13897,6 +13942,11 @@ packages:
       array-union: 2.1.0
       arrify: 2.0.1
       minimatch: 3.0.5
+    dev: true
+
+  /mustache@4.2.0:
+    resolution: {integrity: sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==}
+    hasBin: true
     dev: true
 
   /mute-stream@0.0.8:
@@ -18101,6 +18151,11 @@ packages:
 
   /xml@1.0.1:
     resolution: {integrity: sha512-huCv9IH9Tcf95zuYCsQraZtWnJvBtLVE0QHMOs8bWyZAFZNDcYjsPq1nEx8jKA9y+Beo9v+7OBPRisQTjinQMw==}
+    dev: true
+
+  /xmlbuilder@15.1.1:
+    resolution: {integrity: sha512-yMqGBqtXyeN1e3TGYvgNgDVZ3j84W4cwkOXQswghol6APgZWaff9lnbvN7MHYJOiXsvGPXtjTYJEiC9J2wv9Eg==}
+    engines: {node: '>=8.0'}
     dev: true
 
   /xmlchars@2.2.0:
