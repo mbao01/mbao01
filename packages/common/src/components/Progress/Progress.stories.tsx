@@ -28,18 +28,22 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
-  args: {},
+  args: {
+    "aria-label": "Loading...",
+  },
 };
 
 export const VerticalProgress: Story = {
   args: {
     value: 50,
+    "aria-label": "Loading...",
   },
 };
 
 export const HorizontalProgress: Story = {
   args: {
     value: 75,
+    "aria-label": "Loading...",
   },
 };
 
@@ -47,6 +51,7 @@ export const NonDecorativeProgress: Story = {
   args: {
     value: 75,
     max: 50,
+    "aria-label": "Loading...",
   },
 };
 
@@ -54,6 +59,7 @@ export const ProgressWithCustomLabel: Story = {
   args: {
     value: 75,
     max: 100,
+    "aria-label": "Loading...",
     getValueLabel: (value, max) => `${value} of ${max}`,
   },
 };

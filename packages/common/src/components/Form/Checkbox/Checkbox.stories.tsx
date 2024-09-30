@@ -22,24 +22,29 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
-  args: {},
+  args: {
+    "aria-label": "Are you happy?",
+  },
 };
 
 export const PrimaryCheckbox: Story = {
   args: {
     variant: "primary",
+    "aria-label": "Are you happy?",
   },
 };
 
 export const TinyCheckbox: Story = {
   args: {
     size: "xs",
+    "aria-label": "Are you happy?",
   },
 };
 
 export const DisabledCheckbox: Story = {
   args: {
     disabled: true,
+    "aria-label": "Are you happy?",
   },
 };
 
@@ -50,7 +55,7 @@ export const IntermediateCheckbox: Story = {
       if (ref?.current) ref.current.indeterminate = true;
     }, []);
 
-    return <Checkbox {...args} ref={ref} />;
+    return <Checkbox aria-label="Are you happy?" {...args} ref={ref} />;
   },
 };
 

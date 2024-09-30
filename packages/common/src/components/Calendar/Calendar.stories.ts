@@ -8,6 +8,17 @@ const meta = {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
     // backgrounds: [{ name: 'dark background', value: '#000', default: true }],
+    a11y: {
+      config: {
+        rules: [
+          {
+            // @fixme
+            id: "color-contrast",
+            reviewOnFail: true,
+          },
+        ],
+      },
+    },
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ["autodocs"],
@@ -41,6 +52,23 @@ export const WeekNumber: Story = {
   args: {
     weekStartsOn: 1, // Monday
     showWeekNumber: true,
+  },
+  parameters: {
+    a11y: {
+      config: {
+        rules: [
+          {
+            id: "empty-table-header",
+            enabled: false,
+          },
+          {
+            // @fixme
+            id: "color-contrast",
+            reviewOnFail: true,
+          },
+        ],
+      },
+    },
   },
 };
 

@@ -25,18 +25,21 @@ export const Default: Story = {
     defaultValue: [50],
     max: 100,
     step: 1,
+    "aria-label": "Choose level",
   },
 };
 
 export const PrimarySlider: Story = {
   args: {
     variant: "primary",
+    "aria-label": "Choose level",
   },
 };
 
 export const TinySlider: Story = {
   args: {
     size: "xs",
+    "aria-label": "Choose level",
   },
 };
 
@@ -44,6 +47,7 @@ export const DisabledSlider: Story = {
   args: {
     disabled: true,
     defaultValue: [25],
+    "aria-label": "Choose level",
   },
 };
 
@@ -51,8 +55,10 @@ export const LabeledSlider: Story = {
   render: (args) => {
     return (
       <FormControl as="div" className="flex-row items-center">
-        <Slider id="terms" {...args} />
-        <Label htmlFor="terms">Risk Level</Label>
+        <Slider id="terms" aria-labelledby="terms-label" {...args} />
+        <Label htmlFor="terms" id="terms-label">
+          Risk Level
+        </Label>
       </FormControl>
     );
   },

@@ -30,7 +30,10 @@ const Example = (
         </Button>
       </Card.Actions>
     </Card.Body>
-    <Card.Image src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" />
+    <Card.Image
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      alt="Daisy UI"
+    />
   </>
 );
 
@@ -51,7 +54,7 @@ export const FullWidth: Story = {
 export const OverlayImageOnCard: Story = {
   args: {
     overlay: true,
-    className: c("w-96"),
+    className: c("w-96 [&>*]:!text-white"),
     children: Example,
   },
 };

@@ -25,18 +25,21 @@ export const Default: Story = {
     defaultValue: 50,
     max: 100,
     step: 1,
+    "aria-label": "Select level",
   },
 };
 
 export const PrimaryRange: Story = {
   args: {
     variant: "primary",
+    "aria-label": "Select level",
   },
 };
 
 export const TinyRange: Story = {
   args: {
     size: "xs",
+    "aria-label": "Select level",
   },
 };
 
@@ -44,6 +47,7 @@ export const DisabledRange: Story = {
   args: {
     disabled: true,
     defaultValue: 25,
+    "aria-label": "Select level",
   },
 };
 

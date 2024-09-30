@@ -5,7 +5,7 @@ import { type TextFieldProps } from "./types";
 
 export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
   ({ id, name, info, error, label, ...props }: TextFieldProps, ref) => {
-    const feedbackId = `${name}-information`;
+    const feedbackId = name ? `${name}-information` : undefined;
 
     return (
       <FormControl as="label" htmlFor={id}>

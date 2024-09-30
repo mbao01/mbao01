@@ -52,7 +52,8 @@ export const Calendar = ({
         weekdays: "flex",
         weekday: "rounded-md w-9 font-normal text-[0.8rem]",
         week: "flex w-full mt-2",
-        week_number: "flex items-center text-sm italic",
+        week_number: "flex items-center text-sm italic w-6",
+        week_number_header: "w-6",
         ...classNames,
       }}
       components={{
