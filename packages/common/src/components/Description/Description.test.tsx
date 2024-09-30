@@ -9,10 +9,9 @@ describe("Description", () => {
         <Description.Detail>Evelyn Gilts</Description.Detail>
       </Description>
     );
-    const descriptionList = screen.getByRole("list");
 
-    expect(descriptionList).toHaveTextContent("NameEvelyn Gilts");
-    expect(within(descriptionList).getByRole("listitem")).toHaveTextContent("Name");
+    expect(screen.getByRole("term")).toHaveTextContent("Name");
+    expect(screen.getByRole("definition")).toHaveTextContent("Evelyn Gilts");
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -27,15 +26,14 @@ describe("Description", () => {
         <Description.Detail>AI Specialist</Description.Detail>
       </Description>
     );
-    const descriptionList = screen.getByRole("list");
     const terms = ["Name", "Age", "Profession"];
     const details = ["Evelyn Gilts", "23", "AI Specialist"];
 
-    expect(descriptionList).toHaveTextContent("NameEvelyn GiltsAge23ProfessionAI Specialist");
-    const termsEls = within(descriptionList).getAllByRole("listitem");
+    const termsEls = screen.getAllByRole("term");
+    const definitionEls = screen.getAllByRole("definition");
     termsEls.forEach((termEl, index) => {
       expect(termEl).toHaveTextContent(terms[index]);
-      expect(termEl.nextSibling).toHaveTextContent(details[index]);
+      expect(definitionEls[index]).toHaveTextContent(details[index]);
     });
     expect(asFragment()).toMatchSnapshot();
   });
