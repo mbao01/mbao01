@@ -50,5 +50,6 @@ export const TinyTextarea: Story = {
 export const DisabledTextarea: Story = {
   args: {
     disabled: true,
+    "aria-label": "Address",
   },
 };

@@ -22,24 +22,29 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
-  args: {},
+  args: {
+    "aria-label": "Accept terms",
+  },
 };
 
 export const PrimarySwitch: Story = {
   args: {
     variant: "primary",
+    "aria-label": "Accept terms",
   },
 };
 
 export const TinySwitch: Story = {
   args: {
     size: "xs",
+    "aria-label": "Accept terms",
   },
 };
 
 export const DisabledSwitch: Story = {
   args: {
     disabled: true,
+    "aria-label": "Accept terms",
   },
 };
 
@@ -50,7 +55,7 @@ export const IntermediateSwitch: Story = {
       if (ref?.current) ref.current.indeterminate = true;
     }, []);
 
-    return <Switch {...args} ref={ref} />;
+    return <Switch {...args} ref={ref} aria-label="Undecided terms" />;
   },
 };
 

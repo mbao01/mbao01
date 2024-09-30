@@ -21,12 +21,14 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const TextOnlyField: Story = {
   args: {
+    id: "first-name",
     placeholder: "First name",
   },
 };
 
 export const EmailField: Story = {
   args: {
+    id: "email",
     type: "email",
     placeholder: "Email",
   },
@@ -34,6 +36,7 @@ export const EmailField: Story = {
 
 export const PhoneField: Story = {
   args: {
+    id: "phone-number",
     type: "tel",
     placeholder: "+44 789 1234 567",
   },
@@ -41,12 +44,15 @@ export const PhoneField: Story = {
 
 export const TextFieldWithLabel: Story = {
   args: {
+    id: "first-name",
     label: "First name",
   },
 };
 
 export const DisabledTextField: Story = {
   args: {
+    id: "last-name",
     disabled: true,
+    "aria-label": "Last name",
   },
 };

@@ -50,6 +50,7 @@ const Phone = React.forwardRef<HTMLInputElement, PhoneProps>(
           <Popover.Trigger asChild>
             <Button
               role="combobox"
+              aria-label="Select country code"
               aria-expanded={open}
               size={size}
               variant={variant}

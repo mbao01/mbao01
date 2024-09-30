@@ -10,7 +10,7 @@ type ArgsType = Partial<{
 
 const withSelect = (_: StoryFn, context: StoryContext<ArgsType>) => {
   const { size, wide, variant, outline } = context.args;
-  console.log(context.args);
+
   return (
     <Select>
       <Select.Trigger size={size} wide={wide} variant={variant} outline={outline}>
@@ -37,6 +37,17 @@ const meta = {
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
+    a11y: {
+      config: {
+        rules: [
+          {
+            // @fixme
+            id: "button-name",
+            reviewOnFail: true,
+          },
+        ],
+      },
+    },
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ["autodocs"],

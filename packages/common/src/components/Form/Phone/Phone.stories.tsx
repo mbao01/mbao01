@@ -19,12 +19,15 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
-  args: {},
+  args: {
+    "aria-label": "Phone number",
+  },
 };
 
 export const PrimaryPhone: Story = {
   args: {
     variant: "primary",
+    "aria-label": "Phone number",
   },
 };
 
@@ -32,6 +35,7 @@ export const OutlinePhone: Story = {
   args: {
     outline: true,
     variant: "accent",
+    "aria-label": "Phone number",
   },
 };
 
@@ -46,5 +50,6 @@ export const TinyPhone: Story = {
 export const DisabledPhone: Story = {
   args: {
     disabled: true,
+    "aria-label": "Phone number",
   },
 };

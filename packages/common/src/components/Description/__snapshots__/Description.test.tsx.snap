@@ -2,12 +2,9 @@
 
 exports[`Description > description list with a single term 1`] = `
 <DocumentFragment>
-  <dl
-    role="list"
-  >
+  <dl>
     <dt
       class="py-2 text-sm font-semibold"
-      role="listitem"
     >
       Name
     </dt>
@@ -22,12 +19,9 @@ exports[`Description > description list with a single term 1`] = `
 
 exports[`Description > description list with multiple terms 1`] = `
 <DocumentFragment>
-  <dl
-    role="list"
-  >
+  <dl>
     <dt
       class="py-2 text-sm font-semibold"
-      role="listitem"
     >
       Name
     </dt>
@@ -38,7 +32,6 @@ exports[`Description > description list with multiple terms 1`] = `
     </dd>
     <dt
       class="py-2 text-sm font-semibold"
-      role="listitem"
     >
       Age
     </dt>
@@ -49,7 +42,6 @@ exports[`Description > description list with multiple terms 1`] = `
     </dd>
     <dt
       class="py-2 text-sm font-semibold"
-      role="listitem"
     >
       Profession
     </dt>

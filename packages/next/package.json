@@ -1,6 +1,6 @@
 {
   "name": "@mbao01/next",
-  "version": "0.0.43",
+  "version": "0.0.44",
   "private": false,
   "type": "module",
   "author": "Ayomide Bakare",
@@ -44,6 +44,7 @@
     "test:coverage": "vitest run --coverage",
     "test:ui": "vitest --ui",
     "test:visual": "test-storybook --url http://127.0.0.1:6007",
+    "test:visual:coverage": "test-storybook --coverage",
     "test:visual:ci": "test-storybook --ci --verbose --url http://127.0.0.1:6007",
     "test:visual:watch": "test-storybook --watch",
     "test:watch": "vitest"
@@ -56,6 +57,7 @@
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "@storybook/addon-a11y": "^8.3.4",
+    "@storybook/addon-coverage": "^1.0.4",
     "@storybook/addon-essentials": "^8.3.4",
     "@storybook/addon-interactions": "^8.3.4",
     "@storybook/addon-links": "^8.3.4",
@@ -80,6 +82,7 @@
     "@vitest/coverage-v8": "^2.1.1",
     "@vitest/ui": "^2.1.1",
     "autoprefixer": "^10.4.20",
+    "axe-playwright": "^2.0.3",
     "eslint": "^8.57.1",
     "eslint-config-next": "14.2.13",
     "eslint-plugin-jsx-a11y": "^6.10.0",

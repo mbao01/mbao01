@@ -14,7 +14,10 @@ const withScrollArea = (_: StoryFn, context: StoryContext<ScrollAreaProps>) => {
       {...context.args}
     >
       <div className="p-4">
-        <h4 className="mb-4 text-sm font-medium leading-none">Tags</h4>
+        <h4 className="mb-4 text-sm font-medium leading-none">
+          <a href="#">Tags</a>
+        </h4>
+
         <div className={cn(isHorizontal && "flex")}>
           {tags.map((tag, index) => (
             <>

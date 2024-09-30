@@ -12,27 +12,42 @@ import {
 import { type SliderProps } from "./types";
 
 const Slider = React.forwardRef<React.ElementRef<typeof SliderPrimitive.Root>, SliderProps>(
-  ({ className, size, variant, wide, disabled, name, ...props }, ref) => (
+  (
+    {
+      className,
+      size,
+      variant,
+      wide,
+      disabled,
+      name,
+      "aria-label": ariaLabel,
+      "aria-labelledby": ariaLabelledBy,
+      ...props
+    },
+    ref
+  ) => (
     <SliderPrimitive.Root
       ref={ref}
       name={name}
       disabled={disabled}
       className={cn(getSliderRootClasses({ wide, disabled }), className)}
-      data-testid={`${name}-slider-root`}
+      data-testid={name ? `${name}-slider-root` : null}
       {...props}
     >
       <SliderPrimitive.Track
         className={cn(getSliderTrackClasses({ size, variant }))}
-        data-testid={`${name}-slider-track`}
+        data-testid={name ? `${name}-slider-track` : null}
       >
         <SliderPrimitive.Range
           className={cn(getSliderClasses({ variant }))}
-          data-testid={`${name}-slider-range`}
+          data-testid={name ? `${name}-slider-range` : null}
         />
       </SliderPrimitive.Track>
       <SliderPrimitive.Thumb
         className={cn(getSliderThumbClasses({ size, variant }))}
-        data-testid={`${name}-slider-thumb`}
+        data-testid={name ? `${name}-slider-thumb` : null}
+        aria-label={ariaLabel}
+        aria-labelledby={ariaLabelledBy}
       />
     </SliderPrimitive.Root>
   )

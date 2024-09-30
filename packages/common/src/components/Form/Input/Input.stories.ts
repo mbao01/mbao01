@@ -63,7 +63,7 @@ export const TinyInput: Story = {
 
 export const DisabledInput: Story = {
   args: {
-    label: "First name",
+    "aria-label": "First name",
     disabled: true,
   },
 };

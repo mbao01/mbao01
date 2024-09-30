@@ -22,24 +22,29 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
-  args: {},
+  args: {
+    "aria-label": "Female",
+  },
 };
 
 export const PrimaryRadio: Story = {
   args: {
     variant: "primary",
+    "aria-label": "Female",
   },
 };
 
 export const TinyRadio: Story = {
   args: {
     size: "xs",
+    "aria-label": "Female",
   },
 };
 
 export const DisabledRadio: Story = {
   args: {
     disabled: true,
+    "aria-label": "Female",
   },
 };
 
@@ -50,7 +55,7 @@ export const IntermediateRadio: Story = {
       if (ref?.current) ref.current.indeterminate = true;
     }, []);
 
-    return <Radio {...args} ref={ref} />;
+    return <Radio aria-label="Female" {...args} ref={ref} />;
   },
 };
 
@@ -69,11 +74,11 @@ export const RadioGroup: Story = {
   render: (args) => {
     return (
       <div role="radiogroup">
-        <FormControl as="label" className="flex-row justify-start items-center gap-2">
+        <FormControl as="span" className="flex-row justify-start items-center gap-2">
           <Radio id="gender-male" name="gender" {...args} />
           <Label htmlFor="gender-male">Male</Label>
         </FormControl>{" "}
-        <FormControl as="label" className="flex-row justify-start items-center gap-2">
+        <FormControl as="span" className="flex-row justify-start items-center gap-2">
           <Radio id="gender-female" name="gender" {...args} />
           <Label htmlFor="gender-female">Female</Label>
         </FormControl>

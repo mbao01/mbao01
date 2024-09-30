@@ -2,11 +2,11 @@ import type { DescriptionDetailProps, DescriptionProps, DescriptionTermProps } f
 import { cn } from "../../utilities";
 
 const Description = (props: DescriptionProps) => {
-  return <dl role="list" {...props} />;
+  return <dl {...props} />;
 };
 
 const DescriptionTerm = ({ className, ...props }: DescriptionTermProps) => {
-  return <dt role="listitem" className={cn("py-2 text-sm font-semibold", className)} {...props} />;
+  return <dt className={cn("py-2 text-sm font-semibold", className)} {...props} />;
 };
 
 const DescriptionDetail = ({ className, ...props }: DescriptionDetailProps) => {
