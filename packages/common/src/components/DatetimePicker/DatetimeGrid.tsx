@@ -19,10 +19,10 @@ export const DatetimeGrid = forwardRef<HTMLDivElement, DatetimeGridProps>(
         {...timescape.getRootProps()}
         ref={ref}
       >
-        {!!format?.length
+        {format?.length
           ? format.map((group, i) => (
               <Fragment key={`group-${i}`}>
-                {!!group?.length
+                {group?.length
                   ? group.map((unit, j) => (
                       <Fragment key={unit}>
                         <Input

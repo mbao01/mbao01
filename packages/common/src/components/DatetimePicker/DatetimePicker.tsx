@@ -26,7 +26,9 @@ export const DatetimePicker = forwardRef<HTMLDivElement, DatetimePickerProps>(
   ) => {
     const handleDateChange = useCallback(
       (date: Date | undefined) => {
-        onChange ? onChange(date) : console.log(date);
+        if (onChange) {
+          onChange(date);
+        }
       },
       [onChange]
     );
