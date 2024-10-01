@@ -91,7 +91,7 @@ describe("DatetimePicker", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it.only("and the user must enter a date between the minimum and maximum dates", async () => {
+  it("and the user must enter a date between the minimum and maximum dates", async () => {
     const user = userEvent.setup();
     const { asFragment } = render(
       <DatetimePicker
