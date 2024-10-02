@@ -7,6 +7,7 @@ export { Select } from "./Select";
 export { Slider } from "./Slider";
 export { Switch } from "./Switch";
 export { Checkbox } from "./Checkbox";
+export { TagsInput } from "./TagsInput";
 export { Textarea } from "./Textarea";
 export { TextField } from "./TextField";
 export { Label } from "./components/Label";
