@@ -1,0 +1,536 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TagsInput > and by using the keyboard the user can remove a tag 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+  >
+    <span
+      aria-disabled="false"
+      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none ring-1 ring-inset opacity-80"
+      data-active="true"
+      tabindex="0"
+    >
+      <span
+        class="truncate max-w-24"
+      >
+        World
+      </span>
+      <button
+        aria-label="Remove World option"
+        aria-roledescription="button to remove option"
+        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:text-error"
+        type="button"
+      >
+        <span
+          class="sr-only"
+        >
+          Remove World option
+        </span>
+        <svg
+          class="h-4 w-4"
+          fill="none"
+          height="15"
+          viewBox="0 0 15 15"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </span>
+    <input
+      aria-label="Enter anything"
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 caret-transparent"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > and the user can only enter a certain minimum or maximum number of tags 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+  >
+    <span
+      aria-disabled="true"
+      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none"
+      data-active="false"
+      tabindex="-1"
+    >
+      <span
+        class="truncate max-w-24"
+      >
+        World
+      </span>
+      <button
+        aria-label="Remove World option"
+        aria-roledescription="button to remove option"
+        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:text-error"
+        disabled=""
+        type="button"
+      >
+        <span
+          class="sr-only"
+        >
+          Remove World option
+        </span>
+        <svg
+          class="h-4 w-4"
+          fill="none"
+          height="15"
+          viewBox="0 0 15 15"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </span>
+    <input
+      aria-label="Enter anything"
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > and the user can remove a tag 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+  >
+    <input
+      aria-label="Enter anything"
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > and the user enters a tag 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+  >
+    <span
+      aria-disabled="false"
+      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none"
+      data-active="false"
+      tabindex="-1"
+    >
+      <span
+        class="truncate max-w-24"
+      >
+        Hello
+      </span>
+      <button
+        aria-label="Remove Hello option"
+        aria-roledescription="button to remove option"
+        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:text-error"
+        type="button"
+      >
+        <span
+          class="sr-only"
+        >
+          Remove Hello option
+        </span>
+        <svg
+          class="h-4 w-4"
+          fill="none"
+          height="15"
+          viewBox="0 0 15 15"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </span>
+    <span
+      aria-disabled="false"
+      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none"
+      data-active="false"
+      tabindex="-1"
+    >
+      <span
+        class="truncate max-w-24"
+      >
+        World
+      </span>
+      <button
+        aria-label="Remove World option"
+        aria-roledescription="button to remove option"
+        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:text-error"
+        type="button"
+      >
+        <span
+          class="sr-only"
+        >
+          Remove World option
+        </span>
+        <svg
+          class="h-4 w-4"
+          fill="none"
+          height="15"
+          viewBox="0 0 15 15"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </span>
+    <input
+      aria-label="Enter anything"
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has accent variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-accent min-h-10 px-4"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      placeholder="accent badge"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has default variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border-0 min-h-10 px-4"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      placeholder="default badge"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has error variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-error min-h-10 px-4"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      placeholder="error badge"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has ghost variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-ghost min-h-10 px-4"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      placeholder="ghost badge"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has info variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-info min-h-10 px-4"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      placeholder="info badge"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has large (lg) size 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-16 px-5 text-lg"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-6 text-lg"
+      placeholder="TagsInput large"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has medium (md) size 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-12 px-4 text-sm"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-5 text-sm"
+      placeholder="TagsInput medium"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has no outline 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      placeholder="TagsInput has no outline"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has outline 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border min-h-10 px-4 border-neutral-content"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      placeholder="TagsInput has outline"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has primary variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-primary min-h-10 px-4"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      placeholder="primary badge"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has secondary variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-secondary min-h-10 px-4"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      placeholder="secondary badge"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has small (sm) size 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit rounded-md transition-all overflow-hidden min-h-8 px-3 py-1.5 text-sm"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-4 text-sm"
+      placeholder="TagsInput small"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has success variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-success min-h-10 px-4"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      placeholder="success badge"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has tiny (xs) size 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit rounded-md transition-all overflow-hidden min-h-6 px-2 py-1 text-xs"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-3 text-xs"
+      placeholder="TagsInput tiny"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > has warning variant 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-warning min-h-10 px-4"
+  >
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      placeholder="warning badge"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TagsInput > renders some default tags 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+  >
+    <span
+      aria-disabled="false"
+      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none"
+      data-active="false"
+      tabindex="-1"
+    >
+      <span
+        class="truncate max-w-24"
+      >
+        Hello
+      </span>
+      <button
+        aria-label="Remove Hello option"
+        aria-roledescription="button to remove option"
+        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:text-error"
+        type="button"
+      >
+        <span
+          class="sr-only"
+        >
+          Remove Hello option
+        </span>
+        <svg
+          class="h-4 w-4"
+          fill="none"
+          height="15"
+          viewBox="0 0 15 15"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </span>
+    <span
+      aria-disabled="false"
+      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none"
+      data-active="false"
+      tabindex="-1"
+    >
+      <span
+        class="truncate max-w-24"
+      >
+        World
+      </span>
+      <button
+        aria-label="Remove World option"
+        aria-roledescription="button to remove option"
+        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:text-error"
+        type="button"
+      >
+        <span
+          class="sr-only"
+        >
+          Remove World option
+        </span>
+        <svg
+          class="h-4 w-4"
+          fill="none"
+          height="15"
+          viewBox="0 0 15 15"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </span>
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      placeholder="Enter anything"
+      tabindex="0"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
