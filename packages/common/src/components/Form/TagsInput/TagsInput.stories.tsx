@@ -22,26 +22,31 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
-  args: {},
+  args: {
+    "aria-label": "Enter something",
+  },
 };
 
 export const SmallTagsInput: Story = {
   args: {
     size: "sm",
     defaultTags: ["Hello", "World"],
-    maxItems: 2,
+    maxItems: 3,
+    "aria-label": "Enter something",
   },
 };
 
 export const OutlineTagsInput: Story = {
   args: {
     outline: true,
+    "aria-label": "Enter something",
   },
 };
 
 export const PrimaryTagsInput: Story = {
   args: {
     variant: "primary",
+    "aria-label": "Enter something",
   },
 };
 
@@ -54,6 +59,7 @@ export const DisabledTagsInput: Story = {
 
 export const WithPlaceholder: Story = {
   args: {
+    variant: "info",
     placeholder: "Enter anything",
   },
 };
@@ -61,5 +67,6 @@ export const WithPlaceholder: Story = {
 export const WithDefaultTags: Story = {
   args: {
     defaultTags: ["Hello", "World"],
+    "aria-label": "Enter something",
   },
 };
