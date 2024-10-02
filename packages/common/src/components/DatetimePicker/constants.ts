@@ -17,7 +17,7 @@ export const INPUT_PLACEHOLDERS: InputPlaceholders = {
 };
 
 export const getDatetimeGridClasses = cva(
-  "flex items-center w-fit p-1 rounded-md rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content",
+  "flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content",
   {
     variants: {
       variant: {
