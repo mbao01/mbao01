@@ -17,7 +17,10 @@ export const INPUT_PLACEHOLDERS: InputPlaceholders = {
 };
 
 export const getDatetimeGridClasses = cva(
-  "flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content",
+  `flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content
+   [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus)]:outline-base-content/20
+   [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus-within)]:outline-base-content/20
+  `,
   {
     variants: {
       variant: {
@@ -69,7 +72,7 @@ export const getDatetimeGridClasses = cva(
 export const getDatetimeSeparatorClasses = cva("text-xs text-gray-400");
 
 export const getDatetimeInputClasses = cva(
-  "min-w-8 p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none",
+  "min-w-8 p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none",
   {
     variants: {
       size: {
