@@ -8,8 +8,9 @@ import {
   getTimePickerListClasses,
   getTimePickerScrollAreaClasses,
 } from "./constants";
-import { parseDateTime } from "./helpers";
+import { parseDateTime, setDateTime } from "./helpers";
 import { useDateInput } from "./hooks";
+import { type TimeString } from "./types";
 
 export const TimePicker = () => {
   const { value, onValueChange, time, onTimeChange } = useDateInput();
@@ -17,18 +18,14 @@ export const TimePicker = () => {
   const timestamp = 15;
 
   const formateSelectedTime = useCallback(
-    (time: string, hour: number, partStamp: number) => {
+    (time: TimeString) => {
       onTimeChange(time);
 
       const newVal = parseDateTime(value ?? new Date());
 
       if (!newVal) return;
 
-      newVal.setHours(hour, partStamp === 0 ? parseInt("00") : timestamp * partStamp);
-
-      // ? refactor needed check if we want to use the new date
-
-      onValueChange(newVal);
+      onValueChange(setDateTime(newVal, time));
     },
     [value]
   );
@@ -66,24 +63,7 @@ export const TimePicker = () => {
 
         currentElm.focus();
 
-        const timeValue = currentElm.textContent ?? "";
-
-        // this should work now haha that hour is what does the trick
-
-        const PM_AM = timeValue.split(" ")[1];
-        const PM_AM_hour = parseInt(timeValue.split(" ")[0].split(":")[0]);
-        const hour =
-          PM_AM === "AM"
-            ? PM_AM_hour === 12
-              ? 0
-              : PM_AM_hour
-            : PM_AM_hour === 12
-              ? 12
-              : PM_AM_hour + 12;
-
-        const part = Math.floor(parseInt(timeValue.split(" ")[0].split(":")[1]) / 15);
-
-        formateSelectedTime(timeValue, hour, part);
+        formateSelectedTime((currentElm.textContent ?? "") as TimeString);
       };
 
       const reset = () => {
@@ -114,8 +94,8 @@ export const TimePicker = () => {
   );
 
   const handleClick = useCallback(
-    (hour: number, part: number, PM_AM: string, currentIndex: number) => {
-      formateSelectedTime(`${hour}:${part === 0 ? "00" : timestamp * part} ${PM_AM}`, hour, part);
+    (time: TimeString, currentIndex: number) => {
+      formateSelectedTime(time);
       setActiveIndex(currentIndex);
     },
     [formateSelectedTime]
@@ -196,18 +176,18 @@ export const TimePicker = () => {
 
               const currentValue = `${formatIndex}:${
                 part === 0 ? "00" : timestamp * part
-              } ${PM_AM}`;
+              } ${PM_AM}` as TimeString;
 
               return (
                 <li
                   tabIndex={isSelected ? 0 : -1}
                   id={`time-${trueIndex}`}
                   key={`time-${trueIndex}`}
-                  aria-label="currentTime"
+                  aria-label={currentValue}
                   className={cn(
                     getTimePickerClasses({ selected: isSelected, suggested: isSuggested })
                   )}
-                  onClick={() => handleClick(i, part, PM_AM, trueIndex)}
+                  onClick={() => handleClick(currentValue, trueIndex)}
                   onFocus={() => isSuggested && setActiveIndex(trueIndex)}
                 >
                   {currentValue}

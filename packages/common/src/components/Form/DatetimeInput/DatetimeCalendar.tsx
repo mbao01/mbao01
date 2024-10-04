@@ -16,18 +16,19 @@ import { type DatetimeCalendarProps } from "./types";
 
 export const DatetimeCalendar = ({
   size,
-  className,
   disabled,
+  className,
   ...props
 }: DatetimeCalendarProps) => {
   const { value, onValueChange, time } = useDateInput();
 
-  const formateSelectedDate = useCallback(
+  const handleSelect = useCallback(
     (_: Date | undefined, triggerDate: Date) => {
       const parsedDateTime = parseDateTime(triggerDate);
 
       if (parsedDateTime) {
-        parsedDateTime.setHours(parseInt(time.split(":")[0]), parseInt(time.split(":")[1]));
+        const [hours, minutes] = time.split(":");
+        parsedDateTime.setHours(parseInt(hours) || 0, parseInt(minutes) || 0);
         onValueChange(parsedDateTime);
       }
     },
@@ -43,7 +44,7 @@ export const DatetimeCalendar = ({
           className={cn(getDatetimeCalendarTriggerClasses({ size }))}
         >
           <CalendarIcon className={getDatetimeCalendarIconClasses({ size })} />
-          <span className="sr-only">calender</span>
+          <span className="sr-only">calendar</span>
         </Button>
       </Popover.Trigger>
       <Popover.Content className="w-auto p-0" sideOffset={8}>
@@ -55,7 +56,7 @@ export const DatetimeCalendar = ({
             className={cn(getDatetimeCalendarClasses(), className)}
             mode="single"
             selected={value}
-            onSelect={formateSelectedDate}
+            onSelect={handleSelect}
           />
           <TimePicker />
         </div>

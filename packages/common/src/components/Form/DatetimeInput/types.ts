@@ -1,6 +1,6 @@
-import { VariantProps } from "../../../libs";
-import { CalendarProps } from "../../Calendar/types";
-import { InputProps } from "../Input/types";
+import { type VariantProps } from "../../../libs";
+import { type CalendarProps } from "../../Calendar/types";
+import { type InputProps } from "../Input/types";
 import { getDatetimeInputContainerClasses } from "./constants";
 
 type DisabledType = { disabled?: boolean };
@@ -21,10 +21,16 @@ export type DatetimeInputProps = NaturalLanguageInputType &
 export type DatetimeInputContextProps = {
   value?: Date;
   onValueChange: (date: Date | undefined) => void;
-  time: string;
-  onTimeChange: (time: string) => void;
+  time: TimeString;
+  onTimeChange: (time: TimeString) => void;
 };
 
 export type DatetimeCalendarProps = VariantType & CalendarType & DisabledType;
 
 export type NaturalLanguageInputProps = NaturalLanguageInputType;
+
+type Hours = `${1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12}`;
+type Minutes = `${0 | 1 | 2 | 3 | 4 | 5}${0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9}`;
+type PM_AM = "AM" | "PM";
+
+export type TimeString = `${Hours}:${Minutes} ${PM_AM}` | "";
