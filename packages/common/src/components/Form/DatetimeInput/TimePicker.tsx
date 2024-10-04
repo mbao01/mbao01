@@ -13,7 +13,7 @@ import { useDateInput } from "./hooks";
 import { type TimeString } from "./types";
 
 export const TimePicker = () => {
-  const { value, onValueChange, time, onTimeChange } = useDateInput();
+  const { value, onDateChange, time, onTimeChange } = useDateInput();
   const [activeIndex, setActiveIndex] = useState(-1);
   const timestamp = 15;
 
@@ -25,7 +25,7 @@ export const TimePicker = () => {
 
       if (!newVal) return;
 
-      onValueChange(setDateTime(newVal, time));
+      onDateChange(setDateTime(newVal, time));
     },
     [value]
   );

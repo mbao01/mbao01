@@ -17,7 +17,7 @@ export const DatetimeInput = forwardRef<HTMLInputElement, DatetimeInputProps>(
       date,
       defaultDate,
       locale,
-      onValueChange,
+      onDateChange,
       placeholder,
       outline,
       disabled,
@@ -41,12 +41,12 @@ export const DatetimeInput = forwardRef<HTMLInputElement, DatetimeInputProps>(
       }
     }, [date]);
 
-    const handleValueChange = useCallback((d: Date | undefined) => {
+    const handleDateChange = useCallback((d: Date | undefined) => {
       if (!isControlled) {
         setDate(d);
       }
 
-      onValueChange?.(d);
+      onDateChange?.(d);
     }, []);
 
     const onTimeChange = useCallback((time: TimeString) => {
@@ -57,7 +57,7 @@ export const DatetimeInput = forwardRef<HTMLInputElement, DatetimeInputProps>(
       <DatetimeInputContext.Provider
         value={{
           value: isControlled ? date : _date,
-          onValueChange: handleValueChange,
+          onDateChange: handleDateChange,
           time,
           onTimeChange,
         }}

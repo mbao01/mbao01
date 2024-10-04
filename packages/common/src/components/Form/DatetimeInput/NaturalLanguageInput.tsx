@@ -8,7 +8,7 @@ import { type NaturalLanguageInputProps } from "./types";
 
 export const NaturalLanguageInput = forwardRef<HTMLInputElement, NaturalLanguageInputProps>(
   ({ placeholder = 'e.g. "tomorrow at 5pm" or "in 2 hours"', size, locale, ...props }, ref) => {
-    const { value, onValueChange, time, onTimeChange } = useDateInput();
+    const { value, onDateChange, time, onTimeChange } = useDateInput();
     const [inputValue, setInputValue] = useState<string>("");
 
     useEffect(() => {
@@ -21,7 +21,7 @@ export const NaturalLanguageInput = forwardRef<HTMLInputElement, NaturalLanguage
       (e: ChangeEvent<HTMLInputElement>) => {
         const input = e.currentTarget.value;
         if (!input) {
-          onValueChange(undefined);
+          onDateChange(undefined);
           onTimeChange("");
           return;
         }
@@ -29,7 +29,7 @@ export const NaturalLanguageInput = forwardRef<HTMLInputElement, NaturalLanguage
         // parse the date string when the input field loses focus
         const parsedDateTime = parseDateTime(input);
         if (parsedDateTime) {
-          onValueChange(parsedDateTime);
+          onDateChange(parsedDateTime);
           setInputValue(formatDateTime(parsedDateTime, locale));
           onTimeChange(getParsedTime(parsedDateTime));
         }
@@ -43,7 +43,7 @@ export const NaturalLanguageInput = forwardRef<HTMLInputElement, NaturalLanguage
           case "Enter":
             const parsedDateTime = parseDateTime(e.currentTarget.value);
             if (parsedDateTime) {
-              onValueChange(parsedDateTime);
+              onDateChange(parsedDateTime);
               setInputValue(formatDateTime(parsedDateTime, locale));
               onTimeChange(getParsedTime(parsedDateTime));
             }

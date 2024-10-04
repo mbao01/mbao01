@@ -15,12 +15,12 @@ export type DatetimeInputProps = NaturalLanguageInputType &
     date?: Date;
     calendar?: CalendarType;
     defaultDate?: Date;
-    onValueChange?: (date: Date | undefined) => void;
+    onDateChange?: (date: Date | undefined) => void;
   };
 
 export type DatetimeInputContextProps = {
   value?: Date;
-  onValueChange: (date: Date | undefined) => void;
+  onDateChange: (date: Date | undefined) => void;
   time: TimeString;
   onTimeChange: (time: TimeString) => void;
 };

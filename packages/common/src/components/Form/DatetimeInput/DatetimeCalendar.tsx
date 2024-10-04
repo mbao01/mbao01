@@ -20,7 +20,7 @@ export const DatetimeCalendar = ({
   className,
   ...props
 }: DatetimeCalendarProps) => {
-  const { value, onValueChange, time } = useDateInput();
+  const { value, onDateChange, time } = useDateInput();
 
   const handleSelect = useCallback(
     (_: Date | undefined, triggerDate: Date) => {
@@ -29,7 +29,7 @@ export const DatetimeCalendar = ({
       if (parsedDateTime) {
         const [hours, minutes] = time.split(":");
         parsedDateTime.setHours(parseInt(hours) || 0, parseInt(minutes) || 0);
-        onValueChange(parsedDateTime);
+        onDateChange(parsedDateTime);
       }
     },
     [value, time]
