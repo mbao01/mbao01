@@ -211,31 +211,35 @@ export const MultiSelectTrigger = ({
       )}
       {...props}
     >
-      {items.map((item, index) => (
-        <Badge
-          key={item.value}
-          className={cn(
-            getMultiSelectTagClasses({ size }),
-            "px-1 rounded-xl flex items-center gap-1",
-            activeIndex === index && "ring-2 ring-muted-foreground "
-          )}
-          size={size}
-          variant={variant === "default" ? "neutral" : variant}
-        >
-          <span className="text-xs">{item.label ?? item.value}</span>
-          <button
-            type="button"
-            aria-label={`Remove ${item} option`}
-            aria-roledescription="button to remove option"
-            onMouseDown={handleMouseDown}
-            onClick={() => onValueChange(item.value, item.label)}
-            disabled={disabled}
+      {items.map((item, index) => {
+        const label = item.label ?? item.value;
+
+        return (
+          <Badge
+            key={item.value}
+            className={cn(
+              getMultiSelectTagClasses({ size }),
+              "px-1 rounded-xl flex items-center gap-1",
+              activeIndex === index && "ring-2 ring-muted-foreground "
+            )}
+            size={size}
+            variant={variant === "default" ? "neutral" : variant}
           >
-            <span className="sr-only">Remove {item.label ?? item.value} option</span>
-            <Cross2Icon className="h-4 w-4 hover:stroke-destructive" />
-          </button>
-        </Badge>
-      ))}
+            <span className="text-xs">{label}</span>
+            <button
+              type="button"
+              aria-label={`Remove ${label} option`}
+              aria-roledescription="button to remove option"
+              onMouseDown={handleMouseDown}
+              onClick={() => onValueChange(item.value, item.label)}
+              disabled={disabled}
+            >
+              <span className="sr-only">Remove {label} option</span>
+              <Cross2Icon className="h-4 w-4 hover:stroke-destructive" />
+            </button>
+          </Badge>
+        );
+      })}
       {children}
     </div>
   );
