@@ -7,15 +7,21 @@ import {
   getMultiSelectTriggerClasses,
 } from "./constants";
 
+export type Item = {
+  value: string;
+  label?: string;
+};
+
 export type MultiSelectProps = React.ComponentPropsWithoutRef<typeof Command> & {
   loop?: boolean;
-  values: string[];
+  values: Item["value"][];
   onValuesChange: (value: string[]) => void;
 };
 
 export type MultiSelectContextProps = {
-  value: string[];
-  onValueChange: (value: any) => void;
+  values: Item["value"][];
+  onValueChange: (value: Item["value"], label?: Item["label"]) => void;
+  items: Item[];
   open: boolean;
   setOpen: (value: boolean) => void;
   inputValue: string;
@@ -35,8 +41,6 @@ export type MultiSelectContentProps = HTMLAttributes<HTMLDivElement>;
 
 export type MultiSelectListProps = ComponentPropsWithoutRef<typeof Command.List> &
   VariantProps<typeof getMultiSelectListClasses>;
-export type MultiSelectItemProps = {
-  value: string;
-  label?: string;
-} & ComponentPropsWithoutRef<typeof Command.Item> &
+export type MultiSelectItemProps = Item &
+  ComponentPropsWithoutRef<typeof Command.Item> &
   VariantProps<typeof getMultiSelectItemClasses>;
