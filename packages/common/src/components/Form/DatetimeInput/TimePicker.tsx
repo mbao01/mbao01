@@ -27,7 +27,7 @@ export const TimePicker = () => {
 
       onDateChange(setDateTime(newVal, time));
     },
-    [value]
+    [value, onDateChange, onTimeChange]
   );
 
   const handleKeydown = useCallback(

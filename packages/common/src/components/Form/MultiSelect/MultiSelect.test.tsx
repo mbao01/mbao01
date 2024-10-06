@@ -13,7 +13,7 @@ describe("MultiSelect", () => {
   const renderMultiSelect = (
     values: string[] = [],
     options = OPTIONS,
-    label: string = "Choose framework",
+    label = "Choose framework",
     props?: MultiSelectTriggerProps
   ) => {
     return render(

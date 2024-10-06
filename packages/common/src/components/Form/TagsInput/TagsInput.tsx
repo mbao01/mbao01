@@ -21,7 +21,6 @@ export const TagsInput = forwardRef<HTMLDivElement, TagsInputProps>(
     {
       onChange,
       defaultTags,
-      children,
       placeholder,
       maxItems,
       minItems,
@@ -53,6 +52,7 @@ export const TagsInput = forwardRef<HTMLDivElement, TagsInputProps>(
       if (onChange) {
         onChange(tags, inputValue);
       }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [tags]);
 
     useEffect(() => {
@@ -69,7 +69,7 @@ export const TagsInput = forwardRef<HTMLDivElement, TagsInputProps>(
         }
       };
       verifyDisable();
-    }, [tags]);
+    }, [tags, parseMinItems, parseMaxItems]);
 
     const onValueChangeHandler = useCallback(
       (tag: string) => {
@@ -77,7 +77,7 @@ export const TagsInput = forwardRef<HTMLDivElement, TagsInputProps>(
           setTags([...tags, tag]);
         }
       },
-      [tags]
+      [tags, parseMaxItems]
     );
 
     const removeValue = useCallback(
@@ -86,7 +86,7 @@ export const TagsInput = forwardRef<HTMLDivElement, TagsInputProps>(
           setTags([...tags.filter((item) => item !== tag)]);
         }
       },
-      [tags]
+      [tags, parseMinItems]
     );
 
     const handleSelect = useCallback(
@@ -121,11 +121,11 @@ export const TagsInput = forwardRef<HTMLDivElement, TagsInputProps>(
         setTags(newTags);
         setInputValue("");
       },
-      [tags]
+      [tags, parseMaxItems]
     );
 
     const handleKeyDown = useCallback(
-      async (e: KeyboardEvent<HTMLInputElement>) => {
+      (e: KeyboardEvent<HTMLInputElement>) => {
         const target = e.currentTarget;
 
         if (["ArrowLeft", "ArrowRight", "Backspace", "Delete", "Escape", "Enter"].includes(e.key)) {
@@ -194,8 +194,7 @@ export const TagsInput = forwardRef<HTMLDivElement, TagsInputProps>(
               break;
 
             case "Escape":
-              const newIndex = activeIndex === -1 ? tags.length - 1 : -1;
-              setActiveIndex(newIndex);
+              setActiveIndex(activeIndex === -1 ? tags.length - 1 : -1);
               break;
 
             case "Enter":
@@ -208,7 +207,8 @@ export const TagsInput = forwardRef<HTMLDivElement, TagsInputProps>(
           }
         }
       },
-      [activeIndex, tags, inputValue, removeValue]
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      [dir, activeIndex, tags, inputValue, removeValue]
     );
 
     const handleMouseDown = useCallback((e: MouseEvent) => {

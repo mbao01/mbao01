@@ -32,7 +32,7 @@ export const DatetimeCalendar = ({
         onDateChange(parsedDateTime);
       }
     },
-    [value, time]
+    [time, onDateChange]
   );
 
   return (

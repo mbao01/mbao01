@@ -155,7 +155,7 @@ const MultiSelect = ({
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [values, inputValue, activeIndex, loop]
+    [dir, values, inputValue, activeIndex, loop]
   );
 
   return (

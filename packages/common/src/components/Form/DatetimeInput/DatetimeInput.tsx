@@ -39,6 +39,7 @@ export const DatetimeInput = forwardRef<HTMLInputElement, DatetimeInputProps>(
       if (isControlled) {
         setDate(date);
       }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [date]);
 
     const handleDateChange = useCallback((d: Date | undefined) => {
@@ -47,6 +48,7 @@ export const DatetimeInput = forwardRef<HTMLInputElement, DatetimeInputProps>(
       }
 
       onDateChange?.(d);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const onTimeChange = useCallback((time: TimeString) => {

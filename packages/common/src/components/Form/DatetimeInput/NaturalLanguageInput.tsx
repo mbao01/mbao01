@@ -15,7 +15,7 @@ export const NaturalLanguageInput = forwardRef<HTMLInputElement, NaturalLanguage
       const timeVal = time || getParsedTime(new Date());
       setInputValue(value ? formatDateTime(setDateTime(value, timeVal), locale) : "");
       onTimeChange(timeVal);
-    }, [value, time]);
+    }, [value, time, locale, onTimeChange]);
 
     const handleParse = useCallback(
       (e: ChangeEvent<HTMLInputElement>) => {
@@ -34,14 +34,14 @@ export const NaturalLanguageInput = forwardRef<HTMLInputElement, NaturalLanguage
           onTimeChange(getParsedTime(parsedDateTime));
         }
       },
-      [value]
+      [locale, onDateChange, onTimeChange]
     );
 
     const handleKeydown = useCallback(
       (e: KeyboardEvent<HTMLInputElement>) => {
+        const parsedDateTime = parseDateTime(e.currentTarget.value);
         switch (e.key) {
           case "Enter":
-            const parsedDateTime = parseDateTime(e.currentTarget.value);
             if (parsedDateTime) {
               onDateChange(parsedDateTime);
               setInputValue(formatDateTime(parsedDateTime, locale));
@@ -50,7 +50,7 @@ export const NaturalLanguageInput = forwardRef<HTMLInputElement, NaturalLanguage
             break;
         }
       },
-      [value]
+      [locale, onDateChange, onTimeChange]
     );
 
     return (
