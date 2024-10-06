@@ -68,8 +68,7 @@ export const getParsedTime = (date: Date): TimeString => {
   return "";
 };
 
-type Time = `${string}`;
-export const setDateTime = (date: Date, time: Time) => {
+export const setDateTime = (date: Date, time: TimeString) => {
   if (!time) {
     return date;
   }

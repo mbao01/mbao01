@@ -83,5 +83,5 @@ export const getTagsInputClasses = cva(
 );
 
 export const getTagDeleteClasses = cva(
-  "transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:text-error"
+  "transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:opacity-80"
 );
