@@ -19,7 +19,7 @@ exports[`TagsInput > and by using the keyboard the user can remove a tag 1`] = `
       <button
         aria-label="Remove World option"
         aria-roledescription="button to remove option"
-        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:text-error"
+        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:opacity-80"
         type="button"
       >
         <span
@@ -73,7 +73,7 @@ exports[`TagsInput > and the user can only enter a certain minimum or maximum nu
       <button
         aria-label="Remove World option"
         aria-roledescription="button to remove option"
-        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:text-error"
+        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:opacity-80"
         disabled=""
         type="button"
       >
@@ -143,7 +143,7 @@ exports[`TagsInput > and the user enters a tag 1`] = `
       <button
         aria-label="Remove Hello option"
         aria-roledescription="button to remove option"
-        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:text-error"
+        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:opacity-80"
         type="button"
       >
         <span
@@ -182,7 +182,7 @@ exports[`TagsInput > and the user enters a tag 1`] = `
       <button
         aria-label="Remove World option"
         aria-roledescription="button to remove option"
-        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:text-error"
+        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:opacity-80"
         type="button"
       >
         <span
@@ -461,7 +461,7 @@ exports[`TagsInput > renders some default tags 1`] = `
       <button
         aria-label="Remove Hello option"
         aria-roledescription="button to remove option"
-        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:text-error"
+        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:opacity-80"
         type="button"
       >
         <span
@@ -500,7 +500,7 @@ exports[`TagsInput > renders some default tags 1`] = `
       <button
         aria-label="Remove World option"
         aria-roledescription="button to remove option"
-        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:text-error"
+        class="transition-all duration-300 disabled:cursor-not-allowed [&:hover:not(:disabled)]:opacity-80"
         type="button"
       >
         <span

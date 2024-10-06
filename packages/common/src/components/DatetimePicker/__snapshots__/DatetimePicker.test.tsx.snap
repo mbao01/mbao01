@@ -3,14 +3,14 @@
 exports[`DatetimePicker > and the user changes date using the Down Arrow navigation 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content min-h-fit h-10"
+    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus)]:outline-base-content/20 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus-within)]:outline-base-content/20 min-h-fit h-10"
   >
     <input
       aria-label="days"
       aria-valuemax="30"
       aria-valuemin="1"
       aria-valuenow="30"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="DD"
@@ -35,7 +35,7 @@ exports[`DatetimePicker > and the user changes date using the Down Arrow navigat
       aria-valuemax="12"
       aria-valuemin="1"
       aria-valuenow="8"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="MM"
@@ -60,7 +60,7 @@ exports[`DatetimePicker > and the user changes date using the Down Arrow navigat
       aria-valuemax="9999"
       aria-valuemin="1"
       aria-valuenow="2023"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="YYYY"
@@ -85,7 +85,7 @@ exports[`DatetimePicker > and the user changes date using the Down Arrow navigat
       aria-valuemax="23"
       aria-valuemin="0"
       aria-valuenow="6"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="HH"
@@ -111,7 +111,7 @@ exports[`DatetimePicker > and the user changes date using the Down Arrow navigat
       aria-valuemax="59"
       aria-valuemin="0"
       aria-valuenow="5"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="MM"
@@ -129,7 +129,7 @@ exports[`DatetimePicker > and the user changes date using the Down Arrow navigat
     <input
       aria-label="am/pm"
       aria-selected="true"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
       data-timescape-input=""
       placeholder="AM/PM"
       role="spinbutton"
@@ -150,14 +150,14 @@ exports[`DatetimePicker > and the user changes date using the Down Arrow navigat
 exports[`DatetimePicker > and the user changes date using the Up Arrow navigation 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content min-h-fit h-10"
+    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus)]:outline-base-content/20 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus-within)]:outline-base-content/20 min-h-fit h-10"
   >
     <input
       aria-label="days"
       aria-valuemax="31"
       aria-valuemin="1"
       aria-valuenow="2"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="DD"
@@ -182,7 +182,7 @@ exports[`DatetimePicker > and the user changes date using the Up Arrow navigatio
       aria-valuemax="12"
       aria-valuemin="1"
       aria-valuenow="11"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="MM"
@@ -207,7 +207,7 @@ exports[`DatetimePicker > and the user changes date using the Up Arrow navigatio
       aria-valuemax="9999"
       aria-valuemin="1"
       aria-valuenow="2025"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="YYYY"
@@ -232,7 +232,7 @@ exports[`DatetimePicker > and the user changes date using the Up Arrow navigatio
       aria-valuemax="23"
       aria-valuemin="0"
       aria-valuenow="8"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="HH"
@@ -258,7 +258,7 @@ exports[`DatetimePicker > and the user changes date using the Up Arrow navigatio
       aria-valuemax="59"
       aria-valuemin="0"
       aria-valuenow="7"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="MM"
@@ -276,7 +276,7 @@ exports[`DatetimePicker > and the user changes date using the Up Arrow navigatio
     <input
       aria-label="am/pm"
       aria-selected="true"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
       data-timescape-input=""
       placeholder="AM/PM"
       role="spinbutton"
@@ -297,14 +297,14 @@ exports[`DatetimePicker > and the user changes date using the Up Arrow navigatio
 exports[`DatetimePicker > and the user enter a new date 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content min-h-fit h-10"
+    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus)]:outline-base-content/20 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus-within)]:outline-base-content/20 min-h-fit h-10"
   >
     <input
       aria-label="days"
       aria-valuemax="31"
       aria-valuemin="1"
       aria-valuenow="11"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="DD"
@@ -329,7 +329,7 @@ exports[`DatetimePicker > and the user enter a new date 1`] = `
       aria-valuemax="12"
       aria-valuemin="1"
       aria-valuenow="6"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="MM"
@@ -354,7 +354,7 @@ exports[`DatetimePicker > and the user enter a new date 1`] = `
       aria-valuemax="9999"
       aria-valuemin="1"
       aria-valuenow="2028"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="YYYY"
@@ -379,7 +379,7 @@ exports[`DatetimePicker > and the user enter a new date 1`] = `
       aria-valuemax="23"
       aria-valuemin="0"
       aria-valuenow="12"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="HH"
@@ -401,10 +401,11 @@ exports[`DatetimePicker > and the user enter a new date 1`] = `
     </span>
     <input
       aria-label="minutes"
+      aria-selected="true"
       aria-valuemax="59"
       aria-valuemin="0"
       aria-valuenow="59"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="MM"
@@ -422,7 +423,7 @@ exports[`DatetimePicker > and the user enter a new date 1`] = `
     <input
       aria-label="am/pm"
       aria-selected="true"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
       data-timescape-input=""
       placeholder="AM/PM"
       role="spinbutton"
@@ -443,14 +444,14 @@ exports[`DatetimePicker > and the user enter a new date 1`] = `
 exports[`DatetimePicker > and the user must enter a date between the minimum and maximum dates 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content min-h-fit h-10"
+    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus)]:outline-base-content/20 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus-within)]:outline-base-content/20 min-h-fit h-10"
   >
     <input
       aria-label="days"
       aria-valuemax="31"
       aria-valuemin="1"
       aria-valuenow="1"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="DD"
@@ -475,7 +476,7 @@ exports[`DatetimePicker > and the user must enter a date between the minimum and
       aria-valuemax="12"
       aria-valuemin="1"
       aria-valuenow="10"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="MM"
@@ -500,7 +501,7 @@ exports[`DatetimePicker > and the user must enter a date between the minimum and
       aria-valuemax="9999"
       aria-valuemin="1"
       aria-valuenow="2024"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="YYYY"
@@ -522,10 +523,11 @@ exports[`DatetimePicker > and the user must enter a date between the minimum and
     </span>
     <input
       aria-label="hours"
+      aria-selected="true"
       aria-valuemax="23"
       aria-valuemin="0"
       aria-valuenow="7"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="HH"
@@ -551,7 +553,7 @@ exports[`DatetimePicker > and the user must enter a date between the minimum and
       aria-valuemax="59"
       aria-valuemin="0"
       aria-valuenow="6"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="MM"
@@ -569,7 +571,7 @@ exports[`DatetimePicker > and the user must enter a date between the minimum and
     <input
       aria-label="am/pm"
       aria-selected="true"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
       data-timescape-input=""
       placeholder="AM/PM"
       role="spinbutton"
@@ -590,14 +592,14 @@ exports[`DatetimePicker > and the user must enter a date between the minimum and
 exports[`DatetimePicker > renders the given date 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content min-h-fit h-10"
+    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus)]:outline-base-content/20 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus-within)]:outline-base-content/20 min-h-fit h-10"
   >
     <input
       aria-label="days"
       aria-valuemax="31"
       aria-valuemin="1"
       aria-valuenow="1"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="DD"
@@ -622,7 +624,7 @@ exports[`DatetimePicker > renders the given date 1`] = `
       aria-valuemax="12"
       aria-valuemin="1"
       aria-valuenow="10"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="MM"
@@ -647,7 +649,7 @@ exports[`DatetimePicker > renders the given date 1`] = `
       aria-valuemax="9999"
       aria-valuemin="1"
       aria-valuenow="2024"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="YYYY"
@@ -672,7 +674,7 @@ exports[`DatetimePicker > renders the given date 1`] = `
       aria-valuemax="23"
       aria-valuemin="0"
       aria-valuenow="7"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="HH"
@@ -697,7 +699,7 @@ exports[`DatetimePicker > renders the given date 1`] = `
       aria-valuemax="59"
       aria-valuemin="0"
       aria-valuenow="6"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
       data-timescape-input=""
       inputmode="numeric"
       placeholder="MM"
@@ -714,7 +716,7 @@ exports[`DatetimePicker > renders the given date 1`] = `
     </span>
     <input
       aria-label="am/pm"
-      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
       data-timescape-input=""
       placeholder="AM/PM"
       role="spinbutton"
