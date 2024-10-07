@@ -1,0 +1,1780 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MultiSelect > and by using the keyboard the user can select and remove an option 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r10:"
+      id=":rv:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      Choose framework
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    >
+      <span
+        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none px-1 rounded-xl flex items-center gap-1"
+      >
+        <span
+          class="text-xs"
+        >
+          Svelte
+        </span>
+        <button
+          aria-label="Remove Svelte option"
+          aria-roledescription="button to remove option"
+          type="button"
+        >
+          <span
+            class="sr-only"
+          >
+            Remove Svelte option
+          </span>
+          <svg
+            class="h-4 w-4 hover:stroke-destructive"
+            fill="none"
+            height="15"
+            viewBox="0 0 15 15"
+            width="15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </span>
+      <input
+        aria-autocomplete="list"
+        aria-controls=":ru:"
+        aria-expanded="true"
+        aria-labelledby=":rv:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r10:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        aria-label="Suggestions"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        cmdk-list=""
+        id=":ru:"
+        role="listbox"
+      >
+        <div
+          cmdk-list-sizer=""
+        >
+          <div
+            aria-disabled="false"
+            aria-selected="true"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="true"
+            data-value="React"
+            id=":r11:"
+            role="option"
+          >
+            React
+          </div>
+          <div
+            aria-disabled="false"
+            aria-selected="false"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="false"
+            data-value="Vue"
+            id=":r12:"
+            role="option"
+          >
+            Vue
+          </div>
+          <div
+            aria-disabled="false"
+            aria-selected="false"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="false"
+            data-value="Svelte"
+            id=":r13:"
+            role="option"
+          >
+            Svelte
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > and by using the keyboard the user can select and remove an option 2`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r10:"
+      id=":rv:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      Choose framework
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    >
+      <span
+        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none px-1 rounded-xl flex items-center gap-1"
+      >
+        <span
+          class="text-xs"
+        >
+          Svelte
+        </span>
+        <button
+          aria-label="Remove Svelte option"
+          aria-roledescription="button to remove option"
+          type="button"
+        >
+          <span
+            class="sr-only"
+          >
+            Remove Svelte option
+          </span>
+          <svg
+            class="h-4 w-4 hover:stroke-destructive"
+            fill="none"
+            height="15"
+            viewBox="0 0 15 15"
+            width="15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </span>
+      <input
+        aria-autocomplete="list"
+        aria-controls=":ru:"
+        aria-expanded="true"
+        aria-labelledby=":rv:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r10:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        aria-label="Suggestions"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        cmdk-list=""
+        id=":ru:"
+        role="listbox"
+      >
+        <div
+          cmdk-list-sizer=""
+        >
+          <div
+            aria-disabled="false"
+            aria-selected="true"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="true"
+            data-value="React"
+            id=":r11:"
+            role="option"
+          >
+            React
+          </div>
+          <div
+            aria-disabled="false"
+            aria-selected="false"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="false"
+            data-value="Vue"
+            id=":r12:"
+            role="option"
+          >
+            Vue
+          </div>
+          <div
+            aria-disabled="false"
+            aria-selected="false"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="false"
+            data-value="Svelte"
+            id=":r13:"
+            role="option"
+          >
+            Svelte
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > and the user can select and remove an option 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":rq:"
+      id=":rp:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      Choose framework
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    >
+      <span
+        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none px-1 rounded-xl flex items-center gap-1"
+      >
+        <span
+          class="text-xs"
+        >
+          React
+        </span>
+        <button
+          aria-label="Remove React option"
+          aria-roledescription="button to remove option"
+          type="button"
+        >
+          <span
+            class="sr-only"
+          >
+            Remove React option
+          </span>
+          <svg
+            class="h-4 w-4 hover:stroke-destructive"
+            fill="none"
+            height="15"
+            viewBox="0 0 15 15"
+            width="15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </span>
+      <input
+        aria-autocomplete="list"
+        aria-controls=":ro:"
+        aria-expanded="true"
+        aria-labelledby=":rp:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":rq:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        aria-label="Suggestions"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        cmdk-list=""
+        id=":ro:"
+        role="listbox"
+      >
+        <div
+          cmdk-list-sizer=""
+        >
+          <div
+            aria-disabled="false"
+            aria-selected="true"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="true"
+            data-value="React"
+            id=":rr:"
+            role="option"
+          >
+            React
+          </div>
+          <div
+            aria-disabled="false"
+            aria-selected="false"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="false"
+            data-value="Vue"
+            id=":rs:"
+            role="option"
+          >
+            Vue
+          </div>
+          <div
+            aria-disabled="false"
+            aria-selected="false"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="false"
+            data-value="Svelte"
+            id=":rt:"
+            role="option"
+          >
+            Svelte
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > and the user can select and remove an option 2`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":rq:"
+      id=":rp:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      Choose framework
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    >
+      <span
+        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none px-1 rounded-xl flex items-center gap-1"
+      >
+        <span
+          class="text-xs"
+        >
+          React
+        </span>
+        <button
+          aria-label="Remove React option"
+          aria-roledescription="button to remove option"
+          type="button"
+        >
+          <span
+            class="sr-only"
+          >
+            Remove React option
+          </span>
+          <svg
+            class="h-4 w-4 hover:stroke-destructive"
+            fill="none"
+            height="15"
+            viewBox="0 0 15 15"
+            width="15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </span>
+      <input
+        aria-autocomplete="list"
+        aria-controls=":ro:"
+        aria-expanded="true"
+        aria-labelledby=":rp:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":rq:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        aria-label="Suggestions"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        cmdk-list=""
+        id=":ro:"
+        role="listbox"
+      >
+        <div
+          cmdk-list-sizer=""
+        >
+          <div
+            aria-disabled="false"
+            aria-selected="true"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="true"
+            data-value="React"
+            id=":rr:"
+            role="option"
+          >
+            React
+          </div>
+          <div
+            aria-disabled="false"
+            aria-selected="false"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="false"
+            data-value="Vue"
+            id=":rs:"
+            role="option"
+          >
+            Vue
+          </div>
+          <div
+            aria-disabled="false"
+            aria-selected="false"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="false"
+            data-value="Svelte"
+            id=":rt:"
+            role="option"
+          >
+            Svelte
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > and the user clicks on the input > show the list of available options 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r8:"
+      id=":r7:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      Choose framework
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r6:"
+        aria-expanded="true"
+        aria-labelledby=":r7:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r8:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        aria-label="Suggestions"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        cmdk-list=""
+        id=":r6:"
+        role="listbox"
+      >
+        <div
+          cmdk-list-sizer=""
+        >
+          <div
+            aria-disabled="false"
+            aria-selected="true"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="true"
+            data-value="React"
+            id=":r9:"
+            role="option"
+          >
+            React
+          </div>
+          <div
+            aria-disabled="false"
+            aria-selected="false"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="false"
+            data-value="Vue"
+            id=":ra:"
+            role="option"
+          >
+            Vue
+          </div>
+          <div
+            aria-disabled="false"
+            aria-selected="false"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="false"
+            data-value="Svelte"
+            id=":rb:"
+            role="option"
+          >
+            Svelte
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > and the user enters a text that does not match any options > show an empty list 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":rk:"
+      id=":rj:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      Choose framework
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":ri:"
+        aria-expanded="true"
+        aria-labelledby=":rj:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":rk:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value="Brave"
+      />
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        aria-label="Suggestions"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        cmdk-list=""
+        id=":ri:"
+        role="listbox"
+      >
+        <div
+          cmdk-list-sizer=""
+        >
+          <div
+            class="py-6 text-center text-sm"
+            cmdk-empty=""
+            role="presentation"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              No results found
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > and the user enters a text that matches an option > show the list of available options 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":re:"
+      id=":rd:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      Choose framework
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":rc:"
+        aria-expanded="true"
+        aria-labelledby=":rd:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":re:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value="et"
+      />
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        aria-label="Suggestions"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        cmdk-list=""
+        id=":rc:"
+        role="listbox"
+      >
+        <div
+          cmdk-list-sizer=""
+        >
+          <div
+            aria-disabled="false"
+            aria-selected="true"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="true"
+            data-value="Svelte"
+            id=":rh:"
+            role="option"
+          >
+            Svelte
+          </div>
+          <div
+            aria-disabled="false"
+            aria-selected="false"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="false"
+            data-value="React"
+            id=":rf:"
+            role="option"
+          >
+            React
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > and the user enters a text that matches an option > show the list of available options 2`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":re:"
+      id=":rd:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      Choose framework
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":rc:"
+        aria-expanded="true"
+        aria-labelledby=":rd:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":re:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        aria-label="Suggestions"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        cmdk-list=""
+        id=":rc:"
+        role="listbox"
+      >
+        <div
+          cmdk-list-sizer=""
+        >
+          <div
+            aria-disabled="false"
+            aria-selected="true"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="true"
+            data-value="Vue"
+            id=":rg:"
+            role="option"
+          >
+            Vue
+          </div>
+          <div
+            aria-disabled="false"
+            aria-selected="false"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="false"
+            data-value="Svelte"
+            id=":rh:"
+            role="option"
+          >
+            Svelte
+          </div>
+          <div
+            aria-disabled="false"
+            aria-selected="false"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="false"
+            data-value="React"
+            id=":rf:"
+            role="option"
+          >
+            React
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > and the user enters a text that matches an option > show the list of available options 3`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":re:"
+      id=":rd:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      Choose framework
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":rc:"
+        aria-expanded="true"
+        aria-labelledby=":rd:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":re:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value="react"
+      />
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        aria-label="Suggestions"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        cmdk-list=""
+        id=":rc:"
+        role="listbox"
+      >
+        <div
+          cmdk-list-sizer=""
+        >
+          <div
+            aria-disabled="false"
+            aria-selected="true"
+            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            cmdk-item=""
+            data-disabled="false"
+            data-selected="true"
+            data-value="React"
+            id=":rf:"
+            role="option"
+          >
+            React
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has accent variant 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r21:"
+      id=":r20:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      accent badge
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-accent min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r1v:"
+        aria-expanded="true"
+        aria-labelledby=":r20:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r21:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has default variant 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r1o:"
+      id=":r1n:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      default badge
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border-0 min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r1m:"
+        aria-expanded="true"
+        aria-labelledby=":r1n:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r1o:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has error variant 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r2g:"
+      id=":r2f:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      error badge
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-error min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r2e:"
+        aria-expanded="true"
+        aria-labelledby=":r2f:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r2g:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has ghost variant 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r24:"
+      id=":r23:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      ghost badge
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-ghost min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r22:"
+        aria-expanded="true"
+        aria-labelledby=":r23:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r24:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has info variant 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r27:"
+      id=":r26:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      info badge
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-info min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r25:"
+        aria-expanded="true"
+        aria-labelledby=":r26:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r27:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has large (lg) size 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r1l:"
+      id=":r1k:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      MultiSelect large
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-16 px-6 text-lg"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r1j:"
+        aria-expanded="true"
+        aria-labelledby=":r1k:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r1l:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        aria-label="Suggestions"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0 p-3"
+        cmdk-list=""
+        id=":r1j:"
+        role="listbox"
+      >
+        <div
+          cmdk-list-sizer=""
+        >
+          <div
+            class="py-6 text-center text-sm"
+            cmdk-empty=""
+            role="presentation"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              No results found
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has medium (md) size 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r1i:"
+      id=":r1h:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      MultiSelect medium
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-12 px-4 text-sm"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r1g:"
+        aria-expanded="true"
+        aria-labelledby=":r1h:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r1i:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        aria-label="Suggestions"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0 p-2"
+        cmdk-list=""
+        id=":r1g:"
+        role="listbox"
+      >
+        <div
+          cmdk-list-sizer=""
+        >
+          <div
+            class="py-6 text-center text-sm"
+            cmdk-empty=""
+            role="presentation"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              No results found
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has no outline 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r19:"
+      id=":r18:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      MultiSelect has no outline
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r17:"
+        aria-expanded="true"
+        aria-labelledby=":r18:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r19:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has outline 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r16:"
+      id=":r15:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      MultiSelect has outline
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border min-h-10 px-4 border-neutral-content"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r14:"
+        aria-expanded="true"
+        aria-labelledby=":r15:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r16:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has primary variant 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r1r:"
+      id=":r1q:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      primary badge
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-primary min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r1p:"
+        aria-expanded="true"
+        aria-labelledby=":r1q:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r1r:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has secondary variant 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r1u:"
+      id=":r1t:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      secondary badge
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-secondary min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r1s:"
+        aria-expanded="true"
+        aria-labelledby=":r1t:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r1u:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has small (sm) size 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r1f:"
+      id=":r1e:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      MultiSelect small
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit rounded-md transition-all overflow-hidden min-h-8 px-3 py-1.5 text-sm"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r1d:"
+        aria-expanded="true"
+        aria-labelledby=":r1e:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r1f:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        aria-label="Suggestions"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0 p-1.5"
+        cmdk-list=""
+        id=":r1d:"
+        role="listbox"
+      >
+        <div
+          cmdk-list-sizer=""
+        >
+          <div
+            class="py-6 text-center text-sm"
+            cmdk-empty=""
+            role="presentation"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              No results found
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has success variant 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r2a:"
+      id=":r29:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      success badge
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-success min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r28:"
+        aria-expanded="true"
+        aria-labelledby=":r29:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r2a:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has tiny (xs) size 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r1c:"
+      id=":r1b:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      MultiSelect tiny
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit rounded-md transition-all overflow-hidden min-h-6 px-2 py-1 text-xs"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r1a:"
+        aria-expanded="true"
+        aria-labelledby=":r1b:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r1c:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        aria-label="Suggestions"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0 p-1"
+        cmdk-list=""
+        id=":r1a:"
+        role="listbox"
+      >
+        <div
+          cmdk-list-sizer=""
+        >
+          <div
+            class="py-6 text-center text-sm"
+            cmdk-empty=""
+            role="presentation"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              No results found
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > has warning variant 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r2d:"
+      id=":r2c:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      warning badge
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-warning min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r2b:"
+        aria-expanded="true"
+        aria-labelledby=":r2c:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r2d:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > renders a multi select input 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r5:"
+      id=":r4:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      Choose framework
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r3:"
+        aria-expanded="true"
+        aria-labelledby=":r4:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r5:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MultiSelect > renders no options 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    cmdk-root=""
+    tabindex="-1"
+  >
+    <label
+      cmdk-label=""
+      for=":r2:"
+      id=":r1:"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+    >
+      Choose framework
+    </label>
+    <div
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-controls=":r0:"
+        aria-expanded="true"
+        aria-labelledby=":r1:"
+        autocomplete="off"
+        autocorrect="off"
+        class="bg-transparent outline-none flex-1"
+        cmdk-input=""
+        id=":r2:"
+        placeholder="Select your framework"
+        role="combobox"
+        spellcheck="false"
+        tabindex="0"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        aria-label="Suggestions"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        cmdk-list=""
+        id=":r0:"
+        role="listbox"
+      >
+        <div
+          cmdk-list-sizer=""
+        >
+          <div
+            class="py-6 text-center text-sm"
+            cmdk-empty=""
+            role="presentation"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              No results found
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

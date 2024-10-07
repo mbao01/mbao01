@@ -1,0 +1,735 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DatetimePicker > and the user changes date using the Down Arrow navigation 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus)]:outline-base-content/20 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus-within)]:outline-base-content/20 min-h-fit h-10"
+  >
+    <input
+      aria-label="days"
+      aria-valuemax="30"
+      aria-valuemin="1"
+      aria-valuenow="30"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="DD"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="days"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      30
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      /
+    </span>
+    <input
+      aria-label="months"
+      aria-valuemax="12"
+      aria-valuemin="1"
+      aria-valuenow="8"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="MM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="months"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      08
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      /
+    </span>
+    <input
+      aria-label="years"
+      aria-valuemax="9999"
+      aria-valuemin="1"
+      aria-valuenow="2023"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="YYYY"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="years"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      2023
+    </span>
+    <span
+      class="text-gray-400 opacity-30 text-xl"
+    >
+      |
+    </span>
+    <input
+      aria-label="hours"
+      aria-valuemax="23"
+      aria-valuemin="0"
+      aria-valuenow="6"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="HH"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="hours"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      06
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      :
+    </span>
+    <input
+      aria-label="minutes"
+      aria-selected="true"
+      aria-valuemax="59"
+      aria-valuemin="0"
+      aria-valuenow="5"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="MM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="minutes"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      05
+    </span>
+    <input
+      aria-label="am/pm"
+      aria-selected="true"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
+      data-timescape-input=""
+      placeholder="AM/PM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="am/pm"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      AM
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DatetimePicker > and the user changes date using the Up Arrow navigation 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus)]:outline-base-content/20 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus-within)]:outline-base-content/20 min-h-fit h-10"
+  >
+    <input
+      aria-label="days"
+      aria-valuemax="31"
+      aria-valuemin="1"
+      aria-valuenow="2"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="DD"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="days"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      02
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      /
+    </span>
+    <input
+      aria-label="months"
+      aria-valuemax="12"
+      aria-valuemin="1"
+      aria-valuenow="11"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="MM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="months"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      11
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      /
+    </span>
+    <input
+      aria-label="years"
+      aria-valuemax="9999"
+      aria-valuemin="1"
+      aria-valuenow="2025"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="YYYY"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="years"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      2025
+    </span>
+    <span
+      class="text-gray-400 opacity-30 text-xl"
+    >
+      |
+    </span>
+    <input
+      aria-label="hours"
+      aria-valuemax="23"
+      aria-valuemin="0"
+      aria-valuenow="8"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="HH"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="hours"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      08
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      :
+    </span>
+    <input
+      aria-label="minutes"
+      aria-selected="true"
+      aria-valuemax="59"
+      aria-valuemin="0"
+      aria-valuenow="7"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="MM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="minutes"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      07
+    </span>
+    <input
+      aria-label="am/pm"
+      aria-selected="true"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
+      data-timescape-input=""
+      placeholder="AM/PM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="am/pm"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      AM
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DatetimePicker > and the user enter a new date 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus)]:outline-base-content/20 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus-within)]:outline-base-content/20 min-h-fit h-10"
+  >
+    <input
+      aria-label="days"
+      aria-valuemax="31"
+      aria-valuemin="1"
+      aria-valuenow="11"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="DD"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="days"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      11
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      /
+    </span>
+    <input
+      aria-label="months"
+      aria-valuemax="12"
+      aria-valuemin="1"
+      aria-valuenow="6"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="MM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="months"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      06
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      /
+    </span>
+    <input
+      aria-label="years"
+      aria-valuemax="9999"
+      aria-valuemin="1"
+      aria-valuenow="2028"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="YYYY"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="years"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      2028
+    </span>
+    <span
+      class="text-gray-400 opacity-30 text-xl"
+    >
+      |
+    </span>
+    <input
+      aria-label="hours"
+      aria-valuemax="23"
+      aria-valuemin="0"
+      aria-valuenow="12"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="HH"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="hours"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      12
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      :
+    </span>
+    <input
+      aria-label="minutes"
+      aria-selected="true"
+      aria-valuemax="59"
+      aria-valuemin="0"
+      aria-valuenow="59"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="MM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="minutes"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      59
+    </span>
+    <input
+      aria-label="am/pm"
+      aria-selected="true"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
+      data-timescape-input=""
+      placeholder="AM/PM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="am/pm"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      AM
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DatetimePicker > and the user must enter a date between the minimum and maximum dates 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus)]:outline-base-content/20 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus-within)]:outline-base-content/20 min-h-fit h-10"
+  >
+    <input
+      aria-label="days"
+      aria-valuemax="31"
+      aria-valuemin="1"
+      aria-valuenow="1"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="DD"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="days"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      01
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      /
+    </span>
+    <input
+      aria-label="months"
+      aria-valuemax="12"
+      aria-valuemin="1"
+      aria-valuenow="10"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="MM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="months"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      10
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      /
+    </span>
+    <input
+      aria-label="years"
+      aria-valuemax="9999"
+      aria-valuemin="1"
+      aria-valuenow="2024"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="YYYY"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="years"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      2024
+    </span>
+    <span
+      class="text-gray-400 opacity-30 text-xl"
+    >
+      |
+    </span>
+    <input
+      aria-label="hours"
+      aria-selected="true"
+      aria-valuemax="23"
+      aria-valuemin="0"
+      aria-valuenow="7"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="HH"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="hours"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      07
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      :
+    </span>
+    <input
+      aria-label="minutes"
+      aria-selected="true"
+      aria-valuemax="59"
+      aria-valuemin="0"
+      aria-valuenow="6"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="MM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="minutes"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      06
+    </span>
+    <input
+      aria-label="am/pm"
+      aria-selected="true"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
+      data-timescape-input=""
+      placeholder="AM/PM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="am/pm"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none; text-indent: 0;"
+    >
+      PM
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DatetimePicker > renders the given date 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center w-fit p-1 rounded-md transition-all duration-100 gap-1 selection:bg-transparent selection:text-base-content [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus)]:outline-base-content/20 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus-within)]:outline-base-content/20 min-h-fit h-10"
+  >
+    <input
+      aria-label="days"
+      aria-valuemax="31"
+      aria-valuemin="1"
+      aria-valuenow="1"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="DD"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="days"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre;"
+    >
+      01
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      /
+    </span>
+    <input
+      aria-label="months"
+      aria-valuemax="12"
+      aria-valuemin="1"
+      aria-valuenow="10"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="MM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="months"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre;"
+    >
+      10
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      /
+    </span>
+    <input
+      aria-label="years"
+      aria-valuemax="9999"
+      aria-valuemin="1"
+      aria-valuenow="2024"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none min-w-12"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="YYYY"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="years"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre;"
+    >
+      2024
+    </span>
+    <span
+      class="text-gray-400 opacity-30 text-xl"
+    >
+      |
+    </span>
+    <input
+      aria-label="hours"
+      aria-valuemax="23"
+      aria-valuemin="0"
+      aria-valuenow="7"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="HH"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="hours"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre;"
+    >
+      07
+    </span>
+    <span
+      class="text-xs text-gray-400"
+    >
+      :
+    </span>
+    <input
+      aria-label="minutes"
+      aria-valuemax="59"
+      aria-valuemin="0"
+      aria-valuenow="6"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none"
+      data-timescape-input=""
+      inputmode="numeric"
+      placeholder="MM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="minutes"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre;"
+    >
+      06
+    </span>
+    <input
+      aria-label="am/pm"
+      class="input transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none bg-base-content/15"
+      data-timescape-input=""
+      placeholder="AM/PM"
+      role="spinbutton"
+      tabindex="0"
+      type="text"
+    />
+    <span
+      aria-hidden="true"
+      data-timescape-shadow="am/pm"
+      style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre;"
+    >
+      PM
+    </span>
+  </div>
+</DocumentFragment>
+`;
