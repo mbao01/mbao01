@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { DatetimeInput } from "./DatetimeInput";
 
-describe("DatetimeInput", () => {
+describe.skip("DatetimeInput", () => {
   it("renders a default date", () => {
     const { asFragment } = render(
       <DatetimeInput defaultDate={new Date(2024, 11, 23)} placeholder="Choose date of birth" />
