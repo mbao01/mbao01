@@ -180,6 +180,9 @@ importers:
       '@storybook/addon-onboarding':
         specifier: ^8.3.4
         version: 8.3.4(react@18.3.1)(storybook@8.3.4)
+      '@storybook/addon-storysource':
+        specifier: ^8.3.4
+        version: 8.3.4(storybook@8.3.4)
       '@storybook/addon-themes':
         specifier: ^8.3.4
         version: 8.3.4(storybook@8.3.4)
@@ -343,6 +346,9 @@ importers:
       '@storybook/addon-onboarding':
         specifier: ^8.3.4
         version: 8.3.4(react@18.3.1)(storybook@8.3.4)
+      '@storybook/addon-storysource':
+        specifier: ^8.3.4
+        version: 8.3.4(storybook@8.3.4)
       '@storybook/addon-themes':
         specifier: ^8.3.4
         version: 8.3.4(storybook@8.3.4)
@@ -503,6 +509,9 @@ importers:
       '@storybook/addon-onboarding':
         specifier: ^8.3.4
         version: 8.3.4(react@18.3.1)(storybook@8.3.4)
+      '@storybook/addon-storysource':
+        specifier: ^8.3.4
+        version: 8.3.4(storybook@8.3.4)
       '@storybook/addon-themes':
         specifier: ^8.3.4
         version: 8.3.4(storybook@8.3.4)
@@ -6009,6 +6018,17 @@ packages:
       ts-dedent: 2.2.0
     dev: true
 
+  /@storybook/addon-storysource@8.3.4(storybook@8.3.4):
+    resolution: {integrity: sha512-uHTUiK7dzWRZAKpPafBH3U5PWAP7+J97lg66HDKAHpmmQdy7v3HfXaYNX1FoI+PeC5piUxFETXM0z+BNvJCknA==}
+    peerDependencies:
+      storybook: ^8.3.4
+    dependencies:
+      '@storybook/source-loader': 8.3.4(storybook@8.3.4)
+      estraverse: 5.3.0
+      storybook: 8.3.4
+      tiny-invariant: 1.3.3
+    dev: true
+
   /@storybook/addon-themes@8.3.4(storybook@8.3.4):
     resolution: {integrity: sha512-6gQeSFhC5VzFg2A0LM1jXhHwOn7+2nYCx+GWXOZgIWzXmtuhkPz5dt4LZ3fP4lJ9EBWnGs3mfYwUk7BZCyD5fQ==}
     peerDependencies:
@@ -6586,6 +6606,18 @@ packages:
       '@storybook/client-logger': 7.6.20
       memoizerific: 1.11.3
       qs: 6.13.0
+    dev: true
+
+  /@storybook/source-loader@8.3.4(storybook@8.3.4):
+    resolution: {integrity: sha512-wH//LuWfa2iOmjykSqsub8M8e0EdhEUZoHUFhwBeizfYQQHaMaSEBhhAQCaWWKmdGB9lnCe1cioQ32c2IWtBIw==}
+    peerDependencies:
+      storybook: ^8.3.4
+    dependencies:
+      '@storybook/csf': 0.1.11
+      estraverse: 5.3.0
+      lodash: 4.17.21
+      prettier: 3.3.3
+      storybook: 8.3.4
     dev: true
 
   /@storybook/test-runner@0.19.1(@types/node@22.7.4)(storybook@8.3.4):
