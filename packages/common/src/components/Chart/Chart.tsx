@@ -5,7 +5,7 @@ import { ResponsiveContainer } from "recharts";
 import { cn } from "../../utilities";
 import { ChartContext } from "./ChartContext";
 import { ChartStyle } from "./components";
-import { getChartContainerClasses } from "./constants";
+import { getChartClasses } from "./constants";
 import { type ChartProps } from "./types";
 
 export const Chart = forwardRef<HTMLDivElement, ChartProps>(
@@ -15,12 +15,7 @@ export const Chart = forwardRef<HTMLDivElement, ChartProps>(
 
     return (
       <ChartContext.Provider value={{ config }}>
-        <div
-          ref={ref}
-          data-chart={chartId}
-          className={cn(getChartContainerClasses(), className)}
-          {...props}
-        >
+        <div ref={ref} data-chart={chartId} className={cn(getChartClasses(), className)} {...props}>
           <ChartStyle id={chartId} config={config} />
           <ResponsiveContainer>{children}</ResponsiveContainer>
         </div>
