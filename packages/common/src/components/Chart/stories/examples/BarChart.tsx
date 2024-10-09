@@ -163,6 +163,7 @@ export const BarChartExample = (props: any) => {
       >
         <CartesianGrid vertical={false} />
         <XAxis
+          {...props.xAxis}
           dataKey="date"
           tickLine={false}
           axisLine={false}
@@ -191,7 +192,7 @@ export const BarChartExample = (props: any) => {
             />
           }
         />
-        <Bar dataKey="desktop" fill="var(--color-desktop)" />
+        <Bar {...props.bar} dataKey="desktop" fill="var(--color-desktop)" />
       </BarChart>
     </Chart>
   );
@@ -215,8 +216,8 @@ export const MultipleBarChartExample = (props: BarChartArgsProps) => {
         <CartesianGrid vertical={false} />
         <XAxis {...props.xAxis} />
         <ChartTooltip content={<ChartTooltipContent indicator="dashed" />} />
-        <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
-        <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
+        <Bar {...props.bar} dataKey="desktop" fill="var(--color-desktop)" radius={4} />
+        <Bar {...props.bar} dataKey="mobile" fill="var(--color-mobile)" radius={4} />
       </BarChart>
     </Chart>
   );
@@ -242,7 +243,7 @@ export const LabelBarChartExample = (props: BarChartArgsProps) => {
         <CartesianGrid vertical={false} />
         <XAxis {...props.xAxis} />
         <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
-        <Bar dataKey="desktop" fill="var(--color-desktop)" radius={8}>
+        <Bar dataKey="desktop" fill="var(--color-desktop)" radius={8} {...props.bar}>
           <LabelList position="top" offset={12} className="fill-foreground" fontSize={12} />
         </Bar>
       </BarChart>
@@ -258,7 +259,13 @@ export const CustomLabelBarChartExample = (props: BarChartArgsProps) => {
         <YAxis {...props.yAxis} />
         <XAxis {...props.xAxis} />
         <ChartTooltip cursor={false} content={<ChartTooltipContent indicator="line" />} />
-        <Bar dataKey="desktop" layout="vertical" fill="var(--color-desktop)" radius={4}>
+        <Bar
+          dataKey="desktop"
+          layout="vertical"
+          fill="var(--color-desktop)"
+          radius={4}
+          {...props.bar}
+        >
           <LabelList
             dataKey="month"
             position="insideLeft"
@@ -315,7 +322,7 @@ export const MixedBarChartExample = (props: BarChartArgsProps) => {
         />
         <XAxis {...props.xAxis} />
         <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
-        <Bar dataKey="visitors" layout="vertical" radius={5} />
+        <Bar dataKey="visitors" layout="vertical" radius={5} {...props.bar} />
       </BarChart>
     </Chart>
   );
@@ -329,8 +336,20 @@ export const StackedBarChartExample = (props: BarChartArgsProps) => {
         <XAxis {...props.xAxis} />
         <ChartTooltip content={<ChartTooltipContent hideLabel />} />
         <ChartLegend content={<ChartLegendContent />} />
-        <Bar dataKey="desktop" stackId="a" fill="var(--color-desktop)" radius={[0, 0, 4, 4]} />
-        <Bar dataKey="mobile" stackId="a" fill="var(--color-mobile)" radius={[4, 4, 0, 0]} />
+        <Bar
+          {...props.bar}
+          dataKey="desktop"
+          stackId="a"
+          fill="var(--color-desktop)"
+          radius={[0, 0, 4, 4]}
+        />
+        <Bar
+          {...props.bar}
+          dataKey="mobile"
+          stackId="a"
+          fill="var(--color-mobile)"
+          radius={[4, 4, 0, 0]}
+        />
       </BarChart>
     </Chart>
   );
@@ -388,6 +407,7 @@ export const ActiveBarChartExample = (props: BarChartArgsProps) => {
               />
             );
           }}
+          {...props.bar}
         />
       </BarChart>
     </Chart>
@@ -406,7 +426,7 @@ export const NegativeBarChartExample = (props: BarChartArgsProps) => {
       <BarChart {...props.barChart}>
         <CartesianGrid vertical={false} />
         <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel hideIndicator />} />
-        <Bar dataKey="visitors">
+        <Bar dataKey="visitors" {...props.bar}>
           <LabelList position="top" dataKey="month" fillOpacity={1} />
           {(props.barChart as { data: Array<{ month: string; visitors: number }> }).data?.map(
             (item) => (
