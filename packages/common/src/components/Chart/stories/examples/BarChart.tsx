@@ -1,4 +1,3 @@
-import { type ArgTypes } from "@storybook/react";
 import { Bar, BarChart, CartesianGrid, Cell, LabelList, Rectangle, XAxis, YAxis } from "recharts";
 import { Chart } from "../../Chart";
 import {
@@ -8,29 +7,7 @@ import {
   ChartTooltipContent,
 } from "../../components";
 import { type ChartConfig } from "../../types";
-import { barArgs } from "../args/barArgs";
-import { barChartArgs as barChartComponentArgs } from "../args/barChartArgs";
-import { xAxisArgs } from "../args/xAxisArgs";
-import { yAxisArgs } from "../args/yAxisArgs";
-import { categorizeArgs } from "../helpers";
-
-type Key = "bar" | "barChart" | "xAxis" | "yAxis";
-
-export const argsKeys = {
-  bar: "bar",
-  barChart: "barChart",
-  xAxis: "xAxis",
-  yAxis: "yAxis",
-} satisfies Record<string, Key>;
-
-export type BarChartArgsProps = Partial<Record<Key, object>>;
-
-export const barChartArgs = {
-  ...categorizeArgs(barChartComponentArgs, argsKeys.barChart),
-  ...categorizeArgs(xAxisArgs, argsKeys.xAxis),
-  ...categorizeArgs(yAxisArgs, argsKeys.yAxis),
-  ...categorizeArgs(barArgs, argsKeys.bar),
-} satisfies ArgTypes;
+import { type BarChartProps } from "../args";
 
 /**
  * ## Parent
@@ -41,11 +18,8 @@ export const barChartArgs = {
  *
  * The BarChart can be used with the following child components: `<XAxis />`, `<YAxis />`, `<ReferenceArea />`, `<ReferenceDot />`, `<ReferenceLine />`,
  * `<Brush />`, `<CartesianGrid />`, `<ChartLegend />`, `<ChartTooltip />`, `<Bar />`, `<Customized />` or valid svg elements.
- *
- * @param props
- * @returns
  */
-export const BarChartExample = (props: any) => {
+export const BarChartExample = (props: BarChartProps) => {
   const chartData = [
     { date: "2024-04-01", desktop: 222 },
     { date: "2024-04-02", desktop: 97 },
@@ -209,7 +183,7 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-export const MultipleBarChartExample = (props: BarChartArgsProps) => {
+export const MultipleBarChartExample = (props: BarChartProps) => {
   return (
     <Chart config={chartConfig} className="h-[200px] w-full">
       <BarChart {...props.barChart}>
@@ -223,7 +197,7 @@ export const MultipleBarChartExample = (props: BarChartArgsProps) => {
   );
 };
 
-export const HorizontalBarChartExample = (props: BarChartArgsProps) => {
+export const HorizontalBarChartExample = (props: BarChartProps) => {
   return (
     <Chart config={chartConfig} className="h-[200px] w-full">
       <BarChart {...props.barChart}>
@@ -236,7 +210,7 @@ export const HorizontalBarChartExample = (props: BarChartArgsProps) => {
   );
 };
 
-export const LabelBarChartExample = (props: BarChartArgsProps) => {
+export const LabelBarChartExample = (props: BarChartProps) => {
   return (
     <Chart config={chartConfig} className="h-[200px] w-full">
       <BarChart {...props.barChart}>
@@ -251,7 +225,7 @@ export const LabelBarChartExample = (props: BarChartArgsProps) => {
   );
 };
 
-export const CustomLabelBarChartExample = (props: BarChartArgsProps) => {
+export const CustomLabelBarChartExample = (props: BarChartProps) => {
   return (
     <Chart config={chartConfig} className="h-[200px] w-full">
       <BarChart {...props.barChart}>
@@ -286,7 +260,7 @@ export const CustomLabelBarChartExample = (props: BarChartArgsProps) => {
   );
 };
 
-export const MixedBarChartExample = (props: BarChartArgsProps) => {
+export const MixedBarChartExample = (props: BarChartProps) => {
   const chartConfig = {
     visitors: {
       label: "Visitors",
@@ -328,7 +302,7 @@ export const MixedBarChartExample = (props: BarChartArgsProps) => {
   );
 };
 
-export const StackedBarChartExample = (props: BarChartArgsProps) => {
+export const StackedBarChartExample = (props: BarChartProps) => {
   return (
     <Chart config={chartConfig} className="h-[200px] w-full">
       <BarChart {...props.barChart}>
@@ -355,7 +329,7 @@ export const StackedBarChartExample = (props: BarChartArgsProps) => {
   );
 };
 
-export const ActiveBarChartExample = (props: BarChartArgsProps) => {
+export const ActiveBarChartExample = (props: BarChartProps) => {
   const chartConfig = {
     visitors: {
       label: "Visitors",
@@ -396,12 +370,12 @@ export const ActiveBarChartExample = (props: BarChartArgsProps) => {
           strokeWidth={2}
           radius={8}
           activeIndex={2}
-          activeBar={({ ...props }) => {
+          activeBar={(p: Record<string, any>) => {
             return (
               <Rectangle
-                {...props}
+                {...p}
                 fillOpacity={0.8}
-                stroke={props.payload.fill}
+                stroke={p.payload.fill}
                 strokeDasharray={4}
                 strokeDashoffset={4}
               />
@@ -414,7 +388,7 @@ export const ActiveBarChartExample = (props: BarChartArgsProps) => {
   );
 };
 
-export const NegativeBarChartExample = (props: BarChartArgsProps) => {
+export const NegativeBarChartExample = (props: BarChartProps) => {
   const chartConfig = {
     visitors: {
       label: "Visitors",

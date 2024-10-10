@@ -1,8 +1,8 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
-import { BarProps } from "recharts";
+import type { BarChartArgs } from "./args";
+import { barChartArgs } from "./args";
 import {
   ActiveBarChartExample,
-  barChartArgs,
   BarChartExample,
   CustomLabelBarChartExample,
   HorizontalBarChartExample,
@@ -12,7 +12,7 @@ import {
   NegativeBarChartExample,
   StackedBarChartExample,
 } from "./examples/BarChart";
-import { getArgsFromArgTypes, withArgs } from "./helpers";
+import { getArgsFromArgTypes, renderer, withArgs } from "./helpers";
 
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },
@@ -23,7 +23,7 @@ const chartData = [
   { month: "June", desktop: 214, mobile: 140 },
 ];
 
-const withTheme = (Component: StoryFn, context: StoryContext<Partial<BarProps>>) => {
+const withTheme = (Component: StoryFn, context: StoryContext<BarChartArgs>) => {
   return (
     <div>
       <style
@@ -55,7 +55,6 @@ const withTheme = (Component: StoryFn, context: StoryContext<Partial<BarProps>>)
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
   title: "Components/Chart/Bar",
-  component: BarChartExample,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
@@ -76,14 +75,15 @@ const meta = {
   argTypes: barChartArgs,
   args: getArgsFromArgTypes(barChartArgs),
   decorators: [withTheme, withArgs],
-} satisfies Meta<any>;
+} satisfies Meta<BarChartArgs>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<BarChartArgs>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {},
+  render: renderer(BarChartExample),
 };
 
 export const MultipleBarChart: Story = {
@@ -96,7 +96,7 @@ export const MultipleBarChart: Story = {
     "barChart accessibilityLayer": true,
     "barChart data": chartData,
   },
-  render: (props) => <MultipleBarChartExample {...props} />,
+  render: renderer(MultipleBarChartExample),
 };
 
 export const HorizontalBarChart: Story = {
@@ -117,7 +117,7 @@ export const HorizontalBarChart: Story = {
       left: -20,
     },
   },
-  render: (props) => <HorizontalBarChartExample {...props} />,
+  render: renderer(HorizontalBarChartExample),
 };
 
 export const LabelBarChart: Story = {
@@ -133,7 +133,7 @@ export const LabelBarChart: Story = {
       top: 20,
     },
   },
-  render: (props) => <LabelBarChartExample {...props} />,
+  render: renderer(LabelBarChartExample),
 };
 
 export const CustomLabelBarChart: Story = {
@@ -155,7 +155,7 @@ export const CustomLabelBarChart: Story = {
       right: 16,
     },
   },
-  render: (props) => <CustomLabelBarChartExample {...props} />,
+  render: renderer(CustomLabelBarChartExample),
 };
 
 const mixedChartData = [
@@ -182,7 +182,7 @@ export const MixedBarChart: Story = {
       left: 0,
     },
   },
-  render: (props) => <MixedBarChartExample {...props} />,
+  render: renderer(MixedBarChartExample),
 };
 
 export const StackedBarChart: Story = {
@@ -195,7 +195,7 @@ export const StackedBarChart: Story = {
     "barChart accessibilityLayer": true,
     "barChart data": chartData,
   },
-  render: (props) => <StackedBarChartExample {...props} />,
+  render: renderer(StackedBarChartExample),
 };
 
 export const ActiveBarChart: Story = {
@@ -207,7 +207,7 @@ export const ActiveBarChart: Story = {
     "barChart accessibilityLayer": true,
     "barChart data": mixedChartData,
   },
-  render: (props) => <ActiveBarChartExample {...props} />,
+  render: renderer(ActiveBarChartExample),
 };
 
 const negativeChartData = [
@@ -223,5 +223,5 @@ export const NegativeBarChart: Story = {
     "barChart accessibilityLayer": true,
     "barChart data": negativeChartData,
   },
-  render: (props) => <NegativeBarChartExample {...props} />,
+  render: renderer(NegativeBarChartExample),
 };
