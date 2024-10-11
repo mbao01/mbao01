@@ -1,14 +1,16 @@
-import type { AreaProps, BarProps, LineProps, XAxisProps, YAxisProps } from "recharts";
+import type { AreaProps, BarProps, LineProps, PieProps, XAxisProps, YAxisProps } from "recharts";
 import { type PropsWithoutRef } from "react";
 import { type ArgTypes } from "@storybook/react";
 import { type CategoricalChartProps } from "recharts/types/chart/generateCategoricalChart";
-import { areaChartArgs as areaChartComponentArgs } from "../args/areaChartArgs";
-import { barChartArgs as barChartComponentArgs } from "../args/barChartArgs";
-import { lineChartArgs as lineChartComponentArgs } from "../args/lineChartArgs";
 import { categorizeArgs } from "../helpers";
 import { areaArgs } from "./areaArgs";
+import { areaChartArgs as areaChartComponentArgs } from "./areaChartArgs";
 import { barArgs } from "./barArgs";
+import { barChartArgs as barChartComponentArgs } from "./barChartArgs";
 import { lineArgs } from "./lineArgs";
+import { lineChartArgs as lineChartComponentArgs } from "./lineChartArgs";
+import { pieArgs } from "./pieArgs";
+import { pieChartArgs as pieChartComponentArgs } from "./pieChartArgs";
 import { type Flatten } from "./types";
 import { xAxisArgs } from "./xAxisArgs";
 import { yAxisArgs } from "./yAxisArgs";
@@ -86,4 +88,23 @@ export const areaChartArgs = {
   ...categorizeArgs(xAxisArgs, areaArgKey.xAxis),
   ...categorizeArgs(yAxisArgs, areaArgKey.yAxis),
   ...categorizeArgs(areaArgs, areaArgKey.area),
+} satisfies ArgTypes;
+
+type PieArgKey = "pie" | "pieChart";
+
+export type PieChartProps = Partial<{
+  pie: PropsWithoutRef<PieProps>;
+  pieChart: CategoricalChartProps;
+}>;
+
+export type PieChartArgs = Partial<NonNullable<Flatten<Required<PieChartProps>>>>;
+
+export const pieArgKey = {
+  pie: "pie",
+  pieChart: "pieChart",
+} satisfies Record<string, PieArgKey>;
+
+export const pieChartArgs = {
+  ...categorizeArgs(pieChartComponentArgs, pieArgKey.pieChart),
+  ...categorizeArgs(pieArgs, pieArgKey.pie),
 } satisfies ArgTypes;
