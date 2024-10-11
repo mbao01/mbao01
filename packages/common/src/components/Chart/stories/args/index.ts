@@ -1,13 +1,15 @@
-import { PropsWithoutRef } from "react";
+import type { AreaProps, BarProps, LineProps, XAxisProps, YAxisProps } from "recharts";
+import { type PropsWithoutRef } from "react";
 import { type ArgTypes } from "@storybook/react";
-import { BarProps, LineProps, XAxisProps, YAxisProps } from "recharts";
-import { CategoricalChartProps } from "recharts/types/chart/generateCategoricalChart";
+import { type CategoricalChartProps } from "recharts/types/chart/generateCategoricalChart";
+import { areaChartArgs as areaChartComponentArgs } from "../args/areaChartArgs";
 import { barChartArgs as barChartComponentArgs } from "../args/barChartArgs";
 import { lineChartArgs as lineChartComponentArgs } from "../args/lineChartArgs";
-import { lineStyleArgs } from "../args/stylesArgs";
 import { categorizeArgs } from "../helpers";
+import { areaArgs } from "./areaArgs";
 import { barArgs } from "./barArgs";
-import { Flatten } from "./types";
+import { lineArgs } from "./lineArgs";
+import { type Flatten } from "./types";
 import { xAxisArgs } from "./xAxisArgs";
 import { yAxisArgs } from "./yAxisArgs";
 
@@ -47,7 +49,7 @@ export type LineChartProps = Partial<{
 
 export type LineChartArgs = Partial<NonNullable<Flatten<Required<LineChartProps>>>>;
 
-export const argsKeys = {
+const lineArgKey = {
   line: "line",
   lineChart: "lineChart",
   xAxis: "xAxis",
@@ -55,8 +57,33 @@ export const argsKeys = {
 } satisfies Record<string, LineArgKey>;
 
 export const lineChartArgs = {
-  ...categorizeArgs(lineChartComponentArgs, argsKeys.lineChart),
-  ...categorizeArgs(xAxisArgs, argsKeys.xAxis),
-  ...categorizeArgs(yAxisArgs, argsKeys.yAxis),
-  ...categorizeArgs(lineStyleArgs, argsKeys.line),
+  ...categorizeArgs(lineChartComponentArgs, lineArgKey.lineChart),
+  ...categorizeArgs(xAxisArgs, lineArgKey.xAxis),
+  ...categorizeArgs(yAxisArgs, lineArgKey.yAxis),
+  ...categorizeArgs(lineArgs, lineArgKey.line),
+} satisfies ArgTypes;
+
+type AreaArgKey = "area" | "areaChart" | "xAxis" | "yAxis";
+
+export type AreaChartProps = Partial<{
+  area: PropsWithoutRef<AreaProps>;
+  areaChart: CategoricalChartProps;
+  xAxis: XAxisProps;
+  yAxis: YAxisProps;
+}>;
+
+export type AreaChartArgs = Partial<NonNullable<Flatten<Required<AreaChartProps>>>>;
+
+export const areaArgKey = {
+  area: "area",
+  areaChart: "areaChart",
+  xAxis: "xAxis",
+  yAxis: "yAxis",
+} satisfies Record<string, AreaArgKey>;
+
+export const areaChartArgs = {
+  ...categorizeArgs(areaChartComponentArgs, areaArgKey.areaChart),
+  ...categorizeArgs(xAxisArgs, areaArgKey.xAxis),
+  ...categorizeArgs(yAxisArgs, areaArgKey.yAxis),
+  ...categorizeArgs(areaArgs, areaArgKey.area),
 } satisfies ArgTypes;
