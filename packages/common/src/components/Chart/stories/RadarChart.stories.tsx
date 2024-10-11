@@ -56,8 +56,9 @@ const withTheme = (Component: StoryFn, context: StoryContext<RadarChartArgs>) =>
 };
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-const meta = {
+const meta: Meta<RadarChartArgs> = {
   title: "Components/Chart/Radar",
+  component: RadarChartExample,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
@@ -80,7 +81,7 @@ const meta = {
   argTypes: radarChartArgs,
   args: getArgsFromArgTypes(radarChartArgs),
   decorators: [withTheme, withArgs],
-} satisfies Meta<RadarChartArgs>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -93,7 +94,6 @@ export const Default: Story = {
     "radar fillOpacity": 0.6,
     "radarChart data": chartData,
   },
-  render: renderer(RadarChartExample),
 };
 
 export const DotRadarChart: Story = {

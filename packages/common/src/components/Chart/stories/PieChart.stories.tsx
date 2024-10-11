@@ -50,8 +50,9 @@ const withTheme = (Component: StoryFn, context: StoryContext<PieChartArgs>) => {
 };
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-const meta = {
+const meta: Meta<PieChartArgs> = {
   title: "Components/Chart/Pie",
+  component: PieChartExample,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
@@ -74,7 +75,7 @@ const meta = {
   argTypes: pieChartArgs,
   args: getArgsFromArgTypes(pieChartArgs),
   decorators: [withTheme, withArgs],
-} satisfies Meta<PieChartArgs>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -86,7 +87,6 @@ export const Default: Story = {
     "pie dataKey": "visitors",
     "pie nameKey": "browser",
   },
-  render: renderer(PieChartExample),
 };
 
 export const PieChart: Story = {
@@ -95,7 +95,6 @@ export const PieChart: Story = {
     "pie dataKey": "visitors",
     "pie nameKey": "browser",
   },
-  render: renderer(PieChartExample),
 };
 
 export const LabeledPieChart: Story = {

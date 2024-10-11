@@ -47,8 +47,9 @@ const withTheme = (Component: StoryFn, context: StoryContext<LineChartArgs>) => 
 };
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-const meta = {
+const meta: Meta<LineChartArgs> = {
   title: "Components/Chart/Line",
+  component: LineChartExample,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
@@ -69,7 +70,7 @@ const meta = {
   argTypes: lineChartArgs,
   args: getArgsFromArgTypes(lineChartArgs),
   decorators: [withTheme, withArgs],
-} satisfies Meta<LineChartArgs>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -89,7 +90,6 @@ export const Default: Story = {
       right: 12,
     },
   },
-  render: renderer(LineChartExample),
 };
 
 export const LinearLineChart: Story = {
@@ -111,7 +111,6 @@ export const LinearLineChart: Story = {
       right: 12,
     },
   },
-  render: renderer(LineChartExample),
 };
 
 export const StepLineChart: Story = {
@@ -133,7 +132,6 @@ export const StepLineChart: Story = {
       right: 12,
     },
   },
-  render: renderer(LineChartExample),
 };
 
 export const StackedLineChart: Story = {
@@ -166,7 +164,7 @@ export const StepStackedLineChart: Story = {
   render: renderer(StackedLineChartExample),
 };
 
-export const GradientStackedExpandedLineChart: Story = {
+export const CustomDotLineChart: Story = {
   args: {
     "line dataKey": "desktop",
     "line type": "natural",

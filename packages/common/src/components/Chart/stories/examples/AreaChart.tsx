@@ -24,6 +24,16 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
+/**
+ * ## Parent
+ *
+ * The AreaChart can be used within: `<Chart />`
+ *
+ * ## Children
+ *
+ * The AreaChart can be used with the following child components: `<XAxis />`, `<YAxis />`, `<ReferenceArea />`, `<ReferenceDot />`, `<ReferenceArea />`,
+ * `<Brush />`, `<CartesianGrid />`, `<ChartLegend />`, `<ChartTooltip />`, `<Area />`, `<Customized />` or valid svg elements.
+ */
 export const AreaChartExample = (props: AreaChartProps) => {
   return (
     <Chart config={chartConfig} className="h-[250px] w-full">
