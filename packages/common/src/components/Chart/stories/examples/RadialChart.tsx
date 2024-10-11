@@ -38,7 +38,7 @@ const chartConfig = {
  * ## Children
  *
  * The RadialBarChart can be used with the following child components: `<PolarAngleAxis />`, `<PolarRadiusAxis />`,
- * `<PolarGrid />`, `<Legend />`, `<Tooltip />`, `<RadialBar />`, `<Customized />`
+ * `<PolarGrid />`, `<ChartLegend />`, `<ChartTooltip />`, `<RadialBar />`, `<Customized />`
  */
 export const RadialChartExample = (props: RadialBarChartProps) => {
   return (

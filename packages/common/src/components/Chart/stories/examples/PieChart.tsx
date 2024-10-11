@@ -44,7 +44,7 @@ const chartConfig = {
  * ## Children
  *
  * The PieChart can be used with the following child components: `<PolarAngleAxis />`, `<PolarRadiusAxis />`,
- * `<PolarGrid />`, `<Legend />`, `<Tooltip />`, `<Pie />`, `<Customized />`
+ * `<PolarGrid />`, `<ChartLegend />`, `<ChartTooltip />`, `<Pie />`, `<Customized />`
  */
 export const PieChartExample = (props: PieChartProps) => {
   return (
