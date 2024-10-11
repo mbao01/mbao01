@@ -82,6 +82,7 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {
+    "area isAnimationActive": false,
     "area dataKey": "desktop",
     "area type": "natural",
     "area fill": "var(--color-desktop)",
@@ -103,6 +104,7 @@ export const Default: Story = {
 
 export const LinearAreaChart: Story = {
   args: {
+    "area isAnimationActive": false,
     "area dataKey": "desktop",
     "area type": "linear",
     "area fill": "var(--color-desktop)",
@@ -124,6 +126,7 @@ export const LinearAreaChart: Story = {
 
 export const StepAreaChart: Story = {
   args: {
+    "area isAnimationActive": false,
     "area dataKey": "desktop",
     "area type": "step",
     "area fill": "var(--color-desktop)",
@@ -145,6 +148,7 @@ export const StepAreaChart: Story = {
 
 export const StackedAreaChart: Story = {
   args: {
+    "area isAnimationActive": false,
     "area type": "natural",
     "area fillOpacity": 0.4,
     "area stackId": "a",
@@ -165,6 +169,7 @@ export const StackedAreaChart: Story = {
 
 export const StepStackedAreaChart: Story = {
   args: {
+    "area isAnimationActive": false,
     "area type": "step",
     "area fillOpacity": 0.4,
     "area stackId": "a",
@@ -185,6 +190,7 @@ export const StepStackedAreaChart: Story = {
 
 export const GradientStackedExpandedAreaChart: Story = {
   args: {
+    "area isAnimationActive": false,
     "area type": "natural",
     "area stackId": "a",
     "xAxis dataKey": "month",
@@ -206,6 +212,7 @@ export const GradientStackedExpandedAreaChart: Story = {
 
 export const LabeledAreaChart: Story = {
   args: {
+    "area isAnimationActive": false,
     "area dataKey": "desktop",
     "area type": "natural",
     "area fill": "var(--color-desktop)",
@@ -233,6 +240,7 @@ export const LabeledAreaChart: Story = {
 
 export const WithLegendAreaChart: Story = {
   args: {
+    "area isAnimationActive": false,
     "area type": "natural",
     "area fillOpacity": 0.4,
     "area stackId": "a",

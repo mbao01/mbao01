@@ -81,6 +81,7 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {
+    "radialBar isAnimationActive": false,
     "radialBar dataKey": "visitors",
     "radialBar background": true,
     "radialBarChart data": chartData,
@@ -91,6 +92,7 @@ export const Default: Story = {
 
 export const LabeledRadialChart: Story = {
   args: {
+    "radialBar isAnimationActive": false,
     "radialBar background": true,
     "radialBar dataKey": "visitors",
     "radialBarChart data": chartData,
@@ -104,6 +106,7 @@ export const LabeledRadialChart: Story = {
 
 export const GridRadialChart: Story = {
   args: {
+    "radialBar isAnimationActive": false,
     "radialBar dataKey": "visitors",
     "radialBarChart data": chartData,
     "radialBarChart innerRadius": 30,
@@ -114,6 +117,7 @@ export const GridRadialChart: Story = {
 
 export const TextRadialChart: Story = {
   args: {
+    "radialBar isAnimationActive": false,
     "radialBar dataKey": "visitors",
     "radialBar background": true,
     "radialBar cornerRadius": 10,
@@ -128,6 +132,7 @@ export const TextRadialChart: Story = {
 
 export const ShapeRadialChart: Story = {
   args: {
+    "radialBar isAnimationActive": false,
     "radialBar dataKey": "visitors",
     "radialBar background": true,
     "radialBarChart data": chartData,
@@ -140,6 +145,7 @@ export const ShapeRadialChart: Story = {
 
 export const StackedRadialChart: Story = {
   args: {
+    "radialBar isAnimationActive": false,
     "radialBar stackId": "a",
     "radialBar cornerRadius": 5,
     "radialBar className": "stroke-transparent stroke-2",

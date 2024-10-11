@@ -83,11 +83,14 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
-  args: {},
+  args: {
+    "bar isAnimationActive": false,
+  },
 };
 
 export const MultipleBarChart: Story = {
   args: {
+    "bar isAnimationActive": false,
     "xAxis dataKey": "month",
     "xAxis tickLine": false,
     "xAxis tickMargin": 10,
@@ -101,6 +104,7 @@ export const MultipleBarChart: Story = {
 
 export const HorizontalBarChart: Story = {
   args: {
+    "bar isAnimationActive": false,
     "xAxis type": "number",
     "xAxis dataKey": "desktop",
     "xAxis hide": true,
@@ -122,6 +126,7 @@ export const HorizontalBarChart: Story = {
 
 export const LabelBarChart: Story = {
   args: {
+    "bar isAnimationActive": false,
     "xAxis dataKey": "month",
     "xAxis tickLine": false,
     "xAxis tickMargin": 10,
@@ -138,6 +143,7 @@ export const LabelBarChart: Story = {
 
 export const CustomLabelBarChart: Story = {
   args: {
+    "bar isAnimationActive": false,
     "xAxis type": "number",
     "xAxis dataKey": "desktop",
     "xAxis hide": true,
@@ -167,6 +173,7 @@ const mixedChartData = [
 ];
 export const MixedBarChart: Story = {
   args: {
+    "bar isAnimationActive": false,
     "xAxis type": "number",
     "xAxis dataKey": "visitors",
     "xAxis hide": true,
@@ -187,6 +194,7 @@ export const MixedBarChart: Story = {
 
 export const StackedBarChart: Story = {
   args: {
+    "bar isAnimationActive": false,
     "xAxis dataKey": "month",
     "xAxis tickLine": false,
     "xAxis tickMargin": 10,
@@ -200,6 +208,7 @@ export const StackedBarChart: Story = {
 
 export const ActiveBarChart: Story = {
   args: {
+    "bar isAnimationActive": false,
     "xAxis dataKey": "browser",
     "xAxis tickLine": false,
     "xAxis tickMargin": 10,
@@ -220,6 +229,7 @@ const negativeChartData = [
 ];
 export const NegativeBarChart: Story = {
   args: {
+    "bar isAnimationActive": false,
     "barChart accessibilityLayer": true,
     "barChart data": negativeChartData,
   },

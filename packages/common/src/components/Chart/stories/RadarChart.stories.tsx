@@ -89,6 +89,7 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {
+    "radar isAnimationActive": false,
     "radar dataKey": "desktop",
     "radar fill": "var(--color-desktop)",
     "radar fillOpacity": 0.6,
@@ -98,6 +99,7 @@ export const Default: Story = {
 
 export const DotRadarChart: Story = {
   args: {
+    "radar isAnimationActive": false,
     "radar dataKey": "desktop",
     "radar fill": "var(--color-desktop)",
     "radar fillOpacity": 0.6,
@@ -111,14 +113,13 @@ export const DotRadarChart: Story = {
 };
 
 export const MultipleRadarChart: Story = {
-  args: {
-    "radarChart data": chartData,
-  },
+  args: { "radar isAnimationActive": false, "radarChart data": chartData },
   render: renderer(MultipleRadarChartExample),
 };
 
 export const LinesRadarChart: Story = {
   args: {
+    "radar isAnimationActive": false,
     "radarChart data": chartData,
     "radar fillOpacity": 0,
     "radar strokeWidth": 2,
@@ -128,6 +129,7 @@ export const LinesRadarChart: Story = {
 
 export const CustomLabeledRadarChart: Story = {
   args: {
+    "radar isAnimationActive": false,
     "radarChart margin": {
       top: 10,
       right: 10,
@@ -139,14 +141,13 @@ export const CustomLabeledRadarChart: Story = {
 };
 
 export const RadiusAxisRadarChart: Story = {
-  args: {
-    "radarChart data": chartData,
-  },
+  args: { "radar isAnimationActive": false, "radarChart data": chartData },
   render: renderer(RadiusAxisRadarChartExample),
 };
 
 export const GridCustomRadarChart: Story = {
   args: {
+    "radar isAnimationActive": false,
     "radarChart data": chartData,
     "radar dataKey": "desktop",
     "radar fill": "var(--color-desktop)",
@@ -157,6 +158,7 @@ export const GridCustomRadarChart: Story = {
 
 export const GridFilledRadarChart: Story = {
   args: {
+    "radar isAnimationActive": false,
     "radarChart data": chartData,
     "radar dataKey": "desktop",
     "radar fill": "var(--color-desktop)",
@@ -167,6 +169,7 @@ export const GridFilledRadarChart: Story = {
 
 export const NoGridRadarChart: Story = {
   args: {
+    "radar isAnimationActive": false,
     "radarChart data": chartData,
     "radar dataKey": "desktop",
     "radar fill": "var(--color-desktop)",
@@ -181,6 +184,7 @@ export const NoGridRadarChart: Story = {
 
 export const GridCircleRadarChart: Story = {
   args: {
+    "radar isAnimationActive": false,
     "radarChart data": chartData,
     "radar dataKey": "desktop",
     "radar fill": "var(--color-desktop)",
@@ -195,6 +199,7 @@ export const GridCircleRadarChart: Story = {
 
 export const NoLinesGridCircleRadarChart: Story = {
   args: {
+    "radar isAnimationActive": false,
     "radarChart data": chartData,
     "radar dataKey": "desktop",
     "radar fill": "var(--color-desktop)",
@@ -209,6 +214,7 @@ export const NoLinesGridCircleRadarChart: Story = {
 
 export const GridCircleFilledRadarChart: Story = {
   args: {
+    "radar isAnimationActive": false,
     "radarChart data": chartData,
     "radar dataKey": "desktop",
     "radar fill": "var(--color-desktop)",
@@ -219,6 +225,7 @@ export const GridCircleFilledRadarChart: Story = {
 
 export const LegendRadarChart: Story = {
   args: {
+    "radar isAnimationActive": false,
     "radarChart data": chartData,
     "radarChart margin": {
       top: -40,

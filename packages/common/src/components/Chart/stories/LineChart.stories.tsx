@@ -78,6 +78,7 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {
+    "line isAnimationActive": false,
     "line dataKey": "desktop",
     "line type": "natural",
     "line stroke": "var(--color-desktop)",
@@ -94,6 +95,7 @@ export const Default: Story = {
 
 export const LinearLineChart: Story = {
   args: {
+    "line isAnimationActive": false,
     "line dataKey": "desktop",
     "line type": "linear",
     "line stroke": "var(--color-desktop)",
@@ -115,6 +117,7 @@ export const LinearLineChart: Story = {
 
 export const StepLineChart: Story = {
   args: {
+    "line isAnimationActive": false,
     "line dataKey": "desktop",
     "line type": "step",
     "line stroke": "var(--color-desktop)",
@@ -136,6 +139,7 @@ export const StepLineChart: Story = {
 
 export const StackedLineChart: Story = {
   args: {
+    "line isAnimationActive": false,
     "line type": "natural",
     "line dot": false,
     "line fillOpacity": 0.4,
@@ -156,6 +160,7 @@ export const StackedLineChart: Story = {
 
 export const StepStackedLineChart: Story = {
   args: {
+    "line isAnimationActive": false,
     "line type": "step",
     "line dot": false,
     "lineChart data": chartData,
@@ -166,6 +171,7 @@ export const StepStackedLineChart: Story = {
 
 export const CustomDotLineChart: Story = {
   args: {
+    "line isAnimationActive": false,
     "line dataKey": "desktop",
     "line type": "natural",
     "line stroke": "var(--color-desktop)",
@@ -187,6 +193,7 @@ export const CustomDotLineChart: Story = {
 
 export const LabeledLineChart: Story = {
   args: {
+    "line isAnimationActive": false,
     "line dataKey": "desktop",
     "line type": "natural",
     "line stroke": "var(--color-desktop)",
@@ -220,6 +227,7 @@ export const LabeledLineChart: Story = {
 
 export const WithLegendLineChart: Story = {
   args: {
+    "line isAnimationActive": false,
     "line type": "natural",
     "line fillOpacity": 0.4,
     "xAxis dataKey": "month",

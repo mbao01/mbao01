@@ -83,6 +83,7 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {
+    "pie isAnimationActive": false,
     "pie data": chartData,
     "pie dataKey": "visitors",
     "pie nameKey": "browser",
@@ -91,6 +92,7 @@ export const Default: Story = {
 
 export const PieChart: Story = {
   args: {
+    "pie isAnimationActive": false,
     "pie data": chartData,
     "pie dataKey": "visitors",
     "pie nameKey": "browser",
@@ -99,6 +101,7 @@ export const PieChart: Story = {
 
 export const LabeledPieChart: Story = {
   args: {
+    "pie isAnimationActive": false,
     "pie data": chartData,
     "pie dataKey": "visitors",
     "pie label": true,
@@ -109,6 +112,7 @@ export const LabeledPieChart: Story = {
 
 export const CustomLabeledPieChart: Story = {
   args: {
+    "pie isAnimationActive": false,
     "pie data": chartData,
     "pie dataKey": "visitors",
     "pie labelLine": false,
@@ -118,23 +122,18 @@ export const CustomLabeledPieChart: Story = {
 };
 
 export const LabelListPieChart: Story = {
-  args: {
-    "pie data": chartData,
-    "pie dataKey": "visitors",
-  },
+  args: { "pie isAnimationActive": false, "pie data": chartData, "pie dataKey": "visitors" },
   render: renderer(LabelListPieChartExample),
 };
 
 export const WithLegendPieChart: Story = {
-  args: {
-    "pie data": chartData,
-    "pie dataKey": "visitors",
-  },
+  args: { "pie isAnimationActive": false, "pie data": chartData, "pie dataKey": "visitors" },
   render: renderer(WithLegendPieChartExample),
 };
 
 export const DonutPieChart: Story = {
   args: {
+    "pie isAnimationActive": false,
     "pie data": chartData,
     "pie dataKey": "visitors",
     "pie nameKey": "browser",
@@ -145,6 +144,7 @@ export const DonutPieChart: Story = {
 
 export const ActiveDonutPieChart: Story = {
   args: {
+    "pie isAnimationActive": false,
     "pie data": chartData,
     "pie dataKey": "visitors",
     "pie nameKey": "browser",
@@ -156,6 +156,6 @@ export const ActiveDonutPieChart: Story = {
 };
 
 export const StackedPieChart: Story = {
-  args: {},
+  args: { "pie isAnimationActive": false },
   render: renderer(StackedPieChartExample),
 };
