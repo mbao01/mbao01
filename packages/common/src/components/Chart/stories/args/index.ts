@@ -1,4 +1,12 @@
-import type { AreaProps, BarProps, LineProps, PieProps, XAxisProps, YAxisProps } from "recharts";
+import type {
+  AreaProps,
+  BarProps,
+  LineProps,
+  PieProps,
+  RadialBarProps,
+  XAxisProps,
+  YAxisProps,
+} from "recharts";
 import { type PropsWithoutRef } from "react";
 import { type ArgTypes } from "@storybook/react";
 import { type CategoricalChartProps } from "recharts/types/chart/generateCategoricalChart";
@@ -11,6 +19,8 @@ import { lineArgs } from "./lineArgs";
 import { lineChartArgs as lineChartComponentArgs } from "./lineChartArgs";
 import { pieArgs } from "./pieArgs";
 import { pieChartArgs as pieChartComponentArgs } from "./pieChartArgs";
+import { radialBarArgs } from "./radialBarArgs";
+import { radialBarChartArgs as radialBarChartComponentArgs } from "./radialBarChartArgs";
 import { type Flatten } from "./types";
 import { xAxisArgs } from "./xAxisArgs";
 import { yAxisArgs } from "./yAxisArgs";
@@ -107,4 +117,23 @@ export const pieArgKey = {
 export const pieChartArgs = {
   ...categorizeArgs(pieChartComponentArgs, pieArgKey.pieChart),
   ...categorizeArgs(pieArgs, pieArgKey.pie),
+} satisfies ArgTypes;
+
+type RadialBarArgKey = "radialBar" | "radialBarChart";
+
+export type RadialBarChartProps = Partial<{
+  radialBar: PropsWithoutRef<RadialBarProps>;
+  radialBarChart: CategoricalChartProps;
+}>;
+
+export type RadialBarChartArgs = Partial<NonNullable<Flatten<Required<RadialBarChartProps>>>>;
+
+export const radialBarArgKey = {
+  radialBar: "radialBar",
+  radialBarChart: "radialBarChart",
+} satisfies Record<string, RadialBarArgKey>;
+
+export const radialBarChartArgs = {
+  ...categorizeArgs(radialBarChartComponentArgs, radialBarArgKey.radialBarChart),
+  ...categorizeArgs(radialBarArgs, radialBarArgKey.radialBar),
 } satisfies ArgTypes;

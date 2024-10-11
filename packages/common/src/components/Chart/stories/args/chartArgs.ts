@@ -49,7 +49,7 @@ export const margin: ArgTypes[0] = {
   control: "object",
 };
 
-export const dataKey = {
+export const dataKey: ArgTypes[0] = {
   description: "The key or getter of a group of data which should be unique in a chart.",
   table: {
     type: {
