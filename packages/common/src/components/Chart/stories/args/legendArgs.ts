@@ -149,7 +149,7 @@ The exact behavior changes depending on \`align\` prop.`,
     table: {
       type: {
         summary: "ReactElement | Function",
-        detail: `<Legend content={<CustomizedLegend external={external} />} />
+        detail: `<ChartLegend content={<CustomizedLegend external={external} />} />
 
         const renderLegend = (props) => {
           const { payload } = props;

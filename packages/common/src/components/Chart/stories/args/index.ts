@@ -3,6 +3,7 @@ import type {
   BarProps,
   LineProps,
   PieProps,
+  RadarProps,
   RadialBarProps,
   XAxisProps,
   YAxisProps,
@@ -19,6 +20,8 @@ import { lineArgs } from "./lineArgs";
 import { lineChartArgs as lineChartComponentArgs } from "./lineChartArgs";
 import { pieArgs } from "./pieArgs";
 import { pieChartArgs as pieChartComponentArgs } from "./pieChartArgs";
+import { radarArgs } from "./radarArgs";
+import { radarChartArgs as radarChartComponentArgs } from "./radarChartArgs";
 import { radialBarArgs } from "./radialBarArgs";
 import { radialBarChartArgs as radialBarChartComponentArgs } from "./radialBarChartArgs";
 import { type Flatten } from "./types";
@@ -136,4 +139,23 @@ export const radialBarArgKey = {
 export const radialBarChartArgs = {
   ...categorizeArgs(radialBarChartComponentArgs, radialBarArgKey.radialBarChart),
   ...categorizeArgs(radialBarArgs, radialBarArgKey.radialBar),
+} satisfies ArgTypes;
+
+type RadarArgKey = "radar" | "radarChart";
+
+export type RadarChartProps = Partial<{
+  radar: PropsWithoutRef<RadarProps>;
+  radarChart: CategoricalChartProps;
+}>;
+
+export type RadarChartArgs = Partial<NonNullable<Flatten<Required<RadarChartProps>>>>;
+
+export const radarArgKey = {
+  radar: "radar",
+  radarChart: "radarChart",
+} satisfies Record<string, RadarArgKey>;
+
+export const radarChartArgs = {
+  ...categorizeArgs(radarChartComponentArgs, radarArgKey.radarChart),
+  ...categorizeArgs(radarArgs, radarArgKey.radar),
 } satisfies ArgTypes;
