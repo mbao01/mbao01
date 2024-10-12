@@ -1,3 +1,4 @@
+import { type SVGProps } from "react";
 import { DrawingPinIcon } from "@radix-ui/react-icons";
 import { CartesianGrid, LabelList, Line, LineChart, XAxis, YAxis } from "recharts";
 import { Chart } from "../../Chart";
@@ -77,13 +78,17 @@ export const CustomDotLineChartExample = (props: LineChartProps) => {
         <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
         <Line
           {...props.line}
-          dot={({ cx, cy, payload }) => {
+          dot={({
+            cx,
+            cy,
+            payload,
+          }: SVGProps<SVGSVGElement> & { payload: Record<string, string> }) => {
             const r = 24;
             return (
               <DrawingPinIcon
                 key={payload.month}
-                x={cx - r / 4}
-                y={cy - r / 4}
+                x={Number(cx) - r / 4}
+                y={Number(cy) - r / 4}
                 width={r / 2}
                 height={r / 2}
                 fill="hsl(var(--background))"

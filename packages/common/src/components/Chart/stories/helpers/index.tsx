@@ -16,7 +16,7 @@ export const categorizeArgs = (args: ArgTypes, category: string) => {
   }, {} as ArgTypes);
 };
 
-const getCategorizedArgs = <T extends unknown>(args: ArgTypes<T>) => {
+const getCategorizedArgs = <T,>(args: ArgTypes<T>) => {
   return Object.entries(args).reduce((acc, [categoryName, value]) => {
     const [category, name] = categoryName.split(" ");
     acc[category] = {
@@ -38,7 +38,8 @@ const convertStringToJSON = (str: string) => {
   newStr = newStr.replace(/(\w+)\s*:/g, '"$1":');
 
   try {
-    return JSON.parse(newStr);
+    return JSON.parse(newStr) as Record<string, unknown>;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (e) {
     return str;
   }
@@ -49,11 +50,12 @@ export const getArgsFromArgTypes = <T extends ArgTypes>(argsTypes: T) => {
   const args = (Object.keys(argsTypes) as (keyof T)[]).reduce(
     (acc, key) => {
       const defaultValue =
-        argsTypes[key].defaultValue ?? argsTypes[key].table?.defaultValue?.summary;
+        (argsTypes[key].defaultValue as string) ?? argsTypes[key].table?.defaultValue?.summary;
       if (defaultValue) {
         try {
           acc[key] = convertStringToJSON(String(defaultValue));
-        } catch (e) {
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        } catch (_e) {
           acc[key] = defaultValue;
         }
       }
@@ -66,5 +68,8 @@ export const getArgsFromArgTypes = <T extends ArgTypes>(argsTypes: T) => {
 };
 
 export const renderer = <T extends ElementType>(Component: T) => {
-  return <G,>(props: G) => <Component {...(props as ComponentProps<T>)} />;
+  const component = <G,>(props: G) => <Component {...(props as ComponentProps<T>)} />;
+  component.displayName =
+    (Component as React.FC<unknown>).displayName || (Component as React.FC<unknown>).name;
+  return component;
 };

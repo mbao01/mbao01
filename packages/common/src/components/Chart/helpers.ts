@@ -23,5 +23,5 @@ export const getPayloadConfigFromPayload = (config: ChartConfig, payload: unknow
     configLabelKey = payloadPayload[key as keyof typeof payloadPayload] as string;
   }
 
-  return configLabelKey in config ? config[configLabelKey] : config[key as keyof typeof config];
+  return configLabelKey in config ? config[configLabelKey] : config[key];
 };

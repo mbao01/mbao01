@@ -1,3 +1,4 @@
+import { type SVGProps } from "react";
 import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart } from "recharts";
 import { Chart } from "../../Chart";
 import {
@@ -30,7 +31,7 @@ const chartConfig = {
  * The RadarChart can be used with the following child components: `<PolarAngleAxis />`, `<PolarRadiusAxis />`,
  * `<PolarGrid />`, `<ChartLegend />`, `<ChartTooltip />`, `<Radar />`, `<Customized />`
  */
-export const RadarChartExample = (props: RadarChartProps) => {
+export const RadarChartExample = (props: Partial<RadarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadarChart {...props.radarChart}>
@@ -43,7 +44,7 @@ export const RadarChartExample = (props: RadarChartProps) => {
   );
 };
 
-export const DotRadarChartExample = (props: RadarChartProps) => {
+export const DotRadarChartExample = (props: Partial<RadarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadarChart {...props.radarChart}>
@@ -56,7 +57,7 @@ export const DotRadarChartExample = (props: RadarChartProps) => {
   );
 };
 
-export const MultipleRadarChartExample = (props: RadarChartProps) => {
+export const MultipleRadarChartExample = (props: Partial<RadarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadarChart {...props.radarChart}>
@@ -70,7 +71,7 @@ export const MultipleRadarChartExample = (props: RadarChartProps) => {
   );
 };
 
-export const LinesRadarChartExample = (props: RadarChartProps) => {
+export const LinesRadarChartExample = (props: Partial<RadarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadarChart {...props.radarChart}>
@@ -94,7 +95,7 @@ export const LinesRadarChartExample = (props: RadarChartProps) => {
   );
 };
 
-export const CustomLabeledRadarChartExample = (props: RadarChartProps) => {
+export const CustomLabeledRadarChartExample = (props: Partial<RadarChartProps>) => {
   const chartData = [
     { month: "January", desktop: 186, mobile: 80 },
     { month: "February", desktop: 305, mobile: 200 },
@@ -110,12 +111,18 @@ export const CustomLabeledRadarChartExample = (props: RadarChartProps) => {
         <ChartTooltip cursor={false} content={<ChartTooltipContent indicator="line" />} />
         <PolarAngleAxis
           dataKey="month"
-          tick={({ x, y, textAnchor, value, index, ...props }) => {
+          tick={({
+            x,
+            y,
+            textAnchor,
+            index,
+            ...props
+          }: SVGProps<SVGTextElement> & { index: number }) => {
             const data = chartData[index];
             return (
               <text
                 x={x}
-                y={index === 0 ? y - 10 : y}
+                y={index === 0 ? Number(y) - 10 : y}
                 textAnchor={textAnchor}
                 fontSize={13}
                 fontWeight={500}
@@ -139,7 +146,7 @@ export const CustomLabeledRadarChartExample = (props: RadarChartProps) => {
   );
 };
 
-export const RadiusAxisRadarChartExample = (props: RadarChartProps) => {
+export const RadiusAxisRadarChartExample = (props: Partial<RadarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadarChart {...props.radarChart}>
@@ -161,7 +168,7 @@ export const RadiusAxisRadarChartExample = (props: RadarChartProps) => {
   );
 };
 
-export const GridCustomRadarChartExample = (props: RadarChartProps) => {
+export const GridCustomRadarChartExample = (props: Partial<RadarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadarChart {...props.radarChart}>
@@ -174,7 +181,7 @@ export const GridCustomRadarChartExample = (props: RadarChartProps) => {
   );
 };
 
-export const GridFilledRadarChartExample = (props: RadarChartProps) => {
+export const GridFilledRadarChartExample = (props: Partial<RadarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadarChart {...props.radarChart}>
@@ -187,7 +194,7 @@ export const GridFilledRadarChartExample = (props: RadarChartProps) => {
   );
 };
 
-export const NoGridRadarChartExample = (props: RadarChartProps) => {
+export const NoGridRadarChartExample = (props: Partial<RadarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadarChart {...props.radarChart}>
@@ -199,7 +206,7 @@ export const NoGridRadarChartExample = (props: RadarChartProps) => {
   );
 };
 
-export const GridCircleRadarChartExample = (props: RadarChartProps) => {
+export const GridCircleRadarChartExample = (props: Partial<RadarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadarChart {...props.radarChart}>
@@ -212,7 +219,7 @@ export const GridCircleRadarChartExample = (props: RadarChartProps) => {
   );
 };
 
-export const NoLinesGridCircleRadarChartExample = (props: RadarChartProps) => {
+export const NoLinesGridCircleRadarChartExample = (props: Partial<RadarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadarChart {...props.radarChart}>
@@ -225,7 +232,7 @@ export const NoLinesGridCircleRadarChartExample = (props: RadarChartProps) => {
   );
 };
 
-export const GridCircleFilledRadarChartExample = (props: RadarChartProps) => {
+export const GridCircleFilledRadarChartExample = (props: Partial<RadarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadarChart {...props.radarChart}>
@@ -238,7 +245,7 @@ export const GridCircleFilledRadarChartExample = (props: RadarChartProps) => {
   );
 };
 
-export const LegendRadarChartExample = (props: RadarChartProps) => {
+export const LegendRadarChartExample = (props: Partial<RadarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadarChart {...props.radarChart}>

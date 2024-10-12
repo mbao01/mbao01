@@ -1,5 +1,6 @@
+import { type SVGProps } from "react";
 import { LabelList, Pie, PieChart, Sector } from "recharts";
-import { PieSectorDataItem } from "recharts/types/polar/Pie";
+import { type PieSectorDataItem } from "recharts/types/polar/Pie";
 import { Chart } from "../../Chart";
 import {
   ChartLegend,
@@ -8,7 +9,7 @@ import {
   ChartTooltipContent,
 } from "../../components";
 import { type ChartConfig } from "../../types";
-import { PieChartProps } from "../args";
+import { type PieChartProps } from "../args";
 
 const chartConfig = {
   visitors: {
@@ -46,7 +47,7 @@ const chartConfig = {
  * The PieChart can be used with the following child components: `<PolarAngleAxis />`, `<PolarRadiusAxis />`,
  * `<PolarGrid />`, `<ChartLegend />`, `<ChartTooltip />`, `<Pie />`, `<Customized />`
  */
-export const PieChartExample = (props: PieChartProps) => {
+export const PieChartExample = (props: Partial<PieChartProps>) => {
   return (
     <Chart config={chartConfig} className="h-[250px] w-full">
       <PieChart {...props.pieChart}>
@@ -57,7 +58,7 @@ export const PieChartExample = (props: PieChartProps) => {
   );
 };
 
-export const LabeledPieChartExample = (props: PieChartProps) => {
+export const LabeledPieChartExample = (props: Partial<PieChartProps>) => {
   return (
     <Chart
       config={chartConfig}
@@ -71,7 +72,7 @@ export const LabeledPieChartExample = (props: PieChartProps) => {
   );
 };
 
-export const CustomLabeledPieChartExample = (props: PieChartProps) => {
+export const CustomLabeledPieChartExample = (props: Partial<PieChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <PieChart {...props.pieChart}>
@@ -79,7 +80,10 @@ export const CustomLabeledPieChartExample = (props: PieChartProps) => {
         <Pie
           dataKey="visitors"
           {...props.pie}
-          label={({ payload, ...props }) => {
+          label={({
+            payload,
+            ...props
+          }: SVGProps<SVGTextElement> & { payload: Record<string, string> }) => {
             return (
               <text
                 cx={props.cx}
@@ -102,7 +106,7 @@ export const CustomLabeledPieChartExample = (props: PieChartProps) => {
   );
 };
 
-export const LabelListPieChartExample = (props: PieChartProps) => {
+export const LabelListPieChartExample = (props: Partial<PieChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <PieChart {...props.pieChart}>
@@ -122,7 +126,7 @@ export const LabelListPieChartExample = (props: PieChartProps) => {
   );
 };
 
-export const WithLegendPieChartExample = (props: PieChartProps) => {
+export const WithLegendPieChartExample = (props: Partial<PieChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <PieChart {...props.pieChart}>
@@ -136,7 +140,7 @@ export const WithLegendPieChartExample = (props: PieChartProps) => {
   );
 };
 
-export const DonutPieChartExample = (props: PieChartProps) => {
+export const DonutPieChartExample = (props: Partial<PieChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <PieChart {...props.pieChart}>
@@ -147,7 +151,7 @@ export const DonutPieChartExample = (props: PieChartProps) => {
   );
 };
 
-export const ActiveDonutPieChartExample = (props: PieChartProps) => {
+export const ActiveDonutPieChartExample = (props: Partial<PieChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <PieChart {...props.pieChart}>
@@ -164,7 +168,7 @@ export const ActiveDonutPieChartExample = (props: PieChartProps) => {
   );
 };
 
-export const StackedPieChartExample = (props: PieChartProps) => {
+export const StackedPieChartExample = (props: Partial<PieChartProps>) => {
   const desktopData = [
     { month: "january", desktop: 186, fill: "var(--color-january)" },
     { month: "february", desktop: 305, fill: "var(--color-february)" },

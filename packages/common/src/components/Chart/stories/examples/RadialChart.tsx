@@ -40,7 +40,7 @@ const chartConfig = {
  * The RadialBarChart can be used with the following child components: `<PolarAngleAxis />`, `<PolarRadiusAxis />`,
  * `<PolarGrid />`, `<ChartLegend />`, `<ChartTooltip />`, `<RadialBar />`, `<Customized />`
  */
-export const RadialChartExample = (props: RadialBarChartProps) => {
+export const RadialChartExample = (props: Partial<RadialBarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadialBarChart {...props.radialBarChart}>
@@ -54,7 +54,7 @@ export const RadialChartExample = (props: RadialBarChartProps) => {
   );
 };
 
-export const LabeledRadialChartExample = (props: RadialBarChartProps) => {
+export const LabeledRadialChartExample = (props: Partial<RadialBarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadialBarChart {...props.radialBarChart}>
@@ -75,7 +75,7 @@ export const LabeledRadialChartExample = (props: RadialBarChartProps) => {
   );
 };
 
-export const GridRadialChartExample = (props: RadialBarChartProps) => {
+export const GridRadialChartExample = (props: Partial<RadialBarChartProps>) => {
   return (
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadialBarChart {...props.radialBarChart}>
@@ -90,7 +90,7 @@ export const GridRadialChartExample = (props: RadialBarChartProps) => {
   );
 };
 
-export const TextRadialChartExample = (props: RadialBarChartProps) => {
+export const TextRadialChartExample = (props: Partial<RadialBarChartProps>) => {
   const chartData = [{ browser: "safari", visitors: 200, fill: "var(--color-safari)" }];
   const chartConfig = {
     visitors: {
@@ -140,7 +140,7 @@ export const TextRadialChartExample = (props: RadialBarChartProps) => {
   );
 };
 
-export const ShapeRadialChartExample = (props: RadialBarChartProps) => {
+export const ShapeRadialChartExample = (props: Partial<RadialBarChartProps>) => {
   const chartData = [{ browser: "safari", visitors: 1260, fill: "var(--color-safari)" }];
   const chartConfig = {
     visitors: {
@@ -190,7 +190,7 @@ export const ShapeRadialChartExample = (props: RadialBarChartProps) => {
   );
 };
 
-export const StackedRadialChartExample = (props: RadialBarChartProps) => {
+export const StackedRadialChartExample = (props: Partial<RadialBarChartProps>) => {
   const chartData = [{ month: "january", desktop: 1260, mobile: 570 }];
   const chartConfig = {
     desktop: {

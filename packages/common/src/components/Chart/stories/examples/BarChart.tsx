@@ -1,4 +1,14 @@
-import { Bar, BarChart, CartesianGrid, Cell, LabelList, Rectangle, XAxis, YAxis } from "recharts";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Cell,
+  LabelList,
+  Rectangle,
+  RectangleProps,
+  XAxis,
+  YAxis,
+} from "recharts";
 import { Chart } from "../../Chart";
 import {
   ChartLegend,
@@ -143,7 +153,7 @@ export const BarChartExample = (props: Partial<BarChartProps>) => {
           axisLine={false}
           tickMargin={8}
           minTickGap={32}
-          tickFormatter={(value) => {
+          tickFormatter={(value: string) => {
             const date = new Date(value);
             return date.toLocaleDateString("en-US", {
               month: "short",
@@ -156,7 +166,7 @@ export const BarChartExample = (props: Partial<BarChartProps>) => {
             <ChartTooltipContent
               className="w-[150px]"
               nameKey="views"
-              labelFormatter={(value) => {
+              labelFormatter={(value: string) => {
                 return new Date(value).toLocaleDateString("en-US", {
                   month: "short",
                   day: "numeric",
@@ -370,12 +380,12 @@ export const ActiveBarChartExample = (props: Partial<BarChartProps>) => {
           strokeWidth={2}
           radius={8}
           activeIndex={2}
-          activeBar={(p: Record<string, any>) => {
+          activeBar={(p: unknown) => {
             return (
               <Rectangle
-                {...p}
+                {...(p as RectangleProps)}
                 fillOpacity={0.8}
-                stroke={p.payload.fill}
+                stroke={(p as RectangleProps).fill}
                 strokeDasharray={4}
                 strokeDashoffset={4}
               />
@@ -402,14 +412,12 @@ export const NegativeBarChartExample = (props: Partial<BarChartProps>) => {
         <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel hideIndicator />} />
         <Bar dataKey="visitors" {...props.bar}>
           <LabelList position="top" dataKey="month" fillOpacity={1} />
-          {(props.barChart as { data: Array<{ month: string; visitors: number }> }).data?.map(
-            (item) => (
-              <Cell
-                key={item.month}
-                fill={item.visitors > 0 ? "hsl(var(--chart-1))" : "hsl(var(--chart-2))"}
-              />
-            )
-          )}
+          {(props.barChart as { data: { month: string; visitors: number }[] }).data?.map((item) => (
+            <Cell
+              key={item.month}
+              fill={item.visitors > 0 ? "hsl(var(--chart-1))" : "hsl(var(--chart-2))"}
+            />
+          ))}
         </Bar>
       </BarChart>
     </Chart>

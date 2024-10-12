@@ -47,9 +47,7 @@ export const ChartTooltipContent = forwardRef<HTMLDivElement, ChartTooltipConten
       const key = `${labelKey || item.dataKey || item.name || "value"}`;
       const itemConfig = getPayloadConfigFromPayload(config, item, key);
       const value =
-        !labelKey && typeof label === "string"
-          ? config[label as keyof typeof config]?.label || label
-          : itemConfig?.label;
+        !labelKey && typeof label === "string" ? config[label]?.label || label : itemConfig?.label;
 
       if (labelFormatter) {
         return (
@@ -77,12 +75,16 @@ export const ChartTooltipContent = forwardRef<HTMLDivElement, ChartTooltipConten
           {payload.map((item, index) => {
             const key = `${nameKey || item.name || item.dataKey || "value"}`;
             const itemConfig = getPayloadConfigFromPayload(config, item, key);
-            const indicatorColor = color || item.payload.fill || item.color;
+            const indicatorColor =
+              color ||
+              (item.payload as { fill: string }).fill ||
+              item.color ||
+              (item as { fill: string }).fill;
 
             return (
               <div key={item.dataKey} className={getChartTooltipItemClasses({ indicator })}>
                 {formatter && item?.value !== undefined && item.name ? (
-                  formatter(item.value, item.name, item, index, item.payload)
+                  formatter(item.value, item.name, item, index, payload)
                 ) : (
                   <>
                     {itemConfig?.icon ? (
