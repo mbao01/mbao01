@@ -19,7 +19,7 @@ import { type BarChartProps } from "../args";
  * The BarChart can be used with the following child components: `<XAxis />`, `<YAxis />`, `<ReferenceArea />`, `<ReferenceDot />`, `<ReferenceLine />`,
  * `<Brush />`, `<CartesianGrid />`, `<ChartLegend />`, `<ChartTooltip />`, `<Bar />`, `<Customized />` or valid svg elements.
  */
-export const BarChartExample = (props: BarChartProps) => {
+export const BarChartExample = (props: Partial<BarChartProps>) => {
   const chartData = [
     { date: "2024-04-01", desktop: 222 },
     { date: "2024-04-02", desktop: 97 },
@@ -183,7 +183,7 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-export const MultipleBarChartExample = (props: BarChartProps) => {
+export const MultipleBarChartExample = (props: Partial<BarChartProps>) => {
   return (
     <Chart config={chartConfig} className="h-[200px] w-full">
       <BarChart {...props.barChart}>
@@ -197,7 +197,7 @@ export const MultipleBarChartExample = (props: BarChartProps) => {
   );
 };
 
-export const HorizontalBarChartExample = (props: BarChartProps) => {
+export const HorizontalBarChartExample = (props: Partial<BarChartProps>) => {
   return (
     <Chart config={chartConfig} className="h-[200px] w-full">
       <BarChart {...props.barChart}>
@@ -210,7 +210,7 @@ export const HorizontalBarChartExample = (props: BarChartProps) => {
   );
 };
 
-export const LabelBarChartExample = (props: BarChartProps) => {
+export const LabelBarChartExample = (props: Partial<BarChartProps>) => {
   return (
     <Chart config={chartConfig} className="h-[200px] w-full">
       <BarChart {...props.barChart}>
@@ -225,7 +225,7 @@ export const LabelBarChartExample = (props: BarChartProps) => {
   );
 };
 
-export const CustomLabelBarChartExample = (props: BarChartProps) => {
+export const CustomLabelBarChartExample = (props: Partial<BarChartProps>) => {
   return (
     <Chart config={chartConfig} className="h-[200px] w-full">
       <BarChart {...props.barChart}>
@@ -260,7 +260,7 @@ export const CustomLabelBarChartExample = (props: BarChartProps) => {
   );
 };
 
-export const MixedBarChartExample = (props: BarChartProps) => {
+export const MixedBarChartExample = (props: Partial<BarChartProps>) => {
   const chartConfig = {
     visitors: {
       label: "Visitors",
@@ -302,7 +302,7 @@ export const MixedBarChartExample = (props: BarChartProps) => {
   );
 };
 
-export const StackedBarChartExample = (props: BarChartProps) => {
+export const StackedBarChartExample = (props: Partial<BarChartProps>) => {
   return (
     <Chart config={chartConfig} className="h-[200px] w-full">
       <BarChart {...props.barChart}>
@@ -329,7 +329,7 @@ export const StackedBarChartExample = (props: BarChartProps) => {
   );
 };
 
-export const ActiveBarChartExample = (props: BarChartProps) => {
+export const ActiveBarChartExample = (props: Partial<BarChartProps>) => {
   const chartConfig = {
     visitors: {
       label: "Visitors",
@@ -388,7 +388,7 @@ export const ActiveBarChartExample = (props: BarChartProps) => {
   );
 };
 
-export const NegativeBarChartExample = (props: BarChartProps) => {
+export const NegativeBarChartExample = (props: Partial<BarChartProps>) => {
   const chartConfig = {
     visitors: {
       label: "Visitors",

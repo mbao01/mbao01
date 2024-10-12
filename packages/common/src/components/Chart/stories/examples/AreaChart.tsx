@@ -34,7 +34,7 @@ const chartConfig = {
  * The AreaChart can be used with the following child components: `<XAxis />`, `<YAxis />`, `<ReferenceArea />`, `<ReferenceDot />`, `<ReferenceArea />`,
  * `<Brush />`, `<CartesianGrid />`, `<ChartLegend />`, `<ChartTooltip />`, `<Area />`, `<Customized />` or valid svg elements.
  */
-export const AreaChartExample = (props: AreaChartProps) => {
+export const AreaChartExample = (props: Partial<AreaChartProps>) => {
   return (
     <Chart config={chartConfig} className="h-[250px] w-full">
       <AreaChart {...props.areaChart}>
@@ -47,7 +47,7 @@ export const AreaChartExample = (props: AreaChartProps) => {
   );
 };
 
-export const StackedAreaChartExample = (props: AreaChartProps) => {
+export const StackedAreaChartExample = (props: Partial<AreaChartProps>) => {
   return (
     <Chart config={chartConfig} className="h-[250px] w-full">
       <AreaChart {...props.areaChart}>
@@ -71,7 +71,7 @@ export const StackedAreaChartExample = (props: AreaChartProps) => {
   );
 };
 
-export const StackedExpandedAreaChartExample = (props: AreaChartProps) => {
+export const StackedExpandedAreaChartExample = (props: Partial<AreaChartProps>) => {
   return (
     <Chart config={chartConfig} className="h-[250px] w-full">
       <AreaChart {...props.areaChart}>
@@ -116,7 +116,7 @@ export const StackedExpandedAreaChartExample = (props: AreaChartProps) => {
   );
 };
 
-export const LabeledAreaChartExample = (props: AreaChartProps) => {
+export const LabeledAreaChartExample = (props: Partial<AreaChartProps>) => {
   return (
     <Chart config={chartConfig} className="h-[250px] w-full">
       <AreaChart {...props.areaChart}>
@@ -130,7 +130,7 @@ export const LabeledAreaChartExample = (props: AreaChartProps) => {
   );
 };
 
-export const WithLegendAreaChartExample = (props: AreaChartProps) => {
+export const WithLegendAreaChartExample = (props: Partial<AreaChartProps>) => {
   return (
     <Chart config={chartConfig} className="h-[250px] w-full">
       <AreaChart {...props.areaChart}>

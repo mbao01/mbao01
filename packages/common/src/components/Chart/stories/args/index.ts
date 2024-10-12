@@ -8,9 +8,9 @@ import type {
   XAxisProps,
   YAxisProps,
 } from "recharts";
-import { type PropsWithoutRef } from "react";
 import { type ArgTypes } from "@storybook/react";
 import { type CategoricalChartProps } from "recharts/types/chart/generateCategoricalChart";
+import type { Flatten } from "./types";
 import { categorizeArgs } from "../helpers";
 import { areaArgs } from "./areaArgs";
 import { areaChartArgs as areaChartComponentArgs } from "./areaChartArgs";
@@ -24,20 +24,26 @@ import { radarArgs } from "./radarArgs";
 import { radarChartArgs as radarChartComponentArgs } from "./radarChartArgs";
 import { radialBarArgs } from "./radialBarArgs";
 import { radialBarChartArgs as radialBarChartComponentArgs } from "./radialBarChartArgs";
-import { type Flatten } from "./types";
+import { OmitSVGElement } from "./types";
 import { xAxisArgs } from "./xAxisArgs";
 import { yAxisArgs } from "./yAxisArgs";
 
+type AxisProps = {
+  xAxis: OmitSVGElement<XAxisProps>;
+  yAxis: OmitSVGElement<YAxisProps>;
+};
+
+/**
+ * Bar chart
+ */
 type BarArgKey = "bar" | "barChart" | "xAxis" | "yAxis";
 
-export type BarChartProps = Partial<{
-  bar: PropsWithoutRef<BarProps>;
+export type BarChartProps = {
+  bar: OmitSVGElement<BarProps>;
   barChart: CategoricalChartProps;
-  xAxis: XAxisProps;
-  yAxis: YAxisProps;
-}>;
+} & AxisProps;
 
-export type BarChartArgs = Partial<NonNullable<Flatten<Required<BarChartProps>>>>;
+export type BarChartArgs = Partial<Flatten<BarChartProps>> & {};
 
 const barArgKey = {
   bar: "bar",
@@ -53,16 +59,17 @@ export const barChartArgs = {
   ...categorizeArgs(barArgs, barArgKey.bar),
 } satisfies ArgTypes;
 
+/**
+ * Line chart
+ */
 type LineArgKey = "line" | "lineChart" | "xAxis" | "yAxis";
 
-export type LineChartProps = Partial<{
-  line: PropsWithoutRef<LineProps>;
+export type LineChartProps = {
+  line: OmitSVGElement<LineProps>;
   lineChart: CategoricalChartProps;
-  xAxis: XAxisProps;
-  yAxis: YAxisProps;
-}>;
+} & AxisProps;
 
-export type LineChartArgs = Partial<NonNullable<Flatten<Required<LineChartProps>>>>;
+export type LineChartArgs = Partial<Flatten<LineChartProps>> & {};
 
 const lineArgKey = {
   line: "line",
@@ -78,16 +85,17 @@ export const lineChartArgs = {
   ...categorizeArgs(lineArgs, lineArgKey.line),
 } satisfies ArgTypes;
 
+/**
+ * Area chart
+ */
 type AreaArgKey = "area" | "areaChart" | "xAxis" | "yAxis";
 
-export type AreaChartProps = Partial<{
-  area: PropsWithoutRef<AreaProps>;
+export type AreaChartProps = {
+  area: OmitSVGElement<AreaProps>;
   areaChart: CategoricalChartProps;
-  xAxis: XAxisProps;
-  yAxis: YAxisProps;
-}>;
+} & AxisProps;
 
-export type AreaChartArgs = Partial<NonNullable<Flatten<Required<AreaChartProps>>>>;
+export type AreaChartArgs = Partial<Flatten<AreaChartProps>> & {};
 
 export const areaArgKey = {
   area: "area",
@@ -103,14 +111,17 @@ export const areaChartArgs = {
   ...categorizeArgs(areaArgs, areaArgKey.area),
 } satisfies ArgTypes;
 
+/**
+ * Pie chart
+ */
 type PieArgKey = "pie" | "pieChart";
 
-export type PieChartProps = Partial<{
-  pie: PropsWithoutRef<PieProps>;
+export type PieChartProps = {
+  pie: OmitSVGElement<PieProps>;
   pieChart: CategoricalChartProps;
-}>;
+};
 
-export type PieChartArgs = Partial<NonNullable<Flatten<Required<PieChartProps>>>>;
+export type PieChartArgs = Partial<Flatten<PieChartProps>> & {};
 
 export const pieArgKey = {
   pie: "pie",
@@ -122,14 +133,17 @@ export const pieChartArgs = {
   ...categorizeArgs(pieArgs, pieArgKey.pie),
 } satisfies ArgTypes;
 
+/**
+ * RadialBar chart
+ */
 type RadialBarArgKey = "radialBar" | "radialBarChart";
 
-export type RadialBarChartProps = Partial<{
-  radialBar: PropsWithoutRef<RadialBarProps>;
+export type RadialBarChartProps = {
+  radialBar: OmitSVGElement<RadialBarProps>;
   radialBarChart: CategoricalChartProps;
-}>;
+};
 
-export type RadialBarChartArgs = Partial<NonNullable<Flatten<Required<RadialBarChartProps>>>>;
+export type RadialBarChartArgs = Partial<Flatten<RadialBarChartProps>> & {};
 
 export const radialBarArgKey = {
   radialBar: "radialBar",
@@ -141,14 +155,17 @@ export const radialBarChartArgs = {
   ...categorizeArgs(radialBarArgs, radialBarArgKey.radialBar),
 } satisfies ArgTypes;
 
+/**
+ * Radar chart
+ */
 type RadarArgKey = "radar" | "radarChart";
 
-export type RadarChartProps = Partial<{
-  radar: PropsWithoutRef<RadarProps>;
+export type RadarChartProps = {
+  radar: OmitSVGElement<RadarProps>;
   radarChart: CategoricalChartProps;
-}>;
+};
 
-export type RadarChartArgs = Partial<NonNullable<Flatten<Required<RadarChartProps>>>>;
+export type RadarChartArgs = Partial<Flatten<RadarChartProps>> & {};
 
 export const radarArgKey = {
   radar: "radar",

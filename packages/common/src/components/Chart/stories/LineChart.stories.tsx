@@ -47,9 +47,9 @@ const withTheme = (Component: StoryFn, context: StoryContext<LineChartArgs>) => 
 };
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-const meta: Meta<LineChartArgs> = {
+const meta = {
   title: "Components/Chart/Line",
-  component: LineChartExample,
+  component: LineChartExample as any,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
@@ -70,10 +70,10 @@ const meta: Meta<LineChartArgs> = {
   argTypes: lineChartArgs,
   args: getArgsFromArgTypes(lineChartArgs),
   decorators: [withTheme, withArgs],
-};
+} satisfies Meta<LineChartArgs>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<LineChartArgs>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
