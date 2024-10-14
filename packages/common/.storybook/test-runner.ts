@@ -18,6 +18,10 @@ const setupPageViewport = async (page, story) => {
 };
 
 const config: TestRunnerConfig = {
+  tags: {
+    exclude: ["no-test"],
+    skip: ["skip-test"],
+  },
   setup() {
     expect.extend({ toMatchImageSnapshot });
   },
@@ -30,8 +34,15 @@ const config: TestRunnerConfig = {
     // Awaits for the page to be loaded and available including assets (e.g., fonts)
     await waitForPageReady(page);
 
+    const context = await getStoryContext(page, story);
+    const delayTime = context.parameters?.visual?.delay;
+    if (delayTime) {
+      await page.waitForTimeout(delayTime);
+    }
+
     // Generates a snapshot file based on the story identifier
     const image = await page.locator("#storybook-root").screenshot();
+
     expect(image).toMatchImageSnapshot({
       customDiffDir: CUSTOM_DIFF_DIR,
       customSnapshotsDir: CUSTOM_SNAPSHOTS_DIR,
