@@ -87,7 +87,7 @@ export const CustomLabelTooltip: Story = {
 
 export const LabelFormatterTooltip: Story = {
   args: {
-    labelFormatter: (value) => {
+    labelFormatter: (value: string) => {
       return new Date(value).toLocaleDateString("en-US", {
         day: "numeric",
         month: "long",
@@ -145,7 +145,8 @@ export const AdvancedTooltip: Story = {
           <div className="flex basis-full items-center border-t pt-2 text-xs font-medium text-foreground">
             Total
             <div className="ml-auto flex items-baseline gap-0.5 font-mono font-medium tabular-nums text-foreground">
-              {item.payload.running + item.payload.swimming}
+              {(item.payload as { running: number }).running +
+                (item.payload as { swimming: number }).swimming}
               <span className="font-normal text-base-content">kcal</span>
             </div>
           </div>
