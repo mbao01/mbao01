@@ -65,7 +65,6 @@ jobs:
 
       - name: 🍦 Run visual regression
         shell: bash
-        continue-on-error: true
         run: |
           pnpx concurrently -k -s first \
             "pnpm run --parallel prod" \
