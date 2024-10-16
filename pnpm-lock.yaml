@@ -10686,8 +10686,8 @@ packages:
       bser: 2.1.1
     dev: true
 
-  /fdir@6.4.1(picomatch@4.0.2):
-    resolution: {integrity: sha512-upAYvbFc8GU44qWv+r6YnWp3h13/hPFOnpCsuahbxFGmOCm7sc5UT1SytkHLS7Go/UwvhVD9k4dF6PJxpIjqAA==}
+  /fdir@6.4.2(picomatch@4.0.2):
+    resolution: {integrity: sha512-KnhMXsKSPZlAhp7+IjUkRZKPb4fUyccpDrdFXbi4QL1qkmFh9kVY09Yox+n4MaOb3lHZ1Tv829C3oaaXoMYPDQ==}
     peerDependencies:
       picomatch: ^3 || ^4
     peerDependenciesMeta:
@@ -13374,7 +13374,7 @@ packages:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
     engines: {node: '>=10'}
     dependencies:
-      chalk: 4.1.0
+      chalk: 4.1.2
       is-unicode-supported: 0.1.0
     dev: true
 
@@ -17002,7 +17002,7 @@ packages:
     resolution: {integrity: sha512-8or1+BGEdk1Zkkw2ii16qSS7uVrQJPre5A9o/XkWPATkk23FZh/15BKFxPnlTy6vkljZxLqYCzzBMj30ZrSvjw==}
     engines: {node: '>=12.0.0'}
     dependencies:
-      fdir: 6.4.1(picomatch@4.0.2)
+      fdir: 6.4.2(picomatch@4.0.2)
       picomatch: 4.0.2
     dev: true
 
