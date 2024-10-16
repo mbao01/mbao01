@@ -310,8 +310,8 @@ importers:
         specifier: ^3.4.14
         version: 3.4.14
       timescape:
-        specifier: ^0.5.2
-        version: 0.5.2(react-dom@18.3.1)(react@18.3.1)
+        specifier: ^0.6.1
+        version: 0.6.1(react-dom@18.3.1)(react@18.3.1)
       typescript:
         specifier: ^5.6.3
         version: 5.6.3
@@ -17364,8 +17364,8 @@ packages:
       setimmediate: 1.0.5
     dev: true
 
-  /timescape@0.5.2(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-dxyV4U6OHbHNGmMkjtZNLTZmrT1NE/GhD3JUdCRhvO0vtzGQGEQSwP+U1TBcAJfNxK0CRMVhCZ7WmI0SAqvCfA==}
+  /timescape@0.6.1(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-rfbIXCc3eEiVK87KK0hFihUS65JTYPcpxNoy7zwhtctdxPUXThW3Cxe1RItOYyc/MSUlDBad0nRewlyn+BKTlw==}
     peerDependencies:
       '@preact/signals': 1.x
       preact: 10.x

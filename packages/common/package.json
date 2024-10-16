@@ -161,7 +161,7 @@
     "react-router-dom": "^6.27.0",
     "storybook": "^8.3.5",
     "tailwindcss": "^3.4.14",
-    "timescape": "^0.5.2",
+    "timescape": "^0.6.1",
     "typescript": "^5.6.3",
     "vite": "^5.4.9",
     "vite-plugin-dts": "^4.2.4",
