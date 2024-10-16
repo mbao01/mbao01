@@ -62,9 +62,9 @@
     "test:coverage": "vitest run --coverage",
     "test:ui": "vitest --ui",
     "test:visual": "test-storybook --url http://127.0.0.1:6006",
-    "test:visual:coverage": "test-storybook --coverage",
+    "test:visual:coverage": "test-storybook --coverage --url http://127.0.0.1:6006",
     "test:visual:ci": "test-storybook --ci --verbose --url http://127.0.0.1:6006",
-    "test:visual:watch": "test-storybook --watch",
+    "test:visual:watch": "test-storybook --watch --url http://127.0.0.1:6006",
     "test:watch": "vitest"
   },
   "dependencies": {
