@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
 import { Button } from "../Button";
 import { Drawer } from "./Drawer";
 
-const withDrawer = () => {
+const withDrawer = (_: StoryFn, context: StoryContext) => {
   return (
-    <Drawer>
+    <Drawer {...context.args}>
       <Drawer.Trigger asChild>
         <Button outline>Open Drawer</Button>
       </Drawer.Trigger>
