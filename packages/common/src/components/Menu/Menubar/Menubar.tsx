@@ -8,6 +8,7 @@ import type {
   MenubarContentProps,
   MenubarItemProps,
   MenubarLabelProps,
+  MenubarMenuProps,
   MenubarProps,
   MenubarRadioItemProps,
   MenubarSeparatorProps,
@@ -35,6 +36,9 @@ const Menubar = ({ className, ...props }: MenubarProps) => (
   <MenubarPrimitive.Root className={cn(getMenubarClasses(), className)} {...props} />
 );
 Menubar.displayName = MenubarPrimitive.Root.displayName;
+
+const MenubarMenu = (props: MenubarMenuProps) => <MenubarPrimitive.Menu {...props} />;
+MenubarMenu.displayName = MenubarPrimitive.Menu.displayName;
 
 const MenubarTrigger = forwardRef<
   React.ElementRef<typeof MenubarPrimitive.Trigger>,
@@ -169,7 +173,7 @@ const MenubarShortcut = ({ className, ...props }: MenubarShortcutProps) => {
 };
 MenubarShortcut.displayname = "MenubarShortcut";
 
-Menubar.Menu = MenubarPrimitive.Menu;
+Menubar.Menu = MenubarMenu;
 Menubar.Group = MenubarPrimitive.Group;
 Menubar.Portal = MenubarPrimitive.Portal;
 Menubar.Sub = MenubarPrimitive.Sub;

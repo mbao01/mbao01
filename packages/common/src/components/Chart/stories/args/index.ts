@@ -52,12 +52,12 @@ const barArgKey = {
   yAxis: "yAxis",
 } satisfies Record<string, BarArgKey>;
 
-export const barChartArgs = {
+export const barChartArgs: ArgTypes = {
   ...categorizeArgs(barChartComponentArgs, barArgKey.barChart),
   ...categorizeArgs(xAxisArgs, barArgKey.xAxis),
   ...categorizeArgs(yAxisArgs, barArgKey.yAxis),
   ...categorizeArgs(barArgs, barArgKey.bar),
-} satisfies ArgTypes;
+};
 
 /**
  * Line chart
@@ -78,12 +78,12 @@ const lineArgKey = {
   yAxis: "yAxis",
 } satisfies Record<string, LineArgKey>;
 
-export const lineChartArgs = {
+export const lineChartArgs: ArgTypes = {
   ...categorizeArgs(lineChartComponentArgs, lineArgKey.lineChart),
   ...categorizeArgs(xAxisArgs, lineArgKey.xAxis),
   ...categorizeArgs(yAxisArgs, lineArgKey.yAxis),
   ...categorizeArgs(lineArgs, lineArgKey.line),
-} satisfies ArgTypes;
+};
 
 /**
  * Area chart
@@ -104,12 +104,12 @@ export const areaArgKey = {
   yAxis: "yAxis",
 } satisfies Record<string, AreaArgKey>;
 
-export const areaChartArgs = {
+export const areaChartArgs: ArgTypes = {
   ...categorizeArgs(areaChartComponentArgs, areaArgKey.areaChart),
   ...categorizeArgs(xAxisArgs, areaArgKey.xAxis),
   ...categorizeArgs(yAxisArgs, areaArgKey.yAxis),
   ...categorizeArgs(areaArgs, areaArgKey.area),
-} satisfies ArgTypes;
+};
 
 /**
  * Pie chart
@@ -128,10 +128,10 @@ export const pieArgKey = {
   pieChart: "pieChart",
 } satisfies Record<string, PieArgKey>;
 
-export const pieChartArgs = {
+export const pieChartArgs: ArgTypes = {
   ...categorizeArgs(pieChartComponentArgs, pieArgKey.pieChart),
   ...categorizeArgs(pieArgs, pieArgKey.pie),
-} satisfies ArgTypes;
+};
 
 /**
  * RadialBar chart
@@ -150,10 +150,10 @@ export const radialBarArgKey = {
   radialBarChart: "radialBarChart",
 } satisfies Record<string, RadialBarArgKey>;
 
-export const radialBarChartArgs = {
+export const radialBarChartArgs: ArgTypes = {
   ...categorizeArgs(radialBarChartComponentArgs, radialBarArgKey.radialBarChart),
   ...categorizeArgs(radialBarArgs, radialBarArgKey.radialBar),
-} satisfies ArgTypes;
+};
 
 /**
  * Radar chart
@@ -172,7 +172,7 @@ export const radarArgKey = {
   radarChart: "radarChart",
 } satisfies Record<string, RadarArgKey>;
 
-export const radarChartArgs = {
+export const radarChartArgs: ArgTypes = {
   ...categorizeArgs(radarChartComponentArgs, radarArgKey.radarChart),
   ...categorizeArgs(radarArgs, radarArgKey.radar),
-} satisfies ArgTypes;
+};
