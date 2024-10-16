@@ -15,6 +15,8 @@ import {
 
 export type MenubarProps = React.ComponentPropsWithoutRef<typeof MenubarPrimitive.Root>;
 
+export type MenubarMenuProps = React.ComponentPropsWithoutRef<typeof MenubarPrimitive.Menu>;
+
 export type MenubarTriggerProps = React.ComponentPropsWithoutRef<typeof MenubarPrimitive.Trigger> &
   VariantProps<typeof getMenubarTriggerClasses>;
 
