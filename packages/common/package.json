@@ -54,8 +54,6 @@
     "build": "tsc && vite build",
     "build-storybook": "storybook build -o ../../docs/storybook/common",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 30",
-    "playwright:install": "pnpx playwright install --with-deps",
-    "postinstall": "pnpm playwright:install",
     "prettier": "prettier --check \"**/*.{ts,tsx}\"",
     "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
     "preview": "vite preview",
