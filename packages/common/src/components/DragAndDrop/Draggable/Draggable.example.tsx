@@ -58,7 +58,7 @@ export const DraggableExample = ({
         axis={axis}
         handle={handle}
         style={{ top: y, left: x }}
-        className="border border-base-content rounded-md p-2 flex items-center gap-2"
+        className="w-fit border border-base-content rounded-md p-2 flex items-center gap-2"
       >
         {label}
       </Draggable>
@@ -135,7 +135,7 @@ export const DraggableOverlayExample = ({
           id="my-draggable"
           axis={axis}
           handle={handle}
-          className="border border-base-content rounded-md p-2 flex items-center gap-2 data-[draggable-active]:opacity-0"
+          className="w-fit border border-base-content rounded-md p-2 flex items-center gap-2 data-[draggable-active]:opacity-0"
         >
           {label}
         </Draggable>

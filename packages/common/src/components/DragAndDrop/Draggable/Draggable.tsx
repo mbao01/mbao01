@@ -52,6 +52,7 @@ const Draggable = ({
       transform={transform}
       style={style}
       className={cn(className, getDraggableClasses({ isDragging }))}
+      data-draggable={true}
       data-draggable-active={isDragging || undefined}
     />
   );

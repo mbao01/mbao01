@@ -35,4 +35,4 @@ export const getDraggableClasses = cva(
   }
 );
 
-export const getDraggableRootClasses = cva("relative w-fit");
+export const getDraggableRootClasses = cva("relative");

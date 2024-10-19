@@ -2,6 +2,7 @@ import type { UniqueIdentifier } from "@dnd-kit/core";
 import { useState } from "react";
 import { DndContext } from "@dnd-kit/core";
 import { arrayMove, SortableContext } from "@dnd-kit/sortable";
+import { cn } from "../../../utilities";
 import { Draggable } from "../Draggable";
 import { Sortable } from "./Sortable";
 import { type SortableProps } from "./types";
@@ -42,12 +43,17 @@ export const SortableExample = ({ hasDraggableOverlay, ...props }: SortableExamp
               {...props}
               key={item}
               id={item}
-              className="flex items-center justify-center w-32 h-32 bg-base-100 border border-primary-content/30 shadow rounded-md text-sm p-2 data-[draggable-active]:opacity-30 data-[draggable-active]:z-20"
+              className={cn(
+                "flex items-center justify-center w-32 h-32 bg-base-100 border border-primary-content/30 rounded-md text-sm p-2 data-[draggable]:shadow data-[draggable-active]:z-20",
+                {
+                  "data-[draggable-active]:opacity-30": hasDraggableOverlay,
+                }
+              )}
             >
               {item}
             </Sortable>
           ))}
-          {hasDraggableOverlay ? <Draggable.Overlay className="bg-base-100 !shadow-lg" /> : null}
+          {hasDraggableOverlay ? <Draggable.Overlay className="bg-base-100 shadow-lg" /> : null}
         </div>
       </SortableContext>
     </DndContext>
