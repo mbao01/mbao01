@@ -5,7 +5,7 @@ import { useWidgets } from "./hooks/useWidgets/useWidgets";
 import { Widget } from "./Widget";
 import { WidgetsContext } from "./WidgetsContext";
 
-export const WidgetExample = () => {
+export const WidgetsExample = () => {
   return (
     <WidgetsContext
       initialWidgets={[
