@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MoveIcon } from "@radix-ui/react-icons";
+import { MoveIcon, TrashIcon } from "@radix-ui/react-icons";
 import { Draggable } from "../DragAndDrop";
 import { useWidgets } from "./hooks/useWidgets/useWidgets";
 import { Widget } from "./Widget";
@@ -66,10 +66,7 @@ const Widgets = () => {
           >
             Add widgets
           </button>
-          <button
-            className="btn btn-outline btn-xs btn-warning"
-            onClick={() => deleteWidget(widgetIds[0])}
-          >
+          <button className="btn btn-outline btn-xs btn-warning" onClick={() => deleteWidget()}>
             Delete widget
           </button>
           <button
@@ -88,13 +85,29 @@ const Widgets = () => {
           <Widget
             key={widget.id}
             id={widget.id}
-            handle={
-              <Draggable.Action className="absolute top-1 right-1 opacity-0 cursor-pointer pointer-events-none transition-opacity duration-300 active:cursor-grabbing hover:opacity-100 group-hover:pointer-events-auto">
-                <MoveIcon className="w-4 h-4" />
-              </Draggable.Action>
-            }
+            actions={({ draggable, deleteWidget }) => (
+              <div className="absolute top-1 right-1 opacity-0 flex gap-1 [&>*]:cursor-pointer [&_svg]:size-4 pointer-events-none transition-opacity duration-300 hover:opacity-100 group-hover:pointer-events-auto">
+                <Draggable.Action
+                  ref={draggable?.ref}
+                  {...draggable?.listeners}
+                  aria-label={`Drag widget ${widget.id}`}
+                  className="transition-all hover:text-primary active:cursor-grabbing"
+                >
+                  <MoveIcon />
+                </Draggable.Action>
+                <Draggable.Action
+                  onClick={deleteWidget}
+                  aria-label={`Delete widget ${widget.id}`}
+                  className="transition-all hover:text-error"
+                >
+                  <TrashIcon />
+                </Draggable.Action>
+              </div>
+            )}
             className="group flex items-center justify-center w-32 h-32 bg-base-100 border border-primary-content/30 rounded-md text-sm p-2 cursor-default data-[draggable]:shadow data-[draggable-active]:z-20"
-          />
+          >
+            {widget.id}
+          </Widget>
         ))}
       </div>
     </div>
