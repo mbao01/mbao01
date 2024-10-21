@@ -86,7 +86,7 @@ const DraggableRoot = forwardRef<HTMLDivElement, DraggableRootProps>(
             "--translate-y": `${transform?.y ?? 0}px`,
           } as CSSProperties
         }
-        className={cn(className, getDraggableRootClasses())}
+        className={cn(className, getDraggableRootClasses({ isDragging, isDragOverlay }))}
       >
         {handle ? (
           <Slot {...listeners} ref={activatorNodeRef}>

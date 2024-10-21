@@ -35,4 +35,13 @@ export const getDraggableClasses = cva(
   }
 );
 
-export const getDraggableRootClasses = cva("relative");
+export const getDraggableRootClasses = cva("relative", {
+  variants: {
+    isDragging: {
+      true: "",
+    },
+    isDragOverlay: {
+      true: "",
+    },
+  },
+});
