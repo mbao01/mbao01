@@ -1,6 +1,6 @@
 "use client";
 
-import type { CSSProperties } from "react";
+import type { CSSProperties, Ref } from "react";
 import { forwardRef } from "react";
 import { createPortal } from "react-dom";
 import { Slot } from "@radix-ui/react-slot";
@@ -61,11 +61,12 @@ const Draggable = ({
 const DraggableRoot = forwardRef<HTMLDivElement, DraggableRootProps>(
   (
     {
+      handle,
+      actions,
       activatorNodeRef,
       className,
       isDragging,
       isDragOverlay,
-      handle,
       listeners,
       transform,
       style,
@@ -74,10 +75,12 @@ const DraggableRoot = forwardRef<HTMLDivElement, DraggableRootProps>(
     },
     ref
   ) => {
+    const draggable = { listeners, ref: activatorNodeRef };
+
     return (
       <div
         {...props}
-        {...(handle ? {} : listeners)}
+        {...(actions || handle ? {} : listeners)}
         ref={ref}
         style={
           {
@@ -88,8 +91,9 @@ const DraggableRoot = forwardRef<HTMLDivElement, DraggableRootProps>(
         }
         className={cn(className, getDraggableRootClasses({ isDragging, isDragOverlay }))}
       >
+        {actions?.({ draggable })}
         {handle ? (
-          <Slot {...listeners} ref={activatorNodeRef}>
+          <Slot {...draggable.listeners} ref={draggable.ref}>
             {handle}
           </Slot>
         ) : null}
@@ -100,11 +104,11 @@ const DraggableRoot = forwardRef<HTMLDivElement, DraggableRootProps>(
 );
 DraggableRoot.displayName = "DraggableRoot";
 
-const DraggableAction = forwardRef<HTMLButtonElement, DraggableActionProps>(
+const DraggableAction = forwardRef<HTMLElement, DraggableActionProps>(
   ({ active, children, className, cursor, style, ...props }, ref) => {
     return (
       <button
-        ref={ref}
+        ref={ref as Ref<HTMLButtonElement>}
         {...props}
         tabIndex={0}
         className={className}

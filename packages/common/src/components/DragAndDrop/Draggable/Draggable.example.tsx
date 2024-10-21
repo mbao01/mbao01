@@ -11,13 +11,14 @@ import {
   useSensors,
 } from "@dnd-kit/core";
 import { createSnapModifier } from "@dnd-kit/modifiers";
+import type { DraggableAxis } from "./types";
 import { Draggable } from "./Draggable";
-import { type DraggableAxis } from "./types";
+import { type DraggableHandleElement } from "./types";
 
 type DraggableExampleProps = Partial<{
   activationConstraint: PointerActivationConstraint;
   axis: DraggableAxis;
-  handle: JSX.Element;
+  handle: DraggableHandleElement;
   modifiers: Modifiers;
   buttonStyle: CSSProperties;
   label: string;
@@ -114,7 +115,7 @@ export const DraggableSnapToGridExample = () => {
 type DraggableOverlayExampleProps = Partial<{
   activationConstraint: PointerActivationConstraint;
   axis: DraggableAxis;
-  handle: JSX.Element;
+  handle: DraggableHandleElement;
   modifiers: Modifiers;
   label: string;
   dragOverlayModifiers: Modifiers;

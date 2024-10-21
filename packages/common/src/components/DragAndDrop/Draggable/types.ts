@@ -4,7 +4,7 @@ import type {
   DropAnimation,
   UseDraggableArguments,
 } from "@dnd-kit/core";
-import type { CSSProperties, Ref } from "react";
+import type { CSSProperties, ReactNode, Ref } from "react";
 import { type Transform } from "@dnd-kit/utilities";
 
 export enum DraggableAxis {
@@ -13,10 +13,20 @@ export enum DraggableAxis {
   Horizontal,
 }
 
+export type DraggableHandleElement = JSX.Element | null;
+
+export type DraggableActionsArgs = {
+  draggable: {
+    ref: Ref<HTMLElement> | undefined;
+    listeners: DraggableSyntheticListeners;
+  };
+};
+
 type BaseDraggableProps = Partial<{
   axis: DraggableAxis;
-  handle: JSX.Element;
   style: CSSProperties;
+  handle: DraggableHandleElement;
+  actions: (args: Partial<DraggableActionsArgs>) => ReactNode;
 }> &
   React.HTMLAttributes<HTMLDivElement>;
 
