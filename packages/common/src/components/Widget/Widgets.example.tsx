@@ -66,7 +66,10 @@ const Widgets = () => {
           >
             Add widgets
           </button>
-          <button className="btn btn-outline btn-xs btn-warning" onClick={() => deleteWidget()}>
+          <button
+            className="btn btn-outline btn-xs btn-warning"
+            onClick={() => deleteWidget(widgetIds[0])}
+          >
             Delete widget
           </button>
           <button

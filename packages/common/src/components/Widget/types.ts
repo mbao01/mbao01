@@ -6,7 +6,9 @@ import { type SortableProps } from "../DragAndDrop/Sortable/types";
 export type Widget = Data<{ id: UniqueIdentifier }>;
 
 type WidgetActions = (
-  args: Partial<DraggableActionsArgs> & { deleteWidget: DeleteWidget }
+  args: Partial<DraggableActionsArgs> & {
+    deleteWidget: () => void;
+  }
 ) => ReactNode;
 
 export type WidgetProps = Omit<SortableProps, "actions"> & {
@@ -18,12 +20,11 @@ export type WidgetsContextProps = {
   initialWidgets?: Widget[];
 };
 
-type DeleteWidget = () => void;
 export type InternalWidgetsContextProps = {
   widgets: Data<{ id: UniqueIdentifier }>[];
   addWidget: (widget: Widget, insertIndex?: number) => void;
   addWidgets: (widgets: Widget[], startIndex?: number) => void;
-  deleteWidget: DeleteWidget;
+  deleteWidget: (widget: Widget) => void;
   deleteWidgets: (widgets: Widget[]) => void;
   resetWidgets: () => void;
 };
