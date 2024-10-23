@@ -1,0 +1,1 @@
+export { restrictToElement } from "./restrictToElement";
