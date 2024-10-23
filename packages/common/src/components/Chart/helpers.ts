@@ -1,7 +1,13 @@
+import { type Payload as LegendPayload } from "recharts/types/component/DefaultLegendContent";
+import { type Payload as TooltipPayload } from "recharts/types/component/DefaultTooltipContent";
 import { type ChartConfig } from "./types";
 
 // Helper to extract item config from a payload.
-export const getPayloadConfigFromPayload = (config: ChartConfig, payload: unknown, key: string) => {
+export const getPayloadConfigFromPayload = (
+  config: ChartConfig,
+  payload: LegendPayload | TooltipPayload<any, any>,
+  key: string
+) => {
   if (typeof payload !== "object" || payload === null) {
     return undefined;
   }
