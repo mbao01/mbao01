@@ -46,3 +46,6 @@ export * from "./components/HoverCard";
 export * from "./components/Popover";
 export * from "./components/Slot";
 export * from "./components/Widget";
+
+/** molecules */
+export * from "./components/Sidebar";
