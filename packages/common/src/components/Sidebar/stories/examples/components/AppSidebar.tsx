@@ -453,7 +453,8 @@ const treeData = {
   ],
 };
 
-const Tree = ({ item }: { item: string | any[] }) => {
+type TreeType = string | TreeType[];
+const Tree = ({ item }: { item: TreeType }) => {
   const [name, ...items] = Array.isArray(item) ? item : [item];
 
   if (!items.length) {
