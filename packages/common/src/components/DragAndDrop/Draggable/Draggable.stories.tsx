@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { TokensIcon } from "@radix-ui/react-icons";
 import {
   restrictToHorizontalAxis,
   restrictToVerticalAxis,
   restrictToWindowEdges,
   snapCenterToCursor,
 } from "@dnd-kit/modifiers";
+import { GripVerticalIcon } from "lucide-react";
 import { DraggableExample, DraggableSnapToGridExample } from "./Draggable.example";
 import { DraggableAxis } from "./types";
 
@@ -34,7 +34,7 @@ export const Default: Story = {
 export const DragHandle: Story = {
   args: {
     label: "Drag with the handle",
-    handle: <TokensIcon className="w-4 h-4 absolute right-0 -top-5" />,
+    handle: <GripVerticalIcon className="w-4 h-4 absolute right-0 -top-5" />,
   },
 };
 

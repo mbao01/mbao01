@@ -1,5 +1,5 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
-import { ChevronDownIcon } from "@radix-ui/react-icons";
+import { ChevronDownIcon } from "lucide-react";
 import { Accordion } from "./Accordion";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

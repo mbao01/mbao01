@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { type DateRange } from "react-day-picker";
-import { CalendarIcon } from "@radix-ui/react-icons";
 import { format } from "date-fns";
+import { CalendarDaysIcon } from "lucide-react";
 import { cn } from "../../utilities";
 import { Button } from "../Button";
 import { Calendar } from "../Calendar";
@@ -74,7 +74,7 @@ export const DateRangePicker = ({
           <span className="text-left text-ellipsis overflow-hidden text-nowrap">
             {rangeLabel ?? label ?? "Pick a range"}
           </span>
-          <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+          <CalendarDaysIcon className="ml-auto h-4 w-4 opacity-50" />
         </Button>
       </Popover.Trigger>
       <Popover.Content className="w-auto p-0">

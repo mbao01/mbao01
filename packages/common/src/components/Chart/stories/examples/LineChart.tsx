@@ -1,5 +1,5 @@
 import { type SVGProps } from "react";
-import { DrawingPinIcon } from "@radix-ui/react-icons";
+import { MapPinIcon } from "lucide-react";
 import { CartesianGrid, LabelList, Line, LineChart, XAxis, YAxis } from "recharts";
 import { Chart } from "../../Chart";
 import {
@@ -85,7 +85,7 @@ export const CustomDotLineChartExample = (props: LineChartProps) => {
           }: SVGProps<SVGSVGElement> & { payload: Record<string, string> }) => {
             const r = 24;
             return (
-              <DrawingPinIcon
+              <MapPinIcon
                 key={payload.month}
                 x={Number(cx) - r / 4}
                 y={Number(cy) - r / 4}

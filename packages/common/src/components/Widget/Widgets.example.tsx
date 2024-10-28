@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MoveIcon, TrashIcon } from "@radix-ui/react-icons";
+import { MoveIcon, OctagonXIcon } from "lucide-react";
 import { Draggable } from "../DragAndDrop";
 import { useWidgets } from "./hooks/useWidgets/useWidgets";
 import { Widget } from "./Widget";
@@ -103,7 +103,7 @@ const Widgets = () => {
                   aria-label={`Delete widget ${widget.id}`}
                   className="transition-all hover:text-error"
                 >
-                  <TrashIcon />
+                  <OctagonXIcon />
                 </Draggable.Action>
               </div>
             )}

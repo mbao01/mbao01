@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
-import { ChevronDownIcon } from "@radix-ui/react-icons";
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu";
+import { ChevronDownIcon } from "lucide-react";
 import type {
   NavigationMenuContentProps,
   NavigationMenuIndicatorProps,

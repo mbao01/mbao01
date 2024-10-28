@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
-import { Cross2Icon } from "@radix-ui/react-icons";
+import { XIcon } from "lucide-react";
 import type {
   DialogContentProps,
   DialogDescriptionProps,
@@ -72,7 +72,7 @@ const DialogContent = React.forwardRef<
             {...closeProps}
             className={cn(getDialogCloseClasses(), closeProps?.className)}
           >
-            <Cross2Icon className="h-4 w-4" />
+            <XIcon className="h-4 w-4" />
             <span className="sr-only">Close</span>
           </DialogPrimitive.Close>
         ) : null}

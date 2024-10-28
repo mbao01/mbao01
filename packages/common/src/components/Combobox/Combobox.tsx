@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { CaretSortIcon, CheckIcon } from "@radix-ui/react-icons";
+import { CheckIcon, ChevronsUpDownIcon } from "lucide-react";
 import type { ComboboxProps, Item } from "./types";
 import { cn } from "../../utilities";
 import { Button } from "../Button";
@@ -34,7 +34,7 @@ export const Combobox = <T extends Item>({
           className={cn("justify-between", classes?.trigger)}
         >
           {value && currentItem ? getItemLabel(currentItem) : label}
-          <CaretSortIcon className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+          <ChevronsUpDownIcon className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </Popover.Trigger>
       <Popover.Content className={cn("w-[200px] p-0", classes?.popoverContent)}>

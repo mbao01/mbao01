@@ -1,7 +1,7 @@
 import NextLink from "next/link";
-import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { Anchor } from "@mbao01/common";
 import { cn } from "@mbao01/common/utilities";
+import { ExternalLinkIcon } from "lucide-react";
 import { getLinkClasses } from "./constant";
 import { type LinkProps } from "./types";
 
@@ -43,7 +43,7 @@ export const Link = <T,>({
       {...(isExternal && { rel: "noopener noreferrer" })}
     >
       {children}
-      {isExternal ? <ExternalLinkIcon name="external" className="ml-[2px] inline" /> : null}
+      {isExternal ? <ExternalLinkIcon name="external" className="ml-[2px] w-4 h-4 inline" /> : null}
     </NextLink>
   );
 };

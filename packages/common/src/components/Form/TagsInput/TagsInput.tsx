@@ -2,7 +2,7 @@
 
 import type { ChangeEvent, ClipboardEvent, KeyboardEvent, MouseEvent, SyntheticEvent } from "react";
 import { forwardRef, useCallback, useEffect, useRef, useState } from "react";
-import { Cross2Icon } from "@radix-ui/react-icons";
+import { XIcon } from "lucide-react";
 import type { TagsInputProps } from "./types";
 import { cn } from "../../../utilities";
 import { Badge } from "../../Badge";
@@ -250,7 +250,7 @@ export const TagsInput = forwardRef<HTMLDivElement, TagsInputProps>(
               className={cn(getTagDeleteClasses())}
             >
               <span className="sr-only">Remove {tag} option</span>
-              <Cross2Icon className="h-4 w-4" />
+              <XIcon className="h-4 w-4" />
             </button>
           </Badge>
         ))}

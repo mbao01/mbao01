@@ -1,5 +1,5 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
-import { CaretSortIcon } from "@radix-ui/react-icons";
+import { ChevronsUpDownIcon } from "lucide-react";
 import { Button } from "../Button";
 import { Collapsible } from "./Collapsible";
 import { type CollapsibleProps } from "./types";
@@ -11,7 +11,7 @@ const withCollapsible = (_: StoryFn, context: StoryContext<CollapsibleProps>) =>
         <h4 className="text-sm font-semibold">@mbao01 forked 3 repositories</h4>
         <Collapsible.Trigger asChild>
           <Button variant="ghost" size="sm" className="disabled:bg-transparent">
-            <CaretSortIcon className="h-4 w-4" />
+            <ChevronsUpDownIcon className="h-4 w-4" />
             <span className="sr-only">Toggle</span>
           </Button>
         </Collapsible.Trigger>

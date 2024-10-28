@@ -40,6 +40,7 @@ export const ExternalLink: Story = {
     href: "https://google.com",
     target: "_blank",
     children: "Google.com",
+    isExternal: true,
   },
 };
 

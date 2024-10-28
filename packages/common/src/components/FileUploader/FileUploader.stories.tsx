@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { useState } from "react";
-import { FileIcon } from "@radix-ui/react-icons";
+import { FileIcon } from "lucide-react";
 import { FileUploader } from "./FileUploader";
 
 const FileSvgDraw = () => {

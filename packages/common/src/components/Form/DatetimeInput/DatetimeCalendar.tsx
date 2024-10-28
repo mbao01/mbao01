@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import { CalendarIcon } from "@radix-ui/react-icons";
+import { CalendarDaysIcon } from "lucide-react";
 import { cn } from "../../../utilities";
 import { Button } from "../../Button";
 import { Calendar } from "../../Calendar";
@@ -43,7 +43,7 @@ export const DatetimeCalendar = ({
           disabled={disabled}
           className={cn(getDatetimeCalendarTriggerClasses({ size }))}
         >
-          <CalendarIcon className={getDatetimeCalendarIconClasses({ size })} />
+          <CalendarDaysIcon className={getDatetimeCalendarIconClasses({ size })} />
           <span className="sr-only">calendar</span>
         </Button>
       </Popover.Trigger>
