@@ -104,6 +104,7 @@
     "daisyui": "^4.12.13",
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.3.0",
+    "lucide-react": "^0.453.0",
     "react-day-picker": "^9.2.0",
     "react-dropzone": "^14.2.10",
     "react-international-phone": "^4.3.0",
