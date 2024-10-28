@@ -42,7 +42,7 @@ export const Link = ({
       {...(isExternal && { rel: "noopener noreferrer" })}
     >
       {children}
-      {isExternal ? <ExternalLinkIcon name="external" className="ml-[2px] inline" /> : null}
+      {isExternal ? <ExternalLinkIcon name="external" className="ml-[2px w-4 h-4 inline" /> : null}
     </RouterLink>
   );
 };
