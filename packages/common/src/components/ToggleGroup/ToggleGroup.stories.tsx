@@ -1,5 +1,5 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
-import { FontBoldIcon, FontItalicIcon, UnderlineIcon } from "@radix-ui/react-icons";
+import { BoldIcon, ItalicIcon, UnderlineIcon } from "lucide-react";
 import { ToggleGroup } from "./ToggleGroup";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -11,10 +11,10 @@ const withToggleGroup = (_: StoryFn, context: StoryContext<any>) => {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     <ToggleGroup type={type} variant={variant} defaultValue={defaultValue}>
       <ToggleGroup.Item value="bold" aria-label="Toggle bold">
-        <FontBoldIcon className="h-4 w-4" />
+        <BoldIcon className="h-4 w-4" />
       </ToggleGroup.Item>
       <ToggleGroup.Item value="italic" aria-label="Toggle italic">
-        <FontItalicIcon className="h-4 w-4" />
+        <ItalicIcon className="h-4 w-4" />
       </ToggleGroup.Item>
       <ToggleGroup.Item value="strikethrough" aria-label="Toggle strikethrough">
         <UnderlineIcon className="h-4 w-4" />

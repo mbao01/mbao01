@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { CalendarIcon } from "@radix-ui/react-icons";
 import { format } from "date-fns";
+import { CalendarDaysIcon } from "lucide-react";
 import { cn } from "../../utilities";
 import { Button } from "../Button";
 import { Calendar } from "../Calendar";
@@ -58,7 +58,7 @@ export const MultipleDatesPicker = ({
           <span className="text-left text-ellipsis overflow-hidden text-nowrap">
             {rangeLabel ?? label ?? "Pick one or more dates"}
           </span>
-          <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+          <CalendarDaysIcon className="ml-auto h-4 w-4 opacity-50" />
         </Button>
       </Popover.Trigger>
       <Popover.Content className="w-auto p-0">

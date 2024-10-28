@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import { ChevronLeftIcon, ChevronRightIcon, DotsHorizontalIcon } from "@radix-ui/react-icons";
+import { ChevronLeftIcon, ChevronRightIcon, EllipsisIcon } from "lucide-react";
 import type { PaginationProps } from "./types";
 import { cn } from "../../utilities";
 import { getButtonClasses } from "../Button/constants";
@@ -92,7 +92,7 @@ PaginationNext.displayName = "PaginationNext";
 
 const PaginationEllipsis = ({ className, ...props }: PaginationEllipsisProps) => (
   <span aria-hidden className={cn(getPaginationEllipsisClasses(), className)} {...props}>
-    <DotsHorizontalIcon className="h-4 w-4" />
+    <EllipsisIcon className="h-4 w-4" />
     <span className="sr-only">More pages</span>
   </span>
 );

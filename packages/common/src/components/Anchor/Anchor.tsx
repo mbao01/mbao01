@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from "@radix-ui/react-icons";
+import { ExternalLinkIcon } from "lucide-react";
 import { cn } from "../../utilities";
 import { getAnchorClasses } from "./constant";
 import { type AnchorProps } from "./types";
@@ -21,7 +21,7 @@ export const Anchor = ({
       {...(isExternal && { rel: "noopener noreferrer" })}
     >
       {children}
-      {isExternal ? <ExternalLinkIcon name="external" className="ml-[2px] inline" /> : null}
+      {isExternal ? <ExternalLinkIcon name="external" className="ml-[2px] inline w-4 h-4" /> : null}
     </a>
   );
 };

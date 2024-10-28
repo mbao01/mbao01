@@ -2,8 +2,8 @@
 
 import type { ComponentRef, KeyboardEvent, MouseEvent, SyntheticEvent } from "react";
 import { forwardRef, useCallback, useRef, useState } from "react";
-import { CheckIcon, Cross2Icon } from "@radix-ui/react-icons";
 import { Command as CommandPrimitive } from "cmdk";
+import { CheckIcon, XIcon } from "lucide-react";
 import type {
   Item,
   MultiSelectContentProps,
@@ -235,7 +235,7 @@ export const MultiSelectTrigger = ({
               disabled={disabled}
             >
               <span className="sr-only">Remove {label} option</span>
-              <Cross2Icon className="h-4 w-4 hover:stroke-destructive" />
+              <XIcon className="h-4 w-4 hover:stroke-destructive" />
             </button>
           </Badge>
         );

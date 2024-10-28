@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { FontBoldIcon } from "@radix-ui/react-icons";
+import { BoldIcon } from "lucide-react";
 import { Toggle } from "./Toggle";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -33,7 +33,7 @@ export const IconContent: Story = {
   render: () => {
     return (
       <Toggle aria-label="Toggle italic">
-        <FontBoldIcon className="h-4 w-4" />
+        <BoldIcon className="h-4 w-4" />
       </Toggle>
     );
   },

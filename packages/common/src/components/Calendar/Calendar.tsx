@@ -1,7 +1,7 @@
 "use client";
 
 import { DayPicker } from "react-day-picker";
-import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
+import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import { cn } from "../../utilities";
 import { getButtonClasses } from "../Button/constants";
 import { type CalendarProps } from "./types";

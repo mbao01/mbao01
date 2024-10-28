@@ -2,7 +2,7 @@
 
 import { forwardRef, useCallback, useEffect, useRef, useState } from "react";
 import { FileRejection, useDropzone } from "react-dropzone";
-import { TrashIcon } from "@radix-ui/react-icons";
+import { DeleteIcon } from "lucide-react";
 import { toast } from "sonner";
 import type { DirectionOptions, FileUploaderInputProps, FileUploaderProps } from "./types";
 import { cn } from "../../utilities";
@@ -268,7 +268,7 @@ const FileUploaderItem = forwardRef<
         onClick={() => removeFileFromSet(index)}
       >
         <span className="sr-only">remove item {index}</span>
-        <TrashIcon
+        <DeleteIcon
           className={cn("w-4 h-4 shrink-0 hover:stroke-destructive duration-200 ease-in-out", {
             "text-error": isSelected,
           })}

@@ -2,7 +2,7 @@
 
 import type { ComponentProps, CSSProperties, ElementRef, HTMLAttributes, MouseEvent } from "react";
 import { forwardRef, useCallback, useEffect, useMemo, useState } from "react";
-import { ViewVerticalIcon } from "@radix-ui/react-icons";
+import { PanelLeftIcon } from "lucide-react";
 import type { ButtonProps } from "../Button/types";
 import type { InputProps } from "../Form/Input/types";
 import type { SeparatorProps } from "../Separator/types";
@@ -117,7 +117,7 @@ const SidebarTrigger = forwardRef<ElementRef<typeof Button>, ButtonProps>(
         }}
         {...props}
       >
-        <ViewVerticalIcon className="w-4 h-4" />
+        <PanelLeftIcon className="w-4 h-4" />
         <span className="sr-only">Toggle Sidebar</span>
       </Button>
     );

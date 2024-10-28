@@ -1,8 +1,8 @@
 "use client";
 
 import { forwardRef, useCallback, useEffect, useState } from "react";
-import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import useEmblaCarousel from "embla-carousel-react";
+import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
 import type { CarouselApi, CarouselProps } from "./types";
 import { cn } from "../../utilities";
 import { Button } from "../Button";

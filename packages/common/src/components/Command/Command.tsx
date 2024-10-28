@@ -1,8 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { Command as CommandPrimitive } from "cmdk";
+import { SearchIcon } from "lucide-react";
 import type { CommandDialogProps, CommandInputProps, CommandProps } from "./types";
 import { cn } from "../../utilities";
 import { Dialog } from "../Dialog";
@@ -41,7 +41,7 @@ const CommandInput = React.forwardRef<
 >(({ className, ...props }, ref) => (
   // eslint-disable-next-line react/no-unknown-property
   <div className={cn(getCommandInputWrapperClasses())} cmdk-input-wrapper="">
-    <MagnifyingGlassIcon className="mr-2 h-4 w-4 shrink-0 opacity-50" />
+    <SearchIcon className="mr-2 h-4 w-4 shrink-0 opacity-50" />
     <CommandPrimitive.Input
       ref={ref}
       className={cn(getCommandInputClasses(), className)}
