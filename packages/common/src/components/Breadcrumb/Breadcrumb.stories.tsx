@@ -1,5 +1,4 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
-import { ChevronRightIcon, Slash } from "lucide-react";
 import { getSubpaths } from "../../utilities";
 import { Breadcrumb } from "./Breadcrumb";
 
