@@ -1,33 +1,46 @@
 import { render, screen, within } from "@testing-library/react";
+import { Slash } from "lucide-react";
 import { getSubpaths } from "../../utilities/getSubpaths";
-import { Breadcrumb, Breadcrumbs } from "./Breadcrumbs";
+import { Breadcrumb } from "./Breadcrumb";
 
-describe("Breadcrumbs", () => {
-  const renderBreadcrumbs = (
+describe("Breadcrumb", () => {
+  const renderBreadcrumb = (
     pathname: string,
     labels?: Record<string, string>,
     includeRoot?: boolean
   ) => {
+    const subpaths = getSubpaths(pathname, labels, includeRoot);
     return render(
-      <Breadcrumbs>
-        {getSubpaths(pathname, labels, includeRoot).map(({ href, label }) => (
-          <Breadcrumb key={href.pathname}>
-            <a href={href.pathname}>{label}</a>
-          </Breadcrumb>
-        ))}
-      </Breadcrumbs>
+      <Breadcrumb>
+        <Breadcrumb.List>
+          {subpaths.map(({ href, label }, index) => (
+            <>
+              <Breadcrumb.Item key={href.pathname}>
+                <Breadcrumb.Link asChild>
+                  <a href={href.pathname}>{label}</a>
+                </Breadcrumb.Link>
+              </Breadcrumb.Item>
+              {subpaths.length > index + 1 ? (
+                <Breadcrumb.Separator>
+                  <Slash />
+                </Breadcrumb.Separator>
+              ) : null}
+            </>
+          ))}
+        </Breadcrumb.List>
+      </Breadcrumb>
     );
   };
 
   it("renders empty list", () => {
-    const { asFragment } = renderBreadcrumbs("");
+    const { asFragment } = renderBreadcrumb("");
 
     expect(screen.getByRole("list")).toBeEmptyDOMElement();
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders root path", () => {
-    const { asFragment } = renderBreadcrumbs("/", { "/": "Home" }, true);
+    const { asFragment } = renderBreadcrumb("/", { "/": "Home" }, true);
 
     const listItemEl = within(screen.getByRole("listitem"));
     const anchorEl = listItemEl.getByRole("link", { name: "Home" });
@@ -38,7 +51,7 @@ describe("Breadcrumbs", () => {
   });
 
   it("shows unlabeled paths", () => {
-    const { asFragment } = renderBreadcrumbs("/profile/edit", { "/": "dashboard" }, true);
+    const { asFragment } = renderBreadcrumb("/profile/edit", { "/": "dashboard" }, true);
 
     [
       { name: "dashboard", href: "/" },
@@ -55,7 +68,7 @@ describe("Breadcrumbs", () => {
   });
 
   it("shows labeled paths", () => {
-    const { asFragment } = renderBreadcrumbs("/profile/edit", {
+    const { asFragment } = renderBreadcrumb("/profile/edit", {
       "/profile": "My Profile",
       "/profile/edit": "Edit Profile",
     });
