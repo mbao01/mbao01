@@ -1,6 +1,5 @@
 import { HTMLAttributes } from "react";
-import { Breadcrumbs } from "../../../../Breadcrumbs";
-import { Breadcrumb } from "../../../../Breadcrumbs/Breadcrumbs";
+import { Breadcrumb } from "../../../../Breadcrumb";
 import { Sidebar } from "../../../Sidebar";
 import { type SidebarProps } from "../../../types";
 
@@ -12,15 +11,15 @@ export const AppMain = ({
     <Sidebar.Inset {...props}>
       <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
         {side !== "right" ? <Sidebar.Trigger className="-ml-1" /> : null}
-        <Breadcrumbs>
-          <Breadcrumb className="hidden md:block">
-            <a href="#">Building Your Application</a>
-          </Breadcrumb>
-
-          <Breadcrumb>
-            <span>Data Fetching</span>
-          </Breadcrumb>
-        </Breadcrumbs>
+        <Breadcrumb>
+          <Breadcrumb.List>
+            <Breadcrumb.Link asChild className="hidden md:block">
+              <a href="#">Building Your Application</a>
+            </Breadcrumb.Link>
+            <Breadcrumb.Separator />
+            <Breadcrumb.Page>Data Fetching</Breadcrumb.Page>
+          </Breadcrumb.List>
+        </Breadcrumb>
         {side === "right" ? <Sidebar.Trigger className="-mr-1 ml-auto !rotate-180" /> : null}
       </header>
       <div className="flex flex-1 flex-col gap-4 p-4">

@@ -1,6 +1,6 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
 import { getSubpaths } from "../../utilities";
-import { Breadcrumb, Breadcrumbs } from "./Breadcrumbs";
+import { Breadcrumb } from "./Breadcrumb";
 
 type ArgsType = {
   pathname: string;
@@ -8,24 +8,31 @@ type ArgsType = {
   includeRoot?: boolean;
 };
 
-const withBreadcrumbs = (_: StoryFn, context: StoryContext<ArgsType>) => {
+const withBreadcrumb = (_: StoryFn, context: StoryContext<ArgsType>) => {
   const { pathname, subpathLabels, includeRoot } = context.args;
   const subpaths = getSubpaths(pathname, subpathLabels, includeRoot);
 
   return (
-    <Breadcrumbs>
-      {subpaths.map((subpath) => (
-        <Breadcrumb key={subpath.href.pathname}>
-          <a href={subpath.href.pathname}>{subpath.label}</a>
-        </Breadcrumb>
-      ))}
-    </Breadcrumbs>
+    <Breadcrumb>
+      <Breadcrumb.List>
+        {subpaths.map(({ href, label }, index) => (
+          <>
+            <Breadcrumb.Item key={href.pathname}>
+              <Breadcrumb.Link asChild>
+                <a href={href.pathname}>{label}</a>
+              </Breadcrumb.Link>
+            </Breadcrumb.Item>
+            {subpaths.length > index + 1 ? <Breadcrumb.Separator /> : null}
+          </>
+        ))}
+      </Breadcrumb.List>
+    </Breadcrumb>
   );
 };
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: "Components/Breadcrumbs",
+  title: "Components/Breadcrumb",
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
@@ -54,7 +61,7 @@ const meta = {
       description: "Include the root path or not",
     },
   },
-  decorators: [withBreadcrumbs],
+  decorators: [withBreadcrumb],
 } satisfies Meta<ArgsType>;
 
 export default meta;
