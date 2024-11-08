@@ -34,23 +34,25 @@ const CheckboxRoot = forwardRef<ElementRef<typeof CheckboxPrimitive.Root>, Check
     );
   }
 );
+CheckboxRoot.displayName = CheckboxPrimitive.Root.displayName;
 
 const Checkbox = forwardRef<
   ElementRef<typeof CheckboxPrimitive.Root>,
   Omit<CheckboxProps, "checked" | "onCheckedChange">
->(({ className, defaultChecked, ...props }, ref) => {
+>(({ defaultChecked, ...props }, ref) => {
   const [checked, setChecked] = useState<CheckboxPrimitive.CheckedState | undefined>(
     defaultChecked
   );
 
   return <CheckboxRoot ref={ref} checked={checked} onCheckedChange={setChecked} {...props} />;
 });
-Checkbox.displayName = CheckboxPrimitive.Root.displayName;
+Checkbox.displayName = "Checkbox";
 
 const CheckboxControlled = forwardRef<ElementRef<typeof CheckboxPrimitive.Root>, CheckboxProps>(
-  ({ className, ...props }, ref) => {
+  (props, ref) => {
     return <CheckboxRoot ref={ref} {...props} />;
   }
 );
+CheckboxControlled.displayName = "CheckboxControlled";
 
 export { Checkbox, CheckboxControlled };
