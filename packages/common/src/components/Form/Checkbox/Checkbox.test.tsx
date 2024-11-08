@@ -11,6 +11,13 @@ describe("Checkbox", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  it("renders with an indeterminate state", () => {
+    const { asFragment } = render(<Checkbox name="username" defaultChecked="indeterminate" />);
+
+    expect(screen.getByRole("checkbox")).toBeInTheDocument();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it("handles user input correctly", async () => {
     const user = userEvent.setup();
 
@@ -57,4 +64,14 @@ describe("Checkbox", () => {
     expect(screen.getByRole("checkbox")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it.each([{ rounded: "xs" }, { rounded: "sm" }, { rounded: "md" }, { rounded: "lg" }] as const)(
+    "has rounded ($rounded)",
+    ({ rounded }) => {
+      const { asFragment } = render(<Checkbox name="Rounded" rounded={rounded} />);
+
+      expect(screen.getByRole("checkbox")).toBeInTheDocument();
+      expect(asFragment()).toMatchSnapshot();
+    }
+  );
 });
