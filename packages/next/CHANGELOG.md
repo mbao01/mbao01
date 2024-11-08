@@ -3,6 +3,53 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.52 (2024-11-08)
+
+
+### Features
+
+* **accessbility:** add accessibility testing + reporting using axe via storybook test-runner ([004ea82](https://github.com/mbao01/mbao01/commit/004ea826caad3355b077edf3c9b9df1226e375cd))
+* **deps:** install @storybook/addon-ally ([fa684c0](https://github.com/mbao01/mbao01/commit/fa684c0e4fe65f79266ef3224397de9e65556896))
+* **deps:** remove playwright post install script ([b5fe5d2](https://github.com/mbao01/mbao01/commit/b5fe5d2e0f1960a7ae2a84e9d5b6df6a64633658))
+* **deps:** update all dependencies ([6cc2648](https://github.com/mbao01/mbao01/commit/6cc264894cb464ea8636d649ad1722ee84d0b966))
+* **deps:** update dependencies to their lates minor/patch ([2e099d5](https://github.com/mbao01/mbao01/commit/2e099d575512e71863d3044f5551084c59adde19))
+* **deps:** update eslint plugins ([d54f13b](https://github.com/mbao01/mbao01/commit/d54f13b782a95aff398f9512fa4e47000cbd494b))
+* **deps:** update post install script ([bf703aa](https://github.com/mbao01/mbao01/commit/bf703aa242e2cd0ccdaf7f932bacf5901d7fc702))
+* **deps:** update storybook to 8.3.4 ([8ac0de8](https://github.com/mbao01/mbao01/commit/8ac0de80967d92fd2263225b9148e6b176616649))
+* **deps:** update typescript-eslint parser and plugin ([d6fb14b](https://github.com/mbao01/mbao01/commit/d6fb14bee93e060f6994db1f291c02312c5789dc))
+* **deps:** update vite-plugin-dts and remove vite related deps in @mbao01/next package ([de22fbc](https://github.com/mbao01/mbao01/commit/de22fbca1b5b82ae0e39e8951e0aaebe7bff8237))
+* **deps:** upgrade @testing-library/react and jsdom ([0760bc2](https://github.com/mbao01/mbao01/commit/0760bc2d8f7aa46f2a77830faea62808e7c621f5))
+* **deps:** upgrade vitest and vaul ([d3e0134](https://github.com/mbao01/mbao01/commit/d3e013462832f11db0ef5b5a25f442a5827ef8d4))
+* **icons:** uninstall @radix-ui/react-icons ([c9d2e17](https://github.com/mbao01/mbao01/commit/c9d2e1742715637277e6bbbe9945a33059bf59b1))
+* **icons:** use lucide-react icons instead of @radix-ui/react-icons ([377359c](https://github.com/mbao01/mbao01/commit/377359c76b698167eecbc25139af8474f93a1ba1))
+* **link:** add rel noopener and noreferrer to external link ([c52441a](https://github.com/mbao01/mbao01/commit/c52441aa44ba971467ad638dec8aff748a56a046))
+* **link:** allow link to use non internal extended anchor tag ([ea591f8](https://github.com/mbao01/mbao01/commit/ea591f8993cab8c3c8f91b613c474ef5386c5d85))
+* **link:** same logic to react router and update snapshots ([5100bf8](https://github.com/mbao01/mbao01/commit/5100bf8379a4f2c602b354d69bb5d1a054229e50))
+* **links:** update external links stories and screenshot ([152826b](https://github.com/mbao01/mbao01/commit/152826b4b1af826308703bab56b3ff89659a1906))
+* **linting:** update eslint config's rangeEnd to be Infinity ([26f224d](https://github.com/mbao01/mbao01/commit/26f224def78415c8239fe370fd00526568624e74))
+* **lucide-react:** add react icon library to replace @radix-ui/react-icons ([02a0a0d](https://github.com/mbao01/mbao01/commit/02a0a0dc65d05631efdfadaec30ab4db2f58db47))
+* **next:** add experimental typed routes ([218ec91](https://github.com/mbao01/mbao01/commit/218ec91aed459ba1ffcdeed5abc260327c01bce0))
+* **next:** add link and breadcrumb components ([3be0c18](https://github.com/mbao01/mbao01/commit/3be0c18104fb7dc5fe01097ed3ed94087bc14013))
+* **next:** add proper type for link href ([ab4fbe1](https://github.com/mbao01/mbao01/commit/ab4fbe181996f75f11bd0efced2b99f54b9d0b3c))
+* **next:** add tsconfig for emitting declarations ([e9d82c0](https://github.com/mbao01/mbao01/commit/e9d82c092bc5d6c44edcd5f6884a1f1aa9385664))
+* **next:** emit type declaration files for components ([c724b51](https://github.com/mbao01/mbao01/commit/c724b5172fc3eb9c72ad2f4c0cd8dbff05538169))
+* **nextjs:** nextjs ui components and utilities package ([f796a89](https://github.com/mbao01/mbao01/commit/f796a89e290cb12e4176e01784ff813636e1635c))
+* **next:** mock for next router, navigation, link, etc ([3aed3a8](https://github.com/mbao01/mbao01/commit/3aed3a833f6f831cf9562787e71b6d1757fb3603))
+* **next:** use post build command ([83f0179](https://github.com/mbao01/mbao01/commit/83f01795f8a5991749d5b34e0b607f11850880af))
+* **next:** weird issue with importing external css in storybook preview ([b6d719b](https://github.com/mbao01/mbao01/commit/b6d719b981de0d5014040f7cf21bf06577d870f7))
+* **prettier:** add prettier config to packages ([d9785c9](https://github.com/mbao01/mbao01/commit/d9785c925559a9908a3157cda06f3b82788b58e1))
+* **prettier:** format all files with prettier ([9a1398f](https://github.com/mbao01/mbao01/commit/9a1398f41c96ed915a438faae3656e15666bfab9))
+* **prettier:** install prettier code formatter and import order plugin ([eb929a6](https://github.com/mbao01/mbao01/commit/eb929a6b5a61b6ecbe814b070fc2c87bebb5ca2c))
+* **prettier:** set start and end ranges ([8889285](https://github.com/mbao01/mbao01/commit/8889285de0248d1fe090076d5e4c0a1fd4ebb024))
+* **storybook:** add a11y and viewports to storybook ([f90893c](https://github.com/mbao01/mbao01/commit/f90893c7eebe772df54632af21ec19d27845bfff))
+* **storybook:** add storysource addon ([8747087](https://github.com/mbao01/mbao01/commit/87470877ced30bd77fb046131f6cfb7c887436f0))
+* **tests:** add @storybook/addon-coverage to get visual test coverage ([560f32e](https://github.com/mbao01/mbao01/commit/560f32e32783f51f6a37f68cff81e20aa050fb56))
+* **visual:** capture visual snapshot with storybook test runner ([3364bd0](https://github.com/mbao01/mbao01/commit/3364bd0024d4ff9797960d5eab1719bf582ed3c6))
+* **visual:** install @storybook/test-runner, jest-image-snapshots and other dependencies ([6ab0387](https://github.com/mbao01/mbao01/commit/6ab0387cbedd5595cc58937ce6f67221d2dea55b))
+* **visual:** update snapshot diff threshold for test runner ([c33d515](https://github.com/mbao01/mbao01/commit/c33d5153f2d6fab4921b98d50554e224f8e7dc74))
+
+
+
 ## 0.0.51 (2024-10-30)
 
 
