@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { useEffect, useRef } from "react";
 import { FormControl } from "../components/FormControl";
 import { Label } from "../components/Label";
 import { Checkbox } from "./Checkbox";
@@ -41,6 +40,14 @@ export const TinyCheckbox: Story = {
   },
 };
 
+export const RoundedCheckbox: Story = {
+  args: {
+    size: "md",
+    rounded: "md",
+    "aria-label": "Are you happy?",
+  },
+};
+
 export const DisabledCheckbox: Story = {
   args: {
     disabled: true,
@@ -49,13 +56,10 @@ export const DisabledCheckbox: Story = {
 };
 
 export const IntermediateCheckbox: Story = {
-  render: (args) => {
-    const ref = useRef<HTMLInputElement>(null);
-    useEffect(() => {
-      if (ref?.current) ref.current.indeterminate = true;
-    }, []);
-
-    return <Checkbox aria-label="Are you happy?" {...args} ref={ref} />;
+  args: {
+    disabled: true,
+    "aria-label": "Are you happy?",
+    defaultChecked: "indeterminate",
   },
 };
 
