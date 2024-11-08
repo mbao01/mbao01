@@ -10,17 +10,17 @@ import {
 } from "./constants";
 import { type CheckboxProps } from "./types";
 
-const Checkbox = forwardRef<ElementRef<typeof CheckboxPrimitive.Root>, CheckboxProps>(
-  ({ className, size, rounded, variant, defaultChecked, ...props }, ref) => {
-    const [checked, setChecked] = useState<CheckboxPrimitive.CheckedState | undefined>(
-      defaultChecked
-    );
-
+const CheckboxRoot = forwardRef<ElementRef<typeof CheckboxPrimitive.Root>, CheckboxProps>(
+  (
+    { className, size, rounded, variant, checked, onCheckedChange, defaultChecked, ...props },
+    ref
+  ) => {
     return (
       <CheckboxPrimitive.Root
         ref={ref}
         checked={checked}
-        onCheckedChange={setChecked}
+        defaultChecked={defaultChecked}
+        onCheckedChange={onCheckedChange}
         className={cn(getCheckboxClasses({ size, rounded, variant }), className)}
         {...props}
       >
@@ -34,6 +34,23 @@ const Checkbox = forwardRef<ElementRef<typeof CheckboxPrimitive.Root>, CheckboxP
     );
   }
 );
+
+const Checkbox = forwardRef<
+  ElementRef<typeof CheckboxPrimitive.Root>,
+  Omit<CheckboxProps, "checked" | "onCheckedChange">
+>(({ className, defaultChecked, ...props }, ref) => {
+  const [checked, setChecked] = useState<CheckboxPrimitive.CheckedState | undefined>(
+    defaultChecked
+  );
+
+  return <CheckboxRoot ref={ref} checked={checked} onCheckedChange={setChecked} {...props} />;
+});
 Checkbox.displayName = CheckboxPrimitive.Root.displayName;
 
-export { Checkbox };
+const CheckboxControlled = forwardRef<ElementRef<typeof CheckboxPrimitive.Root>, CheckboxProps>(
+  ({ className, ...props }, ref) => {
+    return <CheckboxRoot ref={ref} {...props} />;
+  }
+);
+
+export { Checkbox, CheckboxControlled };
