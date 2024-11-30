@@ -120,8 +120,8 @@ export const TimelineAlternateExample = ({
         <Timeline.Dot {...dot} />
         <Timeline.Line {...line} />
         <Timeline.Content side="left" {...content}>
-          Once your software has passed rigorous testing, it's time to deploy it. Consider the
-          deployment environment, whether it's on-premises or in the cloud. Ensure proper
+          Once your software has passed rigorous testing, it&apos;s time to deploy it. Consider the
+          deployment environment, whether it&apos;s on-premises or in the cloud. Ensure proper
           documentation and provide clear instructions for installation and configuration.
         </Timeline.Content>
       </Timeline.Item>
@@ -194,8 +194,8 @@ export const TimelineLeftExample = ({
         <Timeline.Dot {...dot} />
         <Timeline.Line {...line} />
         <Timeline.Content {...content}>
-          Once your software has passed rigorous testing, it's time to deploy it. Consider the
-          deployment environment, whether it's on-premises or in the cloud. Ensure proper
+          Once your software has passed rigorous testing, it&apos;s time to deploy it. Consider the
+          deployment environment, whether it&apos;s on-premises or in the cloud. Ensure proper
           documentation and provide clear instructions for installation and configuration.
         </Timeline.Content>
       </Timeline.Item>
@@ -289,8 +289,8 @@ export const TimelineLabelsExample = ({
         <Timeline.Dot {...dot} />
         <Timeline.Line {...line} />
         <Timeline.Content side="left" {...content}>
-          Once your software has passed rigorous testing, it's time to deploy it. Consider the
-          deployment environment, whether it's on-premises or in the cloud. Ensure proper
+          Once your software has passed rigorous testing, it&apos;s time to deploy it. Consider the
+          deployment environment, whether it&apos;s on-premises or in the cloud. Ensure proper
           documentation and provide clear instructions for installation and configuration.
         </Timeline.Content>
       </Timeline.Item>
@@ -374,8 +374,8 @@ export const TimelineRightExample = ({
         <Timeline.Dot {...dot} />
         <Timeline.Line {...line} />
         <Timeline.Content side="left" {...content}>
-          Once your software has passed rigorous testing, it's time to deploy it. Consider the
-          deployment environment, whether it's on-premises or in the cloud. Ensure proper
+          Once your software has passed rigorous testing, it&apos;s time to deploy it. Consider the
+          deployment environment, whether it&apos;s on-premises or in the cloud. Ensure proper
           documentation and provide clear instructions for installation and configuration.
         </Timeline.Content>
       </Timeline.Item>
