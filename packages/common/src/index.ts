@@ -24,6 +24,7 @@ export * from "./components/Sonner";
 export * from "./components/Table";
 export * from "./components/Tabs";
 export * from "./components/Text";
+export * from "./components/Timeline";
 
 /** data input */
 export * from "./components/DatetimePicker";
