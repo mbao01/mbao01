@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.56 (2024-12-02)
+
+
+### Features
+
+* **accessbility:** add accessibility testing + reporting using axe via storybook test-runner ([004ea82](https://github.com/mbao01/mbao01/commit/004ea826caad3355b077edf3c9b9df1226e375cd))
+* **badge:** add badge component ([4fe5f6a](https://github.com/mbao01/mbao01/commit/4fe5f6aa9e53f103d27baebf8efc2d46412aeb6c))
+* **breadcrumbs:** add breadcrumbs component ([c8b68a0](https://github.com/mbao01/mbao01/commit/c8b68a0e26c38d74da466d15459ec4a9c8ff2104))
+* **card:** add card component ([77b532f](https://github.com/mbao01/mbao01/commit/77b532f8de89b7f6f8acd1f849fbaa9f0185ea52))
+* **deps:** install @storybook/addon-ally ([fa684c0](https://github.com/mbao01/mbao01/commit/fa684c0e4fe65f79266ef3224397de9e65556896))
+* **deps:** remove playwright post install script ([b5fe5d2](https://github.com/mbao01/mbao01/commit/b5fe5d2e0f1960a7ae2a84e9d5b6df6a64633658))
+* **deps:** update all dependencies ([6cc2648](https://github.com/mbao01/mbao01/commit/6cc264894cb464ea8636d649ad1722ee84d0b966))
+* **deps:** update dependencies to their lates minor/patch ([2e099d5](https://github.com/mbao01/mbao01/commit/2e099d575512e71863d3044f5551084c59adde19))
+* **deps:** update eslint plugins ([d54f13b](https://github.com/mbao01/mbao01/commit/d54f13b782a95aff398f9512fa4e47000cbd494b))
+* **deps:** update post install script ([bf703aa](https://github.com/mbao01/mbao01/commit/bf703aa242e2cd0ccdaf7f932bacf5901d7fc702))
+* **deps:** update storybook to 8.3.4 ([8ac0de8](https://github.com/mbao01/mbao01/commit/8ac0de80967d92fd2263225b9148e6b176616649))
+* **deps:** update typescript-eslint parser and plugin ([d6fb14b](https://github.com/mbao01/mbao01/commit/d6fb14bee93e060f6994db1f291c02312c5789dc))
+* **deps:** update vite-plugin-dts and remove vite related deps in @mbao01/next package ([de22fbc](https://github.com/mbao01/mbao01/commit/de22fbca1b5b82ae0e39e8951e0aaebe7bff8237))
+* **deps:** upgrade @testing-library/react and jsdom ([0760bc2](https://github.com/mbao01/mbao01/commit/0760bc2d8f7aa46f2a77830faea62808e7c621f5))
+* **deps:** upgrade vitest and vaul ([d3e0134](https://github.com/mbao01/mbao01/commit/d3e013462832f11db0ef5b5a25f442a5827ef8d4))
+* **deps:** use storybook-addon-remix-react-router in place of storybook-addon-react-router-v6 ([9a742dc](https://github.com/mbao01/mbao01/commit/9a742dcc9cbe9a14b73bf29439c4366032a6ec50))
+* **detail:** add detail component ([276a509](https://github.com/mbao01/mbao01/commit/276a50927aa63804e601b3e3b97429bd2e9e8db0))
+* **icons:** uninstall @radix-ui/react-icons ([c9d2e17](https://github.com/mbao01/mbao01/commit/c9d2e1742715637277e6bbbe9945a33059bf59b1))
+* **icons:** use lucide-react icons instead of @radix-ui/react-icons ([377359c](https://github.com/mbao01/mbao01/commit/377359c76b698167eecbc25139af8474f93a1ba1))
+* **link:** add link component ([9e1acba](https://github.com/mbao01/mbao01/commit/9e1acba27971170f651ea6d102408d3e7281d932))
+* **link:** allow link to use non internal extended anchor tag ([ea591f8](https://github.com/mbao01/mbao01/commit/ea591f8993cab8c3c8f91b613c474ef5386c5d85))
+* **link:** same logic to react router and update snapshots ([5100bf8](https://github.com/mbao01/mbao01/commit/5100bf8379a4f2c602b354d69bb5d1a054229e50))
+* **links:** update external links stories and screenshot ([152826b](https://github.com/mbao01/mbao01/commit/152826b4b1af826308703bab56b3ff89659a1906))
+* **linting:** disable react prop types in ts project ([6c8f44c](https://github.com/mbao01/mbao01/commit/6c8f44c0f7b56e8abc2b6349433d2f70d4776327))
+* **linting:** fix linting issues ([8651798](https://github.com/mbao01/mbao01/commit/865179853c33e32f61533c79d3357ec3743e9391))
+* **linting:** update eslint config's rangeEnd to be Infinity ([26f224d](https://github.com/mbao01/mbao01/commit/26f224def78415c8239fe370fd00526568624e74))
+* **lucide-react:** add react icon library to replace @radix-ui/react-icons ([02a0a0d](https://github.com/mbao01/mbao01/commit/02a0a0dc65d05631efdfadaec30ab4db2f58db47))
+* **prettier:** add prettier config to packages ([d9785c9](https://github.com/mbao01/mbao01/commit/d9785c925559a9908a3157cda06f3b82788b58e1))
+* **prettier:** format all files with prettier ([9a1398f](https://github.com/mbao01/mbao01/commit/9a1398f41c96ed915a438faae3656e15666bfab9))
+* **prettier:** install prettier code formatter and import order plugin ([eb929a6](https://github.com/mbao01/mbao01/commit/eb929a6b5a61b6ecbe814b070fc2c87bebb5ca2c))
+* **prettier:** set start and end ranges ([8889285](https://github.com/mbao01/mbao01/commit/8889285de0248d1fe090076d5e4c0a1fd4ebb024))
+* **storybook:** add a11y and viewports to storybook ([f90893c](https://github.com/mbao01/mbao01/commit/f90893c7eebe772df54632af21ec19d27845bfff))
+* **storybook:** add storysource addon ([8747087](https://github.com/mbao01/mbao01/commit/87470877ced30bd77fb046131f6cfb7c887436f0))
+* **tests:** add @storybook/addon-coverage to get visual test coverage ([560f32e](https://github.com/mbao01/mbao01/commit/560f32e32783f51f6a37f68cff81e20aa050fb56))
+* **tooltip:** add tooltip component ([eed7cdf](https://github.com/mbao01/mbao01/commit/eed7cdfc807eb5390dbd1718dfd21a0e7583a5e8))
+* **visual:** capture visual snapshot with storybook test runner ([3364bd0](https://github.com/mbao01/mbao01/commit/3364bd0024d4ff9797960d5eab1719bf582ed3c6))
+* **visual:** create snapshots ([366997e](https://github.com/mbao01/mbao01/commit/366997ee3edf78fb0f258dba2ac19478fae22dd7))
+* **visual:** install @storybook/test-runner, jest-image-snapshots and other dependencies ([6ab0387](https://github.com/mbao01/mbao01/commit/6ab0387cbedd5595cc58937ce6f67221d2dea55b))
+* **visual:** update snapshot diff threshold for test runner ([c33d515](https://github.com/mbao01/mbao01/commit/c33d5153f2d6fab4921b98d50554e224f8e7dc74))
+
+
+### Bug Fixes
+
+* **release-0.1.0:** expose breadcrumbs and link components ([54b4191](https://github.com/mbao01/mbao01/commit/54b4191049c17f94dcda0fdfb1e1ed5bd9636ea2))
+
+
+
 ## 0.1.55 (2024-11-30)
 
 
