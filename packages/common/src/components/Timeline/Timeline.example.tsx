@@ -32,7 +32,7 @@ export const TimelineExample = ({
         <Timeline.Heading variant="content" {...heading}>
           Plan!
         </Timeline.Heading>
-        <Timeline.Dot status="success" variant="success" {...dot} />
+        <Timeline.Dot border="primary" status="success" variant="success" {...dot} />
         <Timeline.Line variant="success" {...line} />
         <Timeline.Content {...content}>
           Before diving into coding, it is crucial to plan your software project thoroughly.
@@ -41,13 +41,13 @@ export const TimelineExample = ({
       <Timeline.Item {...item}>
         <Timeline.Heading {...heading}>Done!</Timeline.Heading>
         <Timeline.Line {...line} />
-        <Timeline.Dot {...dot} />
+        <Timeline.Dot border="content" {...dot} />
       </Timeline.Item>
       <Timeline.Item {...item} variant="success">
         <Timeline.Heading {...heading} variant="success">
           Done!
         </Timeline.Heading>
-        <Timeline.Dot icon={<PlusIcon />} {...dot} />
+        <Timeline.Dot border="success" icon={<PlusIcon />} {...dot} />
       </Timeline.Item>
     </Timeline>
   );
@@ -67,7 +67,7 @@ export const TimelineAlternateExample = ({
         <Timeline.Heading side="left" {...heading}>
           Plan!
         </Timeline.Heading>
-        <Timeline.Dot status="success" {...dot} />
+        <Timeline.Dot border="neutral" status="success" {...dot} />
         <Timeline.Line variant="secondary" {...line} />
         <Timeline.Content side="left" {...content}>
           Before diving into coding, it is crucial to plan your software project thoroughly. This
@@ -80,7 +80,7 @@ export const TimelineAlternateExample = ({
         <Timeline.Heading side="right" className="text-destructive" {...heading}>
           Design
         </Timeline.Heading>
-        <Timeline.Dot status="failed" {...dot} />
+        <Timeline.Dot border="neutral" status="failed" variant="primary" {...dot} />
         <Timeline.Line variant="success" {...line} />
         <Timeline.Content>
           Designing your software involves creating a blueprint that outlines the structure, user
@@ -93,7 +93,7 @@ export const TimelineAlternateExample = ({
         <Timeline.Heading side="left" {...heading}>
           Code
         </Timeline.Heading>
-        <Timeline.Dot status="active" {...dot} />
+        <Timeline.Dot border="success" status="active" variant="accent" {...dot} />
         <Timeline.Line {...line} />
         <Timeline.Content side="left" {...content}>
           The coding phase involves translating your design into actual code. Choose a programming
@@ -104,7 +104,7 @@ export const TimelineAlternateExample = ({
       </Timeline.Item>
       <Timeline.Item {...item}>
         <Timeline.Heading {...heading}>Test</Timeline.Heading>
-        <Timeline.Dot {...dot} />
+        <Timeline.Dot border="info" {...dot} />
         <Timeline.Line {...line} />
         <Timeline.Content>
           Thorough testing is essential to ensure the quality and reliability of your software.
@@ -117,7 +117,7 @@ export const TimelineAlternateExample = ({
         <Timeline.Heading side="left" {...heading}>
           Deploy
         </Timeline.Heading>
-        <Timeline.Dot {...dot} />
+        <Timeline.Dot border="primary" {...dot} />
         <Timeline.Line {...line} />
         <Timeline.Content side="left" {...content}>
           Once your software has passed rigorous testing, it&apos;s time to deploy it. Consider the
@@ -126,7 +126,7 @@ export const TimelineAlternateExample = ({
         </Timeline.Content>
       </Timeline.Item>
       <Timeline.Item {...item}>
-        <Timeline.Dot {...dot} />
+        <Timeline.Dot border="error" {...dot} />
         <Timeline.Heading {...heading}>Done!</Timeline.Heading>
       </Timeline.Item>
     </Timeline>
@@ -145,7 +145,7 @@ export const TimelineLeftExample = ({
     <Timeline {...timeline}>
       <Timeline.Item variant="primary" {...item}>
         <Timeline.Heading>Plan!</Timeline.Heading>
-        <Timeline.Dot status="success" {...dot} />
+        <Timeline.Dot border="info" status="success" {...dot} />
         <Timeline.Line variant="neutral" {...line} />
         <Timeline.Content {...content}>
           Before diving into coding, it is crucial to plan your software project thoroughly. This
@@ -158,7 +158,7 @@ export const TimelineLeftExample = ({
         <Timeline.Heading side="right" className="text-destructive" {...heading}>
           Design
         </Timeline.Heading>
-        <Timeline.Dot status="failed" {...dot} />
+        <Timeline.Dot border="info" fill status="failed" {...dot} />
         <Timeline.Line variant="neutral" {...line} />
         <Timeline.Content {...content}>
           Designing your software involves creating a blueprint that outlines the structure, user
@@ -167,9 +167,9 @@ export const TimelineLeftExample = ({
           design.
         </Timeline.Content>
       </Timeline.Item>
-      <Timeline.Item variant="success" {...item}>
+      <Timeline.Item {...item}>
         <Timeline.Heading {...heading}>Code</Timeline.Heading>
-        <Timeline.Dot status="active" {...dot} />
+        <Timeline.Dot border="info" fill status="active" variant="success" {...dot} />
         <Timeline.Line {...line} />
         <Timeline.Content {...content}>
           The coding phase involves translating your design into actual code. Choose a programming

@@ -35,11 +35,11 @@ const TimelineItem = forwardRef<HTMLLIElement, TimelineItemProps>(
 TimelineItem.displayName = "TimelineItem";
 
 const TimelineDot = forwardRef<HTMLDivElement, TimelineDotProps>(
-  ({ className, fill = false, status, variant, icon, ...props }, ref) => (
+  ({ className, fill = false, border, status, variant, icon, ...props }, ref) => (
     <div
       role="status"
       className={cn(
-        getTimelineDotClasses({ fill, status: icon ? "custom" : status, variant }),
+        getTimelineDotClasses({ fill, border, status: icon ? "custom" : status, variant }),
         className
       )}
       ref={ref}
