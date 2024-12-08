@@ -2,6 +2,7 @@ import { ComponentPropsWithoutRef, HTMLAttributes } from "react";
 import { VariantProps } from "../../../libs";
 import { Command } from "../../Command";
 import {
+  getMultiSelectInputClasses,
   getMultiSelectItemClasses,
   getMultiSelectListClasses,
   getMultiSelectTriggerClasses,
@@ -35,7 +36,8 @@ export type MultiSelectContextProps = {
 export type MultiSelectTriggerProps = HTMLAttributes<HTMLDivElement> &
   VariantProps<typeof getMultiSelectTriggerClasses>;
 
-export type MultiSelectInputProps = ComponentPropsWithoutRef<typeof Command.Input>;
+export type MultiSelectInputProps = Omit<ComponentPropsWithoutRef<typeof Command.Input>, "size"> &
+  VariantProps<typeof getMultiSelectInputClasses>;
 
 export type MultiSelectContentProps = HTMLAttributes<HTMLDivElement>;
 

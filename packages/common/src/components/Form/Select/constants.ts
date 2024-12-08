@@ -47,7 +47,7 @@ export const getSelectTriggerClasses = cva(
 );
 
 export const getSelectItemClasses = cva(
-  "relative flex w-full cursor-pointer select-none items-center focus:bg-neutral focus:text-neutral-content rounded-sm py-1.5 pl-2 pr-8 text-sm outline-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+  "relative flex w-full cursor-pointer select-none items-center focus:bg-base-300 focus:text-base-content rounded-sm py-1.5 pl-2 pr-8 text-sm outline-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
   {
     variants: {
       variant: {
@@ -65,6 +65,17 @@ export const getSelectItemClasses = cva(
 );
 
 export const getSelectLabelClasses = cva("px-2 py-1.5 text-sm font-semibold");
+
+export const getSelectValueClasses = cva("", {
+  variants: {
+    size: {
+      xs: "text-xs",
+      sm: "text-sm",
+      md: "text-md",
+      lg: "text-lg",
+    },
+  },
+});
 
 export const getSelectSeparatorClasses = cva("-mx-1 my-1 h-px bg-muted");
 

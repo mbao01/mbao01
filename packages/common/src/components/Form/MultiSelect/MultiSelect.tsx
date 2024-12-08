@@ -18,6 +18,7 @@ import { Badge } from "../../Badge";
 import { Command } from "../../Command";
 import {
   getMultiSelectClasses,
+  getMultiSelectInputClasses,
   getMultiSelectItemClasses,
   getMultiSelectListClasses,
   getMultiSelectTagClasses,
@@ -247,7 +248,7 @@ export const MultiSelectTrigger = ({
 
 MultiSelectTrigger.displayName = "MultiSelectTrigger";
 
-const MultiSelectInput = ({ className, ...props }: MultiSelectInputProps) => {
+const MultiSelectInput = ({ className, size, ...props }: MultiSelectInputProps) => {
   const {
     setOpen,
     inputValue,
@@ -270,9 +271,9 @@ const MultiSelectInput = ({ className, ...props }: MultiSelectInputProps) => {
       onFocus={() => setOpen(true)}
       onClick={() => setActiveIndex(-1)}
       className={cn(
-        "bg-transparent outline-none flex-1",
-        className,
-        activeIndex !== -1 && "caret-transparent"
+        getMultiSelectInputClasses({ size }),
+        { "caret-transparent": activeIndex !== -1 },
+        className
       )}
     />
   );
@@ -309,7 +310,7 @@ const MultiSelectList = forwardRef<ComponentRef<typeof Command.List>, MultiSelec
 MultiSelectList.displayName = "MultiSelectList";
 
 const MultiSelectItem = forwardRef<ComponentRef<typeof Command.Item>, MultiSelectItemProps>(
-  ({ className, value, label, children, size, disabled, ...props }, ref) => {
+  ({ className, value, label, children, size, disabled, variant, ...props }, ref) => {
     const { values: options, onValueChange, setInputValue } = useMultiSelect();
 
     const mousePreventDefault = useCallback((e: MouseEvent) => {
@@ -327,7 +328,7 @@ const MultiSelectItem = forwardRef<ComponentRef<typeof Command.Item>, MultiSelec
           onValueChange(value, label);
           setInputValue("");
         }}
-        className={cn(getMultiSelectItemClasses({ included, disabled, size }), className)}
+        className={cn(getMultiSelectItemClasses({ included, disabled, variant, size }), className)}
         onMouseDown={mousePreventDefault}
       >
         {children}

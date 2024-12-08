@@ -80,7 +80,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
     >
       <div
         aria-label="Suggestions"
-        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1"
         cmdk-list=""
         id=":ru:"
         role="listbox"
@@ -91,7 +91,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -104,7 +104,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -117,7 +117,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -214,7 +214,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
     >
       <div
         aria-label="Suggestions"
-        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1"
         cmdk-list=""
         id=":ru:"
         role="listbox"
@@ -225,7 +225,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -238,7 +238,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -251,7 +251,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -348,7 +348,7 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
     >
       <div
         aria-label="Suggestions"
-        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1"
         cmdk-list=""
         id=":ro:"
         role="listbox"
@@ -359,7 +359,7 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -372,7 +372,7 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -385,7 +385,7 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -482,7 +482,7 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
     >
       <div
         aria-label="Suggestions"
-        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1"
         cmdk-list=""
         id=":ro:"
         role="listbox"
@@ -493,7 +493,7 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -506,7 +506,7 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -519,7 +519,7 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -577,7 +577,7 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
     >
       <div
         aria-label="Suggestions"
-        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1"
         cmdk-list=""
         id=":r6:"
         role="listbox"
@@ -588,7 +588,7 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -601,7 +601,7 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -614,7 +614,7 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -672,7 +672,7 @@ exports[`MultiSelect > and the user enters a text that does not match any option
     >
       <div
         aria-label="Suggestions"
-        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1"
         cmdk-list=""
         id=":ri:"
         role="listbox"
@@ -739,7 +739,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
     >
       <div
         aria-label="Suggestions"
-        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1"
         cmdk-list=""
         id=":rc:"
         role="listbox"
@@ -750,7 +750,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -763,7 +763,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -821,7 +821,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
     >
       <div
         aria-label="Suggestions"
-        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1"
         cmdk-list=""
         id=":rc:"
         role="listbox"
@@ -832,7 +832,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -845,7 +845,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -858,7 +858,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -916,7 +916,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
     >
       <div
         aria-label="Suggestions"
-        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1"
         cmdk-list=""
         id=":rc:"
         role="listbox"
@@ -927,7 +927,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center text-sm outline-none aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -1089,7 +1089,7 @@ exports[`MultiSelect > has ghost variant 1`] = `
       ghost badge
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-ghost min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
@@ -1200,7 +1200,7 @@ exports[`MultiSelect > has large (lg) size 1`] = `
     >
       <div
         aria-label="Suggestions"
-        class="max-h-[300px] overflow-y-auto overflow-x-hidden flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0 p-3"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1 p-3"
         cmdk-list=""
         id=":r1j:"
         role="listbox"
@@ -1267,7 +1267,7 @@ exports[`MultiSelect > has medium (md) size 1`] = `
     >
       <div
         aria-label="Suggestions"
-        class="max-h-[300px] overflow-y-auto overflow-x-hidden flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0 p-2"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1 p-2"
         cmdk-list=""
         id=":r1g:"
         role="listbox"
@@ -1506,7 +1506,7 @@ exports[`MultiSelect > has small (sm) size 1`] = `
     >
       <div
         aria-label="Suggestions"
-        class="max-h-[300px] overflow-y-auto overflow-x-hidden flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0 p-1.5"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1 p-1.5"
         cmdk-list=""
         id=":r1d:"
         role="listbox"
@@ -1616,7 +1616,7 @@ exports[`MultiSelect > has tiny (xs) size 1`] = `
     >
       <div
         aria-label="Suggestions"
-        class="max-h-[300px] overflow-y-auto overflow-x-hidden flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0 p-1"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1 p-1"
         cmdk-list=""
         id=":r1a:"
         role="listbox"
@@ -1769,7 +1769,7 @@ exports[`MultiSelect > renders no options 1`] = `
     >
       <div
         aria-label="Suggestions"
-        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0"
+        class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1"
         cmdk-list=""
         id=":r0:"
         role="listbox"

@@ -12,7 +12,6 @@ export const getMultiSelectTriggerClasses = cva(
         default: "border-0",
         accent: "border border-accent",
         error: "border border-error",
-        ghost: "border border-ghost",
         info: "border border-info",
         primary: "border border-primary",
         secondary: "border border-secondary",
@@ -55,7 +54,7 @@ export const getMultiSelectTriggerClasses = cva(
 );
 
 export const getMultiSelectItemClasses = cva(
-  "rounded-md cursor-pointer px-2 py-1 transition-colors flex justify-between",
+  "cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none",
   {
     variants: {
       included: {
@@ -70,12 +69,22 @@ export const getMultiSelectItemClasses = cva(
         md: "px-2 text-sm",
         lg: "px-3 text-lg",
       },
+      variant: {
+        default: "aria-selected:bg-transparent aria-selected:text-base-content",
+        primary: "aria-selected:bg-primary aria-selected:text-primary-content",
+        secondary: "aria-selected:bg-secondary aria-selected:text-secondary-content",
+        accent: "aria-selected:bg-accent aria-selected:text-accent-content",
+        success: "aria-selected:bg-success aria-selected:text-success-content",
+        warning: "aria-selected:bg-warning aria-selected:text-warning-content",
+        info: "aria-selected:bg-info aria-selected:text-info-content",
+        error: "aria-selected:bg-error aria-selected:text-error-content",
+      },
     },
   }
 );
 
 export const getMultiSelectListClasses = cva(
-  "p-2 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-0",
+  "p-1 bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute bg-background shadow-md z-10 border border-muted top-1",
   {
     variants: {
       size: {
@@ -101,3 +110,14 @@ export const getMultiSelectTagClasses = cva(
     },
   }
 );
+
+export const getMultiSelectInputClasses = cva("bg-transparent outline-none flex-1", {
+  variants: {
+    size: {
+      xs: "text-xs",
+      sm: "text-sm",
+      md: "text-md",
+      lg: "text-lg",
+    },
+  },
+});
