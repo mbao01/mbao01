@@ -1,5 +1,6 @@
 export { DatetimeInput } from "./DatetimeInput";
 export { Input } from "./Input";
+export { MultiSelect } from "./MultiSelect";
 export { OtpInput } from "./OtpInput";
 export { Phone } from "./Phone";
 export { Radio } from "./Radio";
