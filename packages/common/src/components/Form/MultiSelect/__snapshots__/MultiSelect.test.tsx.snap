@@ -3,7 +3,7 @@
 exports[`MultiSelect > and by using the keyboard the user can select and remove an option 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -16,7 +16,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
       Choose framework
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <span
         class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none px-1 rounded-xl flex items-center gap-1"
@@ -137,7 +137,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
 exports[`MultiSelect > and by using the keyboard the user can select and remove an option 2`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -150,7 +150,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
       Choose framework
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <span
         class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none px-1 rounded-xl flex items-center gap-1"
@@ -271,7 +271,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
 exports[`MultiSelect > and the user can select and remove an option 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -284,7 +284,7 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
       Choose framework
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <span
         class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none px-1 rounded-xl flex items-center gap-1"
@@ -405,7 +405,7 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
 exports[`MultiSelect > and the user can select and remove an option 2`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -418,7 +418,7 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
       Choose framework
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <span
         class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none px-1 rounded-xl flex items-center gap-1"
@@ -539,7 +539,7 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
 exports[`MultiSelect > and the user clicks on the input > show the list of available options 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -552,7 +552,7 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
       Choose framework
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
@@ -634,7 +634,7 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
 exports[`MultiSelect > and the user enters a text that does not match any options > show an empty list 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -647,7 +647,7 @@ exports[`MultiSelect > and the user enters a text that does not match any option
       Choose framework
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
@@ -701,7 +701,7 @@ exports[`MultiSelect > and the user enters a text that does not match any option
 exports[`MultiSelect > and the user enters a text that matches an option > show the list of available options 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -714,7 +714,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
       Choose framework
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
@@ -783,7 +783,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
 exports[`MultiSelect > and the user enters a text that matches an option > show the list of available options 2`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -796,7 +796,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
       Choose framework
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
@@ -878,7 +878,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
 exports[`MultiSelect > and the user enters a text that matches an option > show the list of available options 3`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -891,7 +891,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
       Choose framework
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
@@ -947,7 +947,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
 exports[`MultiSelect > has accent variant 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -960,7 +960,7 @@ exports[`MultiSelect > has accent variant 1`] = `
       accent badge
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-accent min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden border border-accent min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
@@ -990,7 +990,7 @@ exports[`MultiSelect > has accent variant 1`] = `
 exports[`MultiSelect > has default variant 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -1003,7 +1003,7 @@ exports[`MultiSelect > has default variant 1`] = `
       default badge
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border-0 min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden border-0 min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
@@ -1033,31 +1033,31 @@ exports[`MultiSelect > has default variant 1`] = `
 exports[`MultiSelect > has error variant 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
     <label
       cmdk-label=""
-      for=":r2g:"
-      id=":r2f:"
+      for=":r2d:"
+      id=":r2c:"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       error badge
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-error min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden border border-error min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
-        aria-controls=":r2e:"
+        aria-controls=":r2b:"
         aria-expanded="true"
-        aria-labelledby=":r2f:"
+        aria-labelledby=":r2c:"
         autocomplete="off"
         autocorrect="off"
         class="bg-transparent outline-none flex-1"
         cmdk-input=""
-        id=":r2g:"
+        id=":r2d:"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1073,10 +1073,10 @@ exports[`MultiSelect > has error variant 1`] = `
 </DocumentFragment>
 `;
 
-exports[`MultiSelect > has ghost variant 1`] = `
+exports[`MultiSelect > has info variant 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -1086,10 +1086,10 @@ exports[`MultiSelect > has ghost variant 1`] = `
       id=":r23:"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
-      ghost badge
+      info badge
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden border border-info min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
@@ -1116,53 +1116,10 @@ exports[`MultiSelect > has ghost variant 1`] = `
 </DocumentFragment>
 `;
 
-exports[`MultiSelect > has info variant 1`] = `
-<DocumentFragment>
-  <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
-    cmdk-root=""
-    tabindex="-1"
-  >
-    <label
-      cmdk-label=""
-      for=":r27:"
-      id=":r26:"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
-    >
-      info badge
-    </label>
-    <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-info min-h-10 px-4"
-    >
-      <input
-        aria-autocomplete="list"
-        aria-controls=":r25:"
-        aria-expanded="true"
-        aria-labelledby=":r26:"
-        autocomplete="off"
-        autocorrect="off"
-        class="bg-transparent outline-none flex-1"
-        cmdk-input=""
-        id=":r27:"
-        placeholder="Select your framework"
-        role="combobox"
-        spellcheck="false"
-        tabindex="0"
-        type="text"
-        value=""
-      />
-    </div>
-    <div
-      class="relative"
-    />
-  </div>
-</DocumentFragment>
-`;
-
 exports[`MultiSelect > has large (lg) size 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -1175,7 +1132,7 @@ exports[`MultiSelect > has large (lg) size 1`] = `
       MultiSelect large
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-16 px-6 text-lg"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-16 px-6 text-lg"
     >
       <input
         aria-autocomplete="list"
@@ -1229,7 +1186,7 @@ exports[`MultiSelect > has large (lg) size 1`] = `
 exports[`MultiSelect > has medium (md) size 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -1242,7 +1199,7 @@ exports[`MultiSelect > has medium (md) size 1`] = `
       MultiSelect medium
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-12 px-4 text-sm"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-12 px-4 text-sm"
     >
       <input
         aria-autocomplete="list"
@@ -1296,7 +1253,7 @@ exports[`MultiSelect > has medium (md) size 1`] = `
 exports[`MultiSelect > has no outline 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -1309,7 +1266,7 @@ exports[`MultiSelect > has no outline 1`] = `
       MultiSelect has no outline
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
@@ -1339,7 +1296,7 @@ exports[`MultiSelect > has no outline 1`] = `
 exports[`MultiSelect > has outline 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -1352,7 +1309,7 @@ exports[`MultiSelect > has outline 1`] = `
       MultiSelect has outline
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border min-h-10 px-4 border-neutral-content"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden border min-h-10 px-4 border-neutral-content"
     >
       <input
         aria-autocomplete="list"
@@ -1382,7 +1339,7 @@ exports[`MultiSelect > has outline 1`] = `
 exports[`MultiSelect > has primary variant 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -1395,7 +1352,7 @@ exports[`MultiSelect > has primary variant 1`] = `
       primary badge
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-primary min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden border border-primary min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
@@ -1425,7 +1382,7 @@ exports[`MultiSelect > has primary variant 1`] = `
 exports[`MultiSelect > has secondary variant 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -1438,7 +1395,7 @@ exports[`MultiSelect > has secondary variant 1`] = `
       secondary badge
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-secondary min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden border border-secondary min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
@@ -1468,7 +1425,7 @@ exports[`MultiSelect > has secondary variant 1`] = `
 exports[`MultiSelect > has small (sm) size 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -1481,7 +1438,7 @@ exports[`MultiSelect > has small (sm) size 1`] = `
       MultiSelect small
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit rounded-md transition-all overflow-hidden min-h-8 px-3 py-1.5 text-sm"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit rounded-md transition-all overflow-hidden min-h-8 px-3 py-1.5 text-sm"
     >
       <input
         aria-autocomplete="list"
@@ -1535,31 +1492,31 @@ exports[`MultiSelect > has small (sm) size 1`] = `
 exports[`MultiSelect > has success variant 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
     <label
       cmdk-label=""
-      for=":r2a:"
-      id=":r29:"
+      for=":r27:"
+      id=":r26:"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       success badge
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-success min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden border border-success min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
-        aria-controls=":r28:"
+        aria-controls=":r25:"
         aria-expanded="true"
-        aria-labelledby=":r29:"
+        aria-labelledby=":r26:"
         autocomplete="off"
         autocorrect="off"
         class="bg-transparent outline-none flex-1"
         cmdk-input=""
-        id=":r2a:"
+        id=":r27:"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1578,7 +1535,7 @@ exports[`MultiSelect > has success variant 1`] = `
 exports[`MultiSelect > has tiny (xs) size 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -1591,7 +1548,7 @@ exports[`MultiSelect > has tiny (xs) size 1`] = `
       MultiSelect tiny
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit rounded-md transition-all overflow-hidden min-h-6 px-2 py-1 text-xs"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit rounded-md transition-all overflow-hidden min-h-6 px-2 py-1 text-xs"
     >
       <input
         aria-autocomplete="list"
@@ -1645,31 +1602,31 @@ exports[`MultiSelect > has tiny (xs) size 1`] = `
 exports[`MultiSelect > has warning variant 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
     <label
       cmdk-label=""
-      for=":r2d:"
-      id=":r2c:"
+      for=":r2a:"
+      id=":r29:"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       warning badge
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-warning min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden border border-warning min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
-        aria-controls=":r2b:"
+        aria-controls=":r28:"
         aria-expanded="true"
-        aria-labelledby=":r2c:"
+        aria-labelledby=":r29:"
         autocomplete="off"
         autocorrect="off"
         class="bg-transparent outline-none flex-1"
         cmdk-input=""
-        id=":r2d:"
+        id=":r2a:"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1688,7 +1645,7 @@ exports[`MultiSelect > has warning variant 1`] = `
 exports[`MultiSelect > renders a multi select input 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -1701,7 +1658,7 @@ exports[`MultiSelect > renders a multi select input 1`] = `
       Choose framework
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"
@@ -1731,7 +1688,7 @@ exports[`MultiSelect > renders a multi select input 1`] = `
 exports[`MultiSelect > renders no options 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit w-fit"
+    class="w-full rounded-md text-base-content overflow-visible bg-transparent flex flex-col h-fit"
     cmdk-root=""
     tabindex="-1"
   >
@@ -1744,7 +1701,7 @@ exports[`MultiSelect > renders no options 1`] = `
       Choose framework
     </label>
     <div
-      class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+      class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <input
         aria-autocomplete="list"

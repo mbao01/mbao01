@@ -1,11 +1,9 @@
 import { cva } from "../../../libs";
 
-export const getMultiSelectClasses = cva(
-  "overflow-visible bg-transparent flex flex-col h-fit w-fit"
-);
+export const getMultiSelectClasses = cva("overflow-visible bg-transparent flex flex-col h-fit");
 
 export const getMultiSelectTriggerClasses = cva(
-  "flex items-center flex-wrap gap-1 h-fit px-1 py-2 rounded-md transition-all overflow-hidden",
+  "flex items-center flex-wrap gap-1 h-fit w-fit px-1 py-2 rounded-md transition-all overflow-hidden",
   {
     variants: {
       variant: {

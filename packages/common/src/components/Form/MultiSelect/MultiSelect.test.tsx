@@ -200,7 +200,6 @@ describe("MultiSelect", () => {
     "primary",
     "secondary",
     "accent",
-    "ghost",
     "info",
     "success",
     "warning",
