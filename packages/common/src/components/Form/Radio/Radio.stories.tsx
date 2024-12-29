@@ -48,14 +48,17 @@ export const DisabledRadio: Story = {
   },
 };
 
+const IntermediateRadioExample = <T,>(props: T) => {
+  const ref = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    if (ref?.current) ref.current.indeterminate = true;
+  }, []);
+
+  return <Radio aria-label="Female" {...props} ref={ref} />;
+};
 export const IntermediateRadio: Story = {
   render: (args) => {
-    const ref = useRef<HTMLInputElement>(null);
-    useEffect(() => {
-      if (ref?.current) ref.current.indeterminate = true;
-    }, []);
-
-    return <Radio aria-label="Female" {...args} ref={ref} />;
+    return <IntermediateRadioExample {...args} />;
   },
 };
 

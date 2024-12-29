@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/consistent-indexed-object-style */
 import type { ComponentProps, ComponentType, ReactNode } from "react";
 import { LegendProps, ResponsiveContainer, Tooltip } from "recharts";
 import { type Theme } from "../../utilities";

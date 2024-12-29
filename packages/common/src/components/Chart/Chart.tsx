@@ -11,7 +11,7 @@ import { type ChartProps } from "./types";
 export const Chart = forwardRef<HTMLDivElement, ChartProps>(
   ({ id, className, children, config, ...props }, ref) => {
     const uniqueId = useId();
-    const chartId = `chart-${id || uniqueId.replace(/:/g, "")}`;
+    const chartId = `chart-${id ?? uniqueId.replace(/:/g, "")}`;
 
     return (
       <ChartContext.Provider value={{ config }}>

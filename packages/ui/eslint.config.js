@@ -36,6 +36,30 @@ const customTsConfig = {
   },
 };
 
+const customJsConfig = [
+  {
+    files: ["**/*.js", "**/*.mjs"],
+    languageOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module",
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
+  },
+  {
+    files: ["**/*.cjs"],
+    languageOptions: {
+      sourceType: "commonjs",
+      globals: {
+        ...globals.node,
+        ...globals.amd,
+      },
+    },
+  },
+];
+
 const reactConfigs = [
   {
     ...reactPlugin.configs.flat.recommended,
@@ -65,5 +89,6 @@ export default [
   reactRefreshPlugin.configs.recommended,
   ...storybookPlugin.configs["flat/recommended"],
   ...recommendedTypeScriptConfigs,
+  ...customJsConfig,
   customTsConfig,
 ];
