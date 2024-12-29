@@ -1,6 +1,20 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
-import type { ChartTooltipContentProps } from "../types";
-import { BarChartExample, tooltipChartConfig } from "./examples/Tooltip";
+import type { ChartConfig, ChartTooltipContentProps } from "../types";
+import { BarChartExample } from "./examples/Tooltip";
+
+const tooltipChartConfig = {
+  activities: {
+    label: "Activities",
+  },
+  running: {
+    label: "Running",
+    color: "hsl(var(--chart-3))",
+  },
+  swimming: {
+    label: "Swimming",
+    color: "hsl(var(--chart-2))",
+  },
+} satisfies ChartConfig;
 
 const withTheme = (Component: StoryFn, context: StoryContext<ChartTooltipContentProps>) => {
   return (

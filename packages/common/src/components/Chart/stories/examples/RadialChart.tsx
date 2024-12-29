@@ -126,7 +126,7 @@ export const TextRadialChartExample = (props: Partial<RadialBarChartProps>) => {
                     >
                       {chartData[0].visitors.toLocaleString()}
                     </tspan>
-                    <tspan x={viewBox.cx} y={(viewBox.cy || 0) + 24} className="fill-base-content">
+                    <tspan x={viewBox.cx} y={(viewBox.cy ?? 0) + 24} className="fill-base-content">
                       Visitors
                     </tspan>
                   </text>
@@ -176,7 +176,7 @@ export const ShapeRadialChartExample = (props: Partial<RadialBarChartProps>) => 
                     >
                       {chartData[0].visitors.toLocaleString()}
                     </tspan>
-                    <tspan x={viewBox.cx} y={(viewBox.cy || 0) + 24} className="fill-base-content">
+                    <tspan x={viewBox.cx} y={(viewBox.cy ?? 0) + 24} className="fill-base-content">
                       Visitors
                     </tspan>
                   </text>
@@ -217,12 +217,12 @@ export const StackedRadialChartExample = (props: Partial<RadialBarChartProps>) =
                   <text x={viewBox.cx} y={viewBox.cy} textAnchor="middle">
                     <tspan
                       x={viewBox.cx}
-                      y={(viewBox.cy || 0) - 16}
+                      y={(viewBox.cy ?? 0) - 16}
                       className="fill-foreground text-2xl font-bold"
                     >
                       {totalVisitors.toLocaleString()}
                     </tspan>
-                    <tspan x={viewBox.cx} y={(viewBox.cy || 0) + 4} className="fill-base-content">
+                    <tspan x={viewBox.cx} y={(viewBox.cy ?? 0) + 4} className="fill-base-content">
                       Visitors
                     </tspan>
                   </text>

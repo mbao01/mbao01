@@ -26,7 +26,7 @@ export const ChartLegendContent = forwardRef<HTMLDivElement, ChartLegendContentP
     return (
       <div ref={ref} className={cn(getChartLegendContainerClasses({ verticalAlign }), className)}>
         {payload.map((item) => {
-          const key = `${nameKey || item.dataKey || "value"}`;
+          const key = `${nameKey ?? item.dataKey ?? "value"}`;
           const itemConfig = getPayloadConfigFromPayload(config, item, key);
 
           return (

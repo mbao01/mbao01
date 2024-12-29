@@ -70,6 +70,6 @@ export const getArgsFromArgTypes = <T extends ArgTypes>(argsTypes: T) => {
 export const renderer = <T extends ElementType>(Component: T) => {
   const component = <G,>(props: G) => <Component {...(props as ComponentProps<T>)} />;
   component.displayName =
-    (Component as React.FC<unknown>).displayName || (Component as React.FC<unknown>).name;
+    (Component as React.FC<unknown>).displayName ?? (Component as React.FC<unknown>).name;
   return component;
 };

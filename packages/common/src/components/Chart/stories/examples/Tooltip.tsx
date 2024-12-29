@@ -12,7 +12,7 @@ const chartData = [
   { date: "2024-07-19", running: 600, swimming: 350 },
   { date: "2024-07-20", running: 480, swimming: 400 },
 ];
-export const tooltipChartConfig = {
+const tooltipChartConfig = {
   activities: {
     label: "Activities",
   },
