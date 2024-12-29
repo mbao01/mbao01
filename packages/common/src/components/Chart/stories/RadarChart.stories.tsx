@@ -1,4 +1,4 @@
-import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
+import type { Meta, StoryContext, StoryObj } from "@storybook/react";
 import type { RadarChartArgs } from "./args";
 import { radarChartArgs } from "./args";
 import {
@@ -27,7 +27,7 @@ const chartData = [
   { month: "June", desktop: 214, mobile: 140 },
 ];
 
-const withTheme = (Component: StoryFn, context: StoryContext<RadarChartArgs>) => {
+const withTheme = (Component: React.FC<RadarChartArgs>, context: StoryContext<RadarChartArgs>) => {
   return (
     <div>
       <style
@@ -58,7 +58,7 @@ const withTheme = (Component: StoryFn, context: StoryContext<RadarChartArgs>) =>
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
   title: "Components/Chart/Radar",
-  component: RadarChartExample as (args: RadarChartArgs) => JSX.Element,
+  component: RadarChartExample as (args: RadarChartArgs) => React.JSX.Element,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",

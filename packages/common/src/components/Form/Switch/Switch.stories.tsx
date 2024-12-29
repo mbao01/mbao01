@@ -48,14 +48,17 @@ export const DisabledSwitch: Story = {
   },
 };
 
+const IntermediateSwitchExample = <T,>(props: T) => {
+  const ref = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    if (ref?.current) ref.current.indeterminate = true;
+  }, []);
+
+  return <Switch {...props} ref={ref} aria-label="Undecided terms" />;
+};
 export const IntermediateSwitch: Story = {
   render: (args) => {
-    const ref = useRef<HTMLInputElement>(null);
-    useEffect(() => {
-      if (ref?.current) ref.current.indeterminate = true;
-    }, []);
-
-    return <Switch {...args} ref={ref} aria-label="Undecided terms" />;
+    return <IntermediateSwitchExample {...args} />;
   },
 };
 

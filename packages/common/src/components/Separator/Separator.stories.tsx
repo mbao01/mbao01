@@ -1,7 +1,7 @@
-import type { Meta, StoryFn, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react";
 import { Separator } from "./Separator";
 
-const withSeparator = (Story: StoryFn) => {
+const withSeparator = (Story: React.FC) => {
   return (
     <div className="h-80 w-80 flex justify-center items-center">
       <Story />

@@ -29,7 +29,7 @@ export const Droppable = ({
       className={cn(className, getDroppableClasses({ isDragging, isOver, isEmpty }))}
       data-empty={isEmpty}
       data-draggable-over={isOver || undefined}
-      data-draggable-active={isDragging || undefined}
+      data-draggable-active={isDragging ?? undefined}
       {...props}
     >
       {children}

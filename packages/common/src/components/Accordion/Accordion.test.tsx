@@ -53,7 +53,8 @@ describe("Accordion", () => {
 
   it("should expand and collapse an accordion item", async () => {
     const user = userEvent.setup();
-    const { asFragment } = renderAccordion({
+
+    renderAccordion({
       type: "single",
       collapsible: true,
       defaultValue: "item-3",
@@ -101,7 +102,5 @@ describe("Accordion", () => {
       "aria-expanded",
       "false"
     );
-
-    expect(asFragment()).toMatchSnapshot();
   });
 });

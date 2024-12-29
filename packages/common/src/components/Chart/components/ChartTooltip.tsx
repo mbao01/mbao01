@@ -44,10 +44,12 @@ export const ChartTooltipContent = forwardRef<HTMLDivElement, ChartTooltipConten
       }
 
       const [item] = payload;
-      const key = `${labelKey || item.dataKey || item.name || "value"}`;
+      const key = `${labelKey ?? item.dataKey ?? item.name ?? "value"}`;
       const itemConfig = getPayloadConfigFromPayload(config, item, key);
       const value =
-        !labelKey && typeof label === "string" ? config[label]?.label || label : itemConfig?.label;
+        !labelKey && typeof label === "string"
+          ? (config[label]?.label ?? label)
+          : itemConfig?.label;
 
       if (labelFormatter) {
         return (
@@ -73,12 +75,12 @@ export const ChartTooltipContent = forwardRef<HTMLDivElement, ChartTooltipConten
         {!nestLabel ? tooltipLabel : null}
         <div className="grid gap-1.5">
           {payload.map((item, index) => {
-            const key = `${nameKey || item.name || item.dataKey || "value"}`;
+            const key = `${nameKey ?? item.name ?? item.dataKey ?? "value"}`;
             const itemConfig = getPayloadConfigFromPayload(config, item, key);
             const indicatorColor =
-              color ||
-              (item.payload as { fill: string }).fill ||
-              item.color ||
+              color ??
+              (item.payload as { fill: string }).fill ??
+              item.color ??
               (item as { fill: string }).fill;
 
             return (
@@ -105,7 +107,7 @@ export const ChartTooltipContent = forwardRef<HTMLDivElement, ChartTooltipConten
                     <div className={getChartTooltipItemLabelClasses({ nestLabel })}>
                       <div className="grid gap-1.5">
                         {nestLabel ? tooltipLabel : null}
-                        <span>{itemConfig?.label || item.name}</span>
+                        <span>{itemConfig?.label ?? item.name}</span>
                       </div>
                       {item.value && (
                         <span className={getChartTooltipItemValueClasses()}>

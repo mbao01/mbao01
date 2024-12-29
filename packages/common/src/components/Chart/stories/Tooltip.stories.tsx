@@ -1,8 +1,25 @@
-import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
-import type { ChartTooltipContentProps } from "../types";
-import { BarChartExample, tooltipChartConfig } from "./examples/Tooltip";
+import type { Meta, StoryContext, StoryObj } from "@storybook/react";
+import type { ChartConfig, ChartTooltipContentProps } from "../types";
+import { BarChartExample } from "./examples/Tooltip";
 
-const withTheme = (Component: StoryFn, context: StoryContext<ChartTooltipContentProps>) => {
+const tooltipChartConfig = {
+  activities: {
+    label: "Activities",
+  },
+  running: {
+    label: "Running",
+    color: "hsl(var(--chart-3))",
+  },
+  swimming: {
+    label: "Swimming",
+    color: "hsl(var(--chart-2))",
+  },
+} satisfies ChartConfig;
+
+const withTheme = (
+  Component: React.FC<ChartTooltipContentProps>,
+  context: StoryContext<ChartTooltipContentProps>
+) => {
   return (
     <div>
       <style
@@ -34,7 +51,7 @@ const withTheme = (Component: StoryFn, context: StoryContext<ChartTooltipContent
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
   title: "Components/Chart/components/Tooltip",
-  component: BarChartExample as (args: ChartTooltipContentProps) => JSX.Element,
+  component: BarChartExample as (args: ChartTooltipContentProps) => React.JSX.Element,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",

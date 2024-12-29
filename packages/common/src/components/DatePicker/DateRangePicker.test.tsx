@@ -41,7 +41,14 @@ describe("DateRangePicker", () => {
     await user.click(button);
 
     expect(screen.getByText("March 2022")).toBeInTheDocument();
-    expect(screen.getByRole("cell", { name: "15" })).toHaveAttribute("aria-selected", "true");
+
+    [...Array(15).keys()].forEach((_, i) => {
+      expect(screen.getByRole("gridcell", { name: `${i + 1}`, selected: true })).toHaveAttribute(
+        "aria-selected",
+        "true"
+      );
+    });
+
     expect(asFragment()).toMatchSnapshot();
   });
 

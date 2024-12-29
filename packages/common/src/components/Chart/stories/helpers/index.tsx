@@ -1,4 +1,4 @@
-import type { ArgTypes, StoryContext, StoryFn } from "@storybook/react";
+import type { ArgTypes, StoryContext } from "@storybook/react";
 import type { ComponentProps, ElementType } from "react";
 
 export const categorizeArgs = (args: ArgTypes, category: string) => {
@@ -27,7 +27,7 @@ const getCategorizedArgs = <T,>(args: ArgTypes<T>) => {
   }, {} as ArgTypes);
 };
 
-export const withArgs = <T extends object>(Component: StoryFn, context: StoryContext<T>) => {
+export const withArgs = <T extends object>(Component: React.FC, context: StoryContext<T>) => {
   context.args = getCategorizedArgs(context.args) as T;
 
   return <Component />;
@@ -70,6 +70,6 @@ export const getArgsFromArgTypes = <T extends ArgTypes>(argsTypes: T) => {
 export const renderer = <T extends ElementType>(Component: T) => {
   const component = <G,>(props: G) => <Component {...(props as ComponentProps<T>)} />;
   component.displayName =
-    (Component as React.FC<unknown>).displayName || (Component as React.FC<unknown>).name;
+    (Component as React.FC<unknown>).displayName ?? (Component as React.FC<unknown>).name;
   return component;
 };

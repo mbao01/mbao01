@@ -3,7 +3,7 @@ import { getFormControlClasses } from "./constants";
 
 export type As = "div" | "span" | "label";
 
-type AllowedElements = Pick<JSX.IntrinsicElements, As>;
+type AllowedElements = Pick<React.JSX.IntrinsicElements, As>;
 
 export type FormControlProps<T extends As> = (T extends "label"
   ? React.LabelHTMLAttributes<HTMLLabelElement>

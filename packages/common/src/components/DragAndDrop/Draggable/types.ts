@@ -13,7 +13,7 @@ export enum DraggableAxis {
   Horizontal,
 }
 
-export type DraggableHandleElement = JSX.Element | null;
+export type DraggableHandleElement = React.JSX.Element | null;
 
 export type DraggableActionsArgs = {
   draggable: {

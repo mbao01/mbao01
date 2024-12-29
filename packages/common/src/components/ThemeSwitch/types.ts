@@ -6,5 +6,5 @@ export type ThemeSwitchProps = React.ComponentPropsWithoutRef<"label"> & {
   render?: (params: {
     theme: Theme | null;
     setTheme: React.Dispatch<React.SetStateAction<Theme | null>>;
-  }) => JSX.Element;
+  }) => React.JSX.Element;
 };

@@ -2,7 +2,7 @@ import { type Config } from "tailwindcss";
 
 const config = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
-  // eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-unsafe-assignment
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [...require("./plugin")],
   daisyui: {
     themes: ["light", "dark"],

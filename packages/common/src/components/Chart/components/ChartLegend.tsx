@@ -26,12 +26,10 @@ export const ChartLegendContent = forwardRef<HTMLDivElement, ChartLegendContentP
     return (
       <div ref={ref} className={cn(getChartLegendContainerClasses({ verticalAlign }), className)}>
         {payload.map((item) => {
-          // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-          const key = `${nameKey || item.dataKey || "value"}`;
+          const key = `${nameKey ?? item.dataKey ?? "value"}`;
           const itemConfig = getPayloadConfigFromPayload(config, item, key);
 
           return (
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
             <div key={item.value} className={getChartLegendItemClasses()}>
               {itemConfig?.icon && !hideIcon ? (
                 <itemConfig.icon />

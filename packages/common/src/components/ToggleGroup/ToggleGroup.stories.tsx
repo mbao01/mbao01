@@ -4,11 +4,9 @@ import { ToggleGroup } from "./ToggleGroup";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const withToggleGroup = (_: StoryFn, context: StoryContext<any>) => {
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const { type, variant, defaultValue } = context.args;
 
   return (
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     <ToggleGroup type={type} variant={variant} defaultValue={defaultValue}>
       <ToggleGroup.Item value="bold" aria-label="Toggle bold">
         <BoldIcon className="h-4 w-4" />

@@ -1,4 +1,4 @@
-import type { TestRunnerConfig } from "@storybook/test-runner";
+import type { TestHook, TestRunnerConfig } from "@storybook/test-runner";
 import { MINIMAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { getStoryContext, waitForPageReady } from "@storybook/test-runner";
 import { checkA11y, injectAxe } from "axe-playwright";
@@ -8,13 +8,15 @@ const DEFAULT_VIEWPORT_SIZE = { width: 1280, height: 720 };
 const CUSTOM_SNAPSHOTS_DIR = `${process.cwd()}/.storybook/__snapshots__`;
 const CUSTOM_DIFF_DIR = `${CUSTOM_SNAPSHOTS_DIR}/__diff__`;
 
-const setupPageViewport = async (page, story) => {
+const setupPageViewport: TestHook = async (page, story) => {
   // Accesses the story's parameters and retrieves the viewport used to render it
   const context = await getStoryContext(page, story);
   const viewportName = context.parameters?.viewport?.defaultViewport;
   const viewportParameter = MINIMAL_VIEWPORTS[viewportName];
 
-  page.setViewportSize(viewportParameter?.styles ?? DEFAULT_VIEWPORT_SIZE);
+  page.setViewportSize(
+    (viewportParameter?.styles ?? DEFAULT_VIEWPORT_SIZE) as { width: number; height: number }
+  );
 };
 
 const config: TestRunnerConfig = {

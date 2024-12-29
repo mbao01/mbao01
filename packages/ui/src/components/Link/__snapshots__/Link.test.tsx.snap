@@ -4,6 +4,7 @@ exports[`Link > has accent variant 1`] = `
 <DocumentFragment>
   <a
     class="link transition-all link-hover no-underline"
+    data-discover="true"
     href="/variant/accent"
   >
     accent link
@@ -15,6 +16,7 @@ exports[`Link > has default variant 1`] = `
 <DocumentFragment>
   <a
     class="link transition-all link-hover no-underline"
+    data-discover="true"
     href="/variant/default"
   >
     default link
@@ -26,6 +28,7 @@ exports[`Link > has error variant 1`] = `
 <DocumentFragment>
   <a
     class="link transition-all link-hover no-underline"
+    data-discover="true"
     href="/variant/error"
   >
     error link
@@ -37,6 +40,7 @@ exports[`Link > has info variant 1`] = `
 <DocumentFragment>
   <a
     class="link transition-all link-hover no-underline"
+    data-discover="true"
     href="/variant/info"
   >
     info link
@@ -48,6 +52,7 @@ exports[`Link > has link variant 1`] = `
 <DocumentFragment>
   <a
     class="link transition-all link-hover no-underline"
+    data-discover="true"
     href="/variant/link"
   >
     link link
@@ -59,6 +64,7 @@ exports[`Link > has neutral variant 1`] = `
 <DocumentFragment>
   <a
     class="link transition-all link-hover no-underline"
+    data-discover="true"
     href="/variant/neutral"
   >
     neutral link
@@ -70,6 +76,7 @@ exports[`Link > has primary variant 1`] = `
 <DocumentFragment>
   <a
     class="link transition-all link-hover no-underline"
+    data-discover="true"
     href="/variant/primary"
   >
     primary link
@@ -81,6 +88,7 @@ exports[`Link > has secondary variant 1`] = `
 <DocumentFragment>
   <a
     class="link transition-all link-hover no-underline"
+    data-discover="true"
     href="/variant/secondary"
   >
     secondary link
@@ -92,6 +100,7 @@ exports[`Link > has success variant 1`] = `
 <DocumentFragment>
   <a
     class="link transition-all link-hover no-underline"
+    data-discover="true"
     href="/variant/success"
   >
     success link
@@ -103,6 +112,7 @@ exports[`Link > has warning variant 1`] = `
 <DocumentFragment>
   <a
     class="link transition-all link-hover no-underline"
+    data-discover="true"
     href="/variant/warning"
   >
     warning link
@@ -114,6 +124,7 @@ exports[`Link > renders a link with correct label 1`] = `
 <DocumentFragment>
   <a
     class="link transition-all no-underline"
+    data-discover="true"
     href="/home?hello=world#great"
   >
     Go Home 🏡
