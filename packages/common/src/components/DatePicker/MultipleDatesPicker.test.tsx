@@ -40,7 +40,12 @@ describe("MultipleDatesPicker", () => {
     await user.click(button);
 
     expect(screen.getByText("March 2022")).toBeInTheDocument();
-    expect(screen.getByRole("cell", { name: "15" })).toHaveAttribute("aria-selected", "true");
+    expect(screen.getByRole("gridcell", { name: "1", selected: true })).toHaveAttribute(
+      "aria-selected",
+      "true"
+    );
+    expect(screen.getByRole("gridcell", { name: "15" })).toHaveAttribute("aria-selected", "true");
+
     expect(asFragment()).toMatchSnapshot();
   });
 
