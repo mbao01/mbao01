@@ -1,4 +1,4 @@
-import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
+import type { Meta, StoryContext, StoryObj } from "@storybook/react";
 import type { BarChartArgs } from "./args";
 import { barChartArgs } from "./args";
 import {
@@ -23,7 +23,7 @@ const chartData = [
   { month: "June", desktop: 214, mobile: 140 },
 ];
 
-const withTheme = (Component: StoryFn, context: StoryContext<BarChartArgs>) => {
+const withTheme = (Component: React.FC<BarChartArgs>, context: StoryContext<BarChartArgs>) => {
   return (
     <div>
       <style
@@ -55,7 +55,7 @@ const withTheme = (Component: StoryFn, context: StoryContext<BarChartArgs>) => {
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
   title: "Components/Chart/Bar",
-  component: BarChartExample as (args: BarChartArgs) => JSX.Element,
+  component: BarChartExample as (args: BarChartArgs) => React.JSX.Element,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",

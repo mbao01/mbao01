@@ -1,4 +1,4 @@
-import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
+import type { Meta, StoryContext, StoryObj } from "@storybook/react";
 import type { RadialBarChartArgs } from "./args";
 import { radialBarChartArgs } from "./args";
 import {
@@ -19,7 +19,10 @@ const chartData = [
   { browser: "other", visitors: 90, fill: "var(--color-other)" },
 ];
 
-const withTheme = (Component: StoryFn, context: StoryContext<RadialBarChartArgs>) => {
+const withTheme = (
+  Component: React.FC<RadialBarChartArgs>,
+  context: StoryContext<RadialBarChartArgs>
+) => {
   return (
     <div>
       <style
@@ -50,7 +53,7 @@ const withTheme = (Component: StoryFn, context: StoryContext<RadialBarChartArgs>
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
   title: "Components/Chart/Radial",
-  component: RadialChartExample as (args: RadialBarChartArgs) => JSX.Element,
+  component: RadialChartExample as (args: RadialBarChartArgs) => React.JSX.Element,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",

@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.shared.json",
-  "include": ["src", "vitest-setup.ts", "plugin.d.ts", "*.config.ts", ".storybook/*.ts"],
+  "include": ["src", "vitest-setup.ts", "plugin.d.ts", "*.config.ts"],
   "exclude": ["vite*.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

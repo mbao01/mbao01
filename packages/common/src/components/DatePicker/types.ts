@@ -15,7 +15,7 @@ export type DatePickerProps = BaseDatePickerProps &
     }: {
       date: Date | undefined;
       setDate: React.Dispatch<React.SetStateAction<Date | undefined>>;
-    }) => JSX.Element | null;
+    }) => React.JSX.Element | null;
     defaultDate?: Date;
     getDateLabel?: (date: Date | undefined) => string | undefined;
     getDateValue?: (date: Date | undefined) => string | undefined;
@@ -28,12 +28,12 @@ export type DateRangePickerProps = BaseDatePickerProps &
       from: string | undefined;
       to: string | undefined;
     };
-    getRangeLabel?: (range: DateRange | undefined) => string | JSX.Element | undefined;
+    getRangeLabel?: (range: DateRange | undefined) => string | React.JSX.Element | undefined;
   };
 
 export type MultipleDatesPickerProps = BaseDatePickerProps &
   Omit<PropsMulti, "mode"> & {
     defaultDates?: Date[];
     getDatesValue?: (dates: Date[] | undefined) => string[] | undefined;
-    getDatesLabel?: (dates: Date[] | undefined) => string | JSX.Element | undefined;
+    getDatesLabel?: (dates: Date[] | undefined) => string | React.JSX.Element | undefined;
   };

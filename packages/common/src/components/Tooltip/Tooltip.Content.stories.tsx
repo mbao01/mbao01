@@ -1,7 +1,7 @@
-import type { Meta, StoryFn, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react";
 import { Tooltip } from "./Tooltip";
 
-const withTooltip = (Story: StoryFn) => {
+const withTooltip = (Story: React.FC) => {
   return (
     <Tooltip.Provider>
       <Tooltip>

@@ -79,7 +79,7 @@ const recommendedTypeScriptConfigs = [
 
 // global ignores
 const globalIgnores = {
-  ignores: ["!.storybook", "dist", "coverage", "storybook-static", "vite*.config.ts"],
+  ignores: [".storybook", "dist", "coverage", "storybook-static", "vite*.config.ts"],
 };
 
 export default [

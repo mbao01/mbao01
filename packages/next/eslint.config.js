@@ -9,7 +9,7 @@ const compat = new FlatCompat({
 
 // global ignores
 const globalIgnores = {
-  ignores: ["!.storybook", ".next", "dist", "coverage", "storybook-static"],
+  ignores: [".storybook", ".next", "dist", "coverage", "storybook-static"],
 };
 
 const nextEslintConfig = [
