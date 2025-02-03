@@ -13,7 +13,7 @@ export const Text = <T extends As>({
   ...props
 }: TextProps<T>) => {
   const Comp = as ? Slot : "span";
-  const SlotChild = as ? as : React.Fragment;
+  const SlotChild = as ?? React.Fragment;
 
   return (
     <Comp className={cn(getTextClasses({ size, variant }), className)} {...props}>
