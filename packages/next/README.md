@@ -30,15 +30,7 @@ npm install @mbao01/next
 3. Configure tailwind
 
 ```typescript
-export default {
-  content: [
-    "node_modules/@mbao01/(common|next)/src/**/*", // -> ensure to add this to allow tailwind to scan the library for classes
-    ...
-  ],
-  "plugins": [
-    ...require("@mbao01/common/plugin"), // -> import the tailwind library plugin
-  ]
-}
+import "@mbao01/common/styles";
 ```
 
 You can also import styles directly from `@mbao01/common/styles`. Use this in-place of `tailwind.css` if you wish.
