@@ -55,7 +55,7 @@ const FileUpload = () => {
     >
       <FileUploader.Input
         classes={{
-          all: "outline-dashed outline-1 focus:ring-2 focus:outline-none",
+          all: "outline-dashed outline-1 focus:ring-2 focus:outline-hidden",
           accepted: "outline-green-500",
           rejected: "outline-red-500",
           default: "outline-neutral-content",

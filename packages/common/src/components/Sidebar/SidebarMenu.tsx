@@ -144,7 +144,7 @@ const SidebarMenuSkeleton = forwardRef<HTMLDivElement, SidebarMenuSkeletonProps>
           <Skeleton width={4} height={4} className="rounded-md" data-sidebar="menu-skeleton-icon" />
         )}
         <Skeleton
-          className="h-4 flex-1 max-w-[--skeleton-width]"
+          className="h-4 flex-1 max-w-(--skeleton-width)"
           data-sidebar="menu-skeleton-text"
           style={
             {

@@ -47,7 +47,7 @@ export const getSelectTriggerClasses = cva(
 );
 
 export const getSelectItemClasses = cva(
-  "relative flex w-full cursor-pointer select-none items-center focus:bg-base-300 focus:text-base-content rounded-sm py-1.5 pl-2 pr-8 text-sm outline-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+  "relative flex w-full cursor-pointer select-none items-center focus:bg-base-300 focus:text-base-content rounded-xs py-1.5 pl-2 pr-8 text-sm outline-hidden data-disabled:pointer-events-none data-disabled:opacity-50",
   {
     variants: {
       variant: {

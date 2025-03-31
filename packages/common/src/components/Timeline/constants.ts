@@ -34,7 +34,7 @@ export const getTimelineDotClasses = cva(
   {
     variants: {
       status: {
-        default: "[&>*]:hidden",
+        default: "*:hidden",
         active: "[&>*:not(.lucide-circle)]:hidden",
         success: "[&>*:not(.lucide-check)]:hidden",
         failed: "[&>*:not(.lucide-x)]:hidden",

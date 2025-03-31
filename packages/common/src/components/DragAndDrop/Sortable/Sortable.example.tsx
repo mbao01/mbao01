@@ -44,9 +44,9 @@ export const SortableExample = ({ hasDraggableOverlay, ...props }: SortableExamp
               key={item}
               id={item}
               className={cn(
-                "flex items-center justify-center w-32 h-32 bg-base-100 border border-primary-content/30 rounded-md text-sm p-2 data-[draggable]:shadow data-[draggable-active]:z-20",
+                "flex items-center justify-center w-32 h-32 bg-base-100 border border-primary-content/30 rounded-md text-sm p-2 data-draggable:shadow-sm data-draggable-active:z-20",
                 {
-                  "data-[draggable-active]:opacity-30": hasDraggableOverlay,
+                  "data-draggable-active:opacity-30": hasDraggableOverlay,
                 }
               )}
             >

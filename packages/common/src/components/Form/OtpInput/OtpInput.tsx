@@ -16,7 +16,7 @@ export const OtpInput = ({ className, inputProps, ...props }: OtpInputProps) => 
         <Input
           {...inputProps}
           {...renderProps}
-          className={cn("!w-12 !appearance-none selection:bg-base text-base-content", className)}
+          className={cn("w-12! appearance-none! selection:bg-base text-base-content", className)}
         />
       )}
       containerStyle={`flex justify-center items-center flex-wrap text-2xl font-bold ${

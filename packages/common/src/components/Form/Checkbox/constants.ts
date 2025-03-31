@@ -1,7 +1,7 @@
 import { cva } from "../../../libs";
 
 export const getCheckboxClasses = cva(
-  "peer flex items-center justify-center h-4 w-4 shrink-0 rounded-sm border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50",
+  "peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -26,7 +26,7 @@ export const getCheckboxClasses = cva(
       },
       rounded: {
         xs: "rounded-xs",
-        sm: "rounded-sm",
+        sm: "rounded-xs",
         md: "rounded-md",
         lg: "rounded-lg",
       },

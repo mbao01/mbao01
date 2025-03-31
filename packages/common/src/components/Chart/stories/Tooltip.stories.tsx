@@ -144,7 +144,7 @@ export const AdvancedTooltip: Story = {
       <>
         <div className="flex items-center w-full">
           <div
-            className="h-2.5 w-2.5 shrink-0 rounded-[2px] bg-[--color-bg] mr-2"
+            className="h-2.5 w-2.5 shrink-0 rounded-[2px] bg-(--color-bg) mr-2"
             style={
               {
                 "--color-bg": `var(--color-${name})`,

@@ -10,7 +10,7 @@ const DescriptionTerm = ({ className, ...props }: DescriptionTermProps) => {
 };
 
 const DescriptionDetail = ({ className, ...props }: DescriptionDetailProps) => {
-  return <dd className={cn("text-base [&:not(:last-child)]:mb-1", className)} {...props} />;
+  return <dd className={cn("text-base not-last:mb-1", className)} {...props} />;
 };
 
 Description.Term = DescriptionTerm;

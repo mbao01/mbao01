@@ -55,11 +55,11 @@ export const getTagsClasses = cva(
 );
 
 export const getTagClasses = cva(
-  "relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none",
+  "relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden",
   {
     variants: {
       size: {
-        xs: "px-0.5 [&>span]:max-w-20 rounded",
+        xs: "px-0.5 [&>span]:max-w-20 rounded-sm",
         sm: "px-1",
         md: "px-1.5 [&>span]:max-w-28",
         lg: "px-2 [&>span]:max-w-32",

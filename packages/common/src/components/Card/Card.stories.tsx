@@ -57,7 +57,7 @@ export const FullWidth: Story = {
 export const OverlayImageOnCard: Story = {
   args: {
     overlay: true,
-    className: c("w-96 [&>*]:!text-white"),
+    className: c("w-96 *:text-white!"),
     children: Example,
   },
 };

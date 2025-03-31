@@ -32,11 +32,11 @@ const triggerVariant = {
 };
 
 export const getMenubarClasses = cva(
-  "flex h-9 items-center space-x-1 rounded-md border bg-base-100 p-1 shadow-sm"
+  "flex h-9 items-center space-x-1 rounded-md border bg-base-100 p-1 shadow-xs"
 );
 
 export const getMenubarTriggerClasses = cva(
-  "flex cursor-default select-none items-center rounded-sm px-3 py-1 text-sm font-medium outline-none",
+  "flex cursor-default select-none items-center rounded-xs px-3 py-1 text-sm font-medium outline-hidden",
   {
     variants: {
       variant: triggerVariant,
@@ -45,7 +45,7 @@ export const getMenubarTriggerClasses = cva(
 );
 
 export const getMenubarSubTriggerClasses = cva(
-  "flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none",
+  "flex cursor-default select-none items-center rounded-xs px-2 py-1.5 text-sm outline-hidden",
   {
     variants: {
       variant: triggerVariant,
@@ -65,7 +65,7 @@ export const getMenubarSubContentClasses = cva(
 );
 
 export const getMenubarItemClasses = cva(
-  "relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+  "relative flex cursor-default select-none items-center rounded-xs px-2 py-1.5 text-sm outline-hidden data-disabled:pointer-events-none data-disabled:opacity-50",
   {
     variants: {
       variant: itemVariant,
@@ -77,7 +77,7 @@ export const getMenubarItemClasses = cva(
 );
 
 export const getMenubarCheckboxItemClasses = cva(
-  "relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+  "relative flex cursor-default select-none items-center rounded-xs py-1.5 pl-8 pr-2 text-sm outline-hidden data-disabled:pointer-events-none data-disabled:opacity-50",
   {
     variants: {
       variant: itemVariant,
@@ -86,7 +86,7 @@ export const getMenubarCheckboxItemClasses = cva(
 );
 
 export const getMenubarRadioItemClasses = cva(
-  "relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+  "relative flex cursor-default select-none items-center rounded-xs py-1.5 pl-8 pr-2 text-sm outline-hidden data-disabled:pointer-events-none data-disabled:opacity-50",
   {
     variants: {
       variant: itemVariant,

@@ -72,7 +72,7 @@ export const getDatetimeGridClasses = cva(
 export const getDatetimeSeparatorClasses = cva("text-xs text-gray-400");
 
 export const getDatetimeInputClasses = cva(
-  "min-w-8 p-1 inline tabular-nums h-fit border-none outline-none select-none content-box caret-transparent rounded-sm min-w-8 text-center focus:outline-none focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-none",
+  "min-w-8 p-1 inline tabular-nums h-fit border-none outline-hidden select-none content-box caret-transparent rounded-xs min-w-8 text-center focus:outline-hidden focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-hidden",
   {
     variants: {
       size: {

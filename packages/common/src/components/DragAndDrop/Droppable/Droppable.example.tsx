@@ -40,7 +40,7 @@ export const DroppableExample = ({
   const item = (
     <Draggable
       id="my-draggable"
-      className="w-fit border border-base-content rounded-md p-2 flex items-center gap-2 data-[draggable-active]:opacity-0"
+      className="w-fit border border-base-content rounded-md p-2 flex items-center gap-2 data-draggable-active:opacity-0"
     >
       Go ahead, drag me.
     </Draggable>
@@ -65,7 +65,7 @@ export const DroppableExample = ({
               key={id}
               id={id}
               isDragging={isDragging}
-              className="relative p-6 border border-base-300 rounded-md w-72 h-72 bg-base-200 box-border data-[draggable-active]:opacity-80 data-[draggable-over]:opacity-100 transition-opacity"
+              className="relative p-6 border border-base-300 rounded-md w-72 h-72 bg-base-200 box-border data-draggable-active:opacity-80 data-draggable-over:opacity-100 transition-opacity"
             >
               <div className="absolute bottom-6">Container {id}</div>
               {parentContainerId === id ? item : null}
