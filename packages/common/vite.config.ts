@@ -1,4 +1,5 @@
 import { resolve } from "path";
+import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
@@ -28,6 +29,7 @@ export default defineConfig({
       declarationOnly: true,
       exclude: ["**/*.(test|stories).{js,ts,jsx,tsx,mdx}", "node_modules/**"],
     }),
+    tailwindcss(),
     react(),
   ],
 });
