@@ -6,11 +6,11 @@ exports[`Phone > should input phone number 1`] = `
     class="join"
   >
     <button
-      aria-controls="radix-:r1:"
+      aria-controls="radix-«r1»"
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Select country code"
-      class="btn [&:disabled]:text-opacity-50 min-h-fit h-10 join-item justify-between px-2"
+      class="btn disabled:text-opacity-50 min-h-fit h-10 join-item justify-between px-2"
       data-state="closed"
       role="combobox"
       type="button"
@@ -28,7 +28,7 @@ exports[`Phone > should input phone number 1`] = `
       />
     </button>
     <input
-      class="input rounded-md min-h-fit h-10 input join-item input-bordered w-full !rounded-l-none !pl-2 transition-all duration-100"
+      class="input rounded-md min-h-fit h-10 input join-item input-bordered w-full rounded-l-none! pl-2! transition-all duration-100"
       inputmode="numeric"
       name="mobile"
       pattern="^\\+\\d{1,4}\\s\\d{6,}$"
@@ -46,11 +46,11 @@ exports[`Phone > should render a phone input 1`] = `
     class="join"
   >
     <button
-      aria-controls="radix-:r0:"
+      aria-controls="radix-«r0»"
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Select country code"
-      class="btn [&:disabled]:text-opacity-50 min-h-fit h-10 join-item justify-between px-2"
+      class="btn disabled:text-opacity-50 min-h-fit h-10 join-item justify-between px-2"
       data-state="closed"
       role="combobox"
       type="button"
@@ -68,7 +68,7 @@ exports[`Phone > should render a phone input 1`] = `
       />
     </button>
     <input
-      class="input rounded-md min-h-fit h-10 input join-item input-bordered w-full !rounded-l-none !pl-2 transition-all duration-100"
+      class="input rounded-md min-h-fit h-10 input join-item input-bordered w-full rounded-l-none! pl-2! transition-all duration-100"
       inputmode="numeric"
       name="mobile"
       pattern="^\\+\\d{1,4}\\s\\d{6,}$"
@@ -86,11 +86,11 @@ exports[`Phone > should select country code 1`] = `
     class="join"
   >
     <button
-      aria-controls="radix-:rdq:"
+      aria-controls="radix-«rdq»"
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Select country code"
-      class="btn [&:disabled]:text-opacity-50 min-h-fit h-10 join-item justify-between px-2"
+      class="btn disabled:text-opacity-50 min-h-fit h-10 join-item justify-between px-2"
       data-state="closed"
       role="combobox"
       type="button"
@@ -108,7 +108,7 @@ exports[`Phone > should select country code 1`] = `
       />
     </button>
     <input
-      class="input rounded-md min-h-fit h-10 input join-item input-bordered w-full !rounded-l-none !pl-2 transition-all duration-100"
+      class="input rounded-md min-h-fit h-10 input join-item input-bordered w-full rounded-l-none! pl-2! transition-all duration-100"
       inputmode="numeric"
       name="mobile"
       pattern="^\\+\\d{1,4}\\s\\d{6,}$"
@@ -126,11 +126,11 @@ exports[`Phone > should select country code by searching country abbreviation 1`
     class="join"
   >
     <button
-      aria-controls="radix-:r6u:"
+      aria-controls="radix-«r6u»"
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Select country code"
-      class="btn [&:disabled]:text-opacity-50 min-h-fit h-10 join-item justify-between px-2"
+      class="btn disabled:text-opacity-50 min-h-fit h-10 join-item justify-between px-2"
       data-state="closed"
       role="combobox"
       type="button"
@@ -148,7 +148,7 @@ exports[`Phone > should select country code by searching country abbreviation 1`
       />
     </button>
     <input
-      class="input rounded-md min-h-fit h-10 input join-item input-bordered w-full !rounded-l-none !pl-2 transition-all duration-100"
+      class="input rounded-md min-h-fit h-10 input join-item input-bordered w-full rounded-l-none! pl-2! transition-all duration-100"
       inputmode="numeric"
       name="mobile"
       pattern="^\\+\\d{1,4}\\s\\d{6,}$"
@@ -166,11 +166,11 @@ exports[`Phone > should select country code by searching country name 1`] = `
     class="join"
   >
     <button
-      aria-controls="radix-:r2:"
+      aria-controls="radix-«r2»"
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Select country code"
-      class="btn [&:disabled]:text-opacity-50 min-h-fit h-10 join-item justify-between px-2"
+      class="btn disabled:text-opacity-50 min-h-fit h-10 join-item justify-between px-2"
       data-state="closed"
       role="combobox"
       type="button"
@@ -188,7 +188,7 @@ exports[`Phone > should select country code by searching country name 1`] = `
       />
     </button>
     <input
-      class="input rounded-md min-h-fit h-10 input join-item input-bordered w-full !rounded-l-none !pl-2 transition-all duration-100"
+      class="input rounded-md min-h-fit h-10 input join-item input-bordered w-full rounded-l-none! pl-2! transition-all duration-100"
       inputmode="numeric"
       name="mobile"
       pattern="^\\+\\d{1,4}\\s\\d{6,}$"

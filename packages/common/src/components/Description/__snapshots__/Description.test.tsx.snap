@@ -9,7 +9,7 @@ exports[`Description > description list with a single term 1`] = `
       Name
     </dt>
     <dd
-      class="text-base [&:not(:last-child)]:mb-1"
+      class="text-base not-last:mb-1"
     >
       Evelyn Gilts
     </dd>
@@ -26,7 +26,7 @@ exports[`Description > description list with multiple terms 1`] = `
       Name
     </dt>
     <dd
-      class="text-base [&:not(:last-child)]:mb-1"
+      class="text-base not-last:mb-1"
     >
       Evelyn Gilts
     </dd>
@@ -36,7 +36,7 @@ exports[`Description > description list with multiple terms 1`] = `
       Age
     </dt>
     <dd
-      class="text-base [&:not(:last-child)]:mb-1"
+      class="text-base not-last:mb-1"
     >
       23
     </dd>
@@ -46,7 +46,7 @@ exports[`Description > description list with multiple terms 1`] = `
       Profession
     </dt>
     <dd
-      class="text-base [&:not(:last-child)]:mb-1"
+      class="text-base not-last:mb-1"
     >
       AI Specialist
     </dd>

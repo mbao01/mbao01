@@ -9,7 +9,7 @@ exports[`OtpInput > renders with the correct initial state 1`] = `
     <input
       aria-label="Please enter OTP character 1"
       autocomplete="off"
-      class="input rounded-md transition-all duration-100 min-h-fit h-10 !w-12 !appearance-none selection:bg-base text-base-content"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10 w-12! appearance-none! selection:bg-base text-base-content"
       maxlength="1"
       style="width: 1em; text-align: center;"
       type="text"
@@ -18,7 +18,7 @@ exports[`OtpInput > renders with the correct initial state 1`] = `
     <input
       aria-label="Please enter OTP character 2"
       autocomplete="off"
-      class="input rounded-md transition-all duration-100 min-h-fit h-10 !w-12 !appearance-none selection:bg-base text-base-content"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10 w-12! appearance-none! selection:bg-base text-base-content"
       maxlength="1"
       style="width: 1em; text-align: center;"
       type="text"
@@ -27,7 +27,7 @@ exports[`OtpInput > renders with the correct initial state 1`] = `
     <input
       aria-label="Please enter OTP character 3"
       autocomplete="off"
-      class="input rounded-md transition-all duration-100 min-h-fit h-10 !w-12 !appearance-none selection:bg-base text-base-content"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10 w-12! appearance-none! selection:bg-base text-base-content"
       maxlength="1"
       style="width: 1em; text-align: center;"
       type="text"
@@ -36,7 +36,7 @@ exports[`OtpInput > renders with the correct initial state 1`] = `
     <input
       aria-label="Please enter OTP character 4"
       autocomplete="off"
-      class="input rounded-md transition-all duration-100 min-h-fit h-10 !w-12 !appearance-none selection:bg-base text-base-content"
+      class="input rounded-md transition-all duration-100 min-h-fit h-10 w-12! appearance-none! selection:bg-base text-base-content"
       maxlength="1"
       style="width: 1em; text-align: center;"
       type="text"

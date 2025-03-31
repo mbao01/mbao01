@@ -3,17 +3,17 @@
 exports[`Chart > renders a bar chart 1`] = `
 <DocumentFragment>
   <div
-    class="flex aspect-video justify-center text-xs [&_.recharts-cartesian-axis-tick_text]:fill-base-content [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-base-content/20 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-base-content/20 [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-none [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-base-content/20 [&_.recharts-radial-bar-background-sector]:fill-base-200 [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-base-200 [&_.recharts-reference-line_[stroke='#ccc']]:stroke-base-content/20 [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-none [&_.recharts-surface]:outline-none h-[250px] w-full"
-    data-chart="chart-r0"
+    class="flex aspect-video justify-center text-xs [&_.recharts-cartesian-axis-tick_text]:fill-base-content [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-base-content/20 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-base-content/20 [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-base-content/20 [&_.recharts-radial-bar-background-sector]:fill-base-200 [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-base-200 [&_.recharts-reference-line_[stroke='#ccc']]:stroke-base-content/20 [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden h-[250px] w-full"
+    data-chart="chart-«r0»"
   >
     <style>
       
- [data-chart=chart-r0] {
+ [data-chart=chart-«r0»] {
   --color-desktop: #2563eb;
 }
 
 
-.dark [data-chart=chart-r0] {
+.dark [data-chart=chart-«r0»] {
   --color-desktop: #2563eb;
 }
 

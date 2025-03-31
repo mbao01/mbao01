@@ -6,9 +6,9 @@ exports[`Collapsible > renders collapsible trigger with hidden content 1`] = `
     data-state="closed"
   >
     <button
-      aria-controls="radix-:r0:"
+      aria-controls="radix-«r0»"
       aria-expanded="false"
-      class="btn [&:disabled]:text-opacity-50 btn-ghost btn-sm"
+      class="btn disabled:text-opacity-50 btn-ghost btn-sm"
       data-state="closed"
       type="button"
     >
@@ -17,7 +17,7 @@ exports[`Collapsible > renders collapsible trigger with hidden content 1`] = `
     <div
       data-state="closed"
       hidden=""
-      id="radix-:r0:"
+      id="radix-«r0»"
       style=""
     />
   </div>
@@ -30,9 +30,9 @@ exports[`Collapsible > should expand and collapse content 1`] = `
     data-state="open"
   >
     <button
-      aria-controls="radix-:r1:"
+      aria-controls="radix-«r1»"
       aria-expanded="true"
-      class="btn [&:disabled]:text-opacity-50 btn-ghost btn-sm"
+      class="btn disabled:text-opacity-50 btn-ghost btn-sm"
       data-state="open"
       type="button"
     >
@@ -40,7 +40,7 @@ exports[`Collapsible > should expand and collapse content 1`] = `
     </button>
     <div
       data-state="open"
-      id="radix-:r1:"
+      id="radix-«r1»"
       style=""
     >
       <div>

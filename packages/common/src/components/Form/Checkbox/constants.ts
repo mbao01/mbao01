@@ -26,7 +26,7 @@ export const getCheckboxClasses = cva(
       },
       rounded: {
         xs: "rounded-xs",
-        sm: "rounded-xs",
+        sm: "rounded-sm",
         md: "rounded-md",
         lg: "rounded-lg",
       },

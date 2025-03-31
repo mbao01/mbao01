@@ -4,7 +4,7 @@ exports[`Toggle > renders a toggle 1`] = `
 <DocumentFragment>
   <button
     aria-pressed="false"
-    class="btn [&:disabled]:text-opacity-50 min-h-fit h-10 transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost data-[state=on]:btn-default"
+    class="btn disabled:text-opacity-50 min-h-fit h-10 transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost data-[state=on]:btn-default"
     data-state="off"
     type="button"
   >
@@ -17,7 +17,7 @@ exports[`Toggle > should toggle button state 1`] = `
 <DocumentFragment>
   <button
     aria-pressed="true"
-    class="btn [&:disabled]:text-opacity-50 min-h-fit h-10 transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost data-[state=on]:btn-default"
+    class="btn disabled:text-opacity-50 min-h-fit h-10 transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost data-[state=on]:btn-default"
     data-state="on"
     type="button"
   >

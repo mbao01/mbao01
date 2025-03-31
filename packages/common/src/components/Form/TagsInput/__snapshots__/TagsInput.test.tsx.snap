@@ -7,7 +7,7 @@ exports[`TagsInput > and by using the keyboard the user can remove a tag 1`] = `
   >
     <span
       aria-disabled="false"
-      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none ring-1 ring-inset opacity-80"
+      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden ring-1 ring-inset opacity-80"
       data-active="true"
       tabindex="0"
     >
@@ -65,7 +65,7 @@ exports[`TagsInput > and the user can only enter a certain minimum or maximum nu
   >
     <span
       aria-disabled="true"
-      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none"
+      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
       data-active="false"
       tabindex="-1"
     >
@@ -139,7 +139,7 @@ exports[`TagsInput > and the user enters a tag 1`] = `
   >
     <span
       aria-disabled="false"
-      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none"
+      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
       data-active="false"
       tabindex="-1"
     >
@@ -182,7 +182,7 @@ exports[`TagsInput > and the user enters a tag 1`] = `
     </span>
     <span
       aria-disabled="false"
-      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none"
+      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
       data-active="false"
       tabindex="-1"
     >
@@ -465,7 +465,7 @@ exports[`TagsInput > renders some default tags 1`] = `
   >
     <span
       aria-disabled="false"
-      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none"
+      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
       data-active="false"
       tabindex="-1"
     >
@@ -508,7 +508,7 @@ exports[`TagsInput > renders some default tags 1`] = `
     </span>
     <span
       aria-disabled="false"
-      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none"
+      class="badge badge-ghost text-xs rounded-md relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
       data-active="false"
       tabindex="-1"
     >
