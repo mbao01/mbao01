@@ -33,4 +33,8 @@ npm install @mbao01/next
 import "@mbao01/common/styles";
 ```
 
+```css
+@import '@mbao01/common/styles';
+```
+
 You can also import styles directly from `@mbao01/common/styles`. Use this in-place of `tailwind.css` if you wish.

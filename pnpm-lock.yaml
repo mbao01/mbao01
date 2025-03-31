@@ -170,9 +170,6 @@ importers:
       timescape:
         specifier: ^0.7.1
         version: 0.7.1(react-dom@19.1.0)(react@19.1.0)
-      tw-animate-css:
-        specifier: ^1.2.5
-        version: 1.2.5
       universal-cookie:
         specifier: ^8.0.1
         version: 8.0.1
@@ -16443,10 +16440,6 @@ packages:
   /turbo-stream@2.4.0:
     resolution: {integrity: sha512-FHncC10WpBd2eOmGwpmQsWLDoK4cqsA/UT/GqNoaKOQnT8uzhtCbg3EoUDMvqpOSAI0S26mr0rkjzbOO6S3v1g==}
     dev: true
-
-  /tw-animate-css@1.2.5:
-    resolution: {integrity: sha512-ABzjfgVo+fDbhRREGL4KQZUqqdPgvc5zVrLyeW9/6mVqvaDepXc7EvedA+pYmMnIOsUAQMwcWzNvom26J2qYvQ==}
-    dev: false
 
   /type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
