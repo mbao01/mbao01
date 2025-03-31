@@ -1,4 +1,7 @@
 @import 'tailwindcss';
+@plugin "daisyui";
+@plugin 'tw-animate-css';
+@plugin "@tailwindcss/typography";
 
 @theme {
   --animate-accordion-down: accordion-down 0.2s ease-out;
