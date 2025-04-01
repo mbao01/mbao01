@@ -13,8 +13,8 @@ export const getAvatarClasses = cva("avatar", {
       64: "w-64 h-64",
     },
     status: {
-      online: "online",
-      offline: "offline",
+      online: "avatar-online",
+      offline: "avatar-offline",
     },
   },
 });

@@ -18,6 +18,12 @@ export const getButtonClasses = cva("btn disabled:text-opacity-50", {
     outline: {
       true: "btn-outline",
     },
+    rounded: {
+      xs: "rounded-xs",
+      sm: "rounded-sm",
+      md: "rounded-md",
+      lg: "rounded-lg",
+    },
     wide: {
       true: "btn-wide",
     },
@@ -35,6 +41,10 @@ export const getButtonClasses = cva("btn disabled:text-opacity-50", {
     {
       size: undefined,
       className: "min-h-fit h-10",
+    },
+    {
+      rounded: undefined,
+      className: "rounded-md",
     },
     {
       variant: undefined,

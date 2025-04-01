@@ -2,149 +2,149 @@
 
 exports[`TextField > handles user input correctly 1`] = `
 <DocumentFragment>
-  <label
-    class="label form-control w-full"
+  <fieldset
+    class="fieldset"
   >
-    <div
-      class="label"
+    <label
+      class="label flex justify-between"
+      for="username"
     >
-      <span
-        class="label-text"
-      >
+      <span>
         Username
       </span>
-    </div>
+    </label>
     <input
       aria-describedby="username-information"
       class="input rounded-md transition-all duration-100 min-h-fit h-10"
+      id="username"
       name="username"
       value="John Doe"
     />
-  </label>
+  </fieldset>
 </DocumentFragment>
 `;
 
 exports[`TextField > has a label 1`] = `
 <DocumentFragment>
-  <label
-    class="label form-control w-full"
+  <fieldset
+    class="fieldset"
   >
-    <div
-      class="label"
+    <label
+      class="label flex justify-between"
+      for="username"
     >
-      <span
-        class="label-text"
-      >
+      <span>
         Username
       </span>
-    </div>
+    </label>
     <input
       aria-describedby="username-information"
       class="input rounded-md transition-all duration-100 min-h-fit h-10"
+      id="username"
       name="username"
     />
-  </label>
+  </fieldset>
 </DocumentFragment>
 `;
 
 exports[`TextField > has an error text 1`] = `
 <DocumentFragment>
-  <label
-    class="label form-control w-full"
+  <fieldset
+    class="fieldset"
   >
-    <div
-      class="label"
+    <label
+      class="label flex justify-between"
+      for="username"
     >
-      <span
-        class="label-text"
-      >
+      <span>
         Username
       </span>
-    </div>
+    </label>
     <input
       aria-describedby="username-information"
       aria-invalid="true"
       class="input rounded-md transition-all duration-100 min-h-fit h-10"
+      id="username"
       name="username"
     />
-    <div
-      class="label"
+    <label
+      class="label flex flex-col items-start"
+      for="username"
+      id="username-information"
     >
       <span
-        class="label-text-alt text-red-500"
-        id="username-information"
+        class="text-red-500"
       >
         This is an error text
       </span>
-    </div>
-  </label>
+    </label>
+  </fieldset>
 </DocumentFragment>
 `;
 
 exports[`TextField > has an info text 1`] = `
 <DocumentFragment>
-  <label
-    class="label form-control w-full"
+  <fieldset
+    class="fieldset"
   >
-    <div
-      class="label"
+    <label
+      class="label flex justify-between"
+      for="username"
     >
-      <span
-        class="label-text"
-      >
+      <span>
         Username
       </span>
-      <span
-        class="label-text-alt"
-      >
+      <span>
         This is an info text
       </span>
-    </div>
+    </label>
     <input
       aria-describedby="username-information"
       class="input rounded-md transition-all duration-100 min-h-fit h-10"
+      id="username"
       name="username"
     />
-  </label>
+  </fieldset>
 </DocumentFragment>
 `;
 
 exports[`TextField > prevent user input when disabled 1`] = `
 <DocumentFragment>
-  <label
-    class="label form-control w-full"
+  <fieldset
+    class="fieldset"
   >
-    <div
-      class="label"
+    <label
+      class="label flex justify-between"
+      for="username"
     >
-      <span
-        class="label-text"
-      >
+      <span>
         Username
       </span>
-    </div>
+    </label>
     <input
       aria-describedby="username-information"
       class="input rounded-md transition-all duration-100 min-h-fit h-10"
       disabled=""
+      id="username"
       name="username"
       value="John Doe"
     />
-  </label>
+  </fieldset>
 </DocumentFragment>
 `;
 
 exports[`TextField > renders with the correct initial state 1`] = `
 <DocumentFragment>
-  <label
-    class="label form-control w-full"
+  <fieldset
+    class="fieldset"
   >
     <input
       aria-describedby="username-information"
       class="input rounded-md transition-all duration-100 min-h-fit h-10"
+      id="username"
       name="username"
       value="John Doe"
     />
-  </label>
+  </fieldset>
 </DocumentFragment>
 `;

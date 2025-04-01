@@ -92,7 +92,7 @@ describe("Card", () => {
 
   it("renders a card with border", () => {
     const { asFragment } = render(
-      <Card bordered>
+      <Card border="solid">
         <Card.Body>Real cool shoe</Card.Body>
       </Card>
     );
@@ -102,7 +102,7 @@ describe("Card", () => {
 
   it("renders a card with overlay", () => {
     const { asFragment } = render(
-      <Card bordered>
+      <Card border="dash">
         <Card.Body>Real cool shoe</Card.Body>
         <Card.Image src="image.jpg" alt="my image" />
       </Card>
@@ -122,13 +122,21 @@ describe("Card", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("renders a compact card", () => {
+  it.each([
+    ["tiny", "xs"],
+    ["small", "sm"],
+    ["medium", "md"],
+    ["large", "lg"],
+    ["extra large", "xl"],
+  ] as const)("renders a %s (%s) card", (desc, size) => {
+    const description = `Real cool ${desc} shoe`;
     const { asFragment } = render(
-      <Card compact>
-        <Card.Body>Real cool shoe</Card.Body>
+      <Card size={size}>
+        <Card.Body>{description}</Card.Body>
       </Card>
     );
 
+    expect(screen.getByText(description)).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 });

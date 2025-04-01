@@ -3,7 +3,7 @@
 exports[`Avatar > has 'offline' status 1`] = `
 <DocumentFragment>
   <span
-    class="avatar offline"
+    class="avatar avatar-offline"
   >
     <span
       class="flex items-center justify-center w-full"
@@ -17,7 +17,7 @@ exports[`Avatar > has 'offline' status 1`] = `
 exports[`Avatar > has 'online' status 1`] = `
 <DocumentFragment>
   <span
-    class="avatar online"
+    class="avatar avatar-online"
   >
     <span
       class="flex items-center justify-center w-full"

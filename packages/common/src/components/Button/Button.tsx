@@ -6,13 +6,19 @@ import { getButtonClasses } from "./constants";
 import { type ButtonProps } from "./types";
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ asChild, className, outline, children, isLoading, variant, size, wide, ...props }, ref) => {
+  (
+    { asChild, className, outline, children, isLoading, variant, size, wide, rounded, ...props },
+    ref
+  ) => {
     const Comp = asChild ? Slot : "button";
 
     return (
       <Comp
         ref={ref}
-        className={cn(getButtonClasses({ size, wide, outline, variant, isLoading }), className)}
+        className={cn(
+          getButtonClasses({ size, wide, outline, variant, rounded, isLoading }),
+          className
+        )}
         {...props}
       >
         <Slottable>{children}</Slottable>

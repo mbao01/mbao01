@@ -64,7 +64,7 @@ export const OverlayImageOnCard: Story = {
 
 export const CompactCard: Story = {
   args: {
-    compact: true,
+    size: "sm",
     className: c("w-96"),
     children: Example,
   },
@@ -72,7 +72,7 @@ export const CompactCard: Story = {
 
 export const BorderedCard: Story = {
   args: {
-    bordered: true,
+    border: "solid",
     className: c("w-96"),
     children: Example,
   },
@@ -82,7 +82,7 @@ export const HorizontalCard: Story = {
   args: {
     horizontal: true,
     className: c("w-1/2"),
-    bordered: true,
+    border: "dash",
     children: Example,
   },
 };

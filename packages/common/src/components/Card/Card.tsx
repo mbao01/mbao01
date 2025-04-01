@@ -12,9 +12,9 @@ import type {
 import { cn } from "../../utilities";
 import { getCardClasses } from "./constants";
 
-const Card = ({ compact, bordered, horizontal, overlay, className, ...props }: CardProps) => (
+const Card = ({ size, border, horizontal, overlay, className, ...props }: CardProps) => (
   <div
-    className={cn(getCardClasses({ bordered, compact, horizontal, overlay }), className)}
+    className={cn(getCardClasses({ border, size, horizontal, overlay }), className)}
     {...props}
   />
 );

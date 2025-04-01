@@ -111,7 +111,7 @@ export const getTimePickerScrollAreaClasses = cva(
 );
 
 export const getNaturalLanguageInputClasses = cva(
-  "flex-1 border-none rounded-sm bg-transparent outline-hidden ring-0 focus:outline-hidden focus:ring-0 focus-within:outline-hidden focus-within:ring-0 disabled:cursor-not-allowed disabled:opacity-50",
+  "flex-1 border-none bg-transparent outline-hidden ring-0 focus:outline-hidden focus:ring-0 focus-within:outline-hidden focus-within:ring-0 disabled:cursor-not-allowed disabled:opacity-50",
   {
     variants: {
       size: {

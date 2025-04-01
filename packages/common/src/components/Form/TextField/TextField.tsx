@@ -1,5 +1,6 @@
 import React from "react";
-import { FormControl } from "../components/FormControl/FormControl";
+import { Fieldset } from "../components/Fieldset";
+import { Label } from "../components/Label";
 import { Input } from "../Input";
 import { type TextFieldProps } from "./types";
 
@@ -8,12 +9,12 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
     const feedbackId = name ? `${name}-information` : undefined;
 
     return (
-      <FormControl as="label" htmlFor={id}>
+      <Fieldset>
         {Boolean(label ?? info) && (
-          <div className="label">
-            <span className="label-text">{label}</span>
-            {info && <span className="label-text-alt">{info}</span>}
-          </div>
+          <Label className="flex justify-between" htmlFor={id}>
+            <span>{label}</span>
+            {info && <span>{info}</span>}
+          </Label>
         )}
         <Input
           id={id}
@@ -24,13 +25,13 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
           {...props}
         />
         {Boolean(error) && (
-          <div className="label">
-            <span className="label-text-alt text-red-500" id={feedbackId}>
-              {Array.isArray(error) ? error.join(", ") : error}
-            </span>
-          </div>
+          <Label className="flex flex-col items-start" htmlFor={id} id={feedbackId}>
+            {(Array.isArray(error) ? error : [error]).map((e) => (
+              <span className="text-red-500">{e}</span>
+            ))}
+          </Label>
         )}
-      </FormControl>
+      </Fieldset>
     );
   }
 );

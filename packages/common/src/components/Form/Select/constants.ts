@@ -15,10 +15,8 @@ export const getSelectTriggerClasses = cva(
         error: "select-error",
       },
       outline: {
-        true: "select-bordered border border-input",
-      },
-      wide: {
-        true: "w-full",
+        true: "border border-input",
+        false: "select-ghost",
       },
       size: {
         xs: "select-xs",
@@ -31,6 +29,10 @@ export const getSelectTriggerClasses = cva(
       {
         size: undefined,
         className: "min-h-fit h-10",
+      },
+      {
+        outline: undefined,
+        className: "select-ghost",
       },
       {
         variant: undefined,

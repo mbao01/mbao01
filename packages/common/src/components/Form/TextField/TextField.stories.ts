@@ -49,6 +49,30 @@ export const TextFieldWithLabel: Story = {
   },
 };
 
+export const TextFieldWithInfo: Story = {
+  args: {
+    id: "first-name",
+    label: "First name",
+    info: "Required",
+  },
+};
+
+export const TextFieldWithError: Story = {
+  args: {
+    id: "first-name",
+    label: "First name",
+    error: "Something went wrong!",
+  },
+};
+
+export const TextFieldWithErrors: Story = {
+  args: {
+    id: "first-name",
+    label: "First name",
+    error: ["First name is required", "Must be greater than 3 characters", "Something went wrong!"],
+  },
+};
+
 export const DisabledTextField: Story = {
   args: {
     id: "last-name",
