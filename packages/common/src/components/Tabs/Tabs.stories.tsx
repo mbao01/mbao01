@@ -49,7 +49,7 @@ export const Example: Story = {
           <Tabs.Trigger value="password">Password</Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content value="account">
-          <Card bordered>
+          <Card border="solid">
             <Card.Header>
               <Card.Title>Account</Card.Title>
               <Card.Description>
@@ -72,7 +72,7 @@ export const Example: Story = {
           </Card>
         </Tabs.Content>
         <Tabs.Content value="password">
-          <Card bordered>
+          <Card border="dash">
             <Card.Header>
               <Card.Title>Password</Card.Title>
               <Card.Description>

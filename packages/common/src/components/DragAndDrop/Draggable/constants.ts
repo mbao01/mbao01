@@ -25,7 +25,7 @@ export const DROP_ANIMATION_CONFIG: DropAnimation = {
 };
 
 export const getDraggableClasses = cva(
-  "translate-x-[--translate-x] translate-y-[--translate-y] translate-z-0",
+  "translate-x-(--translate-x) translate-y-(--translate-y) translate-z-0",
   {
     variants: {
       isDragging: {

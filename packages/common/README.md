@@ -17,13 +17,5 @@ npm install @mbao01/common
 3. Configure tailwind
 
 ```typescript
-export default {
-  content: [
-    "node_modules/@mbao01/common/src/**/*", // -> ensure to add this to allow tailwind to scan the library for classes
-    ...
-  ],
-  "plugins": [
-    ...require("@mbao01/common/plugin"), // -> import the library plugin
-  ]
-}
+import "@mbao01/common/styles";
 ```

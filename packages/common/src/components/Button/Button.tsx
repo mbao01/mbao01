@@ -6,13 +6,32 @@ import { getButtonClasses } from "./constants";
 import { type ButtonProps } from "./types";
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ asChild, className, outline, children, isLoading, variant, size, wide, ...props }, ref) => {
+  (
+    {
+      asChild,
+      className,
+      outline,
+      children,
+      isLoading,
+      variant,
+      size,
+      wide,
+      rounded,
+      disabled,
+      ...props
+    },
+    ref
+  ) => {
     const Comp = asChild ? Slot : "button";
 
     return (
       <Comp
         ref={ref}
-        className={cn(getButtonClasses({ size, wide, outline, variant, isLoading }), className)}
+        disabled={disabled}
+        className={cn(
+          getButtonClasses({ size, wide, outline, variant, rounded, disabled, isLoading }),
+          className
+        )}
         {...props}
       >
         <Slottable>{children}</Slottable>
@@ -21,7 +40,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-[inherit]"
             data-testid="loading"
           >
-            <Loading />
+            <Loading
+              intent={!variant || variant === "link" || variant === "ghost" ? "default" : variant}
+            />
           </span>
         ) : null}
       </Comp>

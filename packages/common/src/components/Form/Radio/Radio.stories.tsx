@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { useEffect, useRef } from "react";
-import { FormControl } from "../components/FormControl";
-import { Label } from "../components/Label";
+import { Text } from "../../Text";
+import { Fieldset } from "../components/Fieldset";
 import { Radio } from "./Radio";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -65,10 +65,12 @@ export const IntermediateRadio: Story = {
 export const LabeledRadio: Story = {
   render: (args) => {
     return (
-      <FormControl as="div" className="flex-row items-center">
-        <Radio id="terms" {...args} />
-        <Label htmlFor="terms">Male</Label>
-      </FormControl>
+      <Fieldset>
+        <Fieldset.Label htmlFor="term">
+          <Radio id="term" name="term" {...args} />
+          Male
+        </Fieldset.Label>
+      </Fieldset>
     );
   },
 };
@@ -77,14 +79,18 @@ export const RadioGroup: Story = {
   render: (args) => {
     return (
       <div role="radiogroup">
-        <FormControl as="span" className="flex-row justify-start items-center gap-2">
-          <Radio id="gender-male" name="gender" {...args} />
-          <Label htmlFor="gender-male">Male</Label>
-        </FormControl>{" "}
-        <FormControl as="span" className="flex-row justify-start items-center gap-2">
-          <Radio id="gender-female" name="gender" {...args} />
-          <Label htmlFor="gender-female">Female</Label>
-        </FormControl>
+        <Fieldset>
+          <Fieldset.Label htmlFor="gender">
+            <Radio id="gender-male" name="gender" {...args} />
+            <Text size="base">Male</Text>
+          </Fieldset.Label>
+        </Fieldset>
+        <Fieldset>
+          <Fieldset.Label htmlFor="gender">
+            <Radio id="gender-male" name="gender" {...args} />
+            <Text size="base">Female</Text>
+          </Fieldset.Label>
+        </Fieldset>
       </div>
     );
   },

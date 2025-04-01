@@ -3,10 +3,10 @@
 exports[`MultipleDatesPicker > has a custom label 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-:r3:"
+    aria-controls="radix-«r3»"
     aria-expanded="false"
     aria-haspopup="dialog"
-    class="btn [&:disabled]:text-opacity-50 min-h-fit h-10 justify-start flex-nowrap font-normal"
+    class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
     data-state="closed"
     type="button"
   >
@@ -69,10 +69,10 @@ exports[`MultipleDatesPicker > has a custom label 1`] = `
 exports[`MultipleDatesPicker > is disabled 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-:r4:"
+    aria-controls="radix-«r4»"
     aria-expanded="false"
     aria-haspopup="dialog"
-    class="btn [&:disabled]:text-opacity-50 min-h-fit h-10 justify-start flex-nowrap font-normal"
+    class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
     data-state="closed"
     disabled=""
     type="button"
@@ -136,10 +136,10 @@ exports[`MultipleDatesPicker > is disabled 1`] = `
 exports[`MultipleDatesPicker > shows calendar with specific month 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-:r2:"
+    aria-controls="radix-«r2»"
     aria-expanded="true"
     aria-haspopup="dialog"
-    class="btn [&:disabled]:text-opacity-50 min-h-fit h-10 justify-start flex-nowrap font-normal"
+    class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
     data-state="open"
     type="button"
   >
@@ -202,10 +202,10 @@ exports[`MultipleDatesPicker > shows calendar with specific month 1`] = `
 exports[`MultipleDatesPicker > shows default/preselected dates 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-:r1:"
+    aria-controls="radix-«r1»"
     aria-expanded="true"
     aria-haspopup="dialog"
-    class="btn [&:disabled]:text-opacity-50 min-h-fit h-10 justify-start flex-nowrap"
+    class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap"
     data-state="open"
     type="button"
   >
@@ -268,10 +268,10 @@ exports[`MultipleDatesPicker > shows default/preselected dates 1`] = `
 exports[`MultipleDatesPicker > shows the current month 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-:r0:"
+    aria-controls="radix-«r0»"
     aria-expanded="true"
     aria-haspopup="dialog"
-    class="btn [&:disabled]:text-opacity-50 min-h-fit h-10 justify-start flex-nowrap font-normal"
+    class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
     data-state="open"
     type="button"
   >

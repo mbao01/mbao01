@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { fn } from "@storybook/test";
 import { DatetimePicker } from "./DatetimePicker";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -6,7 +7,7 @@ const meta = {
   component: DatetimePicker,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
-    layout: "centered",
+    layout: "padded",
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ["autodocs"],
@@ -19,11 +20,14 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
-  args: {},
+  args: {
+    onChange: fn(),
+  },
 };
 
 export const DateInput: Story = {
   args: {
+    onChange: fn(),
     date: new Date(2024, 1, 23),
     format: [["months", "days", "years"]],
     size: "xs",
@@ -33,6 +37,7 @@ export const DateInput: Story = {
 
 export const TimeInput: Story = {
   args: {
+    onChange: fn(),
     date: new Date(1727806014178),
     format: [["hours", "minutes", "am/pm"]],
   },
@@ -40,6 +45,7 @@ export const TimeInput: Story = {
 
 export const Time24HourInput: Story = {
   args: {
+    onChange: fn(),
     date: new Date(1727806014178),
     format: [["hours", "minutes"]],
     hour12: false,
@@ -48,6 +54,7 @@ export const Time24HourInput: Story = {
 
 export const TimeWithSecondsInput: Story = {
   args: {
+    onChange: fn(),
     date: new Date(1727806014178),
     format: [["hours", "minutes", "seconds", "am/pm"]],
     variant: "info",
@@ -56,6 +63,7 @@ export const TimeWithSecondsInput: Story = {
 
 export const TimeDateInput: Story = {
   args: {
+    onChange: fn(),
     date: new Date(1727806014178),
     format: [
       ["hours", "minutes", "am/pm"],
@@ -67,6 +75,7 @@ export const TimeDateInput: Story = {
 
 export const DisabledTimeOnlyInput: Story = {
   args: {
+    onChange: fn(),
     date: new Date(1727806014178),
     format: [["hours", "minutes", "am/pm"]],
     variant: "primary",
@@ -76,6 +85,7 @@ export const DisabledTimeOnlyInput: Story = {
 
 export const DisabledDateTimeInput: Story = {
   args: {
+    onChange: fn(),
     date: new Date(1727806014178),
     format: [
       ["months", "days", "years"],
@@ -87,6 +97,7 @@ export const DisabledDateTimeInput: Story = {
 
 export const DateTimeWithMinAndMaxInput: Story = {
   args: {
+    onChange: fn(),
     date: new Date(1727805500000),
     minDate: new Date(1727805000000),
     maxDate: new Date(1727806014178),

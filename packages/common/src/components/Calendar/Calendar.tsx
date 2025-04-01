@@ -21,20 +21,20 @@ export const Calendar = ({
         day: "h-9 w-9 text-center flex items-center justify-center text-sm p-0 relative focus-within:relative focus-within:z-20",
         day_button: cn(
           getButtonClasses({ variant: "ghost" }),
-          "h-8 w-8 p-0 font-normal group-has-[*]/today:bg-accent group-aria-[selected]/today:bg-primary group-[.day-in-range]/today:!bg-primary/50 group-has-[*]/today:text-accent-content group-has-[*]/today:rounded-full"
+          "h-8 w-8 p-0 font-normal group-has-[*]/today:bg-accent group-aria-[selected]/today:bg-primary group-[.day-in-range]/today:bg-primary/50! group-has-[*]/today:text-accent-content group-has-[*]/today:rounded-full"
         ),
-        disabled: "!opacity-30",
+        disabled: "opacity-30!",
         dropdown: "bg-transparent",
-        dropdown_root: "text-sm [&>[aria-hidden='true']]:hidden",
+        dropdown_root: "text-sm *:aria-hidden:hidden",
         dropdowns: "flex justify-center items-center",
         hidden: "hidden",
         button_previous: cn(
           getButtonClasses({ outline: true }),
-          "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 [&:disabled]:text-opacity-50"
+          "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 disabled:text-opacity-50"
         ),
         button_next: cn(
           getButtonClasses({ outline: true }),
-          "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 [&:disabled]:text-opacity-50"
+          "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 disabled:text-opacity-50"
         ),
         footer: "text-sm py-2",
         month: "space-y-4",
@@ -43,11 +43,11 @@ export const Calendar = ({
         months: "flex flex-col sm:flex-row space-y-4 sm:space-y-0 relative",
         nav: "absolute flex gap-2 items-center rtl:left-0 rtl:right-auto right-0 z-10",
         outside: "opacity-50",
-        range_end: "!opacity-100",
-        range_start: "!opacity-100",
-        range_middle: "day-in-range [&>*]:bg-primary/50 [&>*]:text-primary-content",
+        range_end: "opacity-100!",
+        range_start: "opacity-100!",
+        range_middle: "day-in-range *:bg-primary/50 *:text-primary-content",
         selected:
-          "[&>*]:bg-primary [&>*]:text-primary-content [&:disabled>*]:bg-primary [&:disabled>*]:text-primary-content [&:hover>*]:bg-primary [&:hover>*]:text-primary-content [&:focus>*]:bg-primary [&:focus>*]:text-primary-content",
+          "*:bg-primary *:text-primary-content [&:disabled>*]:bg-primary [&:disabled>*]:text-primary-content [&:hover>*]:bg-primary [&:hover>*]:text-primary-content [&:focus>*]:bg-primary [&:focus>*]:text-primary-content",
         today: "group/today [&:has(*)]:ring-0 ring-1 ring-accent ring-inset rounded-full",
         weekdays: "flex",
         weekday: "rounded-md w-9 font-normal text-[0.8rem]",

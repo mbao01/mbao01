@@ -13,8 +13,8 @@ export const getAvatarClasses = cva("avatar", {
       64: "w-64 h-64",
     },
     status: {
-      online: "online",
-      offline: "offline",
+      online: "avatar-online",
+      offline: "avatar-offline",
     },
   },
 });
@@ -34,14 +34,14 @@ const classesConfig = {
       warning: "bg-warning text-warning-content ring-warning",
     },
     shape: {
-      round: "rounded",
+      round: "rounded-sm",
       circle: "rounded-full",
       hexagon: "mask mask-hexagon",
       triangle: "mask mask-triangle",
       television: "mask mask-squircle",
     },
     ring: {
-      true: "ring ring-offset-base-100 ring-offset-2",
+      true: "ring-3 ring-offset-base-100 ring-offset-2",
     },
   },
 };

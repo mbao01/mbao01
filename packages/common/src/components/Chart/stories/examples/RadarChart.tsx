@@ -186,7 +186,7 @@ export const GridFilledRadarChartExample = (props: Partial<RadarChartProps>) => 
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadarChart {...props.radarChart}>
         <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
-        <PolarGrid className="fill-[--color-desktop] opacity-20" />
+        <PolarGrid className="fill-(--color-desktop) opacity-20" />
         <PolarAngleAxis dataKey="month" />
         <Radar dataKey="desktop" {...props.radar} />
       </RadarChart>
@@ -237,7 +237,7 @@ export const GridCircleFilledRadarChartExample = (props: Partial<RadarChartProps
     <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
       <RadarChart {...props.radarChart}>
         <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
-        <PolarGrid className="fill-[--color-desktop] opacity-20" gridType="circle" />
+        <PolarGrid className="fill-(--color-desktop) opacity-20" gridType="circle" />
         <PolarAngleAxis dataKey="month" />
         <Radar dataKey="desktop" {...props.radar} />
       </RadarChart>

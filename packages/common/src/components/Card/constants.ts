@@ -2,12 +2,16 @@ import { cva } from "../../libs";
 
 export const getCardClasses = cva("card", {
   variants: {
-    bordered: {
-      true: "card-bordered",
+    border: {
+      solid: "card-border",
+      dash: "card-dash",
     },
-    compact: {
-      true: "card-compact",
-      false: "card-normal",
+    size: {
+      xs: "card-xs",
+      sm: "card-sm",
+      md: "card-md",
+      lg: "card-lg",
+      xl: "card-xl",
     },
     horizontal: {
       true: "card-side",
@@ -15,8 +19,5 @@ export const getCardClasses = cva("card", {
     overlay: {
       true: "image-full",
     },
-  },
-  defaultVariants: {
-    compact: false,
   },
 });

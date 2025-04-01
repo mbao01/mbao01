@@ -3,10 +3,10 @@
 exports[`Drawer > renders a drawer 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-:r0:"
+    aria-controls="radix-«r0»"
     aria-expanded="true"
     aria-haspopup="dialog"
-    class="btn [&:disabled]:text-opacity-50 btn-outline min-h-fit h-10 border-neutral-content"
+    class="btn btn-outline min-h-fit h-10 rounded-md border-neutral-content"
     data-state="open"
     type="button"
   >

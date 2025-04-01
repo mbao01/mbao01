@@ -21,10 +21,10 @@ const Select = (props: React.ComponentPropsWithoutRef<typeof SelectPrimitive.Roo
 const SelectTrigger = React.forwardRef<
   React.ElementRef<typeof SelectPrimitive.Trigger>,
   SelectTriggerProps
->(({ className, children, size, wide, variant, outline, ...props }, ref) => (
+>(({ className, children, size, variant, outline, ...props }, ref) => (
   <SelectPrimitive.Trigger
     ref={ref}
-    className={cn(getSelectTriggerClasses({ size, wide, variant, outline }), className)}
+    className={cn(getSelectTriggerClasses({ size, variant, outline }), className)}
     {...props}
   >
     {children}

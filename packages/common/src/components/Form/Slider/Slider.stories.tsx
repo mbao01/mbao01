@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { FormControl } from "../components/FormControl";
-import { Label } from "../components/Label";
+import { Text } from "../../Text";
+import { Fieldset } from "../components/Fieldset";
 import { Slider } from "./Slider";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -54,12 +54,12 @@ export const DisabledSlider: Story = {
 export const LabeledSlider: Story = {
   render: (args) => {
     return (
-      <FormControl as="div" className="flex-row items-center">
-        <Slider id="terms" aria-labelledby="terms-label" {...args} />
-        <Label htmlFor="terms" id="terms-label">
-          Risk Level
-        </Label>
-      </FormControl>
+      <Fieldset>
+        <Fieldset.Label htmlFor="terms" id="terms-label">
+          <Slider id="terms" aria-labelledby="terms-label" {...args} />
+          <Text size="sm">Risk Level</Text>
+        </Fieldset.Label>
+      </Fieldset>
     );
   },
 };

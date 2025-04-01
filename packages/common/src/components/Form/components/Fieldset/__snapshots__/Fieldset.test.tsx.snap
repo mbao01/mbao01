@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Fieldset > can have a label and legend 1`] = `
+<DocumentFragment>
+  <fieldset
+    class="fieldset"
+  >
+    <legend
+      class="fieldset-legend"
+    >
+      <b>
+        Page title
+      </b>
+    </legend>
+    <label
+      class="label fieldset-label"
+      for="username"
+    >
+      Username
+    </label>
+    <input
+      class="input"
+      id="username"
+      name="username"
+    />
+    <p
+      class="fieldset-label"
+    >
+      You can edit username later on from settings
+    </p>
+  </fieldset>
+</DocumentFragment>
+`;

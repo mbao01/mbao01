@@ -14,7 +14,7 @@ export const getTextareaClasses = cva("textarea rounded-md transition-all durati
       warning: "textarea-warning",
     },
     outline: {
-      true: "textarea-bordered",
+      false: "textarea-ghost",
     },
     wide: {
       true: "w-full",
@@ -30,6 +30,11 @@ export const getTextareaClasses = cva("textarea rounded-md transition-all durati
     {
       size: undefined,
       className: "min-h-fit h-10",
+    },
+    {
+      variant: undefined,
+      outline: undefined,
+      className: "textarea-ghost",
     },
     {
       variant: undefined,

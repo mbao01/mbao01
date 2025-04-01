@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { useEffect, useRef } from "react";
-import { FormControl } from "../components/FormControl";
-import { Label } from "../components/Label";
+import { Text } from "../../Text";
+import { Fieldset } from "../components/Fieldset";
 import { Switch } from "./Switch";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -23,6 +23,13 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {
+    "aria-label": "Accept terms",
+  },
+};
+
+export const OnSwitch: Story = {
+  args: {
+    defaultChecked: true,
     "aria-label": "Accept terms",
   },
 };
@@ -65,10 +72,12 @@ export const IntermediateSwitch: Story = {
 export const LabeledSwitch: Story = {
   render: (args) => {
     return (
-      <FormControl as="div" className="flex-row items-center">
-        <Switch id="terms" {...args} />
-        <Label htmlFor="terms">Male</Label>
-      </FormControl>
+      <Fieldset>
+        <Fieldset.Label htmlFor="terms">
+          <Switch id="terms" {...args} />
+          <Text size="sm">Male</Text>
+        </Fieldset.Label>
+      </Fieldset>
     );
   },
 };

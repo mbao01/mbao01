@@ -3,7 +3,7 @@
 exports[`Card > renders a basic card 1`] = `
 <DocumentFragment>
   <div
-    class="card card-normal"
+    class="card"
   >
     <div
       class="card-body"
@@ -17,7 +17,7 @@ exports[`Card > renders a basic card 1`] = `
 exports[`Card > renders a card with a description 1`] = `
 <DocumentFragment>
   <div
-    class="card card-normal"
+    class="card"
   >
     <div
       class="card-body"
@@ -40,7 +40,7 @@ exports[`Card > renders a card with a description 1`] = `
 exports[`Card > renders a card with a header 1`] = `
 <DocumentFragment>
   <div
-    class="card card-normal"
+    class="card"
   >
     <div
       class="card-body"
@@ -59,7 +59,7 @@ exports[`Card > renders a card with a header 1`] = `
 exports[`Card > renders a card with border 1`] = `
 <DocumentFragment>
   <div
-    class="card card-bordered card-normal"
+    class="card card-border"
   >
     <div
       class="card-body"
@@ -73,7 +73,7 @@ exports[`Card > renders a card with border 1`] = `
 exports[`Card > renders a card with header and footer 1`] = `
 <DocumentFragment>
   <div
-    class="card card-normal"
+    class="card"
   >
     <div
       class="flex flex-col space-y-1.5 p-6"
@@ -97,7 +97,7 @@ exports[`Card > renders a card with header and footer 1`] = `
 exports[`Card > renders a card with image 1`] = `
 <DocumentFragment>
   <div
-    class="card card-normal"
+    class="card"
   >
     <div
       class="card-body"
@@ -117,7 +117,7 @@ exports[`Card > renders a card with image 1`] = `
 exports[`Card > renders a card with overlay 1`] = `
 <DocumentFragment>
   <div
-    class="card card-bordered card-normal"
+    class="card card-dash"
   >
     <div
       class="card-body"
@@ -137,7 +137,7 @@ exports[`Card > renders a card with overlay 1`] = `
 exports[`Card > renders a card with title and actions 1`] = `
 <DocumentFragment>
   <div
-    class="card card-normal"
+    class="card"
   >
     <div
       class="card-body"
@@ -158,15 +158,15 @@ exports[`Card > renders a card with title and actions 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Card > renders a compact card 1`] = `
+exports[`Card > renders a extra large (xl) card 1`] = `
 <DocumentFragment>
   <div
-    class="card card-compact"
+    class="card card-xl"
   >
     <div
       class="card-body"
     >
-      Real cool shoe
+      Real cool extra large shoe
     </div>
   </div>
 </DocumentFragment>
@@ -175,7 +175,7 @@ exports[`Card > renders a compact card 1`] = `
 exports[`Card > renders a horizontal card with image on the left 1`] = `
 <DocumentFragment>
   <div
-    class="card card-normal card-side"
+    class="card card-side"
   >
     <div
       class="card-body"
@@ -188,6 +188,62 @@ exports[`Card > renders a horizontal card with image on the left 1`] = `
         src="image.jpg"
       />
     </figure>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Card > renders a large (lg) card 1`] = `
+<DocumentFragment>
+  <div
+    class="card card-lg"
+  >
+    <div
+      class="card-body"
+    >
+      Real cool large shoe
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Card > renders a medium (md) card 1`] = `
+<DocumentFragment>
+  <div
+    class="card card-md"
+  >
+    <div
+      class="card-body"
+    >
+      Real cool medium shoe
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Card > renders a small (sm) card 1`] = `
+<DocumentFragment>
+  <div
+    class="card card-sm"
+  >
+    <div
+      class="card-body"
+    >
+      Real cool small shoe
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Card > renders a tiny (xs) card 1`] = `
+<DocumentFragment>
+  <div
+    class="card card-xs"
+  >
+    <div
+      class="card-body"
+    >
+      Real cool tiny shoe
+    </div>
   </div>
 </DocumentFragment>
 `;

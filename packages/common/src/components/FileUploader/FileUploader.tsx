@@ -253,7 +253,7 @@ const FileUploaderItem = forwardRef<
     <div
       ref={ref}
       className={cn(
-        "h-6 p-1 justify-between cursor-pointer relative rounded",
+        "h-6 p-1 justify-between cursor-pointer relative rounded-sm",
         { "bg-base-300": isSelected },
         className
       )}

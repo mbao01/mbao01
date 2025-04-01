@@ -57,12 +57,12 @@ export const getDatetimeInputContainerClasses = cva(
 
 export const getDatetimeCalendarTriggerClasses = cva(
   `size-8 rounded-md p-1 flex items-center justify-center font-normal
-  outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-base-content focus-visible:ring-inset
+  outline-hidden focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-base-content focus-visible:ring-inset
   `,
   {
     variants: {
       size: {
-        xs: "size-4 p-0 rounded-sm",
+        xs: "size-4 p-0 rounded-xs",
         sm: "size-6",
         md: "size-9",
         lg: "size-10",
@@ -89,7 +89,7 @@ export const getDatetimeCalendarIconClasses = cva("", {
 });
 
 export const getTimePickerClasses = cva(
-  "border border-neutral-content bg-base-100 shadow-sm cursor-pointer ring-0 py-2 h-8 px-3 w-full text-sm outline-0 inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-base-content disabled:pointer-events-none disabled:opacity-50 hover:bg-base-200",
+  "border border-neutral-content bg-base-100 shadow-xs cursor-pointer ring-0 py-2 h-8 px-3 w-full text-sm outline-0 inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-base-content disabled:pointer-events-none disabled:opacity-50 hover:bg-base-200",
   {
     variants: {
       selected: {
@@ -111,7 +111,7 @@ export const getTimePickerScrollAreaClasses = cva(
 );
 
 export const getNaturalLanguageInputClasses = cva(
-  "flex-1 border-none rounded bg-transparent outline-none ring-0 focus:outline-none focus:ring-0 focus-within:outline-none focus-within:ring-0 disabled:cursor-not-allowed disabled:opacity-50",
+  "flex-1 border-none bg-transparent outline-hidden ring-0 focus:outline-hidden focus:ring-0 focus-within:outline-hidden focus-within:ring-0 disabled:cursor-not-allowed disabled:opacity-50",
   {
     variants: {
       size: {
@@ -131,5 +131,5 @@ export const getNaturalLanguageInputClasses = cva(
 );
 
 export const getDatetimeCalendarClasses = cva(
-  "peer flex justify-end bg-transparent focus:outline-none focus:ring-0 focus-within:outline-none focus-within:ring-0 sm:text-sm disabled:cursor-not-allowed disabled:opacity-50"
+  "peer flex justify-end bg-transparent focus:outline-hidden focus:ring-0 focus-within:outline-hidden focus-within:ring-0 sm:text-sm disabled:cursor-not-allowed disabled:opacity-50"
 );

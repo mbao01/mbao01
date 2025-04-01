@@ -13,4 +13,4 @@ export { TagsInput } from "./TagsInput";
 export { Textarea } from "./Textarea";
 export { TextField } from "./TextField";
 export { Label } from "./components/Label";
-export { FormControl } from "./components/FormControl";
+export { Fieldset } from "./components/Fieldset";

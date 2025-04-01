@@ -136,7 +136,7 @@ export const DraggableOverlayExample = ({
           id="my-draggable"
           axis={axis}
           handle={handle}
-          className="w-fit border border-base-content rounded-md p-2 flex items-center gap-2 data-[draggable-active]:opacity-0"
+          className="w-fit border border-base-content rounded-md p-2 flex items-center gap-2 data-draggable-active:opacity-0"
         >
           {label}
         </Draggable>

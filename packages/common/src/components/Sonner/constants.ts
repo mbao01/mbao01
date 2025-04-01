@@ -38,60 +38,60 @@ export const getToastClasses = cva("sonner group", {
 export const getToastButtonClasses = cva("", {
   variants: {
     variant: {
-      base: "group-[.sonner]:!bg-base-300 group-[.sonner]:!text-base-content",
-      accent: "group-[.sonner]:!bg-accent group-[.sonner]:!text-accent-content",
-      error: "group-[.sonner]:!bg-error group-[.sonner]:!text-error-content",
-      info: "group-[.sonner]:!bg-info group-[.sonner]:!text-info-content",
-      neutral: "group-[.sonner]:!bg-neutral group-[.sonner]:!text-neutral-content",
-      primary: "group-[.sonner]:!bg-primary group-[.sonner]:!text-primary-content",
-      secondary: "group-[.sonner]:!bg-secondary group-[.sonner]:!text-secondary-content",
-      success: "group-[.sonner]:!bg-success group-[.sonner]:!text-success-content",
-      warning: "group-[.sonner]:!bg-warning group-[.sonner]:!text-warning-content",
+      base: "group-[.sonner]:bg-base-300! group-[.sonner]:text-base-content!",
+      accent: "group-[.sonner]:bg-accent! group-[.sonner]:text-accent-content!",
+      error: "group-[.sonner]:bg-error! group-[.sonner]:text-error-content!",
+      info: "group-[.sonner]:bg-info! group-[.sonner]:text-info-content!",
+      neutral: "group-[.sonner]:bg-neutral! group-[.sonner]:text-neutral-content!",
+      primary: "group-[.sonner]:bg-primary! group-[.sonner]:text-primary-content!",
+      secondary: "group-[.sonner]:bg-secondary! group-[.sonner]:text-secondary-content!",
+      success: "group-[.sonner]:bg-success! group-[.sonner]:text-success-content!",
+      warning: "group-[.sonner]:bg-warning! group-[.sonner]:text-warning-content!",
     },
     outline: {
-      true: "group-[.sonner]:!border group-[.sonner]:!border-solid group-[.sonner]:!bg-transparent",
+      true: "group-[.sonner]:border! group-[.sonner]:border-solid! group-[.sonner]:bg-transparent!",
     },
   },
   compoundVariants: [
     {
       outline: true,
       variant: "accent",
-      className: "group-[.sonner]:!border-accent group-[.sonner]:!text-accent",
+      className: "group-[.sonner]:border-accent! group-[.sonner]:text-accent!",
     },
     {
       outline: true,
       variant: "error",
-      className: "group-[.sonner]:!border-error group-[.sonner]:!text-error",
+      className: "group-[.sonner]:border-error! group-[.sonner]:text-error!",
     },
     {
       outline: true,
       variant: "info",
-      className: "group-[.sonner]:!text-info",
+      className: "group-[.sonner]:text-info!",
     },
     {
       outline: true,
       variant: "neutral",
-      className: "group-[.sonner]:!border-neutral group-[.sonner]:!text-neutral",
+      className: "group-[.sonner]:border-neutral! group-[.sonner]:text-neutral!",
     },
     {
       outline: true,
       variant: "primary",
-      className: "group-[.sonner]:!border-primary group-[.sonner]:!text-primary",
+      className: "group-[.sonner]:border-primary! group-[.sonner]:text-primary!",
     },
     {
       outline: true,
       variant: "secondary",
-      className: "group-[.sonner]:!border-secondary group-[.sonner]:!text-secondary",
+      className: "group-[.sonner]:border-secondary! group-[.sonner]:text-secondary!",
     },
     {
       outline: true,
       variant: "success",
-      className: "group-[.sonner]:!border-success group-[.sonner]:!text-success",
+      className: "group-[.sonner]:border-success! group-[.sonner]:text-success!",
     },
     {
       outline: true,
       variant: "warning",
-      className: "group-[.sonner]:!border-warning group-[.sonner]:!text-warning",
+      className: "group-[.sonner]:border-warning! group-[.sonner]:text-warning!",
     },
   ],
 });

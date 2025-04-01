@@ -13,7 +13,7 @@ export const getCommandDialogClasses = cva(
 export const getCommandInputWrapperClasses = cva("flex items-center border-b px-3");
 
 export const getCommandInputClasses = cva(
-  "flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
+  "flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-hidden placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
 );
 
 export const getCommandListClasses = cva("max-h-[300px] overflow-y-auto overflow-x-hidden");
@@ -27,7 +27,7 @@ export const getCommandGroupClasses = cva(
 export const getCommandSeparatorClasses = cva("-mx-1 h-px bg-border");
 
 export const getCommandItemClasses = cva(
-  "relative flex cursor-pointer select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default"
+  "relative flex cursor-pointer select-none items-center rounded-xs px-2 py-1.5 text-sm outline-hidden transition-colors aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default"
 );
 
 export const getCommandShortcutClasses = cva(

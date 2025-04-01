@@ -5,14 +5,16 @@ import { TextField } from "./TextField";
 
 describe("TextField", () => {
   it("renders with the correct initial state", () => {
-    const { asFragment } = render(<TextField name="username" defaultValue="John Doe" />);
+    const { asFragment } = render(
+      <TextField id="username" name="username" defaultValue="John Doe" />
+    );
 
     expect(screen.getByDisplayValue("John Doe")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("has a label", () => {
-    const { asFragment } = render(<TextField name="username" label="Username" />);
+    const { asFragment } = render(<TextField id="username" name="username" label="Username" />);
 
     expect(screen.getByLabelText("Username")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
@@ -20,7 +22,7 @@ describe("TextField", () => {
 
   it("has an info text", () => {
     const { asFragment } = render(
-      <TextField name="username" label="Username" info="This is an info text" />
+      <TextField id="username" name="username" label="Username" info="This is an info text" />
     );
 
     expect(screen.getByText("This is an info text")).toBeInTheDocument();
@@ -29,7 +31,7 @@ describe("TextField", () => {
 
   it("has an error text", () => {
     const { asFragment } = render(
-      <TextField name="username" label="Username" error="This is an error text" />
+      <TextField id="username" name="username" label="Username" error="This is an error text" />
     );
 
     expect(screen.getByText("This is an error text")).toBeInTheDocument();
@@ -40,7 +42,7 @@ describe("TextField", () => {
     const user = userEvent.setup();
 
     const { asFragment } = render(
-      <TextField name="username" label="Username" defaultValue="John Doe" />
+      <TextField id="username" name="username" label="Username" defaultValue="John Doe" />
     );
     const textField = screen.getByDisplayValue("John Doe");
 
@@ -55,7 +57,7 @@ describe("TextField", () => {
     const user = userEvent.setup();
 
     const { asFragment } = render(
-      <TextField name="username" label="Username" defaultValue="John Doe" disabled />
+      <TextField id="username" name="username" label="Username" defaultValue="John Doe" disabled />
     );
     const textField = screen.getByLabelText("Username");
 

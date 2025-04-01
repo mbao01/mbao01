@@ -9,7 +9,7 @@ const withCarousel = () => {
         {Array.from({ length: 5 }).map((_, index) => (
           <Carousel.Item key={index}>
             <div className="p-1">
-              <Card bordered>
+              <Card border="solid">
                 <Card.Content className="flex aspect-square items-center justify-center p-6">
                   <span className="text-4xl font-semibold">{index + 1}</span>
                 </Card.Content>

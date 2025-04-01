@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { FormControl } from "../components/FormControl";
-import { Label } from "../components/Label";
+import { Text } from "../../Text";
+import { Fieldset } from "../components/Fieldset";
 import { Range } from "./Range";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -54,10 +54,12 @@ export const DisabledRange: Story = {
 export const LabeledRange: Story = {
   render: (args) => {
     return (
-      <FormControl as="div" className="flex-row items-center">
-        <Range id="terms" {...args} />
-        <Label htmlFor="terms">Risk Level</Label>
-      </FormControl>
+      <Fieldset>
+        <Fieldset.Label htmlFor="terms">
+          <Range id="terms" {...args} />
+          <Text size="sm">Risk Level</Text>
+        </Fieldset.Label>
+      </Fieldset>
     );
   },
 };

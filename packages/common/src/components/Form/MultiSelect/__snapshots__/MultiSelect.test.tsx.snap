@@ -9,8 +9,8 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
   >
     <label
       cmdk-label=""
-      for="radix-:r10:"
-      id="radix-:rv:"
+      for="radix-«r10»"
+      id="radix-«rv»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
@@ -19,7 +19,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
       class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <span
-        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none px-1 rounded-xl flex items-center gap-1"
+        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden px-1 rounded-xl flex items-center gap-1"
       >
         <span
           class="text-xs"
@@ -58,15 +58,16 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
         </button>
       </span>
       <input
+        aria-activedescendant="radix-«r13»"
         aria-autocomplete="list"
-        aria-controls="radix-:ru:"
+        aria-controls="radix-«ru»"
         aria-expanded="true"
-        aria-labelledby="radix-:rv:"
+        aria-labelledby="radix-«rv»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r10:"
+        id="radix-«r10»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -79,11 +80,13 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
       class="relative"
     >
       <div
+        aria-activedescendant="radix-«r13»"
         aria-label="Suggestions"
         class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute shadow-md z-10 border border-muted top-1"
         cmdk-list=""
-        id="radix-:ru:"
+        id="radix-«ru»"
         role="listbox"
+        tabindex="-1"
       >
         <div
           cmdk-list-sizer=""
@@ -91,12 +94,12 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
             data-value="React"
-            id="radix-:r11:"
+            id="radix-«r11»"
             role="option"
           >
             React
@@ -104,12 +107,12 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
             data-value="Vue"
-            id="radix-:r12:"
+            id="radix-«r12»"
             role="option"
           >
             Vue
@@ -117,12 +120,12 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
             data-value="Svelte"
-            id="radix-:r13:"
+            id="radix-«r13»"
             role="option"
           >
             Svelte
@@ -143,8 +146,8 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
   >
     <label
       cmdk-label=""
-      for="radix-:r10:"
-      id="radix-:rv:"
+      for="radix-«r10»"
+      id="radix-«rv»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
@@ -153,7 +156,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
       class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <span
-        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none px-1 rounded-xl flex items-center gap-1"
+        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden px-1 rounded-xl flex items-center gap-1"
       >
         <span
           class="text-xs"
@@ -192,15 +195,16 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
         </button>
       </span>
       <input
+        aria-activedescendant="radix-«r13»"
         aria-autocomplete="list"
-        aria-controls="radix-:ru:"
+        aria-controls="radix-«ru»"
         aria-expanded="true"
-        aria-labelledby="radix-:rv:"
+        aria-labelledby="radix-«rv»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r10:"
+        id="radix-«r10»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -213,11 +217,13 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
       class="relative"
     >
       <div
+        aria-activedescendant="radix-«r13»"
         aria-label="Suggestions"
         class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute shadow-md z-10 border border-muted top-1"
         cmdk-list=""
-        id="radix-:ru:"
+        id="radix-«ru»"
         role="listbox"
+        tabindex="-1"
       >
         <div
           cmdk-list-sizer=""
@@ -225,12 +231,12 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
             data-value="React"
-            id="radix-:r11:"
+            id="radix-«r11»"
             role="option"
           >
             React
@@ -238,12 +244,12 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
             data-value="Vue"
-            id="radix-:r12:"
+            id="radix-«r12»"
             role="option"
           >
             Vue
@@ -251,12 +257,12 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
             data-value="Svelte"
-            id="radix-:r13:"
+            id="radix-«r13»"
             role="option"
           >
             Svelte
@@ -277,8 +283,8 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:rq:"
-      id="radix-:rp:"
+      for="radix-«rq»"
+      id="radix-«rp»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
@@ -287,7 +293,7 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
       class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <span
-        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none px-1 rounded-xl flex items-center gap-1"
+        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden px-1 rounded-xl flex items-center gap-1"
       >
         <span
           class="text-xs"
@@ -327,14 +333,14 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
       </span>
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:ro:"
+        aria-controls="radix-«ro»"
         aria-expanded="true"
-        aria-labelledby="radix-:rp:"
+        aria-labelledby="radix-«rp»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:rq:"
+        id="radix-«rq»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -350,8 +356,9 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
         aria-label="Suggestions"
         class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute shadow-md z-10 border border-muted top-1"
         cmdk-list=""
-        id="radix-:ro:"
+        id="radix-«ro»"
         role="listbox"
+        tabindex="-1"
       >
         <div
           cmdk-list-sizer=""
@@ -359,12 +366,12 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
             data-value="React"
-            id="radix-:rr:"
+            id="radix-«rr»"
             role="option"
           >
             React
@@ -372,12 +379,12 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
             data-value="Vue"
-            id="radix-:rs:"
+            id="radix-«rs»"
             role="option"
           >
             Vue
@@ -385,12 +392,12 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
             data-value="Svelte"
-            id="radix-:rt:"
+            id="radix-«rt»"
             role="option"
           >
             Svelte
@@ -411,8 +418,8 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:rq:"
-      id="radix-:rp:"
+      for="radix-«rq»"
+      id="radix-«rp»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
@@ -421,7 +428,7 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
       class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <span
-        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-none px-1 rounded-xl flex items-center gap-1"
+        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden px-1 rounded-xl flex items-center gap-1"
       >
         <span
           class="text-xs"
@@ -461,14 +468,14 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
       </span>
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:ro:"
+        aria-controls="radix-«ro»"
         aria-expanded="true"
-        aria-labelledby="radix-:rp:"
+        aria-labelledby="radix-«rp»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:rq:"
+        id="radix-«rq»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -484,8 +491,9 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
         aria-label="Suggestions"
         class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute shadow-md z-10 border border-muted top-1"
         cmdk-list=""
-        id="radix-:ro:"
+        id="radix-«ro»"
         role="listbox"
+        tabindex="-1"
       >
         <div
           cmdk-list-sizer=""
@@ -493,12 +501,12 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
             data-value="React"
-            id="radix-:rr:"
+            id="radix-«rr»"
             role="option"
           >
             React
@@ -506,12 +514,12 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
             data-value="Vue"
-            id="radix-:rs:"
+            id="radix-«rs»"
             role="option"
           >
             Vue
@@ -519,12 +527,12 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
             data-value="Svelte"
-            id="radix-:rt:"
+            id="radix-«rt»"
             role="option"
           >
             Svelte
@@ -545,8 +553,8 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
   >
     <label
       cmdk-label=""
-      for="radix-:r8:"
-      id="radix-:r7:"
+      for="radix-«r8»"
+      id="radix-«r7»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
@@ -556,14 +564,14 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r6:"
+        aria-controls="radix-«r6»"
         aria-expanded="true"
-        aria-labelledby="radix-:r7:"
+        aria-labelledby="radix-«r7»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r8:"
+        id="radix-«r8»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -579,8 +587,9 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
         aria-label="Suggestions"
         class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute shadow-md z-10 border border-muted top-1"
         cmdk-list=""
-        id="radix-:r6:"
+        id="radix-«r6»"
         role="listbox"
+        tabindex="-1"
       >
         <div
           cmdk-list-sizer=""
@@ -588,12 +597,12 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
             data-value="React"
-            id="radix-:r9:"
+            id="radix-«r9»"
             role="option"
           >
             React
@@ -601,12 +610,12 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
             data-value="Vue"
-            id="radix-:ra:"
+            id="radix-«ra»"
             role="option"
           >
             Vue
@@ -614,12 +623,12 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
             data-value="Svelte"
-            id="radix-:rb:"
+            id="radix-«rb»"
             role="option"
           >
             Svelte
@@ -640,8 +649,8 @@ exports[`MultiSelect > and the user enters a text that does not match any option
   >
     <label
       cmdk-label=""
-      for="radix-:rk:"
-      id="radix-:rj:"
+      for="radix-«rk»"
+      id="radix-«rj»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
@@ -651,14 +660,14 @@ exports[`MultiSelect > and the user enters a text that does not match any option
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:ri:"
+        aria-controls="radix-«ri»"
         aria-expanded="true"
-        aria-labelledby="radix-:rj:"
+        aria-labelledby="radix-«rj»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:rk:"
+        id="radix-«rk»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -674,8 +683,9 @@ exports[`MultiSelect > and the user enters a text that does not match any option
         aria-label="Suggestions"
         class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute shadow-md z-10 border border-muted top-1"
         cmdk-list=""
-        id="radix-:ri:"
+        id="radix-«ri»"
         role="listbox"
+        tabindex="-1"
       >
         <div
           cmdk-list-sizer=""
@@ -707,8 +717,8 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
   >
     <label
       cmdk-label=""
-      for="radix-:re:"
-      id="radix-:rd:"
+      for="radix-«re»"
+      id="radix-«rd»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
@@ -718,14 +728,14 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:rc:"
+        aria-controls="radix-«rc»"
         aria-expanded="true"
-        aria-labelledby="radix-:rd:"
+        aria-labelledby="radix-«rd»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:re:"
+        id="radix-«re»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -741,8 +751,9 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
         aria-label="Suggestions"
         class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute shadow-md z-10 border border-muted top-1"
         cmdk-list=""
-        id="radix-:rc:"
+        id="radix-«rc»"
         role="listbox"
+        tabindex="-1"
       >
         <div
           cmdk-list-sizer=""
@@ -750,12 +761,12 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
             data-value="Svelte"
-            id="radix-:rh:"
+            id="radix-«rh»"
             role="option"
           >
             Svelte
@@ -763,12 +774,12 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
             data-value="React"
-            id="radix-:rf:"
+            id="radix-«rf»"
             role="option"
           >
             React
@@ -789,8 +800,8 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
   >
     <label
       cmdk-label=""
-      for="radix-:re:"
-      id="radix-:rd:"
+      for="radix-«re»"
+      id="radix-«rd»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
@@ -799,15 +810,16 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
       class="flex items-center flex-wrap gap-1 h-fit w-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
     >
       <input
+        aria-activedescendant="radix-«rh»"
         aria-autocomplete="list"
-        aria-controls="radix-:rc:"
+        aria-controls="radix-«rc»"
         aria-expanded="true"
-        aria-labelledby="radix-:rd:"
+        aria-labelledby="radix-«rd»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:re:"
+        id="radix-«re»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -820,11 +832,13 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
       class="relative"
     >
       <div
+        aria-activedescendant="radix-«rh»"
         aria-label="Suggestions"
         class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute shadow-md z-10 border border-muted top-1"
         cmdk-list=""
-        id="radix-:rc:"
+        id="radix-«rc»"
         role="listbox"
+        tabindex="-1"
       >
         <div
           cmdk-list-sizer=""
@@ -832,12 +846,12 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
             data-value="Vue"
-            id="radix-:rg:"
+            id="radix-«rg»"
             role="option"
           >
             Vue
@@ -845,12 +859,12 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
             data-value="Svelte"
-            id="radix-:rh:"
+            id="radix-«rh»"
             role="option"
           >
             Svelte
@@ -858,12 +872,12 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
             data-value="React"
-            id="radix-:rf:"
+            id="radix-«rf»"
             role="option"
           >
             React
@@ -884,8 +898,8 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
   >
     <label
       cmdk-label=""
-      for="radix-:re:"
-      id="radix-:rd:"
+      for="radix-«re»"
+      id="radix-«rd»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
@@ -895,14 +909,14 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:rc:"
+        aria-controls="radix-«rc»"
         aria-expanded="true"
-        aria-labelledby="radix-:rd:"
+        aria-labelledby="radix-«rd»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:re:"
+        id="radix-«re»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -918,8 +932,9 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
         aria-label="Suggestions"
         class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute shadow-md z-10 border border-muted top-1"
         cmdk-list=""
-        id="radix-:rc:"
+        id="radix-«rc»"
         role="listbox"
+        tabindex="-1"
       >
         <div
           cmdk-list-sizer=""
@@ -927,12 +942,12 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-sm py-1.5 px-2 text-sm outline-none"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
             data-value="React"
-            id="radix-:rf:"
+            id="radix-«rf»"
             role="option"
           >
             React
@@ -953,8 +968,8 @@ exports[`MultiSelect > has accent variant 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r21:"
-      id="radix-:r20:"
+      for="radix-«r21»"
+      id="radix-«r20»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       accent badge
@@ -964,14 +979,14 @@ exports[`MultiSelect > has accent variant 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r1v:"
+        aria-controls="radix-«r1v»"
         aria-expanded="true"
-        aria-labelledby="radix-:r20:"
+        aria-labelledby="radix-«r20»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r21:"
+        id="radix-«r21»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -996,8 +1011,8 @@ exports[`MultiSelect > has default variant 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r1o:"
-      id="radix-:r1n:"
+      for="radix-«r1o»"
+      id="radix-«r1n»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       default badge
@@ -1007,14 +1022,14 @@ exports[`MultiSelect > has default variant 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r1m:"
+        aria-controls="radix-«r1m»"
         aria-expanded="true"
-        aria-labelledby="radix-:r1n:"
+        aria-labelledby="radix-«r1n»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r1o:"
+        id="radix-«r1o»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1039,8 +1054,8 @@ exports[`MultiSelect > has error variant 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r2d:"
-      id="radix-:r2c:"
+      for="radix-«r2d»"
+      id="radix-«r2c»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       error badge
@@ -1050,14 +1065,14 @@ exports[`MultiSelect > has error variant 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r2b:"
+        aria-controls="radix-«r2b»"
         aria-expanded="true"
-        aria-labelledby="radix-:r2c:"
+        aria-labelledby="radix-«r2c»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r2d:"
+        id="radix-«r2d»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1082,8 +1097,8 @@ exports[`MultiSelect > has info variant 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r24:"
-      id="radix-:r23:"
+      for="radix-«r24»"
+      id="radix-«r23»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       info badge
@@ -1093,14 +1108,14 @@ exports[`MultiSelect > has info variant 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r22:"
+        aria-controls="radix-«r22»"
         aria-expanded="true"
-        aria-labelledby="radix-:r23:"
+        aria-labelledby="radix-«r23»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r24:"
+        id="radix-«r24»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1125,8 +1140,8 @@ exports[`MultiSelect > has large (lg) size 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r1l:"
-      id="radix-:r1k:"
+      for="radix-«r1l»"
+      id="radix-«r1k»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       MultiSelect large
@@ -1136,14 +1151,14 @@ exports[`MultiSelect > has large (lg) size 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r1j:"
+        aria-controls="radix-«r1j»"
         aria-expanded="true"
-        aria-labelledby="radix-:r1k:"
+        aria-labelledby="radix-«r1k»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r1l:"
+        id="radix-«r1l»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1159,8 +1174,9 @@ exports[`MultiSelect > has large (lg) size 1`] = `
         aria-label="Suggestions"
         class="max-h-[300px] overflow-y-auto overflow-x-hidden bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute shadow-md z-10 border border-muted top-1 p-3"
         cmdk-list=""
-        id="radix-:r1j:"
+        id="radix-«r1j»"
         role="listbox"
+        tabindex="-1"
       >
         <div
           cmdk-list-sizer=""
@@ -1192,8 +1208,8 @@ exports[`MultiSelect > has medium (md) size 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r1i:"
-      id="radix-:r1h:"
+      for="radix-«r1i»"
+      id="radix-«r1h»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       MultiSelect medium
@@ -1203,14 +1219,14 @@ exports[`MultiSelect > has medium (md) size 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r1g:"
+        aria-controls="radix-«r1g»"
         aria-expanded="true"
-        aria-labelledby="radix-:r1h:"
+        aria-labelledby="radix-«r1h»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r1i:"
+        id="radix-«r1i»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1226,8 +1242,9 @@ exports[`MultiSelect > has medium (md) size 1`] = `
         aria-label="Suggestions"
         class="max-h-[300px] overflow-y-auto overflow-x-hidden bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute shadow-md z-10 border border-muted top-1 p-2"
         cmdk-list=""
-        id="radix-:r1g:"
+        id="radix-«r1g»"
         role="listbox"
+        tabindex="-1"
       >
         <div
           cmdk-list-sizer=""
@@ -1259,8 +1276,8 @@ exports[`MultiSelect > has no outline 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r19:"
-      id="radix-:r18:"
+      for="radix-«r19»"
+      id="radix-«r18»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       MultiSelect has no outline
@@ -1270,14 +1287,14 @@ exports[`MultiSelect > has no outline 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r17:"
+        aria-controls="radix-«r17»"
         aria-expanded="true"
-        aria-labelledby="radix-:r18:"
+        aria-labelledby="radix-«r18»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r19:"
+        id="radix-«r19»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1302,8 +1319,8 @@ exports[`MultiSelect > has outline 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r16:"
-      id="radix-:r15:"
+      for="radix-«r16»"
+      id="radix-«r15»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       MultiSelect has outline
@@ -1313,14 +1330,14 @@ exports[`MultiSelect > has outline 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r14:"
+        aria-controls="radix-«r14»"
         aria-expanded="true"
-        aria-labelledby="radix-:r15:"
+        aria-labelledby="radix-«r15»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r16:"
+        id="radix-«r16»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1345,8 +1362,8 @@ exports[`MultiSelect > has primary variant 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r1r:"
-      id="radix-:r1q:"
+      for="radix-«r1r»"
+      id="radix-«r1q»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       primary badge
@@ -1356,14 +1373,14 @@ exports[`MultiSelect > has primary variant 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r1p:"
+        aria-controls="radix-«r1p»"
         aria-expanded="true"
-        aria-labelledby="radix-:r1q:"
+        aria-labelledby="radix-«r1q»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r1r:"
+        id="radix-«r1r»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1388,8 +1405,8 @@ exports[`MultiSelect > has secondary variant 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r1u:"
-      id="radix-:r1t:"
+      for="radix-«r1u»"
+      id="radix-«r1t»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       secondary badge
@@ -1399,14 +1416,14 @@ exports[`MultiSelect > has secondary variant 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r1s:"
+        aria-controls="radix-«r1s»"
         aria-expanded="true"
-        aria-labelledby="radix-:r1t:"
+        aria-labelledby="radix-«r1t»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r1u:"
+        id="radix-«r1u»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1431,8 +1448,8 @@ exports[`MultiSelect > has small (sm) size 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r1f:"
-      id="radix-:r1e:"
+      for="radix-«r1f»"
+      id="radix-«r1e»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       MultiSelect small
@@ -1442,14 +1459,14 @@ exports[`MultiSelect > has small (sm) size 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r1d:"
+        aria-controls="radix-«r1d»"
         aria-expanded="true"
-        aria-labelledby="radix-:r1e:"
+        aria-labelledby="radix-«r1e»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r1f:"
+        id="radix-«r1f»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1465,8 +1482,9 @@ exports[`MultiSelect > has small (sm) size 1`] = `
         aria-label="Suggestions"
         class="max-h-[300px] overflow-y-auto overflow-x-hidden bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute shadow-md z-10 border border-muted top-1 p-1.5"
         cmdk-list=""
-        id="radix-:r1d:"
+        id="radix-«r1d»"
         role="listbox"
+        tabindex="-1"
       >
         <div
           cmdk-list-sizer=""
@@ -1498,8 +1516,8 @@ exports[`MultiSelect > has success variant 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r27:"
-      id="radix-:r26:"
+      for="radix-«r27»"
+      id="radix-«r26»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       success badge
@@ -1509,14 +1527,14 @@ exports[`MultiSelect > has success variant 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r25:"
+        aria-controls="radix-«r25»"
         aria-expanded="true"
-        aria-labelledby="radix-:r26:"
+        aria-labelledby="radix-«r26»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r27:"
+        id="radix-«r27»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1541,8 +1559,8 @@ exports[`MultiSelect > has tiny (xs) size 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r1c:"
-      id="radix-:r1b:"
+      for="radix-«r1c»"
+      id="radix-«r1b»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       MultiSelect tiny
@@ -1552,14 +1570,14 @@ exports[`MultiSelect > has tiny (xs) size 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r1a:"
+        aria-controls="radix-«r1a»"
         aria-expanded="true"
-        aria-labelledby="radix-:r1b:"
+        aria-labelledby="radix-«r1b»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r1c:"
+        id="radix-«r1c»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1575,8 +1593,9 @@ exports[`MultiSelect > has tiny (xs) size 1`] = `
         aria-label="Suggestions"
         class="max-h-[300px] overflow-y-auto overflow-x-hidden bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute shadow-md z-10 border border-muted top-1 p-1"
         cmdk-list=""
-        id="radix-:r1a:"
+        id="radix-«r1a»"
         role="listbox"
+        tabindex="-1"
       >
         <div
           cmdk-list-sizer=""
@@ -1608,8 +1627,8 @@ exports[`MultiSelect > has warning variant 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r2a:"
-      id="radix-:r29:"
+      for="radix-«r2a»"
+      id="radix-«r29»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       warning badge
@@ -1619,14 +1638,14 @@ exports[`MultiSelect > has warning variant 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r28:"
+        aria-controls="radix-«r28»"
         aria-expanded="true"
-        aria-labelledby="radix-:r29:"
+        aria-labelledby="radix-«r29»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r2a:"
+        id="radix-«r2a»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1651,8 +1670,8 @@ exports[`MultiSelect > renders a multi select input 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r5:"
-      id="radix-:r4:"
+      for="radix-«r5»"
+      id="radix-«r4»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
@@ -1662,14 +1681,14 @@ exports[`MultiSelect > renders a multi select input 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r3:"
+        aria-controls="radix-«r3»"
         aria-expanded="true"
-        aria-labelledby="radix-:r4:"
+        aria-labelledby="radix-«r4»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r5:"
+        id="radix-«r5»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1694,8 +1713,8 @@ exports[`MultiSelect > renders no options 1`] = `
   >
     <label
       cmdk-label=""
-      for="radix-:r2:"
-      id="radix-:r1:"
+      for="radix-«r2»"
+      id="radix-«r1»"
       style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
@@ -1705,14 +1724,14 @@ exports[`MultiSelect > renders no options 1`] = `
     >
       <input
         aria-autocomplete="list"
-        aria-controls="radix-:r0:"
+        aria-controls="radix-«r0»"
         aria-expanded="true"
-        aria-labelledby="radix-:r1:"
+        aria-labelledby="radix-«r1»"
         autocomplete="off"
         autocorrect="off"
-        class="bg-transparent outline-none flex-1"
+        class="bg-transparent outline-hidden flex-1"
         cmdk-input=""
-        id="radix-:r2:"
+        id="radix-«r2»"
         placeholder="Select your framework"
         role="combobox"
         spellcheck="false"
@@ -1728,8 +1747,9 @@ exports[`MultiSelect > renders no options 1`] = `
         aria-label="Suggestions"
         class="max-h-[300px] overflow-y-auto overflow-x-hidden p-1 bg-base-100 flex flex-col gap-2 rounded-md scrollbar-thin scrollbar-track-transparent transition-colors scrollbar-thumb-muted-foreground dark:scrollbar-thumb-muted scrollbar-thumb-rounded-lg w-full absolute shadow-md z-10 border border-muted top-1"
         cmdk-list=""
-        id="radix-:r0:"
+        id="radix-«r0»"
         role="listbox"
+        tabindex="-1"
       >
         <div
           cmdk-list-sizer=""

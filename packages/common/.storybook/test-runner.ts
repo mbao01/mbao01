@@ -1,4 +1,4 @@
-import type { TestRunnerConfig } from "@storybook/test-runner";
+import type { TestHook, TestRunnerConfig } from "@storybook/test-runner";
 import { MINIMAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { getStoryContext, waitForPageReady } from "@storybook/test-runner";
 import { checkA11y, injectAxe } from "axe-playwright";
@@ -17,6 +17,29 @@ const setupPageViewport = async (page, story) => {
   page.setViewportSize(viewportParameter?.styles ?? DEFAULT_VIEWPORT_SIZE);
 };
 
+const waitForStoryContext = async (
+  page: Parameters<TestHook>[0],
+  story: Parameters<TestHook>[1],
+  attempt = 1,
+  maxAttempts = 20
+) => {
+  try {
+    return await getStoryContext(page, story);
+  } catch (e) {
+    if (attempt > maxAttempts) {
+      throw e;
+    }
+    // ¯\_(ツ)_/¯ - If this is not the first attempt: add a timeout.
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    return waitForStoryContext(page, story, attempt + 1);
+  }
+};
+
+// async preVisit(page: Page, story: StoryFn) {
+//     const context = await waitForStoryContext(page, story);
+//    // ...
+// };
+
 const config: TestRunnerConfig = {
   tags: {
     exclude: ["no-test"],
@@ -34,7 +57,7 @@ const config: TestRunnerConfig = {
     // Awaits for the page to be loaded and available including assets (e.g., fonts)
     await waitForPageReady(page);
 
-    const context = await getStoryContext(page, story);
+    const context = await waitForStoryContext(page, story);
     const delayTime = context.parameters?.visual?.delay;
     if (delayTime) {
       await page.waitForTimeout(delayTime);

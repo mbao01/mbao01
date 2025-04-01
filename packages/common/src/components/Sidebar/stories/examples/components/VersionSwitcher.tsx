@@ -31,7 +31,7 @@ export const VersionSwitcher = ({
               <ChevronsUpDown className="ml-auto" />
             </SidebarMenu.Button>
           </DropdownMenu.Trigger>
-          <DropdownMenu.Content className="w-[--radix-dropdown-menu-trigger-width]" align="start">
+          <DropdownMenu.Content className="w-(--radix-dropdown-menu-trigger-width)" align="start">
             {versions.map((version) => (
               <DropdownMenu.Item key={version} onSelect={() => setSelectedVersion(version)}>
                 v{version} {version === selectedVersion && <Check className="ml-auto" />}
