@@ -27,6 +27,13 @@ export const Default: Story = {
   },
 };
 
+export const OnSwitch: Story = {
+  args: {
+    defaultChecked: true,
+    "aria-label": "Accept terms",
+  },
+};
+
 export const PrimarySwitch: Story = {
   args: {
     variant: "primary",

@@ -32,6 +32,7 @@ export const getTextareaClasses = cva("textarea rounded-md transition-all durati
       className: "min-h-fit h-10",
     },
     {
+      variant: undefined,
       outline: undefined,
       className: "textarea-ghost",
     },

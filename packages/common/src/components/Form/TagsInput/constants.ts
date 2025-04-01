@@ -69,7 +69,7 @@ export const getTagClasses = cva(
 );
 
 export const getTagsInputClasses = cva(
-  "outline-0 border-none h-5 min-w-fit flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1",
+  "outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1",
   {
     variants: {
       size: {

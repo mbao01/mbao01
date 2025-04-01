@@ -9,11 +9,11 @@ type ArgsType = Partial<{
 }>;
 
 const withSelect = (_: StoryFn, context: StoryContext<ArgsType>) => {
-  const { size, wide, variant, outline } = context.args;
+  const { size, variant, outline } = context.args;
 
   return (
     <Select>
-      <Select.Trigger size={size} wide={wide} variant={variant} outline={outline}>
+      <Select.Trigger size={size} variant={variant} outline={outline}>
         <Select.Value placeholder="Theme" />
       </Select.Trigger>
       <Select.Content>

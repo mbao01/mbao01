@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { useEffect, useRef } from "react";
+import { Text } from "../../Text";
 import { Fieldset } from "../components/Fieldset";
 import { Radio } from "./Radio";
 
@@ -81,13 +82,13 @@ export const RadioGroup: Story = {
         <Fieldset>
           <Fieldset.Label htmlFor="gender">
             <Radio id="gender-male" name="gender" {...args} />
-            Male
+            <Text size="base">Male</Text>
           </Fieldset.Label>
         </Fieldset>
         <Fieldset>
           <Fieldset.Label htmlFor="gender">
             <Radio id="gender-male" name="gender" {...args} />
-            Female
+            <Text size="base">Female</Text>
           </Fieldset.Label>
         </Fieldset>
       </div>
