@@ -26,8 +26,10 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
         />
         {Boolean(error) && (
           <Label className="flex flex-col items-start" htmlFor={id} id={feedbackId}>
-            {(Array.isArray(error) ? error : [error]).map((e) => (
-              <span className="text-red-500">{e}</span>
+            {(Array.isArray(error) ? error : [error]).map((e, index) => (
+              <span key={index} className="text-red-500">
+                {e}
+              </span>
             ))}
           </Label>
         )}

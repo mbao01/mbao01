@@ -69,7 +69,7 @@ exports[`Textarea > has a label 1`] = `
 exports[`Textarea > has accent variant 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 textarea-accent min-h-fit h-10 textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 textarea-accent min-h-fit h-10"
     name="name"
   >
     accent button
@@ -80,7 +80,7 @@ exports[`Textarea > has accent variant 1`] = `
 exports[`Textarea > has error variant 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 textarea-error min-h-fit h-10 textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 textarea-error min-h-fit h-10"
     name="name"
   >
     error button
@@ -91,7 +91,7 @@ exports[`Textarea > has error variant 1`] = `
 exports[`Textarea > has ghost variant 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 textarea-ghost min-h-fit h-10 textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 textarea-ghost min-h-fit h-10"
     name="name"
   >
     ghost button
@@ -102,7 +102,7 @@ exports[`Textarea > has ghost variant 1`] = `
 exports[`Textarea > has info variant 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 textarea-info min-h-fit h-10 textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 textarea-info min-h-fit h-10"
     name="name"
   >
     info button
@@ -113,7 +113,7 @@ exports[`Textarea > has info variant 1`] = `
 exports[`Textarea > has primary variant 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 textarea-primary min-h-fit h-10 textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 textarea-primary min-h-fit h-10"
     name="name"
   >
     primary button
@@ -124,7 +124,7 @@ exports[`Textarea > has primary variant 1`] = `
 exports[`Textarea > has secondary variant 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 textarea-secondary min-h-fit h-10 textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 textarea-secondary min-h-fit h-10"
     name="name"
   >
     secondary button
@@ -135,7 +135,7 @@ exports[`Textarea > has secondary variant 1`] = `
 exports[`Textarea > has success variant 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 textarea-success min-h-fit h-10 textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 textarea-success min-h-fit h-10"
     name="name"
   >
     success button
@@ -146,7 +146,7 @@ exports[`Textarea > has success variant 1`] = `
 exports[`Textarea > has warning variant 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 textarea-warning min-h-fit h-10 textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 textarea-warning min-h-fit h-10"
     name="name"
   >
     warning button
