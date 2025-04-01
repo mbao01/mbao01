@@ -13,7 +13,7 @@ const Toggle = React.forwardRef<React.ElementRef<typeof TogglePrimitive.Root>, T
       ref={ref}
       className={cn(
         getButtonClasses({ size, wide, outline }),
-        getToggleClasses({ variant }),
+        getToggleClasses({ variant, outline }),
         className
       )}
       {...props}

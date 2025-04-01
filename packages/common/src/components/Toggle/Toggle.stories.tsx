@@ -39,10 +39,26 @@ export const IconContent: Story = {
   },
 };
 
+export const OnToggle: Story = {
+  args: {
+    variant: "primary",
+    children: "Toggle",
+    defaultPressed: true,
+  },
+};
+
 export const PrimaryToggle: Story = {
   args: {
     variant: "primary",
     children: "Toggle",
+  },
+};
+
+export const PrimaryOnToggle: Story = {
+  args: {
+    variant: "primary",
+    children: "Toggle",
+    defaultPressed: true,
   },
 };
 
@@ -64,6 +80,14 @@ export const OutlineToggle: Story = {
   args: {
     outline: true,
     children: "Click me!",
+  },
+};
+
+export const OutlineOnToggle: Story = {
+  args: {
+    outline: true,
+    children: "Click me!",
+    defaultPressed: true,
   },
 };
 
