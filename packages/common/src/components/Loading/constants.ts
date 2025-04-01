@@ -11,6 +11,7 @@ export const getLoadingClasses = cva("loading", {
       infinity: "loading-infinity",
     },
     intent: {
+      default: "text-base-content",
       primary: "text-primary",
       secondary: "text-secondary",
       accent: "text-accent",

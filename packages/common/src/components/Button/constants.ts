@@ -1,6 +1,6 @@
 import { cva } from "../../libs";
 
-export const getButtonClasses = cva("btn disabled:text-opacity-50", {
+export const getButtonClasses = cva("btn", {
   variants: {
     variant: {
       accent: "btn-accent",
@@ -36,6 +36,9 @@ export const getButtonClasses = cva("btn disabled:text-opacity-50", {
     isLoading: {
       true: "relative overflow-hidden",
     },
+    disabled: {
+      true: "",
+    },
   },
   compoundVariants: [
     {
@@ -45,6 +48,11 @@ export const getButtonClasses = cva("btn disabled:text-opacity-50", {
     {
       rounded: undefined,
       className: "rounded-md",
+    },
+    {
+      disabled: true,
+      isLoading: true,
+      className: "text-transparent",
     },
     {
       variant: undefined,

@@ -12,7 +12,7 @@ exports[`ToggleGroup > renders a toggle group 1`] = `
     <button
       aria-label="Toggle one"
       aria-pressed="false"
-      class="btn disabled:text-opacity-50 min-h-fit h-10 rounded-md transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
+      class="btn min-h-fit h-10 rounded-md transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
       data-radix-collection-item=""
       data-state="off"
       tabindex="-1"
@@ -23,7 +23,7 @@ exports[`ToggleGroup > renders a toggle group 1`] = `
     <button
       aria-label="Toggle two"
       aria-pressed="false"
-      class="btn disabled:text-opacity-50 min-h-fit h-10 rounded-md transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
+      class="btn min-h-fit h-10 rounded-md transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
       data-radix-collection-item=""
       data-state="off"
       tabindex="-1"
@@ -34,7 +34,7 @@ exports[`ToggleGroup > renders a toggle group 1`] = `
     <button
       aria-label="Toggle three"
       aria-pressed="false"
-      class="btn disabled:text-opacity-50 min-h-fit h-10 rounded-md transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
+      class="btn min-h-fit h-10 rounded-md transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
       data-radix-collection-item=""
       data-state="off"
       tabindex="-1"
@@ -58,7 +58,7 @@ exports[`ToggleGroup > should toggle button state 1`] = `
     <button
       aria-checked="false"
       aria-label="Toggle one"
-      class="btn disabled:text-opacity-50 min-h-fit h-10 rounded-md transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
+      class="btn min-h-fit h-10 rounded-md transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
       data-radix-collection-item=""
       data-state="off"
       role="radio"
@@ -70,7 +70,7 @@ exports[`ToggleGroup > should toggle button state 1`] = `
     <button
       aria-checked="false"
       aria-label="Toggle two"
-      class="btn disabled:text-opacity-50 min-h-fit h-10 rounded-md transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
+      class="btn min-h-fit h-10 rounded-md transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
       data-radix-collection-item=""
       data-state="off"
       role="radio"
@@ -82,7 +82,7 @@ exports[`ToggleGroup > should toggle button state 1`] = `
     <button
       aria-checked="false"
       aria-label="Toggle three"
-      class="btn disabled:text-opacity-50 min-h-fit h-10 rounded-md transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
+      class="btn min-h-fit h-10 rounded-md transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost"
       data-radix-collection-item=""
       data-state="off"
       role="radio"

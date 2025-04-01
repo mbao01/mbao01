@@ -7,7 +7,19 @@ import { type ButtonProps } from "./types";
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
-    { asChild, className, outline, children, isLoading, variant, size, wide, rounded, ...props },
+    {
+      asChild,
+      className,
+      outline,
+      children,
+      isLoading,
+      variant,
+      size,
+      wide,
+      rounded,
+      disabled,
+      ...props
+    },
     ref
   ) => {
     const Comp = asChild ? Slot : "button";
@@ -15,8 +27,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <Comp
         ref={ref}
+        disabled={disabled}
         className={cn(
-          getButtonClasses({ size, wide, outline, variant, rounded, isLoading }),
+          getButtonClasses({ size, wide, outline, variant, rounded, disabled, isLoading }),
           className
         )}
         {...props}
@@ -27,7 +40,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-[inherit]"
             data-testid="loading"
           >
-            <Loading />
+            <Loading
+              intent={!variant || variant === "link" || variant === "ghost" ? "default" : variant}
+            />
           </span>
         ) : null}
       </Comp>

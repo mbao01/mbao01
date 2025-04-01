@@ -43,7 +43,7 @@ exports[`ThemeSwitch > renders a theme switcher 1`] = `
 exports[`ThemeSwitch > should render a custom element 1`] = `
 <DocumentFragment>
   <button
-    class="btn disabled:text-opacity-50 min-h-fit h-10 rounded-md"
+    class="btn min-h-fit h-10 rounded-md"
   >
     Switch to dark theme
   </button>

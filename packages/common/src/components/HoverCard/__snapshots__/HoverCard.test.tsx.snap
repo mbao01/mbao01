@@ -3,7 +3,7 @@
 exports[`HoverCard > renders hover card trigger with hidden content 1`] = `
 <DocumentFragment>
   <button
-    class="btn disabled:text-opacity-50 btn-link min-h-fit h-10 rounded-md"
+    class="btn btn-link min-h-fit h-10 rounded-md"
     data-state="closed"
   >
     @nextjs
