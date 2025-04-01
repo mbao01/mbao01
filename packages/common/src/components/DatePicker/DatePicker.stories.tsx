@@ -116,7 +116,7 @@ export const WithPresets: Story = {
   args: {
     children: ({ setDate }) => (
       <Select onValueChange={(value) => setDate(addDays(new Date(), parseInt(value)))}>
-        <Select.Trigger wide outline>
+        <Select.Trigger outline>
           <Select.Value placeholder="Select" />
         </Select.Trigger>
         <Select.Content position="popper">

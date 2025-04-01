@@ -6,11 +6,11 @@ import { type SelectTriggerProps } from "./types";
 describe("Select", () => {
   const renderSelect = (
     placeholder = "Theme",
-    { size, wide, variant, outline }: Partial<SelectTriggerProps> = {}
+    { size, variant, outline }: Partial<SelectTriggerProps> = {}
   ) => {
     return render(
       <Select>
-        <Select.Trigger size={size} wide={wide} variant={variant} outline={outline}>
+        <Select.Trigger size={size} variant={variant} outline={outline}>
           <Select.Value placeholder={placeholder} />
         </Select.Trigger>
         <Select.Content>
