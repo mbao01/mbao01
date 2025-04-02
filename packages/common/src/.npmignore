@@ -2,5 +2,4 @@
 **/__snapshots__
 **/*.stories.*
 
-stylesheets/tailwind.css
 vite-env.d.ts
