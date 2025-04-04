@@ -7,7 +7,10 @@ import {
 
 type FormElements = keyof React.JSX.IntrinsicElements;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export type As<P = any> = React.ComponentType<P> | React.ForwardRefExoticComponent<P>;
+export type As<P = any> =
+  | FormElements
+  | React.ComponentType<P>
+  | React.ForwardRefExoticComponent<P>;
 
 type AllowedElements = Pick<React.JSX.IntrinsicElements, FormElements>;
 
