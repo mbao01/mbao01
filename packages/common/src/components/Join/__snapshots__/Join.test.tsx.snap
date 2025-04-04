@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Join > renders a basic join 1`] = `
+<DocumentFragment>
+  <span
+    class="join"
+    data-testid="content"
+  >
+    <span
+      class="rounded-[auto] join-item"
+    >
+      First
+    </span>
+    <span
+      class="rounded-[auto] join-item"
+    >
+      Second
+    </span>
+  </span>
+</DocumentFragment>
+`;
