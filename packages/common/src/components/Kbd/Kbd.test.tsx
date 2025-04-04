@@ -1,30 +1,29 @@
 import { render, screen } from "@testing-library/react";
-import { Alert } from "./Kbd";
-import { type AlertProps } from "./types";
+import { Kbd } from "./Kbd";
 
-describe("Alert", () => {
-  const renderAlert = (heading: string, props?: AlertProps) =>
-    render(
-      <Alert {...props}>
-        <Alert.Title>{heading}</Alert.Title>
-        <Alert.Description>You should pay attention to me</Alert.Description>
-      </Alert>
-    );
-  it("renders a basic alert", () => {
-    renderAlert("Hey!");
+describe("Kbd", () => {
+  it("renders a basic Kbd", () => {
+    const { asFragment } = render(<Kbd>K</Kbd>);
 
-    expect(screen.getByRole("heading", { name: "Hey!" })).toBeInTheDocument();
-    expect(screen.getByText("You should pay attention to me")).toBeInTheDocument();
+    expect(screen.getByText("K")).toBeVisible();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it.each([
     ["has outline", true],
     ["has no outline", false],
   ] as const)("%s", (description, outline) => {
-    const heading = `Alert ${description}`;
-    const { asFragment } = renderAlert(heading, { outline });
+    const title = `Kbd ${description}`;
+    const { asFragment } = render(
+      <span data-testid="content">
+        {title}:{" "}
+        <Kbd outline={outline} variant="neutral">
+          S
+        </Kbd>
+      </span>
+    );
 
-    expect(screen.getByRole("heading", { name: heading })).toBeInTheDocument();
+    expect(screen.getByTestId("content")).toHaveTextContent(`${title}: S`);
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -39,10 +38,14 @@ describe("Alert", () => {
     "warning",
     "error",
   ] as const)("has %s variant", (variant) => {
-    const heading = `Alert ${variant}`;
-    const { asFragment } = renderAlert(heading, { variant });
+    const title = `Kbd ${variant}`;
+    const { asFragment } = render(
+      <span data-testid="content">
+        {title}: <Kbd variant={variant}>B</Kbd>
+      </span>
+    );
 
-    expect(screen.getByRole("heading", { name: heading })).toBeInTheDocument();
+    expect(screen.getByTestId("content")).toHaveTextContent(`${title}: B`);
     expect(asFragment()).toMatchSnapshot();
   });
 });
