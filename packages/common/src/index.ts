@@ -18,6 +18,7 @@ export * from "./components/Calendar";
 export * from "./components/Collapsible";
 export * from "./components/Description";
 export * from "./components/Indicator";
+export * from "./components/Join";
 export * from "./components/Kbd";
 export * from "./components/Progress";
 export * from "./components/ScrollArea";
