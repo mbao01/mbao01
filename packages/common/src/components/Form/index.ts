@@ -12,5 +12,6 @@ export { Checkbox, CheckboxControlled } from "./Checkbox";
 export { TagsInput } from "./TagsInput";
 export { Textarea } from "./Textarea";
 export { TextField } from "./TextField";
+export { Validator } from "./Validator";
 export { Label } from "./components/Label";
 export { Fieldset } from "./components/Fieldset";
