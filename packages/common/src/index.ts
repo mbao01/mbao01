@@ -17,6 +17,7 @@ export * from "./components/Card";
 export * from "./components/Calendar";
 export * from "./components/Collapsible";
 export * from "./components/Description";
+export * from "./components/Kbd";
 export * from "./components/Progress";
 export * from "./components/ScrollArea";
 export * from "./components/Separator";

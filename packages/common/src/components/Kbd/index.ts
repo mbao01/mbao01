@@ -1,1 +1,1 @@
-export { Alert } from "./Kbd";
+export { Kbd } from "./Kbd";
