@@ -5,6 +5,7 @@ import { Text } from "../../Text";
 import { getValidatorClasses, getValidatorHintClasses } from "./constants";
 
 type FormElements = "input" | "select" | "textarea";
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type As<P = any> =
   | FormElements
   | React.ComponentType<P>

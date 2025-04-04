@@ -78,6 +78,7 @@ export const PasswordValidator: Story = {
     required: true,
     placeholder: "Password",
     minLength: 8,
+    // eslint-disable-next-line no-useless-escape
     pattern: "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}",
     title: "Must be more than 8 characters, including number, lowercase letter, uppercase letter",
   },
@@ -106,6 +107,7 @@ export const UsernameValidator: Story = {
     className: "input",
     required: true,
     placeholder: "Username",
+    // eslint-disable-next-line no-useless-escape
     pattern: "[A-Za-z][A-Za-z0-9\-]*",
     minLength: 3,
     maxLength: 30,

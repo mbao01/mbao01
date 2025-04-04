@@ -21,9 +21,7 @@ describe("Input", () => {
   it("handles user input correctly", async () => {
     const user = userEvent.setup();
 
-    const { asFragment } = render(
-      <Input name="username" label="Username" defaultValue="John Doe" />
-    );
+    const { asFragment } = render(<Input name="username" defaultValue="John Doe" />);
     const input = screen.getByDisplayValue("John Doe");
 
     await user.clear(input);
