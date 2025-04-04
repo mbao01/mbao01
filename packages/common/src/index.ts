@@ -22,6 +22,7 @@ export * from "./components/Progress";
 export * from "./components/ScrollArea";
 export * from "./components/Separator";
 export * from "./components/Sonner";
+export * from "./components/Status";
 export * from "./components/Table";
 export * from "./components/Tabs";
 export * from "./components/Text";
