@@ -28,6 +28,26 @@ describe("Kbd", () => {
   });
 
   it.each([
+    { size: "xs", name: "tiny" },
+    { size: "sm", name: "small" },
+    { size: "md", name: "base" },
+    { size: "lg", name: "large" },
+  ] as const)("has $name ($size) button", ({ size, name }) => {
+    const title = `Kbd ${name}`;
+    const { asFragment } = render(
+      <span data-testid="content">
+        {title}:{" "}
+        <Kbd size={size} variant="neutral">
+          S
+        </Kbd>
+      </span>
+    );
+
+    expect(screen.getByTestId("content")).toHaveTextContent(`${title}: S`);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it.each([
     "neutral",
     "primary",
     "secondary",

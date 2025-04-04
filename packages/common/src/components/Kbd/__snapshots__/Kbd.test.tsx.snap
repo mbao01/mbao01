@@ -1,5 +1,65 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`Kbd > has 'base' ('md') button 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd base: 
+    <kbd
+      class="kbd bg-neutral text-neutral-content border-neutral kbd-md"
+    >
+      S
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has 'large' ('lg') button 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd large: 
+    <kbd
+      class="kbd bg-neutral text-neutral-content border-neutral kbd-lg"
+    >
+      S
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has 'small' ('sm') button 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd small: 
+    <kbd
+      class="kbd bg-neutral text-neutral-content border-neutral kbd-sm"
+    >
+      S
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has 'tiny' ('xs') button 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd tiny: 
+    <kbd
+      class="kbd bg-neutral text-neutral-content border-neutral kbd-xs"
+    >
+      S
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
 exports[`Kbd > has accent variant 1`] = `
 <DocumentFragment>
   <span
