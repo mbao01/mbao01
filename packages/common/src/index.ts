@@ -17,6 +17,7 @@ export * from "./components/Card";
 export * from "./components/Calendar";
 export * from "./components/Collapsible";
 export * from "./components/Description";
+export * from "./components/Dock";
 export * from "./components/Indicator";
 export * from "./components/Join";
 export * from "./components/Kbd";
