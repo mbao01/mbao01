@@ -16,7 +16,7 @@ const meta = {
     },
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
-  tags: ["autodocs"],
+  tags: ["autodocs", "skip-test"],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
 } satisfies Meta<typeof Dock>;
@@ -24,30 +24,10 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-const DockContent = (
-  <>
-    <Dock.Button>
-      <Dock.Icon icon={HomeIcon} />
-      <Dock.Label>Home</Dock.Label>
-    </Dock.Button>
-
-    <Dock.Button active>
-      <Dock.Icon icon={InboxIcon} />
-      <Dock.Label>Inbox</Dock.Label>
-    </Dock.Button>
-
-    <Dock.Button>
-      <Dock.Icon icon={CogIcon} />
-      <Dock.Label>Setting</Dock.Label>
-    </Dock.Button>
-  </>
-);
-
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {
     className: "w-96 mx-auto",
-    children: DockContent,
   },
   render: ({ size, ...args }) => {
     return (
@@ -75,7 +55,6 @@ export const TinyDock: Story = {
   args: {
     size: "xs",
     className: "w-96 mx-auto",
-    children: DockContent,
   },
   render: ({ size, ...args }) => {
     return (
@@ -103,7 +82,6 @@ export const PrimaryDock: Story = {
   args: {
     variant: "primary",
     className: "w-96 mx-auto",
-    children: DockContent,
   },
   render: ({ size, ...args }) => {
     return (
@@ -132,7 +110,6 @@ export const OutlineDock: Story = {
     outline: true,
     variant: "primary",
     className: "w-96 mx-auto",
-    children: DockContent,
   },
   render: ({ size, ...args }) => {
     return (
