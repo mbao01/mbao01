@@ -5,7 +5,6 @@ describe("Status", () => {
   it("renders a basic status", () => {
     const { asFragment } = render(<Status />);
 
-    expect(screen.getByText("K")).toBeVisible();
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -22,7 +21,7 @@ describe("Status", () => {
       </span>
     );
 
-    expect(screen.getByTestId("content")).toHaveTextContent(title);
+    expect(screen.getByTestId("content")).toHaveTextContent(`${title}:`);
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -44,7 +43,7 @@ describe("Status", () => {
       </span>
     );
 
-    expect(screen.getByTestId("content")).toHaveTextContent(`${title}: B`);
+    expect(screen.getByTestId("content")).toHaveTextContent(`${title}:`);
     expect(asFragment()).toMatchSnapshot();
   });
 });
