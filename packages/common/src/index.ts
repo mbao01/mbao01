@@ -20,6 +20,7 @@ export * from "./components/Description";
 export * from "./components/Indicator";
 export * from "./components/Join";
 export * from "./components/Kbd";
+export * from "./components/List";
 export * from "./components/Progress";
 export * from "./components/ScrollArea";
 export * from "./components/Separator";
