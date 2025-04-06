@@ -2,7 +2,6 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Badge } from "../Badge";
 import { Button } from "../Button";
 import { Indicator } from "../Indicator";
-import { Status } from "../Status";
 import { Join } from "./Join";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export

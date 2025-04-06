@@ -23,6 +23,7 @@ export * from "./components/Join";
 export * from "./components/Kbd";
 export * from "./components/List";
 export * from "./components/Progress";
+export * from "./components/Resizable";
 export * from "./components/ScrollArea";
 export * from "./components/Separator";
 export * from "./components/Sonner";
