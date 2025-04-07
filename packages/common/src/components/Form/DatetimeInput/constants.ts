@@ -3,28 +3,36 @@ import { cva } from "../../../libs";
 export const DEFAULT_SIZE = 96;
 
 export const getDatetimeInputContainerClasses = cva(
-  `h-10 flex items-center justify-between w-fit px-2 rounded-md transition-all gap-1
+  `border border-base-content/20 shadow-2xs shadow-base-content/20 h-10 flex items-center justify-between w-fit px-2 rounded-md transition-all gap-1
   [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus)]:outline-base-content/20
   [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus-within)]:outline-base-content/20
    `,
   {
     variants: {
       variant: {
-        default: "border-0",
-        accent: "border border-accent",
-        error: "border border-error",
-        ghost: "border border-ghost",
-        info: "border border-info",
-        primary: "border border-primary",
-        secondary: "border border-secondary",
-        success: "border border-success",
-        warning: "border border-warning",
+        default:
+          "[&:has(input:focus)]:border-[currentColor] [&:has(input:focus-within)]:border-[currentColor] [&:has(input:focus)]:outline-ghost [&:has(input:focus-within)]:outline-ghost",
+        accent:
+          "border border-accent shadow-accent [&:has(input:focus)]:outline-accent [&:has(input:focus-within)]:outline-accent",
+        error:
+          "border border-error shadow-error [&:has(input:focus)]:outline-error [&:has(input:focus-within)]:outline-error",
+        ghost:
+          "border-0 shadow-none [&:has(input:focus)]:outline-ghost [&:has(input:focus-within)]:outline-ghost",
+        info: "border border-info shadow-info [&:has(input:focus)]:outline-info [&:has(input:focus-within)]:outline-info",
+        primary:
+          "border border-primary shadow-primary [&:has(input:focus)]:outline-primary [&:has(input:focus-within)]:outline-primary",
+        secondary:
+          "border border-secondary shadow-secondary [&:has(input:focus)]:outline-secondary [&:has(input:focus-within)]:outline-secondary",
+        success:
+          "border border-success shadow-success [&:has(input:focus)]:outline-success [&:has(input:focus-within)]:outline-success",
+        warning:
+          "border border-warning shadow-warning [&:has(input:focus)]:outline-warning [&:has(input:focus-within)]:outline-warning",
       },
       outline: {
         true: "border",
       },
       disabled: {
-        true: "border-base-300",
+        true: "border border-base-200 shadow-none bg-base-200",
       },
       wide: {
         true: "w-full",
@@ -44,12 +52,7 @@ export const getDatetimeInputContainerClasses = cva(
       {
         variant: undefined,
         outline: true,
-        className: "border-neutral-content",
-      },
-      {
-        variant: "default",
-        outline: true,
-        className: "border-base-content",
+        className: "border-base-content/20",
       },
     ],
   }
