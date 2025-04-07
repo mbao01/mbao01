@@ -103,3 +103,20 @@ export const getSelectViewportClasses = cva("p-1", {
     },
   },
 });
+
+export const getFloatingLabelClasses = cva("floating-label");
+
+export const getLabelForSelectClasses = cva("", {
+  variants: {
+    floating: {
+      true: "",
+      false: "label",
+    },
+  },
+  compoundVariants: [
+    {
+      floating: undefined,
+      className: "label",
+    },
+  ],
+});

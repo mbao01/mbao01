@@ -16,7 +16,7 @@ const TextareaLabel = ({ children, ...props }: TextareaLabelProps) => {
 
 const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
   ({ id, label, size, variant, wide, outline, className, ...props }, ref) => {
-    if (Boolean(label)) {
+    if (label) {
       return (
         <label htmlFor={id} className={getFloatingLabelClasses()}>
           <TextareaLabel>{label}</TextareaLabel>

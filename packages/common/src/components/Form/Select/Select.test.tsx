@@ -6,11 +6,11 @@ import { type SelectTriggerProps } from "./types";
 describe("Select", () => {
   const renderSelect = (
     placeholder = "Theme",
-    { size, variant, outline }: Partial<SelectTriggerProps> = {}
+    { size, variant, outline, label }: Partial<SelectTriggerProps> = {}
   ) => {
     return render(
       <Select>
-        <Select.Trigger size={size} variant={variant} outline={outline}>
+        <Select.Trigger size={size} variant={variant} outline={outline} label={label}>
           <Select.Value placeholder={placeholder} />
         </Select.Trigger>
         <Select.Content>
@@ -56,6 +56,43 @@ describe("Select", () => {
     const { asFragment } = renderSelect(placeholder, { size });
 
     expect(screen.getByRole("combobox")).toBeInTheDocument();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("has a label", () => {
+    const { asFragment } = renderSelect("Choose gender", { label: "Gender" });
+
+    expect(screen.getByLabelText("Gender")).toBeVisible();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("has a prefix label", () => {
+    const { asFragment } = renderSelect("Chose year", {
+      label: "Publish date",
+      labelPosition: "start",
+    });
+
+    expect(screen.getByLabelText("Publish date")).toBeVisible();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("has a suffix label", () => {
+    const { asFragment } = renderSelect("Chose domain name", {
+      label: ".com",
+      labelPosition: "end",
+    });
+
+    expect(screen.getByLabelText(".com")).toBeVisible();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it.skip("has a floating label", () => {
+    const { asFragment } = renderSelect("", {
+      label: "Your Country",
+      labelPosition: "floating",
+    });
+
+    expect(screen.getByLabelText("Your Country")).toBeVisible();
     expect(asFragment()).toMatchSnapshot();
   });
 });

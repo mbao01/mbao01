@@ -34,7 +34,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
     }: InputProps,
     ref
   ) => {
-    if (Boolean(label)) {
+    if (label) {
       if (labelPosition === "floating") {
         return (
           <label htmlFor={id} className={getFloatingLabelClasses()}>

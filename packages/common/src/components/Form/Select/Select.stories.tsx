@@ -1,4 +1,5 @@
 import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
+import { ReactNode } from "react";
 import { Select } from "./Select";
 
 type ArgsType = Partial<{
@@ -6,15 +7,26 @@ type ArgsType = Partial<{
   wide: boolean;
   outline: boolean;
   variant: "primary" | "secondary" | "accent" | "success" | "warning" | "info" | "error";
+  label: ReactNode;
+  labelPosition: "start" | "end" | "floating";
+  placeholder: string;
+  className: string;
 }>;
 
 const withSelect = (_: StoryFn, context: StoryContext<ArgsType>) => {
-  const { size, variant, outline } = context.args;
+  const { size, variant, outline, label, labelPosition, placeholder, className } = context.args;
 
   return (
     <Select>
-      <Select.Trigger size={size} variant={variant} outline={outline}>
-        <Select.Value placeholder="Theme" />
+      <Select.Trigger
+        size={size}
+        variant={variant}
+        outline={outline}
+        label={label}
+        labelPosition={labelPosition}
+        className={className}
+      >
+        <Select.Value placeholder={placeholder} />
       </Select.Trigger>
       <Select.Content>
         <Select.Item value="light" variant={variant}>
@@ -78,18 +90,22 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
-  args: {},
+  args: {
+    placeholder: "Theme",
+  },
 };
 
 export const PrimarySelect: Story = {
   args: {
     variant: "primary",
+    placeholder: "Theme",
   },
 };
 
 export const OutlineSelect: Story = {
   args: {
     outline: true,
+    placeholder: "Theme",
   },
 };
 
@@ -97,6 +113,7 @@ export const TinySelect: Story = {
   args: {
     outline: true,
     size: "xs",
+    placeholder: "Theme",
   },
 };
 
@@ -104,5 +121,35 @@ export const FullWidthSelect: Story = {
   args: {
     outline: true,
     wide: true,
+    placeholder: "Theme",
+  },
+};
+
+export const LabelForSelect: Story = {
+  args: {
+    label: "Type",
+    wide: true,
+    outline: true,
+    placeholder: "Theme",
+  },
+};
+
+export const SuffixLabelForSelect: Story = {
+  args: {
+    label: "Be sure!",
+    labelPosition: "end",
+    wide: true,
+    outline: true,
+    placeholder: "Theme",
+  },
+};
+
+export const FloatingLabelForSelect: Story = {
+  args: {
+    label: "Your Email",
+    labelPosition: "floating",
+    wide: true,
+    outline: true,
+    className: "min-w-xs",
   },
 };
