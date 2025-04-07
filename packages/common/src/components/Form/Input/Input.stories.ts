@@ -67,3 +67,34 @@ export const DisabledInput: Story = {
     disabled: true,
   },
 };
+
+export const LabelForInput: Story = {
+  args: {
+    type: "url",
+    label: "https://",
+    placeholder: "URL",
+  },
+};
+
+export const SuffixLabelForInput: Story = {
+  args: {
+    label: ".com",
+    labelPosition: "end",
+    placeholder: "domain name",
+  },
+};
+
+export const LabelForDateInput: Story = {
+  args: {
+    type: "date",
+    label: "Publish date",
+  },
+};
+
+export const FloatingLabelForInput: Story = {
+  args: {
+    label: "Your Email",
+    labelPosition: "floating",
+    placeholder: "mail@site.com",
+  },
+};

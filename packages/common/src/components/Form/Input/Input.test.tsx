@@ -7,14 +7,7 @@ describe("Input", () => {
   it("renders with the correct initial state", () => {
     const { asFragment } = render(<Input name="username" defaultValue="John Doe" />);
 
-    expect(screen.getByDisplayValue("John Doe")).toBeInTheDocument();
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it("has a label", () => {
-    const { asFragment } = render(<Input name="username" defaultValue="Username" />);
-
-    expect(screen.getByDisplayValue("Username")).toBeInTheDocument();
+    expect(screen.getByDisplayValue("John Doe")).toBeVisible();
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -56,7 +49,7 @@ describe("Input", () => {
     const value = `${variant} button`;
     const { asFragment } = render(<Input name="name" defaultValue={value} variant={variant} />);
 
-    expect(screen.getByDisplayValue(value)).toBeInTheDocument();
+    expect(screen.getByDisplayValue(value)).toBeVisible();
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -69,7 +62,39 @@ describe("Input", () => {
     const value = `${name} input`;
     const { asFragment } = render(<Input name="name" defaultValue={value} size={size} />);
 
-    expect(screen.getByDisplayValue(value)).toBeInTheDocument();
+    expect(screen.getByDisplayValue(value)).toBeVisible();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("has a label", () => {
+    const { asFragment } = render(<Input type="url" label="https://" placeholder="URL" />);
+
+    expect(screen.getByLabelText("https://")).toBeVisible();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("has a prefix label", () => {
+    const { asFragment } = render(<Input type="date" label="Publish date" labelPosition="start" />);
+
+    expect(screen.getByLabelText("Publish date")).toBeVisible();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("has a suffix label", () => {
+    const { asFragment } = render(
+      <Input type="url" label=".com" labelPosition="end" placeholder="domain name" />
+    );
+
+    expect(screen.getByLabelText(".com")).toBeVisible();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("has a floating label", () => {
+    const { asFragment } = render(
+      <Input label="Your Email" labelPosition="floating" placeholder="mail@site.com" />
+    );
+
+    expect(screen.getByLabelText("Your Email")).toBeVisible();
     expect(asFragment()).toMatchSnapshot();
   });
 });

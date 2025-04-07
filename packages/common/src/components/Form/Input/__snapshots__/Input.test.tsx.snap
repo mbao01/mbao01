@@ -4,7 +4,6 @@ exports[`Input > handles user input correctly 1`] = `
 <DocumentFragment>
   <input
     class="input rounded-md transition-all duration-100 min-h-fit h-10"
-    label="Username"
     name="username"
     value="John Doe"
   />
@@ -51,13 +50,74 @@ exports[`Input > has 'tiny' ('xs') input 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Input > has a floating label 1`] = `
+<DocumentFragment>
+  <label
+    class="floating-label"
+  >
+    <span
+      class=""
+    >
+      Your Email
+    </span>
+    <input
+      class="input rounded-md transition-all duration-100 min-h-fit h-10"
+      placeholder="mail@site.com"
+    />
+  </label>
+</DocumentFragment>
+`;
+
 exports[`Input > has a label 1`] = `
 <DocumentFragment>
-  <input
+  <label
     class="input rounded-md transition-all duration-100 min-h-fit h-10"
-    name="username"
-    value="Username"
-  />
+  >
+    <span
+      class="label"
+    >
+      https://
+    </span>
+    <input
+      placeholder="URL"
+      type="url"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Input > has a prefix label 1`] = `
+<DocumentFragment>
+  <label
+    class="input rounded-md transition-all duration-100 min-h-fit h-10"
+  >
+    <span
+      class="label"
+    >
+      Publish date
+    </span>
+    <input
+      type="date"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Input > has a suffix label 1`] = `
+<DocumentFragment>
+  <label
+    class="input rounded-md transition-all duration-100 min-h-fit h-10"
+  >
+    <input
+      placeholder="domain name"
+      type="url"
+    />
+    <span
+      class="label"
+    >
+      .com
+    </span>
+  </label>
 </DocumentFragment>
 `;
 

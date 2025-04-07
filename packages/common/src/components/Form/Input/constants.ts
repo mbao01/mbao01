@@ -42,3 +42,20 @@ export const getInputClasses = cva("input rounded-md transition-all duration-100
     },
   ],
 });
+
+export const getFloatingLabelClasses = cva("floating-label");
+
+export const getInputLabelClasses = cva("", {
+  variants: {
+    floating: {
+      true: "",
+      false: "label",
+    },
+  },
+  compoundVariants: [
+    {
+      floating: undefined,
+      className: "label",
+    },
+  ],
+});
