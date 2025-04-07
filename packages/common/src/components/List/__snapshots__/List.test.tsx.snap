@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`List > renders a basic list 1`] = `
+<DocumentFragment>
+  <ul
+    class="list"
+  >
+    <li
+      class="list-row"
+    >
+      <span>
+        If a dog chews
+      </span>
+       shoes whose shoes does 
+      <span>
+        he choose?
+      </span>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

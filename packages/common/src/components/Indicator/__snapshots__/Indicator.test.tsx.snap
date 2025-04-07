@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Indicator > renders a basic indicator 1`] = `
+<DocumentFragment>
+  <span
+    class="indicator"
+  >
+    Main body text
+    <span
+      class="indicator-item"
+    >
+      Indicator
+    </span>
+  </span>
+</DocumentFragment>
+`;

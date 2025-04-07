@@ -2,10 +2,18 @@
 
 import * as React from "react";
 import * as SelectPrimitive from "@radix-ui/react-select";
+import { Slot } from "@radix-ui/react-slot";
 import { CheckIcon, ChevronDownIcon, ChevronUpIcon } from "lucide-react";
-import type { SelectContentProps, SelectItemProps, SelectTriggerProps } from "./types";
+import type {
+  LabelForSelectProps,
+  SelectContentProps,
+  SelectItemProps,
+  SelectTriggerProps,
+} from "./types";
 import { cn } from "../../../utilities";
 import {
+  getFloatingLabelClasses,
+  getLabelForSelectClasses,
   getSelectContentClasses,
   getSelectItemClasses,
   getSelectLabelClasses,
@@ -18,18 +26,71 @@ const Select = (props: React.ComponentPropsWithoutRef<typeof SelectPrimitive.Roo
   <SelectPrimitive.Root {...props} />
 );
 
+const LabelForSelect = ({ children, className, floating, ...props }: LabelForSelectProps) => {
+  const SlotChild = ["string", "number", "boolean", "undefined"].includes(typeof children) ? (
+    <span>{children}</span>
+  ) : (
+    children
+  );
+
+  return (
+    <Slot className={cn(getLabelForSelectClasses({ floating }), className)} {...props}>
+      {SlotChild}
+    </Slot>
+  );
+};
+
 const SelectTrigger = React.forwardRef<
   React.ElementRef<typeof SelectPrimitive.Trigger>,
   SelectTriggerProps
->(({ className, children, size, variant, outline, ...props }, ref) => (
-  <SelectPrimitive.Trigger
-    ref={ref}
-    className={cn(getSelectTriggerClasses({ size, variant, outline }), className)}
-    {...props}
-  >
-    {children}
-  </SelectPrimitive.Trigger>
-));
+>(
+  (
+    { id, label, labelPosition = "start", className, children, size, variant, outline, ...props },
+    ref
+  ) => {
+    if (label) {
+      if (labelPosition === "floating") {
+        return (
+          <label htmlFor={id} className={getFloatingLabelClasses()}>
+            <LabelForSelect floating>{label}</LabelForSelect>
+            <SelectPrimitive.Trigger
+              id={id}
+              ref={ref}
+              className={cn(getSelectTriggerClasses({ size, variant, outline }), className)}
+              {...props}
+            >
+              {children}
+            </SelectPrimitive.Trigger>
+          </label>
+        );
+      }
+
+      return (
+        <label
+          htmlFor={id}
+          className={cn(getSelectTriggerClasses({ size, variant, outline }), className)}
+        >
+          {labelPosition === "start" && <LabelForSelect>{label}</LabelForSelect>}
+          <SelectPrimitive.Trigger id={id} ref={ref} {...props}>
+            {children}
+          </SelectPrimitive.Trigger>
+          {labelPosition === "end" && <LabelForSelect className="me-0!">{label}</LabelForSelect>}
+        </label>
+      );
+    }
+
+    return (
+      <SelectPrimitive.Trigger
+        id={id}
+        ref={ref}
+        className={cn(getSelectTriggerClasses({ size, variant, outline }), className)}
+        {...props}
+      >
+        {children}
+      </SelectPrimitive.Trigger>
+    );
+  }
+);
 SelectTrigger.displayName = SelectPrimitive.Trigger.displayName;
 
 const SelectScrollUpButton = React.forwardRef<

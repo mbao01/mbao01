@@ -10,7 +10,7 @@ type AllowedElements = Pick<React.JSX.IntrinsicElements, As>;
 
 export type FieldsetLabelProps<T extends As> = (T extends "label"
   ? React.LabelHTMLAttributes<HTMLLabelElement>
-  : React.HTMLAttributes<HTMLElement & AllowedElements[T]>) &
+  : AllowedElements[T]) &
   VariantProps<typeof getFieldsetLabelClasses> & {
     as?: T;
   };

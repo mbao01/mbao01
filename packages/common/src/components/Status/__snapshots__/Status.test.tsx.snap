@@ -1,0 +1,178 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Status > has 'base' ('md') button 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Status base: 
+    <span
+      class="status status-md"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Status > has 'large' ('lg') button 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Status large: 
+    <span
+      class="status status-lg"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Status > has 'small' ('sm') button 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Status small: 
+    <span
+      class="status status-sm"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Status > has 'tiny' ('xs') button 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Status tiny: 
+    <span
+      class="status status-xs"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Status > has accent variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Status accent: 
+    <span
+      class="status status-accent"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Status > has error variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Status error: 
+    <span
+      class="status status-error"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Status > has ghost variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Status ghost: 
+    <span
+      class="status"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Status > has info variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Status info: 
+    <span
+      class="status status-info"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Status > has neutral variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Status neutral: 
+    <span
+      class="status status-neutral"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Status > has primary variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Status primary: 
+    <span
+      class="status status-primary"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Status > has secondary variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Status secondary: 
+    <span
+      class="status status-secondary"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Status > has success variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Status success: 
+    <span
+      class="status status-success"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Status > has warning variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Status warning: 
+    <span
+      class="status status-warning"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Status > renders a basic status 1`] = `
+<DocumentFragment>
+  <span
+    class="status"
+  />
+</DocumentFragment>
+`;

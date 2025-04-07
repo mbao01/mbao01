@@ -1,0 +1,115 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Stats > renders a basic stats 1`] = `
+<DocumentFragment>
+  <div
+    class="stats stats-horizontal"
+  >
+    <div
+      class="stat"
+    >
+      <div
+        class="stat-title"
+      >
+        Nike Shoe!
+      </div>
+      <div
+        class="stat-value"
+      >
+        $89,410
+      </div>
+      <div
+        class="stat-desc"
+      >
+        ↗︎ 400 (22%)
+      </div>
+      <div
+        class="stat-actions gap-2"
+      >
+        <button
+          class="btn btn-success btn-xs rounded-md"
+        >
+          Withdrawal
+        </button>
+         
+        <button
+          class="btn btn-secondary btn-xs rounded-md"
+          name="hello"
+        >
+          Buy Now
+        </button>
+      </div>
+    </div>
+    <div
+      class="stat"
+    >
+      <div
+        class="stat-title"
+      >
+        Nike Shoe!
+      </div>
+      <div
+        class="stat-value"
+      >
+        $89,410
+      </div>
+      <div
+        class="stat-desc"
+      >
+        ↗︎ 400 (22%)
+      </div>
+      <div
+        class="stat-actions gap-2"
+      >
+        <button
+          class="btn btn-success btn-xs rounded-md"
+        >
+          Withdrawal
+        </button>
+         
+        <button
+          class="btn btn-secondary btn-xs rounded-md"
+          name="hello"
+        >
+          Buy Now
+        </button>
+      </div>
+    </div>
+    <div
+      class="stat"
+    >
+      <div
+        class="stat-title"
+      >
+        Nike Shoe!
+      </div>
+      <div
+        class="stat-value"
+      >
+        $89,410
+      </div>
+      <div
+        class="stat-desc"
+      >
+        ↗︎ 400 (22%)
+      </div>
+      <div
+        class="stat-actions gap-2"
+      >
+        <button
+          class="btn btn-success btn-xs rounded-md"
+        >
+          Withdrawal
+        </button>
+         
+        <button
+          class="btn btn-secondary btn-xs rounded-md"
+          name="hello"
+        >
+          Buy Now
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

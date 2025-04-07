@@ -88,6 +88,96 @@ exports[`Select > has 'tiny' ('xs') 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Select > has a label 1`] = `
+<DocumentFragment>
+  <label
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 min-h-fit h-10 select-ghost"
+  >
+    <span
+      class="label"
+    >
+      Gender
+    </span>
+    <button
+      aria-autocomplete="none"
+      aria-controls="radix-«r1g»"
+      aria-expanded="false"
+      data-placeholder=""
+      data-state="closed"
+      dir="ltr"
+      role="combobox"
+      type="button"
+    >
+      <span
+        style="pointer-events: none;"
+      >
+        Choose gender
+      </span>
+    </button>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Select > has a prefix label 1`] = `
+<DocumentFragment>
+  <label
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 min-h-fit h-10 select-ghost"
+  >
+    <span
+      class="label"
+    >
+      Publish date
+    </span>
+    <button
+      aria-autocomplete="none"
+      aria-controls="radix-«r1k»"
+      aria-expanded="false"
+      data-placeholder=""
+      data-state="closed"
+      dir="ltr"
+      role="combobox"
+      type="button"
+    >
+      <span
+        style="pointer-events: none;"
+      >
+        Chose year
+      </span>
+    </button>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Select > has a suffix label 1`] = `
+<DocumentFragment>
+  <label
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 min-h-fit h-10 select-ghost"
+  >
+    <span
+      class="label"
+    >
+      .com
+    </span>
+    <button
+      aria-autocomplete="none"
+      aria-controls="radix-«r1o»"
+      aria-expanded="false"
+      data-placeholder=""
+      data-state="closed"
+      dir="ltr"
+      role="combobox"
+      type="button"
+    >
+      <span
+        style="pointer-events: none;"
+      >
+        Chose domain name
+      </span>
+    </button>
+  </label>
+</DocumentFragment>
+`;
+
 exports[`Select > has accent variant 1`] = `
 <DocumentFragment>
   <button

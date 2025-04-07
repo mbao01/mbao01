@@ -1,0 +1,236 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Kbd > has 'base' ('md') button 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd base: 
+    <kbd
+      class="kbd bg-neutral text-neutral-content border-neutral kbd-md"
+    >
+      S
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has 'large' ('lg') button 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd large: 
+    <kbd
+      class="kbd bg-neutral text-neutral-content border-neutral kbd-lg"
+    >
+      S
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has 'small' ('sm') button 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd small: 
+    <kbd
+      class="kbd bg-neutral text-neutral-content border-neutral kbd-sm"
+    >
+      S
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has 'tiny' ('xs') button 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd tiny: 
+    <kbd
+      class="kbd bg-neutral text-neutral-content border-neutral kbd-xs"
+    >
+      S
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has accent variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd accent: 
+    <kbd
+      class="kbd bg-accent text-accent-content border-accent"
+    >
+      B
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has error variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd error: 
+    <kbd
+      class="kbd bg-error text-error-content border-error"
+    >
+      B
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has ghost variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd ghost: 
+    <kbd
+      class="kbd bg-ghost text-ghost-content border-transparent"
+    >
+      B
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has info variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd info: 
+    <kbd
+      class="kbd bg-info text-info-content border-info"
+    >
+      B
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has neutral variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd neutral: 
+    <kbd
+      class="kbd bg-neutral text-neutral-content border-neutral"
+    >
+      B
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has no outline 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd has no outline: 
+    <kbd
+      class="kbd bg-neutral text-neutral-content border-neutral"
+    >
+      S
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has outline 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd has outline: 
+    <kbd
+      class="kbd border-neutral bg-default text-neutral"
+    >
+      S
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has primary variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd primary: 
+    <kbd
+      class="kbd bg-primary text-primary-content border-primary"
+    >
+      B
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has secondary variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd secondary: 
+    <kbd
+      class="kbd bg-secondary text-secondary-content border-secondary"
+    >
+      B
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has success variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd success: 
+    <kbd
+      class="kbd bg-success text-success-content border-success"
+    >
+      B
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > has warning variant 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="content"
+  >
+    Kbd warning: 
+    <kbd
+      class="kbd bg-warning text-warning-content border-warning"
+    >
+      B
+    </kbd>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Kbd > renders a basic Kbd 1`] = `
+<DocumentFragment>
+  <kbd
+    class="kbd"
+  >
+    K
+  </kbd>
+</DocumentFragment>
+`;

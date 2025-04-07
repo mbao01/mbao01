@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Validator > should show validation message/hint 1`] = `
+<DocumentFragment>
+  <input
+    class="border-color-[unset] validator"
+    placeholder="mail@site.com"
+    required=""
+    type="email"
+  />
+  <span
+    class="validator-hint hidden"
+  >
+    Please enter a valid email address
+  </span>
+</DocumentFragment>
+`;

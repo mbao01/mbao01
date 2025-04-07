@@ -11,13 +11,6 @@ describe("Textarea", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("has a label", () => {
-    const { asFragment } = render(<Textarea name="username" defaultValue="Username" />);
-
-    expect(screen.getByDisplayValue("Username")).toBeInTheDocument();
-    expect(asFragment()).toMatchSnapshot();
-  });
-
   it("handles user textarea correctly", async () => {
     const user = userEvent.setup();
 
@@ -70,6 +63,13 @@ describe("Textarea", () => {
     const { asFragment } = render(<Textarea name="name" defaultValue={value} size={size} />);
 
     expect(screen.getByDisplayValue(value)).toBeInTheDocument();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("has a floating label", () => {
+    const { asFragment } = render(<Textarea label="Your work experience" />);
+
+    expect(screen.getByLabelText("Your work experience")).toBeVisible();
     expect(asFragment()).toMatchSnapshot();
   });
 });

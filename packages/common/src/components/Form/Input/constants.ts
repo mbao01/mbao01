@@ -36,14 +36,26 @@ export const getInputClasses = cva("input rounded-md transition-all duration-100
       className: "min-h-fit h-10",
     },
     {
-      variant: undefined,
-      outline: true,
-      className: "border-neutral-content",
-    },
-    {
       variant: "default",
       outline: true,
       className: "border-base-content",
+    },
+  ],
+});
+
+export const getFloatingLabelClasses = cva("floating-label");
+
+export const getInputLabelClasses = cva("", {
+  variants: {
+    floating: {
+      true: "",
+      false: "label",
+    },
+  },
+  compoundVariants: [
+    {
+      floating: undefined,
+      className: "label",
     },
   ],
 });
