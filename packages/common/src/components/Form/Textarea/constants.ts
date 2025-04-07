@@ -48,3 +48,5 @@ export const getTextareaClasses = cva("textarea rounded-md transition-all durati
     },
   ],
 });
+
+export const getFloatingLabelClasses = cva("floating-label");

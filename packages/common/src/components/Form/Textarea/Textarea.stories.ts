@@ -53,3 +53,10 @@ export const DisabledTextarea: Story = {
     "aria-label": "Address",
   },
 };
+
+export const FloatingLabelForInput: Story = {
+  args: {
+    label: "Your work experience",
+    placeholder: "So tell me...",
+  },
+};

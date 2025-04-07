@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import { type VariantProps } from "../../../libs";
+import type { ReactNode } from "react";
+import type { VariantProps } from "../../../libs";
 import { getInputClasses, getInputLabelClasses } from "./constants";
 
 export type InputProps = Omit<React.InputHTMLAttributes<HTMLInputElement>, "size" | "ref"> &

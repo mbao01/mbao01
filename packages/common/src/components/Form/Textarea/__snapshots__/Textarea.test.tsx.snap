@@ -55,14 +55,18 @@ exports[`Textarea > has 'tiny' ('xs') textarea 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Textarea > has a label 1`] = `
+exports[`Textarea > has a floating label 1`] = `
 <DocumentFragment>
-  <textarea
-    class="textarea rounded-md transition-all duration-100 min-h-fit h-10 textarea-ghost"
-    name="username"
+  <label
+    class="floating-label"
   >
-    Username
-  </textarea>
+    <span>
+      Your work experience
+    </span>
+    <textarea
+      class="textarea rounded-md transition-all duration-100 min-h-fit h-10 textarea-ghost"
+    />
+  </label>
 </DocumentFragment>
 `;
 
