@@ -4,7 +4,7 @@ exports[`Checkbox > handles user input correctly 1`] = `
 <DocumentFragment>
   <button
     aria-checked="true"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50"
     data-state="checked"
     role="checkbox"
     type="button"
@@ -40,7 +40,7 @@ exports[`Checkbox > has 'base' ('md') 1`] = `
 <DocumentFragment>
   <button
     aria-checked="false"
-    class="peer flex items-center justify-center shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 h-5 w-5"
+    class="peer flex items-center justify-center shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 h-5 w-5"
     data-state="unchecked"
     role="checkbox"
     type="button"
@@ -53,7 +53,7 @@ exports[`Checkbox > has 'large' ('lg') 1`] = `
 <DocumentFragment>
   <button
     aria-checked="false"
-    class="peer flex items-center justify-center shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 h-7 w-7"
+    class="peer flex items-center justify-center shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 h-7 w-7"
     data-state="unchecked"
     role="checkbox"
     type="button"
@@ -66,7 +66,7 @@ exports[`Checkbox > has 'small' ('sm') 1`] = `
 <DocumentFragment>
   <button
     aria-checked="false"
-    class="peer flex items-center justify-center shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 h-4 w-4"
+    class="peer flex items-center justify-center shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 h-4 w-4"
     data-state="unchecked"
     role="checkbox"
     type="button"
@@ -79,7 +79,7 @@ exports[`Checkbox > has 'tiny' ('xs') 1`] = `
 <DocumentFragment>
   <button
     aria-checked="false"
-    class="peer flex items-center justify-center shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 h-3 w-3"
+    class="peer flex items-center justify-center shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 h-3 w-3"
     data-state="unchecked"
     role="checkbox"
     type="button"
@@ -92,7 +92,7 @@ exports[`Checkbox > has accent variant 1`] = `
 <DocumentFragment>
   <button
     aria-checked="true"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 border-accent data-[state=checked]:bg-accent data-[state=checked]:text-accent-content"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 border-accent data-[state=checked]:bg-accent data-[state=checked]:text-accent-content focus-visible:ring-accent"
     data-state="checked"
     role="checkbox"
     type="button"
@@ -128,7 +128,7 @@ exports[`Checkbox > has error variant 1`] = `
 <DocumentFragment>
   <button
     aria-checked="true"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 border-error data-[state=checked]:bg-error data-[state=checked]:text-error-content"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 border-error data-[state=checked]:bg-error data-[state=checked]:text-error-content focus-visible:ring-error"
     data-state="checked"
     role="checkbox"
     type="button"
@@ -164,7 +164,7 @@ exports[`Checkbox > has info variant 1`] = `
 <DocumentFragment>
   <button
     aria-checked="true"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 border-info data-[state=checked]:bg-info data-[state=checked]:text-info-content"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 border-info data-[state=checked]:bg-info data-[state=checked]:text-info-content focus-visible:ring-info"
     data-state="checked"
     role="checkbox"
     type="button"
@@ -200,7 +200,7 @@ exports[`Checkbox > has primary variant 1`] = `
 <DocumentFragment>
   <button
     aria-checked="true"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-content"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-content focus-visible:ring-primary"
     data-state="checked"
     role="checkbox"
     type="button"
@@ -236,7 +236,7 @@ exports[`Checkbox > has rounded ('lg') 1`] = `
 <DocumentFragment>
   <button
     aria-checked="false"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 rounded-lg"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 rounded-lg"
     data-state="unchecked"
     role="checkbox"
     type="button"
@@ -249,7 +249,7 @@ exports[`Checkbox > has rounded ('md') 1`] = `
 <DocumentFragment>
   <button
     aria-checked="false"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 rounded-md"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 rounded-md"
     data-state="unchecked"
     role="checkbox"
     type="button"
@@ -262,7 +262,7 @@ exports[`Checkbox > has rounded ('sm') 1`] = `
 <DocumentFragment>
   <button
     aria-checked="false"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 rounded-sm"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 rounded-sm"
     data-state="unchecked"
     role="checkbox"
     type="button"
@@ -275,7 +275,7 @@ exports[`Checkbox > has rounded ('xs') 1`] = `
 <DocumentFragment>
   <button
     aria-checked="false"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 rounded-xs"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 rounded-xs"
     data-state="unchecked"
     role="checkbox"
     type="button"
@@ -288,7 +288,7 @@ exports[`Checkbox > has secondary variant 1`] = `
 <DocumentFragment>
   <button
     aria-checked="true"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 border-secondary data-[state=checked]:bg-secondary data-[state=checked]:text-secondary-content"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 border-secondary data-[state=checked]:bg-secondary data-[state=checked]:text-secondary-content focus-visible:ring-secondary"
     data-state="checked"
     role="checkbox"
     type="button"
@@ -324,7 +324,7 @@ exports[`Checkbox > has success variant 1`] = `
 <DocumentFragment>
   <button
     aria-checked="true"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 border-success data-[state=checked]:bg-success data-[state=checked]:text-success-content"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 border-success data-[state=checked]:bg-success data-[state=checked]:text-success-content focus-visible:ring-success"
     data-state="checked"
     role="checkbox"
     type="button"
@@ -360,7 +360,7 @@ exports[`Checkbox > has warning variant 1`] = `
 <DocumentFragment>
   <button
     aria-checked="true"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50 border-warning data-[state=checked]:bg-warning data-[state=checked]:text-warning-content"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 border-warning data-[state=checked]:bg-warning data-[state=checked]:text-warning-content focus-visible:ring-warning"
     data-state="checked"
     role="checkbox"
     type="button"
@@ -396,7 +396,7 @@ exports[`Checkbox > prevent user input when disabled 1`] = `
 <DocumentFragment>
   <button
     aria-checked="false"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50"
     data-disabled=""
     data-state="unchecked"
     disabled=""
@@ -411,7 +411,7 @@ exports[`Checkbox > renders with an indeterminate state 1`] = `
 <DocumentFragment>
   <button
     aria-checked="mixed"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50"
     data-state="indeterminate"
     role="checkbox"
     type="button"
@@ -447,7 +447,7 @@ exports[`Checkbox > renders with the correct initial state 1`] = `
 <DocumentFragment>
   <button
     aria-checked="true"
-    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50"
+    class="peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50"
     data-state="checked"
     role="checkbox"
     type="button"
