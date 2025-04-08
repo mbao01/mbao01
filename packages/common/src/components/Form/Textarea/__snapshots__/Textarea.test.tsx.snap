@@ -3,7 +3,7 @@
 exports[`Textarea > handles user textarea correctly 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 min-h-fit h-10 textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 min-h-fit h-10"
     name="username"
   >
     John Doe
@@ -14,7 +14,7 @@ exports[`Textarea > handles user textarea correctly 1`] = `
 exports[`Textarea > has 'base' ('md') textarea 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 textarea-md textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 textarea-md"
     name="name"
   >
     base textarea
@@ -25,7 +25,7 @@ exports[`Textarea > has 'base' ('md') textarea 1`] = `
 exports[`Textarea > has 'large' ('lg') textarea 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 textarea-lg textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 textarea-lg"
     name="name"
   >
     large textarea
@@ -36,7 +36,7 @@ exports[`Textarea > has 'large' ('lg') textarea 1`] = `
 exports[`Textarea > has 'small' ('sm') textarea 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 textarea-sm textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 textarea-sm"
     name="name"
   >
     small textarea
@@ -47,7 +47,7 @@ exports[`Textarea > has 'small' ('sm') textarea 1`] = `
 exports[`Textarea > has 'tiny' ('xs') textarea 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 textarea-xs textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 textarea-xs"
     name="name"
   >
     tiny textarea
@@ -64,7 +64,7 @@ exports[`Textarea > has a floating label 1`] = `
       Your work experience
     </span>
     <textarea
-      class="textarea rounded-md transition-all duration-100 min-h-fit h-10 textarea-ghost"
+      class="textarea rounded-md transition-all duration-100 min-h-fit h-10"
     />
   </label>
 </DocumentFragment>
@@ -161,7 +161,7 @@ exports[`Textarea > has warning variant 1`] = `
 exports[`Textarea > prevent user textarea when disabled 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 min-h-fit h-10 textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 min-h-fit h-10"
     disabled=""
     name="username"
   >
@@ -173,7 +173,7 @@ exports[`Textarea > prevent user textarea when disabled 1`] = `
 exports[`Textarea > renders with the correct initial state 1`] = `
 <DocumentFragment>
   <textarea
-    class="textarea rounded-md transition-all duration-100 min-h-fit h-10 textarea-ghost"
+    class="textarea rounded-md transition-all duration-100 min-h-fit h-10"
     name="username"
   >
     John Doe

@@ -2,54 +2,7 @@ import { cva } from "../../../libs";
 
 export const getMultiSelectClasses = cva("overflow-visible bg-transparent flex flex-col h-fit");
 
-export const getMultiSelectTriggerClasses = cva(
-  "flex items-center flex-wrap gap-1 h-fit w-fit px-1 py-2 rounded-md transition-all overflow-hidden",
-  {
-    variants: {
-      variant: {
-        default: "border-0",
-        accent: "border border-accent",
-        error: "border border-error",
-        info: "border border-info",
-        primary: "border border-primary",
-        secondary: "border border-secondary",
-        success: "border border-success",
-        warning: "border border-warning",
-      },
-      outline: {
-        true: "border",
-      },
-      disabled: {
-        true: "border-base-300",
-      },
-      wide: {
-        true: "w-full",
-      },
-      size: {
-        xs: "min-h-6 leading-relaxed px-2 py-1 text-xs",
-        sm: "min-h-8 leading-8 px-3 py-1.5 text-sm",
-        md: "min-h-12 leading-loose px-4 text-sm",
-        lg: "min-h-16 leading-loose px-6 text-lg",
-      },
-    },
-    compoundVariants: [
-      {
-        size: undefined,
-        className: "min-h-10 px-4",
-      },
-      {
-        variant: undefined,
-        outline: true,
-        className: "border-neutral-content",
-      },
-      {
-        variant: "default",
-        outline: true,
-        className: "border-base-content",
-      },
-    ],
-  }
-);
+export const getMultiSelectTriggerClasses = cva("flex-wrap h-fit w-fit py-2 overflow-hidden");
 
 export const getMultiSelectItemClasses = cva(
   "cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden",
@@ -106,10 +59,16 @@ export const getMultiSelectTagClasses = cva(
         lg: "px-2 [&>span]:max-w-32",
       },
     },
+    compoundVariants: [
+      {
+        size: undefined,
+        className: "max-h-5",
+      },
+    ],
   }
 );
 
-export const getMultiSelectInputClasses = cva("bg-transparent outline-hidden flex-1", {
+export const getMultiSelectInputClasses = cva("bg-transparent outline-hidden flex-1 my-px", {
   variants: {
     size: {
       xs: "text-xs",

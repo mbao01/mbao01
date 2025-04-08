@@ -6,7 +6,16 @@ type ArgsType = Partial<{
   size: "xs" | "sm" | "md" | "lg";
   wide: boolean;
   outline: boolean;
-  variant: "primary" | "secondary" | "accent" | "success" | "warning" | "info" | "error";
+  variant:
+    | "default"
+    | "primary"
+    | "secondary"
+    | "accent"
+    | "success"
+    | "warning"
+    | "info"
+    | "error"
+    | "ghost";
   label: ReactNode;
   labelPosition: "start" | "end" | "floating";
   placeholder: string;
@@ -79,7 +88,17 @@ const meta = {
     },
     variant: {
       control: "select",
-      options: ["primary", "secondary", "accent", "success", "warning", "info", "error"],
+      options: [
+        "default",
+        "primary",
+        "secondary",
+        "accent",
+        "success",
+        "warning",
+        "info",
+        "error",
+        "ghost",
+      ],
     },
   },
   decorators: [withSelect],

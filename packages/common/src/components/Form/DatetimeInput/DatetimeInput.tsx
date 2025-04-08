@@ -3,7 +3,7 @@
 import { forwardRef, useCallback, useEffect, useState } from "react";
 import type { DatetimeInputProps, TimeString } from "./types";
 import { cn } from "../../../utilities";
-import { getDatetimeInputContainerClasses } from "./constants";
+import { getInputCommonClasses } from "../Input/constants";
 import { DatetimeCalendar } from "./DatetimeCalendar";
 import { DatetimeInputContext } from "./DatetimeInputContext";
 import { getParsedTime, parseDateTime } from "./helpers";
@@ -67,7 +67,7 @@ export const DatetimeInput = forwardRef<HTMLInputElement, DatetimeInputProps>(
         <div className="flex items-center justify-center flex-nowrap">
           <div
             className={cn(
-              getDatetimeInputContainerClasses({ outline, disabled, size, variant, wide }),
+              getInputCommonClasses({ outline, disabled, size, variant, wide }),
               className
             )}
           >

@@ -3,7 +3,7 @@
 exports[`TagsInput > and by using the keyboard the user can remove a tag 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <span
       aria-disabled="false"
@@ -61,7 +61,7 @@ exports[`TagsInput > and by using the keyboard the user can remove a tag 1`] = `
 exports[`TagsInput > and the user can only enter a certain minimum or maximum number of tags 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <span
       aria-disabled="true"
@@ -120,7 +120,7 @@ exports[`TagsInput > and the user can only enter a certain minimum or maximum nu
 exports[`TagsInput > and the user can remove a tag 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
       aria-label="Enter anything"
@@ -135,7 +135,7 @@ exports[`TagsInput > and the user can remove a tag 1`] = `
 exports[`TagsInput > and the user enters a tag 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <span
       aria-disabled="false"
@@ -236,7 +236,7 @@ exports[`TagsInput > and the user enters a tag 1`] = `
 exports[`TagsInput > has accent variant 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-accent min-h-10 px-4"
+    class="shadow-2xs flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border border-accent shadow-accent [&:has(input:focus)]:outline-accent [&:has(input:focus-within)]:outline-accent text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
@@ -251,7 +251,7 @@ exports[`TagsInput > has accent variant 1`] = `
 exports[`TagsInput > has default variant 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border-0 min-h-10 px-4"
+    class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus)]:border-[currentColor] [&:has(input:focus-within)]:border-[currentColor] [&:has(input:focus)]:outline-ghost [&:has(input:focus-within)]:outline-ghost text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
@@ -266,7 +266,7 @@ exports[`TagsInput > has default variant 1`] = `
 exports[`TagsInput > has error variant 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-error min-h-10 px-4"
+    class="shadow-2xs flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border border-error shadow-error [&:has(input:focus)]:outline-error [&:has(input:focus-within)]:outline-error text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
@@ -281,7 +281,7 @@ exports[`TagsInput > has error variant 1`] = `
 exports[`TagsInput > has ghost variant 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-ghost min-h-10 px-4"
+    class="border-base-content/20 shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border-0 shadow-none [&:has(input:focus)]:outline-ghost [&:has(input:focus-within)]:outline-ghost text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
@@ -296,7 +296,7 @@ exports[`TagsInput > has ghost variant 1`] = `
 exports[`TagsInput > has info variant 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-info min-h-10 px-4"
+    class="shadow-2xs flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border border-info shadow-info [&:has(input:focus)]:outline-info [&:has(input:focus-within)]:outline-info text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
@@ -311,7 +311,7 @@ exports[`TagsInput > has info variant 1`] = `
 exports[`TagsInput > has large (lg) size 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-16 px-5 text-lg"
+    class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit py-2 overflow-hidden min-h-16 px-5 text-lg"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-6 text-lg"
@@ -326,7 +326,7 @@ exports[`TagsInput > has large (lg) size 1`] = `
 exports[`TagsInput > has medium (md) size 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-12 px-4 text-sm"
+    class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit py-2 overflow-hidden min-h-12 px-4 text-sm"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-5 text-sm"
@@ -341,7 +341,7 @@ exports[`TagsInput > has medium (md) size 1`] = `
 exports[`TagsInput > has no outline 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
@@ -356,7 +356,7 @@ exports[`TagsInput > has no outline 1`] = `
 exports[`TagsInput > has outline 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border min-h-10 px-4 border-neutral-content"
+    class="shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border text-sm border-base-content/20 [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
@@ -371,7 +371,7 @@ exports[`TagsInput > has outline 1`] = `
 exports[`TagsInput > has primary variant 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-primary min-h-10 px-4"
+    class="shadow-2xs flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border border-primary shadow-primary [&:has(input:focus)]:outline-primary [&:has(input:focus-within)]:outline-primary text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
@@ -386,7 +386,7 @@ exports[`TagsInput > has primary variant 1`] = `
 exports[`TagsInput > has secondary variant 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-secondary min-h-10 px-4"
+    class="shadow-2xs flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border border-secondary shadow-secondary [&:has(input:focus)]:outline-secondary [&:has(input:focus-within)]:outline-secondary text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
@@ -401,7 +401,7 @@ exports[`TagsInput > has secondary variant 1`] = `
 exports[`TagsInput > has small (sm) size 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit rounded-md transition-all overflow-hidden min-h-8 px-3 py-1.5 text-sm"
+    class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit overflow-hidden min-h-8 px-3 py-1.5 text-sm"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-4 text-sm"
@@ -416,7 +416,7 @@ exports[`TagsInput > has small (sm) size 1`] = `
 exports[`TagsInput > has success variant 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-success min-h-10 px-4"
+    class="shadow-2xs flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border border-success shadow-success [&:has(input:focus)]:outline-success [&:has(input:focus-within)]:outline-success text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
@@ -431,7 +431,7 @@ exports[`TagsInput > has success variant 1`] = `
 exports[`TagsInput > has tiny (xs) size 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit rounded-md transition-all overflow-hidden min-h-6 px-2 py-1 text-xs"
+    class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit overflow-hidden min-h-6 px-2 py-1 text-xs"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-3 text-xs"
@@ -446,7 +446,7 @@ exports[`TagsInput > has tiny (xs) size 1`] = `
 exports[`TagsInput > has warning variant 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden border border-warning min-h-10 px-4"
+    class="shadow-2xs flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border border-warning shadow-warning [&:has(input:focus)]:outline-warning [&:has(input:focus-within)]:outline-warning text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
       class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
@@ -461,7 +461,7 @@ exports[`TagsInput > has warning variant 1`] = `
 exports[`TagsInput > renders some default tags 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center flex-wrap gap-1 h-fit py-2 rounded-md transition-all overflow-hidden min-h-10 px-4"
+    class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <span
       aria-disabled="false"

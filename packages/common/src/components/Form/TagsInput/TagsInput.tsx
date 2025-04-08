@@ -7,6 +7,7 @@ import type { TagsInputProps } from "./types";
 import { cn } from "../../../utilities";
 import { Badge } from "../../Badge";
 import { Input } from "../Input";
+import { getInputCommonClasses } from "../Input/constants";
 import {
   FORMATTING_REGEX,
   getTagClasses,
@@ -225,7 +226,11 @@ export const TagsInput = forwardRef<HTMLDivElement, TagsInputProps>(
         {...props}
         ref={ref}
         dir={dir}
-        className={cn(getTagsClasses({ size, wide, outline, variant, disabled }), className)}
+        className={cn(
+          getInputCommonClasses({ outline, disabled, variant, wide }),
+          getTagsClasses({ size }),
+          className
+        )}
       >
         {tags.map((tag, index) => (
           <Badge
@@ -259,7 +264,7 @@ export const TagsInput = forwardRef<HTMLDivElement, TagsInputProps>(
           tabIndex={0}
           onSelect={handleSelect}
           aria-label={ariaLabel}
-          disabled={disableInput}
+          disabled={disabled || disableInput}
           onKeyDown={handleKeyDown}
           onPaste={handlePaste}
           value={inputValue}

@@ -2,59 +2,6 @@ import { cva } from "../../../libs";
 
 export const DEFAULT_SIZE = 96;
 
-export const getDatetimeInputContainerClasses = cva(
-  `h-10 flex items-center justify-between w-fit px-2 rounded-md transition-all gap-1
-  [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus)]:outline-base-content/20
-  [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus-within)]:outline-base-content/20
-   `,
-  {
-    variants: {
-      variant: {
-        default: "border-0",
-        accent: "border border-accent",
-        error: "border border-error",
-        ghost: "border border-ghost",
-        info: "border border-info",
-        primary: "border border-primary",
-        secondary: "border border-secondary",
-        success: "border border-success",
-        warning: "border border-warning",
-      },
-      outline: {
-        true: "border",
-      },
-      disabled: {
-        true: "border-base-300",
-      },
-      wide: {
-        true: "w-full",
-      },
-      size: {
-        xs: "h-6 leading-relaxed text-xs px-1",
-        sm: "h-8 leading-8 text-sm px-1",
-        md: "h-12 leading-loose text-sm px-2",
-        lg: "h-16 leading-loose text-lg px-3",
-      },
-    },
-    compoundVariants: [
-      {
-        size: undefined,
-        className: "min-h-fit h-10",
-      },
-      {
-        variant: undefined,
-        outline: true,
-        className: "border-neutral-content",
-      },
-      {
-        variant: "default",
-        outline: true,
-        className: "border-base-content",
-      },
-    ],
-  }
-);
-
 export const getDatetimeCalendarTriggerClasses = cva(
   `size-8 rounded-md p-1 flex items-center justify-center font-normal
   outline-hidden focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-base-content focus-visible:ring-inset

@@ -1,4 +1,5 @@
 import { type VariantProps } from "../../../libs";
+import { getInputCommonClasses } from "../Input/constants";
 import { getTagsClasses } from "./constants";
 
 export type TagsInputProps = React.HTMLAttributes<HTMLDivElement> & {
@@ -7,4 +8,5 @@ export type TagsInputProps = React.HTMLAttributes<HTMLDivElement> & {
   placeholder?: string;
   maxItems?: number;
   minItems?: number;
-} & VariantProps<typeof getTagsClasses>;
+} & VariantProps<typeof getTagsClasses> &
+  VariantProps<typeof getInputCommonClasses>;
