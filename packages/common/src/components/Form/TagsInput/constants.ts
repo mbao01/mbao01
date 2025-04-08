@@ -4,55 +4,22 @@ export const SPLITTER_REGEX = /[\n#?=&\t,./-]+/; // used for identifying the spl
 
 export const FORMATTING_REGEX = /^[^a-zA-Z0-9]*|[^a-zA-Z0-9]*$/g; // used for formatting the pasted element for the correct value format to be added
 
-export const getTagsClasses = cva(
-  "flex items-center flex-wrap gap-1 h-fit px-1 py-2 rounded-md transition-all overflow-hidden",
-  {
-    variants: {
-      variant: {
-        default: "border-0",
-        accent: "border border-accent",
-        error: "border border-error",
-        ghost: "border border-ghost",
-        info: "border border-info",
-        primary: "border border-primary",
-        secondary: "border border-secondary",
-        success: "border border-success",
-        warning: "border border-warning",
-      },
-      outline: {
-        true: "border",
-      },
-      disabled: {
-        true: "border-base-300",
-      },
-      wide: {
-        true: "w-full",
-      },
-      size: {
-        xs: "min-h-6 leading-relaxed px-2 py-1 text-xs",
-        sm: "min-h-8 leading-8 px-3 py-1.5 text-sm",
-        md: "min-h-12 leading-loose px-4 text-sm",
-        lg: "min-h-16 leading-loose px-5 text-lg",
-      },
+export const getTagsClasses = cva("flex-wrap h-fit py-2 overflow-hidden", {
+  variants: {
+    size: {
+      xs: "min-h-6 leading-relaxed px-2 py-1 text-xs",
+      sm: "min-h-8 leading-8 px-3 py-1.5 text-sm",
+      md: "min-h-12 leading-loose px-4 text-sm",
+      lg: "min-h-16 leading-loose px-5 text-lg",
     },
-    compoundVariants: [
-      {
-        size: undefined,
-        className: "min-h-10 px-4",
-      },
-      {
-        variant: undefined,
-        outline: true,
-        className: "border-neutral-content",
-      },
-      {
-        variant: "default",
-        outline: true,
-        className: "border-base-content",
-      },
-    ],
-  }
-);
+  },
+  compoundVariants: [
+    {
+      size: undefined,
+      className: "min-h-10 px-4",
+    },
+  ],
+});
 
 export const getTagClasses = cva(
   "relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden",

@@ -1,22 +1,23 @@
 import { cva } from "../../../libs";
 
 export const getCheckboxClasses = cva(
-  "peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50",
+  "peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50",
   {
     variants: {
       variant: {
         primary:
-          "border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-content",
+          "border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-content focus-visible:ring-primary",
         secondary:
-          "border-secondary data-[state=checked]:bg-secondary data-[state=checked]:text-secondary-content",
+          "border-secondary data-[state=checked]:bg-secondary data-[state=checked]:text-secondary-content focus-visible:ring-secondary",
         accent:
-          "border-accent data-[state=checked]:bg-accent data-[state=checked]:text-accent-content",
+          "border-accent data-[state=checked]:bg-accent data-[state=checked]:text-accent-content focus-visible:ring-accent",
         success:
-          "border-success data-[state=checked]:bg-success data-[state=checked]:text-success-content",
+          "border-success data-[state=checked]:bg-success data-[state=checked]:text-success-content focus-visible:ring-success",
         warning:
-          "border-warning data-[state=checked]:bg-warning data-[state=checked]:text-warning-content",
-        info: "border-info data-[state=checked]:bg-info data-[state=checked]:text-info-content",
-        error: "border-error data-[state=checked]:bg-error data-[state=checked]:text-error-content",
+          "border-warning data-[state=checked]:bg-warning data-[state=checked]:text-warning-content focus-visible:ring-warning",
+        info: "border-info data-[state=checked]:bg-info data-[state=checked]:text-info-content focus-visible:ring-info",
+        error:
+          "border-error data-[state=checked]:bg-error data-[state=checked]:text-error-content focus-visible:ring-error",
       },
       size: {
         xs: "h-3 w-3",

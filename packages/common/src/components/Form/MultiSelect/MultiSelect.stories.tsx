@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import { MultiSelect } from "./MultiSelect";
 import { MultiSelectTriggerProps } from "./types";
 
-const MultiSelectStory = (props: MultiSelectTriggerProps) => {
+const MultiSelectStory = ({ disabled, ...props }: MultiSelectTriggerProps) => {
   const [value, setValue] = useState<string[]>([]);
 
   const options = useMemo(
@@ -17,8 +17,8 @@ const MultiSelectStory = (props: MultiSelectTriggerProps) => {
 
   return (
     <MultiSelect values={value} onValuesChange={setValue}>
-      <MultiSelect.Trigger {...props}>
-        <MultiSelect.Input placeholder="Select your framework" />
+      <MultiSelect.Trigger disabled={disabled} {...props}>
+        <MultiSelect.Input placeholder="Select your framework" disabled={disabled} />
       </MultiSelect.Trigger>
       <MultiSelect.Content>
         <MultiSelect.List size={props.size}>

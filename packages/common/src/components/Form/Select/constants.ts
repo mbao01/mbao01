@@ -5,7 +5,8 @@ export const getSelectTriggerClasses = cva(
   {
     variants: {
       variant: {
-        default: "bg-transparent",
+        default:
+          "border border-base-content/20 [&:has(input:focus)]:border-[currentColor] [&:has(input:focus-within)]:border-[currentColor] [&:has(input:focus)]:outline-ghost [&:has(input:focus-within)]:outline-ghost",
         primary: "select-primary",
         secondary: "select-secondary",
         accent: "select-accent",
@@ -13,10 +14,10 @@ export const getSelectTriggerClasses = cva(
         warning: "select-warning",
         info: "select-info",
         error: "select-error",
+        ghost: "select-ghost bg-transparent",
       },
       outline: {
         true: "border border-input",
-        false: "select-ghost",
       },
       size: {
         xs: "select-xs",
@@ -31,18 +32,9 @@ export const getSelectTriggerClasses = cva(
         className: "min-h-fit h-10",
       },
       {
-        outline: undefined,
-        className: "select-ghost",
-      },
-      {
         variant: undefined,
         outline: true,
-        className: "border-neutral-content",
-      },
-      {
-        variant: "default",
-        outline: true,
-        className: "border-base-content",
+        className: "border-base-content/20",
       },
     ],
   }
@@ -61,6 +53,7 @@ export const getSelectItemClasses = cva(
         warning: "focus:bg-warning focus:text-warning-content",
         info: "focus:bg-info focus:text-info-content",
         error: "focus:bg-error focus:text-error-content",
+        ghost: "",
       },
     },
   }

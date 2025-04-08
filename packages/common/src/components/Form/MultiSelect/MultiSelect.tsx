@@ -16,6 +16,7 @@ import type {
 import { cn } from "../../../utilities";
 import { Badge } from "../../Badge";
 import { Command } from "../../Command";
+import { getInputCommonClasses } from "../Input/constants";
 import {
   getMultiSelectClasses,
   getMultiSelectInputClasses,
@@ -207,7 +208,8 @@ export const MultiSelectTrigger = ({
   return (
     <div
       className={cn(
-        getMultiSelectTriggerClasses({ size, wide, outline, variant, disabled }),
+        getInputCommonClasses({ outline, disabled, size, variant, wide }),
+        getMultiSelectTriggerClasses(),
         className
       )}
       {...props}

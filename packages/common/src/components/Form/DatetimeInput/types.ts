@@ -1,10 +1,10 @@
 import { type VariantProps } from "../../../libs";
 import { type CalendarProps } from "../../Calendar/types";
+import { getInputCommonClasses } from "../Input/constants";
 import { type InputProps } from "../Input/types";
-import { getDatetimeInputContainerClasses } from "./constants";
 
 type DisabledType = { disabled?: boolean };
-type VariantType = VariantProps<typeof getDatetimeInputContainerClasses>;
+type VariantType = VariantProps<typeof getInputCommonClasses>;
 type NaturalLanguageInputType = DisabledType & {
   locale?: Intl.LocalesArgument;
 } & Omit<InputProps, "type" | "ref" | "value" | "defaultValue" | "onBlur" | "disabled">;
