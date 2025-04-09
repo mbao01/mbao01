@@ -1,7 +1,7 @@
 import { renderHook } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
+import type { DatetimeInputContextProps, TimeString } from "../../types";
 import { DatetimeInputContext } from "../../DatetimeInputContext";
-import { type TimeString } from "../../types";
 import { useDateInput } from "./useDateInput";
 
 describe("useDateInput", () => {
@@ -12,11 +12,11 @@ describe("useDateInput", () => {
   });
 
   it("should return the context value when used within SmartDateInputProvider", () => {
-    const mockContext = {
+    const mockContext: DatetimeInputContextProps = {
       value: new Date(),
-      onDateChange: () => {},
+      onDateChange: vi.fn(),
       time: "12:00 PM" as TimeString,
-      onTimeChange: () => {},
+      onTimeChange: vi.fn(),
     };
 
     const wrapper = ({ children }: { children: React.ReactNode }) => (

@@ -1,8 +1,8 @@
 import { createRef } from "react";
 import { renderHook } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
+import type { MultiSelectContextProps } from "../../types";
 import { MultiSelectContext } from "../../MultiSelectContext";
-import { type MultiSelectContextProps } from "../../types";
 import { useMultiSelect } from "./useMultiSelect";
 
 describe("useMultiSelect", () => {
@@ -15,19 +15,19 @@ describe("useMultiSelect", () => {
   it("should return the context value when used within MultiSelectProvider", () => {
     const mockContext: MultiSelectContextProps = {
       values: ["item1", "item2"],
-      onValueChange: () => {},
+      onValueChange: vi.fn(),
       items: [
         { value: "item1", label: "Item 1" },
         { value: "item2", label: "Item 2" },
       ],
       open: false,
-      setOpen: () => {},
+      setOpen: vi.fn(),
       inputValue: "",
-      setInputValue: () => {},
+      setInputValue: vi.fn(),
       activeIndex: -1,
-      setActiveIndex: () => {},
+      setActiveIndex: vi.fn(),
       ref: createRef<HTMLInputElement>(),
-      handleSelect: () => {},
+      handleSelect: vi.fn(),
     };
 
     const wrapper = ({ children }: { children: React.ReactNode }) => (

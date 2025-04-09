@@ -1,5 +1,6 @@
 import { renderHook } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
+import type { FileUploaderContextType } from "./types";
 import { FileUploaderContext } from "./FileUploaderContext";
 import { useFileUpload } from "./useFileUpload";
 
@@ -11,14 +12,27 @@ describe("useFileUpload", () => {
   });
 
   it("should return the context value when used within FileUploaderProvider", () => {
-    const mockContext = {
-      dropzoneState: {} as any,
+    const mockContext: FileUploaderContextType = {
+      dropzoneState: {
+        isDragAccept: false,
+        isDragReject: false,
+        isDragActive: false,
+        isFocused: false,
+        isFileDialogActive: false,
+        acceptedFiles: [],
+        fileRejections: [],
+        getRootProps: vi.fn(),
+        getInputProps: vi.fn(),
+        open: vi.fn(),
+        rootRef: { current: document.createElement("div") },
+        inputRef: { current: document.createElement("input") },
+      },
       isLOF: false,
       isFileTooBig: false,
-      removeFileFromSet: () => {},
-      removeAll: () => {},
+      removeFileFromSet: vi.fn(),
+      removeAll: vi.fn(),
       activeIndex: -1,
-      setActiveIndex: () => {},
+      setActiveIndex: vi.fn(),
       orientation: "horizontal" as const,
       direction: undefined,
       hiddenInputRef: { current: null },

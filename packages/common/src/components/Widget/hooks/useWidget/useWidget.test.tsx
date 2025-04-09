@@ -1,7 +1,7 @@
 import { renderHook } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
+import type { Widget } from "../../types";
 import { InternalWidgetsContext } from "../../InternalWidgetsContext";
-import { type Widget } from "../../types";
 import { useWidget } from "./useWidget";
 
 describe("useWidget", () => {

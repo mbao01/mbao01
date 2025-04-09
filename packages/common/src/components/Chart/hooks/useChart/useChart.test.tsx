@@ -1,5 +1,6 @@
 import { renderHook } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
+import type { ChartContextProps } from "../../types";
 import { ChartContext } from "../../ChartContext";
 import { useChart } from "./useChart";
 
@@ -11,7 +12,7 @@ describe("useChart", () => {
   });
 
   it("should return the context value when used within Chart component", () => {
-    const mockContext = {
+    const mockContext: ChartContextProps = {
       config: {
         series1: {
           label: "Series 1",

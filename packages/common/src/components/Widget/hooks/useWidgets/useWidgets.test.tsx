@@ -1,7 +1,7 @@
 import { renderHook } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
+import type { InternalWidgetsContextProps, Widget } from "../../types";
 import { InternalWidgetsContext } from "../../InternalWidgetsContext";
-import { type Widget } from "../../types";
 import { useWidgets } from "./useWidgets";
 
 describe("useWidgets", () => {
@@ -16,7 +16,7 @@ describe("useWidgets", () => {
       { id: "widget1", type: "test" },
       { id: "widget2", type: "test" },
     ];
-    const mockContext = {
+    const mockContext: InternalWidgetsContextProps = {
       widgets: mockWidgets,
       addWidget: vi.fn(),
       addWidgets: vi.fn(),
