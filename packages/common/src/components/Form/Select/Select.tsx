@@ -45,7 +45,18 @@ const SelectTrigger = React.forwardRef<
   SelectTriggerProps
 >(
   (
-    { id, label, labelPosition = "start", className, children, size, variant, outline, ...props },
+    {
+      id,
+      label,
+      labelPosition = "start",
+      className,
+      children,
+      size,
+      wide,
+      variant,
+      outline,
+      ...props
+    },
     ref
   ) => {
     if (label) {
@@ -56,7 +67,7 @@ const SelectTrigger = React.forwardRef<
             <SelectPrimitive.Trigger
               id={id}
               ref={ref}
-              className={cn(getSelectTriggerClasses({ size, variant, outline }), className)}
+              className={cn(getSelectTriggerClasses({ size, wide, variant, outline }), className)}
               {...props}
             >
               {children}
