@@ -59,6 +59,7 @@ exports[`Breadcrumb > shows labeled paths 1`] = `
         role="presentation"
       >
         <svg
+          aria-hidden="true"
           class="lucide lucide-slash"
           fill="none"
           height="24"
@@ -114,6 +115,7 @@ exports[`Breadcrumb > shows unlabeled paths 1`] = `
         role="presentation"
       >
         <svg
+          aria-hidden="true"
           class="lucide lucide-slash"
           fill="none"
           height="24"
@@ -146,6 +148,7 @@ exports[`Breadcrumb > shows unlabeled paths 1`] = `
         role="presentation"
       >
         <svg
+          aria-hidden="true"
           class="lucide lucide-slash"
           fill="none"
           height="24"

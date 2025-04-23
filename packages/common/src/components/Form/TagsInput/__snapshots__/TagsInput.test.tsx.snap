@@ -28,6 +28,7 @@ exports[`TagsInput > and by using the keyboard the user can remove a tag 1`] = `
           Remove World option
         </span>
         <svg
+          aria-hidden="true"
           class="lucide lucide-x h-4 w-4"
           fill="none"
           height="24"
@@ -87,6 +88,7 @@ exports[`TagsInput > and the user can only enter a certain minimum or maximum nu
           Remove World option
         </span>
         <svg
+          aria-hidden="true"
           class="lucide lucide-x h-4 w-4"
           fill="none"
           height="24"
@@ -160,6 +162,7 @@ exports[`TagsInput > and the user enters a tag 1`] = `
           Remove Hello option
         </span>
         <svg
+          aria-hidden="true"
           class="lucide lucide-x h-4 w-4"
           fill="none"
           height="24"
@@ -203,6 +206,7 @@ exports[`TagsInput > and the user enters a tag 1`] = `
           Remove World option
         </span>
         <svg
+          aria-hidden="true"
           class="lucide lucide-x h-4 w-4"
           fill="none"
           height="24"
@@ -486,6 +490,7 @@ exports[`TagsInput > renders some default tags 1`] = `
           Remove Hello option
         </span>
         <svg
+          aria-hidden="true"
           class="lucide lucide-x h-4 w-4"
           fill="none"
           height="24"
@@ -529,6 +534,7 @@ exports[`TagsInput > renders some default tags 1`] = `
           Remove World option
         </span>
         <svg
+          aria-hidden="true"
           class="lucide lucide-x h-4 w-4"
           fill="none"
           height="24"

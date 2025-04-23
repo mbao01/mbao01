@@ -37,6 +37,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
             Remove Svelte option
           </span>
           <svg
+            aria-hidden="true"
             class="lucide lucide-x h-4 w-4 hover:stroke-destructive"
             fill="none"
             height="24"
@@ -174,6 +175,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
             Remove Svelte option
           </span>
           <svg
+            aria-hidden="true"
             class="lucide lucide-x h-4 w-4 hover:stroke-destructive"
             fill="none"
             height="24"
@@ -311,6 +313,7 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
             Remove React option
           </span>
           <svg
+            aria-hidden="true"
             class="lucide lucide-x h-4 w-4 hover:stroke-destructive"
             fill="none"
             height="24"
@@ -446,6 +449,7 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
             Remove React option
           </span>
           <svg
+            aria-hidden="true"
             class="lucide lucide-x h-4 w-4 hover:stroke-destructive"
             fill="none"
             height="24"

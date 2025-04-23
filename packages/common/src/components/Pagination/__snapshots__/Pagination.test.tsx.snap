@@ -17,6 +17,7 @@ exports[`Pagination > renders pagination buttons 1`] = `
           href="#"
         >
           <svg
+            aria-hidden="true"
             class="lucide lucide-chevron-left h-4 w-4"
             fill="none"
             height="24"
@@ -65,6 +66,7 @@ exports[`Pagination > renders pagination buttons 1`] = `
           class="flex h-9 w-9 items-center justify-center"
         >
           <svg
+            aria-hidden="true"
             class="lucide lucide-ellipsis h-4 w-4"
             fill="none"
             height="24"
@@ -106,6 +108,7 @@ exports[`Pagination > renders pagination buttons 1`] = `
           href="#"
         >
           <svg
+            aria-hidden="true"
             class="lucide lucide-chevron-right h-4 w-4"
             fill="none"
             height="24"

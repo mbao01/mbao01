@@ -16,6 +16,7 @@ exports[`Checkbox > handles user input correctly 1`] = `
       style="pointer-events: none;"
     >
       <svg
+        aria-hidden="true"
         class="lucide lucide-check h-3.5 w-3.5"
         fill="none"
         height="24"
@@ -104,6 +105,7 @@ exports[`Checkbox > has accent variant 1`] = `
       style="pointer-events: none;"
     >
       <svg
+        aria-hidden="true"
         class="lucide lucide-check h-3.5 w-3.5"
         fill="none"
         height="24"
@@ -140,6 +142,7 @@ exports[`Checkbox > has error variant 1`] = `
       style="pointer-events: none;"
     >
       <svg
+        aria-hidden="true"
         class="lucide lucide-check h-3.5 w-3.5"
         fill="none"
         height="24"
@@ -176,6 +179,7 @@ exports[`Checkbox > has info variant 1`] = `
       style="pointer-events: none;"
     >
       <svg
+        aria-hidden="true"
         class="lucide lucide-check h-3.5 w-3.5"
         fill="none"
         height="24"
@@ -212,6 +216,7 @@ exports[`Checkbox > has primary variant 1`] = `
       style="pointer-events: none;"
     >
       <svg
+        aria-hidden="true"
         class="lucide lucide-check h-3.5 w-3.5"
         fill="none"
         height="24"
@@ -300,6 +305,7 @@ exports[`Checkbox > has secondary variant 1`] = `
       style="pointer-events: none;"
     >
       <svg
+        aria-hidden="true"
         class="lucide lucide-check h-3.5 w-3.5"
         fill="none"
         height="24"
@@ -336,6 +342,7 @@ exports[`Checkbox > has success variant 1`] = `
       style="pointer-events: none;"
     >
       <svg
+        aria-hidden="true"
         class="lucide lucide-check h-3.5 w-3.5"
         fill="none"
         height="24"
@@ -372,6 +379,7 @@ exports[`Checkbox > has warning variant 1`] = `
       style="pointer-events: none;"
     >
       <svg
+        aria-hidden="true"
         class="lucide lucide-check h-3.5 w-3.5"
         fill="none"
         height="24"
@@ -423,6 +431,7 @@ exports[`Checkbox > renders with an indeterminate state 1`] = `
       style="pointer-events: none;"
     >
       <svg
+        aria-hidden="true"
         class="lucide lucide-minus h-3.5 w-3.5"
         fill="none"
         height="24"
@@ -459,6 +468,7 @@ exports[`Checkbox > renders with the correct initial state 1`] = `
       style="pointer-events: none;"
     >
       <svg
+        aria-hidden="true"
         class="lucide lucide-check h-3.5 w-3.5"
         fill="none"
         height="24"

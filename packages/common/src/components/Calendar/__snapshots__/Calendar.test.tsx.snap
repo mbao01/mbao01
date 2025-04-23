@@ -20,6 +20,7 @@ exports[`Calendar > does not have navigation 1`] = `
           type="button"
         >
           <svg
+            aria-hidden="true"
             class="lucide lucide-chevron-left h-4 w-4 rdp-chevron"
             fill="none"
             height="24"
@@ -44,6 +45,7 @@ exports[`Calendar > does not have navigation 1`] = `
           type="button"
         >
           <svg
+            aria-hidden="true"
             class="lucide lucide-chevron-right h-4 w-4 rdp-chevron"
             fill="none"
             height="24"
@@ -478,6 +480,7 @@ exports[`Calendar > has navigable months 1`] = `
           type="button"
         >
           <svg
+            aria-hidden="true"
             class="lucide lucide-chevron-left h-4 w-4 rdp-chevron"
             fill="none"
             height="24"
@@ -500,6 +503,7 @@ exports[`Calendar > has navigable months 1`] = `
           type="button"
         >
           <svg
+            aria-hidden="true"
             class="lucide lucide-chevron-right h-4 w-4 rdp-chevron"
             fill="none"
             height="24"
@@ -601,6 +605,7 @@ exports[`Calendar > has navigable months 1`] = `
               >
                 April
                 <svg
+                  aria-hidden="true"
                   class="lucide lucide-chevron-right h-4 w-4 rdp-chevron"
                   fill="none"
                   height="24"
@@ -658,6 +663,7 @@ exports[`Calendar > has navigable months 1`] = `
               >
                 2024
                 <svg
+                  aria-hidden="true"
                   class="lucide lucide-chevron-right h-4 w-4 rdp-chevron"
                   fill="none"
                   height="24"
@@ -1087,6 +1093,7 @@ exports[`Calendar > shows April, 2024 calendar 1`] = `
           type="button"
         >
           <svg
+            aria-hidden="true"
             class="lucide lucide-chevron-left h-4 w-4 rdp-chevron"
             fill="none"
             height="24"
@@ -1109,6 +1116,7 @@ exports[`Calendar > shows April, 2024 calendar 1`] = `
           type="button"
         >
           <svg
+            aria-hidden="true"
             class="lucide lucide-chevron-right h-4 w-4 rdp-chevron"
             fill="none"
             height="24"

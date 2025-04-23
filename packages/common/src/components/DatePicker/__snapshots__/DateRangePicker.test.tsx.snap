@@ -16,6 +16,7 @@ exports[`DateRangePicker > has a custom label 1`] = `
       How long will you be staying?
     </span>
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"
@@ -83,6 +84,7 @@ exports[`DateRangePicker > is disabled 1`] = `
       Pick a range
     </span>
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"
@@ -149,6 +151,7 @@ exports[`DateRangePicker > shows a default/preselected month and range 1`] = `
       Mar 01, 2022 - Mar 15, 2022
     </span>
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"
@@ -215,6 +218,7 @@ exports[`DateRangePicker > shows calendar with specific month 1`] = `
       Pick a range
     </span>
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"
@@ -281,6 +285,7 @@ exports[`DateRangePicker > shows the current month 1`] = `
       Pick a range
     </span>
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"
