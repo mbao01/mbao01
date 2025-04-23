@@ -152,6 +152,7 @@ exports[`Link > renders an external link 1`] = `
   >
     Google.com
     <svg
+      aria-hidden="true"
       class="lucide lucide-external-link ml-[2px w-4 h-4 inline"
       fill="none"
       height="24"

@@ -23,12 +23,14 @@ type ArgsType = Partial<{
 }>;
 
 const withSelect = (_: StoryFn, context: StoryContext<ArgsType>) => {
-  const { size, variant, outline, label, labelPosition, placeholder, className } = context.args;
+  const { size, wide, variant, outline, label, labelPosition, placeholder, className } =
+    context.args;
 
   return (
     <Select>
       <Select.Trigger
         size={size}
+        wide={wide}
         variant={variant}
         outline={outline}
         label={label}

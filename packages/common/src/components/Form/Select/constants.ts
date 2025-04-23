@@ -16,6 +16,9 @@ export const getSelectTriggerClasses = cva(
         error: "select-error",
         ghost: "select-ghost bg-transparent",
       },
+      wide: {
+        true: "w-full",
+      },
       outline: {
         true: "border border-input",
       },

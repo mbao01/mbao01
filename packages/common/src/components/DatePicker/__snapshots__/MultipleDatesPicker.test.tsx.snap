@@ -16,6 +16,7 @@ exports[`MultipleDatesPicker > has a custom label 1`] = `
       When will you be visiting?
     </span>
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"
@@ -83,6 +84,7 @@ exports[`MultipleDatesPicker > is disabled 1`] = `
       Pick one or more dates
     </span>
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"
@@ -149,6 +151,7 @@ exports[`MultipleDatesPicker > shows calendar with specific month 1`] = `
       Pick one or more dates
     </span>
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"
@@ -215,6 +218,7 @@ exports[`MultipleDatesPicker > shows default/preselected dates 1`] = `
       Mar 01, 2022 and Mar 15, 2022
     </span>
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"
@@ -281,6 +285,7 @@ exports[`MultipleDatesPicker > shows the current month 1`] = `
       Pick one or more dates
     </span>
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"

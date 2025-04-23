@@ -9,6 +9,7 @@ exports[`Dock > renders a basic dock 1`] = `
       class="dock-active"
     >
       <svg
+        aria-hidden="true"
         class="lucide lucide-house"
         fill="none"
         height="24"
@@ -37,6 +38,7 @@ exports[`Dock > renders a basic dock 1`] = `
       class=""
     >
       <svg
+        aria-hidden="true"
         class="lucide lucide-inbox"
         fill="none"
         height="24"
@@ -65,6 +67,7 @@ exports[`Dock > renders a basic dock 1`] = `
       class=""
     >
       <svg
+        aria-hidden="true"
         class="lucide lucide-cog"
         fill="none"
         height="24"

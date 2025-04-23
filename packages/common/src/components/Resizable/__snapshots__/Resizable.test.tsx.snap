@@ -15,6 +15,7 @@ exports[`Resizable > renders a resizable panel groups 1`] = `
       data-panel-group-id="«r0»"
       data-panel-id="«r1»"
       data-panel-size="25.0"
+      id="«r1»"
       style="flex-basis: 0px; flex-grow: 25; flex-shrink: 1; overflow: hidden;"
     >
       One
@@ -37,6 +38,7 @@ exports[`Resizable > renders a resizable panel groups 1`] = `
       data-panel-group-id="«r0»"
       data-panel-id="«r3»"
       data-panel-size="75.0"
+      id="«r3»"
       style="flex-basis: 0px; flex-grow: 75; flex-shrink: 1; overflow: hidden;"
     >
       <div
@@ -52,6 +54,7 @@ exports[`Resizable > renders a resizable panel groups 1`] = `
           data-panel-group-id="«r4»"
           data-panel-id="«r5»"
           data-panel-size="50.0"
+          id="«r5»"
           style="flex-basis: 0px; flex-grow: 50; flex-shrink: 1; overflow: hidden;"
         >
           Two
@@ -72,6 +75,7 @@ exports[`Resizable > renders a resizable panel groups 1`] = `
             class="z-10 flex h-4 w-3 items-center justify-center rounded-sm border bg-base-100"
           >
             <svg
+              aria-hidden="true"
               class="lucide lucide-grip-vertical h-2.5 w-2.5"
               fill="none"
               height="24"
@@ -122,6 +126,7 @@ exports[`Resizable > renders a resizable panel groups 1`] = `
           data-panel-group-id="«r4»"
           data-panel-id="«r7»"
           data-panel-size="50.0"
+          id="«r7»"
           style="flex-basis: 0px; flex-grow: 50; flex-shrink: 1; overflow: hidden;"
         >
           Three

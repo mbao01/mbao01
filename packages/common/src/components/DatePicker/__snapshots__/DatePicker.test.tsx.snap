@@ -14,6 +14,7 @@ exports[`DatePicker > has a custom label 1`] = `
       Date of birth
     </span>
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"
@@ -79,6 +80,7 @@ exports[`DatePicker > is disabled 1`] = `
       Pick a date
     </span>
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"
@@ -142,6 +144,7 @@ exports[`DatePicker > shows a default/preselected month and date 1`] = `
   >
     March 15th, 2022
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"
@@ -206,6 +209,7 @@ exports[`DatePicker > shows calendar with specific month 1`] = `
       Pick a date
     </span>
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"
@@ -270,6 +274,7 @@ exports[`DatePicker > shows the current month 1`] = `
       Pick a date
     </span>
     <svg
+      aria-hidden="true"
       class="lucide lucide-calendar-days ml-auto h-4 w-4 opacity-50"
       fill="none"
       height="24"
