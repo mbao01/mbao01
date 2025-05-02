@@ -94,7 +94,7 @@ const SelectTrigger = React.forwardRef<
       <SelectPrimitive.Trigger
         id={id}
         ref={ref}
-        className={cn(getSelectTriggerClasses({ size, variant, outline }), className)}
+        className={cn(getSelectTriggerClasses({ size, wide, variant, outline }), className)}
         {...props}
       >
         {children}
