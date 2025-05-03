@@ -1,20 +1,18 @@
-# v0.3.9 (Sat May 03 2025)
-
-#### 🐛 Bug Fix
-
-- feat(lerna): add lerna and use conventional commit [#189](https://github.com/mbao01/mbao01/pull/189) (undefined [@mbao01](https://github.com/mbao01))
-
-#### Authors: 2
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-- undefined (undefined)
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 0.3.9 (2025-05-03)
+
+
+### Features
+
+* **lerna:** add lerna and use conventional commit ([#189](https://github.com/mbao01/mbao01/issues/189)) ([8a46d84](https://github.com/mbao01/mbao01/commit/8a46d84241b7db10c96a73afa0714a554d0e4b5e))
+
+
+
+
 
 ## 0.3.8 (2025-05-02)
 
