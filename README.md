@@ -23,7 +23,7 @@ Here are some ideas to get you started:
 [![build](https://github.com/mbao01/mbao01/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/mbao01/mbao01/actions/workflows/build.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-This workspace is managed by [pnpm](https://pnpm.io/cli/run) and [Lerna](https://lerna.js.org/). It follows the [semantic versioning](https://semver.org/) using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) - all orchestrated by lerna.
+This workspace is managed by [pnpm](https://pnpm.io/cli/run) and releases by [Auto](https://intuit.github.io/auto). It follows the [semantic versioning](https://semver.org/) using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) - all orchestrated by auto.
 
 ## Preparing for release
 Ensure you are on a feature branch. You'd then need to create a pull request for the feature branch to `main`. After all the review ceremonies are complete you then proceed with the following steps. ⛔️⛔️⛔️ NOTE: DO NOT MERGE THE PR!!!!!
