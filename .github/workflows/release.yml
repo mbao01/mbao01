@@ -1,15 +1,36 @@
-name: 🫳 Release packages
+name: 🚢 Publish packages
 
 on:
-  pull_request:
+  push:
     branches:
       - main
-    types:
-      - closed
 
 jobs:
+  guard:
+    runs-on: ubuntu-latest
+    outputs:
+      TAG_BRANCH: ${{ steps.tag_branch.outputs.TAG_BRANCH }}
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+
+      # Get all branches associated with tag branches
+      - name: Get tag branches
+        id: tag_branch
+        # 1. Get the list of branches ref where this tag exists
+        # 2. Remove 'origin/' from that result
+        # 3. Put that string in output
+        # => We can now use function 'contains(list, item)''
+        run: |
+          $(git fetch)
+          raw=$(git branch -a -r --contains ${{ github.ref_name }})
+          TAG_BRANCH=${raw##*/}
+          echo "TAG_BRANCH=$TAG_BRANCH" >> $GITHUB_OUTPUT
+          echo "Branches where this tag exists : $TAG_BRANCH"
+
   cancel:
-    if: startsWith(github.head_ref, 'releases/') && github.event.pull_request.merged == true
+    needs: [guard]
+    if: ${{ contains(needs.guard.outputs.TAG_BRANCH, 'main') }}
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel previous runs
@@ -20,9 +41,56 @@ jobs:
     uses: ./.github/workflows/callable-build.yml
     needs: [cancel]
 
+  test:
+    name: Test
+    uses: ./.github/workflows/callable-test.yml
+    needs: [cancel]
+
   release:
-    name: Release
-    uses: ./.github/workflows/callable-release.yml
-    needs: [build]
+    name: 📦 Publish packages
+    needs: [build, test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+
+      - name: 📡 Setup
+        uses: ./.github/setup
+
+      - name: 🧼 Clean workspace
+        run: git restore . && git fetch --tags
+
+      - name: Restore build
+        id: cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            **/*/dist
+            **/*/storybook-static
+          key: ${{ runner.os }}-build-${{ github.sha }}
+
+      - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        shell: bash
+        run: pnpm -r build
+
+      - name: 🟠 Set npm token and registry
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+
+      - name: 👏 Run release script
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          pnpm release
+
+  deploy:
+    name: Deploy
+    uses: ./.github/workflows/callable-deployment.yml
+    needs: [release]
     secrets:
-      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}

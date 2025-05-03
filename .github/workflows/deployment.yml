@@ -1,13 +1,9 @@
 name: 🧑‍🚀 Deploy projects
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
-      - releases/**
 jobs:
   cancel:
     runs-on: ubuntu-latest

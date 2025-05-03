@@ -1,0 +1,16 @@
+{
+  "author": "Ayomide Bakare",
+  "plugins": [
+    "npm",
+    "all-contributors",
+    "conventional-commits",
+    "first-time-contributor",
+    [
+      "jira",
+      "https://getwazo.atlassian.net"
+    ],
+    "released"
+  ],
+  "onlyPublishWithReleaseLabel": true,
+  "baseBranch": "main"
+}
