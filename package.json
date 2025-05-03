@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lerna": "lerna",
     "prepare": "husky",
-    "release": "auto shipit"
+    "release": "HUSKY=0 auto shipit"
   },
   "keywords": [],
   "author": "Ayomide Bakare <poke@ayomidebakare.site> (https://x.com/mbao_01)",
