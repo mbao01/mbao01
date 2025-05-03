@@ -41,9 +41,14 @@ jobs:
     uses: ./.github/workflows/callable-build.yml
     needs: [cancel]
 
+  test:
+    name: Test
+    uses: ./.github/workflows/callable-test.yml
+    needs: [cancel]
+
   release:
     name: 📦 Publish packages
-    needs: [build]
+    needs: [build, test]
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout repo
@@ -51,6 +56,9 @@ jobs:
 
       - name: 📡 Setup
         uses: ./.github/setup
+
+      - name: 🧼 Clean workspace
+        run: git restore . && git fetch --tags
 
       - name: Restore build
         id: cache

@@ -15,3 +15,7 @@ jobs:
   build:
     uses: ./.github/workflows/callable-build.yml
     needs: [cancel]
+
+  test:
+    uses: ./.github/workflows/callable-test.yml
+    needs: [cancel]
