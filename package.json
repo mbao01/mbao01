@@ -25,6 +25,11 @@
     "url": "git+https://github.com/mbao01/mbao01.git"
   },
   "devDependencies": {
+    "@auto-it/all-contributors": "^11.3.0",
+    "@auto-it/conventional-commits": "^11.3.0",
+    "@auto-it/first-time-contributor": "^11.3.0",
+    "@auto-it/jira": "^11.3.0",
+    "auto": "^11.3.0",
     "chalk": "^5.4.1",
     "commitizen": "^4.3.1",
     "conventional-changelog-conventionalcommits": "^7.0.2",
