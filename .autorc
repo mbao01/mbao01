@@ -5,10 +5,6 @@
     "all-contributors",
     "conventional-commits",
     "first-time-contributor",
-    [
-      "jira",
-      "https://getwazo.atlassian.net"
-    ],
     "released"
   ],
   "baseBranch": "main"
