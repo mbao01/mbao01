@@ -11,6 +11,5 @@
     "released"
   ],
   "onlyPublishWithReleaseLabel": true,
-  "baseBranch": "main",
-  "monorepo": true
+  "baseBranch": "main"
 }
