@@ -166,7 +166,7 @@ exports[`Button > has no outline 1`] = `
 exports[`Button > has outline 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-outline min-h-fit h-10 rounded-md border-neutral-content"
+    class="btn btn-outline min-h-fit h-10 rounded-md border-base-content/20"
   >
     Button has outline
   </button>
