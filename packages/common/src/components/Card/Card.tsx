@@ -28,7 +28,7 @@ const CardTitle = ({ className, ...props }: CardTitleProps) => (
 );
 
 const CardDescription = ({ className, ...props }: CardDescriptionProps) => (
-  <p className={cn("text-sm text-muted-foreground", className)} {...props} />
+  <div className={cn("text-sm text-muted-foreground", className)} {...props} />
 );
 
 const CardBody = ({ className, ...props }: CardBodyProps) => (

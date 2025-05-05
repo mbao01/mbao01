@@ -15,7 +15,7 @@ exports[`Calendar > does not have navigation 1`] = `
         <button
           aria-disabled="true"
           aria-label="Go to the Previous Month"
-          class="btn btn-outline min-h-fit rounded-md border-neutral-content h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 disabled:text-opacity-50"
+          class="btn btn-outline min-h-fit rounded-md border-base-content/20 h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 disabled:text-opacity-50"
           tabindex="-1"
           type="button"
         >
@@ -40,7 +40,7 @@ exports[`Calendar > does not have navigation 1`] = `
         <button
           aria-disabled="true"
           aria-label="Go to the Next Month"
-          class="btn btn-outline min-h-fit rounded-md border-neutral-content h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 disabled:text-opacity-50"
+          class="btn btn-outline min-h-fit rounded-md border-base-content/20 h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 disabled:text-opacity-50"
           tabindex="-1"
           type="button"
         >
@@ -476,7 +476,7 @@ exports[`Calendar > has navigable months 1`] = `
       >
         <button
           aria-label="Go to the Previous Month"
-          class="btn btn-outline min-h-fit rounded-md border-neutral-content h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 disabled:text-opacity-50"
+          class="btn btn-outline min-h-fit rounded-md border-base-content/20 h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 disabled:text-opacity-50"
           type="button"
         >
           <svg
@@ -499,7 +499,7 @@ exports[`Calendar > has navigable months 1`] = `
         </button>
         <button
           aria-label="Go to the Next Month"
-          class="btn btn-outline min-h-fit rounded-md border-neutral-content h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 disabled:text-opacity-50"
+          class="btn btn-outline min-h-fit rounded-md border-base-content/20 h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 disabled:text-opacity-50"
           type="button"
         >
           <svg
@@ -1089,7 +1089,7 @@ exports[`Calendar > shows April, 2024 calendar 1`] = `
       >
         <button
           aria-label="Go to the Previous Month"
-          class="btn btn-outline min-h-fit rounded-md border-neutral-content h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 disabled:text-opacity-50"
+          class="btn btn-outline min-h-fit rounded-md border-base-content/20 h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 disabled:text-opacity-50"
           type="button"
         >
           <svg
@@ -1112,7 +1112,7 @@ exports[`Calendar > shows April, 2024 calendar 1`] = `
         </button>
         <button
           aria-label="Go to the Next Month"
-          class="btn btn-outline min-h-fit rounded-md border-neutral-content h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 disabled:text-opacity-50"
+          class="btn btn-outline min-h-fit rounded-md border-base-content/20 h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 disabled:text-opacity-50"
           type="button"
         >
           <svg

@@ -57,7 +57,7 @@ export const getButtonClasses = cva("btn", {
     {
       variant: undefined,
       outline: true,
-      className: "border-neutral-content",
+      className: "border-base-content/20",
     },
   ],
 });

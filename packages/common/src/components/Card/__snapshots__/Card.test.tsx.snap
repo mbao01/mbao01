@@ -27,11 +27,11 @@ exports[`Card > renders a card with a description 1`] = `
       >
         Nike Shoe!
       </h3>
-      <p
+      <div
         class="text-sm text-muted-foreground"
       >
         Some real cool shoe
-      </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
