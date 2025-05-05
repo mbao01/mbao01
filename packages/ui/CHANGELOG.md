@@ -1,3 +1,15 @@
+# v0.3.10 (Mon May 05 2025)
+
+#### 🐛 Bug Fix
+
+- feat(button): update button border to base content color [#190](https://github.com/mbao01/mbao01/pull/190) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
