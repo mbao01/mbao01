@@ -1,3 +1,16 @@
+# (Tue Jun 17 2025)
+
+#### 🚀 Enhancement
+
+- `@mbao01/common@0.3.0`, `@mbao01/next@0.3.0`, `@mbao01/ui@0.4.0`
+  - feat(link): hard navigation and link prefetch [#191](https://github.com/mbao01/mbao01/pull/191) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # (Mon May 05 2025)
 
 #### 🐛 Bug Fix
