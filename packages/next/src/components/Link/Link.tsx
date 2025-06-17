@@ -15,6 +15,7 @@ export const Link = <T,>({
   underline = false,
   isExternal = false,
   isInternal = true,
+  hardNavigate = false,
   ...props
 }: LinkProps<T>) => {
   if (isInternal === false) {
@@ -41,6 +42,12 @@ export const Link = <T,>({
       className={cn(getLinkClasses({ hover, variant, underline }), className)}
       {...props}
       {...(isExternal && { rel: "noopener noreferrer" })}
+      {...(hardNavigate && {
+        prefetch: props.prefetch ?? true,
+        onNavigate: (e) => {
+          props.onNavigate?.(e);
+        },
+      })}
     >
       {children}
       {isExternal ? <ExternalLinkIcon name="external" className="ml-[2px] w-4 h-4 inline" /> : null}
