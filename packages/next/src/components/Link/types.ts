@@ -19,7 +19,7 @@ import { getLinkClasses } from "./constant";
 //   isExternal?: boolean;
 // } & VariantProps<typeof getLinkClasses>;
 
-export type LinkProps<T> = LinkRestProps & { isExternal?: boolean } & (
+export type LinkProps<T> = LinkRestProps & { isExternal?: boolean; hardNavigate?: boolean } & (
     | {
         href: __next_route_internal_types__.RouteImpl<T> | UrlObject;
         isInternal?: true;
