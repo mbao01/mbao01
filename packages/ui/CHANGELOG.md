@@ -1,19 +1,18 @@
-# v0.4.0 (Tue Jun 17 2025)
-
-#### 🚀 Enhancement
-
-- feat(link): hard navigation and link prefetch [#191](https://github.com/mbao01/mbao01/pull/191) ([@mbao01](https://github.com/mbao01))
-
-#### Authors: 1
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# 0.4.0 (2025-06-17)
+
+
+### Features
+
+* **link:** hard navigation and link prefetch ([#191](https://github.com/mbao01/mbao01/issues/191)) ([09a782e](https://github.com/mbao01/mbao01/commit/09a782e204c7f368776d6042bd1fdce668a9f72a))
+
+
+
+
 
 ## 0.3.10 (2025-05-05)
 
