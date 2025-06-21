@@ -1,4 +1,4 @@
-import { type ArgTypes } from "@storybook/react";
+import { type ArgTypes } from "@storybook/react-vite";
 
 export const tooltipType: ArgTypes[0] = {
   description: `If set to be 'none', no series data is shown in tooltip.`,

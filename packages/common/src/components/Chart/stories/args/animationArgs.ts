@@ -3,7 +3,7 @@
  * are documented, as well as grouped in case a whole group is needed.
  */
 
-import { type ArgTypes } from "@storybook/react";
+import { type ArgTypes } from "@storybook/react-vite";
 
 export const animateNewValues: ArgTypes[0] = { table: { category: "Animation" } };
 export const animationBegin: ArgTypes[0] = {

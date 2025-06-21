@@ -1,4 +1,4 @@
-import type { Args, ArgTypes } from "@storybook/react";
+import type { Args, ArgTypes } from "@storybook/react-vite";
 
 export const hide: ArgTypes[0] = {
   description: "Hides the component when true, useful when toggling visibility state via legend",

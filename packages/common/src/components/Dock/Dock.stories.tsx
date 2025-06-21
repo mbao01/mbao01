@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { CogIcon, HomeIcon, InboxIcon } from "lucide-react";
 import { Dock } from "./Dock";
 

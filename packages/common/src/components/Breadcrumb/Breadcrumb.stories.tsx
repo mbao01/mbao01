@@ -1,4 +1,4 @@
-import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
+import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react-vite";
 import { getSubpaths } from "../../utilities";
 import { Breadcrumb } from "./Breadcrumb";
 

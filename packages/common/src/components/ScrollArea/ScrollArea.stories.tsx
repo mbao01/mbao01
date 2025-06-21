@@ -1,4 +1,4 @@
-import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
+import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react-vite";
 import { cn } from "../../utilities";
 import { Separator } from "../Separator";
 import { ScrollArea } from "./ScrollArea";

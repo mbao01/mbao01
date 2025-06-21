@@ -1,4 +1,4 @@
-import type { Meta, StoryContext, StoryObj } from "@storybook/react";
+import type { Meta, StoryContext, StoryObj } from "@storybook/react-vite";
 import type { RadialBarChartArgs } from "./args";
 import { radialBarChartArgs } from "./args";
 import {

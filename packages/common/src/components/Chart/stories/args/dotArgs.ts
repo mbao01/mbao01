@@ -1,4 +1,4 @@
-import { type ArgTypes } from "@storybook/react";
+import { type ArgTypes } from "@storybook/react-vite";
 
 export const r: ArgTypes[0] = {
   description: "The radius of the dot.",

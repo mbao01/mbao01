@@ -1,4 +1,4 @@
-import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
+import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react-vite";
 import { ReactNode } from "react";
 import { Select } from "./Select";
 

@@ -1,4 +1,4 @@
-import { type ArgTypes } from "@storybook/react";
+import { type ArgTypes } from "@storybook/react-vite";
 import { cartesianChartArgs } from "./cartesianChartArgs";
 
 export const areaChartArgs: ArgTypes = {

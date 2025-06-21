@@ -22,8 +22,9 @@ export type DatePickerProps = BaseDatePickerProps &
   };
 
 export type DateRangePickerProps = BaseDatePickerProps &
-  Omit<PropsRange, "mode"> & {
+  Omit<PropsRange, "mode" | "disabled"> & {
     defaultRange?: DateRange;
+    disabledDates?: PropsRange["disabled"];
     getRangeValue?: (range: DateRange | undefined) => {
       from: string | undefined;
       to: string | undefined;

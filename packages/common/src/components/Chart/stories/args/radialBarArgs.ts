@@ -1,4 +1,4 @@
-import { type ArgTypes } from "@storybook/react";
+import { type ArgTypes } from "@storybook/react-vite";
 import { animationArgs } from "./animationArgs";
 import { dataKey } from "./chartArgs";
 import { eventArgs } from "./events";

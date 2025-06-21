@@ -1,4 +1,4 @@
-import { ArgTypes } from "@storybook/react";
+import { ArgTypes } from "@storybook/react-vite";
 import { onClick, onMouseDown, onMouseEnter, onMouseLeave, onMouseMove, onMouseUp } from "./events";
 
 export const data: ArgTypes[0] = {

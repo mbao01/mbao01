@@ -1,4 +1,4 @@
-import { type ArgTypes } from "@storybook/react";
+import { type ArgTypes } from "@storybook/react-vite";
 
 export const dataKey: ArgTypes[0] = {
   description: `The key or getter of a group of data.

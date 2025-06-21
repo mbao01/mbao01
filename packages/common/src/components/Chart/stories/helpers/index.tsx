@@ -1,4 +1,4 @@
-import type { ArgTypes, StoryContext } from "@storybook/react";
+import type { ArgTypes, StoryContext } from "@storybook/react-vite";
 import type { ComponentProps, ElementType } from "react";
 
 export const categorizeArgs = (args: ArgTypes, category: string) => {
