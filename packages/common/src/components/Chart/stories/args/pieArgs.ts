@@ -1,4 +1,4 @@
-import { type Args } from "@storybook/react";
+import { type Args } from "@storybook/react-vite";
 import { polarChartArgs } from "./polarChartArgs";
 import { polarSharedArgs } from "./polarSharedArgs";
 

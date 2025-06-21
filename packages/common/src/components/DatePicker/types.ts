@@ -2,7 +2,7 @@ import type { DateRange, PropsBase, PropsMulti, PropsRange, PropsSingle } from "
 import { type ButtonProps } from "../Button/types";
 
 type BaseDatePickerProps = Omit<PropsBase, "mode"> &
-  Pick<ButtonProps, "variant" | "outline" | "wide" | "size" | "name"> & {
+  Pick<ButtonProps, "variant" | "outline" | "wide" | "size" | "name" | "disabled"> & {
     label?: string;
     triggerClassName?: string;
   };
@@ -22,8 +22,9 @@ export type DatePickerProps = BaseDatePickerProps &
   };
 
 export type DateRangePickerProps = BaseDatePickerProps &
-  Omit<PropsRange, "mode"> & {
+  Omit<PropsRange, "mode" | "disabled"> & {
     defaultRange?: DateRange;
+    disabledDates?: PropsRange["disabled"];
     getRangeValue?: (range: DateRange | undefined) => {
       from: string | undefined;
       to: string | undefined;

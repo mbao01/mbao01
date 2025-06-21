@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Text } from "../../Text";
 import { Fieldset } from "../components/Fieldset";
 import { Range } from "./Range";

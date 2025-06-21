@@ -1,4 +1,4 @@
-import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
+import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react-vite";
 import { ChevronsUpDownIcon } from "lucide-react";
 import { Button } from "../Button";
 import { Collapsible } from "./Collapsible";

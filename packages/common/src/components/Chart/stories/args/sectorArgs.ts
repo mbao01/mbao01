@@ -1,4 +1,4 @@
-import { type ArgTypes } from "@storybook/react";
+import { type ArgTypes } from "@storybook/react-vite";
 
 /**
  * Caveat: If any prop is added here, it would falsely be add to the documentation of the component

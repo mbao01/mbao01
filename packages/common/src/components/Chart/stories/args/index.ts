@@ -8,7 +8,7 @@ import type {
   XAxisProps,
   YAxisProps,
 } from "recharts";
-import { type ArgTypes } from "@storybook/react";
+import { type ArgTypes } from "@storybook/react-vite";
 import { type CategoricalChartProps } from "recharts/types/chart/generateCategoricalChart";
 import type { Flatten } from "./types";
 import { categorizeArgs } from "../helpers";

@@ -1,4 +1,4 @@
-import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
+import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react-vite";
 import { useMemo, useState } from "react";
 import { MultiSelect } from "./MultiSelect";
 import { MultiSelectTriggerProps } from "./types";

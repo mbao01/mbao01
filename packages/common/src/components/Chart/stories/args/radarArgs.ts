@@ -1,4 +1,4 @@
-import { type ArgTypes } from "@storybook/react";
+import { type ArgTypes } from "@storybook/react-vite";
 import { sharedAxisArgs } from "./sharedAxisArgs";
 
 export const radarArgs: ArgTypes = {

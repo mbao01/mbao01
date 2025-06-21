@@ -1,4 +1,4 @@
-import { type ArgTypes } from "@storybook/react";
+import { type ArgTypes } from "@storybook/react-vite";
 import { categoricalChartArgs } from "./chartArgs";
 
 export const radarChartArgs: ArgTypes = {

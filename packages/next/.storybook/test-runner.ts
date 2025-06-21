@@ -1,8 +1,8 @@
 import type { TestRunnerConfig } from "@storybook/test-runner";
-import { MINIMAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { getStoryContext, waitForPageReady } from "@storybook/test-runner";
 import { checkA11y, injectAxe } from "axe-playwright";
 import { toMatchImageSnapshot } from "jest-image-snapshot";
+import { MINIMAL_VIEWPORTS } from "storybook/viewport";
 
 const DEFAULT_VIEWPORT_SIZE = { width: 1280, height: 720 };
 const CUSTOM_SNAPSHOTS_DIR = `${process.cwd()}/.storybook/__snapshots__`;
