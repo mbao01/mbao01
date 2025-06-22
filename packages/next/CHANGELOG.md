@@ -1,19 +1,15 @@
-# v0.4.0 (Sun Jun 22 2025)
-
-#### 🚀 Enhancement
-
-- Fix DateRangePicker disabled type to disabledDates and update deps [#192](https://github.com/mbao01/mbao01/pull/192) ([@mbao01](https://github.com/mbao01))
-
-#### Authors: 1
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# 0.4.0 (2025-06-22)
+
+**Note:** Version bump only for package @mbao01/next
+
+
+
+
 
 # 0.3.0 (2025-06-17)
 
