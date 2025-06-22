@@ -18,6 +18,7 @@ export const DateRangePicker = ({
   outline,
   variant,
   disabled,
+  disabledDates,
   defaultRange,
   getRangeValue = (range) => ({
     from: range?.from?.toUTCString(),
@@ -82,6 +83,7 @@ export const DateRangePicker = ({
           autoFocus
           mode="range"
           selected={range}
+          disabled={disabledDates}
           onSelect={setRange}
           captionLayout="label"
           {...props}
