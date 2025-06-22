@@ -1,20 +1,26 @@
-import type { Preview } from "@storybook/react";
+import type { Preview } from "@storybook/react-vite";
 import { withThemeByDataAttribute } from "@storybook/addon-themes";
-import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
+import { INITIAL_VIEWPORTS } from "storybook/viewport";
 import "../src/stylesheets/index.css"; // replace with the name of your tailwind css file
 
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
+
     controls: {
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
     },
+
     viewport: {
       viewports: INITIAL_VIEWPORTS,
     },
+
+    docs: {
+      codePanel: true
+    }
   },
 };
 

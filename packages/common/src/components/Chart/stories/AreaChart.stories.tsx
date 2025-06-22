@@ -1,4 +1,4 @@
-import type { Meta, StoryContext, StoryObj } from "@storybook/react";
+import type { Meta, StoryContext, StoryObj } from "@storybook/react-vite";
 import type { AreaChartArgs } from "./args";
 import { areaChartArgs } from "./args";
 import {

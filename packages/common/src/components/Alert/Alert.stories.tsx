@@ -1,4 +1,4 @@
-import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
+import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react-vite";
 import { InfoIcon } from "lucide-react";
 import { Alert } from "./Alert";
 import { type AlertProps } from "./types";

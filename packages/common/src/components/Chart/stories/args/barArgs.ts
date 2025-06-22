@@ -1,4 +1,4 @@
-import { ArgTypes } from "@storybook/react";
+import { ArgTypes } from "@storybook/react-vite";
 import { animationArgs } from "./animationArgs";
 import { cartesianSharedArgs, data } from "./cartesianSharedArgs";
 import { legendType } from "./legendArgs";

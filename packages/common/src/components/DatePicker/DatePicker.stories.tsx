@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { addDays } from "date-fns/addDays";
 import { format } from "date-fns/format";
 import { arSA, es } from "date-fns/locale";

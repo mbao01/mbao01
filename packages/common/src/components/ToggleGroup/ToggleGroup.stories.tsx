@@ -1,4 +1,4 @@
-import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react";
+import type { Meta, StoryContext, StoryFn, StoryObj } from "@storybook/react-vite";
 import { BoldIcon, ItalicIcon, UnderlineIcon } from "lucide-react";
 import { ToggleGroup } from "./ToggleGroup";
 

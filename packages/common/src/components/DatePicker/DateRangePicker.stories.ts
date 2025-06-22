@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { format } from "date-fns/format";
 import { arSA, es } from "date-fns/locale";
 import { DateRangePicker } from "./DateRangePicker";

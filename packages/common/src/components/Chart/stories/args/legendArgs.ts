@@ -1,4 +1,4 @@
-import { type ArgTypes } from "@storybook/react";
+import { type ArgTypes } from "@storybook/react-vite";
 
 export const legendType: ArgTypes[0] = {
   description: "The type of icon in legend. If set to 'none', no legend item will be rendered.",
