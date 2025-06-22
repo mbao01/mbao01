@@ -1,19 +1,18 @@
-# v0.4.1 (Sun Jun 22 2025)
-
-#### 🐛 Bug Fix
-
-- feat(date-range-picker): use disabledDates prop on date range picker [#193](https://github.com/mbao01/mbao01/pull/193) ([@mbao01](https://github.com/mbao01))
-
-#### Authors: 1
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 0.4.1 (2025-06-22)
+
+
+### Features
+
+* **date-range-picker:** use disabledDates prop on date range picker to disable certain dates ([#193](https://github.com/mbao01/mbao01/issues/193)) ([2ce07e8](https://github.com/mbao01/mbao01/commit/2ce07e8411e69e1c184551cbd473b8355945e259))
+
+
+
+
 
 # 0.4.0 (2025-06-22)
 
