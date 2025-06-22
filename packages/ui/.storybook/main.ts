@@ -9,9 +9,8 @@ const config: StorybookConfig = {
     "@storybook/addon-links",
     "@storybook/addon-onboarding",
     "@storybook/addon-themes",
-    "storybook-addon-remix-react-router",
     "@storybook/addon-docs",
-    "@storybook/addon-docs"
+    "storybook-addon-remix-react-router",
   ],
 
   framework: {
@@ -21,6 +20,15 @@ const config: StorybookConfig = {
         viteConfigPath: "./vite-storybook.config.ts",
       },
     },
-  }
+  },
+
+  typescript: {
+    reactDocgen: "react-docgen-typescript",
+    // Provide your own options if necessary.
+    // See https://storybook.js.org/docs/configure/typescript for more information.
+    reactDocgenTypescriptOptions: {
+      shouldRemoveUndefinedFromOptional: true,
+    },
+  },
 };
 export default config;
