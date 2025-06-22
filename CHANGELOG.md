@@ -1,5 +1,18 @@
 # (Sun Jun 22 2025)
 
+#### 🐛 Bug Fix
+
+- `@mbao01/common@0.4.1`, `@mbao01/next@0.4.1`, `@mbao01/ui@0.5.1`
+  - feat(date-range-picker): use disabledDates prop on date range picker [#193](https://github.com/mbao01/mbao01/pull/193) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
+# (Sun Jun 22 2025)
+
 #### 🚀 Enhancement
 
 - `@mbao01/common@0.4.0`, `@mbao01/next@0.4.0`, `@mbao01/ui@0.5.0`
