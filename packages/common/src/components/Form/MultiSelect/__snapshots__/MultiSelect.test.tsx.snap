@@ -11,7 +11,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
       cmdk-label=""
       for="radix-«r10»"
       id="radix-«rv»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
     </label>
@@ -149,7 +149,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
       cmdk-label=""
       for="radix-«r10»"
       id="radix-«rv»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
     </label>
@@ -287,7 +287,7 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
       cmdk-label=""
       for="radix-«rq»"
       id="radix-«rp»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
     </label>
@@ -423,7 +423,7 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
       cmdk-label=""
       for="radix-«rq»"
       id="radix-«rp»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
     </label>
@@ -559,7 +559,7 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
       cmdk-label=""
       for="radix-«r8»"
       id="radix-«r7»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
     </label>
@@ -655,7 +655,7 @@ exports[`MultiSelect > and the user enters a text that does not match any option
       cmdk-label=""
       for="radix-«rk»"
       id="radix-«rj»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
     </label>
@@ -723,7 +723,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
       cmdk-label=""
       for="radix-«re»"
       id="radix-«rd»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
     </label>
@@ -806,7 +806,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
       cmdk-label=""
       for="radix-«re»"
       id="radix-«rd»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
     </label>
@@ -904,7 +904,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
       cmdk-label=""
       for="radix-«re»"
       id="radix-«rd»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
     </label>
@@ -974,7 +974,7 @@ exports[`MultiSelect > has accent variant 1`] = `
       cmdk-label=""
       for="radix-«r21»"
       id="radix-«r20»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       accent badge
     </label>
@@ -1017,7 +1017,7 @@ exports[`MultiSelect > has default variant 1`] = `
       cmdk-label=""
       for="radix-«r1o»"
       id="radix-«r1n»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       default badge
     </label>
@@ -1060,7 +1060,7 @@ exports[`MultiSelect > has error variant 1`] = `
       cmdk-label=""
       for="radix-«r2d»"
       id="radix-«r2c»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       error badge
     </label>
@@ -1103,7 +1103,7 @@ exports[`MultiSelect > has info variant 1`] = `
       cmdk-label=""
       for="radix-«r24»"
       id="radix-«r23»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       info badge
     </label>
@@ -1146,7 +1146,7 @@ exports[`MultiSelect > has large (lg) size 1`] = `
       cmdk-label=""
       for="radix-«r1l»"
       id="radix-«r1k»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       MultiSelect large
     </label>
@@ -1214,7 +1214,7 @@ exports[`MultiSelect > has medium (md) size 1`] = `
       cmdk-label=""
       for="radix-«r1i»"
       id="radix-«r1h»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       MultiSelect medium
     </label>
@@ -1282,7 +1282,7 @@ exports[`MultiSelect > has no outline 1`] = `
       cmdk-label=""
       for="radix-«r19»"
       id="radix-«r18»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       MultiSelect has no outline
     </label>
@@ -1325,7 +1325,7 @@ exports[`MultiSelect > has outline 1`] = `
       cmdk-label=""
       for="radix-«r16»"
       id="radix-«r15»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       MultiSelect has outline
     </label>
@@ -1368,7 +1368,7 @@ exports[`MultiSelect > has primary variant 1`] = `
       cmdk-label=""
       for="radix-«r1r»"
       id="radix-«r1q»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       primary badge
     </label>
@@ -1411,7 +1411,7 @@ exports[`MultiSelect > has secondary variant 1`] = `
       cmdk-label=""
       for="radix-«r1u»"
       id="radix-«r1t»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       secondary badge
     </label>
@@ -1454,7 +1454,7 @@ exports[`MultiSelect > has small (sm) size 1`] = `
       cmdk-label=""
       for="radix-«r1f»"
       id="radix-«r1e»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       MultiSelect small
     </label>
@@ -1522,7 +1522,7 @@ exports[`MultiSelect > has success variant 1`] = `
       cmdk-label=""
       for="radix-«r27»"
       id="radix-«r26»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       success badge
     </label>
@@ -1565,7 +1565,7 @@ exports[`MultiSelect > has tiny (xs) size 1`] = `
       cmdk-label=""
       for="radix-«r1c»"
       id="radix-«r1b»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       MultiSelect tiny
     </label>
@@ -1633,7 +1633,7 @@ exports[`MultiSelect > has warning variant 1`] = `
       cmdk-label=""
       for="radix-«r2a»"
       id="radix-«r29»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       warning badge
     </label>
@@ -1676,7 +1676,7 @@ exports[`MultiSelect > renders a multi select input 1`] = `
       cmdk-label=""
       for="radix-«r5»"
       id="radix-«r4»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
     </label>
@@ -1719,7 +1719,7 @@ exports[`MultiSelect > renders no options 1`] = `
       cmdk-label=""
       for="radix-«r2»"
       id="radix-«r1»"
-      style="position: absolute; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+      style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
     >
       Choose framework
     </label>
