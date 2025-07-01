@@ -56,7 +56,7 @@ export const DatePicker = ({
           outline={outline}
           variant={variant}
           disabled={disabled}
-          className={cn("justify-start", !date && "font-normal", triggerClassName)}
+          className={cn("justify-start", !dateValue && "font-normal", triggerClassName)}
           value={dateValue}
         >
           {dateLabel ?? <span>{label ?? "Pick a date"}</span>}
