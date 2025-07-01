@@ -20,6 +20,7 @@ export const DatePicker = ({
   defaultDate,
   disabledDates,
   children,
+  onSelect,
   getDateValue = (date) => date?.toUTCString(),
   getDateLabel = (date) => (date ? format(date, "PPP") : undefined),
   triggerClassName,
@@ -35,7 +36,10 @@ export const DatePicker = ({
       autoFocus
       mode="single"
       selected={date}
-      onSelect={setDate}
+      onSelect={(...args) => {
+        setDate(args[0]);
+        onSelect?.(...args);
+      }}
       disabled={disabledDates}
       captionLayout="label"
       {...props}
