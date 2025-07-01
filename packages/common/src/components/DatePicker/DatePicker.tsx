@@ -18,6 +18,7 @@ export const DatePicker = ({
   variant,
   disabled,
   defaultDate,
+  disabledDates,
   children,
   getDateValue = (date) => date?.toUTCString(),
   getDateLabel = (date) => (date ? format(date, "PPP") : undefined),
@@ -35,6 +36,7 @@ export const DatePicker = ({
       mode="single"
       selected={date}
       onSelect={setDate}
+      disabled={disabledDates}
       captionLayout="label"
       {...props}
     />

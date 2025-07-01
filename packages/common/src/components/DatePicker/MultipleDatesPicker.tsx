@@ -18,6 +18,7 @@ export const MultipleDatesPicker = ({
   variant,
   disabled,
   defaultDates,
+  disabledDates,
   getDatesValue = (dates) => dates?.map((date) => date.toUTCString()),
   getDatesLabel = (dates) => {
     if (!dates?.length) return undefined;
@@ -67,6 +68,7 @@ export const MultipleDatesPicker = ({
           mode="multiple"
           selected={dates}
           onSelect={setDates}
+          disabled={disabledDates}
           captionLayout="label"
           {...props}
         />
