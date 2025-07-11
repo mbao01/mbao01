@@ -68,6 +68,13 @@ export const DisabledInput: Story = {
   },
 };
 
+export const ReadOnlyInput: Story = {
+  args: {
+    "aria-label": "First name",
+    readOnly: true,
+  },
+};
+
 export const LabelForInput: Story = {
   args: {
     type: "url",

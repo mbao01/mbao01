@@ -30,6 +30,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
       outline,
       className,
       type,
+      readOnly,
       ...props
     }: InputProps,
     ref
@@ -43,7 +44,11 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
               id={id}
               ref={ref}
               type={type}
-              className={cn(getInputClasses({ type, size, wide, variant, outline }), className)}
+              readOnly={readOnly}
+              className={cn(
+                getInputClasses({ type, size, wide, variant, outline, readOnly }),
+                className
+              )}
               {...props}
             />
           </label>
@@ -53,10 +58,13 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
       return (
         <label
           htmlFor={id}
-          className={cn(getInputClasses({ type, size, wide, variant, outline }), className)}
+          className={cn(
+            getInputClasses({ type, size, wide, variant, outline, readOnly }),
+            className
+          )}
         >
           {labelPosition === "start" && <InputLabel>{label}</InputLabel>}
-          <input id={id} ref={ref} type={type} {...props} />
+          <input id={id} ref={ref} type={type} readOnly={readOnly} {...props} />
           {labelPosition === "end" && <InputLabel>{label}</InputLabel>}
         </label>
       );
@@ -67,7 +75,8 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
         id={id}
         ref={ref}
         type={type}
-        className={cn(getInputClasses({ type, size, wide, variant, outline }), className)}
+        readOnly={readOnly}
+        className={cn(getInputClasses({ type, size, wide, variant, outline, readOnly }), className)}
         {...props}
       />
     );
