@@ -2,6 +2,19 @@
 
 #### 🐛 Bug Fix
 
+- `@mbao01/common@0.4.3`, `@mbao01/next@0.4.3`, `@mbao01/ui@0.5.3`
+  - docs(input): add disabled and readonly story [#197](https://github.com/mbao01/mbao01/pull/197) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
+# (Fri Jul 11 2025)
+
+#### 🐛 Bug Fix
+
 - `@mbao01/common@0.4.2`, `@mbao01/next@0.4.2`, `@mbao01/ui@0.5.2`
   - Readonly input fields and button [#196](https://github.com/mbao01/mbao01/pull/196) ([@mbao01](https://github.com/mbao01))
 
