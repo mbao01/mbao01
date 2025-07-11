@@ -1,3 +1,15 @@
+# v0.5.2 (Fri Jul 11 2025)
+
+#### 🐛 Bug Fix
+
+- Readonly input fields and button [#196](https://github.com/mbao01/mbao01/pull/196) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
