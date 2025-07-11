@@ -29,6 +29,9 @@ export const getInputClasses = cva("input rounded-md transition-all duration-100
       ["file" as string]:
         "file:border-0 file:bg-transparent file:text-sm file:font-medium file:h-full",
     },
+    readOnly: {
+      true: "cursor-not-allowed! bg-base-200!",
+    },
   },
   compoundVariants: [
     {
@@ -100,6 +103,9 @@ export const getInputCommonClasses = cva(
         sm: "h-8 leading-8 text-sm px-2",
         md: "h-12 leading-loose text-sm px-2",
         lg: "h-16 leading-loose text-lg px-3",
+      },
+      readOnly: {
+        true: "cursor-not-allowed! bg-base-200!",
       },
     },
     compoundVariants: [
