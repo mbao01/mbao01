@@ -22,14 +22,15 @@ const Phone = React.forwardRef<HTMLInputElement, PhoneProps>(
       outline,
       wide,
       size,
+      defaultCountry = "us",
       ...props
     },
     ref
   ) => {
     const [open, setOpen] = React.useState(false);
     const { inputValue, handlePhoneValueChange, inputRef, country, setCountry } = usePhoneInput({
-      value: defaultValue ? String(defaultValue) : "+231",
-      defaultCountry: "lr",
+      value: defaultValue ? String(defaultValue) : "",
+      defaultCountry,
       forceDialCode: true,
       inputRef: ref as MutableRefObject<HTMLInputElement | null>,
     });
