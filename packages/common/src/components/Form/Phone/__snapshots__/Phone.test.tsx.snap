@@ -18,11 +18,11 @@ exports[`Phone > should input phone number 1`] = `
       <img
         alt=""
         class="react-international-phone-flag-emoji"
-        data-country="lr"
+        data-country="us"
         draggable="false"
         height="30px"
         loading="lazy"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1f1-1f1f7.svg"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1fa-1f1f8.svg"
         style="width: 30px; height: 30px;"
         width="30px"
       />
@@ -34,7 +34,7 @@ exports[`Phone > should input phone number 1`] = `
       pattern="^\\+\\d{1,4}\\s\\d{6,}$"
       placeholder=" "
       type="text"
-      value="+231 9876543210"
+      value="+1 (987) 654-3210"
     />
   </div>
 </DocumentFragment>
@@ -58,11 +58,11 @@ exports[`Phone > should render a phone input 1`] = `
       <img
         alt=""
         class="react-international-phone-flag-emoji"
-        data-country="lr"
+        data-country="us"
         draggable="false"
         height="30px"
         loading="lazy"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1f1-1f1f7.svg"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1fa-1f1f8.svg"
         style="width: 30px; height: 30px;"
         width="30px"
       />
@@ -74,7 +74,7 @@ exports[`Phone > should render a phone input 1`] = `
       pattern="^\\+\\d{1,4}\\s\\d{6,}$"
       placeholder=" "
       type="text"
-      value="+231 "
+      value="+1 "
     />
   </div>
 </DocumentFragment>
