@@ -1,3 +1,15 @@
+# v0.5.4 (Tue Aug 05 2025)
+
+#### 🐛 Bug Fix
+
+- Allow default country code [#198](https://github.com/mbao01/mbao01/pull/198) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

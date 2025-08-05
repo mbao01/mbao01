@@ -1,3 +1,16 @@
+# (Tue Aug 05 2025)
+
+#### 🐛 Bug Fix
+
+- `@mbao01/common@0.4.4`, `@mbao01/next@0.4.4`, `@mbao01/ui@0.5.4`
+  - Allow default country code [#198](https://github.com/mbao01/mbao01/pull/198) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # (Fri Jul 11 2025)
 
 #### 🐛 Bug Fix
