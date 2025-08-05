@@ -24,6 +24,13 @@ export const Default: Story = {
   },
 };
 
+export const DefaultCountryPhone: Story = {
+  args: {
+    "aria-label": "Phone number",
+    defaultCountry: "ng",
+  },
+};
+
 export const PrimaryPhone: Story = {
   args: {
     variant: "primary",

@@ -13,7 +13,7 @@ describe("Phone", () => {
   it("should render a phone input", () => {
     const { asFragment } = render(<Phone name="mobile" />);
 
-    expect(screen.getByRole("textbox")).toHaveValue("+231 ");
+    expect(screen.getByRole("textbox")).toHaveValue("+1 ");
     expect(screen.getByRole("combobox")).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
@@ -26,7 +26,7 @@ describe("Phone", () => {
 
     await user.type(phoneInput, "9876543210");
 
-    expect(phoneInput).toHaveDisplayValue("+231 9876543210");
+    expect(phoneInput).toHaveDisplayValue("+1 (987) 654-3210");
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -37,7 +37,7 @@ describe("Phone", () => {
     const phoneInput = screen.getByRole("textbox");
     await user.type(phoneInput, "9876543210");
 
-    expect(phoneInput).toHaveDisplayValue("+231 9876543210");
+    expect(phoneInput).toHaveDisplayValue("+1 (987) 654-3210");
 
     // change country code
     const countryButton = screen.getByRole("combobox");
@@ -68,7 +68,7 @@ describe("Phone", () => {
 
     const phoneInput = screen.getByRole("textbox");
 
-    expect(phoneInput).toHaveDisplayValue("+231 ");
+    expect(phoneInput).toHaveDisplayValue("+1 ");
 
     // change country code
     const countryButton = screen.getByRole("combobox");
@@ -100,7 +100,7 @@ describe("Phone", () => {
     const phoneInput = screen.getByRole("textbox");
 
     // default country code
-    expect(phoneInput).toHaveDisplayValue("+231 ");
+    expect(phoneInput).toHaveDisplayValue("+1 ");
 
     // change country code
     await user.click(screen.getByRole("combobox"));
