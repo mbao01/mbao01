@@ -39,7 +39,7 @@ exports[`Loading > has 'tiny' ('xs') loading 1`] = `
 exports[`Loading > has accent color 1`] = `
 <DocumentFragment>
   <span
-    class="loading text-accent"
+    class="loading text-accent-content"
     data-testid="loading"
   />
 </DocumentFragment>
@@ -75,7 +75,7 @@ exports[`Loading > has dots variant 1`] = `
 exports[`Loading > has error color 1`] = `
 <DocumentFragment>
   <span
-    class="loading text-error"
+    class="loading text-error-content"
     data-testid="loading"
   />
 </DocumentFragment>
@@ -93,7 +93,7 @@ exports[`Loading > has infinity variant 1`] = `
 exports[`Loading > has info color 1`] = `
 <DocumentFragment>
   <span
-    class="loading text-info"
+    class="loading text-info-content"
     data-testid="loading"
   />
 </DocumentFragment>
@@ -102,7 +102,7 @@ exports[`Loading > has info color 1`] = `
 exports[`Loading > has neutral color 1`] = `
 <DocumentFragment>
   <span
-    class="loading text-neutral"
+    class="loading text-neutral-content"
     data-testid="loading"
   />
 </DocumentFragment>
@@ -111,7 +111,7 @@ exports[`Loading > has neutral color 1`] = `
 exports[`Loading > has primary color 1`] = `
 <DocumentFragment>
   <span
-    class="loading text-primary"
+    class="loading text-primary-content"
     data-testid="loading"
   />
 </DocumentFragment>
@@ -129,7 +129,7 @@ exports[`Loading > has ring variant 1`] = `
 exports[`Loading > has secondary color 1`] = `
 <DocumentFragment>
   <span
-    class="loading text-secondary"
+    class="loading text-secondary-content"
     data-testid="loading"
   />
 </DocumentFragment>
@@ -147,7 +147,7 @@ exports[`Loading > has spinner variant 1`] = `
 exports[`Loading > has success color 1`] = `
 <DocumentFragment>
   <span
-    class="loading text-success"
+    class="loading text-success-content"
     data-testid="loading"
   />
 </DocumentFragment>
@@ -156,7 +156,7 @@ exports[`Loading > has success color 1`] = `
 exports[`Loading > has warning color 1`] = `
 <DocumentFragment>
   <span
-    class="loading text-warning"
+    class="loading text-warning-content"
     data-testid="loading"
   />
 </DocumentFragment>

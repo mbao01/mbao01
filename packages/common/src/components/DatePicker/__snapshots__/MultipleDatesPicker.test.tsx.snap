@@ -3,7 +3,7 @@
 exports[`MultipleDatesPicker > has a custom label 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-«r3»"
+    aria-controls="radix-_r_3_"
     aria-expanded="false"
     aria-haspopup="dialog"
     class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
@@ -70,7 +70,7 @@ exports[`MultipleDatesPicker > has a custom label 1`] = `
 exports[`MultipleDatesPicker > is disabled 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-«r4»"
+    aria-controls="radix-_r_4_"
     aria-expanded="false"
     aria-haspopup="dialog"
     class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
@@ -138,7 +138,7 @@ exports[`MultipleDatesPicker > is disabled 1`] = `
 exports[`MultipleDatesPicker > shows calendar with specific month 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-«r2»"
+    aria-controls="radix-_r_2_"
     aria-expanded="true"
     aria-haspopup="dialog"
     class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
@@ -205,7 +205,7 @@ exports[`MultipleDatesPicker > shows calendar with specific month 1`] = `
 exports[`MultipleDatesPicker > shows default/preselected dates 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-«r1»"
+    aria-controls="radix-_r_1_"
     aria-expanded="true"
     aria-haspopup="dialog"
     class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap"
@@ -272,7 +272,7 @@ exports[`MultipleDatesPicker > shows default/preselected dates 1`] = `
 exports[`MultipleDatesPicker > shows the current month 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-«r0»"
+    aria-controls="radix-_r_0_"
     aria-expanded="true"
     aria-haspopup="dialog"
     class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"

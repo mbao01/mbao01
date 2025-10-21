@@ -3,7 +3,7 @@
 exports[`Tooltip > content is positioned bottom 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="radix-«r3»"
+    aria-describedby="radix-_r_3_"
     data-state="delayed-open"
   >
     bottom tooltip
@@ -21,7 +21,7 @@ exports[`Tooltip > content is positioned bottom 1`] = `
     >
       tooltip content bottom
       <span
-        id="radix-«r3»"
+        id="radix-_r_3_"
         role="tooltip"
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >
@@ -35,7 +35,7 @@ exports[`Tooltip > content is positioned bottom 1`] = `
 exports[`Tooltip > content is positioned left 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="radix-«r4»"
+    aria-describedby="radix-_r_4_"
     data-state="delayed-open"
   >
     left tooltip
@@ -53,7 +53,7 @@ exports[`Tooltip > content is positioned left 1`] = `
     >
       tooltip content left
       <span
-        id="radix-«r4»"
+        id="radix-_r_4_"
         role="tooltip"
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >
@@ -67,7 +67,7 @@ exports[`Tooltip > content is positioned left 1`] = `
 exports[`Tooltip > content is positioned right 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="radix-«r2»"
+    aria-describedby="radix-_r_2_"
     data-state="delayed-open"
   >
     right tooltip
@@ -85,7 +85,7 @@ exports[`Tooltip > content is positioned right 1`] = `
     >
       tooltip content right
       <span
-        id="radix-«r2»"
+        id="radix-_r_2_"
         role="tooltip"
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >
@@ -99,7 +99,7 @@ exports[`Tooltip > content is positioned right 1`] = `
 exports[`Tooltip > content is positioned top 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="radix-«r1»"
+    aria-describedby="radix-_r_1_"
     data-state="delayed-open"
   >
     top tooltip
@@ -117,7 +117,7 @@ exports[`Tooltip > content is positioned top 1`] = `
     >
       tooltip content top
       <span
-        id="radix-«r1»"
+        id="radix-_r_1_"
         role="tooltip"
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >
@@ -131,7 +131,7 @@ exports[`Tooltip > content is positioned top 1`] = `
 exports[`Tooltip > has accent variant 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="radix-«r7»"
+    aria-describedby="radix-_r_7_"
     data-state="delayed-open"
   >
     accent tooltip
@@ -165,7 +165,7 @@ exports[`Tooltip > has accent variant 1`] = `
         </svg>
       </span>
       <span
-        id="radix-«r7»"
+        id="radix-_r_7_"
         role="tooltip"
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >
@@ -179,7 +179,7 @@ exports[`Tooltip > has accent variant 1`] = `
 exports[`Tooltip > has error variant 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="radix-«rc»"
+    aria-describedby="radix-_r_c_"
     data-state="delayed-open"
   >
     error tooltip
@@ -213,7 +213,7 @@ exports[`Tooltip > has error variant 1`] = `
         </svg>
       </span>
       <span
-        id="radix-«rc»"
+        id="radix-_r_c_"
         role="tooltip"
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >
@@ -227,7 +227,7 @@ exports[`Tooltip > has error variant 1`] = `
 exports[`Tooltip > has info variant 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="radix-«r9»"
+    aria-describedby="radix-_r_9_"
     data-state="delayed-open"
   >
     info tooltip
@@ -261,7 +261,7 @@ exports[`Tooltip > has info variant 1`] = `
         </svg>
       </span>
       <span
-        id="radix-«r9»"
+        id="radix-_r_9_"
         role="tooltip"
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >
@@ -275,7 +275,7 @@ exports[`Tooltip > has info variant 1`] = `
 exports[`Tooltip > has neutral variant 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="radix-«r8»"
+    aria-describedby="radix-_r_8_"
     data-state="delayed-open"
   >
     neutral tooltip
@@ -309,7 +309,7 @@ exports[`Tooltip > has neutral variant 1`] = `
         </svg>
       </span>
       <span
-        id="radix-«r8»"
+        id="radix-_r_8_"
         role="tooltip"
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >
@@ -323,7 +323,7 @@ exports[`Tooltip > has neutral variant 1`] = `
 exports[`Tooltip > has primary variant 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="radix-«r5»"
+    aria-describedby="radix-_r_5_"
     data-state="delayed-open"
   >
     primary tooltip
@@ -357,7 +357,7 @@ exports[`Tooltip > has primary variant 1`] = `
         </svg>
       </span>
       <span
-        id="radix-«r5»"
+        id="radix-_r_5_"
         role="tooltip"
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >
@@ -371,7 +371,7 @@ exports[`Tooltip > has primary variant 1`] = `
 exports[`Tooltip > has secondary variant 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="radix-«r6»"
+    aria-describedby="radix-_r_6_"
     data-state="delayed-open"
   >
     secondary tooltip
@@ -405,7 +405,7 @@ exports[`Tooltip > has secondary variant 1`] = `
         </svg>
       </span>
       <span
-        id="radix-«r6»"
+        id="radix-_r_6_"
         role="tooltip"
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >
@@ -419,7 +419,7 @@ exports[`Tooltip > has secondary variant 1`] = `
 exports[`Tooltip > has success variant 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="radix-«ra»"
+    aria-describedby="radix-_r_a_"
     data-state="delayed-open"
   >
     success tooltip
@@ -453,7 +453,7 @@ exports[`Tooltip > has success variant 1`] = `
         </svg>
       </span>
       <span
-        id="radix-«ra»"
+        id="radix-_r_a_"
         role="tooltip"
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >
@@ -467,7 +467,7 @@ exports[`Tooltip > has success variant 1`] = `
 exports[`Tooltip > has warning variant 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="radix-«rb»"
+    aria-describedby="radix-_r_b_"
     data-state="delayed-open"
   >
     warning tooltip
@@ -501,7 +501,7 @@ exports[`Tooltip > has warning variant 1`] = `
         </svg>
       </span>
       <span
-        id="radix-«rb»"
+        id="radix-_r_b_"
         role="tooltip"
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >
@@ -515,7 +515,7 @@ exports[`Tooltip > has warning variant 1`] = `
 exports[`Tooltip > shows tooltip with content 1`] = `
 <DocumentFragment>
   <button
-    aria-describedby="radix-«r0»"
+    aria-describedby="radix-_r_0_"
     data-state="delayed-open"
   >
     Tooltip trigger
@@ -533,7 +533,7 @@ exports[`Tooltip > shows tooltip with content 1`] = `
     >
       I am the tooltip's content
       <span
-        id="radix-«r0»"
+        id="radix-_r_0_"
         role="tooltip"
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >

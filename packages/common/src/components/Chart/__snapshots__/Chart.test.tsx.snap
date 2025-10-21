@@ -4,16 +4,16 @@ exports[`Chart > renders a bar chart 1`] = `
 <DocumentFragment>
   <div
     class="flex aspect-video justify-center text-xs [&_.recharts-cartesian-axis-tick_text]:fill-base-content [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-base-content/20 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-base-content/20 [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-base-content/20 [&_.recharts-radial-bar-background-sector]:fill-base-200 [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-base-200 [&_.recharts-reference-line_[stroke='#ccc']]:stroke-base-content/20 [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden h-[250px] w-full"
-    data-chart="chart-«r0»"
+    data-chart="chart-_r_0_"
   >
     <style>
       
- [data-chart=chart-«r0»] {
+ [data-chart=chart-_r_0_] {
   --color-desktop: #2563eb;
 }
 
 
-.dark [data-chart=chart-«r0»] {
+.dark [data-chart=chart-_r_0_] {
   --color-desktop: #2563eb;
 }
 
@@ -21,7 +21,11 @@ exports[`Chart > renders a bar chart 1`] = `
     <div
       class="recharts-responsive-container"
       style="width: 100%; height: 100%; min-width: 0;"
-    />
+    >
+      <div
+        style="width: 0px; height: 0px; overflow: visible;"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;

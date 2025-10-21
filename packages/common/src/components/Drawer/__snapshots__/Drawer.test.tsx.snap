@@ -3,7 +3,7 @@
 exports[`Drawer > renders a drawer 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-«r0»"
+    aria-controls="radix-_r_0_"
     aria-expanded="true"
     aria-haspopup="dialog"
     class="btn btn-outline min-h-fit h-10 rounded-md border-base-content/20"

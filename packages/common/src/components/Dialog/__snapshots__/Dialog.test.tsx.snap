@@ -3,7 +3,7 @@
 exports[`Dialog > renders a 'dialog' 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-«r3»"
+    aria-controls="radix-_r_3_"
     aria-expanded="true"
     aria-haspopup="dialog"
     data-state="open"
@@ -17,7 +17,7 @@ exports[`Dialog > renders a 'dialog' 1`] = `
 exports[`Dialog > renders a 'sheet on bottom' 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-«ri»"
+    aria-controls="radix-_r_i_"
     aria-expanded="true"
     aria-haspopup="dialog"
     data-state="open"
@@ -31,7 +31,7 @@ exports[`Dialog > renders a 'sheet on bottom' 1`] = `
 exports[`Dialog > renders a 'sheet on the left' 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-«r9»"
+    aria-controls="radix-_r_9_"
     aria-expanded="true"
     aria-haspopup="dialog"
     data-state="open"
@@ -45,7 +45,7 @@ exports[`Dialog > renders a 'sheet on the left' 1`] = `
 exports[`Dialog > renders a 'sheet on the left' 2`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-«rc»"
+    aria-controls="radix-_r_c_"
     aria-expanded="true"
     aria-haspopup="dialog"
     data-state="open"
@@ -59,7 +59,7 @@ exports[`Dialog > renders a 'sheet on the left' 2`] = `
 exports[`Dialog > renders a 'sheet on top' 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-«rf»"
+    aria-controls="radix-_r_f_"
     aria-expanded="true"
     aria-haspopup="dialog"
     data-state="open"
@@ -73,7 +73,7 @@ exports[`Dialog > renders a 'sheet on top' 1`] = `
 exports[`Dialog > renders a 'sheet' 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-«r6»"
+    aria-controls="radix-_r_6_"
     aria-expanded="true"
     aria-haspopup="dialog"
     data-state="open"
@@ -87,7 +87,7 @@ exports[`Dialog > renders a 'sheet' 1`] = `
 exports[`Dialog > renders a dialog trigger 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-«r0»"
+    aria-controls="radix-_r_0_"
     aria-expanded="false"
     aria-haspopup="dialog"
     data-state="closed"
@@ -101,7 +101,7 @@ exports[`Dialog > renders a dialog trigger 1`] = `
 exports[`Dialog > should open and close dialog 1`] = `
 <DocumentFragment>
   <button
-    aria-controls="radix-«rl»"
+    aria-controls="radix-_r_l_"
     aria-expanded="false"
     aria-haspopup="dialog"
     data-state="closed"
