@@ -1,7 +1,7 @@
 import { cva } from "../../../libs";
 
 export const getSelectTriggerClasses = cva(
-  "select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100",
+  "select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100",
   {
     variants: {
       variant: {
