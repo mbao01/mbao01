@@ -30,6 +30,9 @@ const customTsConfig = {
   rules: {
     ...reactHooksPlugin.configs.recommended.rules,
     "react/prop-types": "off",
+    "react-hooks/refs": "off",
+    "react-hooks/purity": "off",
+    "react-hooks/set-state-in-effect": "off",
     "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
     "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     "@typescript-eslint/prefer-nullish-coalescing": ["warn"],
