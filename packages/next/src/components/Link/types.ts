@@ -1,25 +1,17 @@
-import { type LinkProps as LinkRestProps } from "next/link";
+import type { LinkProps as OriginalLinkProps } from "next/dist/client/link.js";
+import { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
 import { type UrlObject } from "url";
 import { type VariantProps } from "@mbao01/common/libs";
 import { getLinkClasses } from "./constant";
 
-// export type LinkProps<
-//   T,
-//   I = boolean,
-//   H = I extends true
-//     ? /**
-//        * The path or URL to navigate to. This is the only required prop. It can also be an object.
-//        * @see https://nextjs.org/docs/api-reference/next/link
-//        */
-//       __next_route_internal_types__.RouteImpl<T> | UrlObject
-//     : string,
-// > = LinkRestProps & {
-//   href: H;
-//   isInternal?: I;
-//   isExternal?: boolean;
-// } & VariantProps<typeof getLinkClasses>;
-
-export type LinkProps<T> = LinkRestProps<T> & { isExternal?: boolean; hardNavigate?: boolean } & (
+export type LinkProps<T> = Omit<
+  Omit<
+    DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>,
+    keyof OriginalLinkProps
+  > &
+    OriginalLinkProps,
+  "href"
+> & { isExternal?: boolean; hardNavigate?: boolean } & (
     | {
         href: __next_route_internal_types__.RouteImpl<T> | UrlObject;
         isInternal?: true;
