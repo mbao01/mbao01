@@ -15,7 +15,6 @@ import { getPayloadConfigFromPayload } from "../helpers";
 import { useChart } from "../hooks";
 
 export const ChartTooltip = Tooltip;
-ChartTooltip.displayName = "ChartTooltip";
 
 export const ChartTooltipContent = forwardRef<HTMLDivElement, ChartTooltipContentProps>(
   (

@@ -1,6 +1,11 @@
 /* eslint-disable @typescript-eslint/consistent-indexed-object-style */
 import type { ComponentProps, ComponentType, ReactNode } from "react";
-import { LegendProps, ResponsiveContainer, Tooltip } from "recharts";
+import {
+  DefaultLegendContentProps,
+  LegendProps,
+  ResponsiveContainer,
+  TooltipContentProps,
+} from "recharts";
 import { type Theme } from "../../utilities";
 
 export type ChartConfig = {
@@ -24,7 +29,9 @@ export type ChartStyleProps = {
   config: ChartConfig;
 };
 
-export type ChartTooltipContentProps = ComponentProps<typeof Tooltip> &
+export type ChartTooltipContentProps = Partial<
+  TooltipContentProps<number | string | Array<number | string>, string>
+> &
   ComponentProps<"div"> & {
     hideLabel?: boolean;
     hideIndicator?: boolean;
@@ -34,7 +41,8 @@ export type ChartTooltipContentProps = ComponentProps<typeof Tooltip> &
   };
 
 export type ChartLegendContentProps = ComponentProps<"div"> &
-  Pick<LegendProps, "payload" | "verticalAlign"> & {
+  Pick<DefaultLegendContentProps, "payload"> &
+  Pick<LegendProps, "verticalAlign"> & {
     hideIcon?: boolean;
     nameKey?: string;
   };

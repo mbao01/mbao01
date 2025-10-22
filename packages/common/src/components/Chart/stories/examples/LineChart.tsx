@@ -1,4 +1,3 @@
-import { type SVGProps } from "react";
 import { MapPinIcon } from "lucide-react";
 import { CartesianGrid, LabelList, Line, LineChart, XAxis, YAxis } from "recharts";
 import { Chart } from "../../Chart";
@@ -78,11 +77,7 @@ export const CustomDotLineChartExample = (props: LineChartProps) => {
         <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
         <Line
           {...props.line}
-          dot={({
-            cx,
-            cy,
-            payload,
-          }: SVGProps<SVGSVGElement> & { payload: Record<string, string> }) => {
+          dot={({ cx, cy, payload }) => {
             const r = 24;
             return (
               <MapPinIcon

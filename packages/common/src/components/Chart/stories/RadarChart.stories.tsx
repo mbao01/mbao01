@@ -230,6 +230,8 @@ export const LegendRadarChart: Story = {
     "radarChart margin": {
       top: -40,
       bottom: -10,
+      right: 0,
+      left: 0,
     },
   },
   render: renderer(LegendRadarChartExample),

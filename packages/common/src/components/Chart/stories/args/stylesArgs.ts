@@ -193,18 +193,6 @@ export const radialBarStyleArgs: Args = {
       category: "Style",
     },
   },
-  activeIndex: {
-    description: "The index of the active bar, this option can be changed in mouse event handlers.",
-    table: {
-      type: {
-        summary: "number | number[]",
-        detail:
-          '<Bar dataKey="value" activeIndex={0} />\n<Bar dataKey="value" activeIndex={[0, 1]} />',
-      },
-      category: "Style",
-      control: "object",
-    },
-  },
   maxBarSize: {
     description: "The maximum width of the bar.",
     table: {

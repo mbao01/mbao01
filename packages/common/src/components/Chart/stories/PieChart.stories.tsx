@@ -150,7 +150,6 @@ export const ActiveDonutPieChart: Story = {
     "pie nameKey": "browser",
     "pie innerRadius": 60,
     "pie strokeWidth": 5,
-    "pie activeIndex": 0,
   },
   render: renderer(ActiveDonutPieChartExample),
 };

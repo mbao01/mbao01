@@ -3,7 +3,7 @@ import type {
   Payload as TooltipPayload,
   ValueType,
 } from "recharts/types/component/DefaultTooltipContent";
-import { type Payload as LegendPayload } from "recharts/types/component/DefaultLegendContent";
+import { type LegendPayload } from "recharts";
 import { type ChartConfig } from "./types";
 
 // Helper to extract item config from a payload.

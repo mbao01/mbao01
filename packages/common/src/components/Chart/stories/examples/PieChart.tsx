@@ -1,4 +1,3 @@
-import { type SVGProps } from "react";
 import { LabelList, Pie, PieChart, Sector } from "recharts";
 import { type PieSectorDataItem } from "recharts/types/polar/Pie";
 import { Chart } from "../../Chart";
@@ -80,10 +79,7 @@ export const CustomLabeledPieChartExample = (props: Partial<PieChartProps>) => {
         <Pie
           dataKey="visitors"
           {...props.pie}
-          label={({
-            payload,
-            ...props
-          }: SVGProps<SVGTextElement> & { payload: Record<string, string> }) => {
+          label={({ payload, ...props }) => {
             return (
               <text
                 cx={props.cx}
@@ -95,8 +91,10 @@ export const CustomLabeledPieChartExample = (props: Partial<PieChartProps>) => {
                 className="fill-base-content"
               >
                 {`${
-                  chartConfig[payload.browser as keyof typeof chartConfig]?.label
-                } (${payload.visitors})`}
+                  chartConfig[
+                    (payload as Record<string, string>).browser as keyof typeof chartConfig
+                  ]?.label
+                } (${(payload as Record<string, string>).visitors})`}
               </text>
             );
           }}
@@ -117,7 +115,10 @@ export const LabelListPieChartExample = (props: Partial<PieChartProps>) => {
             className="fill-base-100"
             stroke="none"
             fontSize={12}
-            formatter={(value: keyof typeof chartConfig) => chartConfig[value]?.label}
+            formatter={(value) => {
+              if (typeof value === "string")
+                return chartConfig[value as keyof typeof chartConfig]?.label;
+            }}
             {...props}
           />
         </Pie>
