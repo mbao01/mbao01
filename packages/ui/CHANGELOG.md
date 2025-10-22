@@ -1,19 +1,18 @@
-# v0.6.2 (Wed Oct 22 2025)
-
-#### 🐛 Bug Fix
-
-- Fix type declaration [#201](https://github.com/mbao01/mbao01/pull/201) ([@mbao01](https://github.com/mbao01))
-
-#### Authors: 1
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 0.6.2 (2025-10-22)
+
+
+### Bug Fixes
+
+* **link:** fix link props type ([#201](https://github.com/mbao01/mbao01/issues/201)) ([9b7f533](https://github.com/mbao01/mbao01/commit/9b7f533b5de36be397fa2408a1c301e6d05f8ecb))
+
+
+
+
 
 ## 0.6.1 (2025-10-22)
 
