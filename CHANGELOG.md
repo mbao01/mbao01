@@ -1,5 +1,18 @@
 # (Wed Oct 22 2025)
 
+#### 🐛 Bug Fix
+
+- `@mbao01/common@0.5.1`, `@mbao01/next@0.5.1`, `@mbao01/ui@0.6.1`
+  - build(types): update type declaration path for @mbao01/next package [#200](https://github.com/mbao01/mbao01/pull/200) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
+# (Wed Oct 22 2025)
+
 #### 🚀 Enhancement
 
 - `@mbao01/common@0.5.0`, `@mbao01/next@0.5.0`, `@mbao01/ui@0.6.0`
