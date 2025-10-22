@@ -1,19 +1,15 @@
-# v0.5.1 (Wed Oct 22 2025)
-
-#### 🐛 Bug Fix
-
-- build(types): update type declaration path for @mbao01/next package [#200](https://github.com/mbao01/mbao01/pull/200) ([@mbao01](https://github.com/mbao01))
-
-#### Authors: 1
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 0.5.1 (2025-10-22)
+
+**Note:** Version bump only for package @mbao01/next
+
+
+
+
 
 # 0.5.0 (2025-10-22)
 
