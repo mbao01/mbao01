@@ -1,3 +1,15 @@
+# v0.6.0 (Wed Oct 22 2025)
+
+#### 🚀 Enhancement
+
+- UI and deps updates [#199](https://github.com/mbao01/mbao01/pull/199) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

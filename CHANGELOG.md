@@ -1,3 +1,16 @@
+# (Wed Oct 22 2025)
+
+#### 🚀 Enhancement
+
+- `@mbao01/common@0.5.0`, `@mbao01/next@0.5.0`, `@mbao01/ui@0.6.0`
+  - UI and deps updates [#199](https://github.com/mbao01/mbao01/pull/199) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # (Tue Aug 05 2025)
 
 #### 🐛 Bug Fix
