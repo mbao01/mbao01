@@ -9,7 +9,7 @@ import type {
   YAxisProps,
 } from "recharts";
 import { type ArgTypes } from "@storybook/react-vite";
-import { type CategoricalChartProps } from "recharts/types/chart/generateCategoricalChart";
+import { CartesianChartProps, PolarChartProps } from "recharts/types/util/types";
 import type { Flatten } from "./types";
 import { categorizeArgs } from "../helpers";
 import { areaArgs } from "./areaArgs";
@@ -40,7 +40,7 @@ type BarArgKey = "bar" | "barChart" | "xAxis" | "yAxis";
 
 export type BarChartProps = {
   bar: OmitSVGElement<BarProps>;
-  barChart: CategoricalChartProps;
+  barChart: CartesianChartProps;
 } & AxisProps;
 
 export type BarChartArgs = Partial<Flatten<BarChartProps>> & {};
@@ -66,7 +66,7 @@ type LineArgKey = "line" | "lineChart" | "xAxis" | "yAxis";
 
 export type LineChartProps = {
   line: OmitSVGElement<LineProps>;
-  lineChart: CategoricalChartProps;
+  lineChart: CartesianChartProps;
 } & AxisProps;
 
 export type LineChartArgs = Partial<Flatten<LineChartProps>> & {};
@@ -92,7 +92,7 @@ type AreaArgKey = "area" | "areaChart" | "xAxis" | "yAxis";
 
 export type AreaChartProps = {
   area: OmitSVGElement<AreaProps>;
-  areaChart: CategoricalChartProps;
+  areaChart: CartesianChartProps;
 } & AxisProps;
 
 export type AreaChartArgs = Partial<Flatten<AreaChartProps>> & {};
@@ -118,7 +118,7 @@ type PieArgKey = "pie" | "pieChart";
 
 export type PieChartProps = {
   pie: OmitSVGElement<PieProps>;
-  pieChart: CategoricalChartProps;
+  pieChart: PolarChartProps;
 };
 
 export type PieChartArgs = Partial<Flatten<PieChartProps>> & {};
@@ -140,7 +140,7 @@ type RadialBarArgKey = "radialBar" | "radialBarChart";
 
 export type RadialBarChartProps = {
   radialBar: OmitSVGElement<RadialBarProps>;
-  radialBarChart: CategoricalChartProps;
+  radialBarChart: PolarChartProps;
 };
 
 export type RadialBarChartArgs = Partial<Flatten<RadialBarChartProps>> & {};
@@ -162,7 +162,7 @@ type RadarArgKey = "radar" | "radarChart";
 
 export type RadarChartProps = {
   radar: OmitSVGElement<RadarProps>;
-  radarChart: CategoricalChartProps;
+  radarChart: PolarChartProps;
 };
 
 export type RadarChartArgs = Partial<Flatten<RadarChartProps>> & {};

@@ -4,9 +4,9 @@ exports[`Select > has 'base' ('md') 1`] = `
 <DocumentFragment>
   <button
     aria-autocomplete="none"
-    aria-controls="radix-«r18»"
+    aria-controls="radix-_r_18_"
     aria-expanded="false"
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 select-md"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 select-md"
     data-placeholder=""
     data-state="closed"
     dir="ltr"
@@ -26,9 +26,9 @@ exports[`Select > has 'large' ('lg') 1`] = `
 <DocumentFragment>
   <button
     aria-autocomplete="none"
-    aria-controls="radix-«r1c»"
+    aria-controls="radix-_r_1c_"
     aria-expanded="false"
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 select-lg"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 select-lg"
     data-placeholder=""
     data-state="closed"
     dir="ltr"
@@ -48,9 +48,9 @@ exports[`Select > has 'small' ('sm') 1`] = `
 <DocumentFragment>
   <button
     aria-autocomplete="none"
-    aria-controls="radix-«r14»"
+    aria-controls="radix-_r_14_"
     aria-expanded="false"
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 select-sm"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 select-sm"
     data-placeholder=""
     data-state="closed"
     dir="ltr"
@@ -70,9 +70,9 @@ exports[`Select > has 'tiny' ('xs') 1`] = `
 <DocumentFragment>
   <button
     aria-autocomplete="none"
-    aria-controls="radix-«r10»"
+    aria-controls="radix-_r_10_"
     aria-expanded="false"
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 select-xs"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 select-xs"
     data-placeholder=""
     data-state="closed"
     dir="ltr"
@@ -91,7 +91,7 @@ exports[`Select > has 'tiny' ('xs') 1`] = `
 exports[`Select > has a label 1`] = `
 <DocumentFragment>
   <label
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 min-h-fit h-10"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 min-h-fit h-10"
   >
     <span
       class="label"
@@ -100,7 +100,7 @@ exports[`Select > has a label 1`] = `
     </span>
     <button
       aria-autocomplete="none"
-      aria-controls="radix-«r1g»"
+      aria-controls="radix-_r_1g_"
       aria-expanded="false"
       data-placeholder=""
       data-state="closed"
@@ -121,7 +121,7 @@ exports[`Select > has a label 1`] = `
 exports[`Select > has a prefix label 1`] = `
 <DocumentFragment>
   <label
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 min-h-fit h-10"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 min-h-fit h-10"
   >
     <span
       class="label"
@@ -130,7 +130,7 @@ exports[`Select > has a prefix label 1`] = `
     </span>
     <button
       aria-autocomplete="none"
-      aria-controls="radix-«r1k»"
+      aria-controls="radix-_r_1k_"
       aria-expanded="false"
       data-placeholder=""
       data-state="closed"
@@ -151,7 +151,7 @@ exports[`Select > has a prefix label 1`] = `
 exports[`Select > has a suffix label 1`] = `
 <DocumentFragment>
   <label
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 min-h-fit h-10"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 min-h-fit h-10"
   >
     <span
       class="label"
@@ -160,7 +160,7 @@ exports[`Select > has a suffix label 1`] = `
     </span>
     <button
       aria-autocomplete="none"
-      aria-controls="radix-«r1o»"
+      aria-controls="radix-_r_1o_"
       aria-expanded="false"
       data-placeholder=""
       data-state="closed"
@@ -182,9 +182,9 @@ exports[`Select > has accent variant 1`] = `
 <DocumentFragment>
   <button
     aria-autocomplete="none"
-    aria-controls="radix-«rc»"
+    aria-controls="radix-_r_c_"
     aria-expanded="false"
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 select-accent min-h-fit h-10"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 select-accent min-h-fit h-10"
     data-placeholder=""
     data-state="closed"
     dir="ltr"
@@ -204,9 +204,9 @@ exports[`Select > has error variant 1`] = `
 <DocumentFragment>
   <button
     aria-autocomplete="none"
-    aria-controls="radix-«rs»"
+    aria-controls="radix-_r_s_"
     aria-expanded="false"
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 select-error min-h-fit h-10"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 select-error min-h-fit h-10"
     data-placeholder=""
     data-state="closed"
     dir="ltr"
@@ -226,9 +226,9 @@ exports[`Select > has info variant 1`] = `
 <DocumentFragment>
   <button
     aria-autocomplete="none"
-    aria-controls="radix-«ro»"
+    aria-controls="radix-_r_o_"
     aria-expanded="false"
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 select-info min-h-fit h-10"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 select-info min-h-fit h-10"
     data-placeholder=""
     data-state="closed"
     dir="ltr"
@@ -248,9 +248,9 @@ exports[`Select > has primary variant 1`] = `
 <DocumentFragment>
   <button
     aria-autocomplete="none"
-    aria-controls="radix-«r4»"
+    aria-controls="radix-_r_4_"
     aria-expanded="false"
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 select-primary min-h-fit h-10"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 select-primary min-h-fit h-10"
     data-placeholder=""
     data-state="closed"
     dir="ltr"
@@ -270,9 +270,9 @@ exports[`Select > has secondary variant 1`] = `
 <DocumentFragment>
   <button
     aria-autocomplete="none"
-    aria-controls="radix-«r8»"
+    aria-controls="radix-_r_8_"
     aria-expanded="false"
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 select-secondary min-h-fit h-10"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 select-secondary min-h-fit h-10"
     data-placeholder=""
     data-state="closed"
     dir="ltr"
@@ -292,9 +292,9 @@ exports[`Select > has success variant 1`] = `
 <DocumentFragment>
   <button
     aria-autocomplete="none"
-    aria-controls="radix-«rg»"
+    aria-controls="radix-_r_g_"
     aria-expanded="false"
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 select-success min-h-fit h-10"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 select-success min-h-fit h-10"
     data-placeholder=""
     data-state="closed"
     dir="ltr"
@@ -314,9 +314,9 @@ exports[`Select > has warning variant 1`] = `
 <DocumentFragment>
   <button
     aria-autocomplete="none"
-    aria-controls="radix-«rk»"
+    aria-controls="radix-_r_k_"
     aria-expanded="false"
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 select-warning min-h-fit h-10"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 select-warning min-h-fit h-10"
     data-placeholder=""
     data-state="closed"
     dir="ltr"
@@ -336,9 +336,9 @@ exports[`Select > renders with the correct initial state 1`] = `
 <DocumentFragment>
   <button
     aria-autocomplete="none"
-    aria-controls="radix-«r0»"
+    aria-controls="radix-_r_0_"
     aria-expanded="false"
-    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 transition-all duration-100 min-h-fit h-10"
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 min-h-fit h-10"
     data-placeholder=""
     data-state="closed"
     dir="ltr"

@@ -16,13 +16,13 @@ exports[`Tabs > renders tab without a default tab 1`] = `
       tabindex="0"
     >
       <button
-        aria-controls="radix-«r0»-content-account"
+        aria-controls="radix-_r_0_-content-account"
         aria-selected="false"
         class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow-sm"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
-        id="radix-«r0»-trigger-account"
+        id="radix-_r_0_-trigger-account"
         role="tab"
         tabindex="-1"
         type="button"
@@ -30,13 +30,13 @@ exports[`Tabs > renders tab without a default tab 1`] = `
         Account
       </button>
       <button
-        aria-controls="radix-«r0»-content-password"
+        aria-controls="radix-_r_0_-content-password"
         aria-selected="false"
         class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow-sm"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
-        id="radix-«r0»-trigger-password"
+        id="radix-_r_0_-trigger-password"
         role="tab"
         tabindex="-1"
         type="button"
@@ -44,7 +44,7 @@ exports[`Tabs > renders tab without a default tab 1`] = `
         Password
       </button>
       <button
-        aria-controls="radix-«r0»-content-secure"
+        aria-controls="radix-_r_0_-content-secure"
         aria-selected="false"
         class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow-sm"
         data-disabled=""
@@ -52,7 +52,7 @@ exports[`Tabs > renders tab without a default tab 1`] = `
         data-radix-collection-item=""
         data-state="inactive"
         disabled=""
-        id="radix-«r0»-trigger-secure"
+        id="radix-_r_0_-trigger-secure"
         role="tab"
         tabindex="-1"
         type="button"
@@ -61,32 +61,32 @@ exports[`Tabs > renders tab without a default tab 1`] = `
       </button>
     </div>
     <div
-      aria-labelledby="radix-«r0»-trigger-account"
+      aria-labelledby="radix-_r_0_-trigger-account"
       class="mt-2 ring-offset-background focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-«r0»-content-account"
+      id="radix-_r_0_-content-account"
       role="tabpanel"
       tabindex="0"
     />
     <div
-      aria-labelledby="radix-«r0»-trigger-password"
+      aria-labelledby="radix-_r_0_-trigger-password"
       class="mt-2 ring-offset-background focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-«r0»-content-password"
+      id="radix-_r_0_-content-password"
       role="tabpanel"
       tabindex="0"
     />
     <div
-      aria-labelledby="radix-«r0»-trigger-secure"
+      aria-labelledby="radix-_r_0_-trigger-secure"
       class="mt-2 ring-offset-background focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-«r0»-content-secure"
+      id="radix-_r_0_-content-secure"
       role="tabpanel"
       tabindex="0"
     />
@@ -110,13 +110,13 @@ exports[`Tabs > renders tab without a default tab 2`] = `
       tabindex="0"
     >
       <button
-        aria-controls="radix-«r4»-content-account"
+        aria-controls="radix-_r_4_-content-account"
         aria-selected="false"
         class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow-sm"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
-        id="radix-«r4»-trigger-account"
+        id="radix-_r_4_-trigger-account"
         role="tab"
         tabindex="-1"
         type="button"
@@ -124,13 +124,13 @@ exports[`Tabs > renders tab without a default tab 2`] = `
         Account
       </button>
       <button
-        aria-controls="radix-«r4»-content-password"
+        aria-controls="radix-_r_4_-content-password"
         aria-selected="true"
         class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow-sm"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
-        id="radix-«r4»-trigger-password"
+        id="radix-_r_4_-trigger-password"
         role="tab"
         tabindex="-1"
         type="button"
@@ -138,7 +138,7 @@ exports[`Tabs > renders tab without a default tab 2`] = `
         Password
       </button>
       <button
-        aria-controls="radix-«r4»-content-secure"
+        aria-controls="radix-_r_4_-content-secure"
         aria-selected="false"
         class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow-sm"
         data-disabled=""
@@ -146,7 +146,7 @@ exports[`Tabs > renders tab without a default tab 2`] = `
         data-radix-collection-item=""
         data-state="inactive"
         disabled=""
-        id="radix-«r4»-trigger-secure"
+        id="radix-_r_4_-trigger-secure"
         role="tab"
         tabindex="-1"
         type="button"
@@ -155,21 +155,21 @@ exports[`Tabs > renders tab without a default tab 2`] = `
       </button>
     </div>
     <div
-      aria-labelledby="radix-«r4»-trigger-account"
+      aria-labelledby="radix-_r_4_-trigger-account"
       class="mt-2 ring-offset-background focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-«r4»-content-account"
+      id="radix-_r_4_-content-account"
       role="tabpanel"
       tabindex="0"
     />
     <div
-      aria-labelledby="radix-«r4»-trigger-password"
+      aria-labelledby="radix-_r_4_-trigger-password"
       class="mt-2 ring-offset-background focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
       data-orientation="horizontal"
       data-state="active"
-      id="radix-«r4»-content-password"
+      id="radix-_r_4_-content-password"
       role="tabpanel"
       style="animation-duration: 0s;"
       tabindex="0"
@@ -177,12 +177,12 @@ exports[`Tabs > renders tab without a default tab 2`] = `
       Password tab content
     </div>
     <div
-      aria-labelledby="radix-«r4»-trigger-secure"
+      aria-labelledby="radix-_r_4_-trigger-secure"
       class="mt-2 ring-offset-background focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-«r4»-content-secure"
+      id="radix-_r_4_-content-secure"
       role="tabpanel"
       tabindex="0"
     />
@@ -206,13 +206,13 @@ exports[`Tabs > should switch between tabs 1`] = `
       tabindex="0"
     >
       <button
-        aria-controls="radix-«r8»-content-account"
+        aria-controls="radix-_r_8_-content-account"
         aria-selected="true"
         class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow-sm"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
-        id="radix-«r8»-trigger-account"
+        id="radix-_r_8_-trigger-account"
         role="tab"
         tabindex="0"
         type="button"
@@ -220,13 +220,13 @@ exports[`Tabs > should switch between tabs 1`] = `
         Account
       </button>
       <button
-        aria-controls="radix-«r8»-content-password"
+        aria-controls="radix-_r_8_-content-password"
         aria-selected="false"
         class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow-sm"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
-        id="radix-«r8»-trigger-password"
+        id="radix-_r_8_-trigger-password"
         role="tab"
         tabindex="-1"
         type="button"
@@ -234,7 +234,7 @@ exports[`Tabs > should switch between tabs 1`] = `
         Password
       </button>
       <button
-        aria-controls="radix-«r8»-content-secure"
+        aria-controls="radix-_r_8_-content-secure"
         aria-selected="false"
         class="inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-base-100 data-[state=active]:text-foreground data-[state=active]:shadow-sm"
         data-disabled=""
@@ -242,7 +242,7 @@ exports[`Tabs > should switch between tabs 1`] = `
         data-radix-collection-item=""
         data-state="inactive"
         disabled=""
-        id="radix-«r8»-trigger-secure"
+        id="radix-_r_8_-trigger-secure"
         role="tab"
         tabindex="-1"
         type="button"
@@ -251,33 +251,33 @@ exports[`Tabs > should switch between tabs 1`] = `
       </button>
     </div>
     <div
-      aria-labelledby="radix-«r8»-trigger-account"
+      aria-labelledby="radix-_r_8_-trigger-account"
       class="mt-2 ring-offset-background focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
       data-orientation="horizontal"
       data-state="active"
-      id="radix-«r8»-content-account"
+      id="radix-_r_8_-content-account"
       role="tabpanel"
       tabindex="0"
     >
       Account tab content
     </div>
     <div
-      aria-labelledby="radix-«r8»-trigger-password"
+      aria-labelledby="radix-_r_8_-trigger-password"
       class="mt-2 ring-offset-background focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-«r8»-content-password"
+      id="radix-_r_8_-content-password"
       role="tabpanel"
       tabindex="0"
     />
     <div
-      aria-labelledby="radix-«r8»-trigger-secure"
+      aria-labelledby="radix-_r_8_-trigger-secure"
       class="mt-2 ring-offset-background focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-«r8»-content-secure"
+      id="radix-_r_8_-content-secure"
       role="tabpanel"
       style=""
       tabindex="0"

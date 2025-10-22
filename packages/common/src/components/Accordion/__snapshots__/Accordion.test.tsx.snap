@@ -16,25 +16,25 @@ exports[`Accordion > renders an accordion 1`] = `
         data-state="closed"
       >
         <button
-          aria-controls="radix-«r1»"
+          aria-controls="radix-_r_1_"
           aria-expanded="false"
           class="flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all [&:hover:not(:disabled)]:underline disabled:opacity-50 [&[data-state=open]>svg]:rotate-180"
           data-orientation="vertical"
           data-radix-collection-item=""
           data-state="closed"
-          id="radix-«r0»"
+          id="radix-_r_0_"
           type="button"
         >
           Is it accessible?
         </button>
       </h3>
       <div
-        aria-labelledby="radix-«r0»"
+        aria-labelledby="radix-_r_0_"
         class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
         data-orientation="vertical"
         data-state="closed"
         hidden=""
-        id="radix-«r1»"
+        id="radix-_r_1_"
         role="region"
         style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
       />
@@ -50,25 +50,25 @@ exports[`Accordion > renders an accordion 1`] = `
         data-state="closed"
       >
         <button
-          aria-controls="radix-«r3»"
+          aria-controls="radix-_r_3_"
           aria-expanded="false"
           class="flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all [&:hover:not(:disabled)]:underline disabled:opacity-50 [&[data-state=open]>svg]:rotate-180"
           data-orientation="vertical"
           data-radix-collection-item=""
           data-state="closed"
-          id="radix-«r2»"
+          id="radix-_r_2_"
           type="button"
         >
           Is it styled?
         </button>
       </h3>
       <div
-        aria-labelledby="radix-«r2»"
+        aria-labelledby="radix-_r_2_"
         class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
         data-orientation="vertical"
         data-state="closed"
         hidden=""
-        id="radix-«r3»"
+        id="radix-_r_3_"
         role="region"
         style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
       />
@@ -84,26 +84,26 @@ exports[`Accordion > renders an accordion 1`] = `
         data-state="closed"
       >
         <button
-          aria-controls="radix-«r5»"
+          aria-controls="radix-_r_5_"
           aria-expanded="false"
           class="flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all [&:hover:not(:disabled)]:underline disabled:opacity-50 [&[data-state=open]>svg]:rotate-180"
           data-orientation="vertical"
           data-radix-collection-item=""
           data-state="closed"
           disabled=""
-          id="radix-«r4»"
+          id="radix-_r_4_"
           type="button"
         >
           Is it animated?
         </button>
       </h3>
       <div
-        aria-labelledby="radix-«r4»"
+        aria-labelledby="radix-_r_4_"
         class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
         data-orientation="vertical"
         data-state="closed"
         hidden=""
-        id="radix-«r5»"
+        id="radix-_r_5_"
         role="region"
         style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
       />

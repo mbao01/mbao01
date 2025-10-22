@@ -46,7 +46,7 @@ describe("Loading", () => {
   ] as const)("has %s color", (intent) => {
     const { asFragment } = render(<Loading intent={intent} data-testid="loading" />);
 
-    expect(screen.getByTestId("loading")).toHaveClass(`text-${intent}`);
+    expect(screen.getByTestId("loading")).toHaveClass(`text-${intent}-content`);
     expect(asFragment()).toMatchSnapshot();
   });
 });

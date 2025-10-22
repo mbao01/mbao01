@@ -6,7 +6,7 @@ exports[`Phone > should input phone number 1`] = `
     class="join"
   >
     <button
-      aria-controls="radix-«r1»"
+      aria-controls="radix-_r_1_"
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Select country code"
@@ -46,7 +46,7 @@ exports[`Phone > should render a phone input 1`] = `
     class="join"
   >
     <button
-      aria-controls="radix-«r0»"
+      aria-controls="radix-_r_0_"
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Select country code"
@@ -86,7 +86,7 @@ exports[`Phone > should select country code 1`] = `
     class="join"
   >
     <button
-      aria-controls="radix-«rdq»"
+      aria-controls="radix-_r_e0_"
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Select country code"
@@ -126,7 +126,7 @@ exports[`Phone > should select country code by searching country abbreviation 1`
     class="join"
   >
     <button
-      aria-controls="radix-«r6u»"
+      aria-controls="radix-_r_71_"
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Select country code"
@@ -166,7 +166,7 @@ exports[`Phone > should select country code by searching country name 1`] = `
     class="join"
   >
     <button
-      aria-controls="radix-«r2»"
+      aria-controls="radix-_r_2_"
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Select country code"

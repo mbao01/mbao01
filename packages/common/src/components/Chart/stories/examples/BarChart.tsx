@@ -243,13 +243,7 @@ export const CustomLabelBarChartExample = (props: Partial<BarChartProps>) => {
         <YAxis {...props.yAxis} />
         <XAxis {...props.xAxis} />
         <ChartTooltip cursor={false} content={<ChartTooltipContent indicator="line" />} />
-        <Bar
-          dataKey="desktop"
-          layout="vertical"
-          fill="var(--color-desktop)"
-          radius={4}
-          {...props.bar}
-        >
+        <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} {...props.bar}>
           <LabelList
             dataKey="month"
             position="insideLeft"
@@ -306,7 +300,7 @@ export const MixedBarChartExample = (props: Partial<BarChartProps>) => {
         />
         <XAxis {...props.xAxis} />
         <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
-        <Bar dataKey="visitors" layout="vertical" radius={5} {...props.bar} />
+        <Bar dataKey="visitors" radius={5} {...props.bar} />
       </BarChart>
     </Chart>
   );
@@ -374,12 +368,11 @@ export const ActiveBarChartExample = (props: Partial<BarChartProps>) => {
           tickFormatter={(value) => chartConfig[value as keyof typeof chartConfig]?.label}
           {...props.xAxis}
         />
-        <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
+        <ChartTooltip cursor={false} defaultIndex={2} content={<ChartTooltipContent hideLabel />} />
         <Bar
           dataKey="visitors"
           strokeWidth={2}
           radius={8}
-          activeIndex={2}
           activeBar={(p: unknown) => {
             return (
               <Rectangle
