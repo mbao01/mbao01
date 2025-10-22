@@ -30,7 +30,7 @@ export type ChartStyleProps = {
 };
 
 export type ChartTooltipContentProps = Partial<
-  TooltipContentProps<number | string | Array<number | string>, string>
+  TooltipContentProps<number | string | (number | string)[], string>
 > &
   ComponentProps<"div"> & {
     hideLabel?: boolean;
