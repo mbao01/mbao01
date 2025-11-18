@@ -1,3 +1,16 @@
+# (Tue Nov 18 2025)
+
+#### 🐛 Bug Fix
+
+- `@mbao01/common@0.5.3`, `@mbao01/next@0.5.3`, `@mbao01/ui@0.6.3`
+  - feat(combobox): allow optional onSelectItem callback [#202](https://github.com/mbao01/mbao01/pull/202) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # (Wed Oct 22 2025)
 
 #### 🐛 Bug Fix
