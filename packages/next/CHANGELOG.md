@@ -1,19 +1,18 @@
-# v0.5.3 (Tue Nov 18 2025)
-
-#### 🐛 Bug Fix
-
-- feat(combobox): allow optional onSelectItem callback [#202](https://github.com/mbao01/mbao01/pull/202) ([@mbao01](https://github.com/mbao01))
-
-#### Authors: 1
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 0.5.3 (2025-11-18)
+
+
+### Features
+
+* **combobox:** allow optional onSelectItem callback ([#202](https://github.com/mbao01/mbao01/issues/202)) ([e803ac4](https://github.com/mbao01/mbao01/commit/e803ac48b56145ee19e0c1c0f9c9efdacbd65b14))
+
+
+
+
 
 ## 0.5.2 (2025-10-22)
 
