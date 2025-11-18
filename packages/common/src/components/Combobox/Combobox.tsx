@@ -20,7 +20,6 @@ export const Combobox = <T extends Item>({
 }: ComboboxProps<T>) => {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState<string | number | null>(null);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
   const currentItem = items?.find((item) => getItemValue(item) === value);
 
