@@ -8,6 +8,7 @@ export type ComboboxProps<T extends Item> = {
   emptyText?: string;
   getItemValue?: (item: T) => string;
   getItemLabel?: (item: T) => string;
+  onSelectItem?: (item: T) => void;
   classes?: Partial<{
     root: string;
     trigger: string;
