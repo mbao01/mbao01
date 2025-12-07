@@ -61,7 +61,6 @@ describe("Button", () => {
     "secondary",
     "accent",
     "ghost",
-    "link",
     "info",
     "success",
     "warning",

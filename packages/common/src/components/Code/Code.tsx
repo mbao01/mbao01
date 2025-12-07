@@ -26,17 +26,23 @@ const CodeBlock = ({ children, prefix, skip }: Pick<CodeProps, "children" | "pre
   });
 };
 
-export const Code = React.forwardRef<HTMLPreElement | HTMLElement, CodeProps>(
+export const Code = React.forwardRef<HTMLDivElement, CodeProps>(
   ({ className, inline, prefix, skip, colorScheme, children, ...props }, ref) => {
     const Component = inline ? "code" : "div";
 
     return (
       <Component
-        ref={ref as any}
+        ref={ref}
         className={cn(getCodeClasses({ inline, colorScheme }), className)}
         {...props}
       >
-        {inline ? children : <CodeBlock children={children} prefix={prefix} skip={skip} />}
+        {inline ? (
+          children
+        ) : (
+          <CodeBlock prefix={prefix} skip={skip}>
+            {children}
+          </CodeBlock>
+        )}
       </Component>
     );
   }

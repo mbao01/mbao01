@@ -59,7 +59,6 @@ export const ExtraLarge: Story = {
 
 export const FullWidth: Story = {
   args: {
-    size: "full",
     children: content,
   },
 };

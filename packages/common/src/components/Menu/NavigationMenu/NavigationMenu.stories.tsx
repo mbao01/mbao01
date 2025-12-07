@@ -69,7 +69,7 @@ const withMenubar = () => {
     <NavigationMenu>
       <NavigationMenu.List>
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger variant="base">Getting started</NavigationMenu.Trigger>
+          <NavigationMenu.Trigger variant="default">Getting started</NavigationMenu.Trigger>
           <NavigationMenu.Content>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -98,7 +98,7 @@ const withMenubar = () => {
           </NavigationMenu.Content>
         </NavigationMenu.Item>
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger variant="base">Components</NavigationMenu.Trigger>
+          <NavigationMenu.Trigger variant="default">Components</NavigationMenu.Trigger>
           <NavigationMenu.Content>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -112,7 +112,7 @@ const withMenubar = () => {
         <NavigationMenu.Item>
           <NavigationMenu.Link
             href="#"
-            className={getNavigationMenuTriggerClasses({ variant: "base" })}
+            className={getNavigationMenuTriggerClasses({ variant: "default" })}
           >
             Documentation
           </NavigationMenu.Link>

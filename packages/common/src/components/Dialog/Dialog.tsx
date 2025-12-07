@@ -46,7 +46,7 @@ const DialogContent = React.forwardRef<
       className,
       children,
       closeProps,
-      variant = "dialog",
+      type = "dialog",
       showClose = true,
       side = "right",
       ...props
@@ -59,8 +59,8 @@ const DialogContent = React.forwardRef<
         ref={ref}
         className={cn(
           getDialogContentClasses({
-            variant,
-            side: variant === "sheet" ? side : undefined,
+            type,
+            side: type === "sheet" ? side : undefined,
           }),
           className
         )}

@@ -30,15 +30,15 @@ describe("Dialog", () => {
   });
 
   it.each([
-    { variant: "dialog", description: "dialog" },
-    { variant: "sheet", description: "sheet" },
-    { variant: "sheet", side: "left", description: "sheet on the left" },
-    { variant: "sheet", side: "right", description: "sheet on the left" },
-    { variant: "sheet", side: "top", description: "sheet on top" },
-    { variant: "sheet", side: "bottom", description: "sheet on bottom" },
-  ] as const)("renders a $description", async ({ variant, side }) => {
+    { type: "dialog", description: "dialog" },
+    { type: "sheet", description: "sheet" },
+    { type: "sheet", side: "left", description: "sheet on the left" },
+    { type: "sheet", side: "right", description: "sheet on the left" },
+    { type: "sheet", side: "top", description: "sheet on top" },
+    { type: "sheet", side: "bottom", description: "sheet on bottom" },
+  ] as const)("renders a $description", async ({ type, side }) => {
     const user = userEvent.setup();
-    const { asFragment } = renderDialog({ variant, side });
+    const { asFragment } = renderDialog({ type, side });
 
     const dialogTrigger = screen.getByRole("button", { name: "Edit Profile" });
 

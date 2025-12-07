@@ -1,7 +1,8 @@
 import { cva } from "../../../libs";
+import { createVariants } from "../../../utilities";
 
 export const getInputClasses = cva("input rounded-md transition-all duration-100", {
-  variants: {
+  variants: createVariants({
     variant: {
       default: "bg-transparent",
       accent: "input-accent",
@@ -32,7 +33,7 @@ export const getInputClasses = cva("input rounded-md transition-all duration-100
     readOnly: {
       true: "cursor-not-allowed! bg-base-200!",
     },
-  },
+  }),
   compoundVariants: [
     {
       size: undefined,
@@ -49,12 +50,12 @@ export const getInputClasses = cva("input rounded-md transition-all duration-100
 export const getFloatingLabelClasses = cva("floating-label");
 
 export const getInputLabelClasses = cva("", {
-  variants: {
+  variants: createVariants({
     floating: {
       true: "",
       false: "label",
     },
-  },
+  }),
   compoundVariants: [
     {
       floating: undefined,
@@ -69,7 +70,7 @@ export const getInputCommonClasses = cva(
   [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2
    `,
   {
-    variants: {
+    variants: createVariants({
       variant: {
         default:
           "[&:has(input:focus)]:border-[currentColor] [&:has(input:focus-within)]:border-[currentColor] [&:has(input:focus)]:outline-ghost [&:has(input:focus-within)]:outline-ghost",
@@ -107,7 +108,7 @@ export const getInputCommonClasses = cva(
       readOnly: {
         true: "cursor-not-allowed! bg-base-200!",
       },
-    },
+    }),
     compoundVariants: [
       {
         size: undefined,

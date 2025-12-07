@@ -7,7 +7,7 @@ const withHoverCard = (_: StoryFn, context: StoryContext<HoverCardProps>) => {
   return (
     <HoverCard {...context.args}>
       <HoverCard.Trigger asChild>
-        <Button variant="link">@nextjs</Button>
+        <Button link>@nextjs</Button>
       </HoverCard.Trigger>
       <HoverCard.Content className="w-80">
         <div className="space-y-1">

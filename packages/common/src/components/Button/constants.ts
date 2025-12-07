@@ -1,14 +1,14 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getButtonClasses = cva("btn", {
-  variants: {
+  variants: createVariants({
     variant: {
       accent: "btn-accent",
       default: "btn-default",
       error: "btn-error",
       ghost: "btn-ghost",
       info: "btn-info",
-      link: "btn-link",
       neutral: "btn-neutral",
       primary: "btn-primary",
       secondary: "btn-secondary",
@@ -17,6 +17,9 @@ export const getButtonClasses = cva("btn", {
     },
     outline: {
       true: "btn-outline",
+    },
+    link: {
+      true: "btn-link",
     },
     rounded: {
       xs: "rounded-xs",
@@ -39,7 +42,7 @@ export const getButtonClasses = cva("btn", {
     disabled: {
       true: "",
     },
-  },
+  }),
   compoundVariants: [
     {
       size: undefined,

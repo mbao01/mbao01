@@ -39,13 +39,9 @@ describe("Text", () => {
   it.each([
     ["tiny", "xs"],
     ["small", "sm"],
-    ["base", "base"],
+    ["medium", "md"],
     ["large", "lg"],
     ["extra large", "xl"],
-    ["double extra large", "2xl"],
-    ["triple extra large", "3xl"],
-    ["quad extra large", "4xl"],
-    ["quint extra large", "5xl"],
   ] as const)("has %s (%s) size", (description, size) => {
     const { asFragment } = render(<Text size={size}>{description}</Text>);
 

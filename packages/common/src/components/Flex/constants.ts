@@ -1,7 +1,8 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getFlexClasses = cva("flex", {
-  variants: {
+  variants: createVariants({
     direction: {
       row: "flex-row",
       "row-reverse": "flex-row-reverse",
@@ -41,7 +42,7 @@ export const getFlexClasses = cva("flex", {
       12: "gap-12",
       16: "gap-16",
     },
-  },
+  }),
   defaultVariants: {
     direction: "row",
     align: "stretch",

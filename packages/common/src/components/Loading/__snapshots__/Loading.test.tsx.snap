@@ -45,7 +45,7 @@ exports[`Loading > has accent color 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Loading > has ball variant 1`] = `
+exports[`Loading > has ball type 1`] = `
 <DocumentFragment>
   <span
     class="loading loading-ball"
@@ -54,7 +54,7 @@ exports[`Loading > has ball variant 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Loading > has bars variant 1`] = `
+exports[`Loading > has bars type 1`] = `
 <DocumentFragment>
   <span
     class="loading loading-bars"
@@ -63,7 +63,7 @@ exports[`Loading > has bars variant 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Loading > has dots variant 1`] = `
+exports[`Loading > has dots type 1`] = `
 <DocumentFragment>
   <span
     class="loading loading-dots"
@@ -81,7 +81,7 @@ exports[`Loading > has error color 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Loading > has infinity variant 1`] = `
+exports[`Loading > has infinity type 1`] = `
 <DocumentFragment>
   <span
     class="loading loading-infinity"
@@ -117,7 +117,7 @@ exports[`Loading > has primary color 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Loading > has ring variant 1`] = `
+exports[`Loading > has ring type 1`] = `
 <DocumentFragment>
   <span
     class="loading loading-ring"
@@ -135,7 +135,7 @@ exports[`Loading > has secondary color 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Loading > has spinner variant 1`] = `
+exports[`Loading > has spinner type 1`] = `
 <DocumentFragment>
   <span
     class="loading loading-spinner"

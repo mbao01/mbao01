@@ -47,7 +47,7 @@ export const SidebarWithIcons: Story = {
 
 export const SidebarWithSecondaryNavigation: Story = {
   args: {
-    variant: "inset",
+    type: "inset",
   },
   render: (props) => <SidebarWithSecondaryNavigationExample {...props} />,
 };

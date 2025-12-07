@@ -1,7 +1,8 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getKbdClasses = cva("kbd", {
-  variants: {
+  variants: createVariants({
     variant: {
       accent: "bg-accent text-accent-content border-accent",
       default: "bg-default text-default-content border-default",
@@ -24,7 +25,7 @@ export const getKbdClasses = cva("kbd", {
       lg: "kbd-lg",
       xl: "kbd-xl",
     },
-  },
+  }),
   compoundVariants: [
     { outline: true, variant: "accent", className: "text-accent" },
     { outline: true, variant: "default", className: "text-default" },

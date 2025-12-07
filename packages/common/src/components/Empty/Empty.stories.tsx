@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import { BoxIcon } from "lucide-react";
 import { Button } from "../Button";
-import { Icon } from "../Icon";
 import { Empty, EmptyActions, EmptyDescription, EmptyImage, EmptyTitle } from "./Empty";
 
 const meta = {
@@ -19,7 +19,7 @@ export const Default: Story = {
   render: () => (
     <Empty>
       <EmptyImage>
-        <Icon name="Box" className="h-10 w-10" />
+        <BoxIcon className="h-10 w-10" />
       </EmptyImage>
       <EmptyTitle>No items found</EmptyTitle>
       <EmptyDescription>

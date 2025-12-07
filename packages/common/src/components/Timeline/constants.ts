@@ -1,20 +1,21 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getTimelineClasses = cva("grid", {
-  variants: {
+  variants: createVariants({
     positions: {
       left: "[&>li]:grid-cols-[0_min-content_1fr]",
       right: "[&>li]:grid-cols-[1fr_min-content]",
       center: "[&>li]:grid-cols-[1fr_min-content_1fr]",
     },
-  },
+  }),
   defaultVariants: {
     positions: "left",
   },
 });
 
 export const getTimelineItemClasses = cva("grid items-center gap-x-2", {
-  variants: {
+  variants: createVariants({
     variant: {
       info: "text-info",
       error: "text-error",
@@ -24,15 +25,15 @@ export const getTimelineItemClasses = cva("grid items-center gap-x-2", {
       secondary: "text-secondary",
       accent: "text-accent",
       neutral: "text-neutral",
-      content: "text-base-content",
+      default: "text-base-content",
     },
-  },
+  }),
 });
 
 export const getTimelineDotClasses = cva(
   "timeline-dot col-start-2 col-end-3 row-start-1 row-end-1 flex size-4 items-center justify-center rounded-full border",
   {
-    variants: {
+    variants: createVariants({
       status: {
         default: "*:hidden",
         active: "[&>*:not(.lucide-circle)]:hidden",
@@ -70,10 +71,10 @@ export const getTimelineDotClasses = cva(
           "[&>.lucide-check]:text-accent [&>.lucide-circle]:text-accent [&>.lucide-circle]:fill-accent [&>.lucide-x]:text-accent",
         neutral:
           "[&>.lucide-check]:text-neutral [&>.lucide-circle]:text-neutral [&>.lucide-circle]:fill-neutral [&>.lucide-x]:text-neutral",
-        content:
+        default:
           "[&>.lucide-check]:text-base-content [&>.lucide-circle]:text-base-content [&>.lucide-circle]:fill-base-content [&>.lucide-x]:text-base-content",
       },
-    },
+    }),
     defaultVariants: {
       status: "default",
     },
@@ -137,7 +138,7 @@ export const getTimelineDotClasses = cva(
       },
       {
         fill: true,
-        variant: "content",
+        variant: "default",
         className:
           "border-base-100 bg-base-100 [&>.lucide-check]:text-base-content [&>.lucide-circle]:fill-base-content [&>.lucide-x]:text-base-content",
       },
@@ -146,12 +147,12 @@ export const getTimelineDotClasses = cva(
 );
 
 export const getTimelineContentClasses = cva("row-start-2 row-end-2 pb-8 text-muted-foreground", {
-  variants: {
+  variants: createVariants({
     side: {
       right: "col-start-3 col-end-4 mr-auto text-left",
       left: "col-start-1 col-end-2 ml-auto text-right",
     },
-  },
+  }),
   defaultVariants: {
     side: "right",
   },
@@ -160,7 +161,7 @@ export const getTimelineContentClasses = cva("row-start-2 row-end-2 pb-8 text-mu
 export const getTimelineHeadingClasses = cva(
   "row-start-1 row-end-1 line-clamp-1 max-w-full truncate",
   {
-    variants: {
+    variants: createVariants({
       side: {
         right: "col-start-3 col-end-4 mr-auto text-left",
         left: "col-start-1 col-end-2 ml-auto text-right",
@@ -174,20 +175,16 @@ export const getTimelineHeadingClasses = cva(
         secondary: "text-secondary",
         accent: "text-accent",
         neutral: "text-neutral",
-        content: "text-base-content",
+        default: "text-base-content",
       },
       size: {
         xs: "text-xs",
         sm: "text-sm",
-        base: "text-base",
+        md: "text-base",
         lg: "text-lg",
         xl: "text-xl",
-        "2xl": "text-2xl",
-        "3xl": "text-3xl",
-        "4xl": "text-4xl",
-        "5xl": "text-5xl",
       },
-    },
+    }),
     defaultVariants: {
       side: "right",
     },
@@ -197,7 +194,7 @@ export const getTimelineHeadingClasses = cva(
 export const getTimelineLineClasses = cva(
   "bg-base-300 border-none col-start-2 col-end-3 row-start-2 row-end-2 mx-auto flex h-full min-h-16 w-0.5 justify-center rounded-full",
   {
-    variants: {
+    variants: createVariants({
       variant: {
         info: "bg-info",
         error: "bg-error",
@@ -207,8 +204,8 @@ export const getTimelineLineClasses = cva(
         secondary: "bg-secondary",
         accent: "bg-accent",
         neutral: "bg-neutral",
-        content: "bg-base-content",
+        default: "bg-base-content",
       },
-    },
+    }),
   }
 );

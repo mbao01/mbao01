@@ -1,7 +1,8 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getCenterClasses = cva("", {
-  variants: {
+  variants: createVariants({
     inline: {
       true: "inline-flex",
       false: "flex",
@@ -11,7 +12,7 @@ export const getCenterClasses = cva("", {
       vertical: "items-center",
       both: "justify-center items-center",
     },
-  },
+  }),
   defaultVariants: {
     inline: false,
     axis: "both",

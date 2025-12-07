@@ -62,6 +62,13 @@ export const PrimaryOnToggle: Story = {
   },
 };
 
+export const LinkToggle: Story = {
+  args: {
+    link: true,
+    children: "Link Toggle",
+  },
+};
+
 export const WideToggle: Story = {
   args: {
     wide: true,

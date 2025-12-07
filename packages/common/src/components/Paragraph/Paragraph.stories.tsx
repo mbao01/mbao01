@@ -25,7 +25,7 @@ export const Sizes: Story = {
     <div className="flex flex-col gap-4">
       <Paragraph size="xs">Extra Small: Lorem ipsum dolor sit amet.</Paragraph>
       <Paragraph size="sm">Small: Lorem ipsum dolor sit amet.</Paragraph>
-      <Paragraph size="base">Base: Lorem ipsum dolor sit amet.</Paragraph>
+      <Paragraph size="md">Base: Lorem ipsum dolor sit amet.</Paragraph>
       <Paragraph size="lg">Large: Lorem ipsum dolor sit amet.</Paragraph>
       <Paragraph size="xl">Extra Large: Lorem ipsum dolor sit amet.</Paragraph>
     </div>

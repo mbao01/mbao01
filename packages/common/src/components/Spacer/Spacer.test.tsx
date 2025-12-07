@@ -13,13 +13,13 @@ describe("Spacer", () => {
     expect(screen.getByTestId("spacer")).toHaveAttribute("aria-hidden", "true");
   });
 
-  it("applies vertical size by default", () => {
-    render(<Spacer size={4} data-testid="spacer" />);
+  it("applies vertical gap by default", () => {
+    render(<Spacer gap={4} data-testid="spacer" />);
     expect(screen.getByTestId("spacer")).toHaveClass("h-4");
   });
 
-  it("applies horizontal size", () => {
-    render(<Spacer axis="horizontal" size={8} data-testid="spacer" />);
+  it("applies horizontal gap", () => {
+    render(<Spacer axis="horizontal" gap={8} data-testid="spacer" />);
     expect(screen.getByTestId("spacer")).toHaveClass("w-8");
   });
 

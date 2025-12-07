@@ -1,7 +1,8 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getStatusClasses = cva("status", {
-  variants: {
+  variants: createVariants({
     variant: {
       accent: "status-accent",
       default: "",
@@ -27,5 +28,5 @@ export const getStatusClasses = cva("status", {
       pulse: "animate-pulse",
       spin: "animate-spin",
     },
-  },
+  }),
 });

@@ -28,8 +28,10 @@ export const Block: Story = {
     children: [
       "function hello() {",
       '  console.log("Hello World");',
-      <span className="text-error bg-error/10">{"  "}return false;</span>,
-      <span data-prefix="3" className="text-success bg-success/10">
+      <span key="1" className="text-error bg-error/10">
+        {"  "}return false;
+      </span>,
+      <span key="2" data-prefix="3" className="text-success bg-success/10">
         {"  "}return true;
       </span>,
       "}",

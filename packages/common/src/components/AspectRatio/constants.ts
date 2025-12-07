@@ -1,7 +1,8 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getAspectRatioClasses = cva("relative w-full overflow-hidden", {
-  variants: {
+  variants: createVariants({
     ratio: {
       "16/9": "aspect-video",
       "4/3": "aspect-[4/3]",
@@ -9,7 +10,7 @@ export const getAspectRatioClasses = cva("relative w-full overflow-hidden", {
       "21/9": "aspect-[21/9]",
       auto: "aspect-auto",
     },
-  },
+  }),
   defaultVariants: {
     ratio: "16/9",
   },

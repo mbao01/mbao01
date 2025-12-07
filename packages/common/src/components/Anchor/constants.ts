@@ -1,13 +1,13 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getAnchorClasses = cva("link transition-all", {
-  variants: {
+  variants: createVariants({
     variant: {
       accent: "link-accent",
-      default: "link-default",
       error: "link-error",
       info: "link-info",
-      link: "link-link",
+      default: "text-base-content",
       neutral: "link-neutral",
       primary: "link-primary",
       secondary: "link-secondary",
@@ -20,5 +20,5 @@ export const getAnchorClasses = cva("link transition-all", {
     underline: {
       false: "no-underline",
     },
-  },
+  }),
 });

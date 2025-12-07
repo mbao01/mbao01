@@ -1,6 +1,6 @@
 import { ExternalLinkIcon } from "lucide-react";
 import { cn } from "../../utilities";
-import { getAnchorClasses } from "./constant";
+import { getAnchorClasses } from "./constants";
 import { type AnchorProps } from "./types";
 
 export const Anchor = ({

@@ -1,4 +1,5 @@
 import { cva } from "../../../libs";
+import { createVariants } from "../../../utilities";
 
 export const getNavigationMenuClasses = cva(
   "relative z-10 flex max-w-max flex-1 items-center justify-center"
@@ -11,7 +12,7 @@ export const getNavigationMenuListClasses = cva(
 export const getNavigationMenuTriggerClasses = cva(
   "group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors focus:outline-hidden disabled:pointer-events-none disabled:opacity-50",
   {
-    variants: {
+    variants: createVariants({
       variant: {
         primary:
           "hover:bg-primary hover:text-primary-content focus:bg-primary focus:text-primary-content data-active:bg-primary/50 data-[state=open]:bg-primary/50",
@@ -21,7 +22,8 @@ export const getNavigationMenuTriggerClasses = cva(
           "hover:bg-accent hover:text-accent-content focus:bg-accent focus:text-accent-content data-active:bg-accent/50 data-[state=open]:bg-accent/50",
         neutral:
           "hover:bg-neutral hover:text-neutral-content focus:bg-neutral focus:text-neutral-content data-active:bg-neutral/50 data-[state=open]:bg-neutral/50",
-        base: "hover:bg-base-300 hover:text-base-content focus:bg-base-300 focus:text-base-content data-active:bg-base-300/50 data-[state=open]:bg-base-300/50",
+        default:
+          "hover:bg-base-300 hover:text-base-content focus:bg-base-300 focus:text-base-content data-active:bg-base-300/50 data-[state=open]:bg-base-300/50",
         info: "hover:bg-info hover:text-info-content focus:bg-info focus:text-info-content data-active:bg-info/50 data-[state=open]:bg-info/50",
         success:
           "hover:bg-success hover:text-success-content focus:bg-success focus:text-success-content data-active:bg-success/50 data-[state=open]:bg-success/50",
@@ -30,7 +32,7 @@ export const getNavigationMenuTriggerClasses = cva(
         error:
           "hover:bg-error hover:text-error-content focus:bg-error focus:text-error-content data-active:bg-error/50 data-[state=open]:bg-error/50",
       },
-    },
+    }),
   }
 );
 

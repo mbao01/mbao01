@@ -8,7 +8,7 @@ const withContextMenu = () => {
         Right click here
       </ContextMenu.Trigger>
       <ContextMenu.Content className="w-64">
-        <ContextMenu.Item inset variant="base">
+        <ContextMenu.Item inset variant="default">
           Back
           <ContextMenu.Shortcut>⌘[</ContextMenu.Shortcut>
         </ContextMenu.Item>

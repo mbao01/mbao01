@@ -66,7 +66,10 @@ export const WithSpans: Story = {
     gap: 4,
     children: (
       <>
-        <GridItem colSpan={2} className="border-base-content card bg-primary text-primary-content border p-4 text-center">
+        <GridItem
+          colSpan={2}
+          className="border-base-content card bg-primary text-primary-content border p-4 text-center"
+        >
           Span 2 columns
         </GridItem>
         <GridItem className="border-base-content card bg-base-100 border p-4 text-center">
@@ -75,7 +78,10 @@ export const WithSpans: Story = {
         <GridItem className="border-base-content card bg-base-100 border p-4 text-center">
           Item
         </GridItem>
-        <GridItem colSpan={2} className="border-base-content card bg-secondary text-secondary-content border p-4 text-center">
+        <GridItem
+          colSpan={2}
+          className="border-base-content card bg-secondary text-secondary-content border p-4 text-center"
+        >
           Span 2 columns
         </GridItem>
       </>
@@ -90,7 +96,10 @@ export const RowSpans: Story = {
     gap: 4,
     children: (
       <>
-        <GridItem rowSpan={2} className="border-base-content card bg-accent text-accent-content border p-4 text-center">
+        <GridItem
+          rowSpan={2}
+          className="border-base-content card bg-accent text-accent-content border p-4 text-center"
+        >
           Span 2 rows
         </GridItem>
         <GridItem className="border-base-content card bg-base-100 border p-4 text-center">
@@ -105,7 +114,10 @@ export const RowSpans: Story = {
         <GridItem className="border-base-content card bg-base-100 border p-4 text-center">
           Item 4
         </GridItem>
-        <GridItem colSpan={2} className="border-base-content card bg-base-100 border p-4 text-center">
+        <GridItem
+          colSpan={2}
+          className="border-base-content card bg-base-100 border p-4 text-center"
+        >
           Span 2 columns
         </GridItem>
       </>

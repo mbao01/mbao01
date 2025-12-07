@@ -21,15 +21,17 @@ const ToggleGroup = ({ className, variant, children, ...props }: ToggleGroupProp
 const ToggleGroupItem = forwardRef<
   React.ElementRef<typeof ToggleGroupPrimitive.Item>,
   ToggleGroupItemProps
->(({ className, children, variant, size, wide, outline, ...props }, ref) => {
+>(({ className, children, variant, size, link, wide, outline, ...props }, ref) => {
   const context = useContext(ToggleGroupContext);
 
   return (
     <ToggleGroupPrimitive.Item
       ref={ref}
       className={cn(
-        getButtonClasses({ size, wide, outline }),
+        getButtonClasses({ link, size, wide, outline }),
         getToggleClasses({
+          link,
+          outline,
           variant: context.variant ?? variant,
         }),
         className

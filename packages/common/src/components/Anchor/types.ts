@@ -1,5 +1,5 @@
 import { VariantProps } from "../../libs";
-import { getAnchorClasses } from "./constant";
+import { getAnchorClasses } from "./constants";
 
 export type AnchorProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   isExternal?: boolean;

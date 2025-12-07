@@ -1,21 +1,22 @@
 import { cva } from "../../../libs";
+import { createVariants } from "../../../utilities";
 
 export const getSliderRootClasses = cva(
   "relative flex touch-none select-none items-center min-w-24",
   {
-    variants: {
+    variants: createVariants({
       disabled: {
         true: "cursor-not-allowed opacity-80",
       },
       wide: {
         true: "w-full",
       },
-    },
+    }),
   }
 );
 
 export const getSliderTrackClasses = cva("relative h-2 w-full grow overflow-hidden rounded-full", {
-  variants: {
+  variants: createVariants({
     variant: {
       primary: "bg-neutral-content",
       secondary: "bg-neutral-content",
@@ -32,14 +33,14 @@ export const getSliderTrackClasses = cva("relative h-2 w-full grow overflow-hidd
       md: "h-2",
       lg: "h-3",
     },
-  },
+  }),
   defaultVariants: {
     variant: "neutral",
   },
 });
 
 export const getSliderClasses = cva("absolute h-full", {
-  variants: {
+  variants: createVariants({
     variant: {
       primary: "bg-primary",
       secondary: "bg-secondary",
@@ -50,7 +51,7 @@ export const getSliderClasses = cva("absolute h-full", {
       error: "bg-error",
       neutral: "bg-base-content",
     },
-  },
+  }),
   defaultVariants: {
     variant: "neutral",
   },
@@ -59,7 +60,7 @@ export const getSliderClasses = cva("absolute h-full", {
 export const getSliderThumbClasses = cva(
   "block h-5 w-5 rounded-full border-2 ring-offset-neutral transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
-    variants: {
+    variants: createVariants({
       variant: {
         primary: "border-primary bg-base-100",
         secondary: "border-secondary bg-base-100",
@@ -76,7 +77,7 @@ export const getSliderThumbClasses = cva(
         md: "h-5 w-5",
         lg: "h-7 w-7",
       },
-    },
+    }),
     defaultVariants: {
       variant: "neutral",
     },

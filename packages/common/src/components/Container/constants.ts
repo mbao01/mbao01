@@ -1,14 +1,14 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getContainerClasses = cva("", {
-  variants: {
+  variants: createVariants({
     size: {
-      sm: "max-w-screen-sm",
-      md: "max-w-screen-md",
-      lg: "max-w-screen-lg",
-      xl: "max-w-screen-xl",
-      "2xl": "max-w-screen-2xl",
-      full: "max-w-full",
+      xs: "max-w-xs",
+      sm: "max-w-sm",
+      md: "max-w-md",
+      lg: "max-w-lg",
+      xl: "max-w-xl",
     },
     center: {
       true: "mx-auto",
@@ -16,10 +16,16 @@ export const getContainerClasses = cva("", {
     padding: {
       true: "px-4 sm:px-6 lg:px-8",
     },
-  },
+  }),
   defaultVariants: {
     size: "xl",
     center: true,
     padding: true,
   },
+  compoundVariants: [
+    {
+      size: undefined,
+      className: "max-w-full",
+    },
+  ],
 });

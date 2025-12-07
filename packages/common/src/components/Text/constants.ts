@@ -1,7 +1,8 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getTextClasses = cva("", {
-  variants: {
+  variants: createVariants({
     variant: {
       info: "text-info",
       error: "text-error",
@@ -15,13 +16,9 @@ export const getTextClasses = cva("", {
     size: {
       xs: "text-xs",
       sm: "text-sm",
-      base: "text-base",
+      md: "text-base",
       lg: "text-lg",
       xl: "text-xl",
-      "2xl": "text-2xl",
-      "3xl": "text-3xl",
-      "4xl": "text-4xl",
-      "5xl": "text-5xl",
     },
-  },
+  }),
 });

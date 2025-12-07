@@ -82,13 +82,13 @@ export const RadioGroup: Story = {
         <Fieldset>
           <Fieldset.Label htmlFor="gender">
             <Radio id="gender-male" name="gender" {...args} />
-            <Text size="base">Male</Text>
+            <Text size="md">Male</Text>
           </Fieldset.Label>
         </Fieldset>
         <Fieldset>
           <Fieldset.Label htmlFor="gender">
             <Radio id="gender-male" name="gender" {...args} />
-            <Text size="base">Female</Text>
+            <Text size="md">Female</Text>
           </Fieldset.Label>
         </Fieldset>
       </div>

@@ -1,6 +1,7 @@
 import type { DropAnimation } from "@dnd-kit/core";
 import { CSS } from "@dnd-kit/utilities";
 import { cva } from "../../../libs";
+import { createVariants } from "../../../utilities";
 
 export const DROP_ANIMATION_CONFIG: DropAnimation = {
   keyframes({ transform }) {
@@ -27,21 +28,21 @@ export const DROP_ANIMATION_CONFIG: DropAnimation = {
 export const getDraggableClasses = cva(
   "translate-x-(--translate-x) translate-y-(--translate-y) translate-z-0",
   {
-    variants: {
+    variants: createVariants({
       isDragging: {
         true: "transition-none z-10 cursor-grabbing",
       },
-    },
+    }),
   }
 );
 
 export const getDraggableRootClasses = cva("relative", {
-  variants: {
+  variants: createVariants({
     isDragging: {
       true: "",
     },
     isDragOverlay: {
       true: "",
     },
-  },
+  }),
 });

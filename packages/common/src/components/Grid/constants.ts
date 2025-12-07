@@ -1,7 +1,8 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getGridClasses = cva("grid", {
-  variants: {
+  variants: createVariants({
     columns: {
       1: "grid-cols-1",
       2: "grid-cols-2",
@@ -50,11 +51,11 @@ export const getGridClasses = cva("grid", {
       "row-dense": "grid-flow-row-dense",
       "col-dense": "grid-flow-col-dense",
     },
-  },
+  }),
 });
 
 export const getGridItemClasses = cva("", {
-  variants: {
+  variants: createVariants({
     colSpan: {
       1: "col-span-1",
       2: "col-span-2",
@@ -79,5 +80,5 @@ export const getGridItemClasses = cva("", {
       6: "row-span-6",
       full: "row-span-full",
     },
-  },
+  }),
 });

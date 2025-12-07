@@ -64,7 +64,7 @@ export const HorizontalScrollbar: Story = {
   args: {
     scrollbar: {
       orientation: "horizontal",
-      variant: "base",
+      variant: "default",
     },
   },
 };

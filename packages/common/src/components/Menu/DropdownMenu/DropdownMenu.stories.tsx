@@ -12,7 +12,7 @@ const withDropdownMenu = () => {
         <DropdownMenu.Label>My Account</DropdownMenu.Label>
         <DropdownMenu.Separator />
         <DropdownMenu.Group>
-          <DropdownMenu.Item variant="base">
+          <DropdownMenu.Item variant="default">
             Profile
             <DropdownMenu.Shortcut>⇧⌘P</DropdownMenu.Shortcut>
           </DropdownMenu.Item>

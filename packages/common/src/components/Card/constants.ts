@@ -1,7 +1,8 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getCardClasses = cva("card", {
-  variants: {
+  variants: createVariants({
     border: {
       solid: "card-border",
       dash: "card-dash",
@@ -19,5 +20,5 @@ export const getCardClasses = cva("card", {
     overlay: {
       true: "image-full",
     },
-  },
+  }),
 });

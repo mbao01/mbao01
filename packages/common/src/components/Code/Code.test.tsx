@@ -7,7 +7,7 @@ describe("Code", () => {
     render(<Code>const x = 1;</Code>);
     const element = screen.getByText("const x = 1;");
     expect(element.tagName).toBe("CODE");
-    expect(element.parentElement?.tagName).toBe("CODE"); // Wrapper is also code for inline
+    expect(element.parentElement?.tagName).toBe("PRE"); // Wrapper is also code for inline
   });
 
   it("renders block code when inline is false", () => {
@@ -20,7 +20,7 @@ describe("Code", () => {
   it("applies color scheme", () => {
     render(<Code colorScheme="primary">code</Code>);
     // The wrapper component receives the class
-    expect(screen.getByText("code").parentElement).toHaveClass("text-primary");
+    expect(screen.getByText("code").parentElement?.parentElement).toHaveClass("text-primary");
   });
 
   it("forwards ref correctly", () => {

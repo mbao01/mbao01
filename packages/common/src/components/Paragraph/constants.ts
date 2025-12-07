@@ -1,7 +1,8 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getParagraphClasses = cva("", {
-  variants: {
+  variants: createVariants({
     leading: {
       none: "leading-none",
       tight: "leading-tight",
@@ -10,7 +11,7 @@ export const getParagraphClasses = cva("", {
       relaxed: "leading-relaxed",
       loose: "leading-loose",
     },
-  },
+  }),
   defaultVariants: {
     leading: "normal",
   },

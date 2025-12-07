@@ -1,5 +1,6 @@
 import type { Theme } from "../../utilities";
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const THEMES = {
   light: "",
@@ -11,13 +12,13 @@ export const getChartClasses = cva(
 );
 
 export const getChartLegendContainerClasses = cva("flex items-center justify-center gap-4", {
-  variants: {
+  variants: createVariants({
     verticalAlign: {
       top: "pb-3",
       bottom: "pt-3",
       middle: "",
     },
-  },
+  }),
 });
 
 export const getChartLegendItemClasses = cva("flex items-center gap-1.5 [&>svg]:h-3 [&>svg]:w-3");
@@ -31,24 +32,24 @@ export const getChartTooltipContainerClasses = cva(
 export const getChartTooltipItemClasses = cva(
   "flex w-full flex-wrap items-stretch gap-2 [&>svg]:h-2.5 [&>svg]:w-2.5 [&>svg]:text-base-content",
   {
-    variants: {
+    variants: createVariants({
       indicator: {
         dot: "items-center",
         line: "",
         dashed: "",
       },
-    },
+    }),
   }
 );
 
 export const getChartTooltipItemLabelClasses = cva(
   "flex flex-1 justify-between leading-none items-center",
   {
-    variants: {
+    variants: createVariants({
       nestLabel: {
         true: "items-end",
       },
-    },
+    }),
   }
 );
 
@@ -57,7 +58,7 @@ export const getChartTooltipItemValueClasses = cva("font-mono font-medium tabula
 export const getChartTooltipItemIndicatorClasses = cva(
   "shrink-0 rounded-[2px] border-(--color-border) bg-(--color-bg)",
   {
-    variants: {
+    variants: createVariants({
       indicator: {
         dot: "h-2.5 w-2.5",
         line: "w-1",
@@ -66,7 +67,7 @@ export const getChartTooltipItemIndicatorClasses = cva(
       nestLabel: {
         true: "",
       },
-    },
+    }),
     compoundVariants: [
       {
         indicator: "dashed",

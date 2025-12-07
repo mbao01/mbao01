@@ -1,7 +1,8 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getTableClasses = cva("table", {
-  variants: {
+  variants: createVariants({
     caption: {
       top: "caption-top",
       bottom: "caption-bottom",
@@ -21,7 +22,7 @@ export const getTableClasses = cva("table", {
       md: "table-md",
       lg: "table-lg",
     },
-  },
+  }),
 });
 
 export const getTableHeaderClasses = cva("[&_tr]:border-b");

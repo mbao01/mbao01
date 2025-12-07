@@ -1,5 +1,6 @@
 import type { DateFormat, DatetimeFormatDefaults, InputPlaceholders, TimeFormat } from "./types";
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const DEFAULTS = [
   ["days", "months", "years"],
@@ -22,7 +23,7 @@ export const getDatetimeGridClasses = cva(
    [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus-within)]:outline-base-content/20
   `,
   {
-    variants: {
+    variants: createVariants({
       variant: {
         default: "border-0",
         accent: "border border-accent",
@@ -49,7 +50,7 @@ export const getDatetimeGridClasses = cva(
         md: "h-12 leading-loose px-4 text-sm",
         lg: "h-16 leading-loose px-5 text-lg",
       },
-    },
+    }),
     compoundVariants: [
       {
         size: undefined,
@@ -74,7 +75,7 @@ export const getDatetimeSeparatorClasses = cva("text-xs text-gray-400");
 export const getDatetimeInputClasses = cva(
   "min-w-8 p-1 inline tabular-nums h-fit border-none outline-hidden shadow-none select-none content-box caret-transparent min-w-8 text-center focus:outline-hidden focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-hidden",
   {
-    variants: {
+    variants: createVariants({
       size: {
         xs: "max-h-4",
         sm: "max-h-6",
@@ -85,7 +86,7 @@ export const getDatetimeInputClasses = cva(
         years: "min-w-12",
         "am/pm": "bg-base-content/5",
       } as Record<DateFormat | TimeFormat, string>,
-    },
+    }),
     compoundVariants: [
       {
         size: "lg",

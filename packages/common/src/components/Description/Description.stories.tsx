@@ -41,7 +41,7 @@ export const MultipleItemsInList: Story = {
         <Description.Term>Profession</Description.Term>
         <Description.Detail>Sporting Coach</Description.Detail>
         <Description.Detail>
-          <Text size="base" className="italic">
+          <Text size="md" className="italic">
             Associate
           </Text>
         </Description.Detail>

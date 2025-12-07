@@ -1,26 +1,24 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getAvatarClasses = cva("avatar", {
-  variants: {
+  variants: createVariants({
     size: {
-      4: "w-4 h-4",
-      8: "w-8 h-8",
-      12: "w-12 h-12",
-      16: "w-16 h-16",
-      24: "w-24 h-24",
-      32: "w-32 h-32",
-      48: "w-48 h-48",
-      64: "w-64 h-64",
+      xs: "w-6 h-6",
+      sm: "w-12 h-12",
+      md: "w-16 h-16",
+      lg: "w-24 h-24",
+      xl: "w-32 h-32",
     },
     status: {
       online: "avatar-online",
       offline: "avatar-offline",
     },
-  },
+  }),
 });
 
 const classesConfig = {
-  variants: {
+  variants: createVariants({
     variant: {
       accent: "bg-accent text-accent-content ring-accent",
       default: "bg-base-200 text-base-content ring-default",
@@ -43,24 +41,21 @@ const classesConfig = {
     ring: {
       true: "ring-3 ring-offset-base-100 ring-offset-2",
     },
-  },
+  }),
 };
 
 export const getAvatarImageClasses = cva("", classesConfig);
 
 export const getAvatarFallbackClasses = cva("flex items-center justify-center w-full", {
   ...classesConfig,
-  variants: {
+  variants: createVariants({
     ...classesConfig.variants,
     size: {
-      4: "text-[4px]",
-      8: "text-base",
-      12: "text-lg",
-      16: "text-xl",
-      24: "text-2xl",
-      32: "text-3xl",
-      48: "text-4xl",
-      64: "text-5xl",
+      xs: "text-xs",
+      sm: "text-sm",
+      md: "text-base",
+      lg: "text-lg",
+      xl: "text-xl",
     },
-  },
+  }),
 });

@@ -1,7 +1,8 @@
 import { cva } from "../../../libs";
+import { createVariants } from "../../../utilities";
 
 export const getTextareaClasses = cva("textarea rounded-md transition-all duration-100", {
-  variants: {
+  variants: createVariants({
     variant: {
       default: "bg-transparent",
       accent: "textarea-accent",
@@ -25,7 +26,7 @@ export const getTextareaClasses = cva("textarea rounded-md transition-all durati
       md: "textarea-md",
       lg: "textarea-lg",
     },
-  },
+  }),
   compoundVariants: [
     {
       size: undefined,

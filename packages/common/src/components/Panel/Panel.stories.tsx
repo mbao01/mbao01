@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { useState } from "react";
+import { ChevronLeftIcon, ChevronRightIcon, HouseIcon, SettingsIcon } from "lucide-react";
 import { Button } from "../Button";
-import { Icon } from "../Icon";
 import { Panel, PanelContent, PanelFooter, PanelHeader } from "./Panel";
 
 const meta = {
@@ -49,17 +49,21 @@ export const Collapsible: Story = {
               className="ml-auto"
               onClick={() => setCollapsed(!collapsed)}
             >
-              <Icon name={collapsed ? "ChevronRight" : "ChevronLeft"} className="h-4 w-4" />
+              {collapsed ? (
+                <ChevronRightIcon className="h-4 w-4" />
+              ) : (
+                <ChevronLeftIcon className="h-4 w-4" />
+              )}
             </Button>
           </PanelHeader>
           <PanelContent>
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-4">
-                <Icon name="House" className="h-5 w-5" />
+                <HouseIcon className="h-5 w-5" />
                 {!collapsed && <span>Home</span>}
               </div>
               <div className="flex items-center gap-4">
-                <Icon name="Settings" className="h-5 w-5" />
+                <SettingsIcon className="h-5 w-5" />
                 {!collapsed && <span>Settings</span>}
               </div>
             </div>

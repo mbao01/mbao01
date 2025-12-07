@@ -1,11 +1,12 @@
 import { cva } from "../../../libs";
+import { createVariants } from "../../../utilities";
 
 const itemVariant = {
   primary: "focus:bg-primary focus:text-primary-content",
   secondary: "focus:bg-secondary focus:text-secondary-content",
   accent: "focus:bg-accent focus:text-accent-content",
   neutral: "focus:bg-neutral focus:text-neutral-content",
-  base: "focus:bg-base-300 focus:text-base-content",
+  default: "focus:bg-base-300 focus:text-base-content",
   info: "focus:bg-info focus:text-info-content",
   success: "focus:bg-success focus:text-success-content",
   warning: "focus:bg-warning focus:text-warning-content",
@@ -21,7 +22,8 @@ const triggerVariant = {
     "focus:bg-accent focus:text-accent-content data-[state=open]:bg-accent data-[state=open]:text-accent-content",
   neutral:
     "focus:bg-neutral focus:text-neutral-content data-[state=open]:bg-neutral data-[state=open]:text-neutral-content",
-  base: "focus:bg-base-300 focus:text-base-content data-[state=open]:bg-base-300 data-[state=open]:text-base-content",
+  default:
+    "focus:bg-base-300 focus:text-base-content data-[state=open]:bg-base-300 data-[state=open]:text-base-content",
   info: "focus:bg-info focus:text-info-content data-[state=open]:bg-info data-[state=open]:text-info-content",
   success:
     "focus:bg-success focus:text-success-content data-[state=open]:bg-success data-[state=open]:text-success-content",
@@ -38,21 +40,21 @@ export const getMenubarClasses = cva(
 export const getMenubarTriggerClasses = cva(
   "flex cursor-default select-none items-center rounded-xs px-3 py-1 text-sm font-medium outline-hidden",
   {
-    variants: {
+    variants: createVariants({
       variant: triggerVariant,
-    },
+    }),
   }
 );
 
 export const getMenubarSubTriggerClasses = cva(
   "flex cursor-default select-none items-center rounded-xs px-2 py-1.5 text-sm outline-hidden",
   {
-    variants: {
+    variants: createVariants({
       variant: triggerVariant,
       inset: {
         true: "pl-8",
       },
-    },
+    }),
   }
 );
 
@@ -67,39 +69,39 @@ export const getMenubarSubContentClasses = cva(
 export const getMenubarItemClasses = cva(
   "relative flex cursor-default select-none items-center rounded-xs px-2 py-1.5 text-sm outline-hidden data-disabled:pointer-events-none data-disabled:opacity-50",
   {
-    variants: {
+    variants: createVariants({
       variant: itemVariant,
       inset: {
         true: "pl-8",
       },
-    },
+    }),
   }
 );
 
 export const getMenubarCheckboxItemClasses = cva(
   "relative flex cursor-default select-none items-center rounded-xs py-1.5 pl-8 pr-2 text-sm outline-hidden data-disabled:pointer-events-none data-disabled:opacity-50",
   {
-    variants: {
+    variants: createVariants({
       variant: itemVariant,
-    },
+    }),
   }
 );
 
 export const getMenubarRadioItemClasses = cva(
   "relative flex cursor-default select-none items-center rounded-xs py-1.5 pl-8 pr-2 text-sm outline-hidden data-disabled:pointer-events-none data-disabled:opacity-50",
   {
-    variants: {
+    variants: createVariants({
       variant: itemVariant,
-    },
+    }),
   }
 );
 
 export const getMenubarLabelClasses = cva("px-2 py-1.5 text-sm font-semibold", {
-  variants: {
+  variants: createVariants({
     inset: {
       true: "pl-8",
     },
-  },
+  }),
 });
 
 export const getMenubarSeparatorClasses = cva("-mx-1 my-1 h-px bg-base-200");

@@ -1,7 +1,8 @@
 import { cva } from "@mbao01/common/libs";
+import { createVariants } from "@mbao01/common/utilities";
 
 export const getLinkClasses = cva("link transition-all", {
-  variants: {
+  variants: createVariants({
     variant: {
       accent: "link-accent",
       default: "link-default",
@@ -20,5 +21,5 @@ export const getLinkClasses = cva("link transition-all", {
     underline: {
       false: "no-underline",
     },
-  },
+  }),
 });

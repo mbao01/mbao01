@@ -20,7 +20,7 @@ describe("Container", () => {
         Content
       </Container>
     );
-    expect(screen.getByTestId("container")).toHaveClass("max-w-screen-lg");
+    expect(screen.getByTestId("container")).toHaveClass("max-w-lg");
   });
 
   it("applies padding by default", () => {

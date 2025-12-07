@@ -41,7 +41,7 @@ export const LargeSkeleton: Story = {
 
 export const PulsingSkeleton: Story = {
   args: {
-    variant: "pulse",
+    animate: "pulse",
     width: 12,
     height: 12,
   },

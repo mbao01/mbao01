@@ -1,25 +1,26 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getStatsClasses = cva("stats", {
-  variants: {
+  variants: createVariants({
     direction: {
       horizontal: "stats-horizontal",
       vertical: "stats-vertical",
     },
-  },
+  }),
   defaultVariants: {
     direction: "horizontal",
   },
 });
 
 export const getStatClasses = cva("stat", {
-  variants: {
+  variants: createVariants({
     position: {
       center: "place-items-center",
       start: "place-items-start",
       end: "place-items-end",
     },
-  },
+  }),
 });
 
 export const getStatTitleClasses = cva("stat-title");

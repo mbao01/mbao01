@@ -1,7 +1,8 @@
 import { cva } from "../../../libs";
+import { createVariants } from "../../../utilities";
 
 export const getDroppableClasses = cva("relative", {
-  variants: {
+  variants: createVariants({
     isDragging: {
       true: "",
     },
@@ -11,5 +12,5 @@ export const getDroppableClasses = cva("relative", {
     isEmpty: {
       true: "",
     },
-  },
+  }),
 });

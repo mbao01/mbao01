@@ -41,7 +41,7 @@ import { SidebarContext } from "./SidebarContext";
 
 const Sidebar = ({
   side = "left",
-  variant = "sidebar",
+  type = "sidebar",
   collapsible = "offcanvas",
   className,
   children,
@@ -62,7 +62,7 @@ const Sidebar = ({
       <Dialog open={openMobile} onOpenChange={setOpenMobile} {...props}>
         <Dialog.Content
           side={side}
-          variant="sheet"
+          type="sheet"
           data-mobile="true"
           data-sidebar="sidebar"
           className={cn(getSidebarMobileClasses({ isMobile }), className)}
@@ -83,12 +83,12 @@ const Sidebar = ({
       data-side={side}
       data-state={state}
       data-collapsible={state === "collapsed" ? collapsible : ""}
-      data-variant={variant}
+      data-variant={type}
       className={getSidebarOuterClasses()}
     >
       {/* This is what handles the sidebar gap on desktop */}
-      <div className={getSidebarGapClasses({ variant })} />
-      <div className={getSidebarInnerClasses({ side, variant })} {...props}>
+      <div className={getSidebarGapClasses({ type })} />
+      <div className={getSidebarInnerClasses({ side, type })} {...props}>
         <div
           data-sidebar="sidebar"
           className={cn(getSidebarMobileClasses({ isMobile }), className)}

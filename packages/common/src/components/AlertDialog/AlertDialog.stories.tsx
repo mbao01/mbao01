@@ -16,7 +16,7 @@ const withDialog = () => {
           </AlertDialog.Description>
         </AlertDialog.Header>
         <AlertDialog.Footer>
-          <AlertDialog.Cancel variant="link">Cancel</AlertDialog.Cancel>
+          <AlertDialog.Cancel link>Cancel</AlertDialog.Cancel>
           <AlertDialog.Action>Continue</AlertDialog.Action>
         </AlertDialog.Footer>
       </AlertDialog.Content>

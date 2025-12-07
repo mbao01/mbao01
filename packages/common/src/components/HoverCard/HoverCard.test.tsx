@@ -9,7 +9,7 @@ describe("HoverCard", () => {
     return render(
       <HoverCard>
         <HoverCard.Trigger asChild>
-          <Button variant="link">@nextjs</Button>
+          <Button link>@nextjs</Button>
         </HoverCard.Trigger>
         <HoverCard.Content>Hover card content</HoverCard.Content>
       </HoverCard>
