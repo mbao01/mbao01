@@ -1,4 +1,5 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 import { Banner } from "./Banner";
 
@@ -25,10 +26,11 @@ describe("Banner", () => {
     expect(screen.getByText("Action")).toBeInTheDocument();
   });
 
-  it("calls onClose when close button clicked", () => {
+  it("calls onClose when close button clicked", async () => {
+    const user = userEvent.setup();
     const handleClose = vi.fn();
     render(<Banner onClose={handleClose} />);
-    fireEvent.click(screen.getByLabelText("Close"));
+    await user.click(screen.getByLabelText("Close"));
     expect(handleClose).toHaveBeenCalled();
   });
 

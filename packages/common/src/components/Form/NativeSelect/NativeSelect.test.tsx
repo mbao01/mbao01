@@ -24,7 +24,7 @@ describe("NativeSelect", () => {
 
   it("applies color classes", () => {
     render(
-      <NativeSelect color="primary" data-testid="select">
+      <NativeSelect variant="primary" data-testid="select">
         <option>Option 1</option>
       </NativeSelect>
     );

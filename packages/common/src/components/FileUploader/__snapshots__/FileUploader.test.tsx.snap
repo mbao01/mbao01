@@ -29,6 +29,14 @@ exports[`FileUploader > should render 1`] = `
         type="file"
       />
     </div>
+    <div
+      aria-description="content file holder"
+      class="w-full px-1"
+    >
+      <div
+        class="flex rounded-xl gap-1 flex-col"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;

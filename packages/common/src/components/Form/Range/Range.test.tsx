@@ -10,7 +10,7 @@ describe("Range", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("handles user input correctly", () => {
+  it("handles user input correctly", async () => {
     const { asFragment } = render(<Range name="risk-level" />);
     const range = screen.getByRole("slider");
 

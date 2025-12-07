@@ -88,6 +88,34 @@ exports[`Select > has 'tiny' ('xs') 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Select > has a floating label 1`] = `
+<DocumentFragment>
+  <label
+    class="select flex items-center justify-between rounded-md text-sm text-left disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-100 min-h-fit h-10"
+  >
+    <span
+      class="label"
+    >
+      Your Country
+    </span>
+    <button
+      aria-autocomplete="none"
+      aria-controls="radix-_r_1s_"
+      aria-expanded="false"
+      data-placeholder=""
+      data-state="closed"
+      dir="ltr"
+      role="combobox"
+      type="button"
+    >
+      <span
+        style="pointer-events: none;"
+      />
+    </button>
+  </label>
+</DocumentFragment>
+`;
+
 exports[`Select > has a label 1`] = `
 <DocumentFragment>
   <label
