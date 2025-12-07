@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Blockquote } from "./Blockquote";
 
 const meta = {
+  title: "Typography/Blockquote",
   component: Blockquote,
   parameters: {
     layout: "padded",

@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Box } from "./Box";
 
 const meta = {
+  title: "Layout/Box",
   component: Box,
   parameters: {
     layout: "padded",

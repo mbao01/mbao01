@@ -4,6 +4,7 @@ import { Button } from "../Button";
 import { Header, HeaderCenter, HeaderEnd, HeaderStart } from "./Header";
 
 const meta = {
+  title: "Organisms/Header",
   component: Header,
   parameters: {
     layout: "fullscreen",

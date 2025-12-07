@@ -3,6 +3,7 @@ import { Field, FieldDescription, FieldError, FieldLabel } from "./Field";
 import { useField } from "./hooks";
 
 const meta = {
+  title: "Form/Field",
   component: Field,
   parameters: {
     layout: "padded",

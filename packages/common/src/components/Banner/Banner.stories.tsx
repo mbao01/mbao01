@@ -4,6 +4,7 @@ import { Button } from "../Button";
 import { Banner } from "./Banner";
 
 const meta = {
+  title: "Molecules/Banner",
   component: Banner,
   parameters: {
     layout: "padded",

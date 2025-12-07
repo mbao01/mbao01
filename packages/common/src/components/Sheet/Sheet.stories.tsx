@@ -11,6 +11,7 @@ import {
 } from "./Sheet";
 
 const meta = {
+  title: "Layout/Sheet",
   component: Sheet,
   parameters: {
     layout: "centered",

@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Image } from "./Image";
 
 const meta = {
+  title: "Atoms/Image",
   component: Image,
   parameters: {
     layout: "padded",

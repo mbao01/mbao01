@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Step, Stepper } from "./Stepper";
 
 const meta = {
+  title: "Molecules/Stepper",
   component: Stepper,
   parameters: {
     layout: "padded",

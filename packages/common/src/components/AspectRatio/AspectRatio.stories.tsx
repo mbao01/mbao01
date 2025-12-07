@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { AspectRatio } from "./AspectRatio";
 
 const meta = {
+  title: "Layout/AspectRatio",
   component: AspectRatio,
   parameters: {
     layout: "padded",

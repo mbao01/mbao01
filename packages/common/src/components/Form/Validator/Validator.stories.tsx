@@ -7,6 +7,7 @@ import { Validator } from "./Validator";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
+  title: "Form/Validator",
   component: Validator,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
@@ -80,7 +81,7 @@ export const PasswordValidator: Story = {
     minLength: 8,
     // eslint-disable-next-line no-useless-escape
     pattern: "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}",
-    title: "Must be more than 8 characters, including number, lowercase letter, uppercase letter",
+    title: "Molecules/Validator",
   },
   render: (args) => {
     return (

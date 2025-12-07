@@ -57,7 +57,7 @@ const withTheme = (Component: React.FC<RadarChartArgs>, context: StoryContext<Ra
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: "Components/Chart/Radar",
+  title: "Organisms/Chart/RadarChart",
   component: RadarChartExample as (args: RadarChartArgs) => React.JSX.Element,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout

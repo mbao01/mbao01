@@ -3,6 +3,7 @@ import { Button } from "../Button";
 import { Center } from "./Center";
 
 const meta = {
+  title: "Layout/Center",
   component: Center,
   parameters: {
     layout: "padded",

@@ -5,6 +5,7 @@ import { Button } from "../Button";
 import { Panel, PanelContent, PanelFooter, PanelHeader } from "./Panel";
 
 const meta = {
+  title: "Layout/Panel",
   component: Panel,
   parameters: {
     layout: "fullscreen",

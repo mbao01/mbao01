@@ -3,6 +3,7 @@ import { BoxIcon, FacebookIcon, TwitterIcon, YoutubeIcon } from "lucide-react";
 import { Footer, FooterTitle } from "./Footer";
 
 const meta = {
+  title: "Organisms/Footer",
   component: Footer,
   parameters: {
     layout: "fullscreen",

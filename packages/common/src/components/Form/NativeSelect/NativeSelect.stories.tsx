@@ -3,7 +3,7 @@ import { NativeSelect } from "./NativeSelect";
 
 const meta = {
   component: NativeSelect,
-  title: "Components/NativeSelect",
+  title: "Form/NativeSelect",
   parameters: {
     layout: "padded",
   },

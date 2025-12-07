@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Code } from "./Code";
 
 const meta = {
+  title: "Typography/Code",
   component: Code,
   parameters: {
     layout: "padded",

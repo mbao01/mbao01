@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Flex } from "./Flex";
 
 const meta = {
+  title: "Layout/Flex",
   component: Flex,
   parameters: {
     layout: "padded",

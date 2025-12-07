@@ -3,6 +3,7 @@ import { Flex } from "../Flex";
 import { Spacer } from "./Spacer";
 
 const meta = {
+  title: "Layout/Spacer",
   component: Spacer,
   parameters: {
     layout: "padded",

@@ -4,6 +4,7 @@ import { Button } from "../Button";
 import { Empty, EmptyActions, EmptyDescription, EmptyImage, EmptyTitle } from "./Empty";
 
 const meta = {
+  title: "Molecules/Empty",
   component: Empty,
   parameters: {
     layout: "padded",

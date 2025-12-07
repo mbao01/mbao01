@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Grid, GridItem } from "./Grid";
 
 const meta = {
+  title: "Layout/Grid",
   component: Grid,
   parameters: {
     layout: "padded",

@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Paragraph } from "./Paragraph";
 
 const meta = {
+  title: "Typography/Paragraph",
   component: Paragraph,
   parameters: {
     layout: "padded",
