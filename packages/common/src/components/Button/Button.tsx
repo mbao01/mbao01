@@ -41,7 +41,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-[inherit]"
             data-testid="loading"
           >
-            <Loading variant={!variant || link || variant === "ghost" ? "default" : variant} />
+            <Loading variant={!variant || variant === "ghost" ? "default" : variant} />
           </span>
         ) : null}
       </Comp>

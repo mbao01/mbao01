@@ -8,7 +8,7 @@ export type BreadcrumbListProps = React.HTMLAttributes<HTMLUListElement>;
 
 export type BreadcrumbItemProps = React.HTMLAttributes<HTMLLIElement>;
 
-export type BreadcrumbLinkProps = React.HTMLAttributes<HTMLAnchorElement> & {
+export type BreadcrumbLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   asChild?: boolean;
 };
 

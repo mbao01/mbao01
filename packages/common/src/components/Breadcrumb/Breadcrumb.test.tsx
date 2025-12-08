@@ -152,9 +152,7 @@ describe("Breadcrumb", () => {
       <Breadcrumb>
         <Breadcrumb.List>
           <Breadcrumb.Item>
-            <Breadcrumb.Link asChild>
-              <a href="/">Home</a>
-            </Breadcrumb.Link>
+            <Breadcrumb.Link href="/">Home</Breadcrumb.Link>
           </Breadcrumb.Item>
           <Breadcrumb.Separator>|</Breadcrumb.Separator>
           <Breadcrumb.Item>

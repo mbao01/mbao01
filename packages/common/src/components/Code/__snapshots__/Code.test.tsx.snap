@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Code > renders skipped code when lines 1`] = `
+<DocumentFragment>
+  <div
+    class="font-mono px-1.5 py-0.5 rounded bg-base-300 text-sm"
+  >
+    <pre
+      data-prefix=""
+    >
+      <code>
+        <span>
+          const x = 1;
+        </span>
+      </code>
+    </pre>
+    <pre
+      data-prefix="3"
+    >
+      <code>
+        <span
+          data-prefix="3"
+        >
+          const y = 2;
+        </span>
+      </code>
+    </pre>
+    <pre
+      data-prefix=""
+    >
+      <code>
+        <span>
+          const z = x + y;
+        </span>
+      </code>
+    </pre>
+  </div>
+</DocumentFragment>
+`;

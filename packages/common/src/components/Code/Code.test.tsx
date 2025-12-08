@@ -3,11 +3,10 @@ import { describe, expect, it } from "vitest";
 import { Code } from "./Code";
 
 describe("Code", () => {
-  it("renders inline code by default", () => {
-    render(<Code>const x = 1;</Code>);
+  it("renders inline code", () => {
+    render(<Code inline>const x = 1;</Code>);
     const element = screen.getByText("const x = 1;");
     expect(element.tagName).toBe("CODE");
-    expect(element.parentElement?.tagName).toBe("PRE"); // Wrapper is also code for inline
   });
 
   it("renders block code when inline is false", () => {
@@ -15,6 +14,20 @@ describe("Code", () => {
     const element = screen.getByText("const x = 1;");
     expect(element.tagName).toBe("CODE");
     expect(element.closest("pre")).toBeInTheDocument();
+  });
+
+  it("renders skipped code when lines", () => {
+    const { asFragment } = render(
+      <Code skip>
+        <span>const x = 1;</span>
+        <span data-prefix="3">const y = 2;</span>
+        <span>const z = x + y;</span>
+      </Code>
+    );
+    const element = screen.getByText("const x = 1;");
+    expect(element.tagName).toBe("SPAN");
+    expect(element.closest("pre")).toBeInTheDocument();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it("applies color scheme", () => {

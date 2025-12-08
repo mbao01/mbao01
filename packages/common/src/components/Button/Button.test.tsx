@@ -38,6 +38,18 @@ describe("Button", () => {
     expect(screen.getByTestId("loading")).toBeInTheDocument();
   });
 
+  it.each(["ghost", "error", "success"] as const)("shows loader with $variant", (variant) => {
+    const handleClick = vi.fn();
+    render(
+      <Button onClick={handleClick} isLoading variant={variant}>
+        Button
+      </Button>
+    );
+
+    expect(screen.getByRole("button", { name: "Button" })).toBeInTheDocument();
+    expect(screen.getByTestId("loading")).toBeInTheDocument();
+  });
+
   it.each([
     { as: "a", name: "link" },
     { as: "span", name: "span" },
