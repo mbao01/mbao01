@@ -1,14 +1,8 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getDockClasses = cva("dock", {
-  variants: {
-    size: {
-      xs: "dock-xs",
-      sm: "dock-sm",
-      md: "dock-md",
-      lg: "dock-lg",
-      xl: "dock-xl",
-    },
+  variants: createVariants({
     variant: {
       accent: "bg-accent text-accent-content border-accent",
       default: "bg-default text-default-content border-default",
@@ -24,7 +18,14 @@ export const getDockClasses = cva("dock", {
     outline: {
       true: "border bg-default",
     },
-  },
+    size: {
+      xs: "dock-xs",
+      sm: "dock-sm",
+      md: "dock-md",
+      lg: "dock-lg",
+      xl: "dock-xl",
+    },
+  }),
   compoundVariants: [
     { outline: true, variant: "accent", className: "text-accent" },
     { outline: true, variant: "default", className: "text-default" },
@@ -40,15 +41,15 @@ export const getDockClasses = cva("dock", {
 });
 
 export const getDockButtonClasses = cva("", {
-  variants: {
+  variants: createVariants({
     active: {
       true: "dock-active",
     },
-  },
+  }),
 });
 
 export const getDockIconClasses = cva("", {
-  variants: {
+  variants: createVariants({
     size: {
       xs: "size-3",
       sm: "size-4",
@@ -56,7 +57,7 @@ export const getDockIconClasses = cva("", {
       lg: "size-6",
       xl: "size-6",
     },
-  },
+  }),
 });
 
 export const getDockLabelClasses = cva("dock-label");

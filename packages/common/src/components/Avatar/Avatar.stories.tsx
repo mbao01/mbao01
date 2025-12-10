@@ -5,7 +5,7 @@ type ArgsType = Partial<{
   alt: string;
   src: string;
   ring: boolean;
-  size: 4 | 8 | 12 | 16 | 24 | 32 | 48 | 64;
+  size: "xs" | "sm" | "md" | "lg" | "xl";
   shape: "round" | "circle" | "hexagon" | "triangle" | "television";
   status: "online" | "offline";
   variant:
@@ -36,7 +36,7 @@ const withAvatar = (_: StoryFn, context: StoryContext<ArgsType>) => {
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: "Components/Avatar",
+  title: "Atoms/Avatar",
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
@@ -50,7 +50,7 @@ const meta = {
   args: {
     alt: "@shadcn",
     src: "https://github.com/shadcn.png",
-    size: 16,
+    size: "md",
   },
   argTypes: {
     src: {
@@ -60,7 +60,7 @@ const meta = {
     ring: { control: "boolean" },
     size: {
       control: "select",
-      options: [4, 8, 12, 16, 24, 32, 48, 64],
+      options: ["xs", "sm", "md", "lg", "xl"],
     },
     shape: {
       control: "select",
@@ -103,7 +103,7 @@ export const Ayomide: Story = {
 
 export const AvatarSize: Story = {
   args: {
-    size: 32,
+    size: "lg",
   },
 };
 

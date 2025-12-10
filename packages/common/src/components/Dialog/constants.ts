@@ -1,4 +1,5 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getDialogOverlayClasses = cva(
   "fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0"
@@ -7,8 +8,8 @@ export const getDialogOverlayClasses = cva(
 export const getDialogContentClasses = cva(
   "fixed z-50 gap-4 p-6 shadow-lg transition bg-base-100 w-full",
   {
-    variants: {
-      variant: {
+    variants: createVariants({
+      type: {
         dialog:
           "border duration-200 left-[50%] top-[50%] grid max-w-lg translate-x-[-50%] translate-y-[-50%] data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg",
         sheet:
@@ -22,9 +23,9 @@ export const getDialogContentClasses = cva(
         right:
           "inset-y-0 right-0 h-full w-3/4 border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm",
       },
-    },
+    }),
     defaultVariants: {
-      variant: "dialog",
+      type: "dialog",
     },
   }
 );

@@ -1,4 +1,4 @@
-import type { Preview } from "@storybook/nextjs";
+import type { Preview } from "@storybook/nextjs-vite";
 import { withThemeByDataAttribute } from "@storybook/addon-themes";
 import { INITIAL_VIEWPORTS } from "storybook/viewport";
 import "@mbao01/common/styles"; // replace with the name of your tailwind css file
@@ -19,8 +19,8 @@ const preview: Preview = {
     },
 
     docs: {
-      codePanel: true
-    }
+      codePanel: true,
+    },
   },
 };
 

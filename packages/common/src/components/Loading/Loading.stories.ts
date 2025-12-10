@@ -3,6 +3,7 @@ import { Loading } from "./Loading";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
+  title: "Atoms/Loading",
   component: Loading,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
@@ -20,26 +21,26 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const SpinnerLoading: Story = {
   args: {
-    variant: "spinner",
+    type: "spinner",
   },
 };
 
 export const InfinityLoading: Story = {
   args: {
-    variant: "infinity",
+    type: "infinity",
   },
 };
 
 export const ColoredSpinnerLoading: Story = {
   args: {
-    variant: "spinner",
-    intent: "primary",
+    type: "spinner",
+    variant: "primary",
   },
 };
 
 export const TinyLoading: Story = {
   args: {
     size: "xs",
-    variant: "ring",
+    type: "ring",
   },
 };

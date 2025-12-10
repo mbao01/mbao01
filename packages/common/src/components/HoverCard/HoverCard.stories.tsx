@@ -7,7 +7,7 @@ const withHoverCard = (_: StoryFn, context: StoryContext<HoverCardProps>) => {
   return (
     <HoverCard {...context.args}>
       <HoverCard.Trigger asChild>
-        <Button variant="link">@nextjs</Button>
+        <Button link>@nextjs</Button>
       </HoverCard.Trigger>
       <HoverCard.Content className="w-80">
         <div className="space-y-1">
@@ -24,6 +24,7 @@ const withHoverCard = (_: StoryFn, context: StoryContext<HoverCardProps>) => {
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
+  title: "Molecules/HoverCard",
   component: HoverCard,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout

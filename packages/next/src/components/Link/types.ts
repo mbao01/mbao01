@@ -2,12 +2,12 @@ import type { LinkProps as OriginalLinkProps } from "next/dist/client/link.js";
 import { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
 import { type UrlObject } from "url";
 import { type VariantProps } from "@mbao01/common/libs";
-import { getLinkClasses } from "./constant";
+import { getLinkClasses } from "./constants";
 
 export type LinkProps<T> = Omit<
   Omit<
     DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>,
-    keyof OriginalLinkProps
+    keyof OriginalLinkProps | "style"
   > &
     OriginalLinkProps,
   "href"

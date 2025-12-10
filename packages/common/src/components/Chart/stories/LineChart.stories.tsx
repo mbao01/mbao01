@@ -48,7 +48,7 @@ const withTheme = (Component: React.FC<LineChartArgs>, context: StoryContext<Lin
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: "Components/Chart/Line",
+  title: "Organisms/Chart/LineChart",
   component: LineChartExample as (args: LineChartArgs) => React.JSX.Element,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout

@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { DatetimeInput } from "./DatetimeInput";
 
-describe.skip("DatetimeInput", () => {
+describe("DatetimeInput", () => {
   it("renders a default date", () => {
     const { asFragment } = render(
       <DatetimeInput defaultDate={new Date(2024, 11, 23)} placeholder="Choose date of birth" />
@@ -37,7 +37,7 @@ describe.skip("DatetimeInput", () => {
     await user.type(datetimeInput, "3rd of june next year{Enter}");
 
     expect(datetimeInput).toBeVisible();
-    expect(datetimeInput).toHaveValue("Jun 3, 2024, 12:00 PM");
+    expect(datetimeInput).toHaveValue("Jun 3, 2026, 12:00 PM");
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -55,7 +55,7 @@ describe.skip("DatetimeInput", () => {
     await user.type(datetimeInput, "3rd of june next year");
     await user.click(screen.getByTestId("outside"));
 
-    expect(datetimeInput).toHaveValue("Jun 3, 2024, 12:00 PM");
+    expect(datetimeInput).toHaveValue("Jun 3, 2026, 12:00 PM");
     expect(asFragment()).toMatchSnapshot();
 
     await user.clear(datetimeInput);
@@ -89,15 +89,15 @@ describe.skip("DatetimeInput", () => {
   it.each([
     {
       locale: "fr-FR",
-      expectedDate: "3 juin 2024, 12:00 PM",
+      expectedDate: "3 juin 2026, 12:00 PM",
     },
     {
       locale: "en-GB",
-      expectedDate: "3 Jun 2024, 12:00 pm",
+      expectedDate: "3 Jun 2026, 12:00 pm",
     },
     {
       locale: "es-ES",
-      expectedDate: "3 jun 2024, 12:00 p. m.",
+      expectedDate: "3 jun 2026, 12:00 p. m.",
     },
   ])("and the user's browser is in a $locale locale", async ({ locale, expectedDate }) => {
     const user = userEvent.setup();
@@ -174,7 +174,7 @@ describe.skip("DatetimeInput", () => {
 
       await user.type(datetimeInput, "3rd of june next year{Enter}");
 
-      expect(handleDateChange).toHaveBeenCalledWith(new Date(2024, 6, -28, -12));
+      expect(handleDateChange).toHaveBeenCalledWith(new Date(2026, 6, -28, -12));
       expect(asFragment()).toMatchSnapshot();
     });
   });

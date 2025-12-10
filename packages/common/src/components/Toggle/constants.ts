@@ -1,15 +1,18 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getToggleClasses = cva(
   "transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost",
   {
-    variants: {
+    variants: createVariants({
+      link: {
+        true: "data-[state=on]:btn-link",
+      },
       variant: {
         accent: "data-[state=on]:btn-accent",
         default: "data-[state=on]:btn-default",
         error: "data-[state=on]:btn-error",
         info: "data-[state=on]:btn-info",
-        link: "data-[state=on]:btn-link",
         neutral: "data-[state=on]:btn-neutral",
         primary: "data-[state=on]:btn-primary",
         secondary: "data-[state=on]:btn-secondary",
@@ -19,7 +22,7 @@ export const getToggleClasses = cva(
       outline: {
         true: "data-[state=on]:btn-outline",
       },
-    },
+    }),
     compoundVariants: [
       {
         outline: true,

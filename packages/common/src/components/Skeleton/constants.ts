@@ -1,8 +1,9 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getSkeletonClasses = cva("skeleton", {
-  variants: {
-    variant: { pulse: "animate-pulse" },
+  variants: createVariants({
+    animate: { pulse: "animate-pulse" },
     width: {
       2: "w-2",
       4: "w-4",
@@ -31,7 +32,7 @@ export const getSkeletonClasses = cva("skeleton", {
       true: "rounded-full",
       false: "rounded-md",
     },
-  },
+  }),
   defaultVariants: {
     width: "full",
     height: 4,

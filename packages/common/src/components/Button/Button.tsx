@@ -14,6 +14,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       children,
       isLoading,
       variant,
+      link,
       size,
       wide,
       rounded,
@@ -29,7 +30,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         disabled={disabled}
         className={cn(
-          getButtonClasses({ size, wide, outline, variant, rounded, disabled, isLoading }),
+          getButtonClasses({ size, wide, link, outline, variant, rounded, disabled, isLoading }),
           className
         )}
         {...props}
@@ -40,9 +41,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-[inherit]"
             data-testid="loading"
           >
-            <Loading
-              intent={!variant || variant === "link" || variant === "ghost" ? "default" : variant}
-            />
+            <Loading variant={!variant || variant === "ghost" ? "default" : variant} />
           </span>
         ) : null}
       </Comp>

@@ -51,8 +51,8 @@ const SidebarMenuButton = forwardRef<HTMLButtonElement, SidebarMenuButtonProps>(
     {
       asChild = false,
       isActive = false,
-      variant = "default",
-      size = "default",
+      outline = false,
+      size = "md",
       tooltip,
       className,
       ...props
@@ -68,7 +68,7 @@ const SidebarMenuButton = forwardRef<HTMLButtonElement, SidebarMenuButtonProps>(
         data-sidebar="menu-button"
         data-size={size}
         data-active={isActive}
-        className={cn(getSidebarMenuButtonClasses({ variant, size }), className)}
+        className={cn(getSidebarMenuButtonClasses({ outline, size }), className)}
         {...props}
       />
     );

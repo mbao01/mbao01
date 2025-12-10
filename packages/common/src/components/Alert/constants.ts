@@ -1,9 +1,10 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getAlertClasses = cva(
   "relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:text-inherit",
   {
-    variants: {
+    variants: createVariants({
       variant: {
         accent: "bg-accent text-accent-content border-accent",
         default: "bg-default text-default-content border-default",
@@ -19,7 +20,7 @@ export const getAlertClasses = cva(
       outline: {
         true: "border bg-default",
       },
-    },
+    }),
     compoundVariants: [
       { outline: true, variant: "accent", className: "text-accent" },
       { outline: true, variant: "default", className: "text-default" },

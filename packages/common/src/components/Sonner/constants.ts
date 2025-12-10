@@ -1,7 +1,8 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getToastClasses = cva("sonner group", {
-  variants: {
+  variants: createVariants({
     variant: {
       accent: "bg-accent text-accent-content border-accent",
       default: "bg-default text-default-content border-default",
@@ -17,7 +18,7 @@ export const getToastClasses = cva("sonner group", {
     outline: {
       true: "border bg-default",
     },
-  },
+  }),
   compoundVariants: [
     { outline: true, variant: "accent", className: "text-accent" },
     { outline: true, variant: "default", className: "text-default" },
@@ -36,9 +37,9 @@ export const getToastClasses = cva("sonner group", {
 });
 
 export const getToastButtonClasses = cva("", {
-  variants: {
+  variants: createVariants({
     variant: {
-      base: "group-[.sonner]:bg-base-300! group-[.sonner]:text-base-content!",
+      default: "group-[.sonner]:bg-base-300! group-[.sonner]:text-base-content!",
       accent: "group-[.sonner]:bg-accent! group-[.sonner]:text-accent-content!",
       error: "group-[.sonner]:bg-error! group-[.sonner]:text-error-content!",
       info: "group-[.sonner]:bg-info! group-[.sonner]:text-info-content!",
@@ -51,7 +52,7 @@ export const getToastButtonClasses = cva("", {
     outline: {
       true: "group-[.sonner]:border! group-[.sonner]:border-solid! group-[.sonner]:bg-transparent!",
     },
-  },
+  }),
   compoundVariants: [
     {
       outline: true,

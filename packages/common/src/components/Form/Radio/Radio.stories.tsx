@@ -6,6 +6,7 @@ import { Radio } from "./Radio";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
+  title: "Form/Radio",
   component: Radio,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
@@ -82,13 +83,13 @@ export const RadioGroup: Story = {
         <Fieldset>
           <Fieldset.Label htmlFor="gender">
             <Radio id="gender-male" name="gender" {...args} />
-            <Text size="base">Male</Text>
+            <Text size="md">Male</Text>
           </Fieldset.Label>
         </Fieldset>
         <Fieldset>
           <Fieldset.Label htmlFor="gender">
             <Radio id="gender-male" name="gender" {...args} />
-            <Text size="base">Female</Text>
+            <Text size="md">Female</Text>
           </Fieldset.Label>
         </Fieldset>
       </div>

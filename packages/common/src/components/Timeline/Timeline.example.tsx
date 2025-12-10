@@ -29,7 +29,7 @@ export const TimelineExample = ({
   return (
     <Timeline {...timeline}>
       <Timeline.Item variant="success" {...item}>
-        <Timeline.Heading variant="content" {...heading}>
+        <Timeline.Heading variant="default" {...heading}>
           Plan!
         </Timeline.Heading>
         <Timeline.Dot border="primary" status="success" variant="success" {...dot} />

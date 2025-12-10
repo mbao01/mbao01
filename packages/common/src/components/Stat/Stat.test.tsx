@@ -34,4 +34,68 @@ describe("Stats", () => {
     });
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it("renders with horizontal direction", () => {
+    const { container } = render(
+      <Stats direction="horizontal" data-testid="stats">
+        {StatExample}
+      </Stats>
+    );
+    expect(container.querySelector("[data-testid='stats']")).toBeInTheDocument();
+  });
+
+  it("renders with vertical direction", () => {
+    const { container } = render(
+      <Stats direction="vertical" data-testid="stats">
+        {StatExample}
+      </Stats>
+    );
+    expect(container.querySelector("[data-testid='stats']")).toBeInTheDocument();
+  });
+});
+
+describe("Stat", () => {
+  it("renders with position prop", () => {
+    const { container } = render(
+      <Stats>
+        <Stat position="center" data-testid="stat">
+          <Stat.Title>Centered Stat</Stat.Title>
+        </Stat>
+      </Stats>
+    );
+    expect(container.querySelector("[data-testid='stat']")).toBeInTheDocument();
+  });
+
+  it("renders StatFigure", () => {
+    render(
+      <Stats>
+        <Stat>
+          <Stat.Figure data-testid="stat-figure">
+            <div>Figure content</div>
+          </Stat.Figure>
+          <Stat.Title>Title</Stat.Title>
+        </Stat>
+      </Stats>
+    );
+    expect(screen.getByTestId("stat-figure")).toBeInTheDocument();
+  });
+
+  it("renders all sub-components together", () => {
+    render(
+      <Stats>
+        <Stat>
+          <Stat.Figure>📊</Stat.Figure>
+          <Stat.Title>Complete Stat</Stat.Title>
+          <Stat.Value>1,234</Stat.Value>
+          <Stat.Description>+10%</Stat.Description>
+          <Stat.Actions>
+            <button>Action</button>
+          </Stat.Actions>
+        </Stat>
+      </Stats>
+    );
+    expect(screen.getByText("Complete Stat")).toBeInTheDocument();
+    expect(screen.getByText("1,234")).toBeInTheDocument();
+    expect(screen.getByText("+10%")).toBeInTheDocument();
+  });
 });

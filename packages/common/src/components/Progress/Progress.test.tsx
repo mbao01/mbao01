@@ -25,11 +25,10 @@ describe("Progress", () => {
 
   it.each([
     "accent",
-    "base",
+    "default",
     "error",
     "ghost",
     "info",
-    "link",
     "neutral",
     "primary",
     "secondary",

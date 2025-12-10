@@ -1,7 +1,8 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getBadgeClasses = cva("badge", {
-  variants: {
+  variants: createVariants({
     variant: {
       accent: "badge-accent",
       error: "badge-error",
@@ -28,7 +29,7 @@ export const getBadgeClasses = cva("badge", {
       md: "rounded-md",
       lg: "rounded-lg",
     },
-  },
+  }),
   compoundVariants: [
     {
       size: undefined,

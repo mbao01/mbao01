@@ -26,6 +26,7 @@ describe("Anchor", () => {
       href: "https://example.com",
       target: "_blank",
       children: "Google.com",
+      isExternal: true,
     });
 
     const anchorEl = screen.getByRole("link", { name: "Google.com" });

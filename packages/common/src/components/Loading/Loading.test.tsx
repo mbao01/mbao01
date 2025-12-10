@@ -5,7 +5,7 @@ import { Loading } from "./";
 describe("Loading", () => {
   it("shows a tiny colored spinner", () => {
     const { asFragment } = render(
-      <Loading color="primary" size="xs" variant="spinner" data-testid="loading" />
+      <Loading color="primary" size="xs" type="spinner" data-testid="loading" />
     );
 
     expect(screen.getByTestId("loading")).toBeInTheDocument();
@@ -13,11 +13,11 @@ describe("Loading", () => {
   });
 
   it.each(["spinner", "dots", "ring", "ball", "bars", "infinity"] as const)(
-    "has %s variant",
-    (variant) => {
-      const { asFragment } = render(<Loading variant={variant} data-testid="loading" />);
+    "has %s type",
+    (type) => {
+      const { asFragment } = render(<Loading type={type} data-testid="loading" />);
 
-      expect(screen.getByTestId("loading")).toHaveClass(`loading-${variant}`);
+      expect(screen.getByTestId("loading")).toHaveClass(`loading-${type}`);
       expect(asFragment()).toMatchSnapshot();
     }
   );
@@ -43,10 +43,10 @@ describe("Loading", () => {
     "success",
     "warning",
     "error",
-  ] as const)("has %s color", (intent) => {
-    const { asFragment } = render(<Loading intent={intent} data-testid="loading" />);
+  ] as const)("has %s color", (variant) => {
+    const { asFragment } = render(<Loading variant={variant} data-testid="loading" />);
 
-    expect(screen.getByTestId("loading")).toHaveClass(`text-${intent}-content`);
+    expect(screen.getByTestId("loading")).toHaveClass(`text-${variant}-content`);
     expect(asFragment()).toMatchSnapshot();
   });
 });

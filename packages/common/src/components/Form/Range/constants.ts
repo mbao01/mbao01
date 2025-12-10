@@ -1,7 +1,8 @@
 import { cva } from "../../../libs";
+import { createVariants } from "../../../utilities";
 
 export const getRangeClasses = cva("range", {
-  variants: {
+  variants: createVariants({
     variant: {
       primary: "range-primary",
       secondary: "range-secondary",
@@ -24,7 +25,7 @@ export const getRangeClasses = cva("range", {
       md: "range-md",
       lg: "range-lg",
     },
-  },
+  }),
   defaultVariants: {
     variant: "neutral",
   },

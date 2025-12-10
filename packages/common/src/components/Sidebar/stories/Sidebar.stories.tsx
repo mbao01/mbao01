@@ -12,7 +12,7 @@ import {
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: "Components/Sidebar",
+  title: "Organisms/Sidebar",
   component: SidebarExample,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ["autodocs"],
@@ -47,7 +47,7 @@ export const SidebarWithIcons: Story = {
 
 export const SidebarWithSecondaryNavigation: Story = {
   args: {
-    variant: "inset",
+    type: "inset",
   },
   render: (props) => <SidebarWithSecondaryNavigationExample {...props} />,
 };

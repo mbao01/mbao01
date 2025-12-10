@@ -92,26 +92,6 @@ exports[`Text > has accent variant 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Text > has base (base) size 1`] = `
-<DocumentFragment>
-  <span
-    class="text-base"
-  >
-    base
-  </span>
-</DocumentFragment>
-`;
-
-exports[`Text > has double extra large (2xl) size 1`] = `
-<DocumentFragment>
-  <span
-    class="text-2xl"
-  >
-    double extra large
-  </span>
-</DocumentFragment>
-`;
-
 exports[`Text > has error variant 1`] = `
 <DocumentFragment>
   <span
@@ -152,6 +132,16 @@ exports[`Text > has large (lg) size 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Text > has medium (md) size 1`] = `
+<DocumentFragment>
+  <span
+    class="text-base"
+  >
+    medium
+  </span>
+</DocumentFragment>
+`;
+
 exports[`Text > has neutral variant 1`] = `
 <DocumentFragment>
   <span
@@ -168,26 +158,6 @@ exports[`Text > has primary variant 1`] = `
     class="text-primary"
   >
     primary text
-  </span>
-</DocumentFragment>
-`;
-
-exports[`Text > has quad extra large (4xl) size 1`] = `
-<DocumentFragment>
-  <span
-    class="text-4xl"
-  >
-    quad extra large
-  </span>
-</DocumentFragment>
-`;
-
-exports[`Text > has quint extra large (5xl) size 1`] = `
-<DocumentFragment>
-  <span
-    class="text-5xl"
-  >
-    quint extra large
   </span>
 </DocumentFragment>
 `;
@@ -228,16 +198,6 @@ exports[`Text > has tiny (xs) size 1`] = `
     class="text-xs"
   >
     tiny
-  </span>
-</DocumentFragment>
-`;
-
-exports[`Text > has triple extra large (3xl) size 1`] = `
-<DocumentFragment>
-  <span
-    class="text-3xl"
-  >
-    triple extra large
   </span>
 </DocumentFragment>
 `;

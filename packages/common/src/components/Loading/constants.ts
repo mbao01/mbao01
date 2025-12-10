@@ -1,8 +1,9 @@
 import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
 
 export const getLoadingClasses = cva("loading", {
-  variants: {
-    variant: {
+  variants: createVariants({
+    type: {
       spinner: "loading-spinner",
       dots: "loading-dots",
       ring: "loading-ring",
@@ -10,7 +11,7 @@ export const getLoadingClasses = cva("loading", {
       bars: "loading-bars",
       infinity: "loading-infinity",
     },
-    intent: {
+    variant: {
       default: "text-base-content",
       primary: "text-primary-content",
       secondary: "text-secondary-content",
@@ -27,5 +28,5 @@ export const getLoadingClasses = cva("loading", {
       md: "loading-md",
       lg: "loading-lg",
     },
-  },
+  }),
 });

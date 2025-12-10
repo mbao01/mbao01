@@ -9,7 +9,7 @@ const config: StorybookConfig = {
     "@storybook/addon-links",
     "@storybook/addon-onboarding",
     "@storybook/addon-themes",
-    "@storybook/addon-docs"
+    "@storybook/addon-docs",
   ],
 
   framework: {
@@ -28,6 +28,6 @@ const config: StorybookConfig = {
     reactDocgenTypescriptOptions: {
       shouldRemoveUndefinedFromOptional: true,
     },
-  }
+  },
 };
 export default config;

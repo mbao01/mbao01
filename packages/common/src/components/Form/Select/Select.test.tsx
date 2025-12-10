@@ -86,7 +86,7 @@ describe("Select", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it.skip("has a floating label", () => {
+  it("has a floating label", () => {
     const { asFragment } = renderSelect("", {
       label: "Your Country",
       labelPosition: "floating",

@@ -8,7 +8,7 @@ const withContextMenu = () => {
         Right click here
       </ContextMenu.Trigger>
       <ContextMenu.Content className="w-64">
-        <ContextMenu.Item inset variant="base">
+        <ContextMenu.Item inset variant="default">
           Back
           <ContextMenu.Shortcut>⌘[</ContextMenu.Shortcut>
         </ContextMenu.Item>
@@ -57,6 +57,7 @@ const withContextMenu = () => {
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
+  title: "Molecules/Menu/ContextMenu",
   component: ContextMenu,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout

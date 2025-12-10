@@ -4,17 +4,13 @@ import { Dialog } from "./Dialog";
 import { type DialogContentProps } from "./types";
 
 const withDialog = (_: StoryFn, context: StoryContext<DialogContentProps>) => {
-  const { variant, side } = context.args;
+  const { type, side } = context.args;
   return (
     <Dialog>
       <Dialog.Trigger asChild>
         <Button outline>Edit Profile</Button>
       </Dialog.Trigger>
-      <Dialog.Content
-        side={side}
-        variant={variant}
-        className={variant ? undefined : "sm:max-w-[425px]"}
-      >
+      <Dialog.Content side={side} type={type} className={type ? undefined : "sm:max-w-[425px]"}>
         <Dialog.Header>
           <Dialog.Title>Edit profile</Dialog.Title>
           <Dialog.Description>
@@ -32,7 +28,7 @@ const withDialog = (_: StoryFn, context: StoryContext<DialogContentProps>) => {
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: "Components/Dialog",
+  title: "Molecules/Dialog",
   component: Dialog.Content,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
@@ -42,7 +38,7 @@ const meta = {
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    variant: {
+    type: {
       control: "select",
       options: ["dialog", "sheet"],
       defaultValue: "dialog",
@@ -66,6 +62,6 @@ export const Default: Story = {
 export const Sheet: Story = {
   args: {
     side: "right",
-    variant: "sheet",
+    type: "sheet",
   },
 };

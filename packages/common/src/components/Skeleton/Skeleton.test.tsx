@@ -10,7 +10,7 @@ describe("Skeleton", () => {
   });
 
   it("has a skeleton with pulse animation", () => {
-    const { asFragment } = render(<Skeleton variant="pulse" data-testid="skeleton" />);
+    const { asFragment } = render(<Skeleton animate="pulse" data-testid="skeleton" />);
 
     expect(screen.getByTestId("skeleton")).toBeVisible();
     expect(asFragment()).toMatchSnapshot();

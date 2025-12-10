@@ -1,12 +1,13 @@
 import { cva } from "../../../libs";
+import { createVariants } from "../../../utilities";
 
 export const getSortableClasses = cva("", {
-  variants: {
+  variants: createVariants({
     isDragging: {
       true: "",
     },
     isSorting: {
       true: "",
     },
-  },
+  }),
 });

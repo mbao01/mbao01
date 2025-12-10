@@ -16,7 +16,7 @@ const withDialog = () => {
           </AlertDialog.Description>
         </AlertDialog.Header>
         <AlertDialog.Footer>
-          <AlertDialog.Cancel variant="link">Cancel</AlertDialog.Cancel>
+          <AlertDialog.Cancel link>Cancel</AlertDialog.Cancel>
           <AlertDialog.Action>Continue</AlertDialog.Action>
         </AlertDialog.Footer>
       </AlertDialog.Content>
@@ -26,7 +26,7 @@ const withDialog = () => {
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: "Components/AlertDialog",
+  title: "Molecules/AlertDialog",
   component: AlertDialog,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout

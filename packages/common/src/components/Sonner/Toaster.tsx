@@ -26,7 +26,7 @@ export const Toaster = ({
           cancelButton: cn(
             getToastButtonClasses({
               outline: true,
-              variant: "base",
+              variant: "default",
               ...cancelButton,
             })
           ),

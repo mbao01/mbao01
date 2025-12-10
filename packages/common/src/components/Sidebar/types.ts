@@ -17,7 +17,7 @@ export type SidebarContextProps = {
 export type SidebarProps = HTMLAttributes<HTMLDivElement> &
   Partial<{
     side: "left" | "right";
-    variant: "sidebar" | "floating" | "inset";
+    type: "sidebar" | "floating" | "inset";
     collapsible: "offcanvas" | "icon" | "none";
   }>;
 

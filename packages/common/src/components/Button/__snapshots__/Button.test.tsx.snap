@@ -133,16 +133,6 @@ exports[`Button > has info variant 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Button > has link variant 1`] = `
-<DocumentFragment>
-  <button
-    class="btn btn-link min-h-fit h-10 rounded-md"
-  >
-    link button
-  </button>
-</DocumentFragment>
-`;
-
 exports[`Button > has neutral variant 1`] = `
 <DocumentFragment>
   <button

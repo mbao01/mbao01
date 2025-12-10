@@ -1,0 +1,55 @@
+import { cva } from "../../libs";
+import { createVariants } from "../../utilities";
+
+export const getSpacerClasses = cva("", {
+  variants: createVariants({
+    axis: {
+      horizontal: "flex-shrink-0",
+      vertical: "flex-shrink-0",
+    },
+    gap: {
+      1: "",
+      2: "",
+      3: "",
+      4: "",
+      5: "",
+      6: "",
+      8: "",
+      10: "",
+      12: "",
+      16: "",
+      20: "",
+      24: "",
+    },
+  }),
+  compoundVariants: [
+    { axis: "horizontal", gap: 1, className: "w-1" },
+    { axis: "horizontal", gap: 2, className: "w-2" },
+    { axis: "horizontal", gap: 3, className: "w-3" },
+    { axis: "horizontal", gap: 4, className: "w-4" },
+    { axis: "horizontal", gap: 5, className: "w-5" },
+    { axis: "horizontal", gap: 6, className: "w-6" },
+    { axis: "horizontal", gap: 8, className: "w-8" },
+    { axis: "horizontal", gap: 10, className: "w-10" },
+    { axis: "horizontal", gap: 12, className: "w-12" },
+    { axis: "horizontal", gap: 16, className: "w-16" },
+    { axis: "horizontal", gap: 20, className: "w-20" },
+    { axis: "horizontal", gap: 24, className: "w-24" },
+    { axis: "vertical", gap: 1, className: "h-1" },
+    { axis: "vertical", gap: 2, className: "h-2" },
+    { axis: "vertical", gap: 3, className: "h-3" },
+    { axis: "vertical", gap: 4, className: "h-4" },
+    { axis: "vertical", gap: 5, className: "h-5" },
+    { axis: "vertical", gap: 6, className: "h-6" },
+    { axis: "vertical", gap: 8, className: "h-8" },
+    { axis: "vertical", gap: 10, className: "h-10" },
+    { axis: "vertical", gap: 12, className: "h-12" },
+    { axis: "vertical", gap: 16, className: "h-16" },
+    { axis: "vertical", gap: 20, className: "h-20" },
+    { axis: "vertical", gap: 24, className: "h-24" },
+  ],
+  defaultVariants: {
+    axis: "vertical",
+    gap: 4,
+  },
+});

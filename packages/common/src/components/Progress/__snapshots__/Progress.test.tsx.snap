@@ -24,13 +24,13 @@ exports[`Progress > has accent variant 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Progress > has base variant 1`] = `
+exports[`Progress > has default variant 1`] = `
 <DocumentFragment>
   <div
     aria-valuemax="100"
     aria-valuemin="0"
     aria-valuenow="50"
-    aria-valuetext="base progress bar"
+    aria-valuetext="default progress bar"
     class="relative h-2 w-full overflow-hidden rounded-full bg-base-content/20"
     data-max="100"
     data-state="loading"
@@ -111,30 +111,6 @@ exports[`Progress > has info variant 1`] = `
   >
     <div
       class="h-full w-full flex-1 transition-all bg-info"
-      data-max="100"
-      data-state="loading"
-      data-value="50"
-      style="transform: translateX(-50%);"
-    />
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Progress > has link variant 1`] = `
-<DocumentFragment>
-  <div
-    aria-valuemax="100"
-    aria-valuemin="0"
-    aria-valuenow="50"
-    aria-valuetext="link progress bar"
-    class="relative h-2 w-full overflow-hidden rounded-full bg-link/20"
-    data-max="100"
-    data-state="loading"
-    data-value="50"
-    role="progressbar"
-  >
-    <div
-      class="h-full w-full flex-1 transition-all bg-link"
       data-max="100"
       data-state="loading"
       data-value="50"
