@@ -1,5 +1,7 @@
+import { ComponentType, ReactNode } from "react";
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
+import { Theme } from "../../../utilities";
 import { ChartContext } from "../ChartContext";
 import { ChartTooltipContent } from "./ChartTooltip";
 
@@ -14,9 +16,19 @@ const mockConfig = {
   },
 };
 
-const TestWrapper = ({ children, config = mockConfig }: any) => (
-  <ChartContext.Provider value={{ config }}>{children}</ChartContext.Provider>
-);
+const TestWrapper = ({
+  children,
+  config = mockConfig,
+}: {
+  children: React.ReactNode;
+  config?: Record<
+    string,
+    { label?: ReactNode; icon?: ComponentType | undefined } & (
+      | { color?: string | undefined; theme?: undefined }
+      | { color?: undefined; theme: Record<Theme, string> }
+    )
+  >;
+}) => <ChartContext.Provider value={{ config }}>{children}</ChartContext.Provider>;
 
 describe("ChartTooltipContent", () => {
   it("renders nothing when not active", () => {
@@ -50,7 +62,7 @@ describe("ChartTooltipContent", () => {
 
     render(
       <TestWrapper>
-        <ChartTooltipContent active={true} payload={payload as any} />
+        <ChartTooltipContent active={true} payload={payload} />
       </TestWrapper>
     );
 
@@ -79,7 +91,7 @@ describe("ChartTooltipContent", () => {
 
     render(
       <TestWrapper>
-        <ChartTooltipContent active={true} payload={payload as any} />
+        <ChartTooltipContent active={true} payload={payload} />
       </TestWrapper>
     );
 
@@ -103,12 +115,7 @@ describe("ChartTooltipContent", () => {
 
     render(
       <TestWrapper>
-        <ChartTooltipContent
-          active={true}
-          payload={payload as any}
-          hideLabel={true}
-          label="Test Label"
-        />
+        <ChartTooltipContent active={true} payload={payload} hideLabel={true} label="Test Label" />
       </TestWrapper>
     );
 
@@ -128,7 +135,7 @@ describe("ChartTooltipContent", () => {
 
     const { container } = render(
       <TestWrapper>
-        <ChartTooltipContent active={true} payload={payload as any} hideIndicator={true} />
+        <ChartTooltipContent active={true} payload={payload} hideIndicator={true} />
       </TestWrapper>
     );
 
@@ -147,13 +154,13 @@ describe("ChartTooltipContent", () => {
       },
     ];
 
-    const labelFormatter = (value: any) => `Custom: ${value}`;
+    const labelFormatter = (value: string | number | (string | number)[]) => `Custom: ${value}`;
 
     render(
       <TestWrapper>
         <ChartTooltipContent
           active={true}
-          payload={payload as any}
+          payload={payload}
           label="Test"
           labelFormatter={labelFormatter}
         />
@@ -175,11 +182,11 @@ describe("ChartTooltipContent", () => {
       },
     ];
 
-    const formatter = (value: any) => `$${value}`;
+    const formatter = (value: string | number | (string | number)[]) => `$${value}`;
 
     render(
       <TestWrapper>
-        <ChartTooltipContent active={true} payload={payload as any} formatter={formatter} />
+        <ChartTooltipContent active={true} payload={payload} formatter={formatter} />
       </TestWrapper>
     );
 
@@ -199,7 +206,7 @@ describe("ChartTooltipContent", () => {
 
     render(
       <TestWrapper>
-        <ChartTooltipContent active={true} payload={payload as any} indicator="dot" />
+        <ChartTooltipContent active={true} payload={payload} indicator="dot" />
       </TestWrapper>
     );
 
@@ -226,7 +233,7 @@ describe("ChartTooltipContent", () => {
 
     render(
       <TestWrapper>
-        <ChartTooltipContent active={true} payload={payload as any} indicator="line" />
+        <ChartTooltipContent active={true} payload={payload} indicator="line" />
       </TestWrapper>
     );
 
@@ -246,7 +253,7 @@ describe("ChartTooltipContent", () => {
 
     const { container } = render(
       <TestWrapper>
-        <ChartTooltipContent active={true} payload={payload as any} className="custom-tooltip" />
+        <ChartTooltipContent active={true} payload={payload} className="custom-tooltip" />
       </TestWrapper>
     );
 
@@ -266,7 +273,7 @@ describe("ChartTooltipContent", () => {
 
     render(
       <TestWrapper>
-        <ChartTooltipContent active={true} payload={payload as any} />
+        <ChartTooltipContent active={true} payload={payload} />
       </TestWrapper>
     );
 
@@ -287,7 +294,7 @@ describe("ChartTooltipContent", () => {
 
     render(
       <TestWrapper>
-        <ChartTooltipContent active={true} payload={payload as any} nameKey="customName" />
+        <ChartTooltipContent active={true} payload={payload} nameKey="customName" />
       </TestWrapper>
     );
 
@@ -307,7 +314,7 @@ describe("ChartTooltipContent", () => {
 
     const { container } = render(
       <TestWrapper>
-        <ChartTooltipContent active={true} payload={payload as any} color="red" />
+        <ChartTooltipContent active={true} payload={payload} color="red" />
       </TestWrapper>
     );
 

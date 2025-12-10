@@ -19,6 +19,7 @@ describe("Chart helpers", () => {
     };
 
     it("returns undefined for non-object payload", () => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const result = getPayloadConfigFromPayload(mockConfig, null as any, "desktop");
       expect(result).toBeUndefined();
     });
@@ -29,7 +30,7 @@ describe("Chart helpers", () => {
         value: 100,
       };
 
-      const result = getPayloadConfigFromPayload(mockConfig, payload as any, "desktop");
+      const result = getPayloadConfigFromPayload(mockConfig, payload, "desktop");
       expect(result).toEqual(mockConfig.desktop);
     });
 
@@ -39,7 +40,7 @@ describe("Chart helpers", () => {
         value: 100,
       };
 
-      const result = getPayloadConfigFromPayload(mockConfig, payload as any, "desktop");
+      const result = getPayloadConfigFromPayload(mockConfig, payload, "desktop");
       expect(result).toEqual(mockConfig.desktop);
     });
 
@@ -51,7 +52,7 @@ describe("Chart helpers", () => {
         value: 100,
       };
 
-      const result = getPayloadConfigFromPayload(mockConfig, payload as any, "desktop");
+      const result = getPayloadConfigFromPayload(mockConfig, payload, "desktop");
       expect(result).toEqual(mockConfig.desktop);
     });
 
@@ -61,7 +62,7 @@ describe("Chart helpers", () => {
         value: 100,
       };
 
-      const result = getPayloadConfigFromPayload(mockConfig, payload as any, "unknown");
+      const result = getPayloadConfigFromPayload(mockConfig, payload, "unknown");
       expect(result).toBeUndefined();
     });
 
@@ -73,7 +74,7 @@ describe("Chart helpers", () => {
         value: 80,
       };
 
-      const result = getPayloadConfigFromPayload(mockConfig, payload as any, "category");
+      const result = getPayloadConfigFromPayload(mockConfig, payload, "category");
       expect(result).toEqual(mockConfig.mobile);
     });
 
@@ -83,7 +84,7 @@ describe("Chart helpers", () => {
         value: 500,
       };
 
-      const result = getPayloadConfigFromPayload(mockConfig, payload as any, "revenue");
+      const result = getPayloadConfigFromPayload(mockConfig, payload, "revenue");
       expect(result).toEqual(mockConfig.revenue);
     });
 
@@ -97,7 +98,7 @@ describe("Chart helpers", () => {
       };
 
       // Should prioritize direct key over nested
-      const result = getPayloadConfigFromPayload(mockConfig, payload as any, "mobile");
+      const result = getPayloadConfigFromPayload(mockConfig, payload, "mobile");
       expect(result).toEqual(mockConfig.mobile);
     });
 
@@ -107,7 +108,7 @@ describe("Chart helpers", () => {
         value: 100,
       };
 
-      const result = getPayloadConfigFromPayload({}, payload as any, "desktop");
+      const result = getPayloadConfigFromPayload({}, payload, "desktop");
       expect(result).toBeUndefined();
     });
 
@@ -117,7 +118,7 @@ describe("Chart helpers", () => {
         value: 100,
       };
 
-      const result = getPayloadConfigFromPayload(mockConfig, payload as any, "desktop");
+      const result = getPayloadConfigFromPayload(mockConfig, payload, "desktop");
       expect(result).toEqual(mockConfig.desktop);
     });
   });

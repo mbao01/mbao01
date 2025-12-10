@@ -235,7 +235,7 @@ describe("DockIcon", () => {
   });
 
   it("renders with children", () => {
-    const { container } = render(
+    render(
       <Dock>
         <Dock.Button>
           <Dock.Icon icon={HomeIcon}>

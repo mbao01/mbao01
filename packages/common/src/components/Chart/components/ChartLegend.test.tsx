@@ -14,9 +14,13 @@ const mockConfig = {
   },
 };
 
-const TestWrapper = ({ children, config = mockConfig }: any) => (
-  <ChartContext.Provider value={{ config }}>{children}</ChartContext.Provider>
-);
+const TestWrapper = ({
+  children,
+  config = mockConfig,
+}: {
+  children: React.ReactNode;
+  config?: typeof mockConfig;
+}) => <ChartContext.Provider value={{ config }}>{children}</ChartContext.Provider>;
 
 describe("ChartLegendContent", () => {
   it("renders nothing when payload is empty", () => {

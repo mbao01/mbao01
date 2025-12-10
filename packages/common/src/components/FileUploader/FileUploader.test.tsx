@@ -6,7 +6,9 @@ import { FileUploader } from "./FileUploader";
 
 describe("FileUploader", () => {
   const user = userEvent.setup();
-  const FileUpload = ({ onValueChange: externalOnValueChange }: any = {}) => {
+  const FileUpload = ({
+    onValueChange: externalOnValueChange,
+  }: { onValueChange?: (files: File[] | null) => void } = {}) => {
     const [files, setFiles] = useState<File[] | null>(null);
 
     const handleValueChange = (newFiles: File[] | null) => {

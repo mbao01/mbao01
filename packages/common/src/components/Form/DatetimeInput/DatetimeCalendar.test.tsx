@@ -3,8 +3,21 @@ import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 import { DatetimeCalendar } from "./DatetimeCalendar";
 import { DatetimeInputContext } from "./DatetimeInputContext";
+import { TimeString } from "./types";
 
-const TestWrapper = ({ children, value, time, onDateChange, onTimeChange }: any) => (
+const TestWrapper = ({
+  children,
+  value,
+  time,
+  onDateChange,
+  onTimeChange,
+}: {
+  children: React.ReactNode;
+  value: Date | undefined;
+  time: TimeString;
+  onDateChange: (date: Date | undefined) => void;
+  onTimeChange: (time: string) => void;
+}) => (
   <DatetimeInputContext.Provider
     value={{
       value,

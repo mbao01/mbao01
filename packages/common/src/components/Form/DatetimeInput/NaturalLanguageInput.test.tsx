@@ -3,8 +3,21 @@ import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 import { DatetimeInputContext } from "./DatetimeInputContext";
 import { NaturalLanguageInput } from "./NaturalLanguageInput";
+import { TimeString } from "./types";
 
-const TestWrapper = ({ children, value, time, onDateChange, onTimeChange }: any) => (
+const TestWrapper = ({
+  children,
+  value,
+  time,
+  onDateChange,
+  onTimeChange,
+}: {
+  children: React.ReactNode;
+  value: Date | undefined;
+  time: TimeString;
+  onDateChange: (date: Date | undefined) => void;
+  onTimeChange: (time: string) => void;
+}) => (
   <DatetimeInputContext.Provider
     value={{
       value,
@@ -25,7 +38,12 @@ describe("NaturalLanguageInput", () => {
     const onTimeChange = vi.fn();
 
     render(
-      <TestWrapper value={null} time="" onDateChange={onDateChange} onTimeChange={onTimeChange}>
+      <TestWrapper
+        value={undefined}
+        time=""
+        onDateChange={onDateChange}
+        onTimeChange={onTimeChange}
+      >
         <NaturalLanguageInput />
       </TestWrapper>
     );
@@ -40,7 +58,12 @@ describe("NaturalLanguageInput", () => {
     const onTimeChange = vi.fn();
 
     render(
-      <TestWrapper value={null} time="" onDateChange={onDateChange} onTimeChange={onTimeChange}>
+      <TestWrapper
+        value={undefined}
+        time=""
+        onDateChange={onDateChange}
+        onTimeChange={onTimeChange}
+      >
         <NaturalLanguageInput placeholder="Enter a date" />
       </TestWrapper>
     );
@@ -73,7 +96,12 @@ describe("NaturalLanguageInput", () => {
     const onTimeChange = vi.fn();
 
     render(
-      <TestWrapper value={null} time="" onDateChange={onDateChange} onTimeChange={onTimeChange}>
+      <TestWrapper
+        value={undefined}
+        time=""
+        onDateChange={onDateChange}
+        onTimeChange={onTimeChange}
+      >
         <NaturalLanguageInput />
       </TestWrapper>
     );
@@ -91,7 +119,12 @@ describe("NaturalLanguageInput", () => {
     const onTimeChange = vi.fn();
 
     render(
-      <TestWrapper value={null} time="" onDateChange={onDateChange} onTimeChange={onTimeChange}>
+      <TestWrapper
+        value={undefined}
+        time=""
+        onDateChange={onDateChange}
+        onTimeChange={onTimeChange}
+      >
         <NaturalLanguageInput />
       </TestWrapper>
     );
@@ -157,7 +190,12 @@ describe("NaturalLanguageInput", () => {
     const onTimeChange = vi.fn();
 
     render(
-      <TestWrapper value={null} time="" onDateChange={onDateChange} onTimeChange={onTimeChange}>
+      <TestWrapper
+        value={undefined}
+        time=""
+        onDateChange={onDateChange}
+        onTimeChange={onTimeChange}
+      >
         <NaturalLanguageInput />
       </TestWrapper>
     );
@@ -175,7 +213,12 @@ describe("NaturalLanguageInput", () => {
     const onTimeChange = vi.fn();
 
     render(
-      <TestWrapper value={null} time="" onDateChange={onDateChange} onTimeChange={onTimeChange}>
+      <TestWrapper
+        value={undefined}
+        time=""
+        onDateChange={onDateChange}
+        onTimeChange={onTimeChange}
+      >
         <NaturalLanguageInput />
       </TestWrapper>
     );
@@ -192,7 +235,12 @@ describe("NaturalLanguageInput", () => {
     const onTimeChange = vi.fn();
 
     render(
-      <TestWrapper value={null} time="" onDateChange={onDateChange} onTimeChange={onTimeChange}>
+      <TestWrapper
+        value={undefined}
+        time=""
+        onDateChange={onDateChange}
+        onTimeChange={onTimeChange}
+      >
         <NaturalLanguageInput size={size} />
       </TestWrapper>
     );
@@ -206,7 +254,12 @@ describe("NaturalLanguageInput", () => {
     const ref = vi.fn();
 
     render(
-      <TestWrapper value={null} time="" onDateChange={onDateChange} onTimeChange={onTimeChange}>
+      <TestWrapper
+        value={undefined}
+        time=""
+        onDateChange={onDateChange}
+        onTimeChange={onTimeChange}
+      >
         <NaturalLanguageInput ref={ref} />
       </TestWrapper>
     );

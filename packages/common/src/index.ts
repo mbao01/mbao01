@@ -24,9 +24,7 @@ export * from "./components/Paragraph";
 
 /** utility & atoms */
 export * from "./components/AspectRatio";
-export * from "./components/Icon";
 export * from "./components/Image";
-export * from "./components/NativeSelect";
 export * from "./components/Spinner";
 
 /** data display */
@@ -80,11 +78,7 @@ export * from "./components/Widget";
 
 /** molecules */
 export * from "./components/Banner";
-export * from "./components/ButtonGroup";
 export * from "./components/Empty";
-export * from "./components/Field";
-export * from "./components/InputGroup";
-export * from "./components/Item";
 export * from "./components/Sidebar";
 export * from "./components/Stepper";
 /** organisms */
@@ -92,6 +86,3 @@ export * from "./components/Footer";
 export * from "./components/Header";
 export * from "./components/Panel";
 export * from "./components/Sheet";
-
-/** tokens */
-export * from "./tokens";
