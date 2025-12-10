@@ -7,7 +7,7 @@ import { getLinkClasses } from "./constants";
 export type LinkProps<T> = Omit<
   Omit<
     DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>,
-    keyof OriginalLinkProps
+    keyof OriginalLinkProps | "style"
   > &
     OriginalLinkProps,
   "href"
