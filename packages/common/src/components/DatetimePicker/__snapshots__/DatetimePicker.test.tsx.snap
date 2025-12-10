@@ -81,7 +81,7 @@ exports[`DatetimePicker > and the user changes date using the Down Arrow navigat
       aria-label="hours"
       aria-valuemax="23"
       aria-valuemin="0"
-      aria-valuenow="6"
+      aria-valuenow="5"
       class="input rounded-md transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-hidden shadow-none select-none content-box caret-transparent min-w-8 text-center focus:outline-hidden focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-hidden"
       data-timescape-input=""
       inputmode="numeric"
@@ -94,7 +94,7 @@ exports[`DatetimePicker > and the user changes date using the Down Arrow navigat
       data-timescape-shadow="hours"
       style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; letter-spacing: initial; text-transform: initial; text-indent: initial;"
     >
-      06
+      05
     </span>
     <span
       class="text-xs text-gray-400"
@@ -222,7 +222,7 @@ exports[`DatetimePicker > and the user changes date using the Up Arrow navigatio
       aria-label="hours"
       aria-valuemax="23"
       aria-valuemin="0"
-      aria-valuenow="8"
+      aria-valuenow="7"
       class="input rounded-md transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-hidden shadow-none select-none content-box caret-transparent min-w-8 text-center focus:outline-hidden focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-hidden"
       data-timescape-input=""
       inputmode="numeric"
@@ -235,7 +235,7 @@ exports[`DatetimePicker > and the user changes date using the Up Arrow navigatio
       data-timescape-shadow="hours"
       style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; letter-spacing: initial; text-transform: initial; text-indent: initial;"
     >
-      08
+      07
     </span>
     <span
       class="text-xs text-gray-400"
@@ -503,7 +503,7 @@ exports[`DatetimePicker > and the user must enter a date between the minimum and
       aria-label="hours"
       aria-valuemax="23"
       aria-valuemin="0"
-      aria-valuenow="7"
+      aria-valuenow="6"
       class="input rounded-md transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-hidden shadow-none select-none content-box caret-transparent min-w-8 text-center focus:outline-hidden focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-hidden"
       data-timescape-input=""
       inputmode="numeric"
@@ -516,7 +516,7 @@ exports[`DatetimePicker > and the user must enter a date between the minimum and
       data-timescape-shadow="hours"
       style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre; letter-spacing: initial; text-transform: initial; text-indent: initial;"
     >
-      07
+      06
     </span>
     <span
       class="text-xs text-gray-400"
@@ -644,7 +644,7 @@ exports[`DatetimePicker > renders the given date 1`] = `
       aria-label="hours"
       aria-valuemax="23"
       aria-valuemin="0"
-      aria-valuenow="7"
+      aria-valuenow="6"
       class="input rounded-md transition-all duration-100 min-h-fit p-1 inline tabular-nums h-fit border-none outline-hidden shadow-none select-none content-box caret-transparent min-w-8 text-center focus:outline-hidden focus:bg-base-content/20 focus-visible:ring-0 focus-visible:outline-hidden"
       data-timescape-input=""
       inputmode="numeric"
@@ -657,7 +657,7 @@ exports[`DatetimePicker > renders the given date 1`] = `
       data-timescape-shadow="hours"
       style="display: inline-block; position: absolute; left: -9999px; top: -9999px; visibility: hidden; pointer-events: none; white-space: pre;"
     >
-      07
+      06
     </span>
     <span
       class="text-xs text-gray-400"

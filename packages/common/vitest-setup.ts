@@ -31,6 +31,10 @@ Object.defineProperty(window, "matchMedia", {
   })),
 });
 
+beforeAll(() => {
+  process.env.TZ = "UTC";
+});
+
 // runs a cleanup after each test case (e.g. clearing jsdom)
 afterEach(() => {
   cleanup();

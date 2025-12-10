@@ -10,7 +10,7 @@ describe("DatetimePicker", () => {
       days: "01",
       months: "10",
       years: "2024",
-      hours: "07",
+      hours: "06",
       minutes: "06",
       "am/pm": "PM",
     }).forEach(([name, value]) => {
@@ -27,7 +27,7 @@ describe("DatetimePicker", () => {
       days: "02",
       months: "11",
       years: "2025",
-      hours: "08",
+      hours: "07",
       minutes: "07",
       "am/pm": "AM",
     } as const;
@@ -50,7 +50,7 @@ describe("DatetimePicker", () => {
       days: "30",
       months: "08",
       years: "2023",
-      hours: "06",
+      hours: "05",
       minutes: "05",
       "am/pm": "AM",
     } as const;
@@ -106,7 +106,7 @@ describe("DatetimePicker", () => {
       days: "01",
       months: "10",
       years: "2024",
-      hours: "07",
+      hours: "06",
       minutes: "06",
       "am/pm": "PM",
     } as const;
@@ -123,7 +123,7 @@ describe("DatetimePicker", () => {
       months: "10",
       years: "2024",
       hours: "06",
-      minutes: "59",
+      minutes: "06",
     } as const;
     for (const [name, value] of Object.entries(data)) {
       const button = screen.getByRole("spinbutton", { name });
@@ -137,7 +137,7 @@ describe("DatetimePicker", () => {
       days: "01",
       months: "10",
       years: "2024",
-      hours: "06",
+      hours: "05",
       minutes: "50",
       "am/pm": "PM",
     } as const;
