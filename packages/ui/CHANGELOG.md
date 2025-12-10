@@ -1,3 +1,15 @@
+# v0.7.0 (Wed Dec 10 2025)
+
+#### 🚀 Enhancement
+
+- Add primitives and useful components [#203](https://github.com/mbao01/mbao01/pull/203) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

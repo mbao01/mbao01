@@ -1,3 +1,16 @@
+# (Wed Dec 10 2025)
+
+#### 🚀 Enhancement
+
+- `@mbao01/common@0.6.0`, `@mbao01/next@0.6.0`, `@mbao01/ui@0.7.0`
+  - Add primitives and useful components [#203](https://github.com/mbao01/mbao01/pull/203) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # (Tue Nov 18 2025)
 
 #### 🐛 Bug Fix
