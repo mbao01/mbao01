@@ -9,7 +9,7 @@ exports[`Calendar > does not have navigation 1`] = `
       class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 relative"
     >
       <nav
-        aria-label=""
+        aria-label="Navigation bar"
         class="absolute flex gap-2 items-center rtl:left-0 rtl:right-auto right-0 z-10"
       >
         <button
@@ -471,7 +471,7 @@ exports[`Calendar > has navigable months 1`] = `
       class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 relative"
     >
       <nav
-        aria-label=""
+        aria-label="Navigation bar"
         class="absolute flex gap-2 items-center rtl:left-0 rtl:right-auto right-0 z-10"
       >
         <button
@@ -1084,7 +1084,7 @@ exports[`Calendar > shows April, 2024 calendar 1`] = `
       class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 relative"
     >
       <nav
-        aria-label=""
+        aria-label="Navigation bar"
         class="absolute flex gap-2 items-center rtl:left-0 rtl:right-auto right-0 z-10"
       >
         <button
