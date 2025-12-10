@@ -1,23 +1,21 @@
-import { FlatCompat } from "@eslint/eslintrc";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import { defineConfig, globalIgnores } from "eslint/config";
 
-const __dirname = import.meta.dirname;
+const eslintConfig = defineConfig([
+  ...nextVitals,
+  // Override default ignores of eslint-config-next.
+  globalIgnores([
+    // Default ignores of eslint-config-next:
+    ".next/**",
+    "out/**",
+    "build/**",
+    ".storybook",
+    ".next",
+    "dist",
+    "coverage",
+    "storybook-static",
+    "next-env.d.ts",
+  ]),
+]);
 
-const compat = new FlatCompat({
-  // import.meta.dirname is available after Node.js v20.11.0
-  baseDirectory: __dirname,
-});
-
-// global ignores
-const globalIgnores = {
-  ignores: [".storybook", ".next", "dist", "coverage", "storybook-static"],
-};
-
-const nextEslintConfig = [
-  ...compat.config({
-    extends: ["next/core-web-vitals"],
-  }),
-];
-
-const configs = [globalIgnores, ...nextEslintConfig];
-
-export default configs;
+export default eslintConfig;
