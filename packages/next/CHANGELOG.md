@@ -1,19 +1,15 @@
-# v0.6.0 (Wed Dec 10 2025)
-
-#### 🚀 Enhancement
-
-- Add primitives and useful components [#203](https://github.com/mbao01/mbao01/pull/203) ([@mbao01](https://github.com/mbao01))
-
-#### Authors: 1
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# 0.6.0 (2025-12-10)
+
+**Note:** Version bump only for package @mbao01/next
+
+
+
+
 
 ## 0.5.3 (2025-11-18)
 
