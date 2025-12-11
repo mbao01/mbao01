@@ -43,7 +43,7 @@ jobs:
 
   deploy:
     name: 🚀 Deploy
-    if: ${{ github.ref_type == 'tag' }}
+    if: ${{ github.ref_name == 'main' }}
     runs-on: ubuntu-latest
     steps:
       - run: echo 'The triggering workflow passed'
