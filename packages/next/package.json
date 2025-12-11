@@ -53,7 +53,7 @@
     "@mbao01/common": "workspace:^",
     "@storybook/nextjs-vite": "^10.1.6",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.546.0"
+    "lucide-react": "^0.559.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.3",
@@ -71,7 +71,7 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "@types/jest-image-snapshot": "^6.4.0",
-    "@types/node": "^24.10.2",
+    "@types/node": "^25.0.0",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "@typescript-eslint/eslint-plugin": "^8.49.0",
@@ -105,7 +105,7 @@
     "vitest": "^3.2.4"
   },
   "peerDependencies": {
-    "next": "15"
+    "next": "16"
   },
   "pnpm": {
     "overrides": {
