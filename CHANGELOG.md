@@ -1,3 +1,16 @@
+# (Thu Dec 11 2025)
+
+#### 🐛 Bug Fix
+
+- `@mbao01/common@0.6.1`, `@mbao01/next@0.6.1`, `@mbao01/ui@0.7.1`
+  - feat(next): upgrate some deps and set next peer dep to 16 [#204](https://github.com/mbao01/mbao01/pull/204) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # (Wed Dec 10 2025)
 
 #### 🚀 Enhancement
