@@ -46,6 +46,21 @@ export const HorizontalSeparator: Story = {
   },
 };
 
+export const PrimarySeparator: Story = {
+  args: {
+    orientation: "horizontal",
+    variant: "primary",
+  },
+};
+
+export const MediumSizedSeparator: Story = {
+  args: {
+    orientation: "horizontal",
+    variant: "error",
+    size: "md",
+  },
+};
+
 export const NonDecorativeSeparator: Story = {
   args: {
     decorative: false,

@@ -6,7 +6,9 @@ import { getSeparatorClasses } from "./constants";
 import { type SeparatorProps } from "./types";
 
 export const Separator = ({
+  size,
   className,
+  variant = "default",
   orientation = "horizontal",
   decorative = true,
   ...props
@@ -14,7 +16,7 @@ export const Separator = ({
   <SeparatorPrimitive.Root
     decorative={decorative}
     orientation={orientation}
-    className={cn(getSeparatorClasses({ orientation }), className)}
+    className={cn(getSeparatorClasses({ orientation, variant, size }), className)}
     {...props}
   />
 );
