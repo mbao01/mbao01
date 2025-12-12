@@ -1,3 +1,16 @@
+# (Fri Dec 12 2025)
+
+#### 🐛 Bug Fix
+
+- `@mbao01/common@0.6.3`, `@mbao01/next@0.6.3`, `@mbao01/ui@0.7.3`
+  - Add separator variants and sizes [#206](https://github.com/mbao01/mbao01/pull/206) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # (Thu Dec 11 2025)
 
 
