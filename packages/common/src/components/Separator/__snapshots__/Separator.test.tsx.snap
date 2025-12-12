@@ -3,7 +3,7 @@
 exports[`Separator > has horizontal orientation 1`] = `
 <DocumentFragment>
   <div
-    class="shrink-0 bg-base-300 h-[1px] w-full"
+    class="shrink-0 h-[1px] w-full bg-base-content/10"
     data-orientation="horizontal"
     data-testid="separator"
     role="none"
@@ -14,7 +14,7 @@ exports[`Separator > has horizontal orientation 1`] = `
 exports[`Separator > has horizontal orientation by default 1`] = `
 <DocumentFragment>
   <div
-    class="shrink-0 bg-base-300 h-[1px] w-full"
+    class="shrink-0 h-[1px] w-full bg-base-content/10"
     data-orientation="horizontal"
     data-testid="separator"
     role="none"
@@ -25,7 +25,7 @@ exports[`Separator > has horizontal orientation by default 1`] = `
 exports[`Separator > has vertical orientation 1`] = `
 <DocumentFragment>
   <div
-    class="shrink-0 bg-base-300 h-full w-[1px]"
+    class="shrink-0 h-full w-[1px] bg-base-content/10"
     data-orientation="vertical"
     data-testid="separator"
     role="none"
@@ -36,7 +36,7 @@ exports[`Separator > has vertical orientation 1`] = `
 exports[`Separator > is non presentational/decorative 1`] = `
 <DocumentFragment>
   <div
-    class="shrink-0 bg-base-300 h-[1px] w-full"
+    class="shrink-0 h-[1px] w-full bg-base-content/10"
     data-orientation="horizontal"
     data-testid="separator"
     role="separator"
