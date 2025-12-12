@@ -1,19 +1,15 @@
-# v0.7.3 (Fri Dec 12 2025)
-
-#### 🐛 Bug Fix
-
-- Add separator variants and sizes [#206](https://github.com/mbao01/mbao01/pull/206) ([@mbao01](https://github.com/mbao01))
-
-#### Authors: 1
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 0.7.3 (2025-12-12)
+
+**Note:** Version bump only for package @mbao01/ui
+
+
+
+
 
 ## 0.7.2 (2025-12-11)
 
