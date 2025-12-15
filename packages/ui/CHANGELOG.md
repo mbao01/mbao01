@@ -1,19 +1,18 @@
-# v0.7.4 (Mon Dec 15 2025)
-
-#### 🐛 Bug Fix
-
-- feat(sidebar): add styles for data-sidebar-icon attribute [#207](https://github.com/mbao01/mbao01/pull/207) ([@mbao01](https://github.com/mbao01))
-
-#### Authors: 1
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 0.7.4 (2025-12-15)
+
+
+### Features
+
+* **sidebar:** add styles for data-sidebar-icon attribute ([#207](https://github.com/mbao01/mbao01/issues/207)) ([c89ab26](https://github.com/mbao01/mbao01/commit/c89ab26c9c026ca9dacb36b2dc74c90cf6a67364))
+
+
+
+
 
 ## 0.7.3 (2025-12-12)
 
