@@ -1,3 +1,16 @@
+# (Mon Dec 15 2025)
+
+#### 🐛 Bug Fix
+
+- `@mbao01/common@0.6.4`, `@mbao01/next@0.6.4`, `@mbao01/ui@0.7.4`
+  - feat(sidebar): add styles for data-sidebar-icon attribute [#207](https://github.com/mbao01/mbao01/pull/207) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # (Fri Dec 12 2025)
 
 #### 🐛 Bug Fix
