@@ -1,22 +1,22 @@
 import {
-  AudioWaveform,
-  BookOpen,
-  Bot,
-  ChevronRight,
-  Command,
-  File,
-  Folder,
-  Frame,
-  GalleryVerticalEnd,
-  Map,
-  Minus,
-  MoreHorizontal,
-  PieChart,
-  Plus,
-  Settings2,
-  Share,
-  SquareTerminal,
-  Trash2,
+  AudioWaveformIcon,
+  BookOpenIcon,
+  BotIcon,
+  ChevronRightIcon,
+  CommandIcon,
+  FileIcon,
+  FolderIcon,
+  FrameIcon,
+  GalleryVerticalEndIcon,
+  MapIcon,
+  MinusIcon,
+  MoreHorizontalIcon,
+  PieChartIcon,
+  PlusIcon,
+  Settings2Icon,
+  ShareIcon,
+  SquareTerminalIcon,
+  Trash2Icon,
 } from "lucide-react";
 import { Collapsible } from "../../../../Collapsible";
 import { DropdownMenu } from "../../../../Menu";
@@ -39,17 +39,17 @@ const data = {
   teams: [
     {
       name: "Acme Inc",
-      logo: GalleryVerticalEnd,
+      logo: GalleryVerticalEndIcon,
       plan: "Enterprise",
     },
     {
       name: "Acme Corp.",
-      logo: AudioWaveform,
+      logo: AudioWaveformIcon,
       plan: "Startup",
     },
     {
       name: "Evil Corp.",
-      logo: Command,
+      logo: CommandIcon,
       plan: "Free",
     },
   ],
@@ -57,7 +57,7 @@ const data = {
     {
       title: "Playground",
       url: "#",
-      icon: SquareTerminal,
+      icon: SquareTerminalIcon,
       isActive: true,
       items: [
         {
@@ -78,7 +78,7 @@ const data = {
     {
       title: "Models",
       url: "#",
-      icon: Bot,
+      icon: BotIcon,
       isActive: false,
       items: [
         {
@@ -98,7 +98,7 @@ const data = {
     {
       title: "Documentation",
       url: "#",
-      icon: BookOpen,
+      icon: BookOpenIcon,
       isActive: false,
       items: [
         {
@@ -122,7 +122,7 @@ const data = {
     {
       title: "Settings",
       url: "#",
-      icon: Settings2,
+      icon: Settings2Icon,
       isActive: false,
       items: [
         {
@@ -148,17 +148,17 @@ const data = {
     {
       name: "Design Engineering",
       url: "#",
-      icon: Frame,
+      icon: FrameIcon,
     },
     {
       name: "Sales & Marketing",
       url: "#",
-      icon: PieChart,
+      icon: PieChartIcon,
     },
     {
       name: "Travel",
       url: "#",
-      icon: Map,
+      icon: MapIcon,
     },
   ],
 };
@@ -217,7 +217,7 @@ export const AppSidebarWithCollapsibleGroup = (props: SidebarProps) => {
               >
                 <Collapsible.Trigger>
                   {item.title}{" "}
-                  <ChevronRight className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-90" />
+                  <ChevronRightIcon data-sidebar-icon className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-90" />
                 </Collapsible.Trigger>
               </SidebarGroup.Label>
               <Collapsible.Content>
@@ -251,7 +251,7 @@ export const AppSidebarWithSubMenu = (props: SidebarProps) => {
             <SidebarMenu.Button size="lg" asChild>
               <a href="#">
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                  <GalleryVerticalEnd className="size-4" />
+                  <GalleryVerticalEndIcon className="size-4" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
                   <span className="font-semibold">Documentation</span>
@@ -275,12 +275,12 @@ export const AppSidebarWithSubMenu = (props: SidebarProps) => {
                 <SidebarMenu.Item key={item.title}>
                   <Collapsible.Trigger asChild>
                     <SidebarMenu.Button tooltip={item.title}>
-                      {item.icon && <item.icon />}
+                      {item.icon && <item.icon data-sidebar-icon />}
                       <a href={item.url} className="font-medium">
                         {item.title}
                       </a>
-                      <Plus className="ml-auto group-data-[state=open]/collapsible:hidden" />
-                      <Minus className="ml-auto group-data-[state=closed]/collapsible:hidden" />
+                      <PlusIcon data-sidebar-icon className="ml-auto group-data-[state=open]/collapsible:hidden" />
+                      <MinusIcon data-sidebar-icon className="ml-auto group-data-[state=closed]/collapsible:hidden" />
                     </SidebarMenu.Button>
                   </Collapsible.Trigger>
                   <Collapsible.Content>
@@ -318,7 +318,7 @@ export const AppSidebarWithSecondaryNavigation = (props: SidebarProps) => {
             <SidebarMenu.Button size="lg" asChild>
               <a href="#">
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                  <GalleryVerticalEnd className="size-4" />
+                  <GalleryVerticalEndIcon className="size-4" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
                   <span className="font-semibold">Documentation</span>
@@ -342,12 +342,12 @@ export const AppSidebarWithSecondaryNavigation = (props: SidebarProps) => {
                 <SidebarMenu.Item key={item.title}>
                   <Collapsible.Trigger asChild>
                     <SidebarMenu.Button tooltip={item.title}>
-                      {item.icon && <item.icon />}
+                      {item.icon && <item.icon data-sidebar-icon />}
                       <a href={item.url} className="font-medium">
                         {item.title}
                       </a>
-                      <Plus className="ml-auto group-data-[state=open]/collapsible:hidden" />
-                      <Minus className="ml-auto group-data-[state=closed]/collapsible:hidden" />
+                      <PlusIcon data-sidebar-icon className="ml-auto group-data-[state=open]/collapsible:hidden" />
+                      <MinusIcon data-sidebar-icon className="ml-auto group-data-[state=closed]/collapsible:hidden" />
                     </SidebarMenu.Button>
                   </Collapsible.Trigger>
                   <Collapsible.Content>
@@ -376,14 +376,14 @@ export const AppSidebarWithSecondaryNavigation = (props: SidebarProps) => {
               <SidebarMenu.Item key={item.name}>
                 <SidebarMenu.Button asChild>
                   <a href={item.url}>
-                    <item.icon />
+                    <item.icon data-sidebar-icon />
                     <span>{item.name}</span>
                   </a>
                 </SidebarMenu.Button>
                 <DropdownMenu>
                   <DropdownMenu.Trigger asChild>
                     <SidebarMenu.Action showOnHover>
-                      <MoreHorizontal />
+                      <MoreHorizontalIcon data-sidebar-icon />
                       <span className="sr-only">More</span>
                     </SidebarMenu.Action>
                   </DropdownMenu.Trigger>
@@ -393,16 +393,16 @@ export const AppSidebarWithSecondaryNavigation = (props: SidebarProps) => {
                     align={isMobile ? "end" : "start"}
                   >
                     <DropdownMenu.Item>
-                      <Folder className="text-muted-foreground" />
+                      <FolderIcon data-sidebar-icon className="text-muted-foreground" />
                       <span>View Project</span>
                     </DropdownMenu.Item>
                     <DropdownMenu.Item>
-                      <Share className="text-muted-foreground" />
+                      <ShareIcon data-sidebar-icon className="text-muted-foreground" />
                       <span>Share Project</span>
                     </DropdownMenu.Item>
                     <DropdownMenu.Separator />
                     <DropdownMenu.Item>
-                      <Trash2 className="text-muted-foreground" />
+                      <Trash2Icon data-sidebar-icon className="text-muted-foreground" />
                       <span>Delete Project</span>
                     </DropdownMenu.Item>
                   </DropdownMenu.Content>
@@ -411,7 +411,7 @@ export const AppSidebarWithSecondaryNavigation = (props: SidebarProps) => {
             ))}
             <SidebarMenu.Item>
               <SidebarMenu.Button>
-                <MoreHorizontal />
+                <MoreHorizontalIcon data-sidebar-icon />
                 <span>More</span>
               </SidebarMenu.Button>
             </SidebarMenu.Item>
@@ -463,7 +463,7 @@ const Tree = ({ item }: { item: TreeType }) => {
         isActive={name === "button.tsx"}
         className="data-[active=true]:bg-transparent"
       >
-        <File />
+        <FileIcon data-sidebar-icon />
         {name}
       </SidebarMenu.Button>
     );
@@ -477,8 +477,8 @@ const Tree = ({ item }: { item: TreeType }) => {
       >
         <Collapsible.Trigger asChild>
           <SidebarMenu.Button>
-            <ChevronRight className="transition-transform" />
-            <Folder />
+            <ChevronRightIcon data-sidebar-icon className="transition-transform" />
+            <FolderIcon data-sidebar-icon />
             {name}
           </SidebarMenu.Button>
         </Collapsible.Trigger>
@@ -505,7 +505,7 @@ export const AppSidebarCollapsibleTree = (props: SidebarProps) => {
               {treeData.changes.map((item, index) => (
                 <SidebarMenu.Item key={index}>
                   <SidebarMenu.Button>
-                    <File />
+                    <FileIcon data-sidebar-icon />
                     {item.file}
                   </SidebarMenu.Button>
                   <SidebarMenu.Badge>{item.state}</SidebarMenu.Badge>
