@@ -36,11 +36,18 @@ export const ThemeSwitch = ({
   theme: defaultTheme,
   ...props
 }: ThemeSwitchProps) => {
-  const [theme, setTheme] = useState(defaultTheme ?? getTheme);
+  const [theme, setTheme] = useState(defaultTheme ?? null);
+  const [isMounted, setIsMounted] = useState(false);
 
   useLayoutEffect(() => {
-    if (theme) saveTheme(theme);
-  }, [theme]);
+    const storedTheme = getTheme();
+    setTheme(storedTheme ?? "dark");
+    setIsMounted(true);
+  }, []);
+
+  useLayoutEffect(() => {
+    if (theme && isMounted) saveTheme(theme);
+  }, [theme, isMounted]);
 
   if (render) {
     return render({ theme, setTheme });
@@ -52,18 +59,23 @@ export const ThemeSwitch = ({
   };
 
   return (
-    <label className={cn(getThemeSwitchClasses(), className)} {...props}>
+    <label className={cn(getThemeSwitchClasses(), "transition-opacity duration-300",
+        isMounted ? "opacity-100" : "opacity-0",
+        className
+      )}
+      {...props}
+    >
       {/* this hidden checkbox controls the state */}
       <input
         hidden
         name={name}
         type="checkbox"
         className="theme-controller"
-        checked={theme === "light"}
+        checked={isMounted ? theme === "light" : false}
         onChange={changeTheme}
       />
-      <MoonIcon title="Switch to dark theme" />
-      <SunIcon title="Switch to light theme" />
+      <MoonIcon title="Switch to light theme" />
+      <SunIcon title="Switch to dark theme" />
     </label>
   );
 };
