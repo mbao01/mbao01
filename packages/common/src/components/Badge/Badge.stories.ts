@@ -61,3 +61,10 @@ export const TinyBadge: Story = {
     children: "Tiny Badge",
   },
 };
+
+export const RoundedBadge: Story = {
+  args: {
+    rounded: "xs",
+    children: "Rounded Badge",
+  },
+};
