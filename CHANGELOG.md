@@ -1,3 +1,16 @@
+# (Mon Dec 29 2025)
+
+#### 🐛 Bug Fix
+
+- `@mbao01/common@0.6.5`, `@mbao01/next@0.6.5`, `@mbao01/ui@0.7.5`
+  - Additional badge variant [#209](https://github.com/mbao01/mbao01/pull/209) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # (Mon Dec 15 2025)
 
 #### 🐛 Bug Fix
