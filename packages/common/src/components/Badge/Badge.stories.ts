@@ -39,6 +39,14 @@ export const SuccessBadge: Story = {
   },
 };
 
+export const SoftBadge: Story = {
+  args: {
+    soft: true,
+    variant: "success",
+    children: "Success",
+  },
+};
+
 export const OutlineBadge: Story = {
   args: {
     outline: true,
