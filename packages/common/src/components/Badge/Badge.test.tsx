@@ -9,6 +9,17 @@ describe("Badge", () => {
   });
 
   it.each([
+    ["has soft", true],
+    ["has no soft", false],
+  ] as const)("%s", (description, soft) => {
+    const label = `Badge ${description}`;
+    const { asFragment } = render(<Badge soft={soft}>{label}</Badge>);
+
+    expect(screen.getByText(label)).toBeInTheDocument();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it.each([
     ["has outline", true],
     ["has no outline", false],
   ] as const)("%s", (description, outline) => {

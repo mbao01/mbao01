@@ -39,6 +39,14 @@ export const SuccessBadge: Story = {
   },
 };
 
+export const SoftBadge: Story = {
+  args: {
+    soft: true,
+    variant: "success",
+    children: "Success",
+  },
+};
+
 export const OutlineBadge: Story = {
   args: {
     outline: true,
@@ -51,5 +59,12 @@ export const TinyBadge: Story = {
   args: {
     size: "xs",
     children: "Tiny Badge",
+  },
+};
+
+export const RoundedBadge: Story = {
+  args: {
+    rounded: "xs",
+    children: "Rounded Badge",
   },
 };

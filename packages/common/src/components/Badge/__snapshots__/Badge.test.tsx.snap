@@ -3,7 +3,7 @@
 exports[`Badge > has accent variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-accent text-xs rounded-md"
+    class="badge badge-accent"
   >
     accent badge
   </span>
@@ -13,7 +13,7 @@ exports[`Badge > has accent variant 1`] = `
 exports[`Badge > has error variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-error text-xs rounded-md"
+    class="badge badge-error"
   >
     error badge
   </span>
@@ -23,7 +23,7 @@ exports[`Badge > has error variant 1`] = `
 exports[`Badge > has ghost variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-ghost text-xs rounded-md"
+    class="badge badge-ghost"
   >
     ghost badge
   </span>
@@ -33,7 +33,7 @@ exports[`Badge > has ghost variant 1`] = `
 exports[`Badge > has info variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-info text-xs rounded-md"
+    class="badge badge-info"
   >
     info badge
   </span>
@@ -43,7 +43,7 @@ exports[`Badge > has info variant 1`] = `
 exports[`Badge > has large (lg) size 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-ghost badge-lg rounded-md"
+    class="badge badge-ghost badge-lg"
   >
     large
   </span>
@@ -53,7 +53,7 @@ exports[`Badge > has large (lg) size 1`] = `
 exports[`Badge > has medium (md) size 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-ghost badge-md rounded-md"
+    class="badge badge-ghost badge-md"
   >
     medium
   </span>
@@ -63,7 +63,7 @@ exports[`Badge > has medium (md) size 1`] = `
 exports[`Badge > has neutral variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-neutral text-xs rounded-md"
+    class="badge badge-neutral"
   >
     neutral badge
   </span>
@@ -73,9 +73,19 @@ exports[`Badge > has neutral variant 1`] = `
 exports[`Badge > has no outline 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-ghost text-xs rounded-md"
+    class="badge badge-ghost"
   >
     Badge has no outline
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Badge > has no soft 1`] = `
+<DocumentFragment>
+  <span
+    class="badge badge-ghost"
+  >
+    Badge has no soft
   </span>
 </DocumentFragment>
 `;
@@ -83,7 +93,7 @@ exports[`Badge > has no outline 1`] = `
 exports[`Badge > has outline 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-ghost badge-outline text-xs rounded-md border-base-300"
+    class="badge badge-ghost badge-outline"
   >
     Badge has outline
   </span>
@@ -93,7 +103,7 @@ exports[`Badge > has outline 1`] = `
 exports[`Badge > has primary variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-primary text-xs rounded-md"
+    class="badge badge-primary"
   >
     primary badge
   </span>
@@ -103,7 +113,7 @@ exports[`Badge > has primary variant 1`] = `
 exports[`Badge > has secondary variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-secondary text-xs rounded-md"
+    class="badge badge-secondary"
   >
     secondary badge
   </span>
@@ -113,9 +123,19 @@ exports[`Badge > has secondary variant 1`] = `
 exports[`Badge > has small (sm) size 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-ghost badge-sm rounded-md"
+    class="badge badge-ghost badge-sm"
   >
     small
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Badge > has soft 1`] = `
+<DocumentFragment>
+  <span
+    class="badge badge-ghost badge-soft"
+  >
+    Badge has soft
   </span>
 </DocumentFragment>
 `;
@@ -123,7 +143,7 @@ exports[`Badge > has small (sm) size 1`] = `
 exports[`Badge > has success variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-success text-xs rounded-md"
+    class="badge badge-success"
   >
     success badge
   </span>
@@ -133,7 +153,7 @@ exports[`Badge > has success variant 1`] = `
 exports[`Badge > has tiny (xs) size 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-ghost badge-xs rounded-md"
+    class="badge badge-ghost badge-xs"
   >
     tiny
   </span>
@@ -143,7 +163,7 @@ exports[`Badge > has tiny (xs) size 1`] = `
 exports[`Badge > has warning variant 1`] = `
 <DocumentFragment>
   <span
-    class="badge badge-warning text-xs rounded-md"
+    class="badge badge-warning"
   >
     warning badge
   </span>

@@ -1,5 +1,6 @@
 import { ComponentType, ReactNode } from "react";
 import { render, screen } from "@testing-library/react";
+import { Formatter } from "recharts/types/component/DefaultTooltipContent";
 import { describe, expect, it } from "vitest";
 import { Theme } from "../../../utilities";
 import { ChartContext } from "../ChartContext";
@@ -182,7 +183,8 @@ describe("ChartTooltipContent", () => {
       },
     ];
 
-    const formatter = (value: string | number | (string | number)[]) => `$${value}`;
+    const formatter: Formatter<string | number | (string | number)[], string> = (value) =>
+      `$${value}`;
 
     render(
       <TestWrapper>

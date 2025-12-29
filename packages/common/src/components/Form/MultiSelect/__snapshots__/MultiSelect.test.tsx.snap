@@ -19,7 +19,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
       class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between px-2 rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 min-h-fit text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit w-fit py-2 overflow-hidden"
     >
       <span
-        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
+        class="badge badge-ghost relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
       >
         <span
           class="text-xs"
@@ -157,7 +157,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
       class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between px-2 rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 min-h-fit text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit w-fit py-2 overflow-hidden"
     >
       <span
-        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
+        class="badge badge-ghost relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
       >
         <span
           class="text-xs"
@@ -295,7 +295,7 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
       class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between px-2 rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 min-h-fit text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit w-fit py-2 overflow-hidden"
     >
       <span
-        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
+        class="badge badge-ghost relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
       >
         <span
           class="text-xs"
@@ -431,7 +431,7 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
       class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between px-2 rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 min-h-fit text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit w-fit py-2 overflow-hidden"
     >
       <span
-        class="badge badge-ghost text-xs relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
+        class="badge badge-ghost relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
       >
         <span
           class="text-xs"

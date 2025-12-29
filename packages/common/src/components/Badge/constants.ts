@@ -14,6 +14,9 @@ export const getBadgeClasses = cva("badge", {
       success: "badge-success",
       warning: "badge-warning",
     },
+    soft: {
+      true: "badge-soft",
+    },
     outline: {
       true: "badge-outline",
     },
@@ -30,21 +33,6 @@ export const getBadgeClasses = cva("badge", {
       lg: "rounded-lg",
     },
   }),
-  compoundVariants: [
-    {
-      size: undefined,
-      className: "text-xs",
-    },
-    {
-      rounded: undefined,
-      className: "rounded-md",
-    },
-    {
-      variant: "ghost",
-      outline: true,
-      className: "border-base-300",
-    },
-  ],
   defaultVariants: {
     variant: "ghost",
   },
