@@ -9,7 +9,7 @@ import { type ChartConfig } from "./types";
 // Helper to extract item config from a payload.
 export const getPayloadConfigFromPayload = (
   config: ChartConfig,
-  payload: LegendPayload | TooltipPayload<ValueType, NameType>,
+  payload: LegendPayload | Omit<TooltipPayload<ValueType, NameType>, "graphicalItemId">,
   key: string
 ) => {
   if (typeof payload !== "object" || payload === null) {
