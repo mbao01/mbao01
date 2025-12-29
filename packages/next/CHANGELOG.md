@@ -1,19 +1,15 @@
-# v0.6.5 (Mon Dec 29 2025)
-
-#### 🐛 Bug Fix
-
-- Additional badge variant [#209](https://github.com/mbao01/mbao01/pull/209) ([@mbao01](https://github.com/mbao01))
-
-#### Authors: 1
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 0.6.5 (2025-12-29)
+
+**Note:** Version bump only for package @mbao01/next
+
+
+
+
 
 ## 0.6.4 (2025-12-15)
 
