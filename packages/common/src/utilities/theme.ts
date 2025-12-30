@@ -20,7 +20,7 @@ export const getTheme = () => {
 };
 
 export const saveTheme = (theme: Theme | null) => {
-  let newTheme = theme ?? getSystemTheme();
+  const newTheme = theme ?? getSystemTheme();
   if (!newTheme) return null;
 
   const cookies = new Cookies();
