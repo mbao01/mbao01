@@ -1,3 +1,16 @@
+# (Tue Dec 30 2025)
+
+#### 🚀 Enhancement
+
+- `@mbao01/common@0.7.0`, `@mbao01/next@0.7.0`, `@mbao01/ui@0.8.0`
+  - Add flat theme palette [#210](https://github.com/mbao01/mbao01/pull/210) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # (Mon Dec 29 2025)
 
 #### 🐛 Bug Fix

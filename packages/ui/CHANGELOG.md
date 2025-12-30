@@ -1,3 +1,15 @@
+# v0.8.0 (Tue Dec 30 2025)
+
+#### 🚀 Enhancement
+
+- Add flat theme palette [#210](https://github.com/mbao01/mbao01/pull/210) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
