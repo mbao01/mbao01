@@ -1,4 +1,4 @@
-import { render, screen, within } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Cookies from "universal-cookie";
 import { describe, expect, it, MockInstance, vi } from "vitest";
@@ -30,17 +30,22 @@ describe("ThemeSwitch", () => {
 
   it("renders a theme switcher", () => {
     (cookies.get as unknown as MockInstance).mockReturnValue("light");
-
     const { asFragment } = render(<ThemeSwitch />);
+    const [systemInput, darkInput, lightInput] = screen.getAllByRole("checkbox", { hidden: true });
 
-    expect(screen.getByRole("checkbox", { hidden: true })).toBeChecked();
+    expect(systemInput).not.toBeChecked();
+    expect(darkInput).not.toBeChecked();
+    expect(lightInput).toBeChecked();
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("should render default theme", () => {
     const { asFragment } = render(<ThemeSwitch theme="dark" />);
+    const [systemInput, darkInput, lightInput] = screen.getAllByRole("checkbox", { hidden: true });
 
-    expect(screen.getByRole("checkbox", { hidden: true })).not.toBeChecked();
+    expect(systemInput).not.toBeChecked();
+    expect(darkInput).toBeChecked();
+    expect(lightInput).not.toBeChecked();
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -50,17 +55,19 @@ describe("ThemeSwitch", () => {
     const user = userEvent.setup();
     const { asFragment } = render(<ThemeSwitch aria-label="Switch theme" />);
 
-    const label = screen.getByLabelText("Switch theme");
+    let label = screen.getByLabelText("Switch to light theme");
+    const [, darkInput, lightInput] = screen.getAllByRole("checkbox", { hidden: true });
 
-    expect(screen.getByRole("checkbox", { hidden: true })).toBeChecked(); // light mode
+    expect(lightInput).toBeChecked(); // light mode
 
-    await user.click(within(label).getByTitle("Switch to dark theme"));
+    await user.click(label);
 
-    expect(screen.getByRole("checkbox", { hidden: true })).not.toBeChecked(); // dark mode
+    expect(darkInput).not.toBeChecked(); // still light mode
 
-    await user.click(within(label).getByTitle("Switch to light theme"));
+    label = screen.getByLabelText("Switch to dark theme");
+    await user.click(label);
 
-    expect(screen.getByRole("checkbox", { hidden: true })).toBeChecked(); // light mode
+    expect(darkInput).toBeChecked(); // dark mode
     expect(asFragment()).toMatchSnapshot();
   });
 

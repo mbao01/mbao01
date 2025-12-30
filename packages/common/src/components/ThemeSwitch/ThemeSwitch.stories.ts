@@ -29,8 +29,14 @@ export const DefaultTheme: Story = {
   },
 };
 
-export const WithLabel: Story = {
+export const WithPalette: Story = {
   args: {
-    children: "Switch theme",
+    swap: false,
+  },
+};
+
+export const WithSwap: Story = {
+  args: {
+    swap: true,
   },
 };

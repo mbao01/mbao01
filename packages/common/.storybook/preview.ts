@@ -33,6 +33,7 @@ export const decorators = [
     },
     defaultTheme: "🌓 System",
     attributeName: "data-theme",
+    parentSelector: "body",
   }),
 ];
 
