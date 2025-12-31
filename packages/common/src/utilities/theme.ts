@@ -12,6 +12,10 @@ export const getTheme = () => {
   return theme;
 };
 
+export const getSystemTheme = (): Theme => {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+};
+
 export const saveTheme = (theme: Theme) => {
   const cookies = new Cookies();
   cookies.set(THEME_COOKIE_NAME, theme, { path: "/", secure: true });

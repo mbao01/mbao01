@@ -2,7 +2,7 @@
 
 import type { ChangeEvent } from "react";
 import { useLayoutEffect, useState } from "react";
-import { cn, getTheme, saveTheme } from "../../utilities";
+import { cn, getTheme, getSystemTheme, saveTheme } from "../../utilities";
 import { getThemeSwitchClasses } from "./constants";
 import { type ThemeSwitchProps } from "./types";
 
@@ -36,12 +36,13 @@ export const ThemeSwitch = ({
   theme: defaultTheme,
   ...props
 }: ThemeSwitchProps) => {
-  const [theme, setTheme] = useState(defaultTheme ?? null);
+  const [theme, setTheme] = useState(defaultTheme ?? getTheme());
   const [isMounted, setIsMounted] = useState(false);
 
   useLayoutEffect(() => {
-    const storedTheme = getTheme();
-    setTheme(storedTheme ?? "dark");
+    if (!theme) {
+      setTheme(getSystemTheme());
+    }
     setIsMounted(true);
   }, []);
 
@@ -59,8 +60,11 @@ export const ThemeSwitch = ({
   };
 
   return (
-    <label className={cn(getThemeSwitchClasses(), "transition-opacity duration-300",
-        isMounted ? "opacity-100" : "opacity-0",
+    <label
+      className={cn(
+        getThemeSwitchClasses(),
+        "transition-opacity duration-300 opacity-0",
+        { "opacity-100": isMounted },
         className
       )}
       {...props}
@@ -71,7 +75,7 @@ export const ThemeSwitch = ({
         name={name}
         type="checkbox"
         className="theme-controller"
-        checked={isMounted ? theme === "light" : false}
+        checked={theme === "light"}
         onChange={changeTheme}
       />
       <MoonIcon title="Switch to light theme" />
