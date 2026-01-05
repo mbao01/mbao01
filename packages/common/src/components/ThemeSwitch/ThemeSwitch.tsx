@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { MonitorIcon, MoonIcon, SunIcon } from "lucide-react";
 import type { SwitchProps, ThemeSwitchProps } from "./types";
 import { cn, getTheme, saveTheme, Theme } from "../../utilities";
@@ -40,9 +40,22 @@ export const ThemeSwitch = ({
 }: ThemeSwitchProps) => {
   const [theme, setTheme] = useState(() => defaultTheme ?? getTheme());
 
+
   useLayoutEffect(() => {
     saveTheme(theme);
   }, [theme]);
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      const attr = document.body.getAttribute("data-theme");
+      if (attr === "dark" || attr === "light") {
+        setTheme(prev => prev === attr ? prev : attr);
+      }
+    });
+    observer.observe(document.body, { attributes: true, attributeFilter: ["data-theme"] });
+    
+    return () => observer.disconnect();
+  }, []);
 
   if (render) {
     return render({ theme, setTheme });
