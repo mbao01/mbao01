@@ -20,10 +20,14 @@ export const getTheme = () => {
 };
 
 export const saveTheme = (theme: Theme | null) => {
-  const newTheme = theme ?? getSystemTheme();
-  if (!newTheme) return null;
-
   const cookies = new Cookies();
-  cookies.set(THEME_COOKIE_NAME, newTheme, { path: "/", secure: true });
-  document.body.setAttribute(THEME_COOKIE_NAME, newTheme);
+
+  if (!theme) {
+    cookies.remove(THEME_COOKIE_NAME);
+    document.body.removeAttribute(THEME_COOKIE_NAME);
+    return;
+  }
+
+  cookies.set(THEME_COOKIE_NAME, theme, { path: "/", secure: true });
+  document.body.setAttribute(THEME_COOKIE_NAME, theme);
 };
