@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { DatetimePicker } from "./DatetimePicker";
 
@@ -62,7 +62,9 @@ describe("DatetimePicker", () => {
       expect(button).toHaveValue(value);
     }
 
-    expect(asFragment()).toMatchSnapshot();
+    await waitFor(() => {
+      expect(asFragment()).toMatchSnapshot();
+    });
   });
 
   it("and the user enter a new date", async () => {
