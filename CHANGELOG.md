@@ -1,3 +1,16 @@
+# (Fri Jan 09 2026)
+
+#### 🐛 Bug Fix
+
+- `@mbao01/common@0.7.1`, `@mbao01/next@0.7.1`, `@mbao01/ui@0.8.1`
+  - Revert "chore(release): trigger release" [#216](https://github.com/mbao01/mbao01/pull/216) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # (Tue Dec 30 2025)
 
 #### 🚀 Enhancement
