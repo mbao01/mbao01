@@ -1,19 +1,18 @@
-# v0.8.1 (Fri Jan 09 2026)
-
-#### 🐛 Bug Fix
-
-- Revert "chore(release): trigger release" [#216](https://github.com/mbao01/mbao01/pull/216) ([@mbao01](https://github.com/mbao01))
-
-#### Authors: 1
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 0.8.1 (2026-01-09)
+
+
+### Reverts
+
+* Revert "chore(release): trigger release (#215)" (#216) ([434a20e](https://github.com/mbao01/mbao01/commit/434a20e315131a700d346b3b44fc776646594442)), closes [#215](https://github.com/mbao01/mbao01/issues/215) [#216](https://github.com/mbao01/mbao01/issues/216)
+
+
+
+
 
 # 0.8.0 (2025-12-30)
 
