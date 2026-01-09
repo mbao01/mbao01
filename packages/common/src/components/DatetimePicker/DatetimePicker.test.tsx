@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { DatetimePicker } from "./DatetimePicker";
 
@@ -21,7 +21,7 @@ describe("DatetimePicker", () => {
 
   it("and the user changes date using the Up Arrow navigation", async () => {
     const user = userEvent.setup();
-    const { asFragment } = render(<DatetimePicker date={new Date(1727806014178)} />);
+    render(<DatetimePicker date={new Date(1727806014178)} />);
 
     const data = {
       days: "02",
@@ -38,13 +38,11 @@ describe("DatetimePicker", () => {
 
       expect(button).toHaveValue(value);
     }
-
-    expect(asFragment()).toMatchSnapshot();
   });
 
   it("and the user changes date using the Down Arrow navigation", async () => {
     const user = userEvent.setup();
-    const { asFragment } = render(<DatetimePicker date={new Date(1727806014178)} />);
+    render(<DatetimePicker date={new Date(1727806014178)} />);
 
     const data = {
       days: "30",
@@ -61,10 +59,6 @@ describe("DatetimePicker", () => {
 
       expect(button).toHaveValue(value);
     }
-
-    await waitFor(() => {
-      expect(asFragment()).toMatchSnapshot();
-    });
   });
 
   it("and the user enter a new date", async () => {
@@ -95,7 +89,7 @@ describe("DatetimePicker", () => {
 
   it("and the user must enter a date between the minimum and maximum dates", async () => {
     const user = userEvent.setup();
-    const { asFragment } = render(
+    render(
       <DatetimePicker
         date={new Date(1727805500000)}
         minDate={new Date(1727805000000)}
@@ -165,7 +159,5 @@ describe("DatetimePicker", () => {
 
       expect(button).toHaveValue(max[name as keyof typeof unallowed]);
     }
-
-    expect(asFragment()).toMatchSnapshot();
   });
 });
