@@ -4,6 +4,7 @@ import { useLayoutEffect, useState } from "react";
 import { MonitorIcon, MoonIcon, SunIcon } from "lucide-react";
 import type { SwitchProps, ThemeSwitchProps } from "./types";
 import { cn, getTheme, saveTheme, Theme } from "../../utilities";
+import { Skeleton } from "../Skeleton";
 import { getThemeSwitchClasses, getThemeSwitchIconClasses } from "./constants";
 
 const Switcher = ({ id, icon, swap, value, label, theme, changeTheme, className }: SwitchProps) => {
@@ -38,11 +39,31 @@ export const ThemeSwitch = ({
   className,
   theme: defaultTheme,
 }: ThemeSwitchProps) => {
+  const [isClient, setIsClient] = useState(false);
   const [theme, setTheme] = useState(() => defaultTheme ?? getTheme());
 
   useLayoutEffect(() => {
     saveTheme(theme);
   }, [theme]);
+
+  useLayoutEffect(() => {
+    setIsClient(true);
+    const observer = new MutationObserver(() => {
+      const attr = document.body.getAttribute("data-theme");
+      if (attr === "dark" || attr === "light") {
+        setTheme(attr);
+      } else {
+        setTheme(null);
+      }
+    });
+    observer.observe(document.body, { attributes: true, attributeFilter: ["data-theme"] });
+
+    return () => observer.disconnect();
+  }, []);
+
+  if (!isClient) {
+    return <Skeleton width={swap ? 4 : 16} />;
+  }
 
   if (render) {
     return render({ theme, setTheme });
