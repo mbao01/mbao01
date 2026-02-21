@@ -44,7 +44,15 @@ const Checkbox = forwardRef<
     defaultChecked
   );
 
-  return <CheckboxRoot ref={ref} checked={checked} onCheckedChange={setChecked} {...props} />;
+  return (
+    <CheckboxRoot
+      ref={ref}
+      checked={checked}
+      onCheckedChange={setChecked}
+      defaultChecked={defaultChecked}
+      {...props}
+    />
+  );
 });
 Checkbox.displayName = "Checkbox";
 
