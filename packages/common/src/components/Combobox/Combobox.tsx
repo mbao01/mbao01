@@ -14,6 +14,10 @@ export const Combobox = <T extends Item>({
   classes,
   emptyText,
   placeholder,
+  outline,
+  variant,
+  disabled,
+  readOnly,
   getItemValue = (item: T) => item.value as string,
   getItemLabel = (item: T) => item.label as string,
   onSelectItem,
@@ -27,9 +31,11 @@ export const Combobox = <T extends Item>({
     <Popover open={open} onOpenChange={setOpen}>
       <Popover.Trigger asChild>
         <Button
-          outline
+          outline={outline}
           role="combobox"
+          variant={variant}
           aria-expanded={open}
+          disabled={disabled}
           className={cn("justify-between", classes?.trigger)}
         >
           {value && currentItem ? getItemLabel(currentItem) : label}
@@ -38,12 +44,18 @@ export const Combobox = <T extends Item>({
       </Popover.Trigger>
       <Popover.Content className={cn("w-[200px] p-0", classes?.popoverContent)}>
         <Command className={cn(classes?.content)}>
-          <Command.Input placeholder={placeholder} className={cn(classes?.input)} />
+          <Command.Input
+            placeholder={placeholder}
+            disabled={disabled}
+            readOnly={readOnly}
+            className={cn(classes?.input)}
+          />
           <Command.Empty className={cn(classes?.empty)}>{emptyText}</Command.Empty>
           <Command.List>
             <Command.Group className={cn(classes?.group)}>
               {items?.map((item) => (
                 <Command.Item
+                  disabled={disabled}
                   key={getItemValue(item)}
                   value={getItemValue(item)}
                   onSelect={(currentValue) => {

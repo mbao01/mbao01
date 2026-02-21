@@ -59,3 +59,27 @@ export const Default: Story = {
     items: frameworks,
   },
 };
+
+export const DisabledCombobox: Story = {
+  args: {
+    label: "Search framework",
+    items: frameworks,
+    disabled: true,
+  },
+};
+
+export const PrimaryCombobox: Story = {
+  args: {
+    label: "Search framework",
+    items: frameworks,
+    variant: "primary",
+  },
+};
+
+export const OutlineCombobox: Story = {
+  args: {
+    label: "Search framework",
+    items: frameworks,
+    outline: true,
+  },
+};
