@@ -1,3 +1,6 @@
+import { ButtonProps } from "../Button/types";
+import { InputProps } from "../Form/Input/types";
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type Item = Record<string, any>;
 
@@ -19,4 +22,5 @@ export type ComboboxProps<T extends Item> = {
     item: string;
     popoverContent: string;
   }>;
-};
+} & Pick<ButtonProps, "variant" | "disabled" | "outline"> &
+  Pick<InputProps, "readOnly">;

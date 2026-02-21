@@ -29,6 +29,9 @@ export const getSelectTriggerClasses = cva(
         md: "select-md",
         lg: "select-lg",
       },
+      readOnly: {
+        true: "cursor-not-allowed pointer-events-none",
+      },
     }),
     compoundVariants: [
       {
