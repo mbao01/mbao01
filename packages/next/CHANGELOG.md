@@ -1,19 +1,18 @@
-# v0.7.3 (Sat Feb 21 2026)
-
-#### 🐛 Bug Fix
-
-- feat(checkbox): fix default checked state [#218](https://github.com/mbao01/mbao01/pull/218) ([@mbao01](https://github.com/mbao01))
-
-#### Authors: 1
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 0.7.3 (2026-02-21)
+
+
+### Features
+
+* **checkbox:** fix default checked state ([#218](https://github.com/mbao01/mbao01/issues/218)) ([182341d](https://github.com/mbao01/mbao01/commit/182341df58c13d446aa4d68421aa57eca965bcf8))
+
+
+
+
 
 ## 0.7.2 (2026-02-21)
 
