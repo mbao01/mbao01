@@ -68,6 +68,7 @@ const SelectTrigger = React.forwardRef<
             <SelectPrimitive.Trigger
               id={id}
               ref={ref}
+              aria-readonly={readOnly}
               className={cn(
                 getSelectTriggerClasses({ size, wide, variant, outline, readOnly }),
                 className
@@ -89,7 +90,7 @@ const SelectTrigger = React.forwardRef<
           )}
         >
           {labelPosition === "start" && <LabelForSelect>{label}</LabelForSelect>}
-          <SelectPrimitive.Trigger id={id} ref={ref} {...props}>
+          <SelectPrimitive.Trigger id={id} ref={ref} aria-readonly={readOnly} {...props}>
             {children}
           </SelectPrimitive.Trigger>
           {labelPosition === "end" && <LabelForSelect className="me-0!">{label}</LabelForSelect>}
@@ -101,6 +102,7 @@ const SelectTrigger = React.forwardRef<
       <SelectPrimitive.Trigger
         id={id}
         ref={ref}
+        aria-readonly={readOnly}
         className={cn(
           getSelectTriggerClasses({ size, wide, variant, outline, readOnly }),
           className
