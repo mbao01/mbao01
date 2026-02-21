@@ -1,19 +1,15 @@
-# v0.7.2 (Sat Feb 21 2026)
-
-#### 🐛 Bug Fix
-
-- Combobox and select updates [#217](https://github.com/mbao01/mbao01/pull/217) ([@mbao01](https://github.com/mbao01))
-
-#### Authors: 1
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 0.7.2 (2026-02-21)
+
+**Note:** Version bump only for package @mbao01/next
+
+
+
+
 
 ## 0.7.1 (2026-01-09)
 
