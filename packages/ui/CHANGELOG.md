@@ -1,3 +1,15 @@
+# v0.8.2 (Sat Feb 21 2026)
+
+#### 🐛 Bug Fix
+
+- Combobox and select updates [#217](https://github.com/mbao01/mbao01/pull/217) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

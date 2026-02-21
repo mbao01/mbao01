@@ -1,3 +1,16 @@
+# (Sat Feb 21 2026)
+
+#### 🐛 Bug Fix
+
+- `@mbao01/common@0.7.2`, `@mbao01/next@0.7.2`, `@mbao01/ui@0.8.2`
+  - Combobox and select updates [#217](https://github.com/mbao01/mbao01/pull/217) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # (Fri Jan 09 2026)
 
 #### 🐛 Bug Fix
