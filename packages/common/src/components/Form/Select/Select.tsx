@@ -55,6 +55,7 @@ const SelectTrigger = React.forwardRef<
       wide,
       variant,
       outline,
+      readOnly,
       ...props
     },
     ref
@@ -67,7 +68,10 @@ const SelectTrigger = React.forwardRef<
             <SelectPrimitive.Trigger
               id={id}
               ref={ref}
-              className={cn(getSelectTriggerClasses({ size, wide, variant, outline }), className)}
+              className={cn(
+                getSelectTriggerClasses({ size, wide, variant, outline, readOnly }),
+                className
+              )}
               {...props}
             >
               {children}
@@ -79,7 +83,10 @@ const SelectTrigger = React.forwardRef<
       return (
         <label
           htmlFor={id}
-          className={cn(getSelectTriggerClasses({ size, wide, variant, outline }), className)}
+          className={cn(
+            getSelectTriggerClasses({ size, wide, variant, outline, readOnly }),
+            className
+          )}
         >
           {labelPosition === "start" && <LabelForSelect>{label}</LabelForSelect>}
           <SelectPrimitive.Trigger id={id} ref={ref} {...props}>
@@ -94,7 +101,10 @@ const SelectTrigger = React.forwardRef<
       <SelectPrimitive.Trigger
         id={id}
         ref={ref}
-        className={cn(getSelectTriggerClasses({ size, wide, variant, outline }), className)}
+        className={cn(
+          getSelectTriggerClasses({ size, wide, variant, outline, readOnly }),
+          className
+        )}
         {...props}
       >
         {children}

@@ -6,6 +6,7 @@ type ArgsType = Partial<{
   size: "xs" | "sm" | "md" | "lg";
   wide: boolean;
   outline: boolean;
+  readOnly: boolean;
   variant:
     | "default"
     | "primary"
@@ -23,7 +24,7 @@ type ArgsType = Partial<{
 }>;
 
 const withSelect = (_: StoryFn, context: StoryContext<ArgsType>) => {
-  const { size, wide, variant, outline, label, labelPosition, placeholder, className } =
+  const { size, wide, variant, outline, readOnly, label, labelPosition, placeholder, className } =
     context.args;
 
   return (
@@ -33,6 +34,7 @@ const withSelect = (_: StoryFn, context: StoryContext<ArgsType>) => {
         wide={wide}
         variant={variant}
         outline={outline}
+        readOnly={readOnly}
         label={label}
         labelPosition={labelPosition}
         className={className}
@@ -84,6 +86,7 @@ const meta = {
   argTypes: {
     wide: { control: "boolean" },
     outline: { control: "boolean" },
+    readOnly: { control: "boolean" },
     size: {
       control: "select",
       options: ["xs", "sm", "md", "lg"],
@@ -151,6 +154,13 @@ export const LabelForSelect: Story = {
     label: "Type",
     wide: true,
     outline: true,
+    placeholder: "Theme",
+  },
+};
+
+export const ReadOnlySelect: Story = {
+  args: {
+    readOnly: true,
     placeholder: "Theme",
   },
 };
