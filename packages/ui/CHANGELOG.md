@@ -1,3 +1,15 @@
+# v0.8.3 (Sat Feb 21 2026)
+
+#### 🐛 Bug Fix
+
+- feat(checkbox): fix default checked state [#218](https://github.com/mbao01/mbao01/pull/218) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
