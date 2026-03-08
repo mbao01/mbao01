@@ -1,19 +1,18 @@
-# v0.9.0 (Sun Mar 08 2026)
-
-#### 🚀 Enhancement
-
-- feat(popover): expose Arrow, Close and Achor popover components [#219](https://github.com/mbao01/mbao01/pull/219) ([@mbao01](https://github.com/mbao01))
-
-#### Authors: 1
-
-- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
-
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# 0.9.0 (2026-03-08)
+
+
+### Features
+
+* **popover:** expose Arrow, Close and Achor popover components ([#219](https://github.com/mbao01/mbao01/issues/219)) ([a8eb80f](https://github.com/mbao01/mbao01/commit/a8eb80f16596704230407e17580f91a839a065c3))
+
+
+
+
 
 ## 0.8.3 (2026-02-21)
 
