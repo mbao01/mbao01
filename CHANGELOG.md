@@ -1,3 +1,16 @@
+# (Sun Mar 08 2026)
+
+#### 🚀 Enhancement
+
+- `@mbao01/common@0.8.0`, `@mbao01/next@0.8.0`, `@mbao01/ui@0.9.0`
+  - feat(popover): expose Arrow, Close and Achor popover components [#219](https://github.com/mbao01/mbao01/pull/219) ([@mbao01](https://github.com/mbao01))
+
+#### Authors: 1
+
+- Ayomide Bakare ([@mbao01](https://github.com/mbao01))
+
+---
+
 # (Sat Feb 21 2026)
 
 #### 🐛 Bug Fix
