@@ -1,0 +1,57 @@
+name: Changeset Check
+
+on:
+  workflow_call:
+    outputs:
+      exists:
+        description: "Whether there are pending changesets"
+        value: ${{ jobs.check.outputs.exists }}
+      skip:
+        description: "Whether to skip changeset or not"
+        value: ${{ jobs.check.outputs.skip }}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      exists: ${{ steps.result.outputs.exists }}
+      skip: ${{ steps.result.outputs.skip }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for skip label
+        id: labels
+        run: |
+          LABELS=$(gh pr view ${{ github.event.pull_request.number }} --json labels --jq '.labels[].name')
+          if echo "$LABELS" | grep -qE "no changeset|docs|ci"; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Check changeset
+        id: result
+        run: |
+          if [ "${{ steps.labels.outputs.skip }}" == "true" ]; then
+            echo "exists=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          if pnpm changeset status --since=origin/main 2>&1 | grep -q "no changesets were found"; then
+            echo "exists=false" >> $GITHUB_OUTPUT
+          else
+            echo "exists=true" >> $GITHUB_OUTPUT
+          fi

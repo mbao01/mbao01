@@ -28,9 +28,15 @@ jobs:
           echo "TAG_BRANCH=$TAG_BRANCH" >> $GITHUB_OUTPUT
           echo "Branches where this tag exists : $TAG_BRANCH"
 
+  changeset:
+    uses: ./.github/workflows/callable-changeset.yml
+    secrets: inherit
+
   cancel:
-    needs: [guard]
-    if: ${{ contains(needs.guard.outputs.TAG_BRANCH, 'main') }}
+    needs: [guard, changeset]
+    if: |
+      contains(needs.guard.outputs.TAG_BRANCH, 'main') &&
+      needs.changeset.outputs.exists == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel previous runs

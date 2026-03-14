@@ -29,8 +29,3 @@ runs:
     - name: ⬇️ Install dependencies
       shell: bash
       run: pnpm install
-
-    - name: Check changeset
-      shell: bash
-      run: |
-        pnpm changeset status --since=origin/main
