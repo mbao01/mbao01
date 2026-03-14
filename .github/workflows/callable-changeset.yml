@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       exists: ${{ steps.result.outputs.exists }}
-      skip: ${{ steps.result.outputs.skip }}
+      skip: ${{ steps.labels.outputs.skip }}
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
@@ -31,8 +31,10 @@ jobs:
           LABELS=$(gh pr view --head ${{ github.head_ref || github.ref_name }} --json labels --jq '.labels[].name' 2>/dev/null || echo "")
           if echo "$LABELS" | grep -qE "no changeset|docs|ci"; then
             echo "skip=true" >> $GITHUB_OUTPUT
+            echo "🟢 Skip label found"
           else
             echo "skip=false" >> $GITHUB_OUTPUT
+            echo "🟠 Skip label not found"
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
