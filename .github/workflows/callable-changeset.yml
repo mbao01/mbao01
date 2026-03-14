@@ -42,11 +42,14 @@ jobs:
         run: |
           if [ "${{ steps.labels.outputs.skip }}" == "true" ]; then
             echo "exists=false" >> $GITHUB_OUTPUT
+            echo "🔴 No changeset found"
             exit 0
           fi
 
           if pnpm changeset status --since=origin/main 2>&1 | grep -q "no changesets were found"; then
             echo "exists=false" >> $GITHUB_OUTPUT
+            echo "🔴 No changeset found"
           else
             echo "exists=true" >> $GITHUB_OUTPUT
+            echo "🟢 Changeset found"
           fi
