@@ -307,3 +307,5 @@
   --tw-exit-translate-x: calc(--value(ratio) * 100%);
   --tw-exit-translate-x: --value(--translate- *, [percentage], [length]);
 }
+
+@source "../../src/**/*.{ts,tsx}";
