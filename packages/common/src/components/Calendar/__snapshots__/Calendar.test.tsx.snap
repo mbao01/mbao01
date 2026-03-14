@@ -4,6 +4,7 @@ exports[`Calendar > does not have navigation 1`] = `
 <DocumentFragment>
   <div
     class="rdp-root p-3"
+    lang="en-US"
   >
     <div
       class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 relative"
@@ -466,6 +467,7 @@ exports[`Calendar > has navigable months 1`] = `
 <DocumentFragment>
   <div
     class="rdp-root p-3"
+    lang="en-US"
   >
     <div
       class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 relative"
@@ -1079,6 +1081,7 @@ exports[`Calendar > shows April, 2024 calendar 1`] = `
 <DocumentFragment>
   <div
     class="rdp-root p-3"
+    lang="en-US"
   >
     <div
       class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 relative"

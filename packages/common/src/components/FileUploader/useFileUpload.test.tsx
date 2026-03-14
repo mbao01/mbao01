@@ -18,6 +18,7 @@ describe("useFileUpload", () => {
         isDragReject: false,
         isDragActive: false,
         isFocused: false,
+        isDragGlobal: false,
         isFileDialogActive: false,
         acceptedFiles: [],
         fileRejections: [],

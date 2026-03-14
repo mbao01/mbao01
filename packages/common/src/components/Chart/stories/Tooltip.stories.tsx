@@ -1,4 +1,5 @@
 import type { Meta, StoryContext, StoryObj } from "@storybook/react-vite";
+import { ReactNode } from "react";
 import type { ChartConfig, ChartTooltipContentProps } from "../types";
 import { BarChartExample } from "./examples/Tooltip";
 
@@ -104,12 +105,14 @@ export const CustomLabelTooltip: Story = {
 
 export const LabelFormatterTooltip: Story = {
   args: {
-    labelFormatter: (value: string) => {
-      return new Date(value).toLocaleDateString("en-US", {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-      });
+    labelFormatter: (value: ReactNode) => {
+      return typeof value === "string"
+        ? new Date(value).toLocaleDateString("en-US", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          })
+        : value;
     },
   },
 };

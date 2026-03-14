@@ -79,7 +79,7 @@ describe("Phone", () => {
 
     const countryOptions = screen.getAllByRole("option");
 
-    expect(countryOptions).toHaveLength(9);
+    expect(countryOptions).toHaveLength(10);
     expect(countryOptions[0]).toHaveTextContent("United Kingdom");
 
     await user.click(countryOptions[0]);

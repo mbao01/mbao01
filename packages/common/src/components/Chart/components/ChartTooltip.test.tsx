@@ -1,6 +1,5 @@
 import { ComponentType, ReactNode } from "react";
 import { render, screen } from "@testing-library/react";
-import { Formatter } from "recharts/types/component/DefaultTooltipContent";
 import { describe, expect, it } from "vitest";
 import { Theme } from "../../../utilities";
 import { ChartContext } from "../ChartContext";
@@ -54,6 +53,7 @@ describe("ChartTooltipContent", () => {
     const payload = [
       {
         dataKey: "desktop",
+        graphicalItemId: "desktop",
         name: "desktop",
         value: 186,
         color: "hsl(var(--chart-1))",
@@ -77,6 +77,7 @@ describe("ChartTooltipContent", () => {
       {
         dataKey: "desktop",
         name: "desktop",
+        graphicalItemId: "desktop",
         value: 186,
         color: "hsl(var(--chart-1))",
         payload: { fill: "hsl(var(--chart-1))" },
@@ -84,6 +85,7 @@ describe("ChartTooltipContent", () => {
       {
         dataKey: "mobile",
         name: "mobile",
+        graphicalItemId: "mobile",
         value: 80,
         color: "hsl(var(--chart-2))",
         payload: { fill: "hsl(var(--chart-2))" },
@@ -108,6 +110,7 @@ describe("ChartTooltipContent", () => {
       {
         dataKey: "desktop",
         name: "desktop",
+        graphicalItemId: "desktop",
         value: 186,
         color: "hsl(var(--chart-1))",
         payload: { fill: "hsl(var(--chart-1))" },
@@ -128,6 +131,7 @@ describe("ChartTooltipContent", () => {
       {
         dataKey: "desktop",
         name: "desktop",
+        graphicalItemId: "desktop",
         value: 186,
         color: "hsl(var(--chart-1))",
         payload: { fill: "hsl(var(--chart-1))" },
@@ -149,13 +153,14 @@ describe("ChartTooltipContent", () => {
       {
         dataKey: "desktop",
         name: "desktop",
+        graphicalItemId: "desktop",
         value: 186,
         color: "hsl(var(--chart-1))",
         payload: { fill: "hsl(var(--chart-1))" },
       },
     ];
 
-    const labelFormatter = (value: string | number | (string | number)[]) => `Custom: ${value}`;
+    const labelFormatter = (value: ReactNode) => `Custom: ${value}`;
 
     render(
       <TestWrapper>
@@ -177,14 +182,14 @@ describe("ChartTooltipContent", () => {
       {
         dataKey: "desktop",
         name: "desktop",
+        graphicalItemId: "desktop",
         value: 186,
         color: "hsl(var(--chart-1))",
         payload: { fill: "hsl(var(--chart-1))" },
       },
     ];
 
-    const formatter: Formatter<string | number | (string | number)[], string> = (value) =>
-      `$${value}`;
+    const formatter = (value: ReactNode) => `$${value}`;
 
     render(
       <TestWrapper>
@@ -200,6 +205,7 @@ describe("ChartTooltipContent", () => {
       {
         dataKey: "desktop",
         name: "desktop",
+        graphicalItemId: "desktop",
         value: 186,
         color: "hsl(var(--chart-1))",
         payload: { fill: "hsl(var(--chart-1))" },
@@ -220,6 +226,7 @@ describe("ChartTooltipContent", () => {
       {
         dataKey: "desktop",
         name: "desktop",
+        graphicalItemId: "desktop",
         value: 186,
         color: "hsl(var(--chart-1))",
         payload: { fill: "hsl(var(--chart-1))" },
@@ -227,6 +234,7 @@ describe("ChartTooltipContent", () => {
       {
         dataKey: "mobile",
         name: "mobile",
+        graphicalItemId: "mobile",
         value: 80,
         color: "hsl(var(--chart-2))",
         payload: { fill: "hsl(var(--chart-2))" },
@@ -247,6 +255,7 @@ describe("ChartTooltipContent", () => {
       {
         dataKey: "desktop",
         name: "desktop",
+        graphicalItemId: "desktop",
         value: 186,
         color: "hsl(var(--chart-1))",
         payload: { fill: "hsl(var(--chart-1))" },
@@ -267,6 +276,7 @@ describe("ChartTooltipContent", () => {
       {
         dataKey: "desktop",
         name: "desktop",
+        graphicalItemId: "desktop",
         value: 1000,
         color: "hsl(var(--chart-1))",
         payload: { fill: "hsl(var(--chart-1))" },
@@ -287,6 +297,8 @@ describe("ChartTooltipContent", () => {
     const payload = [
       {
         dataKey: "desktop",
+        name: "desktop",
+        graphicalItemId: "desktop",
         customName: "Desktop Computer",
         value: 186,
         color: "hsl(var(--chart-1))",
@@ -308,6 +320,7 @@ describe("ChartTooltipContent", () => {
       {
         dataKey: "desktop",
         name: "desktop",
+        graphicalItemId: "desktop",
         value: 186,
         color: "hsl(var(--chart-1))",
         payload: { fill: "hsl(var(--chart-1))" },
