@@ -15,10 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ❌ Fail — no changeset found
-        if: |
-          needs.changeset.outputs.exists == 'false' &&
-          needs.changeset.outputs.skip == 'false'
+        # if: |
+        #   needs.changeset.outputs.exists == 'false' &&
+        #   needs.changeset.outputs.skip == 'false'
         run: |
+          echo "${{ toJSON(needs.changeset.outputs) }}"
           echo "::error::No changeset found. Run 'pnpm changeset add' or 'pnpm changeset add --empty' and commit the generated file."
           exit 1
       - name: 🛑 Cancel previous runs
