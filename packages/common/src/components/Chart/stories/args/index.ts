@@ -91,7 +91,7 @@ export const lineChartArgs: ArgTypes = {
 type AreaArgKey = "area" | "areaChart" | "xAxis" | "yAxis";
 
 export type AreaChartProps = {
-  area: OmitSVGElement<AreaProps>;
+  area: OmitSVGElement<AreaProps<any, any>>;
   areaChart: CartesianChartProps;
 } & AxisProps;
 

@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import {
   Bar,
   BarChart,
@@ -166,12 +167,14 @@ export const BarChartExample = (props: Partial<BarChartProps>) => {
             <ChartTooltipContent
               className="w-[150px]"
               nameKey="views"
-              labelFormatter={(value: string) => {
-                return new Date(value).toLocaleDateString("en-US", {
-                  month: "short",
-                  day: "numeric",
-                  year: "numeric",
-                });
+              labelFormatter={(value: ReactNode) => {
+                return typeof value === "string"
+                  ? new Date(value).toLocaleDateString("en-US", {
+                      month: "short",
+                      day: "numeric",
+                      year: "numeric",
+                    })
+                  : value;
               }}
             />
           }

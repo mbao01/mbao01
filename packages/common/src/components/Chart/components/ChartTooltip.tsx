@@ -83,7 +83,7 @@ export const ChartTooltipContent = forwardRef<HTMLDivElement, ChartTooltipConten
               (item as { fill: string }).fill;
 
             return (
-              <div key={item.dataKey} className={getChartTooltipItemClasses({ indicator })}>
+              <div key={item.graphicalItemId} className={getChartTooltipItemClasses({ indicator })}>
                 {formatter && item?.value !== undefined && item.name ? (
                   formatter(item.value, item.name, item, index, payload)
                 ) : (
