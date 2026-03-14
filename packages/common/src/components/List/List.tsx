@@ -16,9 +16,7 @@ const ListItem = ({ className, children, ...props }: ListItemProps) => (
 );
 
 const ListColumn = ({ flex, className, children, ...props }: ListColumnProps) => {
-  const SlotChild = ["string", "number", "boolean", "undefined", "null"].includes(
-    typeof children
-  ) ? (
+  const SlotChild = ["string", "number", "boolean", "undefined"].includes(typeof children) ? (
     <span>{children}</span>
   ) : (
     children
