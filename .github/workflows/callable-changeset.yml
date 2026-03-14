@@ -17,9 +17,13 @@ jobs:
       exists: ${{ steps.result.outputs.exists }}
       skip: ${{ steps.result.outputs.skip }}
     steps:
-      - uses: actions/checkout@v4
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: 📡 Setup
+        uses: ./.github/setup
 
       - name: Check for skip label
         id: labels
@@ -32,15 +36,6 @@ jobs:
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: pnpm/action-setup@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: pnpm
-
-      - run: pnpm install --frozen-lockfile
 
       - name: Check changeset
         id: result
