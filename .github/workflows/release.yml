@@ -34,11 +34,14 @@ jobs:
 
   cancel:
     needs: [guard, changeset]
-    if: |
-      contains(needs.guard.outputs.TAG_BRANCH, 'main') &&
-      needs.changeset.outputs.exists == 'true'
+    if: ${{ contains(needs.guard.outputs.TAG_BRANCH, 'main') }}
     runs-on: ubuntu-latest
     steps:
+      - name: ❌ Fail — no changeset found
+        if: ${{ needs.changeset.outputs.exists == 'false' }}
+        run: |
+          echo "::error::No changeset found. Run 'pnpm changeset add' or 'pnpm changeset add --empty' and commit the generated file."
+          exit 1
       - name: 🛑 Cancel previous runs
         uses: styfle/cancel-workflow-action@0.12.0
 
