@@ -6,7 +6,15 @@ on:
       - main
 
 jobs:
+  changeset:
+    uses: ./.github/workflows/callable-changeset.yml
+    secrets: inherit
+
   cancel:
+    needs: [changeset]
+    if: |
+      needs.changeset.outputs.exists == 'true' ||
+      needs.changeset.outputs.skip == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel previous runs

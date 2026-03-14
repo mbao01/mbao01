@@ -48,7 +48,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@mbao01/common": "workspace:^",
+    "@mbao01/common": "workspace:*",
     "clsx": "^2.1.1",
     "lucide-react": "^0.577.0"
   },
