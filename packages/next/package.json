@@ -15,6 +15,15 @@
   ],
   "main": "./src/index.ts",
   "types": "dist/types/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/types/src/index.d.ts",
+        "default": "./src/index.ts"
+      }
+    },
+    "./styles": "./src/stylesheets/index.css"
+  },
   "files": [
     "src",
     "dist/types"
