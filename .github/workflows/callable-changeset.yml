@@ -24,7 +24,7 @@ jobs:
       - name: Check for skip label
         id: labels
         run: |
-          LABELS=$(gh pr view ${{ github.event.pull_request.number }} --json labels --jq '.labels[].name')
+          LABELS=$(gh pr view --head ${{ github.head_ref || github.ref_name }} --json labels --jq '.labels[].name' 2>/dev/null || echo "")
           if echo "$LABELS" | grep -qE "no changeset|docs|ci"; then
             echo "skip=true" >> $GITHUB_OUTPUT
           else
