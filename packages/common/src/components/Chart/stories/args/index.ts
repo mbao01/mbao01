@@ -91,6 +91,7 @@ export const lineChartArgs: ArgTypes = {
 type AreaArgKey = "area" | "areaChart" | "xAxis" | "yAxis";
 
 export type AreaChartProps = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   area: OmitSVGElement<AreaProps<any, any>>;
   areaChart: CartesianChartProps;
 } & AxisProps;
