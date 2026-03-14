@@ -29,6 +29,7 @@ jobs:
         id: labels
         run: |
           LABELS=$(gh pr view --head ${{ github.head_ref || github.ref_name }} --json labels --jq '.labels[].name' 2>/dev/null || echo "")
+          echo "::notice::$LABELS"
           if echo "$LABELS" | grep -qE "no changeset|docs|ci"; then
             echo "skip=true" >> $GITHUB_OUTPUT
             echo "🟢 Skip label found"
