@@ -1,6 +1,6 @@
 import { useMemo } from "react";
-import { cn } from "../../utilities";
 import type { MiniAreaChartProps } from "./types";
+import { cn } from "../../utilities";
 
 const MiniAreaChart = ({
   data,
@@ -29,14 +29,21 @@ const MiniAreaChart = ({
 
     return { linePath: line, areaPath: area };
   }, [data, width, height, strokeWidth]);
+  const randomId = useMemo(() => Math.random().toString(36).slice(2, 8), []);
 
   if (data.length < 2) return null;
 
-  const gradientId = `mini-area-${useMemo(() => Math.random().toString(36).slice(2, 8), [])}`;
+  const gradientId = `mini-area-${randomId}`;
 
   return (
     <div className={cn("inline-flex items-center", className)} {...props}>
-      <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} fill="none" aria-hidden="true">
+      <svg
+        width={width}
+        height={height}
+        viewBox={`0 0 ${width} ${height}`}
+        fill="none"
+        aria-hidden="true"
+      >
         <defs>
           <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor={color} stopOpacity={gradientOpacity} />
@@ -44,7 +51,13 @@ const MiniAreaChart = ({
           </linearGradient>
         </defs>
         <path d={areaPath} fill={`url(#${gradientId})`} />
-        <path d={linePath} stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+        <path
+          d={linePath}
+          stroke={color}
+          strokeWidth={strokeWidth}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     </div>
   );

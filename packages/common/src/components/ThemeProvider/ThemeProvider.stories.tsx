@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { ThemeProvider } from "./ThemeProvider";
+import { Badge } from "../Badge";
 import { Button } from "../Button";
 import { Card } from "../Card";
-import { Badge } from "../Badge";
+import { ThemeProvider } from "./ThemeProvider";
 
 const meta = {
   title: "Foundation/ThemeProvider",
@@ -34,7 +34,7 @@ const DemoContent = () => (
     <Card border="solid" className="max-w-sm">
       <Card.Body>
         <Card.Title>Branded Card</Card.Title>
-        <p>This card inherits the brand's design tokens for consistent styling.</p>
+        <p>This card inherits the brand&apos;s design tokens for consistent styling.</p>
         <Card.Actions>
           <Button variant="primary" size="sm">
             Action

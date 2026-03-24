@@ -8,7 +8,13 @@ const meta = {
     layout: "centered",
   },
   tags: ["autodocs"],
-  decorators: [(Story) => <div className="w-80"><Story /></div>],
+  decorators: [
+    (Story) => (
+      <div className="w-80">
+        <Story />
+      </div>
+    ),
+  ],
 } satisfies Meta<typeof WidgetShell>;
 
 export default meta;
@@ -56,20 +62,22 @@ export const Empty: Story = {
 };
 
 export const AllStates: Story = {
-  render: () => (
-    <div className="flex flex-col gap-4 w-80">
-      <WidgetShell state="loading" title="Loading Widget">
-        <p>Content</p>
-      </WidgetShell>
-      <WidgetShell state="ready" title="Ready Widget">
-        <p className="text-2xl font-bold">$45,231</p>
-      </WidgetShell>
-      <WidgetShell state="error" title="Error Widget" onRetry={() => {}}>
-        <p>Content</p>
-      </WidgetShell>
-      <WidgetShell state="empty" title="Empty Widget">
-        <p>Content</p>
-      </WidgetShell>
-    </div>
-  ),
+  render: function AllStatesStory() {
+    return (
+      <div className="flex flex-col gap-4 w-80">
+        <WidgetShell state="loading" title="Loading Widget">
+          <p>Content</p>
+        </WidgetShell>
+        <WidgetShell state="ready" title="Ready Widget">
+          <p className="text-2xl font-bold">$45,231</p>
+        </WidgetShell>
+        <WidgetShell state="error" title="Error Widget">
+          <p>Content</p>
+        </WidgetShell>
+        <WidgetShell state="empty" title="Empty Widget">
+          <p>Content</p>
+        </WidgetShell>
+      </div>
+    );
+  },
 };

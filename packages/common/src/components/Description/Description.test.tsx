@@ -71,7 +71,7 @@ describe("Description", () => {
   });
 
   it("renders Description.Pair wrapper", () => {
-    const { container } = render(
+    render(
       <Description striped>
         <Description.Pair data-testid="pair">
           <Description.Term>Key</Description.Term>

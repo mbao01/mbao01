@@ -1,5 +1,5 @@
-import { useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import { useState } from "react";
 import { Confetti } from "./Confetti";
 
 const meta = {
@@ -13,13 +13,16 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => {
+  render: function DefaultStory() {
     const [active, setActive] = useState(false);
     return (
       <div className="flex flex-col items-center gap-4">
         <button
           className="btn btn-primary"
-          onClick={() => { setActive(false); setTimeout(() => setActive(true), 10); }}
+          onClick={() => {
+            setActive(false);
+            setTimeout(() => setActive(true), 10);
+          }}
         >
           Celebrate! 🎉
         </button>
@@ -31,7 +34,7 @@ export const Default: Story = {
 };
 
 export const Milestone: Story = {
-  render: () => {
+  render: function MilestoneStory() {
     const [active, setActive] = useState(false);
     return (
       <div className="flex flex-col items-center gap-4">
@@ -39,7 +42,10 @@ export const Milestone: Story = {
         <p className="text-sm text-base-content/60">Savings milestone reached!</p>
         <button
           className="btn btn-success btn-sm"
-          onClick={() => { setActive(false); setTimeout(() => setActive(true), 10); }}
+          onClick={() => {
+            setActive(false);
+            setTimeout(() => setActive(true), 10);
+          }}
         >
           Celebrate
         </button>

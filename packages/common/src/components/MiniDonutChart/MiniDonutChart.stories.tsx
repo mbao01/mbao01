@@ -38,7 +38,7 @@ export const PortfolioAllocation: Story = {
         />
         <div className="flex flex-col gap-0.5 text-xs">
           <span>US Equities 45%</span>
-          <span>Int'l Equities 20%</span>
+          <span>Int&apos;l Equities 20%</span>
           <span>Bonds 20%</span>
           <span>Real Estate 10%</span>
           <span>Cash 5%</span>
@@ -51,16 +51,26 @@ export const PortfolioAllocation: Story = {
 export const InTable: Story = {
   render: () => (
     <table className="table w-[400px]">
-      <thead><tr><th>Fund</th><th>Allocation</th><th>Value</th></tr></thead>
+      <thead>
+        <tr>
+          <th>Fund</th>
+          <th>Allocation</th>
+          <th>Value</th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
           <td>Growth Fund</td>
-          <td><MiniDonutChart size={32} segments={[{value:70},{value:30}]} label="70%" /></td>
+          <td>
+            <MiniDonutChart size={32} segments={[{ value: 70 }, { value: 30 }]} label="70%" />
+          </td>
           <td>$35,000</td>
         </tr>
         <tr>
           <td>Income Fund</td>
-          <td><MiniDonutChart size={32} segments={[{value:45},{value:55}]} label="45%" /></td>
+          <td>
+            <MiniDonutChart size={32} segments={[{ value: 45 }, { value: 55 }]} label="45%" />
+          </td>
           <td>$22,500</td>
         </tr>
       </tbody>

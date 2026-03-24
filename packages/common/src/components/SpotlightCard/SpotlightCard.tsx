@@ -1,8 +1,9 @@
 "use client";
 
-import { useCallback, useRef, useState, type CSSProperties, type MouseEvent } from "react";
-import { cn } from "../../utilities";
+import type { CSSProperties, MouseEvent } from "react";
+import { useCallback, useRef, useState } from "react";
 import type { SpotlightCardProps } from "./types";
+import { cn } from "../../utilities";
 
 const SpotlightCard = ({
   children,
@@ -13,19 +14,16 @@ const SpotlightCard = ({
 }: SpotlightCardProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [isHovered, setIsHovered] = useState(false);
+  const [, setIsHovered] = useState(false);
 
-  const handleMouseMove = useCallback(
-    (e: MouseEvent<HTMLDivElement>) => {
-      if (!containerRef.current) return;
-      const rect = containerRef.current.getBoundingClientRect();
-      setPosition({
-        x: e.clientX - rect.left,
-        y: e.clientY - rect.top,
-      });
-    },
-    []
-  );
+  const handleMouseMove = useCallback((e: MouseEvent<HTMLDivElement>) => {
+    if (!containerRef.current) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    setPosition({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
+  }, []);
 
   return (
     <div

@@ -1,10 +1,27 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
-import { cn } from "../../utilities";
+import { useCallback, useEffect, useState } from "react";
 import type { CountdownTimerProps } from "./types";
+import { cn } from "../../utilities";
 
 type TimeLeft = { days: number; hours: number; minutes: number; seconds: number };
+
+const unitClasses = {
+  sm: "text-[10px]",
+  md: "text-xs",
+  lg: "text-sm",
+} as const;
+
+const Unit = ({ value, unit, size }: { value: number; unit: string; size: "sm" | "md" | "lg" }) => (
+  <div className="flex flex-col items-center">
+    <span className="font-bold tabular-nums">{String(value).padStart(2, "0")}</span>
+    <span className={cn("text-base-content/50 uppercase tracking-wider", unitClasses[size])}>
+      {unit}
+    </span>
+  </div>
+);
+
+const Separator = () => <span className="self-start font-bold text-base-content/30 pt-0.5">:</span>;
 
 const CountdownTimer = ({
   targetDate,
@@ -45,40 +62,23 @@ const CountdownTimer = ({
     lg: "text-4xl gap-3",
   };
 
-  const unitClasses = {
-    sm: "text-[10px]",
-    md: "text-xs",
-    lg: "text-sm",
-  };
-
-  const Unit = ({ value, unit }: { value: number; unit: string }) => (
-    <div className="flex flex-col items-center">
-      <span className="font-bold tabular-nums">{String(value).padStart(2, "0")}</span>
-      <span className={cn("text-base-content/50 uppercase tracking-wider", unitClasses[size])}>{unit}</span>
-    </div>
-  );
-
-  const Separator = () => (
-    <span className="self-start font-bold text-base-content/30 pt-0.5">:</span>
-  );
-
   return (
     <div className={cn("flex flex-col items-center gap-1", className)} {...props}>
       {label && <span className="text-sm text-base-content/60">{label}</span>}
       <div className={cn("flex items-center", sizeClasses[size])}>
         {timeLeft.days > 0 && (
           <>
-            <Unit value={timeLeft.days} unit="days" />
+            <Unit size={size} value={timeLeft.days} unit="days" />
             <Separator />
           </>
         )}
-        <Unit value={timeLeft.hours} unit="hrs" />
+        <Unit size={size} value={timeLeft.hours} unit="hrs" />
         <Separator />
-        <Unit value={timeLeft.minutes} unit="min" />
+        <Unit size={size} value={timeLeft.minutes} unit="min" />
         {showSeconds && (
           <>
             <Separator />
-            <Unit value={timeLeft.seconds} unit="sec" />
+            <Unit size={size} value={timeLeft.seconds} unit="sec" />
           </>
         )}
       </div>

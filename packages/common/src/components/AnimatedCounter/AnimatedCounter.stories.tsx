@@ -1,5 +1,5 @@
-import { useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import { useState } from "react";
 import { AnimatedCounter } from "./AnimatedCounter";
 
 const meta = {
@@ -21,15 +21,21 @@ export const WithDecimals: Story = {
 };
 
 export const Interactive: Story = {
-  render: () => {
+  render: function InteractiveStory() {
     const [val, setVal] = useState(1000);
     return (
       <div className="flex flex-col items-center gap-4">
         <AnimatedCounter value={val} prefix="$" className="text-5xl font-bold" />
         <div className="flex gap-2">
-          <button className="btn btn-sm" onClick={() => setVal((v) => v + 100)}>+$100</button>
-          <button className="btn btn-sm" onClick={() => setVal((v) => v - 100)}>-$100</button>
-          <button className="btn btn-sm" onClick={() => setVal(Math.floor(Math.random() * 50000))}>Random</button>
+          <button className="btn btn-sm" onClick={() => setVal((v) => v + 100)}>
+            +$100
+          </button>
+          <button className="btn btn-sm" onClick={() => setVal((v) => v - 100)}>
+            -$100
+          </button>
+          <button className="btn btn-sm" onClick={() => setVal(Math.floor(Math.random() * 50000))}>
+            Random
+          </button>
         </div>
       </div>
     );

@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { cn } from "../../utilities";
 import type { AnimatedCounterProps } from "./types";
+import { cn } from "../../utilities";
 
 const DIGITS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
@@ -45,6 +45,7 @@ const AnimatedCounter = ({
   useEffect(() => {
     prevValue.current = displayValue;
     setDisplayValue(value);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [value]);
 
   const formatted = separator

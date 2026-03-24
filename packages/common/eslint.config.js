@@ -35,7 +35,7 @@ const customTsConfig = {
     "react-hooks/set-state-in-effect": "off",
     "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
     "@typescript-eslint/consistent-type-definitions": ["error", "type"],
-    "@typescript-eslint/prefer-nullish-coalescing": ["warn"],
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
   },
 };
 
