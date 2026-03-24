@@ -56,6 +56,7 @@ export * from "./components/Sonner";
 export * from "./components/Sparkline";
 export * from "./components/Stack";
 export * from "./components/Stat";
+export * from "./components/StatCard";
 export * from "./components/Status";
 export * from "./components/Table";
 export * from "./components/Tabs";
