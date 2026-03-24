@@ -54,6 +54,15 @@ describe("Box", () => {
     expect(screen.getByTestId("box")).toHaveClass("border-double");
   });
 
+  it("applies strip variant", () => {
+    render(
+      <Box style="strip" data-testid="box">
+        Content
+      </Box>
+    );
+    expect(screen.getByTestId("box")).toHaveClass("border-double", "outline-base-300");
+  });
+
   it("applies elevated variant", () => {
     render(
       <Box style="elevated" data-testid="box">

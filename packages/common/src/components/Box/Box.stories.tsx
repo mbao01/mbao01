@@ -13,6 +13,7 @@ const meta = {
         "default",
         "outlined",
         "bordered",
+        "strip",
         "elevated",
         "ghost",
         "gradient",
@@ -65,6 +66,15 @@ export const DoubleBorder: Story = {
   args: {
     children: content,
     style: "bordered",
+    padding: "lg",
+    rounded: "xl",
+  },
+};
+
+export const Strip: Story = {
+  args: {
+    children: content,
+    style: "strip",
     padding: "lg",
     rounded: "xl",
   },
@@ -136,6 +146,7 @@ export const Allstyles: Story = {
           "default",
           "outlined",
           "bordered",
+          "strip",
           "elevated",
           "ghost",
           "gradient",
