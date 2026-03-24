@@ -60,7 +60,7 @@ describe("Box", () => {
         Content
       </Box>
     );
-    expect(screen.getByTestId("box")).toHaveClass("border-double", "outline-base-300");
+    expect(screen.getByTestId("box")).toHaveClass("border", "border-base-300", "outline-base-300");
   });
 
   it("applies elevated variant", () => {
