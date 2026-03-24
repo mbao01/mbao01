@@ -10,7 +10,7 @@ export const getNavigationMenuListClasses = cva(
 );
 
 export const getNavigationMenuTriggerClasses = cva(
-  "group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors focus:outline-hidden disabled:pointer-events-none disabled:opacity-50",
+  "group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-all duration-200 focus:outline-hidden disabled:pointer-events-none disabled:opacity-50",
   {
     variants: createVariants({
       variant: {
@@ -41,7 +41,7 @@ export const getNavigationMenuContentClasses = cva(
 );
 
 export const getNavigationMenuViewportClasses = cva(
-  "origin-top-center relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border bg-base-100 shadow-sm data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 md:w-[var(--radix-navigation-menu-viewport-width)]"
+  "origin-top-center relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border bg-base-100 shadow-lg data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 md:w-[var(--radix-navigation-menu-viewport-width)]"
 );
 
 export const getNavigationMenuIndicatorClasses = cva(

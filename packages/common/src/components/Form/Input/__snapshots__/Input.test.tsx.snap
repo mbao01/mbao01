@@ -3,7 +3,7 @@
 exports[`Input > handles user input correctly 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 min-h-fit h-10"
+    class="input rounded-md transition-all duration-200 min-h-fit h-10"
     name="username"
     value="John Doe"
   />
@@ -13,7 +13,7 @@ exports[`Input > handles user input correctly 1`] = `
 exports[`Input > has 'base' ('md') input 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 input-md"
+    class="input rounded-md transition-all duration-200 input-md"
     name="name"
     value="base input"
   />
@@ -23,7 +23,7 @@ exports[`Input > has 'base' ('md') input 1`] = `
 exports[`Input > has 'large' ('lg') input 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 input-lg"
+    class="input rounded-md transition-all duration-200 input-lg"
     name="name"
     value="large input"
   />
@@ -33,7 +33,7 @@ exports[`Input > has 'large' ('lg') input 1`] = `
 exports[`Input > has 'small' ('sm') input 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 input-sm"
+    class="input rounded-md transition-all duration-200 input-sm"
     name="name"
     value="small input"
   />
@@ -43,7 +43,7 @@ exports[`Input > has 'small' ('sm') input 1`] = `
 exports[`Input > has 'tiny' ('xs') input 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 input-xs"
+    class="input rounded-md transition-all duration-200 input-xs"
     name="name"
     value="tiny input"
   />
@@ -61,7 +61,7 @@ exports[`Input > has a floating label 1`] = `
       Your Email
     </span>
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit h-10"
+      class="input rounded-md transition-all duration-200 min-h-fit h-10"
       placeholder="mail@site.com"
     />
   </label>
@@ -71,7 +71,7 @@ exports[`Input > has a floating label 1`] = `
 exports[`Input > has a label 1`] = `
 <DocumentFragment>
   <label
-    class="input rounded-md transition-all duration-100 min-h-fit h-10"
+    class="input rounded-md transition-all duration-200 min-h-fit h-10"
   >
     <span
       class="label"
@@ -89,7 +89,7 @@ exports[`Input > has a label 1`] = `
 exports[`Input > has a prefix label 1`] = `
 <DocumentFragment>
   <label
-    class="input rounded-md transition-all duration-100 min-h-fit h-10"
+    class="input rounded-md transition-all duration-200 min-h-fit h-10"
   >
     <span
       class="label"
@@ -106,7 +106,7 @@ exports[`Input > has a prefix label 1`] = `
 exports[`Input > has a suffix label 1`] = `
 <DocumentFragment>
   <label
-    class="input rounded-md transition-all duration-100 min-h-fit h-10"
+    class="input rounded-md transition-all duration-200 min-h-fit h-10"
   >
     <input
       placeholder="domain name"
@@ -124,7 +124,7 @@ exports[`Input > has a suffix label 1`] = `
 exports[`Input > has accent variant 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 input-accent min-h-fit h-10"
+    class="input rounded-md transition-all duration-200 input-accent min-h-fit h-10"
     name="name"
     value="accent button"
   />
@@ -134,7 +134,7 @@ exports[`Input > has accent variant 1`] = `
 exports[`Input > has error variant 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 input-error min-h-fit h-10"
+    class="input rounded-md transition-all duration-200 input-error min-h-fit h-10"
     name="name"
     value="error button"
   />
@@ -144,7 +144,7 @@ exports[`Input > has error variant 1`] = `
 exports[`Input > has ghost variant 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 input-ghost min-h-fit h-10"
+    class="input rounded-md transition-all duration-200 input-ghost min-h-fit h-10"
     name="name"
     value="ghost button"
   />
@@ -154,7 +154,7 @@ exports[`Input > has ghost variant 1`] = `
 exports[`Input > has info variant 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 input-info min-h-fit h-10"
+    class="input rounded-md transition-all duration-200 input-info min-h-fit h-10"
     name="name"
     value="info button"
   />
@@ -164,7 +164,7 @@ exports[`Input > has info variant 1`] = `
 exports[`Input > has primary variant 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 input-primary min-h-fit h-10"
+    class="input rounded-md transition-all duration-200 input-primary min-h-fit h-10"
     name="name"
     value="primary button"
   />
@@ -174,7 +174,7 @@ exports[`Input > has primary variant 1`] = `
 exports[`Input > has secondary variant 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 input-secondary min-h-fit h-10"
+    class="input rounded-md transition-all duration-200 input-secondary min-h-fit h-10"
     name="name"
     value="secondary button"
   />
@@ -184,7 +184,7 @@ exports[`Input > has secondary variant 1`] = `
 exports[`Input > has success variant 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 input-success min-h-fit h-10"
+    class="input rounded-md transition-all duration-200 input-success min-h-fit h-10"
     name="name"
     value="success button"
   />
@@ -194,7 +194,7 @@ exports[`Input > has success variant 1`] = `
 exports[`Input > has warning variant 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 input-warning min-h-fit h-10"
+    class="input rounded-md transition-all duration-200 input-warning min-h-fit h-10"
     name="name"
     value="warning button"
   />
@@ -204,7 +204,7 @@ exports[`Input > has warning variant 1`] = `
 exports[`Input > prevent user input when disabled 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 min-h-fit h-10"
+    class="input rounded-md transition-all duration-200 min-h-fit h-10"
     disabled=""
     name="username"
     value="John Doe"
@@ -215,7 +215,7 @@ exports[`Input > prevent user input when disabled 1`] = `
 exports[`Input > renders with the correct initial state 1`] = `
 <DocumentFragment>
   <input
-    class="input rounded-md transition-all duration-100 min-h-fit h-10"
+    class="input rounded-md transition-all duration-200 min-h-fit h-10"
     name="username"
     value="John Doe"
   />

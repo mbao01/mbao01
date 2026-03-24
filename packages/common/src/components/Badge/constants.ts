@@ -1,7 +1,7 @@
 import { cva } from "../../libs";
 import { createVariants } from "../../utilities";
 
-export const getBadgeClasses = cva("badge", {
+export const getBadgeClasses = cva("badge transition-colors duration-200", {
   variants: createVariants({
     variant: {
       accent: "badge-accent",

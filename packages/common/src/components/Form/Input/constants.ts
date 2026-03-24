@@ -1,7 +1,7 @@
 import { cva } from "../../../libs";
 import { createVariants } from "../../../utilities";
 
-export const getInputClasses = cva("input rounded-md transition-all duration-100", {
+export const getInputClasses = cva("input rounded-md transition-all duration-200", {
   variants: createVariants({
     variant: {
       default: "bg-transparent",

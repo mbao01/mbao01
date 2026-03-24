@@ -18,7 +18,7 @@ exports[`Accordion > renders an accordion 1`] = `
         <button
           aria-controls="radix-_r_1_"
           aria-expanded="false"
-          class="flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all [&:hover:not(:disabled)]:underline disabled:opacity-50 [&[data-state=open]>svg]:rotate-180"
+          class="flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all duration-200 [&:hover:not(:disabled)]:underline disabled:opacity-50 [&[data-state=open]>svg]:rotate-180"
           data-orientation="vertical"
           data-radix-collection-item=""
           data-state="closed"
@@ -52,7 +52,7 @@ exports[`Accordion > renders an accordion 1`] = `
         <button
           aria-controls="radix-_r_3_"
           aria-expanded="false"
-          class="flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all [&:hover:not(:disabled)]:underline disabled:opacity-50 [&[data-state=open]>svg]:rotate-180"
+          class="flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all duration-200 [&:hover:not(:disabled)]:underline disabled:opacity-50 [&[data-state=open]>svg]:rotate-180"
           data-orientation="vertical"
           data-radix-collection-item=""
           data-state="closed"
@@ -86,7 +86,7 @@ exports[`Accordion > renders an accordion 1`] = `
         <button
           aria-controls="radix-_r_5_"
           aria-expanded="false"
-          class="flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all [&:hover:not(:disabled)]:underline disabled:opacity-50 [&[data-state=open]>svg]:rotate-180"
+          class="flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all duration-200 [&:hover:not(:disabled)]:underline disabled:opacity-50 [&[data-state=open]>svg]:rotate-180"
           data-orientation="vertical"
           data-radix-collection-item=""
           data-state="closed"

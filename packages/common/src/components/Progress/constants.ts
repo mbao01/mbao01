@@ -21,7 +21,7 @@ export const getProgressClasses = cva("relative h-2 w-full overflow-hidden round
   },
 });
 
-export const getProgressIndicatorClasses = cva("h-full w-full flex-1 transition-all", {
+export const getProgressIndicatorClasses = cva("h-full w-full flex-1 rounded-full transition-all duration-500 ease-out", {
   variants: createVariants({
     variant: {
       accent: "bg-accent",

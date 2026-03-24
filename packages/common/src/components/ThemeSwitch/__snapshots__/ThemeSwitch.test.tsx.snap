@@ -169,7 +169,7 @@ exports[`ThemeSwitch > renders a theme switcher 1`] = `
 exports[`ThemeSwitch > should render a custom element 1`] = `
 <DocumentFragment>
   <button
-    class="btn min-h-fit h-10 rounded-md"
+    class="btn transition-all duration-200 ease-out active:scale-[0.97] min-h-fit h-10 rounded-md"
   >
     Switch to dark theme
   </button>

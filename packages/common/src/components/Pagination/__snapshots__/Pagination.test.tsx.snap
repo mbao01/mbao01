@@ -13,7 +13,7 @@ exports[`Pagination > renders pagination buttons 1`] = `
       <li>
         <a
           aria-label="Go to previous page"
-          class="btn btn-ghost min-h-fit h-10 rounded-md gap-1 px-3"
+          class="btn transition-all duration-200 ease-out active:scale-[0.97] btn-ghost hover:bg-base-200/80 min-h-fit h-10 rounded-md gap-1 px-3"
           href="#"
         >
           <svg
@@ -37,7 +37,7 @@ exports[`Pagination > renders pagination buttons 1`] = `
       </li>
       <li>
         <a
-          class="btn btn-ghost min-h-fit h-10 rounded-md"
+          class="btn transition-all duration-200 ease-out active:scale-[0.97] btn-ghost hover:bg-base-200/80 min-h-fit h-10 rounded-md"
           href="#"
         >
           1
@@ -46,7 +46,7 @@ exports[`Pagination > renders pagination buttons 1`] = `
       <li>
         <a
           aria-current="page"
-          class="btn btn-ghost btn-outline min-h-fit h-10 rounded-md"
+          class="btn transition-all duration-200 ease-out active:scale-[0.97] btn-ghost hover:bg-base-200/80 btn-outline min-h-fit h-10 rounded-md"
           href="#"
         >
           2
@@ -54,7 +54,7 @@ exports[`Pagination > renders pagination buttons 1`] = `
       </li>
       <li>
         <a
-          class="btn btn-ghost min-h-fit h-10 rounded-md"
+          class="btn transition-all duration-200 ease-out active:scale-[0.97] btn-ghost hover:bg-base-200/80 min-h-fit h-10 rounded-md"
           href="#"
         >
           3
@@ -104,7 +104,7 @@ exports[`Pagination > renders pagination buttons 1`] = `
       <li>
         <a
           aria-label="Go to next page"
-          class="btn btn-ghost min-h-fit h-10 rounded-md gap-1 px-3"
+          class="btn transition-all duration-200 ease-out active:scale-[0.97] btn-ghost hover:bg-base-200/80 min-h-fit h-10 rounded-md gap-1 px-3"
           href="#"
         >
           <svg

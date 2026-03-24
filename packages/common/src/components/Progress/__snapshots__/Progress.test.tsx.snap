@@ -14,7 +14,7 @@ exports[`Progress > has accent variant 1`] = `
     role="progressbar"
   >
     <div
-      class="h-full w-full flex-1 transition-all bg-accent"
+      class="h-full w-full flex-1 rounded-full transition-all duration-500 ease-out bg-accent"
       data-max="100"
       data-state="loading"
       data-value="50"
@@ -38,7 +38,7 @@ exports[`Progress > has default variant 1`] = `
     role="progressbar"
   >
     <div
-      class="h-full w-full flex-1 transition-all bg-base-content"
+      class="h-full w-full flex-1 rounded-full transition-all duration-500 ease-out bg-base-content"
       data-max="100"
       data-state="loading"
       data-value="50"
@@ -62,7 +62,7 @@ exports[`Progress > has error variant 1`] = `
     role="progressbar"
   >
     <div
-      class="h-full w-full flex-1 transition-all bg-error"
+      class="h-full w-full flex-1 rounded-full transition-all duration-500 ease-out bg-error"
       data-max="100"
       data-state="loading"
       data-value="50"
@@ -86,7 +86,7 @@ exports[`Progress > has ghost variant 1`] = `
     role="progressbar"
   >
     <div
-      class="h-full w-full flex-1 transition-all bg-ghost"
+      class="h-full w-full flex-1 rounded-full transition-all duration-500 ease-out bg-ghost"
       data-max="100"
       data-state="loading"
       data-value="50"
@@ -110,7 +110,7 @@ exports[`Progress > has info variant 1`] = `
     role="progressbar"
   >
     <div
-      class="h-full w-full flex-1 transition-all bg-info"
+      class="h-full w-full flex-1 rounded-full transition-all duration-500 ease-out bg-info"
       data-max="100"
       data-state="loading"
       data-value="50"
@@ -134,7 +134,7 @@ exports[`Progress > has neutral variant 1`] = `
     role="progressbar"
   >
     <div
-      class="h-full w-full flex-1 transition-all bg-neutral"
+      class="h-full w-full flex-1 rounded-full transition-all duration-500 ease-out bg-neutral"
       data-max="100"
       data-state="loading"
       data-value="50"
@@ -158,7 +158,7 @@ exports[`Progress > has primary variant 1`] = `
     role="progressbar"
   >
     <div
-      class="h-full w-full flex-1 transition-all bg-primary"
+      class="h-full w-full flex-1 rounded-full transition-all duration-500 ease-out bg-primary"
       data-max="100"
       data-state="loading"
       data-value="50"
@@ -182,7 +182,7 @@ exports[`Progress > has secondary variant 1`] = `
     role="progressbar"
   >
     <div
-      class="h-full w-full flex-1 transition-all bg-secondary"
+      class="h-full w-full flex-1 rounded-full transition-all duration-500 ease-out bg-secondary"
       data-max="100"
       data-state="loading"
       data-value="50"
@@ -206,7 +206,7 @@ exports[`Progress > has success variant 1`] = `
     role="progressbar"
   >
     <div
-      class="h-full w-full flex-1 transition-all bg-success"
+      class="h-full w-full flex-1 rounded-full transition-all duration-500 ease-out bg-success"
       data-max="100"
       data-state="loading"
       data-value="50"
@@ -230,7 +230,7 @@ exports[`Progress > has warning variant 1`] = `
     role="progressbar"
   >
     <div
-      class="h-full w-full flex-1 transition-all bg-warning"
+      class="h-full w-full flex-1 rounded-full transition-all duration-500 ease-out bg-warning"
       data-max="100"
       data-state="loading"
       data-value="50"
@@ -254,7 +254,7 @@ exports[`Progress > renders a progress bar 1`] = `
     role="progressbar"
   >
     <div
-      class="h-full w-full flex-1 transition-all bg-base-content"
+      class="h-full w-full flex-1 rounded-full transition-all duration-500 ease-out bg-base-content"
       data-max="100"
       data-state="loading"
       data-value="77"
