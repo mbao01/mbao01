@@ -39,6 +39,8 @@ export * from "./components/Card";
 export * from "./components/Calendar";
 export * from "./components/CircularProgress";
 export * from "./components/Collapsible";
+export * from "./components/CountdownTimer";
+export * from "./components/DataList";
 export * from "./components/Description";
 export * from "./components/Dock";
 export * from "./components/Indicator";
@@ -48,6 +50,7 @@ export * from "./components/List";
 export * from "./components/Progress";
 export * from "./components/Resizable";
 export * from "./components/ScrollArea";
+export * from "./components/ComparisonBar";
 export * from "./components/Separator";
 export * from "./components/Sonner";
 export * from "./components/Sparkline";
@@ -59,6 +62,8 @@ export * from "./components/Tabs";
 export * from "./components/Text";
 export * from "./components/Timeline";
 export * from "./components/TrendBadge";
+export * from "./components/CalendarHeatmap";
+export * from "./components/Greeting";
 
 /** data input */
 export * from "./components/DatetimePicker";
@@ -78,6 +83,7 @@ export * from "./components/Chart";
 export * from "./components/Command";
 export * from "./components/Dialog";
 export * from "./components/HoverCard";
+export * from "./components/KPICard";
 export * from "./components/Popover";
 export * from "./components/Slot";
 export * from "./components/Widget";
@@ -94,12 +100,24 @@ export * from "./components/Header";
 export * from "./components/Panel";
 export * from "./components/Sheet";
 
+/** inline charts */
+export * from "./components/MiniAreaChart";
+export * from "./components/MiniBarChart";
+export * from "./components/MiniDonutChart";
+export * from "./components/MiniStackedBar";
+
 /** effects */
+export * from "./components/AnimatedCounter";
 export * from "./components/AnimatedGroup";
+export * from "./components/AnimatedList";
 export * from "./components/BorderBeam";
+export * from "./components/Confetti";
 export * from "./components/GlowCard";
+export * from "./components/GradientText";
+export * from "./components/Marquee";
 export * from "./components/Meteors";
 export * from "./components/NumberTicker";
+export * from "./components/Pulse";
 export * from "./components/ShinyButton";
 export * from "./components/SpotlightCard";
 export * from "./components/TextShimmer";

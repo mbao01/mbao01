@@ -171,6 +171,7 @@
   --animate-text-gradient: text-gradient 4s linear infinite;
   --animate-border-beam: border-beam 4s linear infinite;
   --animate-meteor: meteor 5s linear infinite;
+  --animate-marquee: marquee var(--tw-duration, 40s) linear infinite;
 
   @keyframes shimmer {
     0% {
@@ -333,6 +334,15 @@
     }
     100% {
       offset-distance: 100%;
+    }
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap, 16px)));
     }
   }
 
