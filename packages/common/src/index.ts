@@ -91,7 +91,9 @@ export * from "./components/Sheet";
 /** effects */
 export * from "./components/AnimatedGroup";
 export * from "./components/BorderBeam";
+export * from "./components/GlowCard";
 export * from "./components/Meteors";
+export * from "./components/NumberTicker";
 export * from "./components/ShinyButton";
 export * from "./components/SpotlightCard";
 export * from "./components/TextShimmer";
