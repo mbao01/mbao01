@@ -190,6 +190,71 @@ export const ShapeRadialChartExample = (props: Partial<RadialBarChartProps>) => 
   );
 };
 
+/**
+ * KPI gauge — a single-value radial chart with a large center metric
+ * and background track. Great for goal progress, budget usage, etc.
+ */
+export const KPIGaugeRadialChartExample = (props: Partial<RadialBarChartProps>) => {
+  const chartData = [{ name: "progress", value: 73, fill: "var(--color-progress)" }];
+  const chartConfig = {
+    progress: {
+      label: "Progress",
+      color: "hsl(var(--chart-1))",
+    },
+  } satisfies ChartConfig;
+
+  return (
+    <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
+      <RadialBarChart
+        data={chartData}
+        startAngle={180}
+        endAngle={0}
+        innerRadius={80}
+        outerRadius={110}
+        barSize={14}
+        {...props.radialBarChart}
+      >
+        <PolarGrid
+          gridType="circle"
+          radialLines={false}
+          stroke="none"
+          className="first:fill-base-200 last:fill-base-100"
+          polarRadius={[86, 74]}
+        />
+        <RadialBar
+          dataKey="value"
+          cornerRadius={10}
+          fill="var(--color-progress)"
+          background={{ fill: "hsl(var(--b2, 0 0% 90%))" }}
+          {...props.radialBar}
+        />
+        <PolarRadiusAxis tick={false} tickLine={false} axisLine={false}>
+          <Label
+            content={({ viewBox }) => {
+              if (viewBox && "cx" in viewBox && "cy" in viewBox) {
+                return (
+                  <text x={viewBox.cx} y={viewBox.cy} textAnchor="middle" dominantBaseline="middle">
+                    <tspan
+                      x={viewBox.cx}
+                      y={(viewBox.cy ?? 0) - 12}
+                      className="fill-base-content text-4xl font-bold"
+                    >
+                      73%
+                    </tspan>
+                    <tspan x={viewBox.cx} y={(viewBox.cy ?? 0) + 16} className="fill-base-content/60 text-sm">
+                      of target
+                    </tspan>
+                  </text>
+                );
+              }
+            }}
+          />
+        </PolarRadiusAxis>
+      </RadialBarChart>
+    </Chart>
+  );
+};
+
 export const StackedRadialChartExample = (props: Partial<RadialBarChartProps>) => {
   const chartData = [{ month: "january", desktop: 1260, mobile: 570 }];
   const chartConfig = {

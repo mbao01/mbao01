@@ -137,3 +137,114 @@ export const WithLegendLineChartExample = (props: LineChartProps) => {
     </Chart>
   );
 };
+
+/**
+ * Smooth curved line chart with gradient stroke and refined active dot.
+ * Shows a single data series with emphasis on the curve smoothness.
+ */
+export const SmoothLineChartExample = (props: LineChartProps) => {
+  const chartConfig = {
+    value: {
+      label: "Revenue",
+      color: "hsl(var(--chart-1))",
+    },
+  } satisfies ChartConfig;
+
+  return (
+    <Chart config={chartConfig} className="h-[250px] w-full">
+      <LineChart {...props.lineChart}>
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <XAxis
+          dataKey="month"
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          {...props.xAxis}
+        />
+        <YAxis
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          {...props.yAxis}
+        />
+        <ChartTooltip
+          content={<ChartTooltipContent indicator="dot" />}
+        />
+        <Line
+          dataKey="value"
+          type="natural"
+          stroke="var(--color-value)"
+          strokeWidth={2.5}
+          dot={false}
+          activeDot={{
+            r: 6,
+            strokeWidth: 2,
+            stroke: "var(--color-value)",
+            fill: "white",
+          }}
+          {...props.line}
+        />
+      </LineChart>
+    </Chart>
+  );
+};
+
+/**
+ * Multi-series comparison line chart with dashed reference line.
+ * Useful for budget vs actual, target vs performance comparisons.
+ */
+export const ComparisonLineChartExample = (props: LineChartProps) => {
+  const chartConfig = {
+    actual: {
+      label: "Actual",
+      color: "hsl(var(--chart-1))",
+    },
+    target: {
+      label: "Target",
+      color: "hsl(var(--chart-2))",
+    },
+  } satisfies ChartConfig;
+
+  return (
+    <Chart config={chartConfig} className="h-[250px] w-full">
+      <LineChart {...props.lineChart}>
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <XAxis
+          dataKey="month"
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          tickFormatter={(value: string) => value.slice(0, 3)}
+          {...props.xAxis}
+        />
+        <YAxis
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          tickFormatter={(v: number) => `$${(v / 1000).toFixed(0)}k`}
+          {...props.yAxis}
+        />
+        <ChartTooltip content={<ChartTooltipContent />} />
+        <ChartLegend content={<ChartLegendContent />} />
+        <Line
+          dataKey="target"
+          type="monotone"
+          stroke="var(--color-target)"
+          strokeWidth={2}
+          strokeDasharray="6 3"
+          dot={false}
+          {...props.line}
+        />
+        <Line
+          dataKey="actual"
+          type="monotone"
+          stroke="var(--color-actual)"
+          strokeWidth={2.5}
+          dot={false}
+          activeDot={{ r: 5, strokeWidth: 2, fill: "var(--color-actual)" }}
+          {...props.line}
+        />
+      </LineChart>
+    </Chart>
+  );
+};

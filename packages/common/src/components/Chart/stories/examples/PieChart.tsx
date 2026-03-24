@@ -169,6 +169,61 @@ export const ActiveDonutPieChartExample = (props: Partial<PieChartProps>) => {
   );
 };
 
+/**
+ * Beautiful donut chart with a center metric label.
+ * Perfect for portfolio allocation, budget breakdown, etc.
+ */
+export const CenterLabelDonutExample = (props: Partial<PieChartProps>) => {
+  const chartConfig = {
+    allocation: {
+      label: "Allocation",
+    },
+    stocks: {
+      label: "Stocks",
+      color: "hsl(var(--chart-1))",
+    },
+    bonds: {
+      label: "Bonds",
+      color: "hsl(var(--chart-2))",
+    },
+    real_estate: {
+      label: "Real Estate",
+      color: "hsl(var(--chart-3))",
+    },
+    crypto: {
+      label: "Crypto",
+      color: "hsl(var(--chart-4))",
+    },
+    cash: {
+      label: "Cash",
+      color: "hsl(var(--chart-5))",
+    },
+  } satisfies ChartConfig;
+
+  return (
+    <Chart config={chartConfig} className="mx-auto aspect-square h-[250px]">
+      <PieChart {...props.pieChart}>
+        <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
+        <Pie
+          dataKey="value"
+          nameKey="category"
+          innerRadius={65}
+          outerRadius={90}
+          strokeWidth={3}
+          stroke="hsl(var(--b1, 0 0% 100%))"
+          paddingAngle={2}
+          cornerRadius={4}
+          {...props.pie}
+        />
+        <ChartLegend
+          content={<ChartLegendContent nameKey="category" />}
+          className="-translate-y-2 flex-wrap gap-2 *:basis-1/3 *:justify-center"
+        />
+      </PieChart>
+    </Chart>
+  );
+};
+
 export const StackedPieChartExample = (props: Partial<PieChartProps>) => {
   const desktopData = [
     { month: "january", desktop: 186, fill: "var(--color-january)" },

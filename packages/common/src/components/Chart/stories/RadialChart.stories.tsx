@@ -3,6 +3,7 @@ import type { RadialBarChartArgs } from "./args";
 import { radialBarChartArgs } from "./args";
 import {
   GridRadialChartExample,
+  KPIGaugeRadialChartExample,
   LabeledRadialChartExample,
   RadialChartExample,
   ShapeRadialChartExample,
@@ -158,4 +159,11 @@ export const StackedRadialChart: Story = {
     "radialBarChart outerRadius": 130,
   },
   render: renderer(StackedRadialChartExample),
+};
+
+export const KPIGauge: Story = {
+  args: {
+    "radialBar isAnimationActive": false,
+  },
+  render: renderer(KPIGaugeRadialChartExample),
 };

@@ -1,9 +1,11 @@
 import type { Meta, StoryContext, StoryObj } from "@storybook/react-vite";
 import { lineChartArgs, LineChartArgs } from "./args";
 import {
+  ComparisonLineChartExample,
   CustomDotLineChartExample,
   LabeledLineChartExample,
   LineChartExample,
+  SmoothLineChartExample,
   StackedLineChartExample,
   WithLegendLineChartExample,
 } from "./examples/LineChart";
@@ -243,4 +245,46 @@ export const WithLegendLineChart: Story = {
     },
   },
   render: renderer(WithLegendLineChartExample),
+};
+
+const revenueData = [
+  { month: "Jan", value: 45000 },
+  { month: "Feb", value: 52000 },
+  { month: "Mar", value: 48000 },
+  { month: "Apr", value: 61000 },
+  { month: "May", value: 55000 },
+  { month: "Jun", value: 67000 },
+  { month: "Jul", value: 72000 },
+  { month: "Aug", value: 69000 },
+  { month: "Sep", value: 85000 },
+  { month: "Oct", value: 92000 },
+  { month: "Nov", value: 88000 },
+  { month: "Dec", value: 112000 },
+];
+export const SmoothLineChart: Story = {
+  args: {
+    "line isAnimationActive": false,
+    "lineChart accessibilityLayer": true,
+    "lineChart data": revenueData,
+    "lineChart margin": { left: 12, right: 12 },
+  },
+  render: renderer(SmoothLineChartExample),
+};
+
+const budgetData = [
+  { month: "January", actual: 42000, target: 45000 },
+  { month: "February", actual: 48000, target: 47000 },
+  { month: "March", actual: 51000, target: 50000 },
+  { month: "April", actual: 46000, target: 52000 },
+  { month: "May", actual: 58000, target: 55000 },
+  { month: "June", actual: 63000, target: 58000 },
+];
+export const ComparisonLineChart: Story = {
+  args: {
+    "line isAnimationActive": false,
+    "lineChart accessibilityLayer": true,
+    "lineChart data": budgetData,
+    "lineChart margin": { top: 12, left: 12, right: 12 },
+  },
+  render: renderer(ComparisonLineChartExample),
 };
