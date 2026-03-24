@@ -87,3 +87,9 @@ export * from "./components/Footer";
 export * from "./components/Header";
 export * from "./components/Panel";
 export * from "./components/Sheet";
+
+/** effects */
+export * from "./components/AnimatedGroup";
+export * from "./components/BorderBeam";
+export * from "./components/SpotlightCard";
+export * from "./components/TextShimmer";

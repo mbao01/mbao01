@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AnimatedGroup > renders children 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+    style="opacity: 0;"
+  >
+    <div
+      style="opacity: 0;"
+    >
+      <p>
+        Item 1
+      </p>
+    </div>
+    <div
+      style="opacity: 0;"
+    >
+      <p>
+        Item 2
+      </p>
+    </div>
+    <div
+      style="opacity: 0;"
+    >
+      <p>
+        Item 3
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

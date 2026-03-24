@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TextShimmer > renders children 1`] = `
+<DocumentFragment>
+  <p
+    class="animate-text-gradient bg-[length:250%_100%] bg-clip-text text-transparent bg-[linear-gradient(90deg,var(--shimmer-from,currentColor)_0%,var(--shimmer-via,oklch(0.7_0.15_250))_50%,var(--shimmer-from,currentColor)_100%)]"
+    style="--shimmer-spread: 2; animation-duration: 2s;"
+  >
+    Hello
+  </p>
+</DocumentFragment>
+`;
