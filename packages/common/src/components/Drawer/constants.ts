@@ -10,6 +10,6 @@ export const getDrawerHeaderClasses = cva("grid gap-1.5 p-4 text-center sm:text-
 
 export const getDrawerFooterClasses = cva("mt-auto flex flex-col gap-2 p-4");
 
-export const getDrawerOverlayClasses = cva("fixed inset-0 z-50 bg-black/80");
+export const getDrawerOverlayClasses = cva("fixed inset-0 z-50 bg-black/60 backdrop-blur-sm");
 
 export const getDrawerTitleClasses = cva("text-lg font-semibold leading-none tracking-tight");

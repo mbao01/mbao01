@@ -30,7 +30,7 @@ export const getSheetClasses = cva(
 );
 
 export const getSheetOverlayClasses = cva(
-  "fixed inset-0 z-40 bg-black/50 transition-opacity duration-300",
+  "fixed inset-0 z-40 bg-black/60 backdrop-blur-sm transition-opacity duration-300",
   {
     variants: createVariants({
       open: {
