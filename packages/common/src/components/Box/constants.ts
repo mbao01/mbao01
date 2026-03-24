@@ -6,13 +6,12 @@ export const getBoxClasses = cva("", {
     style: {
       default: "",
       outlined: "border border-base-200",
-      bordered: "border-[3px] border-double border-base-200",
+      bordered: "border-[4px] border-double border-base-200",
       elevated: "border border-base-200 bg-base-100 shadow-md",
       ghost: "bg-base-200/40",
       gradient:
         "relative border-0 bg-base-100 before:absolute before:inset-0 before:-z-10 before:-m-[2px] before:rounded-[inherit] before:bg-linear-to-br before:from-primary before:via-secondary before:to-accent",
-      strip:
-        "border-[3px] border-base-300 ring-[2px] ring-base-300 ring-offset-[3px] ring-offset-base-200",
+      strip: "border border-base-300 ring-1 ring-base-300 ring-offset-[2px] ring-offset-base-200",
       glass: "border border-white/20 bg-white/10 shadow-lg backdrop-blur-md",
       inset: "border border-base-200 bg-base-200/20 shadow-inner",
     },
