@@ -30,11 +30,14 @@ export * from "./components/Spinner";
 
 /** data display */
 export * from "./components/Accordion";
+export * from "./components/ActivityFeed";
 export * from "./components/Alert";
+export * from "./components/Amount";
 export * from "./components/Avatar";
 export * from "./components/Badge";
 export * from "./components/Card";
 export * from "./components/Calendar";
+export * from "./components/CircularProgress";
 export * from "./components/Collapsible";
 export * from "./components/Description";
 export * from "./components/Dock";
@@ -47,6 +50,7 @@ export * from "./components/Resizable";
 export * from "./components/ScrollArea";
 export * from "./components/Separator";
 export * from "./components/Sonner";
+export * from "./components/Sparkline";
 export * from "./components/Stack";
 export * from "./components/Stat";
 export * from "./components/Status";
@@ -54,6 +58,7 @@ export * from "./components/Table";
 export * from "./components/Tabs";
 export * from "./components/Text";
 export * from "./components/Timeline";
+export * from "./components/TrendBadge";
 
 /** data input */
 export * from "./components/DatetimePicker";
@@ -76,6 +81,7 @@ export * from "./components/HoverCard";
 export * from "./components/Popover";
 export * from "./components/Slot";
 export * from "./components/Widget";
+export * from "./components/WidgetShell";
 
 /** molecules */
 export * from "./components/Banner";
