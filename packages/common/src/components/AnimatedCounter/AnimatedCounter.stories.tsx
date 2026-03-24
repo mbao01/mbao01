@@ -21,6 +21,7 @@ export const WithDecimals: Story = {
 };
 
 export const Interactive: Story = {
+  args: { value: 1000 },
   render: function InteractiveStory() {
     const [val, setVal] = useState(1000);
     return (

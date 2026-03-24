@@ -23,6 +23,7 @@ export const Default: Story = {
 };
 
 export const PortfolioAllocation: Story = {
+  args: { segments: [{ value: 45 }, { value: 20 }, { value: 20 }, { value: 10 }, { value: 5 }] },
   render: () => (
     <div className="flex items-center gap-6">
       <div className="flex items-center gap-3">
@@ -49,6 +50,7 @@ export const PortfolioAllocation: Story = {
 };
 
 export const InTable: Story = {
+  args: { segments: [{ value: 70 }, { value: 30 }] },
   render: () => (
     <table className="table w-[400px]">
       <thead>

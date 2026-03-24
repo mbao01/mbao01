@@ -14,6 +14,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  args: { children: null },
   render: (args) => (
     <GlowCard {...args} className="w-80">
       <h3 className="text-lg font-semibold mb-2">Glow Card</h3>
@@ -25,6 +26,7 @@ export const Default: Story = {
 };
 
 export const WarmColors: Story = {
+  args: { children: null },
   render: (args) => (
     <GlowCard
       {...args}

@@ -34,6 +34,7 @@ export const Volatile: Story = {
 };
 
 export const InKPICard: Story = {
+  args: { data: sampleUp },
   render: () => (
     <div className="flex items-center gap-8">
       <div className="flex flex-col gap-1">

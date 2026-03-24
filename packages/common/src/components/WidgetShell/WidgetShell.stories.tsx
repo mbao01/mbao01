@@ -62,6 +62,7 @@ export const Empty: Story = {
 };
 
 export const AllStates: Story = {
+  args: { children: null },
   render: function AllStatesStory() {
     return (
       <div className="flex flex-col gap-4 w-80">

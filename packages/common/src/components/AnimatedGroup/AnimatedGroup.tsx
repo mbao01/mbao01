@@ -1,13 +1,13 @@
 "use client";
 
 import { Children } from "react";
-import { motion } from "framer-motion";
+import { motion, type Variant, type Variants } from "framer-motion";
 import { cn } from "../../utilities";
 import type { AnimatedGroupPreset, AnimatedGroupProps } from "./types";
 
 const presetVariants: Record<
   AnimatedGroupPreset,
-  { container: { hidden: object; visible: object }; item: { hidden: object; visible: object } }
+  { container: { hidden: Variant; visible: Variant }; item: { hidden: Variant; visible: Variant } }
 > = {
   fade: {
     container: { hidden: { opacity: 0 }, visible: { opacity: 1 } },
@@ -50,31 +50,35 @@ const AnimatedGroup = ({
   variants: customVariants,
   staggerDelay = 0.1,
   transition,
+  onDrag: _onDrag,
+  onDragStart: _onDragStart,
+  onDragEnd: _onDragEnd,
+  onAnimationStart: _onAnimationStart,
   ...props
 }: AnimatedGroupProps) => {
   const variants = customVariants ?? presetVariants[preset];
   const containerVariants = {
     hidden: variants.container?.hidden ?? {},
     visible: {
-      ...variants.container?.visible,
+      ...(variants.container?.visible as Record<string, unknown>),
       transition: {
         staggerChildren: staggerDelay,
         ...transition,
       },
     },
-  };
+  } as Variants;
 
   const itemVariants = {
     hidden: variants.item?.hidden ?? { opacity: 0 },
     visible: {
-      ...variants.item?.visible ?? { opacity: 1 },
+      ...(variants.item?.visible as Record<string, unknown>) ?? { opacity: 1 },
       transition: {
         duration: 0.4,
         ease: [0.25, 0.4, 0.25, 1],
         ...transition,
       },
     },
-  };
+  } as Variants;
 
   return (
     <motion.div

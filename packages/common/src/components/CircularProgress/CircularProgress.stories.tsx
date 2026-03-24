@@ -18,6 +18,7 @@ export const Default: Story = {
 };
 
 export const Sizes: Story = {
+  args: { value: 60 },
   render: () => (
     <div className="flex items-center gap-6">
       <CircularProgress value={60} preset="xs" />
@@ -30,6 +31,7 @@ export const Sizes: Story = {
 };
 
 export const Variants: Story = {
+  args: { value: 75 },
   render: () => (
     <div className="flex items-center gap-4">
       <CircularProgress value={75} variant="primary" />
@@ -47,6 +49,7 @@ export const CustomLabel: Story = {
 };
 
 export const BudgetGauges: Story = {
+  args: { value: 85 },
   render: () => (
     <div className="flex items-center gap-8">
       <div className="flex flex-col items-center gap-2">

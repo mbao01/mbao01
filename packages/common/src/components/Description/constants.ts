@@ -2,7 +2,7 @@ import { cva } from "../../libs";
 import { createVariants } from "../../utilities";
 
 export const getDescriptionClasses = cva("", {
-  variants: createVariants({
+  variants: {
     variant: {
       default: "",
       card: "rounded-lg border border-base-200 bg-base-100 p-4 shadow-sm",
@@ -14,11 +14,11 @@ export const getDescriptionClasses = cva("", {
       inline: "flex flex-wrap gap-x-6 gap-y-1",
     },
     size: {
-      sm: "",
-      md: "",
-      lg: "",
+      sm: "" as const,
+      md: "" as const,
+      lg: "" as const,
     },
-  }),
+  },
   defaultVariants: {
     variant: "default",
     layout: "vertical",

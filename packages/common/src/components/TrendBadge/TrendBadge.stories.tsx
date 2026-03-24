@@ -34,6 +34,7 @@ export const NoPercent: Story = {
 };
 
 export const InContext: Story = {
+  args: { value: 12.5 },
   render: () => (
     <div className="flex flex-col gap-4">
       <div className="flex items-baseline gap-2">

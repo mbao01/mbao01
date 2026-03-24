@@ -52,6 +52,7 @@ export const WithDescription: Story = {
 };
 
 export const DashboardRow: Story = {
+  args: { title: "Total Sales", value: "$842,560" },
   decorators: [
     (Story) => (
       <div className="grid w-[800px] grid-cols-3 gap-6 pt-8">

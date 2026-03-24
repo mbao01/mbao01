@@ -16,6 +16,7 @@ export const Default: Story = {
 };
 
 export const InCards: Story = {
+  args: { data: [10, 15, 12, 20, 18, 25, 30, 28, 35, 40] },
   render: () => (
     <div className="flex gap-4">
       <div className="rounded-lg border p-3 w-48">

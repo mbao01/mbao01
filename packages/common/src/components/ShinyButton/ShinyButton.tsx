@@ -19,6 +19,8 @@ const animationProps = {
 } satisfies HTMLMotionProps<"button">;
 
 const ShinyButton = ({ children, className, ...props }: ShinyButtonProps) => {
+  const { onDrag, onDragStart, onDragEnd, onAnimationStart, ...rest } = props;
+
   return (
     <motion.button
       {...animationProps}
@@ -29,7 +31,7 @@ const ShinyButton = ({ children, className, ...props }: ShinyButtonProps) => {
         "dark:bg-[radial-gradient(circle_at_50%_0%,oklch(0.8_0.15_250/0.15)_0%,transparent_60%)]",
         className
       )}
-      {...props}
+      {...rest}
     >
       <span
         className="relative block size-full text-sm tracking-wide"

@@ -22,6 +22,7 @@ const TickerItem = ({ symbol, price, change }: { symbol: string; price: string; 
 );
 
 export const StockTicker: Story = {
+  args: { children: null },
   render: (args) => (
     <Marquee {...args} gap={12}>
       <TickerItem symbol="AAPL" price="$178.72" change={1.24} />
@@ -37,6 +38,7 @@ export const StockTicker: Story = {
 };
 
 export const ReverseDirection: Story = {
+  args: { children: null },
   render: (args) => (
     <Marquee {...args} direction="right" speed={30}>
       <TickerItem symbol="EUR/USD" price="1.0842" change={0.12} />

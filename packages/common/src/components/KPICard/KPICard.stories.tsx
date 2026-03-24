@@ -44,6 +44,7 @@ export const Loading: Story = {
 };
 
 export const DashboardRow: Story = {
+  args: { title: "Total Revenue", value: "$45,231" },
   render: () => (
     <div className="grid grid-cols-4 gap-4 w-[900px]">
       <KPICard

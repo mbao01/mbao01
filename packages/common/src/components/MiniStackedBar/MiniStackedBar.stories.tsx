@@ -37,6 +37,7 @@ export const BudgetCategories: Story = {
 };
 
 export const InTable: Story = {
+  args: { segments: [{ value: 60, label: "A" }, { value: 40, label: "B" }] },
   render: () => (
     <table className="table w-[500px]">
       <thead><tr><th>Month</th><th>Breakdown</th><th>Total</th></tr></thead>

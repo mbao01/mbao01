@@ -65,6 +65,7 @@ export const CustomBrand: Story = {
 };
 
 export const MultipleBrands: Story = {
+  args: { children: null },
   render: () => (
     <div className="flex gap-8">
       <ThemeProvider brand={{ name: "default" }}>

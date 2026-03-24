@@ -30,6 +30,7 @@ export const Compact: Story = {
 };
 
 export const Colored: Story = {
+  args: { value: 12450.5 },
   render: () => (
     <div className="flex flex-col gap-2 text-lg font-semibold">
       <Amount value={12450.5} currency="USD" colored />
@@ -40,6 +41,7 @@ export const Colored: Story = {
 };
 
 export const FinanceDashboard: Story = {
+  args: { value: 45231 },
   render: () => (
     <div className="grid grid-cols-3 gap-6">
       <div className="flex flex-col gap-1">

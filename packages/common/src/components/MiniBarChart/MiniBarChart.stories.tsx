@@ -20,6 +20,7 @@ export const HighlightLast: Story = {
 };
 
 export const InTableCell: Story = {
+  args: { data: [4, 7, 3, 8, 5, 9, 6, 10, 7, 12] },
   render: () => (
     <table className="table w-[500px]">
       <thead><tr><th>Account</th><th>Balance</th><th>Weekly Volume</th></tr></thead>
