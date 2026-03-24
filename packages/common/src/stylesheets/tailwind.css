@@ -170,6 +170,7 @@
   --animate-gradient: gradient 8s linear infinite;
   --animate-text-gradient: text-gradient 4s linear infinite;
   --animate-border-beam: border-beam 4s linear infinite;
+  --animate-meteor: meteor 5s linear infinite;
 
   @keyframes shimmer {
     0% {
@@ -332,6 +333,20 @@
     }
     100% {
       offset-distance: 100%;
+    }
+  }
+
+  @keyframes meteor {
+    0% {
+      transform: rotate(215deg) translateX(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(215deg) translateX(-500px);
+      opacity: 0;
     }
   }
 }
