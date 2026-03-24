@@ -12,7 +12,7 @@ export const getBoxClasses = cva("", {
       gradient:
         "relative border-0 bg-base-100 before:absolute before:inset-0 before:-z-10 before:-m-[2px] before:rounded-[inherit] before:bg-linear-to-br before:from-primary before:via-secondary before:to-accent",
       strip:
-        "border border-base-300 outline outline-1 outline-offset-[3px] outline-base-300",
+        "border-[3px] border-base-300 ring-[2px] ring-base-300 ring-offset-[3px] ring-offset-base-200",
       glass: "border border-white/20 bg-white/10 shadow-lg backdrop-blur-md",
       inset: "border border-base-200 bg-base-200/20 shadow-inner",
     },
