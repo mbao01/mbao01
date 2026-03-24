@@ -36,9 +36,9 @@ describe("Box", () => {
     expect(screen.getByTestId("box")).toHaveClass("overflow-hidden");
   });
 
-  it("applies variant classes", () => {
+  it("applies outlined style", () => {
     render(
-      <Box variant="outlined" data-testid="box">
+      <Box style="outlined" data-testid="box">
         Content
       </Box>
     );
@@ -47,7 +47,7 @@ describe("Box", () => {
 
   it("applies bordered variant", () => {
     render(
-      <Box variant="bordered" data-testid="box">
+      <Box style="bordered" data-testid="box">
         Content
       </Box>
     );
@@ -56,7 +56,7 @@ describe("Box", () => {
 
   it("applies elevated variant", () => {
     render(
-      <Box variant="elevated" data-testid="box">
+      <Box style="elevated" data-testid="box">
         Content
       </Box>
     );
@@ -65,7 +65,7 @@ describe("Box", () => {
 
   it("applies ghost variant", () => {
     render(
-      <Box variant="ghost" data-testid="box">
+      <Box style="ghost" data-testid="box">
         Content
       </Box>
     );
@@ -101,7 +101,7 @@ describe("Box", () => {
 
   it("applies inset variant", () => {
     render(
-      <Box variant="inset" data-testid="box">
+      <Box style="inset" data-testid="box">
         Content
       </Box>
     );
@@ -125,7 +125,7 @@ describe("Box", () => {
 
   it("combines multiple variants", () => {
     render(
-      <Box variant="outlined" rounded="xl" padding="lg" shadow="sm" data-testid="box">
+      <Box style="outlined" rounded="xl" padding="lg" shadow="sm" data-testid="box">
         Content
       </Box>
     );
