@@ -419,3 +419,98 @@ export const NegativeBarChartExample = (props: Partial<BarChartProps>) => {
     </Chart>
   );
 };
+
+/**
+ * Rounded pill-shaped bar chart — thick bars with fully rounded tops,
+ * inspired by modern dashboard UIs. One bar per day of week with
+ * the active/current day highlighted.
+ */
+export const RoundedBarChartExample = (props: Partial<BarChartProps>) => {
+  const chartConfig = {
+    visitors: {
+      label: "Visitors",
+      color: "hsl(var(--chart-1))",
+    },
+  } satisfies ChartConfig;
+
+  return (
+    <Chart config={chartConfig} className="h-[200px] w-full">
+      <BarChart
+        accessibilityLayer
+        barCategoryGap="25%"
+        {...props.barChart}
+      >
+        <XAxis
+          dataKey="day"
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          {...props.xAxis}
+        />
+        <YAxis hide {...props.yAxis} />
+        <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
+        <Bar dataKey="visitors" radius={[999, 999, 999, 999]} barSize={28} {...props.bar}>
+          {(props.barChart as { data: { day: string; visitors: number; active?: boolean }[] })?.data?.map(
+            (entry, index) => (
+              <Cell
+                key={`cell-${index}`}
+                fill={entry.active ? "var(--color-visitors)" : "var(--color-visitors)"}
+                fillOpacity={entry.active ? 1 : 0.2}
+              />
+            )
+          )}
+        </Bar>
+      </BarChart>
+    </Chart>
+  );
+};
+
+/**
+ * Grouped rounded bar chart — side-by-side bars with rounded tops
+ * for comparing two data series.
+ */
+export const GroupedRoundedBarChartExample = (props: Partial<BarChartProps>) => {
+  const chartConfig = {
+    income: {
+      label: "Income",
+      color: "hsl(var(--chart-1))",
+    },
+    expenses: {
+      label: "Expenses",
+      color: "hsl(var(--chart-2))",
+    },
+  } satisfies ChartConfig;
+
+  return (
+    <Chart config={chartConfig} className="h-[250px] w-full">
+      <BarChart accessibilityLayer barCategoryGap="20%" {...props.barChart}>
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <XAxis
+          dataKey="month"
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          tickFormatter={(value: string) => value.slice(0, 3)}
+          {...props.xAxis}
+        />
+        <YAxis tickLine={false} axisLine={false} tickMargin={8} {...props.yAxis} />
+        <ChartTooltip content={<ChartTooltipContent />} />
+        <ChartLegend content={<ChartLegendContent />} />
+        <Bar
+          dataKey="income"
+          fill="var(--color-income)"
+          radius={[6, 6, 0, 0]}
+          barSize={18}
+          {...props.bar}
+        />
+        <Bar
+          dataKey="expenses"
+          fill="var(--color-expenses)"
+          radius={[6, 6, 0, 0]}
+          barSize={18}
+          {...props.bar}
+        />
+      </BarChart>
+    </Chart>
+  );
+};

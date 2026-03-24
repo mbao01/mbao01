@@ -36,6 +36,78 @@ describe("Box", () => {
     expect(screen.getByTestId("box")).toHaveClass("overflow-hidden");
   });
 
+  it("applies variant classes", () => {
+    render(
+      <Box variant="outlined" data-testid="box">
+        Content
+      </Box>
+    );
+    expect(screen.getByTestId("box")).toHaveClass("border", "border-base-200");
+  });
+
+  it("applies bordered variant", () => {
+    render(
+      <Box variant="bordered" data-testid="box">
+        Content
+      </Box>
+    );
+    expect(screen.getByTestId("box")).toHaveClass("border-double");
+  });
+
+  it("applies elevated variant", () => {
+    render(
+      <Box variant="elevated" data-testid="box">
+        Content
+      </Box>
+    );
+    expect(screen.getByTestId("box")).toHaveClass("shadow-md", "border");
+  });
+
+  it("applies ghost variant", () => {
+    render(
+      <Box variant="ghost" data-testid="box">
+        Content
+      </Box>
+    );
+    expect(screen.getByTestId("box")).toHaveClass("bg-base-200/40");
+  });
+
+  it("applies rounded variant", () => {
+    render(
+      <Box rounded="xl" data-testid="box">
+        Content
+      </Box>
+    );
+    expect(screen.getByTestId("box")).toHaveClass("rounded-xl");
+  });
+
+  it("applies padding variant", () => {
+    render(
+      <Box padding="lg" data-testid="box">
+        Content
+      </Box>
+    );
+    expect(screen.getByTestId("box")).toHaveClass("p-6");
+  });
+
+  it("applies shadow variant", () => {
+    render(
+      <Box shadow="lg" data-testid="box">
+        Content
+      </Box>
+    );
+    expect(screen.getByTestId("box")).toHaveClass("shadow-lg");
+  });
+
+  it("applies inset variant", () => {
+    render(
+      <Box variant="inset" data-testid="box">
+        Content
+      </Box>
+    );
+    expect(screen.getByTestId("box")).toHaveClass("shadow-inner");
+  });
+
   it("merges custom className", () => {
     render(
       <Box className="custom-class" data-testid="box">
@@ -49,5 +121,15 @@ describe("Box", () => {
     const ref = { current: null };
     render(<Box ref={ref}>Content</Box>);
     expect(ref.current).toBeInstanceOf(HTMLDivElement);
+  });
+
+  it("combines multiple variants", () => {
+    render(
+      <Box variant="outlined" rounded="xl" padding="lg" shadow="sm" data-testid="box">
+        Content
+      </Box>
+    );
+    const box = screen.getByTestId("box");
+    expect(box).toHaveClass("border", "rounded-xl", "p-6", "shadow-sm");
   });
 });
