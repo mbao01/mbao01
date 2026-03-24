@@ -1,14 +1,12 @@
-import type { HTMLAttributes } from "react";
 import type { Transition, Variant } from "framer-motion";
+import type { HTMLAttributes } from "react";
 
-export type AnimatedGroupPreset =
-  | "fade"
-  | "slide"
-  | "scale"
-  | "blur"
-  | "blur-slide";
+export type AnimatedGroupPreset = "fade" | "slide" | "scale" | "blur" | "blur-slide";
 
-export type AnimatedGroupProps = HTMLAttributes<HTMLDivElement> & {
+export type AnimatedGroupProps = Omit<
+  HTMLAttributes<HTMLDivElement>,
+  "onDrag" | "onDragStart" | "onDragEnd" | "onAnimationStart"
+> & {
   /** Animation preset */
   preset?: AnimatedGroupPreset;
   /** Custom framer-motion variants */

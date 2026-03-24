@@ -1,8 +1,9 @@
 "use client";
 
-import { motion, type HTMLMotionProps } from "framer-motion";
-import { cn } from "../../utilities";
+import type { HTMLMotionProps } from "framer-motion";
+import { motion } from "framer-motion";
 import type { ShinyButtonProps } from "./types";
+import { cn } from "../../utilities";
 
 const animationProps = {
   initial: { "--x": "100%" },
@@ -19,8 +20,6 @@ const animationProps = {
 } satisfies HTMLMotionProps<"button">;
 
 const ShinyButton = ({ children, className, ...props }: ShinyButtonProps) => {
-  const { onDrag, onDragStart, onDragEnd, onAnimationStart, ...rest } = props;
-
   return (
     <motion.button
       {...animationProps}
@@ -31,7 +30,7 @@ const ShinyButton = ({ children, className, ...props }: ShinyButtonProps) => {
         "dark:bg-[radial-gradient(circle_at_50%_0%,oklch(0.8_0.15_250/0.15)_0%,transparent_60%)]",
         className
       )}
-      {...rest}
+      {...props}
     >
       <span
         className="relative block size-full text-sm tracking-wide"
