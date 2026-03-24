@@ -33,6 +33,28 @@ export type DateRangePickerProps = BaseDatePickerProps &
     getRangeLabel?: (range: DateRange | undefined) => string | React.JSX.Element | undefined;
   };
 
+export type DateRangePreset = {
+  /** Display label for the preset */
+  label: string;
+  /** Function that returns the date range for this preset */
+  range: () => DateRange;
+};
+
+export type DateRangePresetPickerProps = BaseDatePickerProps &
+  Omit<PropsRange, "mode" | "disabled"> & {
+    defaultRange?: DateRange;
+    disabledDates?: PropsRange["disabled"];
+    /** Preset period options. Defaults to Today, Last 7/30/90 days, This month, This year */
+    presets?: DateRangePreset[];
+    /** Called when range changes, with optional preset label */
+    onRangeChange?: (range: DateRange | undefined, presetLabel?: string) => void;
+    getRangeValue?: (range: DateRange | undefined) => {
+      from: string | undefined;
+      to: string | undefined;
+    };
+    getRangeLabel?: (range: DateRange | undefined) => string | undefined;
+  };
+
 export type MultipleDatesPickerProps = BaseDatePickerProps &
   Omit<PropsMulti, "mode"> & {
     defaultDates?: Date[];
