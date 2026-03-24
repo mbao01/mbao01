@@ -3,10 +3,10 @@
 exports[`Dock > renders a basic dock 1`] = `
 <DocumentFragment>
   <div
-    class="dock"
+    class="dock transition-all duration-300"
   >
     <button
-      class="dock-active"
+      class="transition-all duration-200 dock-active"
     >
       <svg
         aria-hidden="true"
@@ -35,7 +35,7 @@ exports[`Dock > renders a basic dock 1`] = `
       </span>
     </button>
     <button
-      class=""
+      class="transition-all duration-200"
     >
       <svg
         aria-hidden="true"
@@ -64,7 +64,7 @@ exports[`Dock > renders a basic dock 1`] = `
       </span>
     </button>
     <button
-      class=""
+      class="transition-all duration-200"
     >
       <svg
         aria-hidden="true"

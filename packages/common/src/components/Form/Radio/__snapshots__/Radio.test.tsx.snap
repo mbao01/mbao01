@@ -3,7 +3,7 @@
 exports[`Radio > handles user input correctly 1`] = `
 <DocumentFragment>
   <input
-    class="radio"
+    class="radio transition-all duration-200"
     name="username"
     type="radio"
   />
@@ -13,7 +13,7 @@ exports[`Radio > handles user input correctly 1`] = `
 exports[`Radio > has 'base' ('md') 1`] = `
 <DocumentFragment>
   <input
-    class="radio radio-md"
+    class="radio transition-all duration-200 radio-md"
     name="base"
     type="radio"
   />
@@ -23,7 +23,7 @@ exports[`Radio > has 'base' ('md') 1`] = `
 exports[`Radio > has 'large' ('lg') 1`] = `
 <DocumentFragment>
   <input
-    class="radio radio-lg"
+    class="radio transition-all duration-200 radio-lg"
     name="large"
     type="radio"
   />
@@ -33,7 +33,7 @@ exports[`Radio > has 'large' ('lg') 1`] = `
 exports[`Radio > has 'small' ('sm') 1`] = `
 <DocumentFragment>
   <input
-    class="radio radio-sm"
+    class="radio transition-all duration-200 radio-sm"
     name="small"
     type="radio"
   />
@@ -43,7 +43,7 @@ exports[`Radio > has 'small' ('sm') 1`] = `
 exports[`Radio > has 'tiny' ('xs') 1`] = `
 <DocumentFragment>
   <input
-    class="radio radio-xs"
+    class="radio transition-all duration-200 radio-xs"
     name="tiny"
     type="radio"
   />
@@ -54,7 +54,7 @@ exports[`Radio > has accent variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="radio radio-accent"
+    class="radio transition-all duration-200 radio-accent"
     name="name"
     type="radio"
   />
@@ -65,7 +65,7 @@ exports[`Radio > has error variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="radio radio-error"
+    class="radio transition-all duration-200 radio-error"
     name="name"
     type="radio"
   />
@@ -76,7 +76,7 @@ exports[`Radio > has info variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="radio radio-info"
+    class="radio transition-all duration-200 radio-info"
     name="name"
     type="radio"
   />
@@ -87,7 +87,7 @@ exports[`Radio > has primary variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="radio radio-primary"
+    class="radio transition-all duration-200 radio-primary"
     name="name"
     type="radio"
   />
@@ -98,7 +98,7 @@ exports[`Radio > has secondary variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="radio radio-secondary"
+    class="radio transition-all duration-200 radio-secondary"
     name="name"
     type="radio"
   />
@@ -109,7 +109,7 @@ exports[`Radio > has success variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="radio radio-success"
+    class="radio transition-all duration-200 radio-success"
     name="name"
     type="radio"
   />
@@ -120,7 +120,7 @@ exports[`Radio > has warning variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="radio radio-warning"
+    class="radio transition-all duration-200 radio-warning"
     name="name"
     type="radio"
   />
@@ -130,7 +130,7 @@ exports[`Radio > has warning variant 1`] = `
 exports[`Radio > prevent user input when disabled 1`] = `
 <DocumentFragment>
   <input
-    class="radio"
+    class="radio transition-all duration-200"
     disabled=""
     name="username"
     type="radio"
@@ -142,7 +142,7 @@ exports[`Radio > renders with the correct initial state 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="radio"
+    class="radio transition-all duration-200"
     name="username"
     type="radio"
   />

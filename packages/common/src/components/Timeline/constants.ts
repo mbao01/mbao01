@@ -31,7 +31,7 @@ export const getTimelineItemClasses = cva("grid items-center gap-x-2", {
 });
 
 export const getTimelineDotClasses = cva(
-  "timeline-dot col-start-2 col-end-3 row-start-1 row-end-1 flex size-4 items-center justify-center rounded-full border",
+  "timeline-dot col-start-2 col-end-3 row-start-1 row-end-1 flex size-4 items-center justify-center rounded-full border transition-all duration-200",
   {
     variants: createVariants({
       status: {

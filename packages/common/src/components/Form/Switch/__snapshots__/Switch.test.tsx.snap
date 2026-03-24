@@ -3,7 +3,7 @@
 exports[`Switch > handles user input correctly 1`] = `
 <DocumentFragment>
   <input
-    class="toggle"
+    class="toggle transition-all duration-200"
     name="username"
     type="checkbox"
   />
@@ -13,7 +13,7 @@ exports[`Switch > handles user input correctly 1`] = `
 exports[`Switch > has 'base' ('md') 1`] = `
 <DocumentFragment>
   <input
-    class="toggle toggle-md"
+    class="toggle transition-all duration-200 toggle-md"
     name="base"
     type="checkbox"
   />
@@ -23,7 +23,7 @@ exports[`Switch > has 'base' ('md') 1`] = `
 exports[`Switch > has 'large' ('lg') 1`] = `
 <DocumentFragment>
   <input
-    class="toggle toggle-lg"
+    class="toggle transition-all duration-200 toggle-lg"
     name="large"
     type="checkbox"
   />
@@ -33,7 +33,7 @@ exports[`Switch > has 'large' ('lg') 1`] = `
 exports[`Switch > has 'small' ('sm') 1`] = `
 <DocumentFragment>
   <input
-    class="toggle toggle-sm"
+    class="toggle transition-all duration-200 toggle-sm"
     name="small"
     type="checkbox"
   />
@@ -43,7 +43,7 @@ exports[`Switch > has 'small' ('sm') 1`] = `
 exports[`Switch > has 'tiny' ('xs') 1`] = `
 <DocumentFragment>
   <input
-    class="toggle toggle-xs"
+    class="toggle transition-all duration-200 toggle-xs"
     name="tiny"
     type="checkbox"
   />
@@ -54,7 +54,7 @@ exports[`Switch > has accent variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="toggle toggle-accent"
+    class="toggle transition-all duration-200 toggle-accent"
     name="name"
     type="checkbox"
   />
@@ -65,7 +65,7 @@ exports[`Switch > has error variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="toggle toggle-error"
+    class="toggle transition-all duration-200 toggle-error"
     name="name"
     type="checkbox"
   />
@@ -76,7 +76,7 @@ exports[`Switch > has info variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="toggle toggle-info"
+    class="toggle transition-all duration-200 toggle-info"
     name="name"
     type="checkbox"
   />
@@ -87,7 +87,7 @@ exports[`Switch > has primary variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="toggle toggle-primary"
+    class="toggle transition-all duration-200 toggle-primary"
     name="name"
     type="checkbox"
   />
@@ -98,7 +98,7 @@ exports[`Switch > has secondary variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="toggle toggle-secondary"
+    class="toggle transition-all duration-200 toggle-secondary"
     name="name"
     type="checkbox"
   />
@@ -109,7 +109,7 @@ exports[`Switch > has success variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="toggle toggle-success"
+    class="toggle transition-all duration-200 toggle-success"
     name="name"
     type="checkbox"
   />
@@ -120,7 +120,7 @@ exports[`Switch > has warning variant 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="toggle toggle-warning"
+    class="toggle transition-all duration-200 toggle-warning"
     name="name"
     type="checkbox"
   />
@@ -130,7 +130,7 @@ exports[`Switch > has warning variant 1`] = `
 exports[`Switch > prevent user input when disabled 1`] = `
 <DocumentFragment>
   <input
-    class="toggle"
+    class="toggle transition-all duration-200"
     disabled=""
     name="username"
     type="checkbox"
@@ -142,7 +142,7 @@ exports[`Switch > renders with the correct initial state 1`] = `
 <DocumentFragment>
   <input
     checked=""
-    class="toggle"
+    class="toggle transition-all duration-200"
     name="username"
     type="checkbox"
   />

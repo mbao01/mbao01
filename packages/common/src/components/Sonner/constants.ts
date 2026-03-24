@@ -1,7 +1,7 @@
 import { cva } from "../../libs";
 import { createVariants } from "../../utilities";
 
-export const getToastClasses = cva("sonner group", {
+export const getToastClasses = cva("sonner group shadow-lg", {
   variants: createVariants({
     variant: {
       accent: "bg-accent text-accent-content border-accent",

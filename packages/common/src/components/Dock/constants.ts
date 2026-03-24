@@ -1,7 +1,7 @@
 import { cva } from "../../libs";
 import { createVariants } from "../../utilities";
 
-export const getDockClasses = cva("dock", {
+export const getDockClasses = cva("dock transition-all duration-300", {
   variants: createVariants({
     variant: {
       accent: "bg-accent text-accent-content border-accent",
@@ -40,7 +40,7 @@ export const getDockClasses = cva("dock", {
   ],
 });
 
-export const getDockButtonClasses = cva("", {
+export const getDockButtonClasses = cva("transition-all duration-200", {
   variants: createVariants({
     active: {
       true: "dock-active",

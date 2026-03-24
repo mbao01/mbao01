@@ -1,7 +1,7 @@
 import { cva } from "../../../libs";
 import { createVariants } from "../../../utilities";
 
-export const getRadioClasses = cva("radio", {
+export const getRadioClasses = cva("radio transition-all duration-200", {
   variants: createVariants({
     variant: {
       primary: "radio-primary",

@@ -38,7 +38,7 @@ export const getMenubarClasses = cva(
 );
 
 export const getMenubarTriggerClasses = cva(
-  "flex cursor-default select-none items-center rounded-xs px-3 py-1 text-sm font-medium outline-hidden",
+  "flex cursor-default select-none items-center rounded-xs px-3 py-1 text-sm font-medium outline-hidden transition-colors duration-200",
   {
     variants: createVariants({
       variant: triggerVariant,
@@ -67,7 +67,7 @@ export const getMenubarSubContentClasses = cva(
 );
 
 export const getMenubarItemClasses = cva(
-  "relative flex cursor-default select-none items-center rounded-xs px-2 py-1.5 text-sm outline-hidden data-disabled:pointer-events-none data-disabled:opacity-50",
+  "relative flex cursor-default select-none items-center rounded-xs px-2 py-1.5 text-sm outline-hidden transition-colors duration-150 data-disabled:pointer-events-none data-disabled:opacity-50",
   {
     variants: createVariants({
       variant: itemVariant,

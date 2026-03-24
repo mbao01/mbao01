@@ -37,7 +37,7 @@ export const getDatetimeCalendarIconClasses = cva("", {
 });
 
 export const getTimePickerClasses = cva(
-  "border border-neutral-content bg-base-100 shadow-xs cursor-pointer ring-0 py-2 h-8 px-3 w-full text-sm outline-0 inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-base-content disabled:pointer-events-none disabled:opacity-50 hover:bg-base-200",
+  "border border-neutral-content bg-base-100 shadow-xs cursor-pointer ring-0 py-2 h-8 px-3 w-full text-sm outline-0 inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-all duration-200 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-base-content disabled:pointer-events-none disabled:opacity-50 hover:bg-base-200",
   {
     variants: createVariants({
       selected: {

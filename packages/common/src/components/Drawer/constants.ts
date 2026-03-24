@@ -1,7 +1,7 @@
 import { cva } from "../../libs";
 
 export const getDrawerContentClasses = cva(
-  "fixed inset-x-0 bottom-0 z-50 mt-24 flex h-auto flex-col rounded-t-[10px] border bg-base-100"
+  "fixed inset-x-0 bottom-0 z-50 mt-24 flex h-auto flex-col rounded-t-[10px] border bg-base-100 shadow-lg"
 );
 
 export const getDrawerDescriptionClasses = cva("text-sm");

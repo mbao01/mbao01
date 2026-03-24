@@ -6,7 +6,7 @@ export const getMultiSelectClasses = cva("overflow-visible bg-transparent flex f
 export const getMultiSelectTriggerClasses = cva("flex-wrap h-fit w-fit py-2 overflow-hidden");
 
 export const getMultiSelectItemClasses = cva(
-  "cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden",
+  "cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden",
   {
     variants: createVariants({
       included: {

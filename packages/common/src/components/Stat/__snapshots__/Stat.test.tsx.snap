@@ -3,7 +3,7 @@
 exports[`Stats > renders a basic stats 1`] = `
 <DocumentFragment>
   <div
-    class="stats stats-horizontal"
+    class="stats shadow-sm stats-horizontal"
   >
     <div
       class="stat"
