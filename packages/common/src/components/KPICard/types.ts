@@ -9,12 +9,8 @@ export type KPICardProps = HTMLAttributes<HTMLDivElement> & {
   change?: number;
   /** Description text below value */
   description?: string;
-  /** Sparkline data points */
-  sparklineData?: number[];
-  /** Sparkline color */
-  sparklineColor?: string;
-  /** Whether sparkline is filled */
-  sparklineFilled?: boolean;
+  /** Inline chart element (e.g. Sparkline, MiniBarChart, MiniAreaChart, MiniDonutChart, MiniStackedBar) */
+  chart?: ReactNode;
   /** Icon to show in the card */
   icon?: ReactNode;
   /** Loading state */
