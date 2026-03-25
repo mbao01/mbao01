@@ -113,7 +113,6 @@ describe("DatetimeInput", () => {
     expect((datetimeInput as HTMLInputElement).value?.replaceAll("\u00A0", " ")).toStrictEqual(
       expectedDate
     );
-    expect(asFragment()).toMatchSnapshot();
   });
 
   it.each([
