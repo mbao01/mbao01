@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.9.2
+
+### Patch Changes
+
+- 9d28ea3: Update WidgetShell and KPICard states components
+
 ## 0.9.1
 
 ### Patch Changes
