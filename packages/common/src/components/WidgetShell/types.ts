@@ -9,10 +9,4 @@ export type WidgetShellProps = HTMLAttributes<HTMLDivElement> & {
   action?: ReactNode;
   /** Content to show when state is "ready" */
   children: ReactNode;
-  /** Custom content for error state */
-  errorContent?: ReactNode;
-  /** Custom content for empty state */
-  emptyContent?: ReactNode;
-  /** Callback when retry is clicked in error state */
-  onRetry?: () => void;
 };

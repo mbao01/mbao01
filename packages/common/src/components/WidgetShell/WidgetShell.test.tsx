@@ -1,11 +1,11 @@
-import { render, screen, fireEvent } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 import { WidgetShell } from "./";
 
 describe("WidgetShell", () => {
   it("renders children in ready state", () => {
     render(
-      <WidgetShell state="ready" title="Revenue">
+      <WidgetShell title="Revenue">
         <p>$12,450</p>
       </WidgetShell>
     );
@@ -15,8 +15,8 @@ describe("WidgetShell", () => {
 
   it("shows skeleton in loading state", () => {
     render(
-      <WidgetShell state="loading" title="Revenue">
-        <p>Content</p>
+      <WidgetShell title="Revenue">
+        <WidgetShell.Loading />
       </WidgetShell>
     );
     expect(screen.queryByText("Content")).not.toBeInTheDocument();
@@ -26,8 +26,8 @@ describe("WidgetShell", () => {
   it("shows error state with retry button", () => {
     const onRetry = vi.fn();
     render(
-      <WidgetShell state="error" title="Revenue" onRetry={onRetry}>
-        <p>Content</p>
+      <WidgetShell title="Revenue">
+        <WidgetShell.Error onRetry={onRetry} />
       </WidgetShell>
     );
     expect(screen.getByText("Something went wrong")).toBeInTheDocument();
@@ -37,8 +37,8 @@ describe("WidgetShell", () => {
 
   it("shows empty state", () => {
     render(
-      <WidgetShell state="empty" title="Transactions">
-        <p>Content</p>
+      <WidgetShell title="Transactions">
+        <WidgetShell.Empty />
       </WidgetShell>
     );
     expect(screen.getByText("No data")).toBeInTheDocument();
@@ -46,8 +46,10 @@ describe("WidgetShell", () => {
 
   it("renders custom error content", () => {
     render(
-      <WidgetShell state="error" errorContent={<p>Custom error</p>}>
-        <p>Content</p>
+      <WidgetShell>
+        <WidgetShell.Error>
+          <p>Custom error</p>
+        </WidgetShell.Error>
       </WidgetShell>
     );
     expect(screen.getByText("Custom error")).toBeInTheDocument();
@@ -55,8 +57,10 @@ describe("WidgetShell", () => {
 
   it("renders custom empty content", () => {
     render(
-      <WidgetShell state="empty" emptyContent={<p>Nothing here</p>}>
-        <p>Content</p>
+      <WidgetShell>
+        <WidgetShell.Empty>
+          <p>Nothing here</p>
+        </WidgetShell.Empty>
       </WidgetShell>
     );
     expect(screen.getByText("Nothing here")).toBeInTheDocument();

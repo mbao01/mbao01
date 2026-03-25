@@ -57,8 +57,7 @@ export const Error: Story = {
   args: {
     title: "Revenue",
     description: "Monthly overview",
-    onRetry: () => alert("Retrying..."),
-    children: <WidgetShell.Error />,
+    children: <WidgetShell.Error onRetry={() => alert("Retrying...")} />,
   },
 };
 
