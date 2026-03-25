@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.9.1
+
+### Patch Changes
+
+- d070f64: Add IconContainer component
+
 ## 0.9.0
 
 ### Minor Changes
