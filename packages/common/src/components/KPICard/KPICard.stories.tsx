@@ -6,6 +6,7 @@ import { MiniDonutChart } from "../MiniDonutChart";
 import { MiniStackedBar } from "../MiniStackedBar";
 import { Sparkline } from "../Sparkline";
 import { KPICard } from "./KPICard";
+import { KPICardSkeleton } from "./KPICardSkeleton";
 
 const meta = {
   title: "Data Display/KPICard",
@@ -127,12 +128,13 @@ export const Negative: Story = {
 };
 
 export const Loading: Story = {
-  args: {
-    title: "Revenue",
-    value: "$0",
-    loading: true,
-    icon: <DollarSignIcon className="size-4" />,
-  },
+  args: { title: "", value: "" },
+  render: () => <KPICardSkeleton />,
+};
+
+export const LoadingNoChart: Story = {
+  args: { title: "", value: "" },
+  render: () => <KPICardSkeleton chart={false} />,
 };
 
 export const DashboardRow: Story = {

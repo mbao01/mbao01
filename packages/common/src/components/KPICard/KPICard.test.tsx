@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import { KPICard } from "./";
+import { KPICardSkeleton } from "./KPICardSkeleton";
 
 describe("KPICard", () => {
   it("renders title and value", () => {
@@ -26,10 +27,15 @@ describe("KPICard", () => {
     expect(container.querySelector("svg")).toBeInTheDocument();
   });
 
-  it("renders loading state", () => {
-    render(<KPICard title="Revenue" value="$12,450" loading />);
-    expect(screen.queryByText("Revenue")).not.toBeInTheDocument();
-    expect(screen.queryByText("$12,450")).not.toBeInTheDocument();
+  it("renders skeleton", () => {
+    const { container } = render(<KPICardSkeleton />);
+    expect(container.querySelector(".skeleton")).toBeInTheDocument();
+  });
+
+  it("renders skeleton without chart", () => {
+    const { container } = render(<KPICardSkeleton chart={false} />);
+    const skeletons = container.querySelectorAll(".skeleton");
+    expect(skeletons.length).toBeGreaterThan(0);
   });
 
   it("renders icon", () => {
