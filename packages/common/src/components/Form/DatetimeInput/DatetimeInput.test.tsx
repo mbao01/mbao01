@@ -101,7 +101,7 @@ describe("DatetimeInput", () => {
     },
   ])("and the user's browser is in a $locale locale", async ({ locale, expectedDate }) => {
     const user = userEvent.setup();
-    const { asFragment } = render(<DatetimeInput aria-label="Enter anything" locale={locale} />);
+    render(<DatetimeInput aria-label="Enter anything" locale={locale} />);
 
     let datetimeInput = screen.getByRole("textbox", { name: "Enter anything" });
 
