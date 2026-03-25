@@ -1,7 +1,8 @@
+import type { KPICardProps } from "./types";
 import { cn } from "../../utilities";
+import { Skeleton } from "../Skeleton";
 import { Sparkline } from "../Sparkline";
 import { TrendBadge } from "../TrendBadge";
-import type { KPICardProps } from "./types";
 
 const KPICard = ({
   title,
@@ -26,15 +27,15 @@ const KPICard = ({
         {...props}
       >
         <div className="flex items-center justify-between">
-          <span className="skeleton h-4 w-24 rounded" />
-          {icon && <span className="skeleton size-8 rounded-md" />}
+          <Skeleton className="h-4 w-24 rounded" />
+          {icon && <Skeleton className="size-8 rounded-md" />}
         </div>
-        <div className="mt-3 flex items-end justify-between gap-4">
+        <div className="mt-4 flex items-end justify-between gap-4">
           <div className="flex flex-col gap-1.5">
-            <span className="skeleton h-7 w-28 rounded" />
-            <span className="skeleton h-3.5 w-20 rounded" />
+            <Skeleton className="h-7 w-28 rounded" />
+            <Skeleton className="h-3.5 w-20 rounded" />
           </div>
-          <span className="skeleton h-8 w-20 rounded" />
+          <Skeleton className="h-8 w-20 rounded" />
         </div>
       </div>
     );
@@ -61,15 +62,16 @@ const KPICard = ({
           <span className="text-2xl font-bold tracking-tight">{value}</span>
           <div className="flex items-center gap-2">
             {change !== undefined && <TrendBadge value={change} size="xs" />}
-            {description && (
-              <span className="text-xs text-base-content/50">{description}</span>
-            )}
+            {description && <span className="text-xs text-base-content/50">{description}</span>}
           </div>
         </div>
         {sparklineData && sparklineData.length >= 2 && (
           <Sparkline
             data={sparklineData}
-            color={sparklineColor ?? (change !== undefined && change >= 0 ? "oklch(0.7 0.2 150)" : "oklch(0.65 0.25 25)")}
+            color={
+              sparklineColor ??
+              (change !== undefined && change >= 0 ? "oklch(0.7 0.2 150)" : "oklch(0.65 0.25 25)")
+            }
             filled={sparklineFilled}
             width={80}
             height={32}

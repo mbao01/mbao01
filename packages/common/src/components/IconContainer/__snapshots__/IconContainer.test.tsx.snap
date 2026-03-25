@@ -1,0 +1,295 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`IconContainer > has accent variant 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-accent text-accent-content size-10 text-base rounded-full shadow-md"
+  >
+    accent icon
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has circle shape 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-10 text-base rounded-full shadow-md"
+  >
+    circle shape
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has default variant 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-10 text-base rounded-full shadow-md"
+  >
+    default icon
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has error variant 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-error text-error-content size-10 text-base rounded-full shadow-md"
+  >
+    error icon
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has extra large (xl) size 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-16 text-2xl rounded-full shadow-md"
+  >
+    extra large
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has ghost variant 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-ghost text-ghost-content size-10 text-base rounded-full shadow-md"
+  >
+    ghost icon
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has info variant 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-info text-info-content size-10 text-base rounded-full shadow-md"
+  >
+    info icon
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has large (lg) size 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-12 text-lg rounded-full shadow-md"
+  >
+    large
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has lg shadow 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-10 text-base rounded-full shadow-lg"
+  >
+    lg shadow
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has md shadow 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-10 text-base rounded-full shadow-md"
+  >
+    md shadow
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has medium (md) size 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-10 text-base rounded-full shadow-md"
+  >
+    medium
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has neutral variant 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-neutral text-neutral-content size-10 text-base rounded-full shadow-md"
+  >
+    neutral icon
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has no outline 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-10 text-base rounded-full shadow-md"
+  >
+    has no outline
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has no soft 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-10 text-base rounded-full shadow-md"
+  >
+    has no soft
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has none shadow 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-10 text-base rounded-full"
+  >
+    none shadow
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has outline 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] size-10 text-base rounded-full shadow-md bg-transparent ring-2 ring-offset-2 ring-offset-base-100 ring-base-300 text-base-content"
+  >
+    has outline
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has primary variant 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-primary text-primary-content size-10 text-base rounded-full shadow-md"
+  >
+    primary icon
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has rounded shape 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-10 text-base rounded-lg shadow-md"
+  >
+    rounded shape
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has secondary variant 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-secondary text-secondary-content size-10 text-base rounded-full shadow-md"
+  >
+    secondary icon
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has sm shadow 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-10 text-base rounded-full shadow-sm"
+  >
+    sm shadow
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has small (sm) size 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-8 text-sm rounded-full shadow-md"
+  >
+    small
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has soft 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] size-10 text-base rounded-full shadow-md bg-base-200/50 text-base-content"
+  >
+    has soft
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has square shape 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-10 text-base rounded-none shadow-md"
+  >
+    square shape
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has success variant 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-success text-success-content size-10 text-base rounded-full shadow-md"
+  >
+    success icon
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has tiny (xs) size 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-6 text-xs rounded-full shadow-md"
+  >
+    tiny
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has warning variant 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-warning text-warning-content size-10 text-base rounded-full shadow-md"
+  >
+    warning icon
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > has xl shadow 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-10 text-base rounded-full shadow-xl"
+  >
+    xl shadow
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > is not raised 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base-content size-10 text-base rounded-full shadow-md"
+  >
+    is not raised
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IconContainer > is raised 1`] = `
+<DocumentFragment>
+  <div
+    class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] text-base-content size-10 text-base rounded-full ring-3 ring-base-200 bg-base-200 [&>div]:bg-base-100 [&>div]:size-[inherit] [&>div]:rounded-[inherit]"
+  >
+    <div
+      class="inline-flex items-center justify-center shrink-0 [&>svg]:size-[1em] bg-base-200 text-base size-10 text-base shadow-md"
+    >
+      is raised
+    </div>
+  </div>
+</DocumentFragment>
+`;
