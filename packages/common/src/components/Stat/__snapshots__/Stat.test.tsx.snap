@@ -3,7 +3,7 @@
 exports[`Stats > renders a basic stats 1`] = `
 <DocumentFragment>
   <div
-    class="stats stats-horizontal"
+    class="stats shadow-sm stats-horizontal"
   >
     <div
       class="stat"
@@ -27,13 +27,13 @@ exports[`Stats > renders a basic stats 1`] = `
         class="stat-actions gap-2"
       >
         <button
-          class="btn btn-success btn-xs rounded-md"
+          class="btn transition-all duration-200 ease-out active:scale-[0.97] btn-success shadow-sm hover:shadow-md hover:shadow-success/20 btn-xs rounded-md"
         >
           Withdrawal
         </button>
          
         <button
-          class="btn btn-secondary btn-xs rounded-md"
+          class="btn transition-all duration-200 ease-out active:scale-[0.97] btn-secondary shadow-sm hover:shadow-md hover:shadow-secondary/20 btn-xs rounded-md"
           name="hello"
         >
           Buy Now
@@ -62,13 +62,13 @@ exports[`Stats > renders a basic stats 1`] = `
         class="stat-actions gap-2"
       >
         <button
-          class="btn btn-success btn-xs rounded-md"
+          class="btn transition-all duration-200 ease-out active:scale-[0.97] btn-success shadow-sm hover:shadow-md hover:shadow-success/20 btn-xs rounded-md"
         >
           Withdrawal
         </button>
          
         <button
-          class="btn btn-secondary btn-xs rounded-md"
+          class="btn transition-all duration-200 ease-out active:scale-[0.97] btn-secondary shadow-sm hover:shadow-md hover:shadow-secondary/20 btn-xs rounded-md"
           name="hello"
         >
           Buy Now
@@ -97,13 +97,13 @@ exports[`Stats > renders a basic stats 1`] = `
         class="stat-actions gap-2"
       >
         <button
-          class="btn btn-success btn-xs rounded-md"
+          class="btn transition-all duration-200 ease-out active:scale-[0.97] btn-success shadow-sm hover:shadow-md hover:shadow-success/20 btn-xs rounded-md"
         >
           Withdrawal
         </button>
          
         <button
-          class="btn btn-secondary btn-xs rounded-md"
+          class="btn transition-all duration-200 ease-out active:scale-[0.97] btn-secondary shadow-sm hover:shadow-md hover:shadow-secondary/20 btn-xs rounded-md"
           name="hello"
         >
           Buy Now

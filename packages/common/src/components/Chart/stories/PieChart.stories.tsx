@@ -3,6 +3,7 @@ import type { PieChartArgs } from "./args";
 import { pieChartArgs } from "./args";
 import {
   ActiveDonutPieChartExample,
+  CenterLabelDonutExample,
   CustomLabeledPieChartExample,
   DonutPieChartExample,
   LabeledPieChartExample,
@@ -157,4 +158,19 @@ export const ActiveDonutPieChart: Story = {
 export const StackedPieChart: Story = {
   args: { "pie isAnimationActive": false },
   render: renderer(StackedPieChartExample),
+};
+
+const portfolioData = [
+  { category: "stocks", value: 45, fill: "var(--color-stocks)" },
+  { category: "bonds", value: 25, fill: "var(--color-bonds)" },
+  { category: "real_estate", value: 15, fill: "var(--color-real_estate)" },
+  { category: "crypto", value: 10, fill: "var(--color-crypto)" },
+  { category: "cash", value: 5, fill: "var(--color-cash)" },
+];
+export const PortfolioDonut: Story = {
+  args: {
+    "pie isAnimationActive": false,
+    "pie data": portfolioData,
+  },
+  render: renderer(CenterLabelDonutExample),
 };

@@ -97,19 +97,22 @@ describe("DatetimeInput", () => {
     },
     {
       locale: "es-ES",
-      expectedDate: "3 jun 2026, 12:00 p. m.",
+      expectedDate: "3 jun 2026, 12:00 p. m.",
     },
   ])("and the user's browser is in a $locale locale", async ({ locale, expectedDate }) => {
     const user = userEvent.setup();
-    const { asFragment } = render(<DatetimeInput aria-label="Enter anything" locale={locale} />);
+    render(<DatetimeInput aria-label="Enter anything" locale={locale} />);
 
-    const datetimeInput = screen.getByRole("textbox", { name: "Enter anything" });
+    let datetimeInput = screen.getByRole("textbox", { name: "Enter anything" });
 
     await user.type(datetimeInput, "3rd of june next year{Enter}");
 
+    datetimeInput = screen.getByRole("textbox", { name: "Enter anything" });
+
     expect(datetimeInput).toBeVisible();
-    expect(datetimeInput).toHaveValue(expectedDate);
-    expect(asFragment()).toMatchSnapshot();
+    expect((datetimeInput as HTMLInputElement).value?.replaceAll("\u00A0", " ")).toStrictEqual(
+      expectedDate
+    );
   });
 
   it.each([

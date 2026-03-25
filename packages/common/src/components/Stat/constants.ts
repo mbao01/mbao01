@@ -1,7 +1,7 @@
 import { cva } from "../../libs";
 import { createVariants } from "../../utilities";
 
-export const getStatsClasses = cva("stats", {
+export const getStatsClasses = cva("stats shadow-sm", {
   variants: createVariants({
     direction: {
       horizontal: "stats-horizontal",

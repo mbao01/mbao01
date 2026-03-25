@@ -2,7 +2,7 @@ import { cva } from "../../libs";
 import { createVariants } from "../../utilities";
 
 export const getToggleClasses = cva(
-  "transition-colors disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost",
+  "transition-all duration-200 disabled:pointer-events-none disabled:opacity-50 data-[state=off]:btn-ghost",
   {
     variants: createVariants({
       link: {

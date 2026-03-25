@@ -6,7 +6,7 @@ exports[`DateRangePicker > has a custom label 1`] = `
     aria-controls="radix-_r_3_"
     aria-expanded="false"
     aria-haspopup="dialog"
-    class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
+    class="btn transition-all duration-200 ease-out active:scale-[0.97] min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
     data-state="closed"
     type="button"
   >
@@ -73,7 +73,7 @@ exports[`DateRangePicker > is disabled 1`] = `
     aria-controls="radix-_r_4_"
     aria-expanded="false"
     aria-haspopup="dialog"
-    class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
+    class="btn transition-all duration-200 ease-out active:scale-[0.97] min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
     data-state="closed"
     disabled=""
     type="button"
@@ -141,7 +141,7 @@ exports[`DateRangePicker > shows a default/preselected month and range 1`] = `
     aria-controls="radix-_r_1_"
     aria-expanded="true"
     aria-haspopup="dialog"
-    class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap"
+    class="btn transition-all duration-200 ease-out active:scale-[0.97] min-h-fit h-10 rounded-md justify-start flex-nowrap"
     data-state="open"
     type="button"
   >
@@ -208,7 +208,7 @@ exports[`DateRangePicker > shows calendar with specific month 1`] = `
     aria-controls="radix-_r_2_"
     aria-expanded="true"
     aria-haspopup="dialog"
-    class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
+    class="btn transition-all duration-200 ease-out active:scale-[0.97] min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
     data-state="open"
     type="button"
   >
@@ -275,7 +275,7 @@ exports[`DateRangePicker > shows the current month 1`] = `
     aria-controls="radix-_r_0_"
     aria-expanded="true"
     aria-haspopup="dialog"
-    class="btn min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
+    class="btn transition-all duration-200 ease-out active:scale-[0.97] min-h-fit h-10 rounded-md justify-start flex-nowrap font-normal"
     data-state="open"
     type="button"
   >

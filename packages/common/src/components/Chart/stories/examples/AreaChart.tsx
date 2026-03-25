@@ -154,3 +154,58 @@ export const WithLegendAreaChartExample = (props: Partial<AreaChartProps>) => {
     </Chart>
   );
 };
+
+/**
+ * Smooth gradient area chart — a single data series with a lush gradient fill,
+ * smooth natural curve, and a tooltip with a value callout. Matches the style
+ * of the "Total Sales" chart in premium dashboards.
+ */
+export const GradientAreaChartExample = (props: Partial<AreaChartProps>) => {
+  const chartConfig = {
+    value: {
+      label: "Revenue",
+      color: "hsl(var(--chart-1))",
+    },
+  } satisfies ChartConfig;
+
+  return (
+    <Chart config={chartConfig} className="h-[250px] w-full">
+      <AreaChart {...props.areaChart}>
+        <defs>
+          <linearGradient id="gradientFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="var(--color-value)" stopOpacity={0.3} />
+            <stop offset="100%" stopColor="var(--color-value)" stopOpacity={0.02} />
+          </linearGradient>
+        </defs>
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <XAxis
+          dataKey="month"
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          {...props.xAxis}
+        />
+        <YAxis
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          tickFormatter={(v: number) => `$${(v / 1000).toFixed(0)}k`}
+          {...props.yAxis}
+        />
+        <ChartTooltip
+          content={<ChartTooltipContent indicator="line" />}
+        />
+        <Area
+          dataKey="value"
+          type="natural"
+          fill="url(#gradientFill)"
+          stroke="var(--color-value)"
+          strokeWidth={2.5}
+          dot={false}
+          activeDot={{ r: 5, strokeWidth: 2, fill: "var(--color-value)" }}
+          {...props.area}
+        />
+      </AreaChart>
+    </Chart>
+  );
+};

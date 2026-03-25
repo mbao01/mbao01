@@ -2,7 +2,7 @@ import { cva } from "../../../libs";
 import { createVariants } from "../../../utilities";
 
 export const getCheckboxClasses = cva(
-  "peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50",
+  "peer flex items-center justify-center h-4 w-4 shrink-0 rounded-xs border transition-all duration-200 focus-visible:border-base-content focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-base-content disabled:cursor-not-allowed disabled:opacity-50",
   {
     variants: createVariants({
       variant: {

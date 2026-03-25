@@ -26,7 +26,7 @@ export const getCarouselItemClasses = cva("min-w-0 shrink-0 grow-0 basis-full", 
 });
 
 export const getCarouselNextClasses = cva(
-  "absolute h-8 w-8 rounded-full p-0 disabled:bg-transparent",
+  "absolute h-8 w-8 rounded-full p-0 transition-all duration-200 hover:scale-110 disabled:bg-transparent",
   {
     variants: createVariants({
       orientation: {
@@ -41,7 +41,7 @@ export const getCarouselNextClasses = cva(
 );
 
 export const getCarouselPreviousClasses = cva(
-  "absolute h-8 w-8 rounded-full p-0 disabled:bg-transparent",
+  "absolute h-8 w-8 rounded-full p-0 transition-all duration-200 hover:scale-110 disabled:bg-transparent",
   {
     variants: createVariants({
       orientation: {

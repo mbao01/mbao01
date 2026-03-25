@@ -27,7 +27,7 @@ export const getCommandGroupClasses = cva(
 export const getCommandSeparatorClasses = cva("-mx-1 h-px bg-border");
 
 export const getCommandItemClasses = cva(
-  "relative flex cursor-pointer select-none items-center rounded-xs px-2 py-1.5 text-sm outline-hidden transition-colors aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default"
+  "relative flex cursor-pointer select-none items-center rounded-xs px-2 py-1.5 text-sm outline-hidden transition-all duration-150 aria-selected:bg-base-300 aria-selected:text-base-content aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default"
 );
 
 export const getCommandShortcutClasses = cva(

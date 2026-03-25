@@ -1,7 +1,7 @@
 import { cva } from "../../libs";
 import { createVariants } from "../../utilities";
 
-export const getBannerClasses = cva("alert alert-vertical sm:alert-horizontal", {
+export const getBannerClasses = cva("alert alert-vertical sm:alert-horizontal shadow-sm", {
   variants: createVariants({
     variant: {
       info: "alert-info",

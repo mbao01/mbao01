@@ -3,6 +3,7 @@ import type { AreaChartArgs } from "./args";
 import { areaChartArgs } from "./args";
 import {
   AreaChartExample,
+  GradientAreaChartExample,
   LabeledAreaChartExample,
   StackedAreaChartExample,
   StackedExpandedAreaChartExample,
@@ -261,4 +262,28 @@ export const WithLegendAreaChart: Story = {
     },
   },
   render: renderer(WithLegendAreaChartExample),
+};
+
+const revenueData = [
+  { month: "Jan", value: 45000 },
+  { month: "Feb", value: 52000 },
+  { month: "Mar", value: 48000 },
+  { month: "Apr", value: 61000 },
+  { month: "May", value: 55000 },
+  { month: "Jun", value: 67000 },
+  { month: "Jul", value: 72000 },
+  { month: "Aug", value: 78000 },
+  { month: "Sep", value: 85000 },
+  { month: "Oct", value: 92000 },
+  { month: "Nov", value: 98000 },
+  { month: "Dec", value: 112000 },
+];
+export const GradientAreaChart: Story = {
+  args: {
+    "area isAnimationActive": false,
+    "areaChart accessibilityLayer": true,
+    "areaChart data": revenueData,
+    "areaChart margin": { top: 12, left: 12, right: 12 },
+  },
+  render: renderer(GradientAreaChartExample),
 };

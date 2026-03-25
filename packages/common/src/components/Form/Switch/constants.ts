@@ -1,7 +1,7 @@
 import { cva } from "../../../libs";
 import { createVariants } from "../../../utilities";
 
-export const getSwitchClasses = cva("toggle", {
+export const getSwitchClasses = cva("toggle transition-all duration-200", {
   variants: createVariants({
     variant: {
       primary: "toggle-primary",

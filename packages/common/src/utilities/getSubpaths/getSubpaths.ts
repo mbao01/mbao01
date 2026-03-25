@@ -6,8 +6,7 @@ const createPathObject = (
   pathLabels?: Record<string, string>
 ) => ({
   href: { pathname },
-  // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
-  label: pathLabels?.[pathname] || segment, // always fallback to segment if label does not exist
+  label: pathLabels?.[pathname] || segment,
 });
 
 export const getSubpaths = (

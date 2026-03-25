@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SpotlightCard > renders children 1`] = `
+<DocumentFragment>
+  <div
+    class="group relative overflow-hidden rounded-lg border bg-base-100 shadow-sm transition-shadow duration-300 hover:shadow-lg"
+  >
+    <div
+      aria-hidden="true"
+      class="pointer-events-none absolute -inset-px rounded-[inherit] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+      style="background: radial-gradient(400px circle at 0px 0px, oklch(0.7 0.15 250 / 0.15), transparent 80%);"
+    />
+    <div
+      class="relative"
+    >
+      <p>
+        Card content
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

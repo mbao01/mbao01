@@ -5,11 +5,13 @@ import {
   ActiveBarChartExample,
   BarChartExample,
   CustomLabelBarChartExample,
+  GroupedRoundedBarChartExample,
   HorizontalBarChartExample,
   LabelBarChartExample,
   MixedBarChartExample,
   MultipleBarChartExample,
   NegativeBarChartExample,
+  RoundedBarChartExample,
   StackedBarChartExample,
 } from "./examples/BarChart";
 import { getArgsFromArgTypes, renderer, withArgs } from "./helpers";
@@ -234,4 +236,37 @@ export const NegativeBarChart: Story = {
     "barChart data": negativeChartData,
   },
   render: renderer(NegativeBarChartExample),
+};
+
+const weeklyVisitorData = [
+  { day: "Mon", visitors: 120 },
+  { day: "Tue", visitors: 180 },
+  { day: "Wed", visitors: 250 },
+  { day: "Thu", visitors: 310, active: true },
+  { day: "Fri", visitors: 200 },
+  { day: "Sat", visitors: 80 },
+  { day: "Sun", visitors: 60 },
+];
+export const RoundedBarChart: Story = {
+  args: {
+    "bar isAnimationActive": false,
+    "barChart data": weeklyVisitorData,
+  },
+  render: renderer(RoundedBarChartExample),
+};
+
+const monthlyFinanceData = [
+  { month: "January", income: 4500, expenses: 3200 },
+  { month: "February", income: 5200, expenses: 3800 },
+  { month: "March", income: 4800, expenses: 4100 },
+  { month: "April", income: 6100, expenses: 3500 },
+  { month: "May", income: 5800, expenses: 4200 },
+  { month: "June", income: 7200, expenses: 3900 },
+];
+export const GroupedRoundedBarChart: Story = {
+  args: {
+    "bar isAnimationActive": false,
+    "barChart data": monthlyFinanceData,
+  },
+  render: renderer(GroupedRoundedBarChartExample),
 };

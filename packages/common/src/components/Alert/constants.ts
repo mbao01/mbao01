@@ -2,7 +2,7 @@ import { cva } from "../../libs";
 import { createVariants } from "../../utilities";
 
 export const getAlertClasses = cva(
-  "relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:text-inherit",
+  "relative w-full rounded-lg border p-4 shadow-sm [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:text-inherit",
   {
     variants: createVariants({
       variant: {

@@ -7,7 +7,7 @@ exports[`TagsInput > and by using the keyboard the user can remove a tag 1`] = `
   >
     <span
       aria-disabled="false"
-      class="badge badge-ghost relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden ring-1 ring-inset opacity-80"
+      class="badge transition-colors duration-200 badge-ghost relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden ring-1 ring-inset opacity-80"
       data-active="true"
       tabindex="0"
     >
@@ -51,7 +51,7 @@ exports[`TagsInput > and by using the keyboard the user can remove a tag 1`] = `
     </span>
     <input
       aria-label="Enter anything"
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 caret-transparent"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 caret-transparent"
       tabindex="0"
       value=""
     />
@@ -66,7 +66,7 @@ exports[`TagsInput > and the user can only enter a certain minimum or maximum nu
   >
     <span
       aria-disabled="true"
-      class="badge badge-ghost relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
+      class="badge transition-colors duration-200 badge-ghost relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
       data-active="false"
       tabindex="-1"
     >
@@ -111,7 +111,7 @@ exports[`TagsInput > and the user can only enter a certain minimum or maximum nu
     </span>
     <input
       aria-label="Enter anything"
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       tabindex="0"
       value=""
     />
@@ -126,7 +126,7 @@ exports[`TagsInput > and the user can remove a tag 1`] = `
   >
     <input
       aria-label="Enter anything"
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       tabindex="0"
       value=""
     />
@@ -141,7 +141,7 @@ exports[`TagsInput > and the user enters a tag 1`] = `
   >
     <span
       aria-disabled="false"
-      class="badge badge-ghost relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
+      class="badge transition-colors duration-200 badge-ghost relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
       data-active="false"
       tabindex="-1"
     >
@@ -185,7 +185,7 @@ exports[`TagsInput > and the user enters a tag 1`] = `
     </span>
     <span
       aria-disabled="false"
-      class="badge badge-ghost relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
+      class="badge transition-colors duration-200 badge-ghost relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
       data-active="false"
       tabindex="-1"
     >
@@ -229,7 +229,7 @@ exports[`TagsInput > and the user enters a tag 1`] = `
     </span>
     <input
       aria-label="Enter anything"
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       tabindex="0"
       value=""
     />
@@ -243,7 +243,7 @@ exports[`TagsInput > has accent variant 1`] = `
     class="shadow-2xs flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border border-accent shadow-accent [&:has(input:focus)]:outline-accent [&:has(input:focus-within)]:outline-accent text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       placeholder="accent badge"
       tabindex="0"
       value=""
@@ -258,7 +258,7 @@ exports[`TagsInput > has default variant 1`] = `
     class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus)]:border-[currentColor] [&:has(input:focus-within)]:border-[currentColor] [&:has(input:focus)]:outline-ghost [&:has(input:focus-within)]:outline-ghost text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       placeholder="default badge"
       tabindex="0"
       value=""
@@ -273,7 +273,7 @@ exports[`TagsInput > has error variant 1`] = `
     class="shadow-2xs flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border border-error shadow-error [&:has(input:focus)]:outline-error [&:has(input:focus-within)]:outline-error text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       placeholder="error badge"
       tabindex="0"
       value=""
@@ -288,7 +288,7 @@ exports[`TagsInput > has ghost variant 1`] = `
     class="border-base-content/20 shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border-0 shadow-none [&:has(input:focus)]:outline-ghost [&:has(input:focus-within)]:outline-ghost text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       placeholder="ghost badge"
       tabindex="0"
       value=""
@@ -303,7 +303,7 @@ exports[`TagsInput > has info variant 1`] = `
     class="shadow-2xs flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border border-info shadow-info [&:has(input:focus)]:outline-info [&:has(input:focus-within)]:outline-info text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       placeholder="info badge"
       tabindex="0"
       value=""
@@ -318,7 +318,7 @@ exports[`TagsInput > has large (lg) size 1`] = `
     class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit py-2 overflow-hidden min-h-16 px-5 text-lg"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-6 text-lg"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-6 text-lg"
       placeholder="TagsInput large"
       tabindex="0"
       value=""
@@ -333,7 +333,7 @@ exports[`TagsInput > has medium (md) size 1`] = `
     class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit py-2 overflow-hidden min-h-12 px-4 text-sm"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-5 text-sm"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-5 text-sm"
       placeholder="TagsInput medium"
       tabindex="0"
       value=""
@@ -348,7 +348,7 @@ exports[`TagsInput > has no outline 1`] = `
     class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       placeholder="TagsInput has no outline"
       tabindex="0"
       value=""
@@ -363,7 +363,7 @@ exports[`TagsInput > has outline 1`] = `
     class="shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border text-sm border-base-content/20 [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       placeholder="TagsInput has outline"
       tabindex="0"
       value=""
@@ -378,7 +378,7 @@ exports[`TagsInput > has primary variant 1`] = `
     class="shadow-2xs flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border border-primary shadow-primary [&:has(input:focus)]:outline-primary [&:has(input:focus-within)]:outline-primary text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       placeholder="primary badge"
       tabindex="0"
       value=""
@@ -393,7 +393,7 @@ exports[`TagsInput > has secondary variant 1`] = `
     class="shadow-2xs flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border border-secondary shadow-secondary [&:has(input:focus)]:outline-secondary [&:has(input:focus-within)]:outline-secondary text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       placeholder="secondary badge"
       tabindex="0"
       value=""
@@ -408,7 +408,7 @@ exports[`TagsInput > has small (sm) size 1`] = `
     class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit overflow-hidden min-h-8 px-3 py-1.5 text-sm"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-4 text-sm"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-4 text-sm"
       placeholder="TagsInput small"
       tabindex="0"
       value=""
@@ -423,7 +423,7 @@ exports[`TagsInput > has success variant 1`] = `
     class="shadow-2xs flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border border-success shadow-success [&:has(input:focus)]:outline-success [&:has(input:focus-within)]:outline-success text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       placeholder="success badge"
       tabindex="0"
       value=""
@@ -438,7 +438,7 @@ exports[`TagsInput > has tiny (xs) size 1`] = `
     class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit overflow-hidden min-h-6 px-2 py-1 text-xs"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-3 text-xs"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1 h-3 text-xs"
       placeholder="TagsInput tiny"
       tabindex="0"
       value=""
@@ -453,7 +453,7 @@ exports[`TagsInput > has warning variant 1`] = `
     class="shadow-2xs flex items-center justify-between w-fit rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 border border-warning shadow-warning [&:has(input:focus)]:outline-warning [&:has(input:focus-within)]:outline-warning text-sm flex-wrap h-fit py-2 overflow-hidden min-h-10 px-4"
   >
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       placeholder="warning badge"
       tabindex="0"
       value=""
@@ -469,7 +469,7 @@ exports[`TagsInput > renders some default tags 1`] = `
   >
     <span
       aria-disabled="false"
-      class="badge badge-ghost relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
+      class="badge transition-colors duration-200 badge-ghost relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
       data-active="false"
       tabindex="-1"
     >
@@ -513,7 +513,7 @@ exports[`TagsInput > renders some default tags 1`] = `
     </span>
     <span
       aria-disabled="false"
-      class="badge badge-ghost relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
+      class="badge transition-colors duration-200 badge-ghost relative flex items-center gap-1 [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden"
       data-active="false"
       tabindex="-1"
     >
@@ -556,7 +556,7 @@ exports[`TagsInput > renders some default tags 1`] = `
       </button>
     </span>
     <input
-      class="input rounded-md transition-all duration-100 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
+      class="input rounded-md transition-all duration-200 min-h-fit outline-0 border-none h-5 min-w-fit shadow-none flex-1 focus-visible:outline-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-0 placeholder:text-muted-foreground px-1"
       placeholder="Enter anything"
       tabindex="0"
       value=""

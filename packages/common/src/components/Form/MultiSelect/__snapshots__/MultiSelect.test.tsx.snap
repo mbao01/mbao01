@@ -19,7 +19,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
       class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between px-2 rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 min-h-fit text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit w-fit py-2 overflow-hidden"
     >
       <span
-        class="badge badge-ghost relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
+        class="badge transition-colors duration-200 badge-ghost relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
       >
         <span
           class="text-xs"
@@ -95,7 +95,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -108,7 +108,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -121,7 +121,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -157,7 +157,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
       class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between px-2 rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 min-h-fit text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit w-fit py-2 overflow-hidden"
     >
       <span
-        class="badge badge-ghost relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
+        class="badge transition-colors duration-200 badge-ghost relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
       >
         <span
           class="text-xs"
@@ -233,7 +233,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -246,7 +246,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -259,7 +259,7 @@ exports[`MultiSelect > and by using the keyboard the user can select and remove 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -295,7 +295,7 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
       class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between px-2 rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 min-h-fit text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit w-fit py-2 overflow-hidden"
     >
       <span
-        class="badge badge-ghost relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
+        class="badge transition-colors duration-200 badge-ghost relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
       >
         <span
           class="text-xs"
@@ -369,7 +369,7 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -382,7 +382,7 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -395,7 +395,7 @@ exports[`MultiSelect > and the user can select and remove an option 1`] = `
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -431,7 +431,7 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
       class="border border-base-content/20 shadow-2xs shadow-base-content/20 flex items-center justify-between px-2 rounded-md transition-all gap-1 [&:has(input:focus)]:duration-100 [&:has(input:focus)]:outline-2 [&:has(input:focus)]:outline-offset-2 [&:has(input:focus-within)]:duration-100 [&:has(input:focus-within)]:outline-2 [&:has(input:focus-within)]:outline-offset-2 min-h-fit text-sm [&:has(input:focus)]:border-base-content [&:has(input:focus-within)]:border-base-content flex-wrap h-fit w-fit py-2 overflow-hidden"
     >
       <span
-        class="badge badge-ghost relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
+        class="badge transition-colors duration-200 badge-ghost relative [&>span]:truncate [&>span]:max-w-24 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed focus-visible:outline-hidden max-h-5 px-1 rounded-xl flex items-center gap-1"
       >
         <span
           class="text-xs"
@@ -505,7 +505,7 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -518,7 +518,7 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -531,7 +531,7 @@ exports[`MultiSelect > and the user can select and remove an option 2`] = `
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -601,7 +601,7 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -614,7 +614,7 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -627,7 +627,7 @@ exports[`MultiSelect > and the user clicks on the input > show the list of avail
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -765,7 +765,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -778,7 +778,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -850,7 +850,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"
@@ -863,7 +863,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -876,7 +876,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="false"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="false"
@@ -946,7 +946,7 @@ exports[`MultiSelect > and the user enters a text that matches an option > show 
           <div
             aria-disabled="false"
             aria-selected="true"
-            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-colors flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
+            class="relative select-none items-center aria-disabled:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-disabled:cursor-default cursor-pointer transition-all duration-150 flex justify-between aria-selected:bg-base-300 aria-selected:text-base-content rounded-xs py-1.5 px-2 text-sm outline-hidden"
             cmdk-item=""
             data-disabled="false"
             data-selected="true"

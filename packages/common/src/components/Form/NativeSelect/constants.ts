@@ -1,7 +1,7 @@
 import { cva } from "../../../libs";
 import { createVariants } from "../../../utilities";
 
-export const getNativeSelectClasses = cva("select", {
+export const getNativeSelectClasses = cva("select transition-all duration-200", {
   variants: createVariants({
     nativeOptions: {
       true: "appearance-none",
