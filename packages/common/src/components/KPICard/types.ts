@@ -13,6 +13,4 @@ export type KPICardProps = HTMLAttributes<HTMLDivElement> & {
   chart?: ReactNode;
   /** Icon to show in the card */
   icon?: ReactNode;
-  /** Loading state */
-  loading?: boolean;
 };

@@ -1,6 +1,5 @@
 import type { KPICardProps } from "./types";
 import { cn } from "../../utilities";
-import { Skeleton } from "../Skeleton";
 import { TrendBadge } from "../TrendBadge";
 
 const KPICard = ({
@@ -10,34 +9,9 @@ const KPICard = ({
   description,
   chart,
   icon,
-  loading = false,
   className,
   ...props
 }: KPICardProps) => {
-  if (loading) {
-    return (
-      <div
-        className={cn(
-          "rounded-lg border bg-base-100 p-4 shadow-sm transition-shadow duration-300 hover:shadow-md",
-          className
-        )}
-        {...props}
-      >
-        <div className="flex items-center justify-between">
-          <Skeleton className="h-4 w-24 rounded" />
-          {icon && <Skeleton className="size-8 rounded-md" />}
-        </div>
-        <div className="mt-4 flex items-end justify-between gap-4">
-          <div className="flex flex-col gap-1.5">
-            <Skeleton className="h-7 w-28 rounded" />
-            <Skeleton className="h-3.5 w-20 rounded" />
-          </div>
-          <Skeleton className="h-8 w-20 rounded" />
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div
       className={cn(
