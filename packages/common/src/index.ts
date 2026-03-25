@@ -24,6 +24,7 @@ export * from "./components/Paragraph";
 
 /** utility & atoms */
 export * from "./components/AspectRatio";
+export * from "./components/IconContainer";
 export * from "./components/Image";
 export * from "./components/Spinner";
 

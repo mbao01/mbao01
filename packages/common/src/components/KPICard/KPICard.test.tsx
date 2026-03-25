@@ -19,9 +19,9 @@ describe("KPICard", () => {
     expect(screen.getByText("vs last month")).toBeInTheDocument();
   });
 
-  it("renders sparkline when data is provided", () => {
+  it("renders chart when provided", () => {
     const { container } = render(
-      <KPICard title="Revenue" value="$12,450" sparklineData={[1, 3, 2, 5, 4]} />
+      <KPICard title="Revenue" value="$12,450" chart={<svg data-testid="chart" />} />
     );
     expect(container.querySelector("svg")).toBeInTheDocument();
   });
