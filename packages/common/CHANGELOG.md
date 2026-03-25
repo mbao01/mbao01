@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.9.0
+
+### Minor Changes
+
+- df68164: Expand the @mbao01/common design system with 30+ new components (StatCard, KPICard, AnimatedGroup, Sparkline, CalendarHeatmap, GlowCard, Marquee, etc.), enhance existing components (Box variants, Description layouts, polished chart examples), add whitelabel theming support, and fix TypeScript build errors across framer-motion integrations and Storybook stories.
+
 ## 0.8.1
 
 ### Patch Changes
