@@ -92,6 +92,7 @@ export * from "./components/WidgetShell";
 
 /** molecules */
 export * from "./components/Banner";
+export * from "./components/Drawer";
 export * from "./components/Empty";
 export * from "./components/Sidebar";
 export * from "./components/Stepper";
