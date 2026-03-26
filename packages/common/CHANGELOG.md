@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.9.4
+
+### Patch Changes
+
+- 50e7b75: Add showClose prop to Drawer + Update WidgetShell Empty state retry button
+
 ## 0.9.3
 
 ### Patch Changes
