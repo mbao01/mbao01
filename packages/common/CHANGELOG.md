@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.9.3
+
+### Patch Changes
+
+- 2f852dc: Add scatter plot example
+
 ## 0.9.2
 
 ### Patch Changes
