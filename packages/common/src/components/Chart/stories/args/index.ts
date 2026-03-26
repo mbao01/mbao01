@@ -5,6 +5,7 @@ import type {
   PieProps,
   RadarProps,
   RadialBarProps,
+  ScatterProps,
   XAxisProps,
   YAxisProps,
 } from "recharts";
@@ -24,6 +25,8 @@ import { radarArgs } from "./radarArgs";
 import { radarChartArgs as radarChartComponentArgs } from "./radarChartArgs";
 import { radialBarArgs } from "./radialBarArgs";
 import { radialBarChartArgs as radialBarChartComponentArgs } from "./radialBarChartArgs";
+import { scatterArgs } from "./scatterArgs";
+import { scatterChartArgs as scatterChartComponentArgs } from "./scatterChartArgs";
 import { OmitSVGElement } from "./types";
 import { xAxisArgs } from "./xAxisArgs";
 import { yAxisArgs } from "./yAxisArgs";
@@ -176,4 +179,30 @@ export const radarArgKey = {
 export const radarChartArgs: ArgTypes = {
   ...categorizeArgs(radarChartComponentArgs, radarArgKey.radarChart),
   ...categorizeArgs(radarArgs, radarArgKey.radar),
+};
+
+/**
+ * Scatter chart
+ */
+type ScatterArgKey = "scatter" | "scatterChart" | "xAxis" | "yAxis";
+
+export type ScatterChartProps = {
+  scatter: OmitSVGElement<ScatterProps>;
+  scatterChart: CartesianChartProps;
+} & AxisProps;
+
+export type ScatterChartArgs = Partial<Flatten<ScatterChartProps>> & {};
+
+export const scatterArgKey = {
+  scatter: "scatter",
+  scatterChart: "scatterChart",
+  xAxis: "xAxis",
+  yAxis: "yAxis",
+} satisfies Record<string, ScatterArgKey>;
+
+export const scatterChartArgs: ArgTypes = {
+  ...categorizeArgs(scatterChartComponentArgs, scatterArgKey.scatterChart),
+  ...categorizeArgs(xAxisArgs, scatterArgKey.xAxis),
+  ...categorizeArgs(yAxisArgs, scatterArgKey.yAxis),
+  ...categorizeArgs(scatterArgs, scatterArgKey.scatter),
 };
