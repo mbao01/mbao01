@@ -8,7 +8,7 @@ const withDrawer = (_: StoryFn, context: StoryContext) => {
       <Drawer.Trigger asChild>
         <Button outline>Open Drawer</Button>
       </Drawer.Trigger>
-      <Drawer.Content>
+      <Drawer.Content showClose>
         <div className="mx-auto w-full max-w-sm">
           <Drawer.Header>
             <Drawer.Title>Move Goal</Drawer.Title>
