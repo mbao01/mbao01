@@ -13,3 +13,7 @@ export const getDrawerFooterClasses = cva("mt-auto flex flex-col gap-2 p-4");
 export const getDrawerOverlayClasses = cva("fixed inset-0 z-50 bg-black/60 backdrop-blur-sm");
 
 export const getDrawerTitleClasses = cva("text-lg font-semibold leading-none tracking-tight");
+
+export const getDrawerCloseClasses = cva(
+  "absolute right-4 top-4 cursor-pointer rounded-xs opacity-70 ring-offset-background transition-all duration-200 hover:opacity-100 hover:rotate-90 focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"
+);

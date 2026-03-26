@@ -1,9 +1,11 @@
 "use client";
 
 import { forwardRef } from "react";
+import { XIcon } from "lucide-react";
 import { Drawer as DrawerPrimitive } from "vaul";
 import { cn } from "../../utilities";
 import {
+  getDrawerCloseClasses,
   getDrawerContentClasses,
   getDrawerDescriptionClasses,
   getDrawerFooterClasses,
@@ -11,7 +13,7 @@ import {
   getDrawerOverlayClasses,
   getDrawerTitleClasses,
 } from "./constants";
-import { DrawerProps } from "./types";
+import { DrawerContentProps, DrawerProps } from "./types";
 
 const Drawer = ({ shouldScaleBackground = true, ...props }: DrawerProps) => (
   <DrawerPrimitive.Root shouldScaleBackground={shouldScaleBackground} {...props} />
@@ -38,8 +40,8 @@ DrawerOverlay.displayName = DrawerPrimitive.Overlay.displayName;
 
 const DrawerContent = forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Content>
->(({ className, children, ...props }, ref) => (
+  DrawerContentProps
+>(({ className, children, showClose, closeProps, ...props }, ref) => (
   <DrawerPortal>
     <DrawerOverlay />
     <DrawerPrimitive.Content
@@ -47,8 +49,17 @@ const DrawerContent = forwardRef<
       className={cn(getDrawerContentClasses(), className)}
       {...props}
     >
-      <div className="mx-auto mt-4 h-2 w-[80px] rounded-full bg-base-300" />
+      <div className="mx-auto mt-4 h-2 min-h-2 w-[80px] rounded-full bg-base-300" />
       {children}
+      {showClose ? (
+        <DrawerPrimitive.Close
+          {...closeProps}
+          className={cn(getDrawerCloseClasses(), closeProps?.className)}
+        >
+          <XIcon className="h-4 w-4" />
+          <span className="sr-only">Close</span>
+        </DrawerPrimitive.Close>
+      ) : null}
     </DrawerPrimitive.Content>
   </DrawerPortal>
 ));

@@ -69,6 +69,8 @@ const WidgetShellError = ({
         </div>
         {onRetry && (
           <Button
+            outline
+            size="sm"
             type="button"
             onClick={onRetry}
             className="inline-flex items-center gap-1.5 rounded-md border px-3 py-1.5 text-xs font-medium transition-colors duration-200 hover:bg-base-200"
