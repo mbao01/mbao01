@@ -1,5 +1,5 @@
-import { cn } from "../../utilities";
 import type { StatCardProps } from "./types";
+import { cn } from "../../utilities";
 
 const StatCard = ({
   icon,
@@ -17,7 +17,7 @@ const StatCard = ({
   return (
     <div
       className={cn(
-        "relative rounded-2xl border border-base-200 bg-base-100 px-6 pb-6 pt-10 shadow-sm",
+        "relative rounded-2xl border bg-base-100 px-6 pb-6 pt-10 shadow-sm",
         icon && "pt-14",
         className
       )}
