@@ -30,7 +30,7 @@
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
+    border-color: color-mix(in oklab, var(--color-base-content) 10%, transparent);
   }
 }
 

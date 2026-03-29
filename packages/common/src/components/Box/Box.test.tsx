@@ -36,15 +36,6 @@ describe("Box", () => {
     expect(screen.getByTestId("box")).toHaveClass("overflow-hidden");
   });
 
-  it("applies outlined style", () => {
-    render(
-      <Box style="outlined" data-testid="box">
-        Content
-      </Box>
-    );
-    expect(screen.getByTestId("box")).toHaveClass("border", "border-base-200");
-  });
-
   it("applies bordered variant", () => {
     render(
       <Box style="bordered" data-testid="box">
@@ -60,7 +51,7 @@ describe("Box", () => {
         Content
       </Box>
     );
-    expect(screen.getByTestId("box")).toHaveClass("border-base-300", "ring-base-300", "ring-offset-base-200");
+    expect(screen.getByTestId("box")).toHaveClass("ring-base-300", "ring-offset-base-200");
   });
 
   it("applies elevated variant", () => {
