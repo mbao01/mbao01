@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.9.7
+
+### Patch Changes
+
+- f2ecb99: Remove set daisyui themes
+
 ## 0.9.6
 
 ### Patch Changes
