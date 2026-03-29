@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.9.8
+
+### Patch Changes
+
+- c8053d2: Remove box border color
+
 ## 0.9.7
 
 ### Patch Changes
