@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.9.9
+
+### Patch Changes
+
+- bd067ba: Update border color for stats card and activity feed components
+
 ## 0.9.8
 
 ### Patch Changes
