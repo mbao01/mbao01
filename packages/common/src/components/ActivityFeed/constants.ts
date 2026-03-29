@@ -11,7 +11,7 @@ export const getActivityIconClasses = cva(
 );
 
 export const getActivityLineClasses = cva(
-  "absolute left-4 top-8 -bottom-0 w-px -translate-x-1/2 bg-base-300"
+  "absolute left-4 top-8 -bottom-0 w-px -translate-x-1/2 bg-base-content/10"
 );
 
 export const getActivityContentClasses = cva("flex min-w-0 flex-1 flex-col gap-0.5 pt-1");
