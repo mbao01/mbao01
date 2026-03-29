@@ -1,5 +1,12 @@
 # Change Log
 
+## 0.9.8
+
+### Patch Changes
+
+- Updated dependencies [781132f]
+  - @mbao01/common@0.9.6
+
 ## 0.9.7
 
 ### Patch Changes

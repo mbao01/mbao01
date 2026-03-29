@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.9.6
+
+### Patch Changes
+
+- 781132f: Set dark utility condition to match data-theme=dark and prefers-color-scheme: dark
+
 ## 0.9.5
 
 ### Patch Changes
