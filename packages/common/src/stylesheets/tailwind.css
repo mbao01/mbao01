@@ -1,6 +1,9 @@
 @import 'tailwindcss';
 
 @plugin "@tailwindcss/typography";
+@plugin "daisyui" {
+  themes: false;
+}
 
 @variant dark {
   &:where([data-theme='dark'], [data-theme='dark'] *) {
